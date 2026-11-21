@@ -139,11 +139,13 @@
  "approved_scenes": [
   "S01"
  ],
- "now": "Lote 1 ciclo 2 (pilotos de movimento): c2-c e depois c2-d na fila única",
+ "now": "Lote 1 ciclo 2 concluído e escalado: Gemini deu REFAZER (3,0–3,44); gates determinísticos PASS",
  "next": [
   "Revisão com nota do lote 1 + folha de contato",
   "Fase A: mídias de S07–S54 (Flow + periodo.sh + recortes, sem render)",
   "Fase B: specs + quadros; Fase C: render em bloco"
  ],
- "waiting_user": []
+ "waiting_user": [
+  "Ver previa_lote1_c2.mp4 e decidir: aprovar lote 1 / ciclo 3 focado / seguir para fase A em paralelo"
+ ]
 }

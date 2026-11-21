@@ -203,6 +203,16 @@ Geradas no Flow, projeto `lacre-vietna`, Nano Banana 2.1, 16:9, 0 créditos, com
 | coluna_civis_45_pose | `S03_coluna_poseA.jpg` / `_poseB.jpg` / `_poseC.jpg` | coluna_civis_45_a/b/c.png | S03 t1, S04 t1 (espelhado) | 7 moradores de Hanói em 1945, chapéu cônico, dois com bandeirinha; S04 usa os mesmos arquivos com `flip` |
 | coluna_fr46_pose | `S05_coluna_poseA.jpg` / `_poseB.jpg` / `_poseC.jpg` | coluna_fr46_a/b/c.png | S05 t2, t3, t5 | 6 soldados franceses de 1946: cáqui, capacete M1 verde, botina marrom, sem capacete azul nem bota vermelha (ICO-CEFEO) |
 
+### Imagens do ciclo 2 (c2-c, 2026-11-21)
+Flow, projeto `lacre-vietna`, Nano Banana 2.1, 16:9, 0 créditos, com o prefixo fixo de `lab/flow-prompts-s04.md`. Gate de época `orchestra/periodo.sh` em 2026-11-21: 0 reprovada (`src_img/flow/c2c_gate/`). Originais em `src_img/flow/`; cópias de trabalho em `studio/remotion/public/vietna/`.
+
+| Prompt (ID) | Arquivo original escolhido | Arquivo de trabalho | Uso | Observação |
+|---|---|---|---|---|
+| FLOW-c2c cais | `S05_haiphong_cais_1.jpg` | haiphong_46b.jpg | S05 t3a | cais de Haiphong vazio, dois guindastes a vapor, armazéns coloniais |
+| FLOW-c2c desembarque | `S05_desembarque_2.jpg` (a opção 1 repete a mesma cena, mais fechada) | s05_desembarque.jpg | S05 t3b | casco do transporte à esquerda, prancha com corrimão de corda descendo para o cais vazio; sem soldados |
+| FLOW-c2c porto | `S06_porto_cais_1.jpg` | port_50b.jpg | S06 t1, t3 | cais de Saigon com guindaste de lança e o rio aberto à esquerda |
+| FLOW-c2c soldado (4 poses) | `walk_fr46_0.png` a `_3.png`, com a perna de trás (azulada) corrigida para cáqui-escuro | s05_sold46_0 a 3.png | S05 t3b | soldado francês de 1946 (cáqui, capacete M1) em 4 poses de passada, para descer a prancha um atrás do outro |
+
 Sons do lote: todos sintetizados por código em `pipeline/assembly/sound_design.py` (passos, motor, avião, rotor, jipe, guindaste, multidão, máquina de escrever, selo, flash, folhas, dominós, fogo, tiros, bandeira). Licença própria (R13).
 
 ### Pendências de fonte (R1/R2) abertas neste lote

@@ -107,24 +107,29 @@ const ActorView: React.FC<{a: Actor; t0: number}> = ({a, t0}) => {
 	const moving = pp > 0 && pp < 1;
 	// Tecido contínuo (aditivo): fatias de ~2,5 px com a borda do mastro fixa (amplitude zero em x=0) e amplitude crescente até a ponta.
 	if (a.cloth) {
-		const W = hpx * (a.ar ?? 1.5);
-		const n = Math.max(4, Math.round(W / 2.5));
-		const sw = W / n;
+		// Fatias de largura INTEIRA: com largura fracionária o navegador reamostra cada
+		// fatia e aparecem tiras verticais (emendas visíveis) na bandeira.
+		const w0 = hpx * (a.ar ?? 1.5);
+		const n = Math.max(4, Math.round(w0 / 3));
+		const sw = Math.ceil(w0 / n);
+		const W = sw * n;
 		const amp = a.cloth;
+		const shimmer = 1 + 0.05 * Math.cos(f / 6);
 		return (
 			<div style={{position: 'absolute', left: x, top: y, translate: '-50% -100%', height: hpx, width: W, opacity: vis, display: 'flex', scale: a.flip ? '-1 1' : undefined, filter: a.tint}}>
 				{Array.from({length: n}).map((_, i) => {
 					const u = i / n;
 					const env = Math.pow(u, 0.85); // zero no mastro, ~1 na ponta
-					const ph = f / 6 - u * 6.5; // onda viaja do mastro para a ponta
+					const ph = (f / 6 - u * 6.5) * 1; // onda viaja do mastro para a ponta
 					const dy = Math.sin(ph) * amp * env;
-					const shade = 1 + 0.09 * env * Math.cos(ph);
 					return (
-						<div key={i} style={{height: hpx, width: sw + 1, marginRight: -1, overflow: 'hidden', flex: 'none', translate: `0px ${dy}px`, filter: `brightness(${shade})`}}>
-							<Img src={staticFile(a.src)} style={{height: hpx, width: W, maxWidth: 'none', marginLeft: -i * sw}} />
+						<div key={i} style={{position: 'relative', height: hpx, width: sw + 2, marginRight: -2, overflow: 'hidden', flex: 'none', translate: `0px ${dy}px`}}>
+							<Img src={staticFile(a.src)} style={{position: 'absolute', left: -i * sw, top: 0, height: hpx, width: W, maxWidth: 'none'}} />
 						</div>
 					);
 				})}
+				{/* sombra de dobra em UMA camada: filtro por fatia criava emendas verticais visíveis */}
+				<div style={{position: 'absolute', inset: 0, background: 'linear-gradient(100deg, rgba(0,0,0,0.22) 0%, rgba(255,255,255,0.10) 28%, rgba(0,0,0,0.18) 52%, rgba(255,255,255,0.12) 76%, rgba(0,0,0,0.20) 100%)', mixBlendMode: 'soft-light', opacity: shimmer}} />
 			</div>
 		);
 	}
@@ -181,23 +186,28 @@ if (a.slices && a.slices >= 1) {
 		return <div style={{position: 'absolute', left: ax, top: ay, width: len, height: 3, transformOrigin: '0 50%', rotate: `${ang}deg`, background: 'rgba(28,26,24,0.9)', opacity: vis}} />;
 	})() : null;
 	if (a.flag) {
-		const fg = a.flag, n = fg.strips ?? 90, W = hpx * (a.ar ?? 1.5), sw = W / n, amp = fg.amp ?? hpx * 0.06, k = (2 * Math.PI) / (fg.len ?? W * 0.6), sp = fg.speed ?? 0.22;
+		// Fatias de largura inteira e sombra numa só camada: fatia fracionária + brilho por
+		// fatia deixa tiras verticais visíveis na bandeira (mesmo defeito do cloth).
+		const fg = a.flag, n0 = fg.strips ?? 90, w0 = hpx * (a.ar ?? 1.5);
+		const fn = Math.max(8, Math.min(n0, Math.round(w0 / 3)));
+		const sw = Math.ceil(w0 / fn), W = sw * fn, n = fn;
+		const amp = fg.amp ?? hpx * 0.06, k = (2 * Math.PI) / (fg.len ?? W * 0.6), sp = fg.speed ?? 0.22;
 		const pw = fg.pole_w ?? Math.max(4, hpx * 0.03);
 		return (
-			<div style={{position: 'absolute', left: x - W / 2, top: y - hpx, width: W, height: hpx, opacity: vis}}>
+			<div style={{position: 'absolute', left: x - W / 2, top: y - hpx, width: W, height: hpx, opacity: vis, filter: a.tint}}>
 				{fg.pole ? <div style={{position: 'absolute', left: -pw, top: -hpx * 0.06, width: pw, height: hpx * 1.06 + (fg.pole / 100) * height, background: 'linear-gradient(90deg, #5a4a36, #a08a68 45%, #4a3c2c)'}} /> : null}
 				{Array.from({length: n}).map((_, i) => {
-					const u = i / n, xx = u * W;
+					const u = i / n;
 					const env = Math.pow(u, 0.85);
-					const ph = k * xx - f * sp;
+					const ph = k * sw * i - f * sp;
 					const dy = amp * env * Math.sin(ph);
-					const shade = 1 + 0.16 * env * Math.cos(ph);
 					return (
-						<div key={i} style={{position: 'absolute', left: xx, top: dy, width: sw + 1.2, height: hpx, overflow: 'hidden'}}>
-							<Img src={staticFile(a.src)} style={{position: 'absolute', left: -xx, top: 0, width: W, height: hpx, maxWidth: 'none', filter: `${a.tint ?? ''} brightness(${shade})`}} />
+						<div key={i} style={{position: 'absolute', left: i * sw, top: dy, width: sw + 2, height: hpx, overflow: 'hidden'}}>
+							<Img src={staticFile(a.src)} style={{position: 'absolute', left: -i * sw, top: 0, width: W, height: hpx, maxWidth: 'none'}} />
 						</div>
 					);
 				})}
+				<div style={{position: 'absolute', inset: 0, background: 'linear-gradient(100deg, rgba(0,0,0,0.24) 0%, rgba(255,255,255,0.12) 30%, rgba(0,0,0,0.20) 55%, rgba(255,255,255,0.12) 78%, rgba(0,0,0,0.22) 100%)', mixBlendMode: 'soft-light'}} />
 			</div>
 		);
 	}

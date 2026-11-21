@@ -241,8 +241,8 @@
           58
          ],
          "to": [
-          68,
-          56
+          58,
+          57
          ],
          "h": 42,
          "t0_s": 1.58,
@@ -290,17 +290,17 @@
         {
          "src": "vietna/diplomata.png",
          "from": [
-          24,
-          66
+          16,
+          55
          ],
          "to": [
-          47,
+          66,
           82
          ],
-         "h": 32,
-         "scale1": 1.22,
-         "t0_s": 5.51,
-         "t1_s": 8.35,
+         "h": 25,
+         "scale1": 1.85,
+         "t0_s": 5.15,
+         "t1_s": 8.4,
          "ease": "linear",
          "slices": 1,
          "ar": 0.513,
@@ -309,7 +309,26 @@
          "bob": 3,
          "rock": 0.6,
          "sfx": "step1",
-         "note": "passos do embaixador entrando na sala"
+         "note": "passos do embaixador entrando na sala",
+         "path": [
+          [
+           16,
+           55
+          ],
+          [
+           22,
+           60
+          ],
+          [
+           66,
+           82
+          ]
+         ],
+         "path_s": [
+          5.15,
+          6.0,
+          8.4
+         ]
         }
        ]
       },
@@ -363,8 +382,13 @@
           "vietna/coluna_br65_b.png",
           "vietna/coluna_br65_c.png"
          ],
-         "frame_fps": 6
+         "frame_fps": 6,
+         "depth": 1.4
         }
+       ],
+       "pan": [
+        90,
+        -15
        ]
       },
       "stat": {
@@ -418,8 +442,8 @@
            82
           ],
           [
-           40,
-           81
+           36,
+           82
           ]
          ],
          "path_s": [
@@ -464,7 +488,7 @@
            80
           ],
           [
-           60,
+           65,
            83
           ]
          ],
@@ -492,7 +516,7 @@
      {
       "kind": "plate",
       "start_s": 17.2,
-      "end_s": 19.7,
+      "end_s": 20.55,
       "cue": "o relato da conversa: telegrama do Rio, 17 de dezembro; o que o presidente respondeu?",
       "motion": "a máquina de escrever bate o cabeçalho do telegrama",
       "layers": [
@@ -515,20 +539,33 @@
          "size": 34,
          "paper": false,
          "lines": [
-          "RIO DE JANEIRO",
+          "RIO DE JANEIRO"
+         ],
+         "from_s": 17.35,
+         "to_s": 19.35,
+         "note": "teclas batendo a cidade no papel enquanto a fala pergunta"
+        },
+        {
+         "kind": "typing",
+         "x": 56.4,
+         "y": 31.7,
+         "w": 400,
+         "size": 34,
+         "paper": false,
+         "lines": [
           "17 DEZ 1965",
           "TELEGRAMA 1456"
          ],
-         "from_s": 17.3,
-         "to_s": 19.4,
-         "note": "teclas batendo o telegrama 1456"
+         "from_s": 19.5,
+         "to_s": 20.3,
+         "note": "a identificação do telegrama entra depois da pergunta da fala"
         }
        ]
       }
      },
      {
       "kind": "plate",
-      "start_s": 19.7,
+      "start_s": 20.55,
       "end_s": 23.6,
       "cue": "a resposta está no documento, e vamos lê-lo no fim deste vídeo",
       "motion": "o memorando chega à mesa, o selo cai e a pasta é guardada para o fim",
@@ -569,10 +606,10 @@
           ]
          ],
          "path_s": [
-          19.7,
-          20.18,
-          21.86,
-          22.66
+          20.55,
+          20.72,
+          22.1,
+          22.9
          ],
          "h": 54,
          "rot": [
@@ -606,17 +643,17 @@
           ]
          ],
          "path_s": [
-          20.55,
-          21.86,
-          22.66
+          20.9,
+          22.1,
+          22.9
          ],
          "h": 16,
-         "appear_s": 20.25,
+         "appear_s": 20.75,
          "grow": [
           1.9,
           1.0
          ],
-         "t1_s": 20.55,
+         "t1_s": 20.9,
          "sfx": "stamp",
          "note": "o selo de cera cai sobre o memorando",
          "sfx_at_cue": "documento#1",
@@ -722,8 +759,13 @@
           "vietna/coluna_civis_45_b.png",
           "vietna/coluna_civis_45_c.png"
          ],
-         "frame_fps": 6
+         "frame_fps": 6,
+         "depth": 1.45
         }
+       ],
+       "pan": [
+        -80,
+        10
        ]
       },
       "date": {
@@ -890,8 +932,13 @@
           "vietna/coluna_civis_45_b.png",
           "vietna/coluna_civis_45_c.png"
          ],
-         "frame_fps": 6
+         "frame_fps": 6,
+         "depth": 1.45
         }
+       ],
+       "pan": [
+        -80,
+        10
        ]
       },
       "date": {
@@ -946,6 +993,22 @@
          "under_caption_ok": true,
          "sfx": "crowd",
          "note": "multidão na praça de Ba Dinh"
+        },
+        {
+         "src": "vietna/bandeira_vn.png",
+         "from": [
+          22,
+          38
+         ],
+         "h": 13,
+         "ar": 1.667,
+         "flag": {
+          "amp": 15,
+          "pole": 16,
+          "speed": 0.32
+         },
+         "sfx": "none",
+         "note": "bandeira erguida na praça tremulando"
         }
        ]
       },
@@ -1006,6 +1069,22 @@
          "under_caption_ok": true,
          "sfx": "crowd",
          "note": "multidão na praça de Ba Dinh"
+        },
+        {
+         "src": "vietna/bandeira_vn.png",
+         "from": [
+          46,
+          27
+         ],
+         "h": 15,
+         "ar": 1.667,
+         "flag": {
+          "amp": 13,
+          "pole": 24,
+          "speed": 0.3
+         },
+         "sfx": "none",
+         "note": "bandeira erguida na multidão tremulando"
         }
        ]
       },
@@ -1040,7 +1119,7 @@
         {
          "src": "vietna/bandeira_vn.png",
          "from": [
-          30.4,
+          31,
           24
          ],
          "h": 18,
@@ -1048,7 +1127,8 @@
          "ar": 1.667,
          "wave": 7,
          "sfx": "flag",
-         "note": "bandeira tremulando sobre a praça"
+         "note": "bandeira tremulando sobre a praça",
+         "cloth": 9
         }
        ]
       },
@@ -1083,13 +1163,13 @@
          "src": "vietna/decl_us.jpg",
          "from": [
           -25,
-          80
+          62
          ],
          "to": [
-          30,
-          78
+          40,
+          64
          ],
-         "h": 46,
+         "h": 44,
          "rot": [
           -14,
           -5
@@ -1099,6 +1179,7 @@
          "ease": "out",
          "sfx": "paper",
          "note": "a Declaração americana desliza na mesa",
+         "tilt": 58,
          "sfx_at_cue": "americana#1",
          "sfx_at_s": 14.17
         },
@@ -1106,13 +1187,13 @@
          "src": "vietna/decl_fr.jpg",
          "from": [
           128,
-          82
+          66
          ],
          "to": [
-          62,
-          79
+          67,
+          66
          ],
-         "h": 46,
+         "h": 44,
          "rot": [
           12,
           4
@@ -1122,6 +1203,7 @@
          "ease": "out",
          "sfx": "paper",
          "note": "a Declaração francesa desliza na mesa",
+         "tilt": 58,
          "sfx_at_cue": "direitos#1",
          "sfx_at_s": 16.53
         }
@@ -1191,6 +1273,38 @@
          "under_caption_ok": true,
          "sfx": "crowd",
          "note": "multidão na praça de Ba Dinh"
+        },
+        {
+         "src": "vietna/bandeira_vn.png",
+         "from": [
+          38,
+          33
+         ],
+         "h": 15,
+         "ar": 1.667,
+         "flag": {
+          "amp": 13,
+          "pole": 20,
+          "speed": 0.3
+         },
+         "sfx": "none",
+         "note": "bandeira erguida na multidão tremulando"
+        },
+        {
+         "src": "vietna/bandeira_vn.png",
+         "from": [
+          62,
+          31
+         ],
+         "h": 13,
+         "ar": 1.667,
+         "flag": {
+          "amp": 12,
+          "pole": 22,
+          "speed": 0.34
+         },
+         "sfx": "none",
+         "note": "bandeira erguida na multidão tremulando"
         }
        ],
        "sfx": [
@@ -1261,8 +1375,13 @@
           21
          ],
          "sfx": "engine",
-         "note": "motor do navio britânico chegando"
+         "note": "motor do navio britânico chegando",
+         "depth": 1.3
         }
+       ],
+       "pan": [
+        70,
+        -8
        ]
       },
       "names": [
@@ -1331,9 +1450,9 @@
      {
       "kind": "plate",
       "start_s": 9.0,
-      "end_s": 15.8,
+      "end_s": 13.55,
       "cue": "em março de 1946, cerca de 15 mil soldados franceses desembarcam no Tonkin",
-      "motion": "o navio de transporte atraca ao longo do cais de Haiphong; a tropa desce pela prancha até o cais",
+      "motion": "o navio de transporte entra no porto e encosta ao longo do cais de Haiphong",
       "layers": [
        "céu/fundo",
        "cena em planos",
@@ -1349,16 +1468,16 @@
         {
          "src": "vietna/ship.png",
          "from": [
-          -24,
-          67
+          -28,
+          66
          ],
          "to": [
           50,
-          67.2
+          63
          ],
          "h": 23,
          "t0_s": 9.1,
-         "t1_s": 13.65,
+         "t1_s": 13.4,
          "ease": "inout",
          "bob": 1.2,
          "rock": 0.25,
@@ -1373,73 +1492,6 @@
          "land_note": "o navio encosta ao longo do cais de Haiphong, convés na altura do cais",
          "sfx": "engine",
          "note": "motor do navio entrando no porto"
-        },
-        {
-         "src": "vietna/prancha.png",
-         "from": [
-          63.75,
-          64.7
-         ],
-         "h": 4.3,
-         "rot": [
-          0,
-          0
-         ],
-         "tint": "brightness(1.55) contrast(1.2)",
-         "sfx": "none",
-         "note": "prancha de desembarque do convés da proa ao cais"
-        },
-        {
-         "src": "vietna/coluna_fr46_a.png",
-         "from": [
-          -22.0,
-          60.6
-         ],
-         "path": [
-          [
-           -22.0,
-           60.6
-          ],
-          [
-           60.0,
-           60.6
-          ],
-          [
-           63.0,
-           62.2
-          ],
-          [
-           66.5,
-           64.3
-          ],
-          [
-           68.0,
-           64.6
-          ],
-          [
-           68.4,
-           64.8
-          ]
-         ],
-         "path_s": [
-          9.1,
-          13.65,
-          14.2,
-          14.8,
-          15.4,
-          15.9
-         ],
-         "appear_s": 9.05,
-         "h": 3.3,
-         "bob": 1.0,
-         "sfx": "steps",
-         "note": "passos da tropa que desce a prancha da proa até o cais",
-         "frames": [
-          "vietna/coluna_fr46_a.png",
-          "vietna/coluna_fr46_b.png",
-          "vietna/coluna_fr46_c.png"
-         ],
-         "frame_fps": 7
         }
        ]
       },
@@ -1447,11 +1499,189 @@
        {
         "text": "HAIPHONG · MARÇO DE 1946",
         "sub": "≈ 15 mil soldados franceses chegam ao Tonkin",
-        "out_s": 15.5,
+        "out_s": 13.4,
         "at_cue": "marco#1",
         "at_s": 9.16
        }
       ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 13.55,
+      "end_s": 15.8,
+      "cue": "os franceses desembarcam no Tonkin",
+      "motion": "a coluna desce a prancha do navio até o cais e segue marchando no cais",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/s05_desembarque.jpg",
+       "z0": 1.0,
+       "z1": 1.04,
+       "ox": "45%",
+       "oy": "60%",
+       "sfx": [
+        {
+         "kind": "steps",
+         "from_s": 13.55,
+         "to_s": 15.8,
+         "note": "passos da tropa descendo a prancha e marchando no cais"
+        }
+       ],
+       "actors": [
+        {
+         "src": "vietna/s05_sold46_0.png",
+         "frames": [
+          "vietna/s05_sold46_0.png",
+          "vietna/s05_sold46_1.png",
+          "vietna/s05_sold46_2.png",
+          "vietna/s05_sold46_3.png"
+         ],
+         "frame_fps": 6,
+         "frame_phase": 0,
+         "from": [
+          46.6,
+          58.0
+         ],
+         "path": [
+          [
+           46.6,
+           58.0
+          ],
+          [
+           54.4,
+           68.0
+          ],
+          [
+           63.5,
+           72.5
+          ]
+         ],
+         "path_s": [
+          13.55,
+          14.75,
+          15.8
+         ],
+         "h": 15.5,
+         "scale1": 1.065,
+         "t0_s": 13.55,
+         "t1_s": 14.75,
+         "bob": 1.5,
+         "sfx": "none",
+         "note": "posições da coluna descendo a prancha (som único de passos da tomada)"
+        },
+        {
+         "src": "vietna/s05_sold46_0.png",
+         "frames": [
+          "vietna/s05_sold46_0.png",
+          "vietna/s05_sold46_1.png",
+          "vietna/s05_sold46_2.png",
+          "vietna/s05_sold46_3.png"
+         ],
+         "frame_fps": 6,
+         "frame_phase": 1,
+         "from": [
+          40.4,
+          50.0
+         ],
+         "path": [
+          [
+           40.4,
+           50.0
+          ],
+          [
+           54.4,
+           68.0
+          ]
+         ],
+         "path_s": [
+          13.55,
+          15.7
+         ],
+         "h": 14.0,
+         "scale1": 1.179,
+         "t0_s": 13.55,
+         "t1_s": 15.7,
+         "bob": 1.5,
+         "sfx": "none",
+         "note": "posições da coluna descendo a prancha (som único de passos da tomada)"
+        },
+        {
+         "src": "vietna/s05_sold46_0.png",
+         "frames": [
+          "vietna/s05_sold46_0.png",
+          "vietna/s05_sold46_1.png",
+          "vietna/s05_sold46_2.png",
+          "vietna/s05_sold46_3.png"
+         ],
+         "frame_fps": 6,
+         "frame_phase": 2,
+         "from": [
+          32.7,
+          40.0
+         ],
+         "path": [
+          [
+           32.7,
+           40.0
+          ],
+          [
+           54.4,
+           68.0
+          ]
+         ],
+         "path_s": [
+          13.55,
+          16.9
+         ],
+         "h": 12.5,
+         "scale1": 1.32,
+         "t0_s": 13.55,
+         "t1_s": 16.9,
+         "bob": 1.5,
+         "sfx": "none",
+         "note": "posições da coluna descendo a prancha (som único de passos da tomada)"
+        },
+        {
+         "src": "vietna/s05_sold46_0.png",
+         "frames": [
+          "vietna/s05_sold46_0.png",
+          "vietna/s05_sold46_1.png",
+          "vietna/s05_sold46_2.png",
+          "vietna/s05_sold46_3.png"
+         ],
+         "frame_fps": 6,
+         "frame_phase": 3,
+         "from": [
+          24.9,
+          30.0
+         ],
+         "path": [
+          [
+           24.9,
+           30.0
+          ],
+          [
+           54.4,
+           68.0
+          ]
+         ],
+         "path_s": [
+          13.55,
+          18.1
+         ],
+         "h": 11.0,
+         "scale1": 1.5,
+         "t0_s": 13.55,
+         "t1_s": 18.1,
+         "bob": 1.5,
+         "sfx": "none",
+         "note": "posições da coluna descendo a prancha (som único de passos da tomada)"
+        }
+       ]
+      }
      },
      {
       "kind": "date",
@@ -1708,15 +1938,15 @@
          "src": "vietna/cargueiro.png",
          "from": [
           -32,
-          82
+          72
          ],
          "to": [
-          58,
-          82
+          40,
+          65.5
          ],
          "h": 22,
          "t0_s": 0.0,
-         "t1_s": 2.2,
+         "t1_s": 2.4,
          "ease": "out",
          "bob": 1.5,
          "rock": 0.3,
@@ -1809,24 +2039,24 @@
       ],
       "scene": {
        "bg": "vietna/port_50b.jpg",
-       "z0": 1.0,
-       "z1": 1.02,
+       "z0": 1.03,
+       "z1": 1.07,
        "ox": "50%",
        "oy": "50%",
        "pan": [
-        14,
-        -8
+        36,
+        -10
        ],
        "front": "polygon(68.5% 30%, 88% 30%, 88% 72%, 68.5% 72%)",
        "actors": [
         {
          "src": "vietna/cargueiro.png",
          "from": [
-          50,
-          80
+          40,
+          65.5
          ],
          "h": 22,
-         "depth": 1.05,
+         "depth": 1.25,
          "bob": 1.5,
          "rock": 0.3,
          "period": 80,
@@ -1840,25 +2070,25 @@
         {
          "src": "vietna/caixotes.png",
          "from": [
-          50.0,
-          69.0
+          50,
+          61
          ],
          "path": [
           [
-           50.0,
-           69.0
+           50,
+           61
           ],
           [
-           50.0,
-           48.0
+           50,
+           45
           ],
           [
-           59.8,
-           48.0
+           59,
+           45
           ],
           [
-           59.8,
-           58.2
+           59,
+           61.2
           ]
          ],
          "path_s": [
@@ -1869,11 +2099,12 @@
          ],
          "h": 12,
          "rope_from": [
-          50.5,
+          50.1,
           8.0
          ],
          "sfx": "crane",
-         "note": "guincho do guindaste iça os caixotes do navio para o cais"
+         "note": "guincho do guindaste iça os caixotes do navio para o cais",
+         "depth": 1.15
         }
        ]
       },
@@ -2078,18 +2309,18 @@
         {
          "src": "vietna/jipe.png",
          "from": [
-          100,
-          54.0
+          101,
+          62.5
          ],
          "to": [
-          66.5,
-          62.0
+          64,
+          59.5
          ],
-         "h": 19,
+         "h": 12.5,
          "flip": true,
          "scale1": 0.95,
          "tint": "brightness(1.3) contrast(1.05)",
-         "t0_s": 16.3,
+         "t0_s": 16.35,
          "t1_s": 20.9,
          "ease": "linear",
          "bob": 1.5,
@@ -2101,7 +2332,7 @@
           ],
           "color": "rgba(150,130,100,0.45)",
           "dir": [
-           -1.2,
+           1.2,
            -0.4
           ],
           "size": 0.9,

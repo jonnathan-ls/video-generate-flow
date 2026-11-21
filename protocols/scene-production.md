@@ -58,7 +58,7 @@ Cenas já aprovadas não são refeitas. Tipos de cena que se repetem viram **mod
 8. **Autochecagem** (o produtor, antes do revisor):
    - `shot_check.py` PASS, `scene_gates.py` PASS e folha de contato;
    - `python3 pipeline/validate/render_check.py render/Sxx.mp4 --dur <duração>` PASS (volume -14 ±2 LUFS, pico ≤ -1 dBTP, sem tela preta, sem quadro congelado > 2 s, sem silêncio no meio);
-   - `python3 pipeline/validate/transcript_check.py render/Sxx.mp4 --scene Sxx` PASS (a narração bate com o roteiro, palavra por palavra: pega erro de pronúncia do TTS);
+   - `source pipeline/env.sh; .venv/bin/python pipeline/validate/transcript_check.py render/Sxx.mp4 --scenes scenes.json --scene Sxx` PASS (a narração bate com o roteiro, palavra por palavra: pega erro de pronúncia do TTS);
    - quadro **na palavra** de cada ação: o objeto está lá?
    - 3 quadros consecutivos de cada ator andando: a passada e a velocidade estão certas?
    - base de cada objeto acima da legenda, e ator com chão;

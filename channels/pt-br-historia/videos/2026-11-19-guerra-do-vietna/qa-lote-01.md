@@ -237,3 +237,15 @@ Observações: o F8 do S05 ficou em +1,6 p.p., perto do limite de 2; a explosão
 ## Para o ciclo 2 (último, R6)
 
 Corrigir A1–A4 (bloqueiam) e M1–M8 (o protocolo pede todas as médias). Rodar de novo `shot_check.py`, `scene_gates.py` e `fx_check.py --asr`, e mandar ao revisor junto com: 12 quadros consecutivos de cada coluna andando, 8 quadros consecutivos de cada bandeira, quadros em 640×360 dos rótulos de M1 e quadros de S05 13,5–15,8 e S06 5,8–10,2 a 5 fps. Se o ciclo 2 não aprovar, escalar ao usuário com este diagnóstico (R6/R8). Um ponto que vale perguntar ao usuário já: a passada articulada (A4) depende de gerar poses extras no Flow (custo 0 em Nano Banana) ou de recortar pernas; se as duas falharem duas vezes, registrar em `mistakes.md` e escalar (R8).
+
+## Ciclo 2 — revisão com nota (2026-11-21 00:42, Gemini, âncora S05)
+| Cena | Média | Veredito | Defeitos altos |
+|---|---|---|---|
+| S02 | 3,00 | REFAZER | embaixador flutua e desliza; coluna desliza sem passada |
+| S03 | 3,22 | REFAZER | moradores deslizam; helicóptero rápido demais |
+| S04 | 3,10 | REFAZER | multidão já começa com braços erguidos; declarações entram por pop-in |
+| S05 | 3,44 | REFAZER | "plano final fotorrealista" (**o maestro discorda**: a folha mostra o mesmo estilo pintado); explosão da usina não aparece nos quadros |
+| S06 | 3,40 | REFAZER | caixote grande demais no guindaste; "mais de 3/4" sem imagem que ilustre |
+
+**Gates determinísticos:** shot_check, scene_gates e render_check PASS nas 5. transcript_check: "Ba Dinh" (S04) e "Eisenhower" (S06) ouvidos errado pelo Whisper; pode ser pronúncia do TTS (conferir de ouvido). "há/a" (S03) é falso positivo.
+**Leitura do maestro (folhas reduzidas S05, S06):** estilo coerente entre as tomadas, composição boa. Defeito recorrente real: passada fraca das colunas (3 poses em `frames` não bastam ou são parecidas demais). Fim do 2º ciclo → escalado ao usuário (R6/R8). Prévia: `media/pt-br-historia/vietna/render/previa_lote1_c2.mp4`.

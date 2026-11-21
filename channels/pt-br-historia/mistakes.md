@@ -93,3 +93,9 @@
 - **Sintoma:** o usuário viu 2 tarefas em segundo plano rodando sem nada da fila ativo.
 - **Causa:** a condição de saída usava `pgrep -f "bash orchestra/fila.sh"`, que casa com a própria linha de comando da espera; e uma delas esperava "fim bk-cv-documento" no log da fila única, mas a tarefa tinha ido para a fila paralela.
 - **Correção de processo:** espera em segundo plano só olha arquivo (`grep` no log ou existência do resultado JSON), nunca `pgrep -f` com texto que aparece no próprio comando. Ao mudar uma tarefa de fila, trocar também a espera.
+
+## 2026-11-21 — c2-c e c2-d cortados pelo freio de gasto depois do trabalho feito
+- **Sintoma:** as duas tarefas terminaram o render de S02–S06 com validadores PASS e foram interrompidas pelo `freio.sh` (US$ 0,11 cada) sem gravar `orchestra/results/<id>.json`; a fila marcou falha.
+- **Causa:** o executor gastou os últimos minutos abrindo imagens de autoconferência (cada imagem lida pesa no custo do DeepSeek), e o JSON ficava só para o fim.
+- **Correção de processo:** `AGENTS.md` item 5 — gravar o JSON logo após os validadores; depois do render final, não abrir mais imagens (a revisão visual é do `review.sh` e do maestro). O protocolo de cena também corrigido: `transcript_check.py` usa `--scenes scenes.json --scene Sxx`.
+- **Recuperação:** o maestro rodou os gates determinísticos e a revisão com nota sobre os renders já prontos, sem repetir a tarefa.

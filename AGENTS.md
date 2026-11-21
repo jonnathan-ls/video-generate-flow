@@ -13,7 +13,7 @@ Você executa **uma tarefa** escrita por um orquestrador (Claude) em `orchestra/
    ```json
    {"status": "done|failed|blocked", "files": ["caminhos alterados"], "validators": {"shot_check": "PASS|FAIL ...", "scene_gates": "..."}, "summary": "até 10 linhas: o que foi feito", "issues": ["o que ficou fraco ou pendente"]}
    ```
-   Sem esse arquivo, a tarefa conta como falha.
+   Sem esse arquivo, a tarefa conta como falha. **Grave o JSON logo depois que os validadores passarem**, antes de qualquer conferência extra, e atualize-o se mudar algo depois. O freio de gasto (US$ 0,10) interrompe sem aviso; JSON gravado cedo não se perde (2026-11-21). Depois do render final e dos validadores, não abra mais imagens: a revisão visual é do orquestrador.
 6. Seja curto. O orquestrador lê apenas o JSON.
 
 ## Comandos do vídeo Vietnã
