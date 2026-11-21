@@ -88,3 +88,8 @@
 - **Correção de processo:** antes de mandar lote ao Flow, rodar um teste de 2 imagens no modo Agent e confirmar no resultado que não houve fallback. Se o resultado do executor citar "one by one"/fallback, o maestro para e corrige o flow-mcp antes do próximo lote (regra em AGENTS.md).
 - **Atualização (21:45):** a correção demorou porque um processo antigo do flow-mcp (`node dist/index.js`, aberto às 21:20) continuou atendendo os testes, e as correções compiladas não rodavam. Causas da interface corrigidas: botão "Flow Agent", painel "Agent settings" (botão de abrir, formatos com prefixo, sem "Save", painel em 2 níveis com "Back"). O fallback "uma por uma" foi **removido** a pedido do usuário: se o Agente falhar, o job falha com erro e print em `~/.flow-mcp/debug-agent.png`. Teste: 2/2 imagens pelo Agente em 81 s.
 - **Regra:** depois de recompilar o flow-mcp, encerrar todo `node .../flow-mcp/dist/index.js` antes de testar (`pgrep -af flow-mcp/dist`).
+
+## 2026-11-20 — Duas esperas em segundo plano ficaram presas para sempre
+- **Sintoma:** o usuário viu 2 tarefas em segundo plano rodando sem nada da fila ativo.
+- **Causa:** a condição de saída usava `pgrep -f "bash orchestra/fila.sh"`, que casa com a própria linha de comando da espera; e uma delas esperava "fim bk-cv-documento" no log da fila única, mas a tarefa tinha ido para a fila paralela.
+- **Correção de processo:** espera em segundo plano só olha arquivo (`grep` no log ou existência do resultado JSON), nunca `pgrep -f` com texto que aparece no próprio comando. Ao mudar uma tarefa de fila, trocar também a espera.

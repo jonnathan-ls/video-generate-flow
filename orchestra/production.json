@@ -139,11 +139,13 @@
  "approved_scenes": [
   "S01"
  ],
- "now": "Lote 1 ciclo 2: c2-c (S05/S06) na fila; depois c2-d (S02–S06). Estilo decidido: colagem da produção",
+ "now": "PAUSADO pelo usuário: lote 1 ciclo 2 (c2-c interrompido, c2-d não começou)",
  "next": [
   "c2-d",
   "Revisão com nota do lote 1 (orchestra/review.sh, âncora S05) + folha de contato conferida pelo maestro",
   "Lote 1 ao usuário se todas as notas ≥4 e média ≥4,3"
  ],
- "waiting_user": []
+ "waiting_user": [
+  "Autorizar retomada do lote 1 (c2-c, c2-d)"
+ ]
 }

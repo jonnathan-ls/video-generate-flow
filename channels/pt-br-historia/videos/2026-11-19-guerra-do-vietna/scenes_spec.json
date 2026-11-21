@@ -1305,18 +1305,17 @@
       {
        "src": "vietna/prancha.png",
        "from": [
-        52.0,
-        61.25
+        63.75,
+        64.7
        ],
-       "h": 3.2,
-       "flip": true,
+       "h": 4.3,
        "rot": [
-        13.8,
-        13.8
+        0,
+        0
        ],
-       "tint": "brightness(1.45) contrast(1.15)",
+       "tint": "brightness(1.55) contrast(1.2)",
        "sfx": "none",
-       "note": "prancha de desembarque ligando o convés ao cais"
+       "note": "prancha de desembarque do convés da proa ao cais"
       },
       {
        "src": "vietna/coluna_fr46_a.png",
@@ -1330,34 +1329,39 @@
          60.6
         ],
         [
-         52.0,
+         60.0,
          60.6
         ],
         [
-         56.6,
-         60.45
+         63.0,
+         62.2
         ],
         [
-         61.0,
-         60.8
+         66.5,
+         64.3
         ],
         [
-         65.5,
-         60.95
+         68.0,
+         64.6
+        ],
+        [
+         68.4,
+         64.8
         ]
        ],
        "path_s": [
         9.1,
         13.65,
-        14.3,
-        15.2,
+        14.2,
+        14.8,
+        15.4,
         15.9
        ],
        "appear_s": 9.05,
        "h": 3.3,
        "bob": 1.0,
        "sfx": "steps",
-       "note": "passos da tropa que desce a prancha do navio até o cais",
+       "note": "passos da tropa que desce a prancha da proa até o cais",
        "frames": [
         "vietna/coluna_fr46_a.png",
         "vietna/coluna_fr46_b.png",
