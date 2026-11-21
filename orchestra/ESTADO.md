@@ -1,14 +1,14 @@
-# Estado para retomar (atualizado 2026-11-20 22:20)
+# Estado para retomar (atualizado 2026-11-20 23:25)
 
 Arquivo de passagem entre conversas. Um chat novo lê **só isto, `CLAUDE.md`, `orchestra/production.json` e `AGENTS.md`** antes de agir. Atualize ao fim de cada sessão (máx. 60 linhas; o histórico fica em `decisions.md`/`mistakes.md`).
 
 ## Onde estamos
-- **Vídeo:** "Guerra do Vietnã" (54 cenas, ~21 min), `channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/`. Roteiro aprovado. S01 aprovado. Lote 1 (S02–S06) no ciclo 2 de correção: c2-a e c2-b feitos, **c2-c e c2-d pendentes** (comentados em `orchestra/fila.txt`). Produção **pausada** pelo usuário até decidir o estilo.
+- **Vídeo:** "Guerra do Vietnã" (54 cenas, ~21 min), `channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/`. Roteiro aprovado. S01 aprovado. Lote 1 (S02–S06) no ciclo 2 de correção: c2-a e c2-b feitos; **c2-c e c2-d rodando na fila única** desde 23:23 (`orchestra/logs/fila.log`). **Estilo decidido (23:20): colagem da produção, com todo o protocolo** (ver `channels/pt-br-historia/decisions.md`). Lab encerrado; Ink and Toon e Low-Poly ficam para outros temas.
 - **Laboratório Saigon** (`lab/bakeoff-saigon/`, mesmo trecho de 15 s, narração do S42). Saídas em `lab/bakeoff-saigon/out/`.
   - Rodada 1–2 (prontas): colagem nossa (sem revisão), kit director-de-collage, pedido direto sem kit, claude-video (saiu risografia), diorama (prompt styles), código 3D. Comparativo: `out/comparativo_saigon_6.mp4`.
   - Rodada 3 (rodando em 22:20, `orchestra/paralelo.sh` 2 em paralelo): ps_inktoon (pronto), ps_popup, ps_lowpoly, ps_softclay, cv_porto, cv_mesa, cv_documento. Log: `orchestra/logs/paralelo.log`. Resultados: `orchestra/results/bk-ps-*.json`, `bk-cv-*.json`.
   - **Opinião do usuário até agora:** colagem é a melhor abordagem; gostou de código puro 3D e do prompt style (diorama) com ressalvas; claude-video serve a temas específicos/motion graphics.
-- **Próximo passo:** quando a rodada 3 acabar, conferir 1 quadro de cada, montar comparativo, mandar ao usuário e pedir a escolha. Depois, retomar o lote 1 com o estilo escolhido.
+- **Próximo passo:** quando c2-d terminar, rodar `orchestra/review.sh` em S02–S06 (ciclo 2), conferir 1 folha de contato reduzida por cena e, com todas as notas ≥ 4 e média ≥ 4,3, mandar o lote 1 ao usuário. Abaixo disso: é o 2º ciclo, então escalar com diagnóstico (R6/R8).
 
 ## Infra que funciona (não refazer)
 - Render só na GPU: Remotion `--gl=vulkan`; three.js/HyperFrames com Chrome headless do Remotion + flags Vulkan; ffmpeg `h264_nvenc`.
@@ -20,7 +20,7 @@ Arquivo de passagem entre conversas. Um chat novo lê **só isto, `CLAUDE.md`, `
 
 ## Sessão 2026-11-20 (noite)
 - Git: repositório `https://github.com/jonnathan-ls/video-generate-flow` (main). Commit + push ao fim de cada etapa. flow-mcp tem ramo `fix/flow-ui-2026-11-20` (local).
-- Lab rodada 3 pronta: `lab/bakeoff-saigon/out/comparativo_saigon_r3.mp4` (9 estilos). **Aguardando o usuário escolher o estilo.**
+- Lab rodada 3 pronta: `lab/bakeoff-saigon/out/comparativo_saigon_r3.mp4` (9 estilos). Usuário escolheu seguir com a colagem da produção.
 - Gates novos: `orchestra/periodo.sh`, `render_check.py`, `transcript_check.py`, revisão com âncora S05, `rubrics/render-qa.md`. Ouro do repositório antigo extraído (knowledge/collage-direction, longform-production-lessons, production-recipes). O repositório antigo pode ser arquivado; faltou só o `estudo-e-propostas.md` do Ampulheta (estrutura em 3 escalas), opcional.
 
 ## Pendências antes de publicar

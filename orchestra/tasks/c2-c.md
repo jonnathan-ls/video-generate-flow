@@ -7,5 +7,6 @@ Leia os itens A2, A3, M2, B3, B4 e B5 em `channels/pt-br-historia/videos/2026-11
 - **S06:** o cargueiro chega até o cais; os paraquedas abrem em tempos diferentes.
 
 Se precisar de imagem nova (prancha, navio de lado, jipe), gere no Flow, no projeto lacre-vietna, a 0 crédito, pelas regras do AGENTS.md.
+Toda imagem nova do Flow passa por `bash orchestra/periodo.sh <pasta> "Vietnã, 1950–1965: <lugar e equipamentos da cena>"` antes do recorte; reprovada volta ao Flow com o prompt corrigido.
 Edite só S05 e S06 no spec. Prep, render, `shot_check` e `scene_gates`.
 Resultado: `orchestra/results/c2-c.json`.

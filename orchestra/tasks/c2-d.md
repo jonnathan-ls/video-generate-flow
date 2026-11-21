@@ -10,5 +10,6 @@ Leia os itens M3, M4, M6, M8, B1, B7 e B10 em `channels/pt-br-historia/videos/20
 - **Cores de época:** nenhuma calça vermelha nem capacete azul. Corrija com `tint` ou com imagem nova do Flow.
 - **V2:** coloque `pan` + `depth` (parallax real) em pelo menos 1 tomada por cena de S02 a S06.
 
+Toda imagem nova do Flow passa por `bash orchestra/periodo.sh <pasta> "Vietnã, 1950–1965: <lugar e equipamentos da cena>"` antes do recorte; reprovada volta ao Flow com o prompt corrigido.
 Edite só S02 a S06 no spec. Prep, render, `shot_check` e `scene_gates` de S02 a S06.
 Resultado: `orchestra/results/c2-d.json`.

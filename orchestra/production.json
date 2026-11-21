@@ -1,150 +1,149 @@
 {
-  "video": "Guerra do Vietnã",
-  "video_status": "script_approved",
-  "video_dir": "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna",
-  "render_dir": "media/pt-br-historia/vietna/render",
-  "pipeline": [
-    "idea",
-    "selected",
-    "researched",
-    "packaged",
-    "structured",
-    "scripted",
-    "reviewed",
-    "script_approved",
-    "produced",
-    "qa_passed",
-    "uploaded_private",
-    "publish_approved",
-    "scheduled",
-    "published",
-    "analyzed"
-  ],
-  "lotes": [
-    {
-      "id": "L1",
-      "scenes": [
-        "S02",
-        "S03",
-        "S04",
-        "S05",
-        "S06"
-      ],
-      "status": "ciclo 2 em correção",
-      "qa": "qa-lote-01.md"
-    },
-    {
-      "id": "L2",
-      "scenes": [
-        "S07",
-        "S08",
-        "S09",
-        "S10",
-        "S11"
-      ],
-      "status": "produção interrompida"
-    },
-    {
-      "id": "L3",
-      "scenes": [
-        "S12",
-        "S13",
-        "S14",
-        "S15",
-        "S16"
-      ],
-      "status": "a fazer"
-    },
-    {
-      "id": "L4",
-      "scenes": [
-        "S17",
-        "S18",
-        "S19",
-        "S20",
-        "S21"
-      ],
-      "status": "a fazer"
-    },
-    {
-      "id": "L5",
-      "scenes": [
-        "S22",
-        "S23",
-        "S24",
-        "S25",
-        "S26",
-        "S27"
-      ],
-      "status": "a fazer"
-    },
-    {
-      "id": "L6",
-      "scenes": [
-        "S28",
-        "S29",
-        "S30",
-        "S31",
-        "S32"
-      ],
-      "status": "a fazer"
-    },
-    {
-      "id": "L7",
-      "scenes": [
-        "S33",
-        "S34",
-        "S35",
-        "S36",
-        "S37"
-      ],
-      "status": "a fazer"
-    },
-    {
-      "id": "L8",
-      "scenes": [
-        "S38",
-        "S39",
-        "S40",
-        "S41",
-        "S42"
-      ],
-      "status": "a fazer"
-    },
-    {
-      "id": "L9",
-      "scenes": [
-        "S43",
-        "S44",
-        "S45",
-        "S46",
-        "S47",
-        "S48"
-      ],
-      "status": "a fazer"
-    },
-    {
-      "id": "L10",
-      "scenes": [
-        "S49",
-        "S50",
-        "S51",
-        "S52",
-        "S53",
-        "S54"
-      ],
-      "status": "a fazer"
-    }
-  ],
-  "approved_scenes": [
-    "S01"
-  ],
-  "now": "Extração do ouro do repositório antigo (ouro-kit, Sonnet); lab Saigon rodada 3 concluída",
-  "next": [
-    "Usuário escolhe o estilo (comparativo_saigon_r3)",
-    "Retomar lote 1 com os gates novos (periodo, render_check, revisão com âncora)"
-  ],
-  "waiting_user": [
-    "Escolher o estilo para a produção a partir do comparativo da rodada 3"
-  ]
+ "video": "Guerra do Vietnã",
+ "video_status": "script_approved",
+ "video_dir": "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna",
+ "render_dir": "media/pt-br-historia/vietna/render",
+ "pipeline": [
+  "idea",
+  "selected",
+  "researched",
+  "packaged",
+  "structured",
+  "scripted",
+  "reviewed",
+  "script_approved",
+  "produced",
+  "qa_passed",
+  "uploaded_private",
+  "publish_approved",
+  "scheduled",
+  "published",
+  "analyzed"
+ ],
+ "lotes": [
+  {
+   "id": "L1",
+   "scenes": [
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+   ],
+   "status": "ciclo 2 em correção",
+   "qa": "qa-lote-01.md"
+  },
+  {
+   "id": "L2",
+   "scenes": [
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11"
+   ],
+   "status": "produção interrompida"
+  },
+  {
+   "id": "L3",
+   "scenes": [
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
+   ],
+   "status": "a fazer"
+  },
+  {
+   "id": "L4",
+   "scenes": [
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S21"
+   ],
+   "status": "a fazer"
+  },
+  {
+   "id": "L5",
+   "scenes": [
+    "S22",
+    "S23",
+    "S24",
+    "S25",
+    "S26",
+    "S27"
+   ],
+   "status": "a fazer"
+  },
+  {
+   "id": "L6",
+   "scenes": [
+    "S28",
+    "S29",
+    "S30",
+    "S31",
+    "S32"
+   ],
+   "status": "a fazer"
+  },
+  {
+   "id": "L7",
+   "scenes": [
+    "S33",
+    "S34",
+    "S35",
+    "S36",
+    "S37"
+   ],
+   "status": "a fazer"
+  },
+  {
+   "id": "L8",
+   "scenes": [
+    "S38",
+    "S39",
+    "S40",
+    "S41",
+    "S42"
+   ],
+   "status": "a fazer"
+  },
+  {
+   "id": "L9",
+   "scenes": [
+    "S43",
+    "S44",
+    "S45",
+    "S46",
+    "S47",
+    "S48"
+   ],
+   "status": "a fazer"
+  },
+  {
+   "id": "L10",
+   "scenes": [
+    "S49",
+    "S50",
+    "S51",
+    "S52",
+    "S53",
+    "S54"
+   ],
+   "status": "a fazer"
+  }
+ ],
+ "approved_scenes": [
+  "S01"
+ ],
+ "now": "Lote 1 ciclo 2: c2-c (S05/S06) na fila; depois c2-d (S02–S06). Estilo decidido: colagem da produção",
+ "next": [
+  "c2-d",
+  "Revisão com nota do lote 1 (orchestra/review.sh, âncora S05) + folha de contato conferida pelo maestro",
+  "Lote 1 ao usuário se todas as notas ≥4 e média ≥4,3"
+ ],
+ "waiting_user": []
 }

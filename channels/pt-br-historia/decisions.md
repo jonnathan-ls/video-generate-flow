@@ -53,3 +53,8 @@
 - Para a lixeira (recuperável): `.tmp_spec/` (151 MB), 26 quadros de depuração e prévias antigas em `media/pt-br-historia/vietna/render/`, pastas `teste-agent*`/`teste-grid` do `~/flow-mcp-out`.
 - `pipeline/assembly/vietna_spec_*.py` (só deste vídeo) movidos para `videos/2026-11-19-guerra-do-vietna/_work/specgen/`. Regra: código de um vídeo só fica na pasta do vídeo; `pipeline/` é para o que serve a qualquer vídeo.
 - Mantidos: `media/lab/bakeoff-2026-11` (citado em `rubrics/visual.md`), `lab/bakeoff-saigon` (testes em curso), `_work` do vídeo.
+
+## 2026-11-20 — Estilo da produção: colagem do repositório (decisão do usuário)
+- **Contexto:** lab Saigon, 3 rodadas, 9 estilos (`lab/bakeoff-saigon/out/comparativo_saigon_r3.mp4`).
+- **Decisão:** o Vietnã termina na colagem da produção, com todo o protocolo (`protocols/scene-production.md`, gates, revisão com nota). Motivo do usuário: a colagem da produção saiu melhor que a do lab justamente pelo protocolo e pelo fluxo, e trocar de estilo agora perderia a produção em curso.
+- **Para depois:** Ink and Toon (3) e Low-Poly (5) acertaram de primeira; ficam como candidatos para outros temas/canais. Nada do lab entra na produção sem nova decisão.
