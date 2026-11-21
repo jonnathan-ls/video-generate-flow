@@ -1,0 +1,194 @@
+{
+ "theme": "T3",
+ "regex": "lampi|cangac|cangaç|corisco|maria bonita|padre c[ií]cero|volante|coiteiro|sert[aã]o|cangaceir",
+ "queries": [
+  "lampião história completa ",
+  " cangaço documentário ",
+  " corisco diabo loiro ",
+  " maria bonita história ",
+  " padre cícero história completa ",
+  " morte de lampião angico"
+ ],
+ "n_results": 162,
+ "window": [
+  {
+   "id": "ka5q0jT3onI",
+   "duration": 1639,
+   "view_count": 191920,
+   "channel": "Leviatã",
+   "channel_url": "https://www.youtube.com/channel/UCYVY0nte4Ev8Fm3iEvTPhZA",
+   "upload_date": "20260820",
+   "title": "CORISCO: THE LAST CANGACEIRO — DEAD, BUT NOT SURRENDERED",
+   "qs": [
+    "corisco diabo loiro"
+   ],
+   "age": 91
+  },
+  {
+   "id": "cZdYonKtWCA",
+   "duration": 4520,
+   "view_count": 163601,
+   "channel": "Assim Era o Sertão",
+   "channel_url": "https://www.youtube.com/channel/UCpW2WmZxHA-bWp7d4_dr3hg",
+   "upload_date": "20261030",
+   "title": "25 Coisas que MARIA BONITA e as Mulheres de LAMPIÃO Realmente Viveram (Nada de Romance)",
+   "qs": [
+    "maria bonita história"
+   ],
+   "age": 20
+  },
+  {
+   "id": "LmHXW8dQkdo",
+   "duration": 1634,
+   "view_count": 105379,
+   "channel": "Sombras da Caatinga",
+   "channel_url": "https://www.youtube.com/channel/UCdsF_E2xP9EVx1SxDt1yOIg",
+   "upload_date": "20260820",
+   "title": "The COMPLETE Story of Padre Cícero | From His Rise to His Death, This Is How It Was (During the L...",
+   "qs": [
+    "padre cícero história completa"
+   ],
+   "age": 91
+  },
+  {
+   "id": "CCKpo_v-JcA",
+   "duration": 5207,
+   "view_count": 91615,
+   "channel": "Ecos do Passado Oficial",
+   "channel_url": "https://www.youtube.com/channel/UCWElOeqZYagZr38HOLTTAiw",
+   "upload_date": "20260820",
+   "title": "Zé Rufino: The Greatest Enemy of the Cangaceiros | Lampião, Corisco, and the End of the Cangaço",
+   "qs": [
+    "cangaço documentário"
+   ],
+   "age": 91
+  },
+  {
+   "id": "kixymf1ocm8",
+   "duration": 4051,
+   "view_count": 71721,
+   "channel": "Assim Era o Sertão",
+   "channel_url": "https://www.youtube.com/channel/UCpW2WmZxHA-bWp7d4_dr3hg",
+   "upload_date": "20261106",
+   "title": "32 Coisas que PADRE CÍCERO Realmente Fazia em Juazeiro (Santo do Povo, Homem de Poder)",
+   "qs": [
+    "padre cícero história completa"
+   ],
+   "age": 13
+  },
+  {
+   "id": "e4wwZHypCKI",
+   "duration": 4593,
+   "view_count": 22721,
+   "channel": "Ecos do Passado Oficial",
+   "channel_url": "https://www.youtube.com/channel/UCWElOeqZYagZr38HOLTTAiw",
+   "upload_date": "20260820",
+   "title": "The Most Feared Volantes That Hunted Lampião | Full Documentary on Cangaço",
+   "qs": [
+    "cangaço documentário"
+   ],
+   "age": 91
+  },
+  {
+   "id": "3p9EHtwCuU0",
+   "duration": 4392,
+   "view_count": 10544,
+   "channel": "Sertão e Lápis",
+   "channel_url": "https://www.youtube.com/channel/UCTNYqWeJRAqVLL1_50PgrLg",
+   "upload_date": "20261020",
+   "title": "ELA ALIMENTOU LAMPIÃO MACHUCADO  NO DIA SEGUINTE, MARIA BONITA E CANGACEIROS ESTAVAM EM SUA CASA",
+   "qs": [
+    "maria bonita história"
+   ],
+   "age": 30
+  },
+  {
+   "id": "FadHAUde860",
+   "duration": 1233,
+   "view_count": 1811,
+   "channel": "Caso Lacrado",
+   "channel_url": "https://www.youtube.com/channel/UCDXwCc6SGipP5M70JzwnR8g",
+   "upload_date": "20261112",
+   "title": "Corisco, the Blond Devil: The REAL story of the man who tried to avenge Lampião",
+   "qs": [
+    "corisco diabo loiro"
+   ],
+   "age": 7
+  },
+  {
+   "id": "j6-UJGIC1EE",
+   "duration": 1632,
+   "view_count": 1457,
+   "channel": "Sombras da Caatinga",
+   "channel_url": "https://www.youtube.com/channel/UCdsF_E2xP9EVx1SxDt1yOIg",
+   "upload_date": "20260920",
+   "title": "The COMPLETE Story of Padre Cícero | From Church Rejection to the Power of the \"People's Saint\"",
+   "qs": [
+    "padre cícero história completa"
+   ],
+   "age": 60
+  },
+  {
+   "id": "VLgvP_57MOo",
+   "duration": 7123,
+   "view_count": 844,
+   "channel": "Cabras de Lampião",
+   "channel_url": "https://www.youtube.com/channel/UCtxtdKSP4PdZKupF1W5mxYw",
+   "upload_date": "20261030",
+   "title": "O Massacre de Angico - A Morte de Lampião | Temporada 2026",
+   "qs": [
+    "morte de lampião angico"
+   ],
+   "age": 20
+  },
+  {
+   "id": "egZVkbclVPY",
+   "duration": 3302,
+   "view_count": 543,
+   "channel": "JULIANO PESCA SUB   ( Baruch Hashem )",
+   "channel_url": "https://www.youtube.com/channel/UCFqD3aBQPTRaNVs35HCbIWw",
+   "upload_date": "20261020",
+   "title": "Rota do Cangaço - COMO FOI A EMBOSCADA QUE LEVOU À MORTE DE LAMPIÃO? NARRADA ATÈ a GROTA DO ANGICO!",
+   "qs": [
+    "morte de lampião angico"
+   ],
+   "age": 30
+  },
+  {
+   "id": "1jKuPB4b9J0",
+   "duration": 2162,
+   "view_count": 310,
+   "channel": "Historias de Recomeço",
+   "channel_url": "https://www.youtube.com/channel/UCRWu8-oqzJwnBUrzvmSJb7Q",
+   "upload_date": "20260820",
+   "title": "🙏 O Milagre Que Mudou a Vida de Padre Cícero... Mas Quase Apagou Maria de Araújo da História",
+   "qs": [
+    "padre cícero história completa"
+   ],
+   "age": 91
+  },
+  {
+   "id": "oI3idgbJRSY",
+   "duration": 5532,
+   "upload_date": "20261030",
+   "title": "LAMPIÃO RETURNED TO REPAY A DEBT TO AN OLD COITEIRO, BUT FOUND HIM HELD PRISONER BY THE COLONEL.",
+   "qs": [
+    "lampião história completa"
+   ],
+   "age": 20
+  },
+  {
+   "id": "YfjKoQl-sMA",
+   "duration": 3720,
+   "upload_date": "20261109",
+   "title": "LAMPIÃO ATRAVESSOU 10 LÉGUAS DE CAATINGA COM UM COMPANHEIRO… PARA SUA VIÚVA DAR O ÚLTIMO ADEUS!",
+   "qs": [
+    "lampião história completa"
+   ],
+   "age": 10
+  }
+ ],
+ "S_videos": 14,
+ "S_channels": 10,
+ "median_without_leader": 1811
+}

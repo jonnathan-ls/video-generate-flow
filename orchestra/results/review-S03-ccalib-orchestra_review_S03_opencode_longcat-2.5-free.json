@@ -1,0 +1,63 @@
+{
+ "cena": "S03",
+ "ciclo": "calib",
+ "notas": {
+  "V1": 4,
+  "V2": 4,
+  "V3": 2,
+  "V4": 3,
+  "V5": 3,
+  "V6": 4,
+  "V7": 3,
+  "V9": 3,
+  "V10": 4
+ },
+ "media": 3.3,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "8.55-9.91",
+   "defeito": "Bandeira do Brasil não tremula: os 3 quadros de m02 são idênticos, tecido plano e sem mudança de silhueta; a tomada é imagem parada (só possível zoom), o que o padrão reprova.",
+   "correcao": "Animar o tecido com ondulação contínua e variar a borda livre entre quadros; se houver zoom, manter o tecido deformando."
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "0.0-4.2",
+   "defeito": "Moradores de Hanói não caminham de forma crível: em m00 as figuras são minúsculas e os 3 quadros são praticamente iguais, sem pernas alternando nem deslocamento claro pela avenida; a rua fica vazia.",
+   "correcao": "Aproximar o grupo (plano mais fechado) e animar ciclo de marcha com pernas alternadas e deslocamento lateral visível."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "4.2 e 7.2",
+   "defeito": "Quadros pretos nas emendas (a03 4.20, a07 7.20) e a00 0.00: quebram a continuidade da cena ilustrada e o ritmo, com o texto sobre fundo morto.",
+   "correcao": "Usar corte seco ou fade curto (<0.3s) mantendo o fundo pintado; nunca segurar preto com legenda."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "0.10",
+   "defeito": "Rótulo 'HANÓI' pequeno, cinza, sobre árvores escuras: baixo contraste, ilegível em 640x360.",
+   "correcao": "Aumentar a fonte e usar branco com sombra/contorno escuro."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "9.07",
+   "defeito": "Texto 'BRASIL' esmaecido (cinza claro sem contorno) sobre o mar/céu: baixo contraste.",
+   "correcao": "Usar cor sólida de alto contraste com contorno, sem sobrepor a água clara."
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "5.7-7.1",
+   "defeito": "Helicóptero move-se bem (m01), mas convém conferir a escala em relação aos prédios e o modelo em relação a 1975.",
+   "correcao": "Comparar com CH-53/CH-46 da evacuação de 1975 e ajustar o comprimento para ~2x a altura dos prédios."
+  }
+ ],
+ "bom": [
+  "Estilo pictórico consistente e paleta sóbria em todas as tomadas ilustradas.",
+  "Atmosfera forte: névoa em Hanói, fumaça em Saigon, luz serena na baía.",
+  "Legendas sempre no terço inferior, legíveis, sem cobrir os objetos.",
+  "'1945' grande e com bom contraste; anchorage temporal clara.",
+  "Bandeira do Brasil com design correto (verde, losango, globo e faixa).",
+  "Boa profundidade por perspectiva atmosférica nas três tomadas."
+ ]
+}

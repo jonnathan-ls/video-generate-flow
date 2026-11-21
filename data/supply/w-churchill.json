@@ -1,0 +1,146 @@
+{
+ "slug": "w-churchill",
+ "date": "2026-11-19",
+ "queries": [
+  "Winston Churchill história completa",
+  "Winston Churchill documentário",
+  "Winston Churchill",
+  "Winston Churchill biografia",
+  "Winston Churchill como nasceu",
+  "a história de Winston Churchill",
+  "Winston Churchill documentário completo",
+  "Winston Churchill explicado",
+  "Winston Churchill resumo",
+  "Winston Churchill biografia"
+ ],
+ "new_per_query": [
+  [
+   "Winston Churchill história completa",
+   21
+  ],
+  [
+   "Winston Churchill documentário",
+   10
+  ],
+  [
+   "Winston Churchill",
+   11
+  ],
+  [
+   "Winston Churchill biografia",
+   7
+  ],
+  [
+   "Winston Churchill como nasceu",
+   5
+  ],
+  [
+   "a história de Winston Churchill",
+   0
+  ],
+  [
+   "Winston Churchill documentário completo",
+   2
+  ],
+  [
+   "Winston Churchill explicado",
+   1
+  ],
+  [
+   "Winston Churchill resumo",
+   1
+  ],
+  [
+   "Winston Churchill biografia",
+   2
+  ]
+ ],
+ "S_videos": 7,
+ "S_channels": 7,
+ "leader_views": 45883,
+ "median_without_leader": 5553.5,
+ "median_without_top2": 307,
+ "share_below_5k": 0.5,
+ "convergence": true,
+ "meta_ok": "23/60",
+ "grade": "COLETA FALHOU (bloqueio do YouTube: repetir mais tarde, não é oferta zero)",
+ "videos": [
+  {
+   "id": "g0QJFURu7H4",
+   "title": "Por que Churchill era tão ESTRANHO?",
+   "channel": "Círculo da Elite",
+   "subs": 33900,
+   "date": "2026-10-08",
+   "age": 42,
+   "views": 45883,
+   "min": 28.4,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "Ve6jLTZ02Cw",
+   "title": "Winston Churchill: Coragem Inegociável Contra a Tirania",
+   "channel": "Revista Oeste",
+   "subs": 3870000,
+   "date": "2026-10-20",
+   "age": 30,
+   "views": 30203,
+   "min": 16.1,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "9DyulDe1AmY",
+   "title": "De PIOR ALUNO da classe a maior pesadelo de Hitler! | Winston Churchill",
+   "channel": "História com Rafael Cerqueira",
+   "subs": 1740,
+   "date": "2026-10-26",
+   "age": 24,
+   "views": 29639,
+   "min": 96.6,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "fSP9jaNv0cs",
+   "title": "Winston Churchill coragem inegociável contra a tirania",
+   "channel": "Ana Paula Henkel",
+   "subs": 481000,
+   "date": "2026-10-18",
+   "age": 32,
+   "views": 10800,
+   "min": 16.1,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "Z2waW-d1FgI",
+   "title": "Vida completa de Winston Churchill (1874-1965)",
+   "channel": "Biografias Honestas",
+   "subs": 17,
+   "date": "2026-10-09",
+   "age": 41,
+   "views": 307,
+   "min": 40.1,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "d_8gbpD90RE",
+   "title": "Winston Churchill — O Homem que se Recusou a se Render",
+   "channel": "Quem Mudou o Mundo",
+   "subs": 174,
+   "date": "2026-10-05",
+   "age": 45,
+   "views": 168,
+   "min": 78.2,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "MQAsQeNmO-k",
+   "title": "A História Completa de Winston Churchill",
+   "channel": "Fatos em Videos",
+   "subs": 281,
+   "date": "2026-10-11",
+   "age": 39,
+   "views": 64,
+   "min": 23.8,
+   "lang": "pt-BR"
+  }
+ ]
+}

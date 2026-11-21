@@ -1,0 +1,119 @@
+{
+ "duration": 40.07,
+ "events": [
+  {
+   "t": 0.1,
+   "kind": "bell",
+   "reason": "scene:S01",
+   "visual": false
+  },
+  {
+   "t": 0.467,
+   "kind": "label",
+   "reason": "scene:S01@0.47",
+   "visual": false
+  },
+  {
+   "t": 10.66,
+   "kind": "impact",
+   "reason": "word:fugindo",
+   "visual": true
+  },
+  {
+   "t": 11.84,
+   "kind": "whoosh",
+   "reason": "scene:S04",
+   "visual": true
+  },
+  {
+   "t": 12.04,
+   "kind": "sweep",
+   "reason": "motion:S04",
+   "visual": false
+  },
+  {
+   "t": 12.34,
+   "kind": "drum",
+   "reason": "scene:S04",
+   "visual": false
+  },
+  {
+   "t": 13.34,
+   "kind": "drum",
+   "reason": "scene:S04",
+   "visual": false
+  },
+  {
+   "t": 13.72,
+   "kind": "punch",
+   "reason": "word:napoleão",
+   "visual": true
+  },
+  {
+   "t": 14.34,
+   "kind": "drum",
+   "reason": "scene:S04",
+   "visual": false
+  },
+  {
+   "t": 15.34,
+   "kind": "drum",
+   "reason": "scene:S04",
+   "visual": false
+  },
+  {
+   "t": 16.727,
+   "kind": "label",
+   "reason": "scene:S05@0.47",
+   "visual": false
+  },
+  {
+   "t": 19.48,
+   "kind": "silence",
+   "reason": "word:vazio",
+   "visual": false
+  },
+  {
+   "t": 20.913,
+   "kind": "sweep",
+   "reason": "motion:S06",
+   "visual": false
+  },
+  {
+   "t": 26.413,
+   "kind": "pin",
+   "reason": "motion:S06@5.83",
+   "visual": false
+  },
+  {
+   "t": 27.58,
+   "kind": "bell",
+   "reason": "scene:S07",
+   "visual": false
+  },
+  {
+   "t": 27.98,
+   "kind": "label",
+   "reason": "scene:S07@0.60",
+   "visual": false
+  },
+  {
+   "t": 30.75,
+   "kind": "hit",
+   "reason": "scene:S08",
+   "visual": true
+  },
+  {
+   "t": 33.47,
+   "kind": "impact",
+   "reason": "scene:S09",
+   "visual": true
+  },
+  {
+   "t": 35.753,
+   "kind": "hit",
+   "reason": "scene:S09@2.33",
+   "visual": true
+  }
+ ]
+}

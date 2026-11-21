@@ -1,0 +1,6 @@
+mimo-v2.6-flash-free {"status": "done", "files": ["studio/remotion/src/vietna/scene.tsx", "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json", "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes.json", "media/pt-br-historia/vietna/render/props/S03.json", "media/pt-br-historia/vie
+orchestra/run.sh: linha 17: erro de sintaxe próximo ao token inesperado `;;'
+orchestra/run.sh: linha 17: ` -p --model ${M:-sonnet} --permission-mode acceptEdits --allowedTools "Read,Edit,Write,Glob,Grep,Bash" --disallowedTools "Bash(*.env*)" "$MSG" > "$L" 2>&1 ;;'
+deepseek-v4.1-flash-free 
+big-pickle {"status": "done", "files": ["studio/remotion/src/vietna/scene.tsx", "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json", "media/pt-br-historia/vietna/render/props/S03.json", "media/pt-br-historia/vietna/render/S03.mp4", "media/pt-br-historia/vietna/render/S03_video.mp4", "
+FIM

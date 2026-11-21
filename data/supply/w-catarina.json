@@ -1,0 +1,124 @@
+{
+ "slug": "w-catarina",
+ "date": "2026-11-19",
+ "queries": [
+  "Catarina, a Grande história completa",
+  "Catarina, a Grande documentário",
+  "Catarina, a Grande",
+  "Catarina, a Grande biografia",
+  "Catarina, a Grande como nasceu",
+  "a história de Catarina, a Grande",
+  "Catarina, a Grande documentário completo",
+  "Catarina, a Grande explicado",
+  "Catarina, a Grande resumo",
+  "Catarina II da Rússia"
+ ],
+ "new_per_query": [
+  [
+   "Catarina, a Grande história completa",
+   7
+  ],
+  [
+   "Catarina, a Grande documentário",
+   9
+  ],
+  [
+   "Catarina, a Grande",
+   0
+  ],
+  [
+   "Catarina, a Grande biografia",
+   1
+  ],
+  [
+   "Catarina, a Grande como nasceu",
+   3
+  ],
+  [
+   "a história de Catarina, a Grande",
+   2
+  ],
+  [
+   "Catarina, a Grande documentário completo",
+   3
+  ],
+  [
+   "Catarina, a Grande explicado",
+   1
+  ],
+  [
+   "Catarina, a Grande resumo",
+   3
+  ],
+  [
+   "Catarina II da Rússia",
+   2
+  ]
+ ],
+ "S_videos": 5,
+ "S_channels": 5,
+ "leader_views": 382893,
+ "median_without_leader": 2642.5,
+ "median_without_top2": 210,
+ "share_below_5k": 0.5,
+ "convergence": false,
+ "meta_ok": "30/31",
+ "grade": "TRIAGEM (não serve para decidir)",
+ "videos": [
+  {
+   "id": "qE2Sh48yUgQ",
+   "title": "OS LUGARES QUE VOCÊ NUNCA VIU EM SANTA CATARINA [Documentário]",
+   "channel": "Mundo Revelado",
+   "subs": 27000,
+   "date": "2026-09-11",
+   "age": 69,
+   "views": 382893,
+   "min": 38.3,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "wYKS1q_fruc",
+   "title": "De onde surgiu o reacionarismo em Santa Catarina? | Richard Althoff",
+   "channel": "Farol Brasil (Jones Manoel)",
+   "subs": 87100,
+   "date": "2026-10-16",
+   "age": 34,
+   "views": 94719,
+   "min": 95.3,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "9uQmK7gIqgs",
+   "title": "FURACÃO CATARINA: A Tempestade Que Voltou Para o Brasil | Documentário Completo",
+   "channel": "Dia Zero",
+   "subs": 359,
+   "date": "2026-10-12",
+   "age": 38,
+   "views": 5075,
+   "min": 48.5,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "C96gQ1KXSxk",
+   "title": "Fria, ambiciosa e devassa: quem foi de verdade a Catarina, a Grande",
+   "channel": "Brasil Tech 2050",
+   "subs": 37,
+   "date": "2026-11-10",
+   "age": 9,
+   "views": 210,
+   "min": 120.6,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "PoOfPugQAco",
+   "title": "Toda a História de Catarina II em 21 Minutos | A Princesa Alemã que Conquistou o Trono da Rússia",
+   "channel": "newbeghining",
+   "subs": 9,
+   "date": "2026-11-02",
+   "age": 17,
+   "views": 209,
+   "min": 23.7,
+   "lang": "pt-PT"
+  }
+ ]
+}

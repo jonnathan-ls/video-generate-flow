@@ -1,0 +1,102 @@
+{
+ "slug": "w-lenin",
+ "date": "2026-11-19",
+ "queries": [
+  "Lenin história completa",
+  "Lenin documentário",
+  "Lenin",
+  "Lenin biografia",
+  "Lenin como nasceu",
+  "a história de Lenin",
+  "Lenin documentário completo",
+  "Lenin explicado",
+  "Lenin resumo",
+  "Lenin Revolução Russa"
+ ],
+ "new_per_query": [
+  [
+   "Lenin história completa",
+   22
+  ],
+  [
+   "Lenin documentário",
+   10
+  ],
+  [
+   "Lenin",
+   5
+  ],
+  [
+   "Lenin biografia",
+   6
+  ],
+  [
+   "Lenin como nasceu",
+   5
+  ],
+  [
+   "a história de Lenin",
+   2
+  ],
+  [
+   "Lenin documentário completo",
+   7
+  ],
+  [
+   "Lenin explicado",
+   2
+  ],
+  [
+   "Lenin resumo",
+   1
+  ],
+  [
+   "Lenin Revolução Russa",
+   0
+  ]
+ ],
+ "S_videos": 3,
+ "S_channels": 3,
+ "leader_views": 7469,
+ "median_without_leader": 635.0,
+ "median_without_top2": null,
+ "share_below_5k": 1.0,
+ "convergence": true,
+ "meta_ok": "39/60",
+ "grade": "COLETA FALHOU (bloqueio do YouTube: repetir mais tarde, não é oferta zero)",
+ "videos": [
+  {
+   "id": "9A8LhvKYTMw",
+   "title": "A MORTE DE LENIN: O QUE A MEDICINA E OS ARQUIVOS SOVIÉTICOS REVELARAM",
+   "channel": "Memórias Ocultas da URSS",
+   "subs": 7310,
+   "date": "2026-09-12",
+   "age": 68,
+   "views": 7469,
+   "min": 76.8,
+   "lang": "pt"
+  },
+  {
+   "id": "O_gvtx9_XV0",
+   "title": "Quem Foi VLADIMIR LENIN? A História Por Trás do Mito",
+   "channel": "Mentes Imortais",
+   "subs": 234,
+   "date": "2026-08-10",
+   "age": 101,
+   "views": 788,
+   "min": 16.0,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "E4mGCszGD_k",
+   "title": "ANTES DE LENIN: COMO O COMUNISMO REALMENTE NASCEU",
+   "channel": "Arquivos do Velho Mundo",
+   "subs": 3270,
+   "date": "2026-08-14",
+   "age": 97,
+   "views": 482,
+   "min": 18.7,
+   "lang": "pt-BR"
+  }
+ ]
+}

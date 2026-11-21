@@ -1,0 +1,28 @@
+# Estado para retomar (atualizado 2026-11-20 22:20)
+
+Arquivo de passagem entre conversas. Um chat novo lê **só isto, `CLAUDE.md`, `orchestra/production.json` e `AGENTS.md`** antes de agir. Atualize ao fim de cada sessão (máx. 60 linhas; o histórico fica em `decisions.md`/`mistakes.md`).
+
+## Onde estamos
+- **Vídeo:** "Guerra do Vietnã" (54 cenas, ~21 min), `channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/`. Roteiro aprovado. S01 aprovado. Lote 1 (S02–S06) no ciclo 2 de correção: c2-a e c2-b feitos, **c2-c e c2-d pendentes** (comentados em `orchestra/fila.txt`). Produção **pausada** pelo usuário até decidir o estilo.
+- **Laboratório Saigon** (`lab/bakeoff-saigon/`, mesmo trecho de 15 s, narração do S42). Saídas em `lab/bakeoff-saigon/out/`.
+  - Rodada 1–2 (prontas): colagem nossa (sem revisão), kit director-de-collage, pedido direto sem kit, claude-video (saiu risografia), diorama (prompt styles), código 3D. Comparativo: `out/comparativo_saigon_6.mp4`.
+  - Rodada 3 (rodando em 22:20, `orchestra/paralelo.sh` 2 em paralelo): ps_inktoon (pronto), ps_popup, ps_lowpoly, ps_softclay, cv_porto, cv_mesa, cv_documento. Log: `orchestra/logs/paralelo.log`. Resultados: `orchestra/results/bk-ps-*.json`, `bk-cv-*.json`.
+  - **Opinião do usuário até agora:** colagem é a melhor abordagem; gostou de código puro 3D e do prompt style (diorama) com ressalvas; claude-video serve a temas específicos/motion graphics.
+- **Próximo passo:** quando a rodada 3 acabar, conferir 1 quadro de cada, montar comparativo, mandar ao usuário e pedir a escolha. Depois, retomar o lote 1 com o estilo escolhido.
+
+## Infra que funciona (não refazer)
+- Render só na GPU: Remotion `--gl=vulkan`; three.js/HyperFrames com Chrome headless do Remotion + flags Vulkan; ffmpeg `h264_nvenc`.
+- Fila: `fila.sh` (única, para tarefas com Flow) e `paralelo.sh <N> <lista>` (sem Flow). Ambas com `setsid nohup`.
+- Executores: `orchestra/run.sh claude|opencode|gemini|dsh <id> [modelo]`; `MCP=orchestra/mcp-flow.json` dá o Flow ao Sonnet CLI.
+- **flow-mcp** (`~/flow-mcp`), corrigido em 2026-11-20 para a interface nova (botão "Flow Agent", painel "Agent settings" em 2 níveis). **Sem fallback um-a-um:** erro de Agent = falha com print em `~/.flow-mcp/debug-agent.png`. Depois de recompilar, matar `node .../flow-mcp/dist/index.js` antigo. Visualização do Flow: Grid S. Projetos: `lacre-vietna` (produção), `lacre-lab` (lab).
+- Painel: `python3 orchestra/dashboard/server.py` → http://localhost:8765. Galeria claude-video: http://127.0.0.1:8770/.
+- Frames rápidos: `bash orchestra/tools/quadros.sh <cena> <tempos|auto> [props]`.
+
+## Pendências antes de publicar
+- R13: termos comerciais do Flow. Fontes iconográficas (l1-icono) em `sources.md`.
+- Saldo DeepSeek ≈ US$ 1,08.
+
+## Ideias de qualidade em aberto (propostas ao usuário, não aprovadas)
+1. Levar ao nosso motor de colagem a câmera em camadas e a textura papel/filme do kit director-de-collage.
+2. Checagem de período por visão (Gemini) em cada imagem do Flow antes de animar (palácio errado, fuzil de ferrolho apareceram no lab).
+3. Limpeza feita em 2026-11-20 (ver decisions.md). Código só de um vídeo fica em `_work/` do vídeo (ex.: `_work/specgen/`).

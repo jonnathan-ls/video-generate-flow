@@ -1,0 +1,58 @@
+{
+ "cena": "S03",
+ "ciclo": "calib",
+ "notas": {
+  "V1": 4,
+  "V2": 4,
+  "V3": 2,
+  "V4": 3,
+  "V5": 3,
+  "V6": 4,
+  "V7": 3,
+  "V9": 2,
+  "V10": 3
+ },
+ "media": 3.1,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "2.10s",
+   "defeito": "(b) falha: em m00 os três quadros seguidos mostram os moradores com pernas na mesma pose e sem deslocamento — figuras congeladas/deslizando. A ação 'caminham com bandeiras' não acontece na palavra 'antes do pedido'.",
+   "correcao": "Reanimar com ciclo alternado de pernas e leve translação para a frente, sincronizado ao cue, com os pés assentados no chão."
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "8.55s",
+   "defeito": "(a) tecido sem ondulação: em m02 a bandeira do Brasil está praticamente idêntica nos três quadros — não 'tremula no mastro'. Não há faixas verticais/manchas, mas o tecido é plano e a borda livre não se move.",
+   "correcao": "Animar ondulação do tecido (onda percorrendo a borda livre) no tempo de 'há um lugar para o Brasil', sem criar degraus ou faixas."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "0.10s, 9.07s",
+   "defeito": "(f) sim: rótulos pequenos e de baixo contraste — 'HANÓI' (canto superior) e '1965' (sob 'BRASIL') ficam ilegíveis em 640x360.",
+   "correcao": "Aumentar corpo e contraste desses rótulos ou aplicar fundo/contorno sutil."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "5.70s–7.10s",
+   "defeito": "V7: a tomada de Saigon não recebe rótulo de contexto estilizado (data/local), ao contrário de 'HANÓI/1945' e 'BRASIL/1965' — rotulagem inconsistente.",
+   "correcao": "Acrescentar rótulo equivalente, ex.: 'SAIGON 1975', no mesmo padrão tipográfico."
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "9.07s",
+   "defeito": "(e) verificar: em 1965 a bandeira brasileira correta teria 22 estrelas; se o desenho mostrar 27, é anacronismo.",
+   "correcao": "Conferir e ajustar a quantidade de estrelas ao anorotulado."
+  }
+ ],
+ "bom": [
+  "V1: estilo pictórico dessaturado, vinheta e tipografia consistentes nas três tomadas.",
+  "V2: bom escalonamento de planos — ruas de Hanói, cidade de Saigon com fumaça e baía do Rio.",
+  "V6: atmosfera melancólica e iluminação coerentes entre as cenas.",
+  "Legenda principal legível em 640x360 e posicionada sem cobrir os objetos.",
+  "(c) escala coerente entre moradores, helicóptero, prédios e mastro.",
+  "(d) contato ok: pés no chão, bandeira presa ao mastro, helicóptero no ar sem carga solta.",
+  "O helicóptero atravessa o céu de forma plausível entre 5.7s e 7.1s."
+ ]
+}

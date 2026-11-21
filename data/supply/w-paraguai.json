@@ -1,0 +1,102 @@
+{
+ "slug": "w-paraguai",
+ "date": "2026-11-19",
+ "queries": [
+  "Guerra do Paraguai história completa",
+  "Guerra do Paraguai documentário",
+  "Guerra do Paraguai",
+  "Guerra do Paraguai biografia",
+  "Guerra do Paraguai como nasceu",
+  "a história de Guerra do Paraguai",
+  "Guerra do Paraguai documentário completo",
+  "Guerra do Paraguai explicado",
+  "Guerra do Paraguai resumo",
+  "Guerra do Paraguai Brasil"
+ ],
+ "new_per_query": [
+  [
+   "Guerra do Paraguai história completa",
+   10
+  ],
+  [
+   "Guerra do Paraguai documentário",
+   5
+  ],
+  [
+   "Guerra do Paraguai",
+   1
+  ],
+  [
+   "Guerra do Paraguai biografia",
+   4
+  ],
+  [
+   "Guerra do Paraguai como nasceu",
+   0
+  ],
+  [
+   "a história de Guerra do Paraguai",
+   1
+  ],
+  [
+   "Guerra do Paraguai documentário completo",
+   0
+  ],
+  [
+   "Guerra do Paraguai explicado",
+   1
+  ],
+  [
+   "Guerra do Paraguai resumo",
+   0
+  ],
+  [
+   "Guerra do Paraguai Brasil",
+   0
+  ]
+ ],
+ "S_videos": 3,
+ "S_channels": 3,
+ "leader_views": 47034,
+ "median_without_leader": 7166.0,
+ "median_without_top2": null,
+ "share_below_5k": 0.0,
+ "convergence": true,
+ "meta_ok": "22/22",
+ "grade": "NÍVEL DECISÃO",
+ "videos": [
+  {
+   "id": "NTFQm8wfNDw",
+   "title": "Guerra do Paraguai - 160 anos de polêmicas",
+   "channel": "Paulo Rezzutti",
+   "subs": 622000,
+   "date": "2026-08-03",
+   "age": 108,
+   "views": 47034,
+   "min": 126.8,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "6-2hHqWayH0",
+   "title": "Guerra do Paraguai: A História Completa que o Brasil Prefere Não te Contar",
+   "channel": "Brasil Conflito",
+   "subs": 84,
+   "date": "2026-08-19",
+   "age": 92,
+   "views": 8476,
+   "min": 40.0,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "0JJ3k7TteMU",
+   "title": "A BRUTAL Guerra do PARAGUAI - História Completa",
+   "channel": "Naquele Tempo",
+   "subs": 37,
+   "date": "2026-11-05",
+   "age": 14,
+   "views": 5856,
+   "min": 30.6,
+   "lang": "pt-PT"
+  }
+ ]
+}

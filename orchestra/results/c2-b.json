@@ -1,0 +1,49 @@
+{
+ "status": "done",
+ "files": [
+  "studio/remotion/src/vietna/scene.tsx",
+  "studio/remotion/public/vietna/coluna_br65_a.png",
+  "studio/remotion/public/vietna/coluna_br65_b.png",
+  "studio/remotion/public/vietna/coluna_br65_c.png",
+  "studio/remotion/public/vietna/coluna_civis_45_a.png",
+  "studio/remotion/public/vietna/coluna_civis_45_b.png",
+  "studio/remotion/public/vietna/coluna_civis_45_c.png",
+  "studio/remotion/public/vietna/coluna_fr46_a.png",
+  "studio/remotion/public/vietna/coluna_fr46_b.png",
+  "studio/remotion/public/vietna/coluna_fr46_c.png",
+  "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json",
+  "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes.json",
+  "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/sources.md",
+  "media/pt-br-historia/vietna/render/props/S02.json",
+  "media/pt-br-historia/vietna/render/props/S03.json",
+  "media/pt-br-historia/vietna/render/props/S04.json",
+  "media/pt-br-historia/vietna/render/props/S05.json",
+  "media/pt-br-historia/vietna/render/S02.mp4",
+  "media/pt-br-historia/vietna/render/S03.mp4",
+  "media/pt-br-historia/vietna/render/S04.mp4",
+  "media/pt-br-historia/vietna/render/S05.mp4",
+  "media/pt-br-historia/vietna/render/S02_sheet.jpg",
+  "media/pt-br-historia/vietna/render/S03_sheet.jpg",
+  "media/pt-br-historia/vietna/render/S04_sheet.jpg",
+  "media/pt-br-historia/vietna/render/S05_sheet.jpg",
+  "media/pt-br-historia/vietna/render/qa_c2b/"
+ ],
+ "validators": {
+  "shot_check": "PASS S02 · PASS S03 · PASS S04 · PASS S05 · PASS cota mapa/texto/doc sem cena: 0% de 89s",
+  "scene_gates": "PASS 4/4 — S02 28,1s/7 tomadas, S03 9,9s/3, S04 22,7s/6, S05 28,5s/5 · parados nenhum · -14,6 a -14,9 LUFS, pico -1,4 a -1,7 · fx PASS (inclui F11)",
+  "tsc": "sem erro em scene.tsx; restam os 2 erros antigos de src/thumbs/GuerraVietna.tsx (fora do escopo)",
+  "frames_de_pernas": "12 quadros consecutivos a 30 fps em S02 10,0s, S03 1,5s, S04 2,0s e S05 24,5s: as pernas trocam de fase (qa_c2b/*_12frames_*.png)"
+ },
+ "summary": "Motor: campos aditivos `frames`/`frame_fps` (padrão 6) no ator — enquanto anda alterna as poses, parado mostra a 1ª; `gait`/`slices` seguem intactos para quem não usa `frames`. Poses: 3 colunas de passada geradas no Flow (projeto lacre-vietna, 0 crédito): S02 soldados brasileiros 1965 (verde-oliva, M1, coturno preto), S03/S04 moradores de Hanói 1945 (S04 usa os mesmos com flip), S05 franceses 1946 (cáqui, M1 verde, botina marrom). Recorte no chroma_cut e alinhamento pela base feito num canvas comum por família (mesma escala, x da fonte preservado, base no fundo) — as poses do Flow vinham deslocadas até 30 px na vertical, o que daria pulo. Spec: as 6 colunas passaram a usar `frames` (A/B/C, 6 fps); h recalibrado (26,7 / 24,4 / 10,3 / 11,3 / 24,7); S02 anda de 68,5% a 94,5% (0,51 altura/s) para não cruzar o letreiro TROPAS, as demais 0,69–0,71 altura/s. Subi o zoom de S02 t3, S03 t1 e S04 t1 para 19% porque, com o M7 do c2-a, sem pan e com zoom < 15% o F11 falhava nessas cenas. Fontes: ICO-BR65 e ICO-CEFEO em sources.md (de l1-icono.json), pendência da farda brasileira fechada. Prep, render e mix de S02–S05 refeitos.",
+ "issues": [
+  "F11 de S02/S03/S04 só passa porque aumentei o zoom das minhas tomadas para 19% (1,03→1,19). O V2 (parallax com pan+depth) continua sendo do c2-d; se o c2-d mexer no zoom dessas tomadas, rodar scene_gates de novo.",
+  "S05 t2 e t3 ainda têm os defeitos de escala/camada do A3 (tropa com altura de chaminé, pés na beirada do cais, coluna na frente da perna do guindaste): o c2-b só trocou a passada; o resto é do c2-c.",
+  "S04 t1 reusa os PNG do S03 (mesmos moradores, espelhados por `flip`); não gerei um conjunto próprio para o S04.",
+  "As poses do Flow já estavam baixadas (S02/S03/S04/S05_coluna_poseA/B/C.jpg) por uma execução parcial anterior desta mesma tarefa; eu refiz o recorte em resolução nativa (os PNG anteriores estavam comprimidos na horizontal, ~0,63x) e recalibrei o h.",
+  "`pipeline/assembly/vietna_spec_lote1.py` ainda gera as colunas com `slices`/`gait`; se ele for rodado de novo, os campos `frames` e os h novos do spec são perdidos.",
+  "Cadência: com `frame_fps` 6 as poses trocam a cada 5 quadros (QA pedia 4–6), mas a 0,7 altura/s isso dá passo curto; se o revisor achar acelerado, baixar `frame_fps` para 3–4 por ator.",
+  "O prompt das poses novas não ficou registrado em `lab/flow-prompts-lote1.md` (só em sources.md, com o texto da instrução de pose).",
+  "Sobras na pasta: `soldados_br65.png`, `civis_45.png`, `soldiers_46.png` e `walk_*.png` não são mais usados por nenhuma cena.",
+  "Evidência em media/pt-br-historia/vietna/render/qa_c2b/: tiras de 12 quadros consecutivos das 4 colunas, quadros de início/fim de S02/S03/S04 e dos três momentos do S05, e o comparativo do recorte antigo x novo."
+ ]
+}

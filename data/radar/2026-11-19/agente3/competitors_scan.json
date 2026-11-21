@@ -1,0 +1,3026 @@
+[
+ {
+  "url": "https://www.youtube.com/@canalminutosfinais",
+  "channel": null,
+  "subs": 20300,
+  "n_listed": 15,
+  "n_long": 15,
+  "median15_long": 30000.0,
+  "base_ids": [
+   "1VbAZmWidt4",
+   "TCOD1ntz4rc",
+   "yul4OEdwpHI",
+   "Aw7vhbyLcyc",
+   "oikqOf-A4Gw",
+   "aUPPAJw4a4g",
+   "jybrMbRWvYQ",
+   "t6DMsMn7QPk",
+   "pdvtLh8lf7Y",
+   "sfol3JWJ1SQ",
+   "i_8q9h2O6FE",
+   "A9kUr8uFu-Q",
+   "b9lOLqH0rlw",
+   "OL6Wytpl59I"
+  ],
+  "candidates": [
+   {
+    "id": "A9kUr8uFu-Q",
+    "title": "A TRAGÉDIA DE GALVESTON: A Cidade Que o Oceano Apagou em Uma Única Noite",
+    "channel": "Minutos Finais",
+    "channel_follower_count": 20300,
+    "upload_date": "20260801",
+    "view_count": 1065057,
+    "duration": 1501,
+    "age": 110,
+    "median15": 30000.0,
+    "multiple": 35.5,
+    "breakout": true
+   },
+   {
+    "id": "b9lOLqH0rlw",
+    "title": "A TRAGÉDIA DO TITANIC: A Verdade Sobre o Navio Inafundável",
+    "channel": "Minutos Finais",
+    "channel_follower_count": 20300,
+    "upload_date": "20260725",
+    "view_count": 322155,
+    "duration": 1775,
+    "age": 117,
+    "median15": 30000.0,
+    "multiple": 10.7,
+    "breakout": true
+   },
+   {
+    "id": "OL6Wytpl59I",
+    "title": "A TRAGÉDIA DE POMPEIA: A cidade que foi engolida pelo Vesúvio",
+    "channel": "Minutos Finais",
+    "channel_follower_count": 20300,
+    "upload_date": "20260718",
+    "view_count": 1113340,
+    "duration": 1761,
+    "age": 124,
+    "median15": 30000.0,
+    "multiple": 37.1,
+    "breakout": false
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "1VbAZmWidt4",
+    "title": "THE TRAGEDY OF HERCULANEUM: The neighboring city of Pompeii wiped out by Vesuvius",
+    "view_count": 1200,
+    "age": 10,
+    "duration": 1417
+   },
+   {
+    "id": "TCOD1ntz4rc",
+    "title": "The Last Humans Before We Became Alone",
+    "view_count": 12000,
+    "age": 13,
+    "duration": 1463
+   },
+   {
+    "id": "yul4OEdwpHI",
+    "title": "TRAGEDY IN THE AMAZON: The Night That Turned Into a Nightmare",
+    "view_count": 36000,
+    "age": 20,
+    "duration": 1420
+   },
+   {
+    "id": "Aw7vhbyLcyc",
+    "title": "HIROSHIMA AND NAGASAKI: The 43 Seconds That Changed History",
+    "view_count": 1300,
+    "age": 30,
+    "duration": 1716
+   },
+   {
+    "id": "oikqOf-A4Gw",
+    "title": "THE BANQIAO TRAGEDY: 62 dams collapsed and an entire city was swallowed by water",
+    "view_count": 1000,
+    "age": 30,
+    "duration": 1687
+   },
+   {
+    "id": "aUPPAJw4a4g",
+    "title": "THE NEW ENGLAND TRAGEDY: The hurricane that killed hundreds in a few hours",
+    "view_count": 5700,
+    "age": 30,
+    "duration": 1540
+   },
+   {
+    "id": "jybrMbRWvYQ",
+    "title": "THE LITUYA BAY TRAGEDY: The Wave That Rose Taller Than a Skyscraper",
+    "view_count": 62000,
+    "age": 60,
+    "duration": 1412
+   },
+   {
+    "id": "t6DMsMn7QPk",
+    "title": "THE LONDON TRAGEDY OF 1952: The Invisible Killer That Killed 12,000 People",
+    "view_count": 24000,
+    "age": 60,
+    "duration": 1556
+   },
+   {
+    "id": "pdvtLh8lf7Y",
+    "title": "THE TOHOKU TRAGEDY: Japan Destroyed in 6 Minutes",
+    "view_count": 21000,
+    "age": 60,
+    "duration": 1614
+   },
+   {
+    "id": "sfol3JWJ1SQ",
+    "title": "THE MOUNT ST. HELENS TRAGEDY: The Day the Mountain Destroyed Everything",
+    "view_count": 240000,
+    "age": 60,
+    "duration": 1657
+   },
+   {
+    "id": "i_8q9h2O6FE",
+    "title": "A TRAGÉDIA DE VALDIVIA 1960: O Terremoto Mais Poderoso Que a Humanidade Já Registrou",
+    "view_count": 154000,
+    "age": 91,
+    "duration": 1491
+   },
+   {
+    "id": "A9kUr8uFu-Q",
+    "title": "THE GALVESTON TRAGEDY: The City the Ocean Erased in a Single Night",
+    "view_count": 1000000,
+    "age": 91,
+    "duration": 1502
+   },
+   {
+    "id": "b9lOLqH0rlw",
+    "title": "THE TITANIC TRAGEDY: The Truth About the Unsinkable Ship",
+    "view_count": 322000,
+    "age": 91,
+    "duration": 1775
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@HistóriasdoAncião",
+  "channel": null,
+  "subs": 5660,
+  "n_listed": 6,
+  "n_long": 1,
+  "median15_long": 986000,
+  "base_ids": [
+   "R4jA79FHl2o"
+  ],
+  "candidates": [],
+  "window_longs": [],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@grandesdinastias",
+  "channel": null,
+  "subs": 30300,
+  "n_listed": 23,
+  "n_long": 22,
+  "median15_long": 63000,
+  "base_ids": [
+   "cG46rieNz3Q",
+   "QgUP4BRl-dc",
+   "LonluKuz7_0",
+   "PQREF7c2_38",
+   "RdYgqS1oXKM",
+   "X4xge2WSSNE",
+   "KKoF3BXezf8",
+   "G4tsUmWpKl0",
+   "n7Nt3Jd3xgc",
+   "oFSXVGZrBqI",
+   "b1IALor0okE",
+   "D80CjB55QTA",
+   "oh7_cahGdQ8",
+   "tVWS3USOAt0",
+   "O_B9iE43mIU"
+  ],
+  "candidates": [
+   {
+    "id": "8QMhW2Kcxyg",
+    "title": "Como a Família Que Construiu São Paulo Morreu Na Pobreza",
+    "channel": "Grandes Dinastias",
+    "channel_follower_count": 30300,
+    "upload_date": "20260827",
+    "view_count": 736562,
+    "duration": 1914,
+    "age": 84,
+    "median15": 63000,
+    "multiple": 11.7,
+    "breakout": true
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "cG46rieNz3Q",
+    "title": "The Brutal Fall of the Most Powerful Family in Imperial Brazil",
+    "view_count": 6400,
+    "age": 8,
+    "duration": 2744
+   },
+   {
+    "id": "QgUP4BRl-dc",
+    "title": "The Tragic History of the German Family That Controlled Santa Catarina",
+    "view_count": 34000,
+    "age": 13,
+    "duration": 2795
+   },
+   {
+    "id": "LonluKuz7_0",
+    "title": "War, Betrayal, and Fortune: The Fall of the Owners of Pernambuco",
+    "view_count": 241000,
+    "age": 13,
+    "duration": 2595
+   },
+   {
+    "id": "PQREF7c2_38",
+    "title": "Fires, Heirs, and Billions: The Fall of the Matte Leão Empire",
+    "view_count": 103000,
+    "age": 20,
+    "duration": 2168
+   },
+   {
+    "id": "RdYgqS1oXKM",
+    "title": "The Dutch Family That Dominated the Sugar Industry and Disappeared from History",
+    "view_count": 12000,
+    "age": 20,
+    "duration": 3138
+   },
+   {
+    "id": "X4xge2WSSNE",
+    "title": "How the Family That Ruled Minas Gerais Lost Their Empire",
+    "view_count": 190000,
+    "age": 27,
+    "duration": 2886
+   },
+   {
+    "id": "KKoF3BXezf8",
+    "title": "The Billionaire Marriage That Ended in Tragedy in Monaco",
+    "view_count": 17000,
+    "age": 30,
+    "duration": 2431
+   },
+   {
+    "id": "G4tsUmWpKl0",
+    "title": "Who Are the Most Powerful Families in Brazilian Politics — and How They Built Their Power",
+    "view_count": 76000,
+    "age": 30,
+    "duration": 2554
+   },
+   {
+    "id": "n7Nt3Jd3xgc",
+    "title": "The 1930 Revolution That Changed Brazilian Politics Forever",
+    "view_count": 125000,
+    "age": 30,
+    "duration": 2396
+   },
+   {
+    "id": "oFSXVGZrBqI",
+    "title": "The Immigrant Who Built Brazil's Tallest Building (And Lost Everything To It)",
+    "view_count": 11000,
+    "age": 30,
+    "duration": 2790
+   },
+   {
+    "id": "b1IALor0okE",
+    "title": "How the Family That Ruled Rio Saw Their Empire Crumble",
+    "view_count": 54000,
+    "age": 30,
+    "duration": 2671
+   },
+   {
+    "id": "D80CjB55QTA",
+    "title": "Power, Industry, and a Crime — Why Was the Man Who Industrialized the Sertão Killed?",
+    "view_count": 23000,
+    "age": 30,
+    "duration": 1810
+   },
+   {
+    "id": "oh7_cahGdQ8",
+    "title": "How the Most Powerful Family in the Rio Elite Lost Everything",
+    "view_count": 152000,
+    "age": 30,
+    "duration": 2125
+   },
+   {
+    "id": "tVWS3USOAt0",
+    "title": "Who Were the Richest Families of the Brazilian Empire",
+    "view_count": 63000,
+    "age": 60,
+    "duration": 3178
+   },
+   {
+    "id": "O_B9iE43mIU",
+    "title": "Who Were the Most Powerful Coffee Families — and How Their Fortunes Disappeared",
+    "view_count": 161000,
+    "age": 60,
+    "duration": 2699
+   },
+   {
+    "id": "ZUefzpF4TX4",
+    "title": "The Lebanese Family that Dominated São Paulo and Vanished from History",
+    "view_count": 115000,
+    "age": 60,
+    "duration": 2205
+   },
+   {
+    "id": "EoFHp3oi6zk",
+    "title": "The Matarazzo Curse - How the Most Powerful Family in Brazil LOST EVERYTHING?",
+    "view_count": 380000,
+    "age": 60,
+    "duration": 3517
+   },
+   {
+    "id": "8QMhW2Kcxyg",
+    "title": "How the Family That Built São Paulo Ended Up in Poverty",
+    "view_count": 736000,
+    "age": 60,
+    "duration": 1915
+   },
+   {
+    "id": "X3rl_wFF8LU",
+    "title": "The Tragic History of the Most Powerful Coffee Family in 19th Century Brazil",
+    "view_count": 19000,
+    "age": 60,
+    "duration": 2089
+   },
+   {
+    "id": "7_LL5fPzw0Q",
+    "title": "The Mysterious Dynasty Behind PERNAMBUCANAS: How the Lundgrens Turned Textiles Into Power",
+    "view_count": 14000,
+    "age": 91,
+    "duration": 1331
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@RuínasIndustriais",
+  "channel": null,
+  "subs": 41700,
+  "n_listed": 80,
+  "n_long": 80,
+  "median15_long": 9400,
+  "base_ids": [
+   "7-8EPmOkZ10",
+   "OUgYKwmIRdw",
+   "7T8rZjLvY-0",
+   "MnUmaiRObQY",
+   "WQ-poRIMXDE",
+   "FO3abyY-gQY",
+   "hYnSQGTCkRo",
+   "vXIwlGIhktU",
+   "oEmJD26-gno",
+   "_K39TcUj7Qc",
+   "5IRxBa3i0ec",
+   "_msP-HyKl-M",
+   "MtZpdAPeYYY",
+   "9slYUe6q4HU",
+   "mFWUgZl2y3A"
+  ],
+  "candidates": [
+   {
+    "id": "7T8rZjLvY-0",
+    "title": "A ENORME Descoberta de Terras Raras do Brasil Está Chocando Todo Mundo!",
+    "channel": "Ruínas Industriais",
+    "channel_follower_count": 41700,
+    "upload_date": "20261106",
+    "view_count": 303635,
+    "duration": 1488,
+    "age": 13,
+    "median15": 9400,
+    "multiple": 32.3,
+    "breakout": true
+   },
+   {
+    "id": "MnUmaiRObQY",
+    "title": "O Brasil Acaba de Descobrir o Combustível da Próxima Revolução Energética!",
+    "channel": "Ruínas Industriais",
+    "channel_follower_count": 41700,
+    "upload_date": "20261106",
+    "view_count": 147960,
+    "duration": 1412,
+    "age": 13,
+    "median15": 9400,
+    "multiple": 15.7,
+    "breakout": true
+   },
+   {
+    "id": "vXIwlGIhktU",
+    "title": "O Novo Método Brasileiro de Construção de Ferrovias Está Chocando Todo Mundo",
+    "channel": "Ruínas Industriais",
+    "channel_follower_count": 41700,
+    "upload_date": "20261102",
+    "view_count": 206539,
+    "duration": 1363,
+    "age": 17,
+    "median15": 9400,
+    "multiple": 22.0,
+    "breakout": true
+   },
+   {
+    "id": "QrYHvReW83Y",
+    "title": "Veja Como a Claro, Vivo e TIM Ficaram Gananciosas e Agora Estão Pagando o Preço",
+    "channel": "Ruínas Industriais",
+    "channel_follower_count": 41700,
+    "upload_date": "20261014",
+    "view_count": 123493,
+    "duration": 1587,
+    "age": 36,
+    "median15": 9400,
+    "multiple": 13.1,
+    "breakout": true
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "7-8EPmOkZ10",
+    "title": "Brazil's New Nuclear Fusion Breakthrough Is Shocking the Entire Energy World",
+    "view_count": 39000,
+    "age": 7,
+    "duration": 1402
+   },
+   {
+    "id": "OUgYKwmIRdw",
+    "title": "Brazil Is Building a Megaport That Could Transform Its Global Trade",
+    "view_count": 9700,
+    "age": 8,
+    "duration": 1680
+   },
+   {
+    "id": "7T8rZjLvY-0",
+    "title": "The HUGE Rare Earth Discovery in Brazil Is Shocking Everyone!",
+    "view_count": 303000,
+    "age": 11,
+    "duration": 1488
+   },
+   {
+    "id": "MnUmaiRObQY",
+    "title": "Brazil Just Discovered the Fuel for the Next Energy Revolution!",
+    "view_count": 147000,
+    "age": 12,
+    "duration": 1412
+   },
+   {
+    "id": "WQ-poRIMXDE",
+    "title": "Brazil Just Launched a Washing Machine That Could DESTROY the American Appliance Industry!",
+    "view_count": 42000,
+    "age": 13,
+    "duration": 1400
+   },
+   {
+    "id": "FO3abyY-gQY",
+    "title": "The New Brazilian Invention Could Make Gas Heaters Obsolete. GOODBYE, CARBON MONOXIDE?",
+    "view_count": 727,
+    "age": 13,
+    "duration": 1420
+   },
+   {
+    "id": "hYnSQGTCkRo",
+    "title": "See How Gol, Azul, and LATAM Got Greedy and Are Now Paying the Price",
+    "view_count": 9400,
+    "age": 13,
+    "duration": 1581
+   },
+   {
+    "id": "vXIwlGIhktU",
+    "title": "The New Brazilian Method of Railway Construction Is Shocking Everyone",
+    "view_count": 206000,
+    "age": 13,
+    "duration": 1363
+   },
+   {
+    "id": "oEmJD26-gno",
+    "title": "Brazil's New Motorcycle Will Change the Way We Travel Forever",
+    "view_count": 671,
+    "age": 13,
+    "duration": 1244
+   },
+   {
+    "id": "_K39TcUj7Qc",
+    "title": "These 7 Major Clothing Brands Are FALLING APART in 2026",
+    "view_count": 947,
+    "age": 13,
+    "duration": 1098
+   },
+   {
+    "id": "5IRxBa3i0ec",
+    "title": "See How Itaú, Bradesco, and Santander Became Greedy (Clients React)",
+    "view_count": 30000,
+    "age": 20,
+    "duration": 1298
+   },
+   {
+    "id": "_msP-HyKl-M",
+    "title": "How Unimed, Amil, and Hapvida Got Greedy and Are Now Paying the Price",
+    "view_count": 976,
+    "age": 20,
+    "duration": 1596
+   },
+   {
+    "id": "MtZpdAPeYYY",
+    "title": "See How Ambev Got Greedy and Is Now Paying the Price",
+    "view_count": 1800,
+    "age": 20,
+    "duration": 1375
+   },
+   {
+    "id": "9slYUe6q4HU",
+    "title": "Thousands of Truck Drivers REFUSE Shopee Deliveries in 2026 — Understand Why!",
+    "view_count": 781,
+    "age": 20,
+    "duration": 1262
+   },
+   {
+    "id": "mFWUgZl2y3A",
+    "title": "Engineers Tested 8 Electric SUVs in Brazil — What They Found Left Them SHOCKED",
+    "view_count": 772,
+    "age": 20,
+    "duration": 1231
+   },
+   {
+    "id": "wSMYNS44lHc",
+    "title": "Uber: The Ride That Promised to Be Cheap Now Faces a New Reality in Brazil",
+    "view_count": 24000,
+    "age": 20,
+    "duration": 1459
+   },
+   {
+    "id": "rpNIaJrw4PQ",
+    "title": "Rice and Beans: What's Happening to the Prices of Brazil's Most Popular Food?",
+    "view_count": 597,
+    "age": 20,
+    "duration": 1598
+   },
+   {
+    "id": "bSUpFb9_0Bs",
+    "title": "IS TOK&STOK CLOSING STORES? The Truth About What Is Happening",
+    "view_count": 1200,
+    "age": 27,
+    "duration": 1248
+   },
+   {
+    "id": "fDea3SZVJmc",
+    "title": "These 15 Major Supermarket Chains Are COLLAPSING in 2026",
+    "view_count": 17000,
+    "age": 27,
+    "duration": 1577
+   },
+   {
+    "id": "9F8vQs9u248",
+    "title": "3,200 Chinese Robotaxis Have Arrived in the US — Could Brazil Be Next?",
+    "view_count": 1500,
+    "age": 30,
+    "duration": 1305
+   },
+   {
+    "id": "rd9wqqtoIRk",
+    "title": "IS ASSAÍ ATACADISTA IN TROUBLE? The Truth About What Is Happening",
+    "view_count": 6900,
+    "age": 30,
+    "duration": 1280
+   },
+   {
+    "id": "614VXDt-OtA",
+    "title": "Is It Better to Buy Tools at Carrefour, Leroy Merlin, or a Specialty Store?",
+    "view_count": 2200,
+    "age": 30,
+    "duration": 1196
+   },
+   {
+    "id": "myWUMOKaqOw",
+    "title": "These 15 Major Restaurant Chains Are COLLAPSING in 2026",
+    "view_count": 82000,
+    "age": 30,
+    "duration": 1117
+   },
+   {
+    "id": "QrYHvReW83Y",
+    "title": "See How Claro, Vivo, and TIM Got Greedy and Are Now Paying the Price",
+    "view_count": 123000,
+    "age": 30,
+    "duration": 1587
+   },
+   {
+    "id": "anvqNBGW2EM",
+    "title": "BRAZILIANS Are Stopping Buying Chevrolet Cars (What Is Happening, Customers React)",
+    "view_count": 10000,
+    "age": 30,
+    "duration": 1548
+   },
+   {
+    "id": "eWAQ3BdlpZk",
+    "title": "See How Samsung and Apple Got Greedy and Are Now Paying the Price",
+    "view_count": 3400,
+    "age": 30,
+    "duration": 1524
+   },
+   {
+    "id": "u4-YzDO5_Ss",
+    "title": "BRAZILIANS Are Stopping Their iFood Orders (What's Happening, Customers React)",
+    "view_count": 10000,
+    "age": 30,
+    "duration": 1297
+   },
+   {
+    "id": "xk2PYJjZ938",
+    "title": "See How Netflix Got Greedy and Is Now Paying the Price",
+    "view_count": 2700,
+    "age": 30,
+    "duration": 1478
+   },
+   {
+    "id": "JQDAiS_iiu0",
+    "title": "8 Men's Clothing Brands That Are Stealing Your Money! (And 5 That Are Actually Worth It)",
+    "view_count": 548,
+    "age": 30,
+    "duration": 1068
+   },
+   {
+    "id": "msZZBzRDu-M",
+    "title": "6 Sneaker Brands RIPPING You Off (And 6 That Are Worth the Money)",
+    "view_count": 749,
+    "age": 30,
+    "duration": 1237
+   },
+   {
+    "id": "yUHvIWaPJxw",
+    "title": "7 Japanese Woodworking Tool Brands EVERYONE Ignores (But Are Worth Every Penny)",
+    "view_count": 961,
+    "age": 30,
+    "duration": 1401
+   },
+   {
+    "id": "-cbUMJkVIUY",
+    "title": "Get Ready: 15 Foods That Are Disappearing (And Why It’s Happening)",
+    "view_count": 482,
+    "age": 30,
+    "duration": 1475
+   },
+   {
+    "id": "BX0kNXDHnq8",
+    "title": "How Mercado Livre Uses Thousands of Robots to Process 300,000 Orders per Hour",
+    "view_count": 1300,
+    "age": 30,
+    "duration": 993
+   },
+   {
+    "id": "WHU__NpAkdU",
+    "title": "7 Shampoos You Should NOT Buy – No. 2 Paid $10 Million for Hair Loss",
+    "view_count": 383,
+    "age": 30,
+    "duration": 1131
+   },
+   {
+    "id": "QuUrb-K7QuQ",
+    "title": "13 Wholesale Products So Good They Put Expensive Brands to Shame",
+    "view_count": 880,
+    "age": 30,
+    "duration": 1186
+   },
+   {
+    "id": "w_Zqyd_5x6Q",
+    "title": "How Did Banco Master Grow So Fast? | The Strategy Behind Vorcaro’s Empire",
+    "view_count": 827,
+    "age": 30,
+    "duration": 1293
+   },
+   {
+    "id": "ZvHEL2IT2cw",
+    "title": "STOP Buying These 13 Milk Brands (Only 6 Are ACTUALLY Real Milk)",
+    "view_count": 686,
+    "age": 30,
+    "duration": 1360
+   },
+   {
+    "id": "zjdP4Bvk4C8",
+    "title": "5 Luxury Perfume Brands That Are ROBBING You (And 5 Hidden Gems)",
+    "view_count": 1000,
+    "age": 30,
+    "duration": 1075
+   },
+   {
+    "id": "Y62lLzu5a2c",
+    "title": "5 Tool Brands That Are RIPPING You Off (And 3 That Are Actually Worth It)",
+    "view_count": 81000,
+    "age": 30,
+    "duration": 1036
+   },
+   {
+    "id": "L2OxS3wx2N4",
+    "title": "We Sent 8 Popular Olive Oils to a Lab — Most Were Just Disguised Canola Oil",
+    "view_count": 681,
+    "age": 30,
+    "duration": 1163
+   },
+   {
+    "id": "lHhWyPhVy6M",
+    "title": "Inside the Panco Factory: How One of Brazil's Best-Known Bread Brands Was Born",
+    "view_count": 1500,
+    "age": 30,
+    "duration": 1601
+   },
+   {
+    "id": "XJOAkglunys",
+    "title": "Inside the Tilibra Factory: How the Notebooks That Defined Generations Were Born",
+    "view_count": 652,
+    "age": 30,
+    "duration": 1441
+   },
+   {
+    "id": "VR6ymBFm9EA",
+    "title": "The History of KOPENHAGEN: How a Traditional Brand Had to Reinvent Itself",
+    "view_count": 1500,
+    "age": 30,
+    "duration": 1529
+   },
+   {
+    "id": "YfpU8DpYJ_Q",
+    "title": "The Story of BISCOITOS AYMORÉ: How a Traditional Brand Changed Hands and Lost Its Identity",
+    "view_count": 2200,
+    "age": 30,
+    "duration": 1345
+   },
+   {
+    "id": "f-ruyLtmmfU",
+    "title": "The End of G. ARONSON: How One of São Paulo's Most Famous Retail Chains Went Bankrupt",
+    "view_count": 2000,
+    "age": 30,
+    "duration": 1193
+   },
+   {
+    "id": "p_SpHXoNbfc",
+    "title": "The Story of PROSDÓCIMO: How a Paranaense Appliance Giant Disappeared",
+    "view_count": 5900,
+    "age": 60,
+    "duration": 1449
+   },
+   {
+    "id": "5JwaA95VD9Q",
+    "title": "KARMANN-GHIA: The Factory That Defined the Brazilian Industry and Then SHUT ITS DOORS",
+    "view_count": 1400,
+    "age": 60,
+    "duration": 1553
+   },
+   {
+    "id": "e-Lqnqs0Cuc",
+    "title": "The Rise and Fall of PANEX: How a Brand That Dominated Brazilian Kitchens Lost Its Way",
+    "view_count": 2000,
+    "age": 60,
+    "duration": 1473
+   },
+   {
+    "id": "MmT_nAaSXR4",
+    "title": "The Tragic Story of NEXTEL: How the Carrier That Became a Status Symbol Met Its End",
+    "view_count": 2000,
+    "age": 60,
+    "duration": 1337
+   },
+   {
+    "id": "QzA2oQzAxMQ",
+    "title": "The Tragic Story of GVT: How the Company That Revolutionized Brazilian Internet Met Its End",
+    "view_count": 2400,
+    "age": 60,
+    "duration": 1329
+   },
+   {
+    "id": "jnm5Ohz_wW8",
+    "title": "MORMAII: The Brand That Became a Phenomenon Among Brazilians and Then Faded From the Spotlight",
+    "view_count": 5000,
+    "age": 60,
+    "duration": 1473
+   },
+   {
+    "id": "8BippgnFHZ0",
+    "title": "Why Americanas Remained Open Even After a Billion-Dollar Crisis",
+    "view_count": 757,
+    "age": 60,
+    "duration": 1281
+   },
+   {
+    "id": "ppEHvxQmFio",
+    "title": "TECHNOS: The Watch Giant That Became a Brazilian Icon and Then LOST ITS EDGE",
+    "view_count": 35000,
+    "age": 60,
+    "duration": 1529
+   },
+   {
+    "id": "SdTS0iafbeI",
+    "title": "SUBMARINO: The E-commerce Pioneer That Won Over Brazilians and Then DISAPPEARED",
+    "view_count": 1600,
+    "age": 60,
+    "duration": 1353
+   },
+   {
+    "id": "FvRRfhQwDC0",
+    "title": "HABIB’S: The Esfiha Empire That Conquered Brazil and Then LOST STEAM",
+    "view_count": 1400,
+    "age": 60,
+    "duration": 1449
+   },
+   {
+    "id": "mxRy6K4XD64",
+    "title": "VIAÇÃO COMETA: The Bus Giant That Dominated Brazil and Then VANISHED",
+    "view_count": 52000,
+    "age": 60,
+    "duration": 1369
+   },
+   {
+    "id": "qH7-8MFYKho",
+    "title": "The Tragic Story of Glasslite: How an Estrela Rival Simply Vanished",
+    "view_count": 1600,
+    "age": 60,
+    "duration": 1225
+   },
+   {
+    "id": "drQnhhKaEWY",
+    "title": "The Tragic Story of Dacon: How One of the Boldest Companies in Brazilian Motoring Disappeared",
+    "view_count": 2900,
+    "age": 60,
+    "duration": 1171
+   },
+   {
+    "id": "ys-zEbINyGk",
+    "title": "The Tragic History of the Agrale Motorcycle: How a Brazilian Company Tried to Take On Honda and Y...",
+    "view_count": 24000,
+    "age": 60,
+    "duration": 1377
+   },
+   {
+    "id": "D_FRIqO-T0I",
+    "title": "A Brazilian Giant Is Losing Steam — What Is Happening to Renner in 2026?",
+    "view_count": 2100,
+    "age": 60,
+    "duration": 1529
+   },
+   {
+    "id": "cRyOhYFcALs",
+    "title": "MILLIONS of Brazilians Are Stopping Their Purchases at Casas Bahia in 2026 (What Is Happening?)",
+    "view_count": 720,
+    "age": 60,
+    "duration": 1297
+   },
+   {
+    "id": "b3K7Y7rHgz8",
+    "title": "The Tragic History of CBT: How the Brazilian Tractors That Conquered the Fields Disappeared",
+    "view_count": 1000,
+    "age": 60,
+    "duration": 1361
+   },
+   {
+    "id": "zkheuqa5hOE",
+    "title": "The Tragic History of Kasinski: How the Dream of a New Brazilian Motorcycle Manufacturer Ended",
+    "view_count": 41000,
+    "age": 60,
+    "duration": 1425
+   },
+   {
+    "id": "oaLL_bC8GOY",
+    "title": "WHAT HAPPENED TO MARISA?",
+    "view_count": 2000,
+    "age": 60,
+    "duration": 1297
+   },
+   {
+    "id": "Ppmy34K5LTA",
+    "title": "25 Years Later: The TRUTH About the RAT in the Coca-Cola",
+    "view_count": 374,
+    "age": 60,
+    "duration": 1257
+   },
+   {
+    "id": "NUy1vRO8tco",
+    "title": "THE RISE AND FALL: HOW DID THE PONTO FRIO EMPIRE COME TO AN END?",
+    "view_count": 9100,
+    "age": 60,
+    "duration": 1465
+   },
+   {
+    "id": "EOWfO8iIJtM",
+    "title": "What Happened to the Soap That Defined the 90s - Phebo Soap",
+    "view_count": 1200,
+    "age": 60,
+    "duration": 1057
+   },
+   {
+    "id": "hpBAsvRvFms",
+    "title": "HOW DID THE POLISHOP EMPIRE COLLAPSE?",
+    "view_count": 1100,
+    "age": 60,
+    "duration": 1377
+   },
+   {
+    "id": "IYTV827n2Es",
+    "title": "HOW DID THE AMERICANAS EMPIRE COLLAPSE?",
+    "view_count": 1100,
+    "age": 60,
+    "duration": 1569
+   },
+   {
+    "id": "4IOEQTWagiQ",
+    "title": "Aiwa Mini Systems | If You Lived Through the 90s, You Probably Wanted One — What Happened to the ...",
+    "view_count": 12000,
+    "age": 60,
+    "duration": 1377
+   },
+   {
+    "id": "1_eHB9QLS0U",
+    "title": "If You Grew Up in the 70s, You Probably Drank Milani Currant Syrup — Do You Still Remember the Ta...",
+    "view_count": 683,
+    "age": 60,
+    "duration": 1433
+   },
+   {
+    "id": "nTVjr7y95-g",
+    "title": "If You Lived Through the 70s, You’ll Remember Parahyba Blankets — Why Were They So Famous?",
+    "view_count": 873,
+    "age": 60,
+    "duration": 1633
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@legado-esquecido",
+  "channel": null,
+  "subs": 37900,
+  "n_listed": 80,
+  "n_long": 74,
+  "median15_long": 2400,
+  "base_ids": [
+   "g43IStkWr7s",
+   "iW2m_xI3gvE",
+   "5PrZJrvB9Go",
+   "zb4VXAknEIQ",
+   "pv1e5cNXFDE",
+   "Xs3RsHnyFvo",
+   "HQ7H-8ggEBM",
+   "pvaJKPZyXf4",
+   "kXfNDFnZkco",
+   "HH2BF34yUew",
+   "2Eax9EsJd9c",
+   "O5FnVhqPCwQ",
+   "A-6-DVra-fw",
+   "bmbH0Yu5kg4",
+   "6Q4r-Q4dCUo"
+  ],
+  "candidates": [
+   {
+    "id": "UpewLZaAoKk",
+    "title": "15 Brasileiros Contra Um Exército – A Batalha Que Consagrou Tenente Antônio João",
+    "channel": "Legado esquecido",
+    "channel_follower_count": 37900,
+    "upload_date": "20260711",
+    "view_count": 125243,
+    "duration": 1586,
+    "age": 131,
+    "median15": 2400,
+    "multiple": 52.2,
+    "breakout": false
+   },
+   {
+    "id": "gTn9bfDq_h8",
+    "title": "O Exército Paraguaio Riu dos 155 Brasileiros - Então Eles Fizeram o Inimaginável no Forte de Coimbra",
+    "channel": "Legado esquecido",
+    "channel_follower_count": 37900,
+    "upload_date": "20260620",
+    "view_count": 314018,
+    "duration": 1664,
+    "age": 152,
+    "median15": 2400,
+    "multiple": 130.8,
+    "breakout": false
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "g43IStkWr7s",
+    "title": "5 FARC Guerrillas Faced the Brazilian Army — 11 Years After Traíra",
+    "view_count": 7000,
+    "age": 7,
+    "duration": 1073
+   },
+   {
+    "id": "iW2m_xI3gvE",
+    "title": "10,000 Brazilians Died in This War — The Army Even Used Airplanes Against Them",
+    "view_count": 3700,
+    "age": 11,
+    "duration": 1590
+   },
+   {
+    "id": "5PrZJrvB9Go",
+    "title": "70 Guerrillas Against the Brazilian Army — The Order Was to Leave No One Alive",
+    "view_count": 33000,
+    "age": 13,
+    "duration": 1087
+   },
+   {
+    "id": "zb4VXAknEIQ",
+    "title": "155 Brazilians Against 3,000 Paraguayans — When They Entered the Fort, There Was No One There",
+    "view_count": 1700,
+    "age": 13,
+    "duration": 1143
+   },
+   {
+    "id": "pv1e5cNXFDE",
+    "title": "Argentina Underestimated the Brazilian Navy — 2 Months Later, It Lost Its Fleet",
+    "view_count": 1800,
+    "age": 20,
+    "duration": 1185
+   },
+   {
+    "id": "Xs3RsHnyFvo",
+    "title": "WHO WAS THE FIRST PRESIDENT OF BRAZIL? Marshal Deodoro da Fonseca",
+    "view_count": 942,
+    "age": 20,
+    "duration": 1107
+   },
+   {
+    "id": "HQ7H-8ggEBM",
+    "title": "Tiradentes and the Minas Conspiracy: From Plot to Execution",
+    "view_count": 946,
+    "age": 27,
+    "duration": 1070
+   },
+   {
+    "id": "pvaJKPZyXf4",
+    "title": "Netherlands vs. Colonial Brazil: The Army That Marched Into Guararapes and Fled in Chaos",
+    "view_count": 3900,
+    "age": 30,
+    "duration": 1236
+   },
+   {
+    "id": "kXfNDFnZkco",
+    "title": "Paraguay vs. Bolivia and the Battle for Water",
+    "view_count": 2400,
+    "age": 30,
+    "duration": 1154
+   },
+   {
+    "id": "HH2BF34yUew",
+    "title": "FAB Plane Vanished in the Amazon: 25 Aboard, 5 Survivors",
+    "view_count": 683,
+    "age": 30,
+    "duration": 1213
+   },
+   {
+    "id": "2Eax9EsJd9c",
+    "title": "The Portuguese Army Thought They Would Crush the Sertão — Until They Met the Fury of the Leather-...",
+    "view_count": 3800,
+    "age": 30,
+    "duration": 1466
+   },
+   {
+    "id": "O5FnVhqPCwQ",
+    "title": "The Paraguayan Dictator Thought the Pantanal Was Defenseless — Until the Kadiwéu Indians Appeared",
+    "view_count": 7100,
+    "age": 30,
+    "duration": 1218
+   },
+   {
+    "id": "A-6-DVra-fw",
+    "title": "The Paraguayan Army Laughed at the Brazilian Attack on the Bridge — Until the Duke of Caxias Drew...",
+    "view_count": 2700,
+    "age": 30,
+    "duration": 1257
+   },
+   {
+    "id": "bmbH0Yu5kg4",
+    "title": "They Underestimated This Plane, Brazilians Turned It Into a Legend",
+    "view_count": 1300,
+    "age": 30,
+    "duration": 1126
+   },
+   {
+    "id": "6Q4r-Q4dCUo",
+    "title": "Dom Pedro II Risked His Own Throne in the Paraguayan War",
+    "view_count": 1900,
+    "age": 60,
+    "duration": 1307
+   },
+   {
+    "id": "abg0izJsRJ8",
+    "title": "\"Do Not Underestimate the Brazilians,\" Warned the Germans",
+    "view_count": 10000,
+    "age": 60,
+    "duration": 1294
+   },
+   {
+    "id": "ADFWWfd0hfg",
+    "title": "No One Expected Brazil to Have One of the World's Largest Navies | Aquidabã",
+    "view_count": 2000,
+    "age": 60,
+    "duration": 1234
+   },
+   {
+    "id": "1byEt10kpM0",
+    "title": "The World Underestimated Brazilian Engineering - The Cascavel Proved Otherwise",
+    "view_count": 6900,
+    "age": 60,
+    "duration": 1348
+   },
+   {
+    "id": "K9r499W1SIw",
+    "title": "They Thought They Had Killed the Commander — Until They Saw Osório Fight",
+    "view_count": 5700,
+    "age": 60,
+    "duration": 1655
+   },
+   {
+    "id": "Ah4c087XJZs",
+    "title": "3 Countries, 1 Secret: The Pact Against Paraguay",
+    "view_count": 1500,
+    "age": 60,
+    "duration": 1323
+   },
+   {
+    "id": "TE6-S_TN4Sw",
+    "title": "The Paraguayan Dictator Thought He Could Escape the Brazilian Army — Battle of Cerro Corá",
+    "view_count": 6800,
+    "age": 60,
+    "duration": 1297
+   },
+   {
+    "id": "CuWciWme4hA",
+    "title": "Argentina Thought Brazil Wouldn't Get Through — Until the Brazilian Navy Arrived",
+    "view_count": 1200,
+    "age": 91,
+    "duration": 1038
+   },
+   {
+    "id": "I0OgZNhg1mI",
+    "title": "Diziam que o Brasil Não Precisava de Tanques - Até o FT-17 Chegar",
+    "view_count": 2500,
+    "age": 91,
+    "duration": 1186
+   },
+   {
+    "id": "5ytuUnCllWM",
+    "title": "Paraguay Invaded Rio Grande do Sul — Dom Pedro II Responded",
+    "view_count": 23000,
+    "age": 91,
+    "duration": 1271
+   },
+   {
+    "id": "KxP4Ki8ceK8",
+    "title": "PARAGUAY RELIED ON ITS DEFENSES — BRAZIL ACHIEVED THE IMPOSSIBLE WITH DUQUE DE CAXIAS",
+    "view_count": 10000,
+    "age": 91,
+    "duration": 1799
+   },
+   {
+    "id": "Q78MnSi35XA",
+    "title": "How Brazil Confronted the British Empire in 1863 (Christie Affair)",
+    "view_count": 2400,
+    "age": 91,
+    "duration": 1284
+   },
+   {
+    "id": "S3Zic9h4Idk",
+    "title": "26,000 vs 35,000: The Battle of Monte Caseros",
+    "view_count": 2000,
+    "age": 91,
+    "duration": 1329
+   },
+   {
+    "id": "Yqo11dSuClo",
+    "title": "32,000 Brazilians and Allies Surrounded: Battle of Tuiuti, 1866",
+    "view_count": 20000,
+    "age": 91,
+    "duration": 1542
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@BrasildeOutrora",
+  "channel": null,
+  "subs": 2030,
+  "n_listed": 16,
+  "n_long": 15,
+  "median15_long": 3100,
+  "base_ids": [
+   "AXl2R3HNXj8",
+   "q9EXxZHvWhE",
+   "H08KvONp2tg",
+   "SKECk2kRT50",
+   "2ablsitcKEI",
+   "slWwj37Lpww",
+   "SPUdO2GHUMc",
+   "hWBEh5Gzab8",
+   "FDsO4RtTetk",
+   "25-HmJHcdu4",
+   "d8ZkrwBZJeE"
+  ],
+  "candidates": [
+   {
+    "id": "SKECk2kRT50",
+    "title": "Sobradinho Não Foi Só uma Represa: Casa Nova e Mais 3 Cidades Sumiram Debaixo d’Água",
+    "channel": "Brasil de Outrora",
+    "channel_follower_count": 2030,
+    "upload_date": "20261101",
+    "view_count": 211994,
+    "duration": 1263,
+    "age": 18,
+    "median15": 3100,
+    "multiple": 68.4,
+    "breakout": true
+   },
+   {
+    "id": "SPUdO2GHUMc",
+    "title": "SERRA PELADA Reuniu Até 100 Mil Garimpeiros. Hoje o Buraco Virou um Lago",
+    "channel": "Brasil de Outrora",
+    "channel_follower_count": 2030,
+    "upload_date": "20261020",
+    "view_count": 109546,
+    "duration": 952,
+    "age": 30,
+    "median15": 3100,
+    "multiple": 35.3,
+    "breakout": true
+   },
+   {
+    "id": "hWBEh5Gzab8",
+    "title": "Canudos Não Acabou em 1897: A Cidade Renasceu E Sumiu Debaixo d`Água",
+    "channel": "Brasil de Outrora",
+    "channel_follower_count": 2030,
+    "upload_date": "20261017",
+    "view_count": 129381,
+    "duration": 1381,
+    "age": 33,
+    "median15": 3100,
+    "multiple": 41.7,
+    "breakout": true
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "AXl2R3HNXj8",
+    "title": "As Torres no Meio do Lago de Itá: Por Que Só Elas Ficaram de Pé? (2000)",
+    "view_count": 1400,
+    "age": 8,
+    "duration": 1505
+   },
+   {
+    "id": "q9EXxZHvWhE",
+    "title": "A Vassoura-de-Bruxa Deixou 200 Mil Sem Trabalho no Cacau da Bahia (1989)",
+    "view_count": 3100,
+    "age": 11,
+    "duration": 1166
+   },
+   {
+    "id": "H08KvONp2tg",
+    "title": "Petrolândia Não Foi Destruída: A Cidade Inteira Ainda Está Debaixo do Lago (1988)",
+    "view_count": 60000,
+    "age": 13,
+    "duration": 1345
+   },
+   {
+    "id": "SKECk2kRT50",
+    "title": "Sobradinho Não Foi Só uma Represa: Casa Nova e Mais 3 Cidades Sumiram Debaixo d’Água",
+    "view_count": 211000,
+    "age": 13,
+    "duration": 1263
+   },
+   {
+    "id": "2ablsitcKEI",
+    "title": "Goiânia Momentos Antes do Césio-137: O Dia em que o Brilho Azul Encantou um Bairro (1987)",
+    "view_count": 1100,
+    "age": 13,
+    "duration": 1306
+   },
+   {
+    "id": "slWwj37Lpww",
+    "title": "Porto Alegre Viu o Guaíba Subir por Semanas: Os Momentos Antes da Enchente (1941)",
+    "view_count": 479,
+    "age": 20,
+    "duration": 1133
+   },
+   {
+    "id": "SPUdO2GHUMc",
+    "title": "SERRA PELADA Reuniu Até 100 Mil Garimpeiros. Hoje o Buraco Virou um Lago",
+    "view_count": 109000,
+    "age": 27,
+    "duration": 953
+   },
+   {
+    "id": "hWBEh5Gzab8",
+    "title": "Canudos Não Acabou em 1897: A Cidade Renasceu E Sumiu Debaixo d`Água",
+    "view_count": 129000,
+    "age": 30,
+    "duration": 1381
+   },
+   {
+    "id": "FDsO4RtTetk",
+    "title": "Ladainha (1966) - O Último Apito Antes do Fim da Estrada de Ferro Bahia e Minas",
+    "view_count": 2100,
+    "age": 30,
+    "duration": 1321
+   },
+   {
+    "id": "25-HmJHcdu4",
+    "title": "Sete Quedas Não Secou (1982): A Cachoeira Gigante de Guaíra Ainda Está Debaixo do Lago",
+    "view_count": 1000,
+    "age": 30,
+    "duration": 1293
+   },
+   {
+    "id": "d8ZkrwBZJeE",
+    "title": "Guapé Não Sumiu: A Cidade Velha Ainda Aparece Quando o Lago de Furnas Seca (1963)",
+    "view_count": 3200,
+    "age": 30,
+    "duration": 1058
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@CrônicasApagadas",
+  "channel": null,
+  "subs": 16900,
+  "n_listed": 65,
+  "n_long": 49,
+  "median15_long": 2300,
+  "base_ids": [
+   "l2NAEk13x0Y",
+   "bfFeEgQRISw",
+   "lf_ECRIp_54",
+   "LfC5f6oEEZg",
+   "uxoji5BHnmc",
+   "fy7IavapBy4",
+   "1ItMKMU-KOk",
+   "xKHEzCqIGmQ",
+   "jOio2kCKdWI",
+   "McyJkVCdcnI",
+   "lHTXE7C9CHM",
+   "9E6zu8dMXQU",
+   "K28-WZQHOII",
+   "q0PuGUFsnlQ",
+   "VMOWUNy9NF4"
+  ],
+  "candidates": [
+   {
+    "id": "acIdkHlPP_8",
+    "title": "Como 12 Mil Gaúchos Foram Degolados numa Guerra que Sumiu dos Livros (Reconstrução com IA)",
+    "channel": "Crônicas Apagadas",
+    "channel_follower_count": 16900,
+    "upload_date": "20260709",
+    "view_count": 254890,
+    "duration": 932,
+    "age": 133,
+    "median15": 2300,
+    "multiple": 110.8,
+    "breakout": false
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "l2NAEk13x0Y",
+    "title": "1836 | The Battle of Seival that Created the Rio-Grandense Republic",
+    "view_count": 9500,
+    "age": 60,
+    "duration": 1384
+   },
+   {
+    "id": "bfFeEgQRISw",
+    "title": "The Truth About the Azoreans Portugal Brought Over",
+    "view_count": 1500,
+    "age": 60,
+    "duration": 1531
+   },
+   {
+    "id": "lf_ECRIp_54",
+    "title": "Cisplatine War: The Conflict that Created Uruguay and Took its Toll on the South",
+    "view_count": 2300,
+    "age": 60,
+    "duration": 1451
+   },
+   {
+    "id": "LfC5f6oEEZg",
+    "title": "25 facts you don't know about Santa Catarina",
+    "view_count": 4900,
+    "age": 60,
+    "duration": 1145
+   },
+   {
+    "id": "uxoji5BHnmc",
+    "title": "25 Facts About Rio Grande do Sul That Challenge the Official Narrative",
+    "view_count": 10000,
+    "age": 60,
+    "duration": 1366
+   },
+   {
+    "id": "fy7IavapBy4",
+    "title": "The History of Blumenau (1850–1894) — How the Colony Changed Hands and Became a City",
+    "view_count": 4000,
+    "age": 60,
+    "duration": 1103
+   },
+   {
+    "id": "1ItMKMU-KOk",
+    "title": "Blood Legacy: The Families That Shaped the Southern Wars",
+    "view_count": 2600,
+    "age": 60,
+    "duration": 1056
+   },
+   {
+    "id": "xKHEzCqIGmQ",
+    "title": "The Neutral Fields: The Far South Strip That Portugal and Spain Could Not Occupy",
+    "view_count": 847,
+    "age": 60,
+    "duration": 1046
+   },
+   {
+    "id": "jOio2kCKdWI",
+    "title": "Farroupilha Revolution: The War That Created a Republic in the South",
+    "view_count": 1200,
+    "age": 60,
+    "duration": 1063
+   },
+   {
+    "id": "McyJkVCdcnI",
+    "title": "September 7, 1822: The True Story Before the Cry of Ipiranga",
+    "view_count": 850,
+    "age": 60,
+    "duration": 1133
+   },
+   {
+    "id": "lHTXE7C9CHM",
+    "title": "The Curse of the Gypsy Terena and the Mansions of Pelotas in the South",
+    "view_count": 2600,
+    "age": 60,
+    "duration": 1189
+   },
+   {
+    "id": "9E6zu8dMXQU",
+    "title": "The Guaranitic War: The Apocalypse of the Seven Peoples",
+    "view_count": 1900,
+    "age": 91,
+    "duration": 1189
+   },
+   {
+    "id": "K28-WZQHOII",
+    "title": "How the Battle of Pulador Broke the Momentum of the Federalist Revolution",
+    "view_count": 6700,
+    "age": 91,
+    "duration": 1064
+   },
+   {
+    "id": "q0PuGUFsnlQ",
+    "title": "The 26 Days That Changed the Fate of the Federalist Revolution",
+    "view_count": 431,
+    "age": 91,
+    "duration": 1008
+   },
+   {
+    "id": "VMOWUNy9NF4",
+    "title": "When Drinking Chimarrão Was a Crime in Southern Brazil",
+    "view_count": 740,
+    "age": 91,
+    "duration": 908
+   },
+   {
+    "id": "UWbZ4TVhDlg",
+    "title": "From the First Indigenous People to the Cangaço: The Complete History of the Northeast | Documentary",
+    "view_count": 397,
+    "age": 91,
+    "duration": 1010
+   },
+   {
+    "id": "hdwS3zRKMSE",
+    "title": "Extermination of the Great Xokleng Nation: Brazilian Indians",
+    "view_count": 1700,
+    "age": 91,
+    "duration": 1010
+   },
+   {
+    "id": "NTPsSOV0zFU",
+    "title": "How Paraguay Invaded and Occupied Rio Grande do Sul for 100 Days",
+    "view_count": 4300,
+    "age": 91,
+    "duration": 982
+   },
+   {
+    "id": "6i_hcdsgf1U",
+    "title": "The Massacre of an Entire German Colony in Southern Brazil",
+    "view_count": 6400,
+    "age": 91,
+    "duration": 995
+   },
+   {
+    "id": "Jr8GPfkdbB8",
+    "title": "The Complete History of Florianópolis (AI Reconstruction)",
+    "view_count": 764,
+    "age": 91,
+    "duration": 905
+   },
+   {
+    "id": "Bgm4VIniLh4",
+    "title": "How Each Leader of the Farroupilha Revolution Died",
+    "view_count": 43000,
+    "age": 91,
+    "duration": 991
+   },
+   {
+    "id": "_3fEsKlXlV0",
+    "title": "How German immigration shaped the history of Brazil",
+    "view_count": 561,
+    "age": 91,
+    "duration": 1034
+   },
+   {
+    "id": "esfBo1ygypw",
+    "title": "The True Origin of the Gaucho: In the Beginning, It Was a Crime",
+    "view_count": 5300,
+    "age": 91,
+    "duration": 944
+   },
+   {
+    "id": "tdwHh1sxDrU",
+    "title": "How 7,000 Soldiers Were Sent to Exterminate Caboclos in the South",
+    "view_count": 525,
+    "age": 91,
+    "duration": 944
+   },
+   {
+    "id": "SHSWDqjnfOg",
+    "title": "1923 | The Last Civil War of Rio Grande do Sul",
+    "view_count": 50000,
+    "age": 91,
+    "duration": 958
+   },
+   {
+    "id": "irhbXYibT0g",
+    "title": "The Complete History of Viamão (AI Reconstruction)",
+    "view_count": 19000,
+    "age": 91,
+    "duration": 918
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@ampulheta_ac",
+  "channel": null,
+  "subs": 32200,
+  "n_listed": 8,
+  "n_long": 8,
+  "median15_long": 483500.0,
+  "base_ids": [
+   "joGp8dSOdYI",
+   "lGbl3BFD17k",
+   "P0VF4KHaBHk",
+   "qH45eSbWHaA",
+   "mTVdsVL8Y0U",
+   "6HrCdP_4RZk"
+  ],
+  "candidates": [],
+  "window_longs": [
+   {
+    "id": "joGp8dSOdYI",
+    "title": "VIKINGS: a história completa",
+    "view_count": 56000,
+    "age": 8,
+    "duration": 4805
+   },
+   {
+    "id": "lGbl3BFD17k",
+    "title": "QUEM FOI HITLER: a história completa",
+    "view_count": 648000,
+    "age": 12,
+    "duration": 2235
+   },
+   {
+    "id": "P0VF4KHaBHk",
+    "title": "PESTE NEGRA: a história completa",
+    "view_count": 376000,
+    "age": 13,
+    "duration": 1336
+   },
+   {
+    "id": "qH45eSbWHaA",
+    "title": "TODA HISTÓRIA DA IDADE MÉDIA",
+    "view_count": 591000,
+    "age": 13,
+    "duration": 4133
+   },
+   {
+    "id": "mTVdsVL8Y0U",
+    "title": "SEGUNDA GUERRA MUNDIAL: do primeiro tiro ao último dia",
+    "view_count": 1500000,
+    "age": 20,
+    "duration": 2942
+   },
+   {
+    "id": "6HrCdP_4RZk",
+    "title": "Como Roma Transformou a Morte em Espetáculo",
+    "view_count": 52000,
+    "age": 30,
+    "duration": 1857
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@historiadomundoglobal",
+  "channel": null,
+  "subs": 17900,
+  "n_listed": 28,
+  "n_long": 28,
+  "median15_long": 8500,
+  "base_ids": [
+   "wk4VMYPUGSI",
+   "Nns7SBb7UeU",
+   "7ti-lkVoXKM",
+   "2oNL8ZrBoJ4",
+   "1LImwJdMRaA",
+   "tvVxEm7gtEg",
+   "NDdp15BoI9U",
+   "yPF9dHcsZ3g",
+   "4mH1p9RVpAc",
+   "7XHgyq7gsvs",
+   "W2JuLphlldg",
+   "DLD81Rx-lSQ",
+   "0nuMqlr0DKM",
+   "e9aPIeTOK_M",
+   "Ppg8FvEaVtw"
+  ],
+  "candidates": [
+   {
+    "id": "1LImwJdMRaA",
+    "title": "Egito de Cleópatra: A Civilização Que Desafiou a Roma Antiga",
+    "channel": "História do Mundo",
+    "channel_follower_count": 17900,
+    "upload_date": "20260916",
+    "view_count": 241369,
+    "duration": 4015,
+    "age": 64,
+    "median15": 8500,
+    "multiple": 28.4,
+    "breakout": true
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "wk4VMYPUGSI",
+    "title": "Babylon: From the Rise of a City to the Building of an Empire",
+    "view_count": 13000,
+    "age": 9,
+    "duration": 3577
+   },
+   {
+    "id": "Nns7SBb7UeU",
+    "title": "Roman Empire: Rise and Fall of the Greatest Civilization of Antiquity",
+    "view_count": 13000,
+    "age": 20,
+    "duration": 3710
+   },
+   {
+    "id": "7ti-lkVoXKM",
+    "title": "The Huns: The Steppe Peoples at Rome's Gates",
+    "view_count": 4500,
+    "age": 30,
+    "duration": 3764
+   },
+   {
+    "id": "2oNL8ZrBoJ4",
+    "title": "Alexander's Greece: From City-States to the Conquest of Persia",
+    "view_count": 3600,
+    "age": 30,
+    "duration": 5893
+   },
+   {
+    "id": "1LImwJdMRaA",
+    "title": "Cleopatra's Egypt: The Civilization That Challenged Ancient Rome",
+    "view_count": 241000,
+    "age": 60,
+    "duration": 4016
+   },
+   {
+    "id": "tvVxEm7gtEg",
+    "title": "Byzantium: The Rome No One Calls Rome",
+    "view_count": 16000,
+    "age": 60,
+    "duration": 6495
+   },
+   {
+    "id": "NDdp15BoI9U",
+    "title": "Rome Before the Emperors: The Republic That Conquered the World",
+    "view_count": 23000,
+    "age": 60,
+    "duration": 5352
+   },
+   {
+    "id": "yPF9dHcsZ3g",
+    "title": "The Incas: From the Rise to the Fall of the Greatest Empire in the Americas. Complete History",
+    "view_count": 2000,
+    "age": 60,
+    "duration": 5432
+   },
+   {
+    "id": "4mH1p9RVpAc",
+    "title": "Mesopotamia: This Is How the Cradle of the First Great Civilization Fell",
+    "view_count": 10000,
+    "age": 91,
+    "duration": 5046
+   },
+   {
+    "id": "7XHgyq7gsvs",
+    "title": "Portugal: The Small Kingdom That Conquered the Oceans and Created Brazil. Historical Documentary",
+    "view_count": 1600,
+    "age": 91,
+    "duration": 5594
+   },
+   {
+    "id": "W2JuLphlldg",
+    "title": "The Golden Age of Ancient Egypt: When the Pharaohs Ruled the World | Full Documentary",
+    "view_count": 14000,
+    "age": 91,
+    "duration": 6850
+   },
+   {
+    "id": "DLD81Rx-lSQ",
+    "title": "TROY: What Really Happened | The City Everyone Thought Was a Myth",
+    "view_count": 8500,
+    "age": 91,
+    "duration": 5625
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@EraHumana_youtube",
+  "channel": null,
+  "subs": 18400,
+  "n_listed": 12,
+  "n_long": 12,
+  "median15_long": 34000,
+  "base_ids": [
+   "3ntfb23YwLA",
+   "Anl6Y5Yv4Cw",
+   "FKLHN4ckdPs",
+   "BquB6rF9H-8",
+   "e757_UysPFY",
+   "GFSoRGgdAfQ",
+   "i4t7PLZiJJ8",
+   "HklcO5dAIG0",
+   "0zCAQUJKLtE",
+   "sKzn_X_lJYY",
+   "eakiFd-PzxY"
+  ],
+  "candidates": [],
+  "window_longs": [
+   {
+    "id": "3ntfb23YwLA",
+    "title": "A Árvore Tecnológica da Humanidade: Descobertas e Invenções na Ordem em que Tinham de Acontecer",
+    "view_count": 950,
+    "age": 60,
+    "duration": 15840
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@opablosoncini",
+  "channel": null,
+  "subs": 33400,
+  "n_listed": 7,
+  "n_long": 5,
+  "median15_long": 2900,
+  "base_ids": [
+   "qtIZt0x6mO8",
+   "3GMfdcYSKX4",
+   "lBRf_3yY7Os",
+   "XyX7Y-xyhyg",
+   "8UIVPZawcY4"
+  ],
+  "candidates": [],
+  "window_longs": [
+   {
+    "id": "qtIZt0x6mO8",
+    "title": "History of Rome: The Goths, Enemies of the Romans",
+    "view_count": 1900,
+    "age": 91,
+    "duration": 2795
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@ArquivosHistóricos-1",
+  "channel": null,
+  "subs": 8850,
+  "n_listed": 80,
+  "n_long": 80,
+  "median15_long": 1000,
+  "base_ids": [
+   "e8BpQKsR4DI",
+   "20FEEZ4f7Fw",
+   "VVaAaaxA5qc",
+   "cVryolFeGio",
+   "VxJ5Mv5VdJ4",
+   "-iwC_XRpGzc",
+   "Y6Dts3oM5TU",
+   "e1Zf1EPXk38",
+   "WODQTjHCoM8",
+   "uQKos_T8Mvc",
+   "krhhn-50wVY",
+   "kBioaaxXOoQ",
+   "GQgzQIl9HDs",
+   "mHwNy9RvB7U",
+   "EscDh0uGSZc"
+  ],
+  "candidates": [],
+  "window_longs": [],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@ArquivosHistóricosdaGuerra",
+  "channel": null,
+  "subs": 7200,
+  "n_listed": 48,
+  "n_long": 48,
+  "median15_long": 7700,
+  "base_ids": [
+   "nFCFD32avDw",
+   "zU5dDRm-bD0",
+   "VIO-n_rhvC8",
+   "_Wh3312iFOE",
+   "Uq3H0GWpfAc",
+   "BZ_sl2ajtto",
+   "yZrqRdJHwIk",
+   "WF9jPOR58YM",
+   "ZLcEWhVRCnU",
+   "gsKpgAlBcF8",
+   "fLDyzCMlcvU",
+   "qN0OlfGhjV4",
+   "Y9VQHuRcCg4",
+   "UngiS5rtSkY",
+   "Go59QwMBEvw"
+  ],
+  "candidates": [],
+  "window_longs": [],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@ODiáriodeTitusValério",
+  "channel": null,
+  "subs": 25300,
+  "n_listed": 40,
+  "n_long": 21,
+  "median15_long": 77000,
+  "base_ids": [
+   "Wvc37fII0Ps",
+   "9eCD68Yq09c",
+   "5YYIuTwzBE0",
+   "25zEVThpM0o",
+   "Z2Woa_yf4gk",
+   "Ns9y-phbpYs",
+   "SJWMuNXW2NA",
+   "KlHOISgQGK4",
+   "IlfWKvCU7qw",
+   "vz-uF0r2Fc0",
+   "yCYQCsxDC-8",
+   "WJ5t7ps9E8Y",
+   "dWpguOx1JxE",
+   "4xjkrrqs0MY",
+   "UfGD0lqHObI"
+  ],
+  "candidates": [
+   {
+    "id": "dWpguOx1JxE",
+    "title": "Getúlio Vargas Era de Esquerda ou de Direita?",
+    "channel": "O Diário de Titus Valério",
+    "channel_follower_count": 25300,
+    "upload_date": "20260817",
+    "view_count": 919027,
+    "duration": 1837,
+    "age": 94,
+    "median15": 77000,
+    "multiple": 11.9,
+    "breakout": true
+   },
+   {
+    "id": "UfGD0lqHObI",
+    "title": "Como Começou a Ditadura Militar no Brasil? (1964–1985)",
+    "channel": "O Diário de Titus Valério",
+    "channel_follower_count": 25300,
+    "upload_date": "20260804",
+    "view_count": 2261133,
+    "duration": 1533,
+    "age": 107,
+    "median15": 77000,
+    "multiple": 29.4,
+    "breakout": true
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "Wvc37fII0Ps",
+    "title": "The History of Television in Brazil: How It All Began in 1950",
+    "view_count": 893,
+    "age": 10,
+    "duration": 1022
+   },
+   {
+    "id": "9eCD68Yq09c",
+    "title": "Estado Novo: The Dictatorship of Getúlio Vargas (1937–1945)",
+    "view_count": 52000,
+    "age": 13,
+    "duration": 1284
+   },
+   {
+    "id": "5YYIuTwzBE0",
+    "title": "2018: How the Right Returned to Power in Brazil",
+    "view_count": 18000,
+    "age": 27,
+    "duration": 1088
+   },
+   {
+    "id": "25zEVThpM0o",
+    "title": "2002: The Election That Brought Lula to Power",
+    "view_count": 107000,
+    "age": 30,
+    "duration": 1365
+   },
+   {
+    "id": "Z2Woa_yf4gk",
+    "title": "Amnesty of 1979: The Story Behind the Law",
+    "view_count": 14000,
+    "age": 30,
+    "duration": 925
+   },
+   {
+    "id": "Ns9y-phbpYs",
+    "title": "1998: Lula's Last Defeat Before the Presidency",
+    "view_count": 36000,
+    "age": 30,
+    "duration": 1207
+   },
+   {
+    "id": "SJWMuNXW2NA",
+    "title": "How Communism Caused the Military Dictatorship in Brazil (1964–1985)",
+    "view_count": 77000,
+    "age": 30,
+    "duration": 1469
+   },
+   {
+    "id": "KlHOISgQGK4",
+    "title": "How Did the Supreme Court Become So Powerful in Brazil?",
+    "view_count": 20000,
+    "age": 60,
+    "duration": 1220
+   },
+   {
+    "id": "IlfWKvCU7qw",
+    "title": "Why Did Lula Lose the 1994 Election?",
+    "view_count": 364000,
+    "age": 60,
+    "duration": 1266
+   },
+   {
+    "id": "vz-uF0r2Fc0",
+    "title": "Brazil in World War II: From Neutrality to the Battlefield",
+    "view_count": 8700,
+    "age": 60,
+    "duration": 1290
+   },
+   {
+    "id": "yCYQCsxDC-8",
+    "title": "Why Did Brazil Grow So Much During the Military Dictatorship?",
+    "view_count": 307000,
+    "age": 60,
+    "duration": 1563
+   },
+   {
+    "id": "WJ5t7ps9E8Y",
+    "title": "1989: The Election That Changed Brazilian Politics",
+    "view_count": 631000,
+    "age": 60,
+    "duration": 1309
+   },
+   {
+    "id": "dWpguOx1JxE",
+    "title": "Was Getúlio Vargas Left-Wing or Right-Wing?",
+    "view_count": 919000,
+    "age": 91,
+    "duration": 1838
+   },
+   {
+    "id": "4xjkrrqs0MY",
+    "title": "When Did Brazil Divide Between Left and Right?",
+    "view_count": 447000,
+    "age": 91,
+    "duration": 1007
+   },
+   {
+    "id": "UfGD0lqHObI",
+    "title": "How Did the Military Dictatorship in Brazil Begin? (1964–1985)",
+    "view_count": 2200000,
+    "age": 91,
+    "duration": 1534
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@SombrasdaCaatinga",
+  "channel": null,
+  "subs": 9590,
+  "n_listed": 38,
+  "n_long": 33,
+  "median15_long": 3400,
+  "base_ids": [
+   "zfh3VarcnPE",
+   "5Xqdd52wObc",
+   "j6-UJGIC1EE",
+   "WDvyAU5l7nk",
+   "PBjiqE9vzKQ",
+   "z5oni9fV4UM",
+   "ldxwHLjz4Mk",
+   "y0vGKZCwFjI",
+   "0cqWERjvRFY",
+   "gYmmeDF2sUk",
+   "WRGiHDVChqQ",
+   "8UJJX8XamV4",
+   "olDGbp7yNW8",
+   "LmHXW8dQkdo",
+   "WGXCz1Wjc4U"
+  ],
+  "candidates": [
+   {
+    "id": "y0vGKZCwFjI",
+    "title": "A História COMPLETA de Corisco o Diabo Loiro | Da Ascensão à Queda Assim Foi (na Época de Lampião)",
+    "channel": "Sombras da Caatinga",
+    "channel_follower_count": 9590,
+    "upload_date": "20260803",
+    "view_count": 101429,
+    "duration": 1387,
+    "age": 108,
+    "median15": 3400,
+    "multiple": 29.8,
+    "breakout": true
+   },
+   {
+    "id": "LmHXW8dQkdo",
+    "title": "A História COMPLETA de Padre Cícero | Da Ascensão à Morte Assim Foi (na Época de Lampião)",
+    "channel": "Sombras da Caatinga",
+    "channel_follower_count": 9590,
+    "upload_date": "20260722",
+    "view_count": 105356,
+    "duration": 1633,
+    "age": 120,
+    "median15": 3400,
+    "multiple": 31.0,
+    "breakout": true
+   },
+   {
+    "id": "eUbA0MiPbyo",
+    "title": "A História COMPLETA de Lampião | Da Ascensão à Queda Assim Foi (na Época de Lampião)",
+    "channel": "Sombras da Caatinga",
+    "channel_follower_count": 9590,
+    "upload_date": "20260714",
+    "view_count": 649702,
+    "duration": 1604,
+    "age": 128,
+    "median15": 3400,
+    "multiple": 191.1,
+    "breakout": false
+   },
+   {
+    "id": "4HKIQjpWDyU",
+    "title": "Por Que Lampião Foi Até Juazeiro do Norte Encontrar Padre Cícero? Assim Era (na Época de Lampião)",
+    "channel": "Sombras da Caatinga",
+    "channel_follower_count": 9590,
+    "upload_date": "20260628",
+    "view_count": 112746,
+    "duration": 1205,
+    "age": 144,
+    "median15": 3400,
+    "multiple": 33.2,
+    "breakout": false
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "zfh3VarcnPE",
+    "title": "How a Boy Who LOST HIS FATHER, SAW HIS FAMILY DESTROYED and BECAME the KING OF THE CANGAÇO",
+    "view_count": 3400,
+    "age": 60,
+    "duration": 1079
+   },
+   {
+    "id": "5Xqdd52wObc",
+    "title": "Why were the police patrols afraid of Lampião's bandits? That's how it was (in Lampião's time).",
+    "view_count": 5000,
+    "age": 60,
+    "duration": 1398
+   },
+   {
+    "id": "j6-UJGIC1EE",
+    "title": "The COMPLETE Story of Padre Cícero | From Church Rejection to the Power of the \"People's Saint\"",
+    "view_count": 1400,
+    "age": 60,
+    "duration": 1632
+   },
+   {
+    "id": "WDvyAU5l7nk",
+    "title": "How Did Lampião and His Band Manage to Sleep Outdoors During the Cold Nights of the Sertão? This ...",
+    "view_count": 61000,
+    "age": 91,
+    "duration": 1147
+   },
+   {
+    "id": "PBjiqE9vzKQ",
+    "title": "10 Surnames from the Sertão That REVEAL Which Powerful Family Your Lineage Descends From During t...",
+    "view_count": 634,
+    "age": 91,
+    "duration": 1132
+   },
+   {
+    "id": "z5oni9fV4UM",
+    "title": "The COMPLETE History of Lampião | From Forbidden Prayers to His Fall: How It Was in Lampião's Time",
+    "view_count": 1400,
+    "age": 91,
+    "duration": 1442
+   },
+   {
+    "id": "ldxwHLjz4Mk",
+    "title": "The True Story Behind Why Lampião Forced a Cangaceiro to Eat 2 Pounds of Salt (Lampião's Era)",
+    "view_count": 4100,
+    "age": 91,
+    "duration": 1023
+   },
+   {
+    "id": "y0vGKZCwFjI",
+    "title": "The COMPLETE Story of Corisco the Blond Devil | From Rise to Fall, That’s How It Was (During Lamp...",
+    "view_count": 101000,
+    "age": 91,
+    "duration": 1387
+   },
+   {
+    "id": "0cqWERjvRFY",
+    "title": "LAMPIÃO IN BAHIA: The Day No One Could Forget | The History of Queimadas (During the Lampião Era)",
+    "view_count": 3600,
+    "age": 91,
+    "duration": 1225
+   },
+   {
+    "id": "gYmmeDF2sUk",
+    "title": "How a CACTUS THORN Left LAMPIÃO BLIND in One Eye? This Is How It Was (in Lampião's Time)",
+    "view_count": 2500,
+    "age": 91,
+    "duration": 1263
+   },
+   {
+    "id": "WRGiHDVChqQ",
+    "title": "The COMPLETE Story of Maria Bonita | From Sertaneja Girl to Queen of the Cangaço (in the Era of L...",
+    "view_count": 7200,
+    "age": 91,
+    "duration": 1401
+   },
+   {
+    "id": "8UJJX8XamV4",
+    "title": "The COMPLETE History of the 1932 Drought | This Is How Lampião and the Cangaço Survived the Great...",
+    "view_count": 2400,
+    "age": 91,
+    "duration": 1542
+   },
+   {
+    "id": "olDGbp7yNW8",
+    "title": "How did the Cangaço movement originate? How did the Cangaceiros live? This is how it was (in Lamp...",
+    "view_count": 2500,
+    "age": 91,
+    "duration": 1466
+   },
+   {
+    "id": "LmHXW8dQkdo",
+    "title": "The COMPLETE Story of Padre Cícero | From His Rise to His Death, This Is How It Was (During the L...",
+    "view_count": 105000,
+    "age": 91,
+    "duration": 1634
+   },
+   {
+    "id": "WGXCz1Wjc4U",
+    "title": "No Running Water, No Modern Bathrooms – This Was Hygiene in the Sertão (During the Time of Lampião)",
+    "view_count": 904,
+    "age": 91,
+    "duration": 1357
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@ReinoPerdido",
+  "channel": null,
+  "subs": 19500,
+  "n_listed": 35,
+  "n_long": 35,
+  "median15_long": 226000,
+  "base_ids": [
+   "qFHVtMDdjeM",
+   "mFs3CGZ9JCk",
+   "PkTc6vw0gIE",
+   "tZvZt22kxr8",
+   "HmpbuRpXuAU",
+   "-78QBsPIYlo",
+   "RTvfUXY6sCY",
+   "EnO0Kmqa85U",
+   "nj6xLv10f8w",
+   "iFizwIaXUu8",
+   "LTRdF5C7Sfg",
+   "ExY__cHDSes",
+   "kn7SX13Hq-4",
+   "rc25YivgWSI",
+   "hKyfADg6atw"
+  ],
+  "candidates": [
+   {
+    "id": "wA4_sA9tnWU",
+    "title": "ANTES DOS DINOSSAUROS | O Reino Perdido dos Monstros Gigantes | Documentário Completo",
+    "channel": "Reino Perdido",
+    "channel_follower_count": 19500,
+    "upload_date": "20260816",
+    "view_count": 2153963,
+    "duration": 3820,
+    "age": 95,
+    "median15": 226000,
+    "multiple": 9.5,
+    "breakout": false
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "qFHVtMDdjeM",
+    "title": "AFTER THE FIRST MASS EXTINCTION | The Rise of Forests and Armored Monsters | Full Documentary",
+    "view_count": 120000,
+    "age": 7,
+    "duration": 3848
+   },
+   {
+    "id": "mFs3CGZ9JCk",
+    "title": "AFTER THE FIRST HUMAN | The ice that TRANSFORMED humanity forever | Full Documentary",
+    "view_count": 71000,
+    "age": 10,
+    "duration": 3228
+   },
+   {
+    "id": "PkTc6vw0gIE",
+    "title": "AFTER THE CRETACEOUS | How Mammals CONQUERED the World of the Dinosaurs | Full Documentary",
+    "view_count": 291000,
+    "age": 13,
+    "duration": 3271
+   },
+   {
+    "id": "tZvZt22kxr8",
+    "title": "THE KINGDOM OF THE DINOSAURS | The BIZARRE AND DEADLY World of the Cretaceous | Full Documentary",
+    "view_count": 1100000,
+    "age": 13,
+    "duration": 3231
+   },
+   {
+    "id": "HmpbuRpXuAU",
+    "title": "AFTER THE EXPLOSION OF LIFE | Shell monsters and the first mass extinction | Full Documentary",
+    "view_count": 67000,
+    "age": 13,
+    "duration": 3257
+   },
+   {
+    "id": "-78QBsPIYlo",
+    "title": "BEYOND THE DINOSAURS | The kingdom of forgotten monsters of prehistory | Full Documentary",
+    "view_count": 200000,
+    "age": 20,
+    "duration": 3249
+   },
+   {
+    "id": "RTvfUXY6sCY",
+    "title": "THE EXPLOSION OF LIFE | When Earth Finally Created Eyes and Monsters | Full Documentary",
+    "view_count": 176000,
+    "age": 20,
+    "duration": 3220
+   },
+   {
+    "id": "EnO0Kmqa85U",
+    "title": "BEFORE THE BORING BILLION | When Oxygen Almost Killed Life on Earth | Full Documentary",
+    "view_count": 226000,
+    "age": 27,
+    "duration": 3268
+   },
+   {
+    "id": "nj6xLv10f8w",
+    "title": "THE FIRST HUMAN | Where we came from and the relatives we left behind | Full Documentary",
+    "view_count": 268000,
+    "age": 30,
+    "duration": 3655
+   },
+   {
+    "id": "iFizwIaXUu8",
+    "title": "AFTER THE BORING BILLION | When the Boredom Ended, Earth FROZE SOLID | Full Documentary",
+    "view_count": 438000,
+    "age": 30,
+    "duration": 3248
+   },
+   {
+    "id": "LTRdF5C7Sfg",
+    "title": "THE REAL ATLANTIS | The Lost Kingdom the SEA SWALLOWED at the End of the Ice Age | Full Documentary",
+    "view_count": 394000,
+    "age": 30,
+    "duration": 3091
+   },
+   {
+    "id": "ExY__cHDSes",
+    "title": "LOST KINGDOMS: The bizarre creatures forgotten in prehistory | Full Documentary",
+    "view_count": 74000,
+    "age": 30,
+    "duration": 3196
+   },
+   {
+    "id": "kn7SX13Hq-4",
+    "title": "THE BORING BILLION | Life stalled until giant mountains rose | Full Documentary",
+    "view_count": 310000,
+    "age": 30,
+    "duration": 3608
+   },
+   {
+    "id": "rc25YivgWSI",
+    "title": "THE LOST KINGDOM OF FEATHERED DRAGONS | The World a VOLCANO FROZE | Full Documentary",
+    "view_count": 26000,
+    "age": 30,
+    "duration": 2746
+   },
+   {
+    "id": "hKyfADg6atw",
+    "title": "BEFORE THE DINOSAURS | Carboniferous: The Lost Kingdom of GIANT Insects | Full Documentary",
+    "view_count": 1700000,
+    "age": 30,
+    "duration": 3709
+   },
+   {
+    "id": "zYeRx83WQ8Q",
+    "title": "BEFORE THE DINOSAURS | The Kingdom of MONSTERS That Were OUR ANCESTORS | Full Documentary",
+    "view_count": 156000,
+    "age": 30,
+    "duration": 3376
+   },
+   {
+    "id": "6IxdTRuCwX0",
+    "title": "DINOSSAUROS NA NEVE | O Reino Perdido Onde a Noite Durava Meses | Documentário Completo",
+    "view_count": 9600,
+    "age": 30,
+    "duration": 2518
+   },
+   {
+    "id": "JSMC1xrQ1FU",
+    "title": "PREHISTORIC MADAGASCAR | The Lost Kingdom where dinosaurs became CANNIBALS | Full Documentary",
+    "view_count": 1300000,
+    "age": 60,
+    "duration": 2839
+   },
+   {
+    "id": "1cwpjz78uhQ",
+    "title": "WHAT WAS EARTH LIKE BEFORE LIFE EXISTED | The Lava World Where It All Began | Full Documentary",
+    "view_count": 75000,
+    "age": 60,
+    "duration": 3645
+   },
+   {
+    "id": "XG_ZuK9GXe0",
+    "title": "THE 2-MILLION-YEAR RAINSTORM | When the Age of Dinosaurs Began | Full Documentary",
+    "view_count": 37000,
+    "age": 60,
+    "duration": 3194
+   },
+   {
+    "id": "gWQwbACCbbM",
+    "title": "THE GREEN SAHARA | The Lost Kingdom of rivers and lakes where there is now only sand | Full Docum...",
+    "view_count": 2200,
+    "age": 60,
+    "duration": 2738
+   },
+   {
+    "id": "9Y22damLJNs",
+    "title": "SEA OF MONSTERS | The Lost Kingdom where the predators were not dinosaurs | Full Documentary",
+    "view_count": 30000,
+    "age": 60,
+    "duration": 3987
+   },
+   {
+    "id": "Mh2sJBO-fGI",
+    "title": "THE REAL ICE AGE | The Monsters Our Ancestors Faced | Full Documentaryv",
+    "view_count": 24000,
+    "age": 60,
+    "duration": 3571
+   },
+   {
+    "id": "Hx0Us6FIvBw",
+    "title": "AUSTRALIAN ABORIGINALS | Surviving a Land No Human Had Ever Touched | Full Documentary",
+    "view_count": 456000,
+    "age": 60,
+    "duration": 2716
+   },
+   {
+    "id": "4XHEgvL_O-s",
+    "title": "THE DINOSAUR TRAGEDY | The Day Earth's GREATEST Dynasty Went Extinct | Full Documentary",
+    "view_count": 137000,
+    "age": 60,
+    "duration": 3376
+   },
+   {
+    "id": "ppkqgzOBoxM",
+    "title": "DEPOIS DOS DINOSSAUROS | O Reino Perdido dos Monstros Sem Herdeiros | Documentário Completo",
+    "view_count": 213000,
+    "age": 60,
+    "duration": 4188
+   },
+   {
+    "id": "0TjDIrRA2n0",
+    "title": "PREHISTORIC AUSTRALIA | The island where bizarre monsters hunted each other | Full Documentary",
+    "view_count": 101000,
+    "age": 60,
+    "duration": 2991
+   },
+   {
+    "id": "xkfLzVD7FLI",
+    "title": "LOST AMAZON | The prehistoric lake of giant monsters at war | Full Documentary",
+    "view_count": 29000,
+    "age": 60,
+    "duration": 2482
+   },
+   {
+    "id": "wA4_sA9tnWU",
+    "title": "BEFORE THE DINOSAURS | The Lost Kingdom of Giant Monsters | Full Documentary",
+    "view_count": 2100000,
+    "age": 91,
+    "duration": 3821
+   },
+   {
+    "id": "5ze5BEXvPjo",
+    "title": "T-REX | The Lost Kingdom of the Last King Earth Ever Had | Full Documentary",
+    "view_count": 27000,
+    "age": 91,
+    "duration": 3288
+   },
+   {
+    "id": "5-nbEGULi68",
+    "title": "TITANOBOA | The Largest Snake That Ever Lived Swallowed Crocodiles Whole | Full Documentary",
+    "view_count": 96000,
+    "age": 91,
+    "duration": 2796
+   },
+   {
+    "id": "00PoxUdY7X8",
+    "title": "BRAZILIAN DINOSAURS | What Were the Dinosaurs That Lived in Brazil? | Full Documentary",
+    "view_count": 82000,
+    "age": 91,
+    "duration": 3614
+   },
+   {
+    "id": "eYGY0D8Xezo",
+    "title": "ISLAND OF DEATH | The Lost Kingdom Where Flying Monsters Swallowed Dinosaurs | Full Documentary",
+    "view_count": 350000,
+    "age": 91,
+    "duration": 2463
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@Umdocumentario",
+  "channel": null,
+  "subs": 136000,
+  "n_listed": 39,
+  "n_long": 39,
+  "median15_long": 954000,
+  "base_ids": [
+   "x013VeSYHlY",
+   "BoUjmzyXcyk",
+   "BTQy3RPtzms",
+   "32bHM3Cr_UY",
+   "2B6bO-DAYWc",
+   "y5zQSrdHQt4",
+   "LzBD_lPku0g",
+   "HvF7dlDdhNI",
+   "TPod-H10x30",
+   "kyQnDlWcbAs",
+   "Yrrdzu5rGGc",
+   "yZNR4ng1-Io",
+   "Wm2_zoBSGAw",
+   "ZVgiR9yIcGo",
+   "GtUfbKNR_vA"
+  ],
+  "candidates": [],
+  "window_longs": [
+   {
+    "id": "x013VeSYHlY",
+    "title": "Before the Continents: What Was Earth Like During Pangaea?! The Forgotten Supercontinent",
+    "view_count": 172000,
+    "age": 9,
+    "duration": 4139
+   },
+   {
+    "id": "BoUjmzyXcyk",
+    "title": "18,000 Years Ago: How Did Humanity Survive in Caves During the Ice Age? | Full Documentary",
+    "view_count": 657000,
+    "age": 13,
+    "duration": 4234
+   },
+   {
+    "id": "BTQy3RPtzms",
+    "title": "Prehistoric Earth: What Our Planet Looked Like 50 Million Years Ago | Full Documentary",
+    "view_count": 320000,
+    "age": 20,
+    "duration": 3907
+   },
+   {
+    "id": "32bHM3Cr_UY",
+    "title": "Prehistoric Earth: What Our Planet Looked Like 200 Million Years Ago | Full Documentary",
+    "view_count": 2500000,
+    "age": 30,
+    "duration": 4189
+   },
+   {
+    "id": "2B6bO-DAYWc",
+    "title": "First Humans in the Americas: How did they get there more than 20,000 years ago?! | Full Documentary",
+    "view_count": 496000,
+    "age": 30,
+    "duration": 3956
+   },
+   {
+    "id": "y5zQSrdHQt4",
+    "title": "Before the First Cities: How Humanity Lived 10,000 Years Ago | Full Documentary",
+    "view_count": 2300000,
+    "age": 30,
+    "duration": 3951
+   },
+   {
+    "id": "LzBD_lPku0g",
+    "title": "The Vajont Disaster: The 250-Meter Wave That BURIED an Entire City | Full Documentary",
+    "view_count": 1100000,
+    "age": 30,
+    "duration": 3556
+   },
+   {
+    "id": "HvF7dlDdhNI",
+    "title": "THE ZEELAND DISASTER: 1,836 Lives Swallowed by the Sea in One Night in the Netherlands",
+    "view_count": 504000,
+    "age": 30,
+    "duration": 3777
+   },
+   {
+    "id": "TPod-H10x30",
+    "title": "THE MESSINA DISASTER: The 40-foot wave that swallowed earthquake survivors — 80,000 dead overnight",
+    "view_count": 274000,
+    "age": 30,
+    "duration": 3973
+   },
+   {
+    "id": "kyQnDlWcbAs",
+    "title": "The First Humans: How Did 9 Species of Humans Fight and Survive?! | Full Documentary",
+    "view_count": 954000,
+    "age": 60,
+    "duration": 3150
+   },
+   {
+    "id": "Yrrdzu5rGGc",
+    "title": "THE TRAGEDY OF BANDA ACEH: The city swallowed by a 100-foot wave that killed 167,000 people",
+    "view_count": 2600000,
+    "age": 60,
+    "duration": 3858
+   },
+   {
+    "id": "yZNR4ng1-Io",
+    "title": "THE TRAGEDY OF SAINT-PIERRE: The city burned by lava in two minutes | Full Documentary",
+    "view_count": 141000,
+    "age": 60,
+    "duration": 2367
+   },
+   {
+    "id": "Wm2_zoBSGAw",
+    "title": "THE PERALIYA TRAGEDY: The tsunami that swallowed a train with 1,700 people on board",
+    "view_count": 3800000,
+    "age": 60,
+    "duration": 3804
+   },
+   {
+    "id": "ZVgiR9yIcGo",
+    "title": "THE TRAGEDY OF MIYAKO: The City Swallowed by a Tsunami in Minutes | Full Documentary",
+    "view_count": 7600000,
+    "age": 60,
+    "duration": 4073
+   },
+   {
+    "id": "GtUfbKNR_vA",
+    "title": "THE YUNGAY TRAGEDY: The city buried by a mountain in three minutes | Full Documentary",
+    "view_count": 5300000,
+    "age": 91,
+    "duration": 3820
+   },
+   {
+    "id": "lS8EOyk7AiA",
+    "title": "THE GALVESTON TRAGEDY: The city swallowed by the ocean in a single night | Full documentary",
+    "view_count": 1500000,
+    "age": 91,
+    "duration": 3885
+   },
+   {
+    "id": "S2FcqtRIxLs",
+    "title": "HOMO FLORESIENSIS: How 3-FOOT humans fought and survived?! | Full Documentary",
+    "view_count": 271000,
+    "age": 91,
+    "duration": 2620
+   },
+   {
+    "id": "z9a1PT2NCUk",
+    "title": "Homo Erectus: The GREATEST Survivor in Human History | Full Documentary",
+    "view_count": 1300000,
+    "age": 91,
+    "duration": 2963
+   },
+   {
+    "id": "IZAw4kztEOg",
+    "title": "ANCIENT EGYPT: The secret village of the pyramid and tomb builders! | Full documentary",
+    "view_count": 54000,
+    "age": 91,
+    "duration": 3497
+   },
+   {
+    "id": "dtKa3wYSa1U",
+    "title": "Neanderthals: The Strongest Humans Who Ever Walked the Earth",
+    "view_count": 1900000,
+    "age": 91,
+    "duration": 3616
+   },
+   {
+    "id": "xj90-HGETCQ",
+    "title": "The First Humans: How Did Homo habilis Fight and Survive? | Full Documentary",
+    "view_count": 3200000,
+    "age": 91,
+    "duration": 3020
+   }
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.youtube.com/@ARQUIVO19-arq",
+  "channel": null,
+  "subs": 90100,
+  "n_listed": 80,
+  "n_long": 80,
+  "median15_long": 62000,
+  "base_ids": [
+   "riwY6kTVLcw",
+   "dDXi0vQEiMo",
+   "NYZXgoXrjmY",
+   "O_B5fpOyaHo",
+   "Uaa4YrNwRUw",
+   "qnVCd5WieMk",
+   "V6w1jmSik9A",
+   "t-kMdHPkBbA",
+   "W9wkHODkWiU",
+   "Ogy9Rj9MBWs",
+   "FtMdDc8Dx7s",
+   "C4i8RyDzu6I",
+   "bExGL3NGRD4",
+   "K1eZ5AGjP0Q",
+   "4P1hdWKS6Vw"
+  ],
+  "candidates": [
+   {
+    "id": "t-kMdHPkBbA",
+    "title": "Мотоциклист, Которого Не Могла Поймать Полиция",
+    "channel": "FILE 19",
+    "channel_follower_count": 90100,
+    "upload_date": "20261021",
+    "view_count": 1204559,
+    "duration": 1193,
+    "age": 29,
+    "median15": 62000,
+    "multiple": 19.4,
+    "breakout": true
+   },
+   {
+    "id": "Ogy9Rj9MBWs",
+    "title": "Невозможный Побег из Тюрьмы На Мешках с Кокосами",
+    "channel": "FILE 19",
+    "channel_follower_count": 90100,
+    "upload_date": "20261017",
+    "view_count": 1419517,
+    "duration": 1306,
+    "age": 33,
+    "median15": 62000,
+    "multiple": 22.9,
+    "breakout": true
+   },
+   {
+    "id": "KajZpCpxy5A",
+    "title": "4 Невозможных Побега Одного Заключённого",
+    "channel": "FILE 19",
+    "channel_follower_count": 90100,
+    "upload_date": "20260908",
+    "view_count": 1124856,
+    "duration": 1277,
+    "age": 72,
+    "median15": 62000,
+    "multiple": 18.1,
+    "breakout": true
+   },
+   {
+    "id": "XKVDyVjPRJ8",
+    "title": "Невозможное Выживание Человека В Океане за 133 Дня",
+    "channel": "FILE 19",
+    "channel_follower_count": 90100,
+    "upload_date": "20260827",
+    "view_count": 2403875,
+    "duration": 1092,
+    "age": 84,
+    "median15": 62000,
+    "multiple": 38.8,
+    "breakout": true
+   }
+  ],
+  "window_longs": [
+   {
+    "id": "riwY6kTVLcw",
+    "title": "The Terrifying Story of the USS Thresher: What Really Happened",
+    "view_count": 12000,
+    "age": 7,
+    "duration": 1179
+   },
+   {
+    "id": "dDXi0vQEiMo",
+    "title": "The 1940 World's Fair Explosion: Minute by Minute",
+    "view_count": 6400,
+    "age": 13,
+    "duration": 1211
+   },
+   {
+    "id": "NYZXgoXrjmY",
+    "title": "The Scientist Who Stuck His Head Into a Particle Accelerator",
+    "view_count": 62000,
+    "age": 13,
+    "duration": 1255
+   },
+   {
+    "id": "O_B5fpOyaHo",
+    "title": "How Fake Cops Stole £26.5 Million",
+    "view_count": 50000,
+    "age": 13,
+    "duration": 1212
+   },
+   {
+    "id": "Uaa4YrNwRUw",
+    "title": "How a Tiny Capsule Caused a Disaster in Brazil",
+    "view_count": 75000,
+    "age": 20,
+    "duration": 1243
+   },
+   {
+    "id": "qnVCd5WieMk",
+    "title": "Here's How a Prisoner Hid in a Toy Store for 6 Months",
+    "view_count": 284000,
+    "age": 20,
+    "duration": 1262
+   },
+   {
+    "id": "V6w1jmSik9A",
+    "title": "How the Escape of 150 Germans Became Part of Canada's Trap",
+    "view_count": 27000,
+    "age": 20,
+    "duration": 1215
+   },
+   {
+    "id": "t-kMdHPkBbA",
+    "title": "The Motorcyclist the Police Couldn't Catch",
+    "view_count": 1200000,
+    "age": 27,
+    "duration": 1193
+   },
+   {
+    "id": "W9wkHODkWiU",
+    "title": "Here's How Its Engines Doomed the Luxurious Boeing 377",
+    "view_count": 20000,
+    "age": 30,
+    "duration": 1140
+   },
+   {
+    "id": "Ogy9Rj9MBWs",
+    "title": "The Impossible Prison Escape on Bags of Coconuts",
+    "view_count": 1400000,
+    "age": 30,
+    "duration": 1306
+   },
+   {
+    "id": "FtMdDc8Dx7s",
+    "title": "The Honeymoon That Became Their Last",
+    "view_count": 64000,
+    "age": 30,
+    "duration": 1215
+   },
+   {
+    "id": "C4i8RyDzu6I",
+    "title": "How a Man Survived 15 Days Without Food or Light",
+    "view_count": 103000,
+    "age": 30,
+    "duration": 1300
+   },
+   {
+    "id": "bExGL3NGRD4",
+    "title": "How an A380 Lost an Engine Over the Atlantic",
+    "view_count": 19000,
+    "age": 30,
+    "duration": 1212
+   },
+   {
+    "id": "K1eZ5AGjP0Q",
+    "title": "The Terrifying Story of a FlyDubai Flight: Minute by Minute",
+    "view_count": 386000,
+    "age": 30,
+    "duration": 1047
+   },
+   {
+    "id": "4P1hdWKS6Vw",
+    "title": "The Island Isolated For Millions Of Years",
+    "view_count": 32000,
+    "age": 30,
+    "duration": 1290
+   },
+   {
+    "id": "OuM9Bt9aBd0",
+    "title": "The Farmer Who Became The Deadliest Sniper In History",
+    "view_count": 170000,
+    "age": 30,
+    "duration": 4025
+   },
+   {
+    "id": "vLlgvMviXhw",
+    "title": "The Hacker Who Shut Down the Internet in North Korea",
+    "view_count": 8900,
+    "age": 30,
+    "duration": 3853
+   },
+   {
+    "id": "KajZpCpxy5A",
+    "title": "4 Impossible Escapes by One Prisoner",
+    "view_count": 1100000,
+    "age": 60,
+    "duration": 1278
+   },
+   {
+    "id": "mo082qH0ZXs",
+    "title": "84 Hours of Survival Inside a Sunken Ship",
+    "view_count": 76000,
+    "age": 60,
+    "duration": 1259
+   },
+   {
+    "id": "dkyTqYm1dcE",
+    "title": "How A Submarine Dragged A Ship Underwater",
+    "view_count": 217000,
+    "age": 60,
+    "duration": 1191
+   },
+   {
+    "id": "hbD496cN6EE",
+    "title": "The Flight That Should Have Been Hitler's Last",
+    "view_count": 107000,
+    "age": 60,
+    "duration": 1240
+   },
+   {
+    "id": "XKVDyVjPRJ8",
+    "title": "The Impossible 133-Day Ocean Survival Story",
+    "view_count": 2400000,
+    "age": 60,
+    "duration": 1092
+   },
+   {
+    "id": "OtFJ1d8NldQ",
+    "title": "The Most Powerful Earthquake in U.S. History",
+    "view_count": 6200,
+    "age": 60,
+    "duration": 1264
+   },
+   {
+    "id": "YBLUu2tIrIw",
+    "title": "Why Flight 812 Couldn't Stop and Ran Off the Runway",
+    "view_count": 18000,
+    "age": 60,
+    "duration": 1213
+   },
+   {
+    "id": "M03uBCRNq20",
+    "title": "Did Anyone Survive Inside The Titanic",
+    "view_count": 122000,
+    "age": 91,
+    "duration": 1237
+   },
+   {
+    "id": "F76mqJQBNTQ",
+    "title": "4000 Cars Sank to the Bottom",
+    "view_count": 65000,
+    "age": 91,
+    "duration": 1183
+   },
+   {
+    "id": "BvJLO5y4qP0",
+    "title": "Why Water Pressure Doesn't Crush A Submarine",
+    "view_count": 50000,
+    "age": 91,
+    "duration": 1224
+   },
+   {
+    "id": "Yx-uFgnKk_w",
+    "title": "Why The Namib Desert Is Full Of Ships",
+    "view_count": 25000,
+    "age": 91,
+    "duration": 1222
+   },
+   {
+    "id": "TDSq4IAmsv8",
+    "title": "Here's How Nuclear Submarines Disappear",
+    "view_count": 21000,
+    "age": 91,
+    "duration": 1223
+   },
+   {
+    "id": "lEZxNfwO1kI",
+    "title": "Here’s Why Challenger Exploded After 73 Seconds",
+    "view_count": 22000,
+    "age": 91,
+    "duration": 1216
+   },
+   {
+    "id": "iBhZeglVA7I",
+    "title": "US Submarine Sinks Japanese Training Vessel",
+    "view_count": 5700,
+    "age": 91,
+    "duration": 1186
+   },
+   {
+    "id": "_0zuXszhzL4",
+    "title": "How Africa Splitting In Two Will Change The World Map",
+    "view_count": 4900,
+    "age": 91,
+    "duration": 1268
+   },
+   {
+    "id": "d5ld3fo-Z0k",
+    "title": "Why Trains No Longer Have a Last Car",
+    "view_count": 50000,
+    "age": 91,
+    "duration": 1274
+   },
+   {
+    "id": "p0UnVGX6rRc",
+    "title": "33 Workers Buried Alive At A Depth Of 700 Meters",
+    "view_count": 154000,
+    "age": 91,
+    "duration": 1260
+   },
+   {
+    "id": "snAvyszuXmQ",
+    "title": "The World's Largest Cruise Ship Graveyard",
+    "view_count": 98000,
+    "age": 91,
+    "duration": 1190
+   },
+   {
+    "id": "g0p4OFC6WtY",
+    "title": "The Plane That Lost Its Roof At 24,000 Feet",
+    "view_count": 276000,
+    "age": 91,
+    "duration": 1142
+   },
+   {
+    "id": "zjEuO1nv8aE",
+    "title": "What Really Sank The SS Edmund Fitzgerald",
+    "view_count": 84000,
+    "age": 91,
+    "duration": 1210
+   },
+   {
+    "id": "xfBTXBZG9MY",
+    "title": "The Woman Who Survived Falling From a Plane",
+    "view_count": 7100,
+    "age": 91,
+    "duration": 1231
+   },
+   {
+    "id": "bvItN1lExxM",
+    "title": "The Worst Aviation Disaster In The Netherlands",
+    "view_count": 25000,
+    "age": 91,
+    "duration": 1203
+   },
+   {
+    "id": "u4BxVucKhSI",
+    "title": "He Survived 9 Days Without Food Or Water",
+    "view_count": 171000,
+    "age": 91,
+    "duration": 1267
+   }
+  ],
+  "err": ""
+ }
+]

@@ -1,0 +1,10 @@
+# Aprovações (preenchido SOMENTE a partir de mensagem do usuário)
+APROVADO_ROTEIRO: sim
+CITACAO_ROTEIRO: "Aprovo"
+DATA_ROTEIRO: 2026-11-19
+
+APROVADO_PUBLICACAO: nao
+CITACAO_PUBLICACAO: ""
+DATA_PUBLICACAO:
+VISIBILIDADE_APROVADA:   # public | scheduled
+PUBLISH_AT:

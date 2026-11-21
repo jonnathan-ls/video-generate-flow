@@ -1,0 +1,179 @@
+{
+ "slug": "w-alexandre",
+ "date": "2026-11-19",
+ "queries": [
+  "Alexandre, o Grande história completa",
+  "Alexandre, o Grande documentário",
+  "Alexandre, o Grande",
+  "Alexandre, o Grande biografia",
+  "Alexandre, o Grande como nasceu",
+  "a história de Alexandre, o Grande",
+  "Alexandre, o Grande documentário completo",
+  "Alexandre, o Grande explicado",
+  "Alexandre, o Grande resumo",
+  "Alexandre Magno conquistas"
+ ],
+ "new_per_query": [
+  [
+   "Alexandre, o Grande história completa",
+   11
+  ],
+  [
+   "Alexandre, o Grande documentário",
+   8
+  ],
+  [
+   "Alexandre, o Grande",
+   3
+  ],
+  [
+   "Alexandre, o Grande biografia",
+   3
+  ],
+  [
+   "Alexandre, o Grande como nasceu",
+   1
+  ],
+  [
+   "a história de Alexandre, o Grande",
+   0
+  ],
+  [
+   "Alexandre, o Grande documentário completo",
+   0
+  ],
+  [
+   "Alexandre, o Grande explicado",
+   0
+  ],
+  [
+   "Alexandre, o Grande resumo",
+   0
+  ],
+  [
+   "Alexandre Magno conquistas",
+   5
+  ]
+ ],
+ "S_videos": 10,
+ "S_channels": 10,
+ "leader_views": 368833,
+ "median_without_leader": 516,
+ "median_without_top2": 343.0,
+ "share_below_5k": 0.67,
+ "convergence": false,
+ "meta_ok": "31/31",
+ "grade": "TRIAGEM (não serve para decidir)",
+ "videos": [
+  {
+   "id": "FD50brmQp_Y",
+   "title": "Encontrando o Túmulo perdido de Alexandre, o Grande | GRANDES MISTÉRIOS DA HISTÓRIA | EP. COMPLETO",
+   "channel": "Canal History Brasil",
+   "subs": 5460000,
+   "date": "2026-09-26",
+   "age": 54,
+   "views": 368833,
+   "min": 41.5,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "SlugIwtdu2M",
+   "title": "como ARISTÓTELES MOLDOU ALEXANDRE, o GRANDE",
+   "channel": "Tinocando TV",
+   "subs": 2890000,
+   "date": "2026-10-18",
+   "age": 32,
+   "views": 271593,
+   "min": 19.2,
+   "lang": "pt"
+  },
+  {
+   "id": "dUih0JozPS4",
+   "title": "A Verdadeira História de Alexandre o Grande - O Jovem que Engoliu o Mundo",
+   "channel": "Foca na História",
+   "subs": 1510000,
+   "date": "2026-08-08",
+   "age": 103,
+   "views": 10270,
+   "min": 298.6,
+   "lang": "pt"
+  },
+  {
+   "id": "Ccy8fq8LUCE",
+   "title": "Alexandre, o Grande: De Príncipe da Macedônia ao Domínio do Mundo Conhecido (Reconstituição por IA)",
+   "channel": "Atlas das Civilizações",
+   "subs": 8030,
+   "date": "2026-10-24",
+   "age": 26,
+   "views": 6750,
+   "min": 123.7,
+   "lang": "pt"
+  },
+  {
+   "id": "1J7juCHxx28",
+   "title": "Alexandre, o Grande: A História do Homem que Conquistou o Mundo Conhecido",
+   "channel": "Atlas de Impérios e Civilizações",
+   "subs": 5690,
+   "date": "2026-09-10",
+   "age": 70,
+   "views": 4640,
+   "min": 114.2,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "ttur4Z9Ge5w",
+   "title": "Alexandre Magno: de príncipe macedónio a senhor do mundo — ascensão e morte de um deus mortal",
+   "channel": "Gonçalo – O Último Ato",
+   "subs": 236,
+   "date": "2026-10-24",
+   "age": 26,
+   "views": 516,
+   "min": 118.2,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "u_XmZfNXzFg",
+   "title": "ALEXANDRE, O GRANDE a BIOGRAFIA",
+   "channel": "Everton de Moura - Aprendendo com Livros",
+   "subs": 55,
+   "date": "2026-09-01",
+   "age": 79,
+   "views": 170,
+   "min": 15.5,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "fnH1kHS6Y2c",
+   "title": "Alexandre, o Grande — Biografia Completa em Português",
+   "channel": "Aura Scripta",
+   "subs": 189,
+   "date": "2026-09-10",
+   "age": 70,
+   "views": 153,
+   "min": 72.9,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "w8pJ1PXScxI",
+   "title": "As Conquistas de Alexandre, o Grande, e o Império Macedônio em 18 Minutos",
+   "channel": "Atlas do Tempo",
+   "subs": 15,
+   "date": "2026-11-02",
+   "age": 17,
+   "views": 71,
+   "min": 18.2,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "oDgwd2Hq6cg",
+   "title": "O Maior Conquistador da História: A Verdade Sobre Alexandre, o Grande (Reconstituição por IA)",
+   "channel": "Grandes Civilizações do Passado",
+   "subs": 1310,
+   "date": "2026-11-11",
+   "age": 8,
+   "views": 19,
+   "min": 120.2,
+   "lang": "pt"
+  }
+ ]
+}

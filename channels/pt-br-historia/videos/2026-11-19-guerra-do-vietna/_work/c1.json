@@ -1,0 +1,3 @@
+[
+ {"method": "Runtime.evaluate", "params": {"expression": "JSON.stringify({nCreated:(document.body.innerText.match(/Created Nov 20/g)||[]).length, pct:(document.body.innerText.match(/\\d+%/g)||[])})", "returnByValue": true}}
+]

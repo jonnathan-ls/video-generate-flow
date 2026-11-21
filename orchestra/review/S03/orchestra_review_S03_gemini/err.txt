@@ -1,0 +1,26 @@
+Warning: 256-color support not detected. Using a terminal with at least 256-color support is recommended for a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Skill conflict detected: "impeccable" from "/home/jonnathan/.agents/skills/impeccable/SKILL.md" is overriding the same skill from "/home/jonnathan/.gemini/skills/impeccable/SKILL.md".
+Skill conflict detected: "review" from "/home/jonnathan/projects/ai-youtube-channel/.agents/skills/review/SKILL.md" is overriding the same skill from "/home/jonnathan/.agents/skills/review/SKILL.md".
+Error when talking to Gemini API Full report available at: /tmp/gemini-client-error-Turn.run-sendMessageStream-2026-11-20T21-04-47-065Z.json TerminalQuotaError: You have exhausted your daily quota on this model.
+    at classifyGoogleError (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:269933:16)
+    at retryWithBackoff (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:270562:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async GeminiChat.makeApiCallAndProcessStream (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:293199:28)
+    at async GeminiChat.streamWithRetries (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:293037:29)
+    at async Turn.run (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:293564:24)
+    at async GeminiClient.processTurn (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:306115:22)
+    at async GeminiClient.sendMessageStream (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:306227:14)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/gemini-OHH6WLHR.js:10811:26
+    at async main (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/gemini-OHH6WLHR.js:15885:5) {
+  cause: {
+    code: 429,
+    message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n' +
+      '* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\n' +
+      'Please retry in 10h55m13.027267193s.',
+    details: [ [Object], [Object], [Object] ]
+  },
+  retryDelayMs: undefined,
+  reason: undefined
+}
+An unexpected critical error occurred:[object Object]

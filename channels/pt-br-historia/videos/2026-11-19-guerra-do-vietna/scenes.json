@@ -1,0 +1,3691 @@
+{
+ "video": "2026-11-19-guerra-do-vietna",
+ "voz": "pm_santa",
+ "speed": 0.88,
+ "duration": 1278.807,
+ "scenes": [
+  {
+   "id": "S01",
+   "n": 1,
+   "start": 0.0,
+   "end": 15.299,
+   "duration": 15.299,
+   "text": "Em dezembro de 1965, o embaixador dos Estados Unidos pediu soldados ao presidente do Brasil. Era para uma guerra do outro lado do mundo. E existe um documento do governo americano que registra o que aconteceu depois.",
+   "visual": "mapa-múndi escuro, texto 'dezembro de 1965', pontos no Brasil e no Vietnã",
+   "sfx": "drone baixo",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "date",
+      "start_s": 0.0,
+      "end_s": 3.2,
+      "cue": "Em dezembro de 1965",
+      "motion": "push-in + tracking do texto",
+      "layers": [
+       "mapa-escuro",
+       "data",
+       "poeira+raios"
+      ],
+      "date": {
+       "top": "DEZEMBRO",
+       "big": "1965"
+      },
+      "label": {
+       "word": "dezembro"
+      }
+     },
+     {
+      "kind": "map-zoom",
+      "start_s": 3.0,
+      "end_s": 8.0,
+      "cue": "o embaixador dos EUA pediu soldados ao presidente do Brasil",
+      "motion": "câmera desce do Norte ao Brasil + rota",
+      "layers": [
+       "mapa",
+       "rota+marcadores",
+       "poeira"
+      ],
+      "cam0": {
+       "center": [
+        -62,
+        22
+       ],
+       "scale": 520
+      },
+      "cam1": {
+       "center": [
+        -58,
+        -4
+       ],
+       "scale": 430
+      },
+      "pins": [
+       {
+        "at": [
+         -77,
+         38.9
+        ],
+        "label": "ESTADOS UNIDOS",
+        "align": "right",
+        "word": "Unidos",
+        "at_cue": "unidos#1",
+        "at_s": 4.54
+       },
+       {
+        "at": [
+         -47.9,
+         -15.8
+        ],
+        "label": "BRASIL",
+        "align": "right",
+        "at_cue": "brasil#1",
+        "at_s": 6.76
+       }
+      ],
+      "route": {
+       "pts": [
+        [
+         -77,
+         38.9
+        ],
+        [
+         -47.9,
+         -15.8
+        ]
+       ],
+       "word": "pediu",
+       "from_s": 5.02,
+       "to_s": 6.76
+      },
+      "names": [
+       {
+        "text": "LINCOLN GORDON",
+        "sub": "embaixador dos EUA",
+        "out_s": 6.2,
+        "at_cue": "embaixador#1",
+        "at_s": 3.36
+       },
+       {
+        "text": "CASTELO BRANCO",
+        "sub": "presidente do Brasil",
+        "out_s": 8.0,
+        "at_cue": "presidente#1",
+        "at_s": 6.36
+       }
+      ],
+      "hold": true
+     },
+     {
+      "kind": "map-zoom",
+      "start_s": 8.0,
+      "end_s": 10.7,
+      "cue": "uma guerra do outro lado do mundo",
+      "motion": "câmera abre para o mundo + rota",
+      "layers": [
+       "mapa",
+       "rota+marcadores",
+       "poeira"
+      ],
+      "cam0": {
+       "center": [
+        -58,
+        -4
+       ],
+       "scale": 430
+      },
+      "cam1": {
+       "center": [
+        22,
+        8
+       ],
+       "scale": 300
+      },
+      "pins": [
+       {
+        "at": [
+         -47.9,
+         -15.8
+        ],
+        "label": "BRASIL",
+        "at_s": 0.0,
+        "align": "left"
+       },
+       {
+        "at": [
+         106.7,
+         10.8
+        ],
+        "label": "VIETNÃ",
+        "align": "right",
+        "word": "mundo",
+        "at_cue": "mundo#1",
+        "at_s": 10.44
+       }
+      ],
+      "route": {
+       "pts": [
+        [
+         -47.9,
+         -15.8
+        ],
+        [
+         106.7,
+         10.8
+        ]
+       ],
+       "word": "outro",
+       "from_s": 9.040000000000001,
+       "to_s": 10.44
+      },
+      "cut": true
+     },
+     {
+      "kind": "doc",
+      "start_s": 10.6,
+      "end_s": 15.7,
+      "cue": "E existe um documento do governo americano que registra o que aconteceu",
+      "motion": "documento entra, push-in e destaque de linha",
+      "layers": [
+       "mesa",
+       "documento",
+       "destaque+poeira"
+      ],
+      "doc": {
+       "sub": "Washington, December 31, 1965",
+       "src": "FRUS 1964–68, vol. XXXI, doc. 225 · memorando de Bundy a Johnson · trecho",
+       "quote": "Gordon \"made a very strong pitch on the troops\"",
+       "word": "registra",
+       "head": "MEMORANDUM",
+       "at_cue": "registra#1",
+       "at_s": 13.059999999999999
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "S02",
+   "n": 2,
+   "start": 15.849,
+   "end": 43.501,
+   "duration": 27.652,
+   "text": "Na mesma reunião em que falou de um empréstimo de 150 milhões de dólares, o embaixador fez uma pressão muito forte por tropas brasileiras no Vietnã. O governo americano diz que tratou os dois assuntos separados, mas o pedido foi feito na mesma conversa. O que o presidente respondeu? A resposta está no documento, e vamos lê-lo no fim deste vídeo. Antes, é preciso saber como os Estados Unidos chegaram a esse pedido.",
+   "visual": "arco pontilhado liga o Brasil ao Vietnã, rótulos 'pedido de tropas' e 'empréstimo, tratado à parte', legenda: o memorando não traz a data da reunião, o telegrama é de 17 de dezembro",
+   "sfx": "som de movimento do arco",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "stat",
+      "start_s": 0.0,
+      "end_s": 4.4,
+      "cue": "na mesma reunião em que falou de um empréstimo de 150 milhões de dólares",
+      "motion": "a pasta do empréstimo desliza na mesa",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/desk_top.jpg",
+       "z0": 1.03,
+       "z1": 1.09,
+       "ox": "62%",
+       "oy": "50%",
+       "actors": [
+        {
+         "src": "vietna/pasta.png",
+         "from": [
+          130,
+          58
+         ],
+         "to": [
+          68,
+          56
+         ],
+         "h": 42,
+         "t0_s": 1.58,
+         "t1_s": 2.43,
+         "ease": "out",
+         "rot": [
+          9,
+          -3
+         ],
+         "label": "EMPRÉSTIMO",
+         "sfx": "paper",
+         "note": "a pasta do empréstimo desliza na mesa",
+         "sfx_at_cue": "emprestimo#1",
+         "sfx_at_s": 1.73
+        }
+       ]
+      },
+      "stat": {
+       "big": "US$ 150 milhões",
+       "label": "empréstimo ao Brasil",
+       "big_at_cue": "150#1",
+       "big_at_s": 3.19,
+       "label_at_cue": "milhoes#1",
+       "label_at_s": 4.01
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 4.4,
+      "end_s": 8.4,
+      "cue": "o embaixador fez uma pressão muito forte",
+      "motion": "o embaixador entra na sala e anda até a mesa",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/office_65b.jpg",
+       "z0": 1.03,
+       "z1": 1.08,
+       "ox": "45%",
+       "oy": "70%",
+       "actors": [
+        {
+         "src": "vietna/diplomata.png",
+         "from": [
+          24,
+          66
+         ],
+         "to": [
+          47,
+          82
+         ],
+         "h": 32,
+         "scale1": 1.22,
+         "t0_s": 5.51,
+         "t1_s": 8.35,
+         "ease": "linear",
+         "slices": 1,
+         "ar": 0.513,
+         "gait": 7,
+         "legs": 0.45,
+         "bob": 3,
+         "rock": 0.6,
+         "sfx": "step1",
+         "note": "passos do embaixador entrando na sala"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "LINCOLN GORDON",
+        "sub": "embaixador dos EUA no Brasil",
+        "out_s": 8.2,
+        "at_cue": "embaixador#1",
+        "at_s": 6.01
+       }
+      ]
+     },
+     {
+      "kind": "stat",
+      "start_s": 8.4,
+      "end_s": 11.9,
+      "cue": "por tropas brasileiras no Vietnã",
+      "motion": "coluna de soldados brasileiros marcha no pátio do quartel",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/quartel_65.jpg",
+       "z0": 1.03,
+       "z1": 1.19,
+       "ox": "40%",
+       "oy": "75%",
+       "actors": [
+        {
+         "src": "vietna/coluna_br65_a.png",
+         "from": [
+          68.5,
+          81
+         ],
+         "to": [
+          94.5,
+          81
+         ],
+         "h": 26.7,
+         "t0_s": 8.4,
+         "t1_s": 11.9,
+         "ease": "linear",
+         "bob": 2,
+         "sfx": "steps",
+         "note": "passos da coluna de soldados brasileiros",
+         "frames": [
+          "vietna/coluna_br65_a.png",
+          "vietna/coluna_br65_b.png",
+          "vietna/coluna_br65_c.png"
+         ],
+         "frame_fps": 6
+        }
+       ]
+      },
+      "stat": {
+       "big": "TROPAS",
+       "label": "o pedido: soldados brasileiros no Vietnã",
+       "big_at_cue": "tropas#1",
+       "big_at_s": 8.85,
+       "label_at_cue": "brasileiras#1",
+       "label_at_s": 9.29
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 11.9,
+      "end_s": 17.2,
+      "cue": "tratou os dois assuntos separados, mas o pedido foi feito na mesma conversa",
+      "motion": "as duas pastas se afastam e depois voltam a se juntar",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/desk_top2.jpg",
+       "z0": 1.02,
+       "z1": 1.07,
+       "ox": "50%",
+       "oy": "55%",
+       "actors": [
+        {
+         "src": "vietna/pasta.png",
+         "from": [
+          42,
+          82
+         ],
+         "path": [
+          [
+           42,
+           82
+          ],
+          [
+           42,
+           82
+          ],
+          [
+           27,
+           82
+          ],
+          [
+           27,
+           82
+          ],
+          [
+           40,
+           81
+          ]
+         ],
+         "path_s": [
+          11.9,
+          13.49,
+          14.19,
+          16.01,
+          16.66
+         ],
+         "h": 40,
+         "rot": [
+          -4,
+          -4
+         ],
+         "label": "EMPRÉSTIMO",
+         "sfx": "paper",
+         "note": "as pastas se afastam: assuntos tratados à parte",
+         "sfx_at_cue": "separados#1",
+         "sfx_at_s": 13.59
+        },
+        {
+         "src": "vietna/pasta.png",
+         "from": [
+          58,
+          80
+         ],
+         "path": [
+          [
+           58,
+           80
+          ],
+          [
+           58,
+           80
+          ],
+          [
+           73,
+           80
+          ],
+          [
+           73,
+           80
+          ],
+          [
+           60,
+           83
+          ]
+         ],
+         "path_s": [
+          11.9,
+          13.49,
+          14.19,
+          16.01,
+          16.66
+         ],
+         "h": 40,
+         "rot": [
+          5,
+          5
+         ],
+         "label": "TROPAS",
+         "sfx": "paper",
+         "note": "as pastas voltam a se juntar: mesma conversa",
+         "sfx_at_cue": "mesma#2",
+         "sfx_at_s": 16.21
+        }
+       ]
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 17.2,
+      "end_s": 19.7,
+      "cue": "o relato da conversa: telegrama do Rio, 17 de dezembro; o que o presidente respondeu?",
+      "motion": "a máquina de escrever bate o cabeçalho do telegrama",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/typewriter_65.jpg",
+       "z0": 1.12,
+       "z1": 1.18,
+       "ox": "56%",
+       "oy": "35%",
+       "fx": [
+        {
+         "kind": "typing",
+         "x": 56.4,
+         "y": 27,
+         "w": 400,
+         "size": 34,
+         "paper": false,
+         "lines": [
+          "RIO DE JANEIRO",
+          "17 DEZ 1965",
+          "TELEGRAMA 1456"
+         ],
+         "from_s": 17.3,
+         "to_s": 19.4,
+         "note": "teclas batendo o telegrama 1456"
+        }
+       ]
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 19.7,
+      "end_s": 23.6,
+      "cue": "a resposta está no documento, e vamos lê-lo no fim deste vídeo",
+      "motion": "o memorando chega à mesa, o selo cai e a pasta é guardada para o fim",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/desk_top.jpg",
+       "z0": 1.06,
+       "z1": 1.02,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/pasta.png",
+         "from": [
+          -30,
+          82
+         ],
+         "path": [
+          [
+           -30,
+           82
+          ],
+          [
+           50,
+           80
+          ],
+          [
+           50,
+           80
+          ],
+          [
+           128,
+           80
+          ]
+         ],
+         "path_s": [
+          19.7,
+          20.18,
+          21.86,
+          22.66
+         ],
+         "h": 54,
+         "rot": [
+          -2,
+          -2
+         ],
+         "label": "MEMORANDO",
+         "sfx": "paper",
+         "note": "o memorando desliza na mesa",
+         "sfx_at_cue": "resposta#1",
+         "sfx_at_s": 19.83
+        },
+        {
+         "src": "vietna/selo.png",
+         "from": [
+          60,
+          74
+         ],
+         "path": [
+          [
+           60,
+           74
+          ],
+          [
+           60,
+           74
+          ],
+          [
+           138,
+           74
+          ]
+         ],
+         "path_s": [
+          20.55,
+          21.86,
+          22.66
+         ],
+         "h": 16,
+         "appear_s": 20.25,
+         "grow": [
+          1.9,
+          1.0
+         ],
+         "t1_s": 20.55,
+         "sfx": "stamp",
+         "note": "o selo de cera cai sobre o memorando",
+         "sfx_at_cue": "documento#1",
+         "sfx_at_s": 20.55
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "MEMORANDO DE 31/12/1965",
+        "sub": "a resposta: no fim do vídeo",
+        "out_s": 23.4,
+        "at_cue": "documento#1",
+        "at_s": 20.55
+       }
+      ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 23.6,
+      "end_s": 28.05,
+      "cue": "antes, é preciso saber como os EUA chegaram a esse pedido",
+      "motion": "o calendário volta de 1965 a 1945, folhas arrancadas",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/office_65.jpg",
+       "z0": 1.35,
+       "z1": 1.42,
+       "ox": "74%",
+       "oy": "32%",
+       "fx": [
+        {
+         "kind": "calendar",
+         "x": 74,
+         "y": 33,
+         "w": 250,
+         "from": 1965,
+         "to": 1945,
+         "from_s": 23.88,
+         "to_s": 27.27,
+         "note": "folhas do calendário voltam no tempo"
+        }
+       ]
+      }
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S03",
+   "n": 3,
+   "start": 44.051,
+   "end": 53.56,
+   "duration": 9.509,
+   "text": "A história começa vinte anos antes do pedido, num discurso em Hanói, e termina quase dez anos depois dele, em Saigon. No meio, há um lugar para o Brasil.",
+   "visual": "linha do tempo 1945 a 1975 se desenhando, marcador do Brasil",
+   "sfx": "",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "date",
+      "start_s": 0.0,
+      "end_s": 4.2,
+      "cue": "a história começa vinte anos antes, num discurso em Hanói",
+      "motion": "moradores de Hanói caminham com bandeiras pela avenida",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/hanoi_45b.jpg",
+       "z0": 1.03,
+       "z1": 1.19,
+       "ox": "50%",
+       "oy": "75%",
+       "actors": [
+        {
+         "src": "vietna/coluna_civis_45_a.png",
+         "from": [
+          -14,
+          84
+         ],
+         "to": [
+          24.7,
+          84
+         ],
+         "h": 24.4,
+         "t0_s": 0.1,
+         "t1_s": 4.2,
+         "ease": "linear",
+         "bob": 2,
+         "sfx": "steps",
+         "note": "passos de moradores a caminho da praça",
+         "frames": [
+          "vietna/coluna_civis_45_a.png",
+          "vietna/coluna_civis_45_b.png",
+          "vietna/coluna_civis_45_c.png"
+         ],
+         "frame_fps": 6
+        }
+       ]
+      },
+      "date": {
+       "top": "HANÓI",
+       "big": "1945"
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 4.2,
+      "end_s": 7.2,
+      "cue": "e termina quase dez anos depois, em Saigon",
+      "motion": "helicóptero cruza o céu de Saigon",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/saigon_75.jpg",
+       "z0": 1.02,
+       "z1": 1.07,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/ch53.png",
+         "from": [
+          -14,
+          33
+         ],
+         "to": [
+          66,
+          27
+         ],
+         "h": 15,
+         "t0_s": 4.2,
+         "t1_s": 7.2,
+         "ease": "linear",
+         "rot": [
+          2,
+          0
+         ],
+         "rotor": [
+          55,
+          4,
+          92
+         ],
+         "bob": 3,
+         "period": 50,
+         "tint": "grayscale(0.9) sepia(0.85) hue-rotate(38deg) saturate(1.7) brightness(0.7) contrast(1.06)",
+         "sfx": "rotor",
+         "note": "pás do helicóptero sobre Saigon"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "SAIGON",
+        "sub": "1975",
+        "out_s": 7.1,
+        "at_cue": "saigon#1",
+        "at_s": 6.63
+       }
+      ]
+     },
+     {
+      "kind": "stat",
+      "start_s": 7.2,
+      "end_s": 9.91,
+      "cue": "no meio, há um lugar para o Brasil",
+      "motion": "a bandeira do Brasil tremula no mastro, na baía do Rio",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/rio_65.jpg",
+       "z0": 1.03,
+       "z1": 1.08,
+       "ox": "30%",
+       "oy": "40%",
+       "actors": [
+        {
+         "src": "vietna/bandeira_br.png",
+         "from": [
+          23.2,
+          21
+         ],
+         "h": 16,
+         "slices": 8,
+         "ar": 1.4286,
+         "cloth": 6,
+         "tint": "saturate(0.8) sepia(0.15)",
+         "sfx": "flag",
+         "note": "bandeira do Brasil batendo ao vento"
+        }
+       ]
+      },
+      "stat": {
+       "big": "BRASIL",
+       "label": "1965",
+       "big_at_cue": "brasil#1",
+       "big_at_s": 9.07,
+       "label_at_cue": "brasil#1",
+       "label_at_s": 9.07
+      }
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S04",
+   "n": 4,
+   "start": 54.11,
+   "end": 76.429,
+   "duration": 22.319,
+   "text": "Tudo começa em 2 de setembro de 1945, em Hanói. Ho Chi Minh lê a declaração de independência do Vietnã para uma multidão que as fontes estimam em cerca de 500 mil pessoas, na praça de Ba Dinh. O texto se inspira na Declaração de Independência americana e na Declaração dos Direitos do Homem e do Cidadão, da França. Ele pede que os aliados reconheçam o novo país.",
+   "visual": "Hanói, praça de Ba Dinh em tipografia, data 2 de setembro de 1945",
+   "sfx": "som ambiente de multidão, baixo",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "date",
+      "start_s": 0.0,
+      "end_s": 4.4,
+      "cue": "2 de setembro de 1945, em Hanói",
+      "motion": "moradores caminham para a praça",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/hanoi_a.jpg",
+       "z0": 1.03,
+       "z1": 1.19,
+       "ox": "50%",
+       "oy": "75%",
+       "actors": [
+        {
+         "src": "vietna/coluna_civis_45_a.png",
+         "from": [
+          116,
+          84
+         ],
+         "to": [
+          74.4,
+          84
+         ],
+         "h": 24.4,
+         "t0_s": 0.0,
+         "t1_s": 4.4,
+         "ease": "linear",
+         "bob": 2,
+         "flip": true,
+         "sfx": "steps",
+         "note": "passos de moradores a caminho da praça",
+         "frames": [
+          "vietna/coluna_civis_45_a.png",
+          "vietna/coluna_civis_45_b.png",
+          "vietna/coluna_civis_45_c.png"
+         ],
+         "frame_fps": 6
+        }
+       ]
+      },
+      "date": {
+       "top": "HANÓI · 2 DE SETEMBRO",
+       "big": "1945"
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 4.4,
+      "end_s": 7.3,
+      "cue": "Ho Chi Minh lê a declaração de independência",
+      "motion": "a multidão de costas ergue os braços diante do palanque",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/palanque_45.jpg",
+       "z0": 1.04,
+       "z1": 1.12,
+       "ox": "50%",
+       "oy": "55%",
+       "actors": [
+        {
+         "src": "vietna/multidao_costas.png",
+         "from": [
+          26,
+          106
+         ],
+         "h": 36,
+         "slices": 12,
+         "ar": 2.867,
+         "wave": 9,
+         "flip": false,
+         "under_caption_ok": true,
+         "sfx": "crowd",
+         "note": "multidão na praça de Ba Dinh"
+        },
+        {
+         "src": "vietna/multidao_costas.png",
+         "from": [
+          76,
+          107
+         ],
+         "h": 37,
+         "slices": 12,
+         "ar": 2.867,
+         "wave": 9,
+         "flip": true,
+         "under_caption_ok": true,
+         "sfx": "crowd",
+         "note": "multidão na praça de Ba Dinh"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "HO CHI MINH",
+        "sub": "lê a declaração de independência",
+        "out_s": 7.1,
+        "at_cue": "ho#1",
+        "at_s": 4.53
+       }
+      ]
+     },
+     {
+      "kind": "stat",
+      "start_s": 7.3,
+      "end_s": 10.6,
+      "cue": "uma multidão de cerca de 500 mil pessoas",
+      "motion": "punhos e bandeiras se agitam na multidão",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/crowd_c.jpg",
+       "z0": 1.04,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "50%",
+       "actors": [
+        {
+         "src": "vietna/multidao_costas.png",
+         "from": [
+          30,
+          112
+         ],
+         "h": 34,
+         "slices": 12,
+         "ar": 2.867,
+         "wave": 9,
+         "flip": false,
+         "under_caption_ok": true,
+         "sfx": "crowd",
+         "note": "multidão na praça de Ba Dinh"
+        },
+        {
+         "src": "vietna/multidao_costas.png",
+         "from": [
+          80,
+          113
+         ],
+         "h": 35,
+         "slices": 12,
+         "ar": 2.867,
+         "wave": 9,
+         "flip": true,
+         "under_caption_ok": true,
+         "sfx": "crowd",
+         "note": "multidão na praça de Ba Dinh"
+        }
+       ]
+      },
+      "stat": {
+       "top": "PRAÇA BA ĐÌNH",
+       "big": "≈ 500 mil",
+       "label": "pessoas, segundo estimativas",
+       "big_at_cue": "500#1",
+       "big_at_s": 9.55,
+       "label_at_cue": "pessoas#1",
+       "label_at_s": 10.15
+      }
+     },
+     {
+      "kind": "stat",
+      "start_s": 10.6,
+      "end_s": 13.3,
+      "cue": "na praça de Ba Dinh",
+      "motion": "a bandeira vermelha com estrela amarela tremula no alto do mastro",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/mastro_45.jpg",
+       "z0": 1.03,
+       "z1": 1.09,
+       "ox": "30%",
+       "oy": "6%",
+       "actors": [
+        {
+         "src": "vietna/bandeira_vn.png",
+         "from": [
+          30.4,
+          24
+         ],
+         "h": 18,
+         "slices": 8,
+         "ar": 1.667,
+         "wave": 7,
+         "sfx": "flag",
+         "note": "bandeira tremulando sobre a praça"
+        }
+       ]
+      },
+      "stat": {
+       "big": "Ba Đình",
+       "label": "praça de Hanói, 2 de setembro de 1945",
+       "big_at_cue": "praca#1",
+       "big_at_s": 11.03,
+       "label_at_cue": "dinh#1",
+       "label_at_s": 11.71
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 13.3,
+      "end_s": 19.2,
+      "cue": "o texto se inspira na Declaração americana e na Declaração dos Direitos do Homem",
+      "motion": "as duas declarações deslizam sobre a mesa",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/desk_45.jpg",
+       "z0": 1.03,
+       "z1": 1.08,
+       "ox": "40%",
+       "oy": "50%",
+       "actors": [
+        {
+         "src": "vietna/decl_us.jpg",
+         "from": [
+          -25,
+          80
+         ],
+         "to": [
+          30,
+          78
+         ],
+         "h": 46,
+         "rot": [
+          -14,
+          -5
+         ],
+         "t0_s": 14.02,
+         "t1_s": 14.82,
+         "ease": "out",
+         "sfx": "paper",
+         "note": "a Declaração americana desliza na mesa",
+         "sfx_at_cue": "americana#1",
+         "sfx_at_s": 14.17
+        },
+        {
+         "src": "vietna/decl_fr.jpg",
+         "from": [
+          128,
+          82
+         ],
+         "to": [
+          62,
+          79
+         ],
+         "h": 46,
+         "rot": [
+          12,
+          4
+         ],
+         "t0_s": 16.36,
+         "t1_s": 17.26,
+         "ease": "out",
+         "sfx": "paper",
+         "note": "a Declaração francesa desliza na mesa",
+         "sfx_at_cue": "direitos#1",
+         "sfx_at_s": 16.53
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "DECLARAÇÃO DE INDEPENDÊNCIA",
+        "sub": "Estados Unidos, 1776",
+        "out_s": 16.3,
+        "at_cue": "americana#1",
+        "at_s": 14.77
+       },
+       {
+        "text": "DIREITOS DO HOMEM E DO CIDADÃO",
+        "sub": "França, 1789",
+        "out_s": 19.0,
+        "at_cue": "direitos#1",
+        "at_s": 16.53
+       }
+      ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 19.2,
+      "end_s": 22.72,
+      "cue": "ele pede que os aliados reconheçam o novo país",
+      "motion": "a multidão ergue os braços sob as bandeiras",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/crowd_a.jpg",
+       "z0": 1.08,
+       "z1": 1.02,
+       "ox": "50%",
+       "oy": "40%",
+       "actors": [
+        {
+         "src": "vietna/multidao_costas.png",
+         "from": [
+          24,
+          110
+         ],
+         "h": 33,
+         "slices": 12,
+         "ar": 2.867,
+         "wave": 9,
+         "flip": false,
+         "under_caption_ok": true,
+         "sfx": "crowd",
+         "note": "multidão na praça de Ba Dinh"
+        },
+        {
+         "src": "vietna/multidao_costas.png",
+         "from": [
+          74,
+          111
+         ],
+         "h": 34,
+         "slices": 12,
+         "ar": 2.867,
+         "wave": 9,
+         "flip": true,
+         "under_caption_ok": true,
+         "sfx": "crowd",
+         "note": "multidão na praça de Ba Dinh"
+        }
+       ],
+       "sfx": [
+        {
+         "kind": "cheer",
+         "at_s": 20.65,
+         "at_cue": "reconheçam#1",
+         "note": "a multidão reage ao pedido de reconhecimento"
+        }
+       ]
+      }
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S05",
+   "n": 5,
+   "start": 76.979,
+   "end": 105.068,
+   "duration": 28.089,
+   "text": "A França não aceita. Soldados britânicos chegam ao sul em setembro de 1945, tropas francesas retomam Saigon, e em março de 1946 cerca de 15 mil soldados franceses desembarcam no Tonkin, no norte. Em 19 de dezembro de 1946, o Viet Minh ataca a usina elétrica de Hanói e outras instalações francesas. É o começo da guerra entre a França e o Viet Minh.",
+   "visual": "mapa da Indochina com soldados franceses chegando, datas 1946",
+   "sfx": "som de movimento de tropas no mapa, baixo",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "plate",
+      "start_s": 0.0,
+      "end_s": 6.5,
+      "cue": "soldados britânicos chegam ao sul em setembro de 1945",
+      "motion": "navio entra no quadro e atraca",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/bg_saigon.jpg",
+       "z0": 1.02,
+       "z1": 1.2,
+       "ox": "60%",
+       "oy": "65%",
+       "actors": [
+        {
+         "src": "vietna/ship.png",
+         "from": [
+          125,
+          79
+         ],
+         "to": [
+          60,
+          79
+         ],
+         "h": 30,
+         "t0_s": 0.2,
+         "t1_s": 5.8,
+         "ease": "out",
+         "bob": 2,
+         "rock": 0.5,
+         "period": 70,
+         "wake": true,
+         "sink": 0.22,
+         "smoke": [
+          52,
+          21
+         ],
+         "sfx": "engine",
+         "note": "motor do navio britânico chegando"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "SAIGON · SETEMBRO DE 1945",
+        "sub": "chegam os soldados britânicos",
+        "out_s": 6.2,
+        "at_cue": "sul#1",
+        "at_s": 3.42
+       }
+      ]
+     },
+     {
+      "kind": "stat",
+      "start_s": 6.5,
+      "end_s": 9.0,
+      "cue": "tropas francesas retomam Saigon",
+      "motion": "coluna francesa marcha no cais",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/bg_saigon.jpg",
+       "z0": 1.5,
+       "z1": 1.6,
+       "ox": "28%",
+       "oy": "62%",
+       "actors": [
+        {
+         "src": "vietna/coluna_fr46_a.png",
+         "from": [
+          31,
+          55.5
+         ],
+         "to": [
+          40.8,
+          55.5
+         ],
+         "h": 10.3,
+         "t0_s": 6.5,
+         "t1_s": 9.0,
+         "ease": "linear",
+         "bob": 2,
+         "sfx": "steps",
+         "note": "passos da coluna francesa no cais",
+         "frames": [
+          "vietna/coluna_fr46_a.png",
+          "vietna/coluna_fr46_b.png",
+          "vietna/coluna_fr46_c.png"
+         ],
+         "frame_fps": 6
+        }
+       ]
+      },
+      "stat": {
+       "big": "SAIGON",
+       "label": "retomada pelas tropas francesas",
+       "big_at_cue": "francesas#1",
+       "big_at_s": 6.86,
+       "label_at_cue": "retomam#1",
+       "label_at_s": 7.44
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 9.0,
+      "end_s": 15.8,
+      "cue": "em março de 1946, cerca de 15 mil soldados franceses desembarcam no Tonkin",
+      "motion": "o navio de transporte atraca ao longo do cais de Haiphong; a tropa desce pela prancha até o cais",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/haiphong_46b.jpg",
+       "z0": 1.04,
+       "z1": 1.1,
+       "ox": "55%",
+       "oy": "62%",
+       "actors": [
+        {
+         "src": "vietna/ship.png",
+         "from": [
+          -24,
+          67
+         ],
+         "to": [
+          50,
+          67.2
+         ],
+         "h": 23,
+         "t0_s": 9.1,
+         "t1_s": 13.65,
+         "ease": "inout",
+         "bob": 1.2,
+         "rock": 0.25,
+         "period": 90,
+         "wake": true,
+         "sink": 0.2,
+         "smoke": [
+          52,
+          21
+         ],
+         "land": true,
+         "land_note": "o navio encosta ao longo do cais de Haiphong, convés na altura do cais",
+         "sfx": "engine",
+         "note": "motor do navio entrando no porto"
+        },
+        {
+         "src": "vietna/prancha.png",
+         "from": [
+          52.0,
+          61.25
+         ],
+         "h": 3.2,
+         "flip": true,
+         "rot": [
+          13.8,
+          13.8
+         ],
+         "tint": "brightness(1.45) contrast(1.15)",
+         "sfx": "none",
+         "note": "prancha de desembarque ligando o convés ao cais"
+        },
+        {
+         "src": "vietna/coluna_fr46_a.png",
+         "from": [
+          -22.0,
+          60.6
+         ],
+         "path": [
+          [
+           -22.0,
+           60.6
+          ],
+          [
+           52.0,
+           60.6
+          ],
+          [
+           56.6,
+           60.45
+          ],
+          [
+           61.0,
+           60.8
+          ],
+          [
+           65.5,
+           60.95
+          ]
+         ],
+         "path_s": [
+          9.1,
+          13.65,
+          14.3,
+          15.2,
+          15.9
+         ],
+         "appear_s": 9.05,
+         "h": 3.3,
+         "bob": 1.0,
+         "sfx": "steps",
+         "note": "passos da tropa que desce a prancha do navio até o cais",
+         "frames": [
+          "vietna/coluna_fr46_a.png",
+          "vietna/coluna_fr46_b.png",
+          "vietna/coluna_fr46_c.png"
+         ],
+         "frame_fps": 7
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "HAIPHONG · MARÇO DE 1946",
+        "sub": "≈ 15 mil soldados franceses chegam ao Tonkin",
+        "out_s": 15.5,
+        "at_cue": "marco#1",
+        "at_s": 9.16
+       }
+      ]
+     },
+     {
+      "kind": "date",
+      "start_s": 15.8,
+      "end_s": 22.8,
+      "cue": "em 19 de dezembro de 1946, o Viet Minh ataca a usina elétrica de Hanói",
+      "motion": "a usina explode e a cidade apaga",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/bg_plant.jpg",
+       "z0": 1.02,
+       "z1": 1.12,
+       "ox": "50%",
+       "oy": "45%",
+       "night": true,
+       "fx": [
+        {
+         "kind": "searchlight",
+         "x": 20,
+         "y": 70
+        },
+        {
+         "kind": "searchlight",
+         "x": 80,
+         "y": 72,
+         "phase": 2.5
+        },
+        {
+         "kind": "smoke",
+         "x": 40.2,
+         "y": 7,
+         "w": 46,
+         "from_s": 15.8,
+         "color": "rgba(150,146,150,0.55)"
+        },
+        {
+         "kind": "smoke",
+         "x": 59.8,
+         "y": 12.5,
+         "w": 40,
+         "from_s": 15.8,
+         "color": "rgba(150,146,150,0.55)"
+        },
+        {
+         "kind": "tracers",
+         "x": 56,
+         "y": 70,
+         "w": 700,
+         "note": "rajadas de tiro antes do ataque à usina",
+         "from_s": 20.0,
+         "to_s": 21.2
+        },
+        {
+         "kind": "smoke",
+         "x": 50,
+         "y": 40,
+         "w": 120,
+         "color": "rgba(60,56,58,0.6)",
+         "from_s": 22.099999999999998
+        }
+       ],
+       "bg2": "vietna/bg_plant_off.jpg",
+       "actors": [
+        {
+         "src": "vietna/explosao.jpg",
+         "from": [
+          51,
+          72
+         ],
+         "h": 52,
+         "blend": "screen",
+         "tint": "contrast(1.5) brightness(0.92)",
+         "appear_s": 21.22,
+         "t1_s": 22.1,
+         "grow": [
+          0.35,
+          1.1
+         ],
+         "fade_s": 22.05,
+         "sfx": "boom",
+         "note": "explosão na usina elétrica de Hanói",
+         "sfx_at_cue": "usina#1",
+         "sfx_at_s": 21.25
+        },
+        {
+         "src": "vietna/chamas.jpg",
+         "from": [
+          50,
+          47
+         ],
+         "h": 22,
+         "blend": "screen",
+         "tint": "contrast(1.5) brightness(0.95)",
+         "appear_s": 21.6,
+         "t1_s": 22.6,
+         "grow": [
+          0.5,
+          1.0
+         ],
+         "flicker": 0.06,
+         "sfx": "fire",
+         "note": "fogo no telhado da usina"
+        }
+       ],
+       "bg2_at_cue": "usina#1",
+       "bg2_at_s": 21.349999999999998
+      },
+      "date": {
+       "top": "HANÓI · 19 DE DEZEMBRO",
+       "big": "1946"
+      },
+      "names": [
+       {
+        "text": "VIET MINH",
+        "sub": "frente pela independência do Vietnã",
+        "out_s": 22.6,
+        "pos": "right",
+        "at_cue": "viet#1",
+        "at_s": 20.0
+       }
+      ]
+     },
+     {
+      "kind": "typo",
+      "start_s": 22.8,
+      "end_s": 28.49,
+      "cue": "outras instalações francesas; o começo da guerra entre a França e o Viet Minh",
+      "motion": "fogo nas ruas e a coluna francesa avança",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/bg_street.jpg",
+       "z0": 1.04,
+       "z1": 1.1,
+       "ox": "55%",
+       "oy": "70%",
+       "night": true,
+       "actors": [
+        {
+         "src": "vietna/chamas.jpg",
+         "from": [
+          24,
+          66
+         ],
+         "h": 16,
+         "blend": "screen",
+         "tint": "contrast(1.5) brightness(0.95)",
+         "flicker": 0.07,
+         "sfx": "fire",
+         "note": "fogo nas fachadas da rua"
+        },
+        {
+         "src": "vietna/chamas.jpg",
+         "from": [
+          80,
+          58
+         ],
+         "h": 12,
+         "blend": "screen",
+         "tint": "contrast(1.5) brightness(0.95)",
+         "flicker": 0.08,
+         "sfx": "none"
+        },
+        {
+         "src": "vietna/coluna_fr46_a.png",
+         "from": [
+          38,
+          82
+         ],
+         "to": [
+          89.0,
+          82
+         ],
+         "h": 24.7,
+         "t0_s": 23.0,
+         "t1_s": 28.4,
+         "ease": "linear",
+         "bob": 2,
+         "sfx": "steps",
+         "note": "passos da coluna francesa na rua",
+         "frames": [
+          "vietna/coluna_fr46_a.png",
+          "vietna/coluna_fr46_b.png",
+          "vietna/coluna_fr46_c.png"
+         ],
+         "frame_fps": 6
+        }
+       ],
+       "fx": [
+        {
+         "kind": "smoke",
+         "x": 40,
+         "y": 40,
+         "w": 150,
+         "from_s": 22.8,
+         "color": "rgba(70,64,64,0.6)"
+        }
+       ]
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "França × Viet Minh",
+         "size": "xl",
+         "color": "paper",
+         "at_cue": "franca#2",
+         "at_s": 26.8
+        }
+       ]
+      }
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S06",
+   "n": 6,
+   "start": 105.618,
+   "end": 137.195,
+   "duration": 31.577,
+   "text": "Os Estados Unidos ficam do lado francês. Segundo os Documentos do Pentágono, a ajuda americana começa com 10 milhões de dólares em 1950 e, em 1954, já paga 78% do custo da guerra francesa. O Miller Center, da Universidade da Virgínia, fala em mais de três quartos. Em 7 de abril de 1954, numa entrevista, o presidente Eisenhower cita o princípio do dominó: se um país cai, os vizinhos tendem a cair em seguida.",
+   "visual": "gráfico de barras: ajuda dos EUA à França, 10 milhões em 1950, 78% do custo em 1954 (Documentos do Pentágono)",
+   "sfx": "",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "plate",
+      "start_s": 0.0,
+      "end_s": 3.0,
+      "cue": "os Estados Unidos ficam do lado francês",
+      "motion": "cargueiro chega ao cais de Saigon",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/port_50b.jpg",
+       "z0": 1.02,
+       "z1": 1.07,
+       "ox": "50%",
+       "oy": "55%",
+       "actors": [
+        {
+         "src": "vietna/cargueiro.png",
+         "from": [
+          -32,
+          82
+         ],
+         "to": [
+          58,
+          82
+         ],
+         "h": 22,
+         "t0_s": 0.0,
+         "t1_s": 2.2,
+         "ease": "out",
+         "bob": 1.5,
+         "rock": 0.3,
+         "period": 80,
+         "wake": true,
+         "sink": 0.2,
+         "smoke": [
+          44,
+          22
+         ],
+         "sfx": "engine",
+         "note": "motor do cargueiro chegando ao cais"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "INDOCHINA FRANCESA",
+        "sub": "1950",
+        "out_s": 2.9,
+        "at_cue": "frances#1",
+        "at_s": 1.9
+       }
+      ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 3.0,
+      "end_s": 5.8,
+      "cue": "segundo os Documentos do Pentágono",
+      "motion": "a pasta dos Documentos do Pentágono desliza na mesa",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/desk_top2.jpg",
+       "z0": 1.08,
+       "z1": 1.03,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/pasta.png",
+         "from": [
+          -30,
+          84
+         ],
+         "to": [
+          48,
+          80
+         ],
+         "h": 50,
+         "rot": [
+          -10,
+          -2
+         ],
+         "t0_s": 3.18,
+         "t1_s": 3.88,
+         "ease": "out",
+         "label": "PENTÁGONO",
+         "sfx": "paper",
+         "note": "a pasta dos Documentos do Pentágono desliza na mesa",
+         "sfx_at_cue": "documentos#1",
+         "sfx_at_s": 3.2800000000000002
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "DOCUMENTOS DO PENTÁGONO",
+        "sub": "estudo encomendado em 1967",
+        "out_s": 5.7,
+        "at_cue": "pentagono#1",
+        "at_s": 4.24
+       }
+      ]
+     },
+     {
+      "kind": "stat",
+      "start_s": 5.8,
+      "end_s": 10.2,
+      "cue": "a ajuda americana começa com 10 milhões de dólares em 1950",
+      "motion": "o guindaste iça os caixotes do navio para o cais",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/port_50b.jpg",
+       "z0": 1.0,
+       "z1": 1.02,
+       "ox": "50%",
+       "oy": "50%",
+       "pan": [
+        14,
+        -8
+       ],
+       "front": "polygon(68.5% 30%, 88% 30%, 88% 72%, 68.5% 72%)",
+       "actors": [
+        {
+         "src": "vietna/cargueiro.png",
+         "from": [
+          50,
+          80
+         ],
+         "h": 22,
+         "depth": 1.05,
+         "bob": 1.5,
+         "rock": 0.3,
+         "period": 80,
+         "sink": 0.2,
+         "smoke": [
+          44,
+          22
+         ],
+         "sfx": "none"
+        },
+        {
+         "src": "vietna/caixotes.png",
+         "from": [
+          50.0,
+          69.0
+         ],
+         "path": [
+          [
+           50.0,
+           69.0
+          ],
+          [
+           50.0,
+           48.0
+          ],
+          [
+           59.8,
+           48.0
+          ],
+          [
+           59.8,
+           58.2
+          ]
+         ],
+         "path_s": [
+          5.9,
+          7.4,
+          8.4,
+          9.7
+         ],
+         "h": 12,
+         "rope_from": [
+          50.5,
+          8.0
+         ],
+         "sfx": "crane",
+         "note": "guincho do guindaste iça os caixotes do navio para o cais"
+        }
+       ]
+      },
+      "stat": {
+       "big": "US$ 10 milhões",
+       "label": "em 1950",
+       "big_at_cue": "10#1",
+       "big_at_s": 6.96,
+       "label_at_cue": "1950#1",
+       "label_at_s": 8.56
+      }
+     },
+     {
+      "kind": "stat",
+      "start_s": 10.2,
+      "end_s": 16.2,
+      "cue": "em 1954, já paga 78% do custo da guerra francesa",
+      "motion": "avião de transporte cruza o vale e lança suprimentos de paraquedas",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/vale_54.jpg",
+       "z0": 1.02,
+       "z1": 1.07,
+       "ox": "50%",
+       "oy": "40%",
+       "actors": [
+        {
+         "src": "vietna/c47.png",
+         "from": [
+          -14,
+          24
+         ],
+         "to": [
+          118,
+          17
+         ],
+         "h": 13,
+         "t0_s": 10.2,
+         "t1_s": 15.2,
+         "ease": "linear",
+         "sfx": "plane",
+         "note": "motores do avião de transporte sobre o vale"
+        },
+        {
+         "src": "vietna/paraquedas.png",
+         "from": [
+          29.0,
+          24.0
+         ],
+         "h": 16,
+         "appear_s": 11.3,
+         "t0_s": 11.3,
+         "t1_s": 11.65,
+         "grow": [
+          0.2,
+          1
+         ],
+         "hide_s": 11.68,
+         "sfx": "none"
+        },
+        {
+         "src": "vietna/paraquedas.png",
+         "from": [
+          29.0,
+          24.0
+         ],
+         "to": [
+          32.5,
+          63
+         ],
+         "h": 16,
+         "appear_s": 11.65,
+         "t0_s": 11.65,
+         "t1_s": 15.5,
+         "ease": "out",
+         "bob": 3,
+         "rock": 4,
+         "period": 52,
+         "sfx": "none"
+        },
+        {
+         "src": "vietna/paraquedas.png",
+         "from": [
+          48.0,
+          22.5
+         ],
+         "h": 12.5,
+         "appear_s": 12.1,
+         "t0_s": 12.1,
+         "t1_s": 12.5,
+         "grow": [
+          0.2,
+          1
+         ],
+         "hide_s": 12.53,
+         "sfx": "none"
+        },
+        {
+         "src": "vietna/paraquedas.png",
+         "from": [
+          48.0,
+          22.5
+         ],
+         "to": [
+          51.5,
+          61.0
+         ],
+         "h": 12.5,
+         "appear_s": 12.5,
+         "t0_s": 12.5,
+         "t1_s": 16.2,
+         "ease": "out",
+         "bob": 2.5,
+         "rock": 3,
+         "period": 68,
+         "rot": [
+          0,
+          -9
+         ],
+         "sfx": "none"
+        },
+        {
+         "src": "vietna/paraquedas.png",
+         "from": [
+          62.0,
+          21.0
+         ],
+         "h": 10.5,
+         "appear_s": 12.9,
+         "t0_s": 12.9,
+         "t1_s": 13.35,
+         "grow": [
+          0.2,
+          1
+         ],
+         "hide_s": 13.38,
+         "sfx": "none"
+        },
+        {
+         "src": "vietna/paraquedas.png",
+         "from": [
+          62.0,
+          21.0
+         ],
+         "to": [
+          65.5,
+          56.5
+         ],
+         "h": 10.5,
+         "appear_s": 13.35,
+         "t0_s": 13.35,
+         "t1_s": 16.2,
+         "ease": "out",
+         "bob": 4,
+         "rock": 5,
+         "period": 44,
+         "rot": [
+          0,
+          8
+         ],
+         "sfx": "none"
+        }
+       ]
+      },
+      "stat": {
+       "top": "1954",
+       "big": "78%",
+       "label": "do custo da guerra francesa",
+       "bar": {
+        "frac": 0.78,
+        "at_cue": "78#1",
+        "at_s": 13.12
+       },
+       "big_at_cue": "78#1",
+       "big_at_s": 13.12,
+       "label_at_cue": "custo#1",
+       "label_at_s": 14.6
+      }
+     },
+     {
+      "kind": "stat",
+      "start_s": 16.2,
+      "end_s": 21.0,
+      "cue": "o Miller Center fala em mais de três quartos",
+      "motion": "jipe do exército francês cruza a pista do acampamento",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/vale_54.jpg",
+       "z0": 1.14,
+       "z1": 1.08,
+       "ox": "40%",
+       "oy": "70%",
+       "actors": [
+        {
+         "src": "vietna/jipe.png",
+         "from": [
+          100,
+          54.0
+         ],
+         "to": [
+          66.5,
+          62.0
+         ],
+         "h": 19,
+         "flip": true,
+         "scale1": 0.95,
+         "tint": "brightness(1.3) contrast(1.05)",
+         "t0_s": 16.3,
+         "t1_s": 20.9,
+         "ease": "linear",
+         "bob": 1.5,
+         "period": 9,
+         "emit": {
+          "at": [
+           8,
+           92
+          ],
+          "color": "rgba(150,130,100,0.45)",
+          "dir": [
+           -1.2,
+           -0.4
+          ],
+          "size": 0.9,
+          "rate": 30
+         },
+         "sfx": "jeep",
+         "note": "jipe passando na estrada de terra"
+        }
+       ]
+      },
+      "stat": {
+       "big": "mais de 3/4",
+       "label": "Miller Center, Univ. da Virgínia",
+       "big_at_cue": "tres#1",
+       "big_at_s": 20.1,
+       "label_at_cue": "miller#1",
+       "label_at_s": 16.68
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 21.0,
+      "end_s": 27.0,
+      "cue": "em 7 de abril de 1954, numa entrevista, o presidente Eisenhower",
+      "motion": "flashes das câmeras disparam na entrevista",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/imprensa_54.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "35%",
+       "fx": [
+        {
+         "kind": "flash",
+         "x": 14,
+         "y": 30,
+         "at_s": 21.45,
+         "size": 200
+        },
+        {
+         "kind": "flash",
+         "x": 88,
+         "y": 27,
+         "at_s": 22.9,
+         "size": 220
+        },
+        {
+         "kind": "flash",
+         "x": 84,
+         "y": 55,
+         "size": 240,
+         "note": "flash de câmera na entrevista",
+         "at_cue": "entrevista#1",
+         "at_s": 24.12
+        },
+        {
+         "kind": "flash",
+         "x": 17,
+         "y": 30,
+         "size": 220,
+         "note": "flash quando Eisenhower fala",
+         "at_cue": "eisenhower#1",
+         "at_s": 25.720000000000002
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "7 DE ABRIL DE 1954",
+        "sub": "entrevista coletiva",
+        "out_s": 25.4,
+        "at_cue": "abril#1",
+        "at_s": 21.96
+       },
+       {
+        "text": "DWIGHT EISENHOWER",
+        "sub": "presidente dos EUA",
+        "out_s": 26.9,
+        "at_cue": "eisenhower#1",
+        "at_s": 25.76
+       }
+      ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 27.0,
+      "end_s": 31.98,
+      "cue": "o princípio do dominó: se um país cai, os vizinhos tendem a cair",
+      "motion": "a primeira peça balança e cai; as vizinhas caem em sequência",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/mesa_54.jpg",
+       "z0": 1.03,
+       "z1": 1.09,
+       "ox": "52%",
+       "oy": "62%",
+       "rays": 0,
+       "fx": [
+        {
+         "kind": "dominoes",
+         "x": 52,
+         "y": 66,
+         "n": 7,
+         "w": 68,
+         "step_s": 0.3,
+         "note": "as peças do dominó caem uma sobre a outra",
+         "wobble_cue": "domino#1",
+         "wobble_s": 27.6,
+         "fall_cue": "cai#1",
+         "fall_s": 28.83
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "PRINCÍPIO DO DOMINÓ",
+        "sub": "Eisenhower, 7 de abril de 1954",
+        "out_s": 31.88,
+        "at_cue": "principio#1",
+        "at_s": 27.08
+       }
+      ]
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S07",
+   "n": 7,
+   "start": 137.745,
+   "end": 156.393,
+   "duration": 18.648,
+   "text": "A guerra francesa termina em Dien Bien Phu. De 13 de março a 7 de maio de 1954, a França combate no norte do Vietnã e perde para o Viet Minh, de Ho Chi Minh. A derrota decide a guerra, mas o fim formal só vem com o acordo de Genebra. A pergunta passa a ser quem vai governar o país.",
+   "visual": "mapa da Indochina, marcador em Dien Bien Phu, datas 13/03 a 07/05/1954",
+   "sfx": "bloco grave curto",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "plate",
+      "start_s": 0.0,
+      "end_s": 6.7,
+      "cue": "a guerra francesa termina em Dien Bien Phu, de 13 de março a 7 de maio de 1954",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "valley-dbp"
+      },
+      "names": [
+       {
+        "text": "DIEN BIEN PHU",
+        "sub": "13 de março a 7 de maio de 1954",
+        "out_s": 6.4,
+        "at_cue": "dien#1",
+        "at_s": 1.68
+       }
+      ]
+     },
+     {
+      "kind": "typo",
+      "start_s": 6.7,
+      "end_s": 11.2,
+      "cue": "a França combate no norte e perde para o Viet Minh, de Ho Chi Minh",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "valley-dbp",
+       "scale": 1.4,
+       "ox": "70%"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "a França combate no norte do Vietnã",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "franca#1",
+         "at_s": 6.86
+        },
+        {
+         "text": "perde para",
+         "size": "l",
+         "color": "paper",
+         "at_cue": "perde#1",
+         "at_s": 8.84
+        },
+        {
+         "text": "o Viet Minh",
+         "size": "xl",
+         "color": "paper",
+         "at_cue": "viet#1",
+         "at_s": 9.6
+        },
+        {
+         "text": "de Ho Chi Minh",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "ho#1",
+         "at_s": 10.36
+        }
+       ]
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 11.2,
+      "end_s": 15.7,
+      "cue": "o fim formal só vem com o acordo de Genebra",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "geneva-lake",
+       "scale": 1.2,
+       "ox": "30%"
+      },
+      "names": [
+       {
+        "text": "ACORDO DE GENEBRA",
+        "sub": "o fim formal da guerra",
+        "out_s": 15.4,
+        "at_cue": "acordo#1",
+        "at_s": 14.54
+       }
+      ]
+     },
+     {
+      "kind": "typo",
+      "start_s": 15.7,
+      "end_s": 19.05,
+      "cue": "a pergunta passa a ser quem vai governar o país",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "hanoi-dawn",
+       "scale": 1.2,
+       "ox": "30%"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "a pergunta passa a ser",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "pergunta#1",
+         "at_s": 16.05
+        },
+        {
+         "text": "quem vai governar o país?",
+         "size": "xl",
+         "color": "seal",
+         "at_cue": "quem#1",
+         "at_s": 17.07
+        }
+       ]
+      }
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S08",
+   "n": 8,
+   "start": 156.943,
+   "end": 186.611,
+   "duration": 29.668,
+   "text": "A resposta vem em 20 de julho de 1954, no acordo de Genebra. O texto traça uma linha militar provisória e uma zona desmilitarizada de até cinco quilômetros de cada lado da linha. Cada lado administra a sua parte, e o acordo diz até quando: até as eleições gerais que vão reunificar o Vietnã. O cessar-fogo começa em datas diferentes: 27 de julho no Norte, 1º de agosto no centro e 11 de agosto no Sul.",
+   "visual": "mapa dividido, zona desmilitarizada destacada, trecho do acordo na tela",
+   "sfx": "silêncio de 2 s antes do trecho",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "date",
+      "start_s": 0.0,
+      "end_s": 4.7,
+      "cue": "20 de julho de 1954, acordo de Genebra",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "geneva-lake"
+      },
+      "date": {
+       "top": "ACORDO DE GENEBRA · 20 DE JULHO",
+       "big": "1954"
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 4.7,
+      "end_s": 10.7,
+      "cue": "o texto traça uma linha militar provisória",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "dmz-river"
+      },
+      "names": [
+       {
+        "text": "LINHA MILITAR PROVISÓRIA",
+        "sub": "acordo de Genebra, 1954",
+        "out_s": 10.4,
+        "at_cue": "linha#1",
+        "at_s": 7.2
+       }
+      ]
+     },
+     {
+      "kind": "stat",
+      "start_s": 10.7,
+      "end_s": 14.2,
+      "cue": "zona desmilitarizada de até cinco quilômetros de cada lado",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "dmz-river",
+       "scale": 1.4,
+       "ox": "70%",
+       "oy": "80%"
+      },
+      "stat": {
+       "top": "ZONA DESMILITARIZADA",
+       "big": "5 km",
+       "label": "de cada lado da linha, no máximo",
+       "big_at_cue": "cinco#1",
+       "big_at_s": 11.16,
+       "label_at_cue": "quilometros#1",
+       "label_at_s": 11.76
+      },
+      "silence": {
+       "at_s": 9.9,
+       "dur": 2.0
+      }
+     },
+     {
+      "kind": "typo",
+      "start_s": 14.2,
+      "end_s": 18.0,
+      "cue": "cada lado administra a sua parte",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "meeting-table",
+       "v": "plain",
+       "scale": 1.2,
+       "ox": "70%"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "cada lado administra",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "cada#2",
+         "at_s": 14.24
+        },
+        {
+         "text": "a sua parte",
+         "size": "xl",
+         "color": "paper",
+         "at_cue": "sua#1",
+         "at_s": 15.4
+        }
+       ]
+      }
+     },
+     {
+      "kind": "stat",
+      "start_s": 18.0,
+      "end_s": 21.4,
+      "cue": "até as eleições gerais que vão reunificar o Vietnã",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "ballot-box"
+      },
+      "stat": {
+       "top": "O PRAZO",
+       "big": "ELEIÇÕES",
+       "label": "gerais, para reunificar o Vietnã",
+       "big_at_cue": "eleicoes#1",
+       "big_at_s": 18.56,
+       "label_at_cue": "reunificar#1",
+       "label_at_s": 19.8
+      }
+     },
+     {
+      "kind": "typo",
+      "start_s": 21.4,
+      "end_s": 24.4,
+      "cue": "o cessar-fogo começa em datas diferentes",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "valley-dbp",
+       "v": "calm",
+       "scale": 1.25,
+       "ox": "30%"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "cessar-fogo",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "cessarfogo#1",
+         "at_s": 21.7
+        },
+        {
+         "text": "em datas diferentes",
+         "size": "l",
+         "color": "paper",
+         "at_cue": "datas#1",
+         "at_s": 23.0
+        }
+       ]
+      }
+     },
+     {
+      "kind": "map-zoom",
+      "start_s": 24.4,
+      "end_s": 30.07,
+      "cue": "27 de julho no Norte, 1º de agosto no centro, 11 de agosto no Sul",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "cam0": {
+       "center": [
+        106,
+        15.5
+       ],
+       "scale": 3300
+      },
+      "cam1": {
+       "center": [
+        106,
+        15.5
+       ],
+       "scale": 3800
+      },
+      "pins": [
+       {
+        "at": [
+         105.85,
+         21.03
+        ],
+        "label": "NORTE · 27 JUL.",
+        "align": "right",
+        "at_cue": "norte#1",
+        "at_s": 25.66
+       },
+       {
+        "at": [
+         107.5,
+         16.4
+        ],
+        "label": "CENTRO · 1º AGO.",
+        "align": "right",
+        "at_cue": "centro#1",
+        "at_s": 27.5
+       },
+       {
+        "at": [
+         106.7,
+         10.8
+        ],
+        "label": "SUL · 11 AGO.",
+        "align": "right",
+        "at_cue": "sul#1",
+        "at_s": 29.220000000000002
+       }
+      ]
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S09",
+   "n": 9,
+   "start": 187.161,
+   "end": 218.191,
+   "duration": 31.03,
+   "text": "A linha era provisória, e as eleições eram o plano para apagá-la. Uma comissão de Canadá, Índia e Polônia fica encarregada de fiscalizar o acordo. Em agosto de 1955, o primeiro-ministro do Sul, Ngo Dinh Diem, recusa as conversas com o Norte que deveriam preparar as eleições previstas para 1956. O país continua dividido em dois governos, e a linha provisória vira uma fronteira de fato. É esse país dividido que os americanos passam a apoiar, no Sul.",
+   "visual": "mapa do paralelo 17 com a palavra 'provisória' riscada e substituída por 'fronteira'",
+   "sfx": "som de linha riscada no mapa, baixo",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "plate",
+      "start_s": 0.0,
+      "end_s": 3.6,
+      "cue": "a linha era provisória e as eleições eram o plano para apagá-la",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "dmz-river",
+       "scale": 1.15,
+       "ox": "30%",
+       "oy": "75%"
+      },
+      "names": [
+       {
+        "text": "LINHA PROVISÓRIA",
+        "sub": "eleições em 1956 a apagariam",
+        "out_s": 3.4,
+        "at_cue": "linha#1",
+        "at_s": 0.2
+       }
+      ]
+     },
+     {
+      "kind": "typo",
+      "start_s": 3.6,
+      "end_s": 8.9,
+      "cue": "uma comissão de Canadá, Índia e Polônia fiscaliza o acordo",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "three-flags"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "comissão de fiscalização",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "comissao#1",
+         "at_s": 4.1
+        },
+        {
+         "text": "Canadá · Índia · Polônia",
+         "size": "l",
+         "color": "paper",
+         "at_cue": "canada#1",
+         "at_s": 4.76
+        }
+       ]
+      }
+     },
+     {
+      "kind": "date",
+      "start_s": 8.9,
+      "end_s": 11.5,
+      "cue": "em agosto de 1955",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "saigon-street",
+       "v": "svn",
+       "scale": 1.1
+      },
+      "date": {
+       "top": "AGOSTO",
+       "big": "1955"
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 11.5,
+      "end_s": 17.0,
+      "cue": "o primeiro-ministro do Sul, Ngo Dinh Diem, recusa as conversas com o Norte",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "command-room",
+       "v": "svn",
+       "scale": 1.1
+      },
+      "names": [
+       {
+        "text": "NGO DINH DIEM",
+        "sub": "primeiro-ministro do Sul, recusa as conversas",
+        "out_s": 16.7,
+        "at_cue": "ngo#1",
+        "at_s": 13.04
+       }
+      ]
+     },
+     {
+      "kind": "typo",
+      "start_s": 17.0,
+      "end_s": 20.8,
+      "cue": "as eleições previstas para 1956",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "ballot-box",
+       "scale": 1.2,
+       "ox": "70%"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "eleições previstas",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "preparar#1",
+         "at_s": 16.64
+        },
+        {
+         "text": "1956",
+         "size": "xl",
+         "color": "paper",
+         "at_cue": "1956#1",
+         "at_s": 18.68
+        }
+       ]
+      }
+     },
+     {
+      "kind": "map-zoom",
+      "start_s": 20.8,
+      "end_s": 27.0,
+      "cue": "o país segue dividido e a linha provisória vira fronteira de fato",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "cam0": {
+       "center": [
+        106.3,
+        15.8
+       ],
+       "scale": 3000
+      },
+      "cam1": {
+       "center": [
+        106.3,
+        15.8
+       ],
+       "scale": 3200
+      },
+      "pins": [
+       {
+        "at": [
+         105.85,
+         21.03
+        ],
+        "label": "NORTE",
+        "align": "right",
+        "at_cue": "dois#1",
+        "at_s": 22.68
+       },
+       {
+        "at": [
+         106.7,
+         10.8
+        ],
+        "label": "SUL",
+        "align": "right",
+        "at_cue": "governos#1",
+        "at_s": 22.9
+       }
+      ],
+      "swap": {
+       "pos": "left",
+       "from": "PROVISÓRIA",
+       "to": "FRONTEIRA",
+       "at_cue": "provisoria#2",
+       "at_s": 24.22,
+       "swap_cue": "fronteira#1",
+       "swap_s": 25.540000000000003
+      }
+     },
+     {
+      "kind": "typo",
+      "start_s": 27.0,
+      "end_s": 31.43,
+      "cue": "os americanos passam a apoiar o Sul",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "advisors-line"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "esse país dividido",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "esse#1",
+         "at_s": 27.28
+        },
+        {
+         "text": "os americanos passam a apoiar",
+         "size": "l",
+         "color": "paper",
+         "at_cue": "americanos#1",
+         "at_s": 28.78
+        },
+        {
+         "text": "o Sul",
+         "size": "xl",
+         "color": "seal",
+         "at_cue": "sul#2",
+         "at_s": 30.76
+        }
+       ]
+      }
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S10",
+   "n": 10,
+   "start": 218.741,
+   "end": 246.777,
+   "duration": 28.036,
+   "text": "Os americanos entram aos poucos. Em maio de 1961, havia 685 integrantes do grupo de assessoria militar dos Estados Unidos no Vietnã do Sul. Em 8 de fevereiro de 1962, nasce um comando militar americano para assessorar o governo do Sul. No fim de 1963, ao final do governo Kennedy, os assessores militares americanos já somam 16 mil.",
+   "visual": "gráfico de assessores militares: 685 em maio de 1961, 16 mil no fim de 1963",
+   "sfx": "",
+   "spec": {
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "typo",
+      "start_s": 0.0,
+      "end_s": 2.7,
+      "cue": "os americanos entram aos poucos",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "advisors-line"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "os americanos entram",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "americanos#1",
+         "at_s": 0.22
+        },
+        {
+         "text": "aos poucos",
+         "size": "xl",
+         "color": "paper",
+         "at_cue": "aos#1",
+         "at_s": 1.28
+        }
+       ]
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 2.7,
+      "end_s": 5.3,
+      "cue": "em maio de 1961",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "saigon-street",
+       "v": "svn",
+       "scale": 1.15,
+       "ox": "30%"
+      },
+      "names": [
+       {
+        "text": "MAIO DE 1961",
+        "sub": "Vietnã do Sul",
+        "out_s": 5.1,
+        "at_cue": "maio#1",
+        "at_s": 2.74
+       }
+      ]
+     },
+     {
+      "kind": "stat",
+      "start_s": 5.3,
+      "end_s": 12.0,
+      "cue": "685 integrantes do grupo de assessoria militar dos EUA no Vietnã do Sul",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "advisors-line",
+       "scale": 1.3,
+       "ox": "30%",
+       "oy": "85%"
+      },
+      "stat": {
+       "top": "MAIO DE 1961",
+       "big": "685",
+       "label": "integrantes do grupo de assessoria militar dos EUA no Vietnã do Sul",
+       "big_at_cue": "685#1",
+       "big_at_s": 5.380000000000001,
+       "label_at_cue": "integrantes#1",
+       "label_at_s": 6.8
+      },
+      "silence": {
+       "at_s": 4.9,
+       "dur": 0.9
+      }
+     },
+     {
+      "kind": "date",
+      "start_s": 12.0,
+      "end_s": 15.8,
+      "cue": "8 de fevereiro de 1962",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "command-room"
+      },
+      "date": {
+       "top": "8 DE FEVEREIRO",
+       "big": "1962"
+      }
+     },
+     {
+      "kind": "typo",
+      "start_s": 15.8,
+      "end_s": 19.7,
+      "cue": "nasce um comando militar americano para assessorar o governo do Sul",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "plate": {
+       "name": "command-room",
+       "scale": 1.3,
+       "ox": "70%",
+       "oy": "80%"
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "nasce um comando militar americano",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "nasce#1",
+         "at_s": 15.88
+        },
+        {
+         "text": "para assessorar o governo do Sul",
+         "size": "l",
+         "color": "paper",
+         "at_cue": "assessorar#1",
+         "at_s": 17.88
+        }
+       ]
+      }
+     },
+     {
+      "kind": "timeline",
+      "start_s": 19.7,
+      "end_s": 24.4,
+      "cue": "no fim de 1963, ao final do governo Kennedy",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "timeline": {
+       "from": 1961,
+       "to": 1964,
+       "draw": {
+        "from_s": 19.8,
+        "to_s": 21.2
+       },
+       "marks": [
+        {
+         "year": 1961,
+         "label": "mai. 1961",
+         "at_s": 20.0
+        },
+        {
+         "year": 1962,
+         "label": "fev. 1962",
+         "at_s": 20.3
+        },
+        {
+         "year": 1963,
+         "label": "fim de 1963",
+         "accent": true,
+         "at_cue": "1963#1",
+         "at_s": 20.5
+        }
+       ]
+      }
+     },
+     {
+      "kind": "chart",
+      "start_s": 24.4,
+      "end_s": 28.44,
+      "cue": "os assessores militares americanos já somam 16 mil",
+      "motion": "câmera em movimento + elementos animados",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "chart": {
+       "title": "Assessores militares dos EUA no Vietnã do Sul",
+       "src": "MAAG (maio de 1961) · Miller Center (fim de 1963, valor arredondado)",
+       "bars": [
+        {
+         "label": "maio de 1961",
+         "value": 685,
+         "display": "685",
+         "at_s": 24.6
+        },
+        {
+         "label": "fim de 1963",
+         "value": 16000,
+         "display": "16 mil",
+         "at_cue": "somam#1",
+         "at_s": 26.76
+        }
+       ]
+      }
+     }
+    ],
+    "vignette": 0.3
+   }
+  },
+  {
+   "id": "S11",
+   "n": 11,
+   "start": 247.327,
+   "end": 268.143,
+   "duration": 20.816,
+   "text": "O governo do Sul, porém, está em crise. Em maio de 1963, a polícia atira contra um ato em Hue, contra a proibição da bandeira budista, e mata nove pessoas. Em 11 de junho, o monge Thich Quang Duc se imola em Saigon, em protesto contra o governo do presidente Ngo Dinh Diem. A foto de Malcolm Browne vence o World Press Photo daquele ano.",
+   "visual": "data 11 de junho de 1963, mapa de Saigon, sem imagem da cena",
+   "sfx": "silêncio de 2 s",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S12",
+   "n": 12,
+   "start": 268.693,
+   "end": 306.389,
+   "duration": 37.696,
+   "text": "Em 21 de agosto de 1963, forças do governo atacam pagodes. Em 24 de agosto, o Cabo 243 diz ao embaixador americano que, se Diem não afastar o irmão, Nhu, os Estados Unidos aceitam que ele seja derrubado. Na prática, é um sinal verde para um golpe. O Miller Center resume o que veio antes: a crise budista, a lei marcial e os ataques aos pagodes convenceram autoridades do segundo escalão do governo Kennedy de que ele precisava sair. Em 1º de novembro de 1963, Diem é derrubado por um golpe militar e morto no dia seguinte.",
+   "visual": "cabograma 243 em tipografia, datas 21 e 24 de agosto de 1963, depois 1º de novembro",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S13",
+   "n": 13,
+   "start": 306.939,
+   "end": 329.3,
+   "duration": 22.361,
+   "text": "Agosto de 1964. Golfo de Tonkin, no litoral do Vietnã do Norte. Em 2 de agosto, forças norte-vietnamitas atacam o navio americano Maddox. Em 4 de agosto, os Estados Unidos dizem que houve um segundo ataque, agora contra o Maddox e o Turner Joy. A reação a esse segundo ataque muda o rumo da guerra. Guarde a data, 4 de agosto, porque vamos voltar a ela.",
+   "visual": "mapa do Golfo de Tonkin, pontos dos incidentes de 2 e 4 de agosto de 1964",
+   "sfx": "ping de sonar discreto",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S14",
+   "n": 14,
+   "start": 329.85,
+   "end": 347.476,
+   "duration": 17.626,
+   "text": "Três dias depois, em 7 de agosto, o Congresso aprova a Resolução do Golfo de Tonkin. O texto autoriza o presidente a tomar todas as medidas necessárias para repelir qualquer ataque armado. Na Câmara, a votação é de 416 a zero. No Senado, 88 a 2.",
+   "visual": "texto da Resolução na tela, grifo em 'all necessary measures', placar 416 a 0 e 88 a 2",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S15",
+   "n": 15,
+   "start": 348.026,
+   "end": 367.314,
+   "duration": 19.288,
+   "text": "A resolução não declara guerra. Ela entrega ao presidente poder para agir. E só perde a validade em duas situações. Quando o próprio presidente decidir que a paz na região está razoavelmente assegurada, ou quando o Congresso a revogar. É esse o texto que o Congresso põe nas mãos de Johnson em 1964.",
+   "visual": "recorte do artigo 3 da Resolução, destaque nas condições para expirar",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S16",
+   "n": 16,
+   "start": 367.864,
+   "end": 387.276,
+   "duration": 19.412,
+   "text": "E o segundo ataque? Em 2005, a Agência de Segurança Nacional liberou um estudo interno, assinado por Robert Hanyok. A conclusão é direta: em 4 de agosto de 1964, não houve ataque. Segundo o estudo, o conjunto dos relatórios de interceptação, se fosse usado, contaria que nenhum ataque ocorreu.",
+   "visual": "silêncio e tela escura, depois capa do estudo da NSA de 2005 com o nome de Robert Hanyok",
+   "sfx": "silêncio de 2 s, depois nota grave",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S17",
+   "n": 17,
+   "start": 387.826,
+   "end": 415.875,
+   "duration": 28.049,
+   "text": "O estudo não acha uma prova de acobertamento combinado. Mas descreve um esforço ativo para fazer as interceptações se encaixarem na versão do ataque. O Departamento de Estado resume que dúvidas surgiram depois sobre o segundo ataque. E o Council on Foreign Relations escreve que hoje está claro que ele não ocorreu. O Congresso votou a resolução, portanto, depois de um ataque que, pelas fontes mais bem documentadas, nunca aconteceu.",
+   "visual": "trechos do estudo e do Departamento de Estado lado a lado",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S18",
+   "n": 18,
+   "start": 416.425,
+   "end": 437.354,
+   "duration": 20.929,
+   "text": "E o Brasil, nessa época? Em 1º de abril de 1964, o presidente João Goulart é deposto pelos militares. Humberto de Alencar Castelo Branco é eleito pelo Congresso, como candidato único, com 361 votos, e toma posse em 15 de abril. Quatro meses depois do golpe, ele já aparece nos documentos do Vietnã.",
+   "visual": "quem governava o Brasil: Jango deposto em 1º de abril de 1964, posse de Castelo Branco em 15 de abril",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S19",
+   "n": 19,
+   "start": 437.904,
+   "end": 469.751,
+   "duration": 31.847,
+   "text": "Em 11 de agosto de 1964, o presidente Castelo Branco responde a uma mensagem de Johnson. Segundo a carta, o uso da força pelo Vietnã do Norte contrariava a Carta da ONU e justificava a defesa americana. Ele disse ter instruído o representante brasileiro no Conselho de Segurança a agir nesse sentido, e pediu que todos evitassem o agravamento das tensões. Johnson agradeceu em 25 de agosto e disse que os Estados Unidos não queriam uma guerra mais ampla.",
+   "visual": "cartas de 11 e 25 de agosto de 1964 em tipografia, selo do Brasil e dos EUA",
+   "sfx": "movimento de papel",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S20",
+   "n": 20,
+   "start": 470.301,
+   "end": 482.186,
+   "duration": 11.885,
+   "text": "Apoiar por carta custa pouco. Soldados são outra conta. Para chegar a esse ponto, a guerra precisava crescer, e ela cresceu rápido. A pergunta é quanto, e o que os americanos achavam disso.",
+   "visual": "tela dividida, carta de um lado, soldados em silhueta do outro",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S21",
+   "n": 21,
+   "start": 482.736,
+   "end": 504.965,
+   "duration": 22.229,
+   "text": "Em 2 de março de 1965, segundo o Arquivo Nacional, começa a operação Rolling Thunder, uma campanha de bombardeios ao Norte. O Departamento de Estado fala em 13 de fevereiro, o que mostra que as datas dependem de quando se conta o início. Em 8 de março, 3.500 fuzileiros navais americanos desembarcam em Da Nang, no Sul. A guerra ganha tropas de combate.",
+   "visual": "mapa de Da Nang, datas 2 e 8 de março de 1965, contador de fuzileiros 3.500",
+   "sfx": "impacto leve na chegada, som de contador curto",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S22",
+   "n": 22,
+   "start": 505.515,
+   "end": 524.755,
+   "duration": 19.24,
+   "text": "Em 28 de julho de 1965, o presidente Johnson anuncia que as forças no Vietnã vão subir de 75 mil para 125 mil homens. A convocação mensal, o draft, vai de 17 mil para 35 mil. Mais famílias americanas passam a receber a carta do recrutamento.",
+   "visual": "gráfico: tropas de 75 mil para 125 mil, convocação de 17 mil para 35 mil por mês",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S23",
+   "n": 23,
+   "start": 525.305,
+   "end": 535.376,
+   "duration": 10.071,
+   "text": "O número de soldados continua subindo. O pico chega em abril de 1969, com 543.000 militares americanos no país.",
+   "visual": "gráfico animado de tropas americanas até o pico de abril de 1969",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S24",
+   "n": 24,
+   "start": 535.926,
+   "end": 558.086,
+   "duration": 22.16,
+   "text": "Nessa época, os americanos ainda apoiam a decisão. Na pesquisa Gallup de agosto e setembro de 1965, só 24% diziam que enviar tropas ao Vietnã foi um erro. O Gallup avisa que, durante a guerra, a pergunta usou outra redação, então vale ler a série como tendência e não como comparação exata. Guarde esse número, 24%, porque ele vai mudar.",
+   "visual": "gráfico Gallup, ponto de 1965 em 24%, nota sobre mudança de redação",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S25",
+   "n": 25,
+   "start": 558.636,
+   "end": 585.087,
+   "duration": 26.451,
+   "text": "A guerra também muda a paisagem. Entre 1962 e 1971, a Operação Ranch Hand espalha quase 19 milhões de galões de herbicidas sobre o Sul. Pelo menos 11 milhões são de Agente Laranja. Um estudo do Instituto de Medicina dos Estados Unidos fala em cerca de 3,6 milhões de acres pulverizados ao menos uma vez, perto de um milhão e meio de hectares.",
+   "visual": "mapa do Sul com áreas pulverizadas, contador de galões",
+   "sfx": "som de espalhar sobre o mapa, baixo",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S26",
+   "n": 26,
+   "start": 585.637,
+   "end": 608.082,
+   "duration": 22.445,
+   "text": "Do outro lado, em Hanói, o plano era outro. Em dezembro de 1965, o líder do Partido, Le Duan, afirma que só se negocia depois de vitórias maiores e mais completas no campo de batalha. É o que dizem documentos do Partido, citados pelo historiador Merle Pribbenow no Wilson Center. É o mesmo mês do pedido feito ao Brasil. Os dois lados se preparam para uma guerra longa.",
+   "visual": "Hanói em tipografia, citação de Le Duan, dezembro de 1965",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S27",
+   "n": 27,
+   "start": 608.631,
+   "end": 621.621,
+   "duration": 12.99,
+   "text": "Por mais de dois anos, a guerra segue assim, com mais tropas e mais bombardeios, e sem negociação oficial. Até que, no começo de 1968, um ataque muda a forma como ela é contada.",
+   "visual": "calendário 1965 a 1968 correndo",
+   "sfx": "whoosh curto de tempo",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S28",
+   "n": 28,
+   "start": 622.171,
+   "end": 644.385,
+   "duration": 22.214,
+   "text": "O Tet começa na noite de 30 para 31 de janeiro de 1968, no feriado do ano-novo lunar. Segundo o Arquivo Nacional, cerca de 70 mil soldados comunistas atacam mais de cem cidades e vilas do Sul. Os ataques a Hue e a Saigon têm um forte efeito psicológico. Para os americanos, a guerra que parecia sob controle chega, de repente, às telas de televisão.",
+   "visual": "mapa do Sul com mais de cem pontos de ataque se acendendo em 31 de janeiro de 1968",
+   "sfx": "impactos curtos, até 3 por minuto",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S29",
+   "n": 29,
+   "start": 644.935,
+   "end": 666.187,
+   "duration": 21.252,
+   "text": "Ao mesmo tempo, a base americana de Khe Sanh fica cercada desde o fim de janeiro. A Operação Pegasus, com cerca de 30 mil soldados, faz contato com a base em 7 de abril, e o alívio oficial é em 8 de abril. O cerco dura cerca de 77 dias, conforme a contagem, e os americanos deixam a base em 6 de julho de 1968.",
+   "visual": "mapa de Khe Sanh, linha do cerco de janeiro a abril de 1968",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S30",
+   "n": 30,
+   "start": 666.737,
+   "end": 697.753,
+   "duration": 31.016,
+   "text": "A opinião já vinha mudando. Em outubro de 1967, 46% diziam que enviar tropas foi um erro. Em 27 de fevereiro de 1968, depois do Tet, o jornalista Walter Cronkite diz que a guerra está atolada num impasse. A pesquisa Gallup do fim de fevereiro mostra 49%. Em agosto, são 53%, e pela primeira vez a maioria. Em 1965, eram 24%.",
+   "visual": "gráfico Gallup 24% (1965), 46% (out/1967), 49% (fev/1968), 53% (ago/1968); frase de Cronkite em tipografia com crédito, sem imagem de arquivo",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S31",
+   "n": 31,
+   "start": 698.303,
+   "end": 731.024,
+   "duration": 32.721,
+   "text": "Em 16 de março de 1968, soldados americanos matam civis na vila de My Lai. A PBS registra entre 347 e 504 mortos, conforme a fonte. O comandante da investigação do Exército, Peers, chamou o caso de uma tragédia de grandes proporções. William Calley é condenado à prisão perpétua. Nixon manda tirá-lo da prisão e deixá-lo nos próprios alojamentos enquanto o recurso corre. No total, ele passa cerca de quatro meses na prisão militar de Leavenworth.",
+   "visual": "mapa de My Lai, data 16 de março de 1968, sem imagens de vítimas",
+   "sfx": "silêncio e queda da trilha",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S32",
+   "n": 32,
+   "start": 731.574,
+   "end": 744.166,
+   "duration": 12.592,
+   "text": "Em 31 de março de 1968, o presidente Johnson anuncia que não vai buscar a reeleição. Para quem vem depois, o desafio é outro: sair do Vietnã sem parecer derrotado.",
+   "visual": "data 31 de março de 1968 na tela, texto da decisão de Johnson",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S33",
+   "n": 33,
+   "start": 744.716,
+   "end": 767.479,
+   "duration": 22.763,
+   "text": "No Brasil, 1968 também é o ano em que a guerra aparece nas ruas. Segundo a tese de Biagi, depois do Tet, a palavra Vietnã virou palavra de ordem nas greves de Contagem e Osasco. O governo de Costa e Silva, no poder desde 15 de março de 1967, edita em 13 de dezembro de 1968 o Ato Institucional número 5.",
+   "visual": "Brasil em 1968: manchetes das greves de Contagem e Osasco, depois a data 13 de dezembro de 1968",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S34",
+   "n": 34,
+   "start": 768.029,
+   "end": 797.512,
+   "duration": 29.483,
+   "text": "Quantos americanos morreram? O Arquivo Nacional dos Estados Unidos tem registros de 58.220 militares mortos na guerra. Desses, 40.934 estão na categoria mortos em ação. Em outra tabela, 47.434 mortes aparecem como hostis e 10.786 como não hostis. O próprio arquivo avisa que são contagens informativas, e não estatísticas oficiais.",
+   "visual": "tabela do Arquivo Nacional com as categorias de mortes, aviso 'informational purposes only'",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S35",
+   "n": 35,
+   "start": 798.062,
+   "end": 830.038,
+   "duration": 31.976,
+   "text": "Dentro dos Estados Unidos, a guerra também é um conflito. Em 21 de outubro de 1967, uma marcha contra a guerra chega ao Pentágono. A revista The Nation fala em 100 mil pessoas, e o Arquivo Nacional, em 70 mil manifestantes no Pentágono. Em 1º de dezembro de 1969, é feito o primeiro sorteio da loteria de convocação, que define a ordem de chamada dos jovens nascidos entre 1944 e 1950.",
+   "visual": "protestos nos EUA: marcha de 21 de outubro de 1967, sorteio de 1º de dezembro de 1969",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S36",
+   "n": 36,
+   "start": 830.588,
+   "end": 857.336,
+   "duration": 26.748,
+   "text": "Em 8 de junho de 1969, Nixon anuncia a primeira retirada, de 25 mil soldados. Em 3 de novembro, o presidente Nixon fala à nação sobre a vietnamização, a ideia de passar a luta aos sul-vietnamitas. Diz que mais de 60.000 homens saem até 15 de dezembro e recusa divulgar um calendário completo. E pede o apoio de uma, nas palavras dele, grande maioria silenciosa.",
+   "visual": "mapa com setas de retirada, datas 8 de junho e 3 de novembro de 1969",
+   "sfx": "som de setas se movendo, baixo",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S37",
+   "n": 37,
+   "start": 857.886,
+   "end": 881.076,
+   "duration": 23.19,
+   "text": "Em 30 de abril de 1970, Nixon manda tropas americanas e sul-vietnamitas ao Camboja, que os B-52 já bombardeavam em segredo desde 1969. Em 4 de maio, quatro estudantes morrem num protesto na Universidade Kent State, nos Estados Unidos. Em janeiro de 1973, o Gallup mede 60% dizendo que foi um erro.",
+   "visual": "linha do tempo de 1970, Camboja e Kent State",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S38",
+   "n": 38,
+   "start": 881.626,
+   "end": 909.02,
+   "duration": 27.394,
+   "text": "Dentro do governo, há quem já tenha entendido o tamanho do problema. Em 1967, o secretário de Defesa Robert McNamara encomenda um relatório interno sobre a guerra. Em junho de 1971, trechos dele vazam para a imprensa. O relatório tem cerca de 7.000 páginas, em 48 caixas, e são os Documentos do Pentágono. Só em 2011 o Arquivo Nacional libera tudo.",
+   "visual": "capa do relatório, 48 caixas, contador de páginas 7.000",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S39",
+   "n": 39,
+   "start": 909.57,
+   "end": 940.435,
+   "duration": 30.865,
+   "text": "Em outubro de 1972, os negociadores americano e norte-vietnamita chegam a um acordo, e o presidente do Sul, Thieu, o rejeita. Em 14 de dezembro, Nixon ordena ataques maciços de bombardeiros B-52. Entre 18 e 29 de dezembro, são 729 de 741 surtidas planejadas, com 15 B-52 perdidos. Há uma pausa no dia de Natal, e os ataques voltam em 26 de dezembro.",
+   "visual": "cronologia de outubro de 1972 a janeiro de 1973, mapa de Hanói com ataques aéreos",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S40",
+   "n": 40,
+   "start": 940.985,
+   "end": 964.794,
+   "duration": 23.809,
+   "text": "O acordo de Paris é rubricado em 23 de janeiro de 1973 e assinado em 27 de janeiro. O texto prevê cessar-fogo no Sul à meia-noite daquele dia, retirada total das tropas americanas em 60 dias e devolução dos prisioneiros. Em 29 de março de 1973, o presidente Nixon diz que não há mais forças militares americanas no Vietnã.",
+   "visual": "texto do acordo de Paris na tela, artigos 2, 5 e 8",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S41",
+   "n": 41,
+   "start": 965.344,
+   "end": 992.398,
+   "duration": 27.054,
+   "text": "O Congresso, por sua vez, quer limites. Em 7 de novembro de 1973, derruba um veto de Nixon e aprova a Lei de Poderes de Guerra. Na Câmara, o placar é 284 a 135. No Senado, 75 a 18. A lei obriga o presidente a avisar o Congresso em 48 horas depois de enviar tropas ao exterior, e dá ao Congresso 60 dias para aprovar ou rejeitar.",
+   "visual": "Congresso dos EUA, placar da Lei de Poderes de Guerra, 7 de novembro de 1973",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S42",
+   "n": 42,
+   "start": 992.948,
+   "end": 1016.375,
+   "duration": 23.427,
+   "text": "Mas Paris não encerra a guerra no chão. Em março de 1975, uma grande ofensiva nas terras altas centrais abre o caminho. Em 29 de abril, helicópteros dos Fuzileiros dos Estados Unidos evacuam pessoas de Saigon. No dia 30, tanques do Vietnã do Norte entram no palácio presidencial, e o presidente do Sul, Duong Van Minh, no cargo havia dois dias, manda as tropas deporem as armas.",
+   "visual": "mapa de Saigon, imagem de acervo público dos CH-53 de 29 de abril de 1975, com atribuição ao USMC",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S43",
+   "n": 43,
+   "start": 1016.925,
+   "end": 1037.555,
+   "duration": 20.63,
+   "text": "Em 2 de julho de 1976, a Assembleia Nacional adota o nome República Socialista do Vietnã e rebatiza Saigon como Cidade de Ho Chi Minh. Cerca de 125 mil vietnamitas chegam aos Estados Unidos já na primavera de 1975, num dos maiores fluxos de curto prazo da história.",
+   "visual": "mapa do Vietnã unificado, data 2 de julho de 1976, gráfico de refugiados",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S44",
+   "n": 44,
+   "start": 1038.105,
+   "end": 1060.887,
+   "duration": 22.782,
+   "text": "Do lado vietnamita, não há uma contagem única. Uma estimativa publicada no BMJ em 2008, feita com pesquisas domiciliares, fala em 3,8 milhões de mortes violentas de guerra no Vietnã entre 1955 e 2002. É um método diferente das contagens oficiais. Esse número e o dos americanos usam critérios diferentes e não se somam.",
+   "visual": "número 3,8 milhões com o aviso: estimativa por pesquisas domiciliares, método diferente das contagens oficiais",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S45",
+   "n": 45,
+   "start": 1061.437,
+   "end": 1091.603,
+   "duration": 30.166,
+   "text": "Agora, o documento que prometi. Voltemos a dezembro de 1965. É um memorando de 31 de dezembro, escrito por McGeorge Bundy, assessor de segurança nacional, ao presidente Johnson. Bundy conta que o embaixador Lincoln Gordon fez uma pressão muito forte por tropas, na reunião em que falou do empréstimo de 150 milhões de dólares. O relato da reunião está num telegrama de 17 de dezembro, enviado do Rio de Janeiro.",
+   "visual": "tela escura, depois a capa tipográfica do memorando de 31 de dezembro de 1965",
+   "sfx": "silêncio de 2 s antes do documento",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S46",
+   "n": 46,
+   "start": 1092.153,
+   "end": 1107.332,
+   "duration": 15.179,
+   "text": "E Castelo Branco? Segundo o memorando, ele prometeu considerar o pedido com muito cuidado. Lembrou que, pela Constituição brasileira, o envio de tropas ao exterior exige a aprovação do Congresso, e que o Congresso só voltaria a se reunir em março.",
+   "visual": "trecho do memorando em tipografia, citação 'prayerful consideration' traduzida na tela",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S47",
+   "n": 47,
+   "start": 1107.882,
+   "end": 1126.036,
+   "duration": 18.154,
+   "text": "Bundy avalia que Castelo Branco enfrenta um problema político mais difícil do que se esperava. Segundo ele, o embaixador Gordon e o adido militar Vernon Walters achavam que, com o tempo, alguma contribuição do Brasil poderia ser acertada. Castelo Branco não recusou. Empurrou a decisão para o Congresso.",
+   "visual": "avaliação de Bundy em tipografia, linha do tempo de março de 1966",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S48",
+   "n": 48,
+   "start": 1126.586,
+   "end": 1158.669,
+   "duration": 32.083,
+   "text": "Havia um precedente de sete meses antes. Em 22 de maio de 1965, uma reunião de chanceleres da Organização dos Estados Americanos pediu que o Brasil indicasse o comandante da Força Interamericana na República Dominicana. O escolhido foi o general Hugo Panasco Alvim. Segundo o relato do embaixador brasileiro, citado numa tese da USP, Castelo Branco pediu autorização ao Congresso, ela veio, e cerca de 1.250 militares brasileiros foram enviados.",
+   "visual": "mapa do Caribe, data 22 de maio de 1965, nome do general Hugo Panasco Alvim",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S49",
+   "n": 49,
+   "start": 1159.219,
+   "end": 1176.65,
+   "duration": 17.431,
+   "text": "Para o Vietnã, o caminho foi outro. Uma nota dos editores do mesmo conjunto de documentos do Departamento de Estado traz a resposta. O Brasil forneceu café e suprimentos médicos. Mas nunca enviou tropas nem material militar ao Vietnã. A nota cita o Exército americano como fonte.",
+   "visual": "nota de rodapé do volume do Departamento de Estado, destaque em 'never sent troops'",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S50",
+   "n": 50,
+   "start": 1177.2,
+   "end": 1193.908,
+   "duration": 16.708,
+   "text": "Por que não? Um artigo acadêmico atribui a reticência brasileira à geopolítica da Escola Superior de Guerra, que pensava a segurança do país em círculos concêntricos, a partir do próprio entorno. É a interpretação do autor. O memorando só registra o argumento do Congresso.",
+   "visual": "trecho do artigo de Simões em tipografia, diagrama de círculos concêntricos",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S51",
+   "n": 51,
+   "start": 1194.458,
+   "end": 1213.66,
+   "duration": 19.202,
+   "text": "A pergunta seguinte é se o pedido voltou com o governo seguinte. Artur da Costa e Silva governa de 15 de março de 1967 a 31 de agosto de 1969. Eu não achei, nas fontes que li, nenhum documento de novo pedido de tropas a ele. Fica como lacuna, e não como afirmação.",
+   "visual": "linha do tempo dos presidentes: Costa e Silva em 15 de março de 1967, AI-5 em 13 de dezembro de 1968",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S52",
+   "n": 52,
+   "start": 1214.21,
+   "end": 1230.854,
+   "duration": 16.644,
+   "text": "Dentro do Brasil, a guerra tinha outra vida. A tese de Orivaldo Biagi, da Unicamp, mostra que a grande imprensa brasileira seguiu a americana e usou a guerra para reforçar o discurso do perigo comunista. Os jornais de esquerda a usavam para denunciar o imperialismo e a tortura.",
+   "visual": "manchetes em tipografia, dois blocos: grande imprensa e jornais de esquerda",
+   "sfx": "",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S53",
+   "n": 53,
+   "start": 1231.404,
+   "end": 1259.63,
+   "duration": 28.226,
+   "text": "A resposta ao pedido de dezembro de 1965, então, é esta. Castelo Branco ouviu o pedido, prometeu estudar e citou o Congresso. O Brasil apoiou os Estados Unidos por carta, e Castelo Branco disse ter mandado o representante na ONU fazer o mesmo. A grande imprensa repetiu o discurso americano. E, segundo a nota dos editores do Departamento de Estado, o Brasil nunca enviou tropas nem material militar ao Vietnã.",
+   "visual": "memorando de 1965 voltando à tela, três linhas de resumo",
+   "sfx": "queda da trilha",
+   "spec": {
+    "kind": "pending"
+   }
+  },
+  {
+   "id": "S54",
+   "n": 54,
+   "start": 1260.18,
+   "end": 1278.807,
+   "duration": 18.627,
+   "text": "Voltamos ao gabinete de 1965. O embaixador saiu da reunião sem soldados e com uma promessa de estudo. A guerra durou quase mais dez anos, e o Brasil a acompanhou de longe. Se você quer ver outro capítulo brasileiro dentro de uma guerra estrangeira, diga qual nos comentários.",
+   "visual": "mapa-múndi da abertura, arco apagando, silêncio",
+   "sfx": "silêncio e nota final",
+   "spec": {
+    "kind": "pending"
+   }
+  }
+ ]
+}

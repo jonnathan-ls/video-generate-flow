@@ -1,0 +1,188 @@
+{
+ "slug": "geada-negra",
+ "date": "2026-11-19",
+ "queries": [
+  "geada negra 1975",
+  "geada negra paraná café",
+  "geada negra londrina",
+  "fim do café no paraná",
+  "londrina história café",
+  "erradicação do café paraná",
+  "geada 1975 café documentário",
+  "norte do paraná café história",
+  "maringá café geada",
+  "geada negra 1975 tragédia"
+ ],
+ "new_per_query": [
+  [
+   "geada negra 1975",
+   6
+  ],
+  [
+   "geada negra paraná café",
+   2
+  ],
+  [
+   "geada negra londrina",
+   7
+  ],
+  [
+   "fim do café no paraná",
+   1
+  ],
+  [
+   "londrina história café",
+   5
+  ],
+  [
+   "erradicação do café paraná",
+   1
+  ],
+  [
+   "geada 1975 café documentário",
+   0
+  ],
+  [
+   "norte do paraná café história",
+   4
+  ],
+  [
+   "maringá café geada",
+   1
+  ],
+  [
+   "geada negra 1975 tragédia",
+   4
+  ]
+ ],
+ "S_videos": 12,
+ "S_channels": 9,
+ "leader_views": 425061,
+ "median_without_leader": 1080,
+ "median_without_top2": 779.5,
+ "share_below_5k": 0.55,
+ "convergence": false,
+ "grade": "TRIAGEM (não serve para decidir)",
+ "videos": [
+  {
+   "id": "NBR5XGW42Yk",
+   "title": "Londrina Instantes Antes da Geada Negra Devorar os Cafezais (1975)",
+   "channel": "AntigamenteBR",
+   "subs": 8120,
+   "date": "2026-09-29",
+   "age": 51,
+   "views": 425061,
+   "min": 25.5
+  },
+  {
+   "id": "4Gv6KxRA-y4",
+   "title": "Assim Era Viver em Londrina em 1950 — Quando o CAFÉ Criava Fortunas no Paraná",
+   "channel": "Paraná no Tempo",
+   "subs": 4640,
+   "date": "2026-09-09",
+   "age": 71,
+   "views": 169675,
+   "min": 27.5
+  },
+  {
+   "id": "ouGdDByQCzc",
+   "title": "A História de Londrina (1934–2026) — Como o Café Ergueu uma Cidade Inteira em Menos de 30 Anos",
+   "channel": "Vozes do Brasil Antigo",
+   "subs": 995,
+   "date": "2026-08-28",
+   "age": 83,
+   "views": 74074,
+   "min": 18.1
+  },
+  {
+   "id": "KdmNLrHoJj4",
+   "title": "Assim Era Viver em LONDRINA em 1975 — Quando a GEADA NEGRA Mudou a Cidade Para Sempre",
+   "channel": "Paraná no Tempo",
+   "subs": 4640,
+   "date": "2026-09-22",
+   "age": 58,
+   "views": 54488,
+   "min": 33.6
+  },
+  {
+   "id": "DUCAPx_jr64",
+   "title": "A História de Londrina (1934–2026) — Como o CAFÉ Fez uma CIDADE Crescer no Paraná",
+   "channel": "Paraná no Tempo",
+   "subs": 4640,
+   "date": "2026-08-27",
+   "age": 84,
+   "views": 40076,
+   "min": 25.9
+  },
+  {
+   "id": "NtmFQPu0n8I",
+   "title": "A História de Londrina (1929–2026) — Do Acampamento na Mata Virgem à Segunda Maior Cidade do Paraná",
+   "channel": "Vozes do Brasil Antigo",
+   "subs": 995,
+   "date": "2026-09-23",
+   "age": 57,
+   "views": 8011,
+   "min": 20.4
+  },
+  {
+   "id": "BBBi81PTR3w",
+   "title": "Londrina Instantes Antes da Geada Negra Destruir os Cafezais (1975)",
+   "channel": "Brasil na Véspera",
+   "subs": 745,
+   "date": "2026-10-29",
+   "age": 21,
+   "views": 1080,
+   "min": 24.4
+  },
+  {
+   "id": "Ogh7UTHo0SI",
+   "title": "Londrina na Última Noite Antes da Geada Negra Arrasar o Café (1975)",
+   "channel": "ÚLTIMO TIME",
+   "subs": 404,
+   "date": "2026-10-17",
+   "age": 33,
+   "views": 479,
+   "min": 31.4
+  },
+  {
+   "id": "rQmZ6Luyhio",
+   "title": "A TRAGÉDIA DA GEADA NEGRA: O frio que devastou os cafezais do Paraná | Documentário completo",
+   "channel": "Dia Zero",
+   "subs": 359,
+   "date": "2026-10-27",
+   "age": 23,
+   "views": 441,
+   "min": 49.3
+  },
+  {
+   "id": "-tIAW7qO0Dg",
+   "title": "O ÚLTIMO DIA DE LONDRINA (1975): A Noite em Que a Geada Queimou o Café do Paraná",
+   "channel": "Cinzas e Memória",
+   "subs": 64,
+   "date": "2026-11-08",
+   "age": 11,
+   "views": 367,
+   "min": 25.0
+  },
+  {
+   "id": "EQTpBLVoXgk",
+   "title": "4. A Noite Em Que O Paraná Congelou: Como A Geada Negra Destruiu O Estado Em 1975",
+   "channel": "MENTESMAGNIFICAS",
+   "subs": 7,
+   "date": "2026-09-24",
+   "age": 56,
+   "views": 276,
+   "min": 16.0
+  },
+  {
+   "id": "AvIO-KT08jM",
+   "title": "Como Era COLHER CAFÉ no NORTE DO PARANÁ em 1960 — Antes das COLHEITADEIRAS Entrarem nos CAFEZAIS",
+   "channel": "Homens Que Ergueram o Brasil",
+   "subs": 4110,
+   "date": "2026-10-21",
+   "age": 29,
+   "views": 169,
+   "min": 23.5
+  }
+ ]
+}

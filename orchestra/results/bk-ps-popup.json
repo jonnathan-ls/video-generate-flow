@@ -1,0 +1,28 @@
+{
+ "status": "done",
+ "files": [
+  "lab/bakeoff-saigon/out/ps_popup_16x9.mp4",
+  "lab/bakeoff-saigon/out/ps_popup_raw.mp4",
+  "lab/bakeoff-saigon/out/ps_popup_sfx.wav",
+  "lab/bakeoff-saigon/ps-popup/style.js",
+  "lab/bakeoff-saigon/ps-popup/boot.js",
+  "lab/bakeoff-saigon/ps-popup/render.mjs",
+  "lab/bakeoff-saigon/ps-popup/index.html",
+  "lab/bakeoff-saigon/ps-popup/vendor/fraunces-700.ttf"
+ ],
+ "validators": {
+  "gpu": "PASS WebGL = NVIDIA RTX 3060 via ANGLE/Vulkan (chrome-headless-shell); encode h264_nvenc; no SwiftShader/libx264",
+  "output": "PASS 1920x1080, 30 fps, 15,0 s, h264 + aac",
+  "frames_checked": "PASS 3 rodadas de quadros (11+12+8 stills 960x540) e 5 quadros do MP4 final"
+ },
+ "summary": "Paper pop-up (three.js 0.187, kit STAGE/SOUND do estilo) com 3 spreads: 29 de abril (CH-53 pousa, 4 pessoas sobem a escada, decola em 3,49 s), 30 de abril (T-54 com bandeira da FLN avança e o portão do Palácio da Independência afunda em 7,97 s com explosão de papel), Duong Van Minh (silhueta + faixa de nome 10,6-12,15 s, faixa '2 dias no cargo' em 12,06 s) e soldados que trocam fuzis por mãos vazias, fuzis no chão em 13,81 s, faixa 'Deporem as armas'. Sem legenda queimada; narração + sons do kit (-15 LUFS). Tempo de trabalho: cerca de 35 min. Render: 41 s a 48 amostras/quadro (450 quadros) + 1 s de som. Fonte Fraunces (OFL) baixada do Google Fonts.",
+ "issues": [
+  "Revisão de nota (rubrics/visual.md) NÃO feita: é teste de laboratório, só conferi quadros por conta própria",
+  "Mov. do portão é 'afunda no chão' (cartão desliza pela fenda), não cai: limitação do pop-up; o tanque passa na frente dele",
+  "O rótulo '2 dias no cargo' é uma faixa que sobe, não um contador numérico",
+  "Fuzis no chão ficam abstratos (3 silhuetas pretas) na frente da faixa; soldados são genéricos (sem insígnia)",
+  "Sons não foram ouvidos, só medidos (média -18 dB, pico -1,4 dB); a voz pode ficar coberta no rotor/tanque, conferir de ouvido",
+  "Aviso do kit: palácio sai 0,03 do livro fechado (sem efeito visual)",
+  "Versão 9:16 não foi pedida nesta tarefa e não foi feita"
+ ]
+}

@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "historyId": "51090cb7-62f9-4c75-8bc0-67d25c71e5d2",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "ESTILO.md": {
+      "hash": "48adf1a128cfb45ac98fd497461d51c70ef40bac5bbed86d3430198a65536500",
+      "content": "/home/jonnathan/.cache/hyperframes/history/51090cb7-62f9-4c75-8bc0-67d25c71e5d2/blobs/48/48adf1a128cfb45ac98fd497461d51c70ef40bac5bbed86d3430198a65536500"
+    },
+    "hyperframes.json": {
+      "hash": "57fda7e9bd8054756b082c9c2f3aa4c4e5f2c69c5199ad458d467401527ca4f7",
+      "content": "/home/jonnathan/.cache/hyperframes/history/51090cb7-62f9-4c75-8bc0-67d25c71e5d2/blobs/57/57fda7e9bd8054756b082c9c2f3aa4c4e5f2c69c5199ad458d467401527ca4f7"
+    },
+    "index.html": {
+      "hash": "b0708f2db67c0e64d8c6a6ddb5d93f061ad48151d21bc9b555a053135647e195",
+      "content": "/home/jonnathan/.cache/hyperframes/history/51090cb7-62f9-4c75-8bc0-67d25c71e5d2/blobs/b0/b0708f2db67c0e64d8c6a6ddb5d93f061ad48151d21bc9b555a053135647e195"
+    },
+    "meta.json": {
+      "hash": "030e539a59e884fa12cf3aaa4910b38fc65e90036cccb088cb6154ccb8eabc33",
+      "content": "/home/jonnathan/.cache/hyperframes/history/51090cb7-62f9-4c75-8bc0-67d25c71e5d2/blobs/03/030e539a59e884fa12cf3aaa4910b38fc65e90036cccb088cb6154ccb8eabc33"
+    },
+    "motor.js": {
+      "hash": "c5ced604ce00e8135851e21c7f99e4c7823d66c4008f9da6d7f1b3c5df60d3b9",
+      "content": "/home/jonnathan/.cache/hyperframes/history/51090cb7-62f9-4c75-8bc0-67d25c71e5d2/blobs/c5/c5ced604ce00e8135851e21c7f99e4c7823d66c4008f9da6d7f1b3c5df60d3b9"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "d0e1aaec-5ae1-4698-bfae-4a8624c291f6",
+      "completedAt": 1795217798601,
+      "output": "/home/jonnathan/projects/ai-youtube-channel/lab/bakeoff-saigon/out/riso_raw.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": [
+      "407e247d-abe6-4520-af2f-cc2fc908e6bd"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

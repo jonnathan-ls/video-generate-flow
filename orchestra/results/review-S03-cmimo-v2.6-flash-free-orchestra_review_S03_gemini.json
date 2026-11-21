@@ -1,0 +1,42 @@
+{
+ "cena": "S03",
+ "ciclo": "mimo-v2.6-flash-free",
+ "notas": {
+  "V1": 4,
+  "V2": 4,
+  "V3": 2,
+  "V4": 3,
+  "V5": 4,
+  "V6": 4,
+  "V7": 4,
+  "V9": 3,
+  "V10": 2
+ },
+ "media": 3.33,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "2.10s",
+   "defeito": "Em m00_02.10.jpg, os moradores caminhando na calçada de Hanói deslizam lateralmente com as pernas congeladas na mesma pose nos 3 quadros de m00 (deslocamento estático sem ciclo de marcha).",
+   "correcao": "Animar a alternância de pernas/passos dos personagens recortados durante o deslocamento."
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "5.70s",
+   "defeito": "Em a04_05.70.jpg (e no início a00_00.00.jpg), a imagem corta/reseta para tela inteiramente preta no meio da narração, quebrando o fundo ilustrado.",
+   "correcao": "Manter a transição entre tomadas contínua com fundos pintados, eliminando frames pretos intermediários."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "8.55s",
+   "defeito": "Em m02_08.55.jpg, a bandeira do Brasil no mastro da orla do Rio está totalmente estática (mesma posição rígida nos 3 quadros de m02, sem movimento de tecido tremulando).",
+   "correcao": "Adicionar deformação/animação de ondas na bandeira recortada para simular o tecido tremulando ao vento."
+  }
+ ],
+ "bom": [
+  "Composição artística e paleta de cores consistente com documentário histórico nos cenários de Hanói, Saigon e Rio de Janeiro.",
+  "Rótulos de contexto de data e local ('HANÓI 1945' e 'BRASIL 1965') aparecem no tempo correto da fala.",
+  "Trajetória contínua do helicóptero cruzando a baía/cidade de Saigon na tomada 2."
+ ]
+}

@@ -1,0 +1,6 @@
+claude bk-ps-popup sonnet
+claude bk-ps-lowpoly sonnet
+claude bk-ps-softclay sonnet
+claude bk-cv-porto sonnet
+claude bk-cv-mesa sonnet
+claude bk-cv-documento sonnet

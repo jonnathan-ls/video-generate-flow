@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lacre · Produção</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+:root{
+  --bg:#0e1012;--panel:#15181b;--panel-2:#1b1f23;--line:#262b31;--line-2:#323840;
+  --fg:#ebe6da;--fg-2:#b7b2a6;--mut:#8b9096;
+  --brass:#d4ac62;--brass-ink:#1b1408;
+  --ok:#5bbf80;--ok-bg:#183323;--run:#7fb2ef;--run-bg:#16283d;--warn:#e39a4c;--warn-bg:#3a2614;--bad:#ef7d6c;--bad-bg:#3d1c18;
+  --s-todo:#2b3036;--s-todo-fg:#9aa1a8;--s-rend:#2f5f96;--s-rej:#b9702f;--s-rev:#2d7a52;--s-app:#4fae6e;
+  --r:10px;--font:"IBM Plex Sans","Ubuntu","Cantarell","DejaVu Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 var(--font);-webkit-font-smoothing:antialiased;
+  padding-block:24px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+::selection{background:var(--brass);color:var(--brass-ink)}
+:focus-visible{outline:2px solid var(--brass);outline-offset:2px;border-radius:6px}
+*{scrollbar-width:thin;scrollbar-color:var(--line-2) transparent}
+.wrap{max-width:1320px;margin:0 auto}
+.num{font-variant-numeric:tabular-nums}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin-bottom:20px}
+.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+h1{font-size:22px;line-height:1.2;margin:0;font-weight:700;letter-spacing:-.01em}
+h1 b{color:var(--brass);font-weight:700}
+.sub{color:var(--fg-2);font-size:14px}
+.conn{display:inline-flex;align-items:center;gap:8px;color:var(--mut);font-size:12.5px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(91,191,128,.15)}
+.conn.off .dot{background:var(--bad);box-shadow:0 0 0 3px rgba(239,125,108,.15)}
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+.stat{background:var(--panel);padding:14px 16px;min-width:0}
+.stat .k{color:var(--mut);font-size:12.5px}
+.stat .v{font-size:24px;font-weight:600;letter-spacing:-.01em;margin-top:2px;overflow-wrap:anywhere}
+.stat .v small{font-size:13px;color:var(--mut);font-weight:500;margin-left:6px;letter-spacing:0}
+.bar{height:6px;border-radius:3px;background:var(--panel-2);margin-top:8px;overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+@media(max-width:760px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ask{display:flex;gap:12px;align-items:flex-start;background:var(--warn-bg);border:1px solid #5a3b1d;color:#f3d2ae;border-radius:var(--r);padding:12px 16px;margin-bottom:16px}
+.ask svg{flex:none;margin-top:2px}.ask b{color:#ffe3c2}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.c12{grid-column:span 12}.c8{grid-column:span 8}.c7{grid-column:span 7}.c5{grid-column:span 5}.c4{grid-column:span 4}
+@media(max-width:980px){.c8,.c7,.c5,.c4{grid-column:span 12}}
+section.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;min-width:0}
+h2{font-size:15px;font-weight:600;margin:0 0 12px;letter-spacing:-.005em;display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+h2 .aside{font-size:12.5px;font-weight:500;color:var(--mut)}
+.now{font-size:17px;font-weight:600;line-height:1.4;text-wrap:balance;margin:0 0 14px;max-width:75ch}
+.lbl{color:var(--mut);font-size:12.5px;margin:14px 0 4px}
+ol.next{margin:0;padding-left:20px;color:var(--fg-2)}ol.next li{margin:3px 0}ol.next li::marker{color:var(--mut)}
+.empty{color:var(--mut)}
+.pipe{display:flex;flex-wrap:wrap;gap:6px}
+.step{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;background:var(--panel-2);color:var(--mut);font-size:12.5px;border:1px solid var(--line)}
+.step.done{color:var(--fg-2);border-color:#2a3a31}
+.step.done::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok)}
+.step.cur{background:var(--brass);color:var(--brass-ink);border-color:var(--brass);font-weight:600}
+.lote{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.lote:first-child{border-top:0;padding-top:0}
+.lname{font-weight:600}.lst{font-size:12.5px;color:var(--mut);line-height:1.35}
+.lote.cur .lname{color:var(--brass)}
+.cells{display:flex;flex-wrap:wrap;gap:6px}
+.cell{appearance:none;border:0;font:inherit;min-width:72px;padding:6px 10px;border-radius:7px;text-align:left;line-height:1.2;cursor:default;color:var(--fg)}
+.cell b{display:block;font-size:13px;font-weight:600}
+.cell span{display:block;font-size:11.5px;opacity:.85;margin-top:2px}
+.cell[data-play]{cursor:pointer;transition:transform .15s cubic-bezier(.2,.8,.2,1),filter .15s}
+.cell[data-play]:hover{transform:translateY(-1px);filter:brightness(1.12)}
+.todo{background:var(--s-todo);color:var(--s-todo-fg)}.rendered{background:var(--s-rend)}.rejected{background:var(--s-rej);color:#1d1005}.review_ok{background:var(--s-rev)}.approved{background:var(--s-app);color:#07140c}
+@media(max-width:620px){.lote{grid-template-columns:1fr;gap:6px}}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--mut);margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.legend span{display:inline-flex;align-items:center;gap:6px}.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.hint{margin-left:auto}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:500;font-size:12.5px;border-top:0;padding-top:0}
+td.num,th.num{text-align:right}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.b-run{background:var(--run-bg);color:var(--run)}.b-done{background:var(--ok-bg);color:var(--ok)}.b-fail{background:var(--bad-bg);color:var(--bad)}.b-pend{background:var(--panel-2);color:var(--mut)}.b-block{background:var(--warn-bg);color:var(--warn)}
+.b-run::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+@keyframes pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.b-run::before{animation:none}.cell[data-play]{transition:none}}
+.ok{color:var(--ok)}.bad{color:var(--warn)}
+.task{padding:12px 0;border-top:1px solid var(--line)}.task:first-child{border-top:0;padding-top:0}
+.trow{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center}
+.tid{font-weight:600}
+.meta{color:var(--mut);font-size:12.5px}
+.ttitle{color:var(--fg-2);font-size:13px;margin-top:4px}
+.tsum{font-size:13px;margin-top:6px;white-space:pre-line;color:var(--fg-2)}
+.issues{margin:6px 0 0;padding-left:18px;font-size:12.5px;color:var(--warn)}
+pre{margin:8px 0 0;background:#0a0c0d;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:12px/1.45 "IBM Plex Mono",ui-monospace,Menlo,monospace;color:#aeb6b0;white-space:pre-wrap;word-break:break-word;max-height:96px;overflow:auto}
+.beat{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:6px;vertical-align:middle}
+.beat.stale{background:var(--warn)}
+details.more{margin-top:10px}details.more summary{cursor:pointer;color:var(--mut);font-size:12.5px}
+details.more summary:hover{color:var(--fg-2)}
+details.tests summary{list-style:none;cursor:pointer}
+details.tests summary::-webkit-details-marker{display:none}
+details.tests summary h2{margin:0}
+details.tests[open] summary h2{margin-bottom:12px}
+.chev{transition:transform .2s;color:var(--mut)}details[open] .chev{transform:rotate(90deg)}
+.note{font-size:12.5px;color:var(--mut);margin-top:8px}
+.meter{margin-top:10px}.meter:first-child{margin-top:0}.meter .row{display:flex;justify-content:space-between;font-size:13px}.meter .row span:first-child{color:var(--mut)}
+.mbar{height:6px;background:var(--panel-2);border-radius:3px;overflow:hidden;margin-top:5px}.mbar i{display:block;height:100%;background:var(--brass);transition:width .4s ease-out}
+.sk{background:linear-gradient(90deg,var(--panel-2),#22272c,var(--panel-2));background-size:200% 100%;animation:sh 1.4s infinite linear;border-radius:6px;height:14px;margin:8px 0}
+@keyframes sh{to{background-position:-200% 0}}
+dialog{border:1px solid var(--line-2);background:var(--panel);color:var(--fg);border-radius:12px;padding:16px;width:min(1100px,calc(100vw - 32px));max-height:calc(100vh - 32px)}
+dialog::backdrop{background:rgba(5,6,7,.82)}
+.dhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.dhead b{font-size:15px}.dhead .meta{margin-left:8px}
+.btn{appearance:none;display:inline-flex;align-items:center;gap:6px;background:var(--panel-2);color:var(--fg);border:1px solid var(--line-2);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+.btn:hover{background:#252a2f}
+video{width:100%;border-radius:8px;background:#000;display:block;aspect-ratio:16/9}
+.dtext{font-size:13px;color:var(--fg-2);margin-top:10px;max-width:90ch}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand"><h1><b>Lacre</b> · Produção</h1><span class="sub" id="video">carregando…</span></div>
+  <span class="conn" id="conn" role="status"><span class="dot"></span><span id="clock">conectando…</span></span>
+</header>
+
+<div class="strip" id="strip" aria-label="Resumo da produção">
+  <div class="stat"><div class="sk"></div><div class="sk" style="width:60%"></div></div>
+  <div class="stat"><div class="sk"></div><div class="sk" style="width:60%"></div></div>
+  <div class="stat"><div class="sk"></div><div class="sk" style="width:60%"></div></div>
+  <div class="stat"><div class="sk"></div><div class="sk" style="width:60%"></div></div>
+</div>
+<div id="ask"></div>
+
+<div class="grid">
+  <section class="panel c8"><h2>Agora</h2><div id="now"><div class="sk"></div><div class="sk" style="width:70%"></div></div></section>
+  <section class="panel c4"><h2>Máquina</h2><div id="machine"><div class="sk"></div></div></section>
+  <section class="panel c12"><h2>Etapas do vídeo</h2><div class="pipe" id="pipe"></div></section>
+  <section class="panel c12"><h2>Cenas por lote <span class="aside" id="lotecount"></span></h2><div id="lotes"><div class="sk"></div><div class="sk"></div></div>
+    <div class="legend"><span><i class="todo"></i>a fazer</span><span><i class="rendered"></i>renderizada, sem revisão</span><span><i class="rejected"></i>reprovada na revisão</span><span><i class="review_ok"></i>aprovada na revisão</span><span><i class="approved"></i>aprovada por você</span><span class="hint">Clique numa cena colorida para assistir</span></div></section>
+  <section class="panel c7"><h2>Tarefas <span class="aside" id="taskcount"></span></h2><div id="tasks"><div class="sk"></div></div></section>
+  <section class="panel c5"><h2>Executores rodando <span class="aside" id="proccount"></span></h2><div id="procs" class="scroll"></div></section>
+  <section class="panel c12"><details class="tests" id="testsbox"><summary><h2><span>Testes de modelos <span class="aside">executores e revisores</span></span><svg class="chev" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></h2></summary>
+    <div class="lbl">Executores · tarefa de teste: corrigir a cena S03</div><div id="bake" class="scroll"></div>
+    <div class="lbl" style="margin-top:18px">Revisores · gabarito: o revisor Opus reprovou S03, S05 e S06</div><div id="calib" class="scroll"></div></details></section>
+</div>
+</div>
+
+<dialog id="dlg" aria-labelledby="vt">
+  <div class="dhead"><div><b id="vt"></b><span class="meta" id="vm"></span></div>
+    <button class="btn" id="close" type="button" aria-label="Fechar vídeo"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Fechar</button></div>
+  <video id="vp" controls playsinline preload="metadata"></video>
+  <div class="dtext" id="vtext"></div>
+</dialog>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dur=s=>s==null?'':s<60?s+' s':s<3600?Math.floor(s/60)+' min '+String(s%60).padStart(2,'0')+' s':Math.floor(s/3600)+' h '+Math.floor(s%3600/60)+' min';
+const fmt=n=>n==null?'':String(n).replace('.',',');
+const ST={running:['b-run','rodando'],done:['b-done','concluída'],failed:['b-fail','falhou'],blocked:['b-block','bloqueada'],pending:['b-pend','pendente']};
+const badge=st=>{const[c,t]=ST[st]||['b-pend',st];return `<span class="badge ${c}">${esc(t)}</span>`};
+const WORK=['opencode','gemini','claude','dsh'];
+let SCENES={};
+
+function render(s){
+  const p=s.prod||{};const sc=s.scenes||[];SCENES=Object.fromEntries(sc.map(x=>[x.id,x]));
+  $('video').textContent=p.video?`${p.video} · etapa ${p.video_status}`:'';
+  const n=sc.length||1,c=k=>sc.filter(x=>x.state===k).length;
+  const app=c('approved'),rev=c('review_ok'),rej=c('rejected'),ren=c('rendered');
+  const total=sc.reduce((a,x)=>a+(x.dur||0),0),okdur=sc.filter(x=>x.state==='approved').reduce((a,x)=>a+x.dur,0);
+  const cur=(p.lotes||[]).find(l=>!/a fazer/.test(l.status||''))||{};
+  const pc=k=>(k/n*100).toFixed(1)+'%';
+  const running=(s.tasks||[]).filter(t=>t.status==='running').map(t=>t.id);
+  $('strip').innerHTML=`
+    <div class="stat"><div class="k">Cenas aprovadas por você</div><div class="v num">${app}<small>de ${sc.length}</small></div>
+      <div class="bar" title="aprovadas · aprovadas na revisão · reprovadas · renderizadas"><i style="width:${pc(app)};background:var(--s-app)"></i><i style="width:${pc(rev)};background:var(--s-rev)"></i><i style="width:${pc(rej)};background:var(--s-rej)"></i><i style="width:${pc(ren)};background:var(--s-rend)"></i></div></div>
+    <div class="stat"><div class="k">Minutos prontos</div><div class="v num">${fmt((okdur/60).toFixed(1))}<small>de ${fmt((total/60).toFixed(1))} min</small></div><div class="bar"><i style="width:${(okdur/(total||1)*100).toFixed(1)}%;background:var(--brass)"></i></div></div>
+    <div class="stat"><div class="k">Lote em andamento</div><div class="v">${esc(cur.id||'—')}<small>${esc((cur.scenes||[]).join(' '))}</small></div><div class="k" style="margin-top:4px">${esc(cur.status||'')}</div></div>
+    <div class="stat"><div class="k">Tarefas rodando</div><div class="v num">${running.length}<small>${esc(running.join(', ')||'nenhuma')}</small></div></div>`;
+  const w=p.waiting_user||[];
+  $('ask').innerHTML=w.length?`<div class="ask" role="alert"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 5v5M9 12.5v.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><div><b>Precisa de você:</b> ${w.map(esc).join(' · ')}</div></div>`:'';
+  $('now').innerHTML=`<p class="now">${esc(p.now||'—')}</p><div class="lbl">Próximos passos</div>${(p.next||[]).length?`<ol class="next">${p.next.map(x=>`<li>${esc(x)}</li>`).join('')}</ol>`:'<div class="empty">Nada planejado.</div>'}`;
+  const m=s.machine||{},load=+(m.load||[0])[0];
+  $('machine').innerHTML=`<div class="meter"><div class="row"><span>CPU, carga de 1 min</span><span class="num">${fmt(m.load?.[0])} / ${m.cpus}</span></div><div class="mbar"><i style="width:${Math.min(100,load/(m.cpus||1)*100)}%"></i></div></div>
+    <div class="meter"><div class="row"><span>GPU</span><span class="num">${m.gpu?m.gpu.util+'% · '+m.gpu.mem+' MiB':'indisponível'}</span></div><div class="mbar"><i style="width:${m.gpu?m.gpu.util:0}%"></i></div></div>
+    <p class="note">Os modelos rodam nos servidores dos provedores. Aqui, só o render usa CPU.</p>`;
+  const ci=(p.pipeline||[]).indexOf(p.video_status);
+  $('pipe').innerHTML=(p.pipeline||[]).map((x,i)=>`<span class="step ${i<ci?'done':i===ci?'cur':''}" ${i===ci?'aria-current="step"':''}>${esc(x)}</span>`).join('');
+  const cell=x=>{const r=x.review,can=!!x.render_at;
+    const tip=`${x.id} · ${fmt(x.dur)} s${x.render_at?' · render '+x.render_at:''}${r?' · revisão '+r.veredito+(r.media!=null?' '+fmt(r.media):''):''}`;
+    return `<button type="button" class="cell ${x.state}" ${can?`data-play="${x.id}"`:'disabled'} title="${esc(tip)}" aria-label="${esc(tip)}"><b>${x.id}</b><span class="num">${fmt(x.dur)} s${r&&r.media!=null?' · '+fmt(r.media):''}</span></button>`};
+  const lotes=[{id:'L0',scenes:['S01'],status:'abertura · aprovada'},...(p.lotes||[])];
+  $('lotecount').textContent=`${sc.length} cenas · ${lotes.length} lotes`;
+  $('lotes').innerHTML=lotes.map(l=>`<div class="lote ${l.id===cur.id?'cur':''}"><div><div class="lname">${l.id}</div><div class="lst">${esc(l.status||'')}</div></div><div class="cells">${l.scenes.map(id=>SCENES[id]?cell(SCENES[id]):'').join('')}</div></div>`).join('');
+  const pr=(s.procs||[]).filter(x=>[...WORK,'remotion','ffmpeg'].includes(x.kind));
+  $('proccount').textContent=pr.length?pr.length+' processos':'';
+  $('procs').innerHTML=pr.length?`<table><thead><tr><th>Tipo</th><th>Tarefa</th><th>Modelo</th><th class="num">Tempo</th><th class="num">CPU</th></tr></thead><tbody>${pr.map(x=>`<tr title="${esc(x.args)}"><td>${esc(x.kind)}</td><td>${esc(x.task||'—')}</td><td>${esc(x.model||'—')}</td><td class="num">${dur(x.secs)}</td><td class="num">${fmt(x.cpu)}%</td></tr>`).join('')}</tbody></table>`:'<div class="empty">Nenhum executor rodando agora.</div>';
+  const order={running:0,failed:1,blocked:1,pending:2,done:3};
+  const ts=[...(s.tasks||[])].sort((a,b)=>(order[a.status]??2)-(order[b.status]??2)||a.id.localeCompare(b.id));
+  const act=ts.filter(t=>t.status!=='done'),done=ts.filter(t=>t.status==='done');
+  $('taskcount').textContent=`${act.length} abertas · ${done.length} concluídas`;
+  const tHtml=t=>{const lg=t.log,fresh=lg&&lg.ago<120;
+    return `<div class="task"><div class="trow">${badge(t.status)}<span class="tid">${esc(t.id)}</span>${t.secs!=null?`<span class="meta num">${dur(t.secs)}</span>`:''}${t.model?`<span class="meta">${esc(t.model)}</span>`:''}</div>
+      <div class="ttitle">${esc(t.title.replace(/^(Tarefa\s+)?[\w-]+:\s*/,''))}</div>${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
+      ${(t.issues||[]).length?`<ul class="issues">${t.issues.map(i=>`<li>${esc(i)}</li>`).join('')}</ul>`:''}
+      ${lg&&t.status==='running'?`<div class="meta" style="margin-top:6px"><span class="beat ${fresh?'':'stale'}"></span>log ${fmt(lg.kb)} KB · atividade há ${dur(lg.ago)}</div><pre>${esc(lg.tail.join('\n'))}</pre>`:''}</div>`};
+  const openDone=document.querySelector('#tasks details.more')?.open;
+  $('tasks').innerHTML=(act.length?act.map(tHtml).join(''):'<div class="empty">Nenhuma tarefa aberta.</div>')+(done.length?`<details class="more" ${openDone?'open':''}><summary>Ver ${done.length} concluídas</summary>${done.map(tHtml).join('')}</details>`:'');
+  const b=s.tests?.bakeoff||[];
+  $('bake').innerHTML=b.length?`<table><thead><tr><th>Modelo</th><th>Status</th><th class="num">Tempo</th><th>Validadores</th><th>Revisão</th></tr></thead><tbody>${b.map(x=>`<tr><td>${esc(x.model)}</td><td>${badge(x.status)}</td><td class="num">${dur(x.secs)}</td><td>${Object.entries(x.validators||{}).map(([k,v])=>`<div class="${/PASS/.test(v)?'ok':'bad'}">${esc(k)}: ${/PASS/.test(v)?'PASS':'FAIL'}</div>`).join('')||'—'}</td><td>${x.review&&x.review.veredito?esc(x.review.veredito+(x.review.media!=null?' · '+fmt(x.review.media):'')):'—'}</td></tr>`).join('')}</tbody></table>`:'<div class="empty">Sem resultados ainda.</div>';
+  const cb=s.tests?.calib||{},scs=['S03','S05','S06'];
+  $('calib').innerHTML=Object.keys(cb).length?`<table><thead><tr><th>Revisor</th>${scs.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${Object.entries(cb).map(([rv,v])=>`<tr><td>${esc(rv)}</td>${scs.map(k=>{const r=v[k];if(!r)return '<td class="meta">—</td>';const good=r.veredito==='REFAZER';return `<td class="${good?'ok':'bad'}">${esc(r.veredito==='REFAZER'?'reprovou':r.veredito==='APROVADO'?'aprovou':r.veredito||'erro')}${r.media!=null?' · '+fmt(r.media):''}${r.defeitos!=null&&r.veredito&&r.veredito!=='inválido'?' · '+r.defeitos+' defeitos':''}</td>`}).join('')}</tr>`).join('')}</tbody></table><p class="note">Verde: reprovou, como o gabarito. O maestro confere quais defeitos batem com o gabarito.</p>`:'<div class="empty">Sem resultados ainda.</div>';
+}
+const dlg=$('dlg'),vp=$('vp');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-play]');if(!b)return;const x=SCENES[b.dataset.play];if(!x)return;
+  $('vt').textContent=x.id;$('vm').textContent=`${fmt(x.dur)} s · render ${x.render_at}${x.review?' · revisão '+x.review.veredito+(x.review.media!=null?' '+fmt(x.review.media):''):''}`;$('vtext').textContent=x.text||'';
+  vp.src='/video/'+x.id+'?t='+encodeURIComponent(x.render_at);dlg.showModal();vp.play().catch(()=>{})});
+const stopV=()=>{vp.pause();vp.removeAttribute('src');vp.load()};
+$('close').onclick=()=>dlg.close();dlg.addEventListener('close',stopV);
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+async function tick(){try{const r=await fetch('/api/state',{cache:'no-store'});if(!r.ok)throw 0;render(await r.json());$('conn').classList.remove('off');$('clock').textContent='ao vivo · '+new Date().toLocaleTimeString('pt-BR')}
+  catch(e){$('conn').classList.add('off');$('clock').textContent='sem conexão com o servidor do painel'}}
+tick();setInterval(tick,5000);
+</script>
+</body>
+</html>

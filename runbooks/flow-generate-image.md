@@ -1,0 +1,38 @@
+# Runbook: gerar imagens (Google Flow)
+
+**Última validação na interface real:** 2026-11-19 · **Versão:** 1 · **Navegador:** navegador do app Claude (perfil persistente)
+**Pré-condições:** conta Google do usuário logada em flow.google.com (plano Plus). Se aparecer "Faça login" ou "Confirme que é você" → **parar e chamar o usuário** (human-touchpoints A1/A2).
+**Ações reservadas ao usuário:** login e reautenticação Google.
+
+| # | Ação | Alvo | Estado esperado após a ação (verificar) | 📸 |
+|---|---|---|---|---|
+| 1 | Abrir URL | `https://labs.google/fx/tools/flow` (redireciona para `flow.google.com`) | Grade de projetos com o selo "PLUS" no topo direito. Se cair em `/about` ou no login → passo 0 (usuário) | 📸 |
+| 2 | Clicar | botão flutuante "+ Novo projeto", centro-baixo da grade. **O clique pelo ref do texto não funciona; usar a coordenada do botão** | URL `flow.google.com/project/<uuid>`; tela "Comece a criar…" | 📸 |
+| 3 | Clicar | chip do modelo, à direita da caixa de comando ("Nano Banana 2.1 · x2") | Painel: Imagem/Vídeo, formatos (16:9 …), modelo, nível de raciocínio, quantidade (x1–x4), "A geração vai usar N créditos" | 📸 |
+| 4 | Conferir | Imagem · **16:9** · Nano Banana 2.1 · raciocínio **Alto** · **x2** · **0 créditos** | Se os créditos forem maiores que 0 → parar e perguntar ao usuário | |
+| 5 | Tecla | `Escape` | Painel fecha | |
+| 6 | Clicar e digitar | textbox "O que você quer criar?" → prompt completo (prefixo de estilo + cena) | Texto aparece na caixa | |
+| 7 | Clicar | seta de enviar, à direita da caixa. **O Enter NÃO envia** | Aparece um grupo de 2 cartões com porcentagem e a descrição do prompt ao lado | 📸 |
+| 8 | Repetir 6–7 | para cada prompt | Pedidos rodam em paralelo; cerca de 60–90 s cada | |
+| 9 | Aguardar | até sumirem as porcentagens | Miniaturas visíveis | 📸 |
+| 10 | Baixar | **Usar Claude in Chrome** (o navegador do app não salva arquivos). Abrir o projeto, clicar no ícone ↓ "Baixar lote" no topo de cada grupo (à direita das imagens) | Um `download.zip` por grupo em `~/Downloads`, com 2 JPG 1376×768 nomeados pelo conteúdo. Descompactar e renomear pelo ID do prompt | |
+
+## Caminho preferido (2026-11-20): flow-mcp
+O executor do OpenCode usa as ferramentas MCP `flow_*` (`~/flow-mcp`, perfil Chrome próprio em `~/.flow-mcp`, login feito pelo usuário com `npm run login`). Ele cria ou abre o projeto, roda `flow_generate` ou `flow_agent_images` (até 50 imagens em paralelo, 0 crédito), `flow_wait` e `flow_download`. O teste de 2026-11-20 (jipe sobre verde) saiu a 0 crédito em 1376×768. O passo a passo acima vale como reserva.
+**Organização (pedido do usuário, 2026-11-20):** um projeto do Flow por produção, com o nome `lacre-<video>` (o Vietnã é `lacre-vietna`), e todos os downloads da produção numa só pasta, `media/<canal>/<video>/src_img/flow/`, com nome `<cena>_<objeto>_<n>`. Não criar projeto por teste ou por lote. O projeto `lacre-teste` de 2026-11-20 foi exceção e não deve ser reaproveitado.
+
+## Divergências conhecidas / histórico
+- 2026-11-19: v1 criada em modo exploratório. O Enter na caixa de comando não envia; usar a seta. "Novo projeto" exige clique por coordenada.
+- 2026-11-19: **download pelo navegador do app falhou** por 3 métodos: (1) botão ↓ do grupo, que não gera arquivo; (2) `fetch` da imagem + POST para 127.0.0.1, bloqueado (a página não alcança o localhost); (3) `<a download>` com blob, que não gera arquivo. A leitura da imagem pela página funciona (WebP 1376×768, ~170 KB, URL `flow.google.com/asb/...` autenticada). Os downloads antigos do usuário aparecem em `~/Downloads` como `<uuid>.jpeg` pelo Chrome normal.
+- 2026-11-19: **método validado:** Claude in Chrome + ícone ↓ do grupo → zip em `~/Downloads`. Coordenadas: quadro do Chrome é 1568×734; o botão fica em x≈1119, no topo de cada grupo.
+- 2026-11-19 (logos): o menu de modelo/formato abre com **um** clique no chip (à direita da caixa de comando) e leva ~1 s para renderizar; clicar de novo o fecha. Formatos: 16:9, 4:3, **1:1** (x≈541, y≈425 no quadro 800×689 do navegador do app), 3:4, 9:16. O formato escolhido vale para os pedidos seguintes do projeto.
+- 2026-11-19 (logos): para baixar muitos grupos no Chrome, use `find` com a consulta "download button of each image group" para obter as referências "Baixar lote" e `scroll_to` + clique em cada uma (mais confiável que coordenadas quando as imagens são grandes). Os zips chegam a `~/Downloads/download (N).zip`, um por grupo, com 2 arquivos nomeados de forma genérica pelo Flow: **a identificação do conceito deve ser visual** (folha numerada), não pelo nome do arquivo.
+- 2026-11-19 (logos): o texto dentro das imagens (nome do canal e frase com acentos) saiu correto no Nano Banana 2.1, mas **conferir sempre**.
+- 2026-11-19 (logos, rodada 2): **quando o painel do navegador do app muda de tamanho, as coordenadas deixam de valer** (o quadro passou de 800×689 para 800×282, e o clique retornou "tire uma nova captura"). Usar **referências de elementos** em vez de coordenadas: `find "O que você quer criar"` dá a caixa de texto e `find "arrow_forward"` dá o botão de enviar; depois `left_click` com `ref`. Um lote do `browser_batch` aceita no máximo **25 ações**.
+- 2026-11-19 (logos, rodada 2): a lista de grupos é **virtualizada**: `find "Baixar lote"` só devolve os grupos próximos da tela. Para baixar todos, baixar os que aparecem, rolar e buscar de novo. Conferir sempre por checksum (md5) se algum arquivo já havia sido baixado antes.
+- 2026-11-19: ao descompactar zips com espaço no nome (`download (22).zip`) no zsh, **não usar `for z in $(ls ...)`**: o nome se parte nos espaços. Citar cada arquivo explicitamente ou usar um laço sobre um glob entre aspas.
+- 2026-11-20 (lote 1 do Vietnã, Claude in Chrome, quadro 1568×734): **pedidos em sequência podem se fundir.** Quando o texto é longo, a caixa cresce e o clique na seta às vezes não envia; o texto seguinte é digitado na mesma caixa e o Flow gera uma imagem que mistura os dois prompts (saiu um painel duplo Hanói+Saigon e um fundo trocado). Correção: depois de `type`, esperar 0,7 s, clicar na seta (x≈1026, y≈686) e esperar 1,5–2 s; a cada lote de 4 pedidos, conferir com `zoom` que a caixa ficou vazia ("O que você quer criar?"). Antes de digitar um pedido novo, `ctrl+a` + `Delete` na caixa.
+- 2026-11-20: **o nome do arquivo no zip não é confiável** (a imagem do pátio do quartel veio como `Typewriter_on_desk_at_night_*.jpg`; a de Ba Dinh como `Historical_scenes_in_Rio_*`). Identificar sempre pela folha de contato, nunca pelo nome.
+- 2026-11-20: **edição de imagem (mesmo enquadramento, outro estado):** abrir o projeto onde a imagem foi gerada, clicar na miniatura (abre `/edit/<id>`), digitar a instrução em "O que você quer mudar?" (centro-baixo), conferir no chip do modelo: formato "Original", Nano Banana 2.1, "A geração vai usar 0 créditos", `Escape`, clicar na seta. Sai **1 imagem** na coluna da direita. Baixar pelo ícone ↓ no topo direito → **"1K Tamanho original"** (o "2K Aprimorada" pode exigir upgrade; não usar). O arquivo cai solto em `~/Downloads` (jpg, não zip), 1376×768, alinhado com o original (usado como `bg2` do apagão da usina).
+- 2026-11-20: a edição só funciona sobre imagens do **mesmo projeto**; o fundo `flag_a` (piloto S04) não estava no projeto aberto, então foi gerado um fundo novo em vez de editado.
+- 2026-11-20: a grade do projeto lista o grupo **mais recente no topo**; para voltar ao topo use `javascript_tool` com `scrollTop=0` nos contêineres roláveis. `find "Baixar lote"` reaproveita refs entre buscas (o mesmo `ref_300` passou a apontar para outro grupo): sempre clicar logo após o `find` que devolveu o ref.

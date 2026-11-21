@@ -1,0 +1,27 @@
+{
+ "status": "done",
+ "files": [
+  "lab/bakeoff-saigon/out/dirco_16x9.mp4",
+  "lab/bakeoff-saigon/dirco/estudio/src/Collage.tsx",
+  "lab/bakeoff-saigon/dirco/estudio/src/Root.tsx",
+  "lab/bakeoff-saigon/dirco/estudio/src/motor/collage.tsx",
+  "lab/bakeoff-saigon/dirco/estudio/herramientas/fotogramas.mjs",
+  "lab/bakeoff-saigon/dirco/recorta.py",
+  "lab/bakeoff-saigon/dirco/img/*"
+ ],
+ "validators": {
+  "shot_check": "n/a (laboratório)",
+  "scene_gates": "n/a",
+  "render": "PASS: remotion --gl=vulkan, 450 quadros, 14 s; h264 1920x1080 30 fps 15,0 s + aac"
+ },
+ "summary": "Kit director-de-collage (estilo Archivo), copia em dirco/estudio com node_modules por link. 11 imagens num lote flow_agent_images (0 credito; 7 recortes de croma verde/azul com despill so na borda). 4 cenas em 3D (telhado/helicoptero com escada, avenida/tanque que derruba o portao em 7,96, gabinete com silhueta e contador 2 dias, soldados com fuzis no chao em 13,8-14,6), barrido entre cenas, textos <=6 palavras, fade final. Controle: 2 rodadas de quadros (corrigi escada, pes do tanque, contador sobre o nome). Render na GPU em 14 s; tempo total de trabalho cerca de 25 min. Sem sfx (nenhum asset licenciado no kit).",
+ "issues": [
+  "Projeto Flow aberto nao foi confirmado como lacre-lab (flow_status nao mostra o nome); imagens baixadas em ~/flow-mcp-out/dirco e copiadas.",
+  "Helicoptero e tanque sao imagens paradas: so se movem por posicao (sem rotor girando, sem esteiras).",
+  "Pessoas na escada nao sobem (so balancam); soldados ja vem com os fuzis na mao e a 'queda' e uma pilha que cai na frente, entao o gesto de deixar a arma e fraco.",
+  "Portao cai como achatamento 2D, sem perspectiva real; o tanque aparece atras do portao com transparencia estranha entre as barras.",
+  "Helicoptero tem camuflagem manchada (CH-53 de 1975 era verde-oliva liso). Imagens do agente nao foram revisadas por Gemini (review.sh nao rodou).",
+  "Sem nota em rubrics/visual.md; nao houve revisao independente."
+ ],
+ "_custo_usd": 0.0
+}

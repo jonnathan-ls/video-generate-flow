@@ -1,0 +1,42 @@
+id            idade classe         views v/dia vida  v/dia entre fotos  canal · título
+wsYvujpyi28     83d JANELA     2,031,764     24,479                  —  AntigamenteBR (8120) · Caraguatatuba Instantes Antes da Serra Engolir
+ToXuPrJ8814     16d JANELA       480,973     30,061                  —  Histórias da Tragédia (1810) · Como a serra desceu sobre Caraguatatuba em 196
+HCUX70xkpPs     86d JANELA       281,616      3,275                  —  A QUEM INTERESSAR (13000) · Serra das Araras: O Desastre de 1967
+-UXCiZoloq4     34d JANELA       115,002      3,382                  —  Impérios & Quedas (1350) · O que restou do Império Matarazzo? A história 
+EoFHp3oi6zk     78d JANELA       380,133      4,874                  —  Grandes Dinastias (30300) · A Maldição dos Matarazzo - Como a Família Mais
+A9kUr8uFu-Q    110d JANELA     1,065,058      9,682                  —  Minutos Finais (20300) · A TRAGÉDIA DE GALVESTON: A Cidade Que o Oceano
+b9lOLqH0rlw    117d JANELA       322,155      2,753                  —  Minutos Finais (20300) · A TRAGÉDIA DO TITANIC: A Verdade Sobre o Navio
+dWpguOx1JxE     94d JANELA       919,027      9,777                  —  O Diário de Titus Valério (25300) · Getúlio Vargas Era de Esquerda ou de Direita?
+UfGD0lqHObI    107d JANELA     2,261,218     21,133                  —  O Diário de Titus Valério (25300) · Como Começou a Ditadura Militar no Brasil? (19
+y0vGKZCwFjI    108d JANELA       101,433        939                  —  Sombras da Caatinga (9590) · A História COMPLETA de Corisco o Diabo Loiro |
+LmHXW8dQkdo    120d JANELA       105,382        878                  —  Sombras da Caatinga (9590) · A História COMPLETA de Padre Cícero | Da Ascen
+1LImwJdMRaA     64d JANELA       241,369      3,771                  —  História do Mundo (17900) · Egito de Cleópatra: A Civilização Que Desafiou
+hWBEh5Gzab8     33d JANELA       129,381      3,921                  —  Brasil de Outrora (2030) · Canudos Não Acabou em 1897: A Cidade Renasceu 
+Lk4H1tDltxs     79d JANELA       139,926      1,771                  —  Fóssil Medieval (14900) · Como foi o funeral de Dom Pedro I após morrer 
+8t98KZVYXcU     48d JANELA       104,193      2,171                  —  Fóssil Medieval (14900) · Assim Era a Vida da Imperatriz Teresa Cristina
+ilSo-YPJ0MA     89d JANELA       357,767      4,020                  —  Fóssil Medieval (14900) · Como foi o funeral de Dom Pedro II após sua mo
+w8DwFl3ar6Q     78d JANELA       248,755      3,189                  —  O Reconstrutor (12400) · Assim Foi a Vida de Dom Pedro I como Imperador
+QDj5hV1WDrk     77d JANELA       283,819      3,686                  —  Relíquias Perdidas 937 (28300) · 7 de Setembro de 1822, 16h30: A Verdade Que os
+h46qCR_f5cg     60d JANELA       357,398      5,957                  —  A Grande Saga (1060) · BRASIL ANTES DE 1500: A História de um Territó
+gaM7kTBzY1g     28d JANELA       290,790     10,385                  —  Vida Brasileira TV (10500) · Óbidos Momentos Antes do Maior Naufrágio da Hi
+RDcIJEXCXt4     22d JANELA       181,714      8,260                  —  Vida Brasileira TV (10500) · Rio de Janeiro Momentos Antes do Naufrágio do 
+6XCouvU2oFo     37d JANELA       104,905      2,835                  —  Instante do Colapso (1110) · A TRAGÉDIA DO EASTLAND: O navio que tombou pre
+NBR5XGW42Yk     51d JANELA       425,061      8,335                  —  AntigamenteBR (8120) · Londrina Instantes Antes da Geada Negra Devora
+-cZcX4LIKWs     15d JANELA       103,710      6,914                  —  Vestígio (2380) · A TRAGÉDIA DA GEADA NEGRA: a noite que queimou
+4Gv6KxRA-y4     71d JANELA       169,675      2,390                  —  Paraná no Tempo (4640) · Assim Era Viver em Londrina em 1950 — Quando o
+TspI7hbtRDc     24d JANELA       104,010      4,334                  —  Vestígio (2380) · A TRAGÉDIA DE TUBARÃO: o rio subiu 10 metros e
+suV2TVrBOCg     17d JANELA       272,588     16,035                  —  Avesso (1410) · Como Era Realmente a Vida Dentro de um Castelo
+qB4S5rXfMjk    108d JANELA       377,510      3,495                  —  History Reconstructed (4040) · What Life Was Really Like Inside a Medieval Ca
+c3DkHPALV6w     87d JANELA       866,696      9,962                  —  Guerra De Impérios (13100) · O Que Aconteceu Com CADA Senador Que Esfaqueou
+ka5q0jT3onI    108d JANELA       191,927      1,777                  —  Leviatã (4540) · CORISCO: O ÚLTIMO CANGACEIRO — MORTO, MAS NÃO 
+dA9RSy6XTzE     94d JANELA       133,740      1,423                  —  Pecados do Engenho (16300) · A FÚRIA DO DIABO LOIRO: O DIA EM QUE LAMPIÃO E
+oI3idgbJRSY     26d JANELA       792,155     30,468                  —  Contos do Nordeste (20900) · LAMPIÃO VOLTOU PARA PAGAR UMA DÍVIDA A UM VELH
+z1WhdsM3FAE     79d JANELA       124,877      1,581                  —  Cangaço Proibido (17900) · Fazendeiro Mandou Surrar o Roceiro na Frente d
+Nyj1xkcCdno     45d JANELA       159,387      3,542                  —  O Sertão Cobra (7280) · Mandaram Lampião Não Entrar Naquela Fazenda — 
+PeLghNA_77Q     30d JANELA       438,577     14,619                  —  Documentário Épico (1820) · ANTES DAS PRIMEIRAS CIDADES: O Mundo Esquecido
+GRNiX0CEO5g     26d JANELA       248,086      9,542                  —  Documentário Épico (1820) · PANGEIA: Uma Viagem de Volta à Terra Pré-Histó
+d_o7CxBOYpQ     62d JANELA       328,475      5,298                  —  O Ancestral (9330) · O Bilhão de Anos Em Que “Nada” Aconteceu na Te
+UrE8WqoIP3Q     74d JANELA       606,874      8,201                  —  Paleora (29100) · Sir David Attenborough: A Billion Years of Ear
+5GR3GFXbbis     51d JANELA       228,625      4,483                  —  História em Documentário (1390) · Frio e Escassez: Como o Homo sapiens Sobrevive
+aQgogUGtfxw     21d JANELA       223,307     10,634                  —  Quem Diria? (4330) · Como os Humanos da Era do Gelo Dormiam Sem Mor
+CgsuBitUVaU     84d JANELA       634,088      7,549                  —  Dossiê Impérios (25100) · Como o “Chinelo de Pobre” Virou Havaianas — e 

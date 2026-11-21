@@ -1,0 +1,57 @@
+{
+ "cena": "S05",
+ "ciclo": "calib",
+ "notas": {
+  "V1": 4,
+  "V2": 4,
+  "V3": 3,
+  "V4": 4,
+  "V5": 4,
+  "V6": 5,
+  "V7": 5,
+  "V9": 3,
+  "V10": 4
+ },
+ "media": 4.0,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "19.3-22.8",
+   "defeito": "A fala diz que o Viet Minh 'ataca a usina elétrica' e a tomada promete 'a usina explode e a cidade apaga', mas os quadros a19-a23 mostram a usina intacta, com janelas acesas e holofotes, sem explosão nem apagão visível.",
+   "correcao": "Inserir explosão/flash na usina no tempo de 'ataca'/'explosão' e queda de luz da cidade logo em seguida, com fumaça e estilhaços."
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "7.4-8.9",
+   "defeito": "Em m01 (7.75), os três quadros seguidos da coluna francesa mostram as figuras com poses praticamente idênticas, sugerindo deslize com pernas paradas, não marcha com pernas alternando.",
+   "correcao": "Animar ciclo de marcha com pernas alternadas e deslocamento do corpo; se o soldado é recorte, variar a pose entre quadros."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "25.1-28.5",
+   "defeito": "Em m04 (25.64), a coluna em rua em chamas também repete a mesma pose nos três quadros, com risco de deslize.",
+   "correcao": "Variar poses das pernas e braços entre os quadros e avançar a coluna em relação ao fundo."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "0.0-0.2",
+   "defeito": "O texto 'A FRANÇA NÃO ACEITA.' em a00 está sobre fundo quase preto com contraste muito baixo, ficando pouco legível em 640x360.",
+   "correcao": "Clarear o texto ou subir o brilho do fundo na abertura; garantir contraste mínimo."
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "5.8, 12.4, 19.3",
+   "defeito": "Rótulos de contexto no topo ('SAIGON · SETEMBRO DE 1945', 'HAIPHONG · MARÇO DE 1946', 'HANÓI · 19 DE DEZEMBRO') são pequenos e de contraste médio, difíceis de ler em 640x360.",
+   "correcao": "Aumentar corpo da fonte e/ou adicionar faixa escura semitransparente atrás do rótulo."
+  }
+ ],
+ "bom": [
+  "Estilo pictórico consistente em todas as tomadas (V1).",
+  "Profundidade em camadas: água, cidade, montanhas e névoa (V2).",
+  "Navio entra e atraca com esteira e reflexo na água; casco em contato com a água (V10).",
+  "Rótulos de local/data presentes e corretos: Saigon 1945, Haiphong março 1946, Hanói 19 dezembro 1946 (V7).",
+  "Atmosfera noturna e de incêndio convincente, com holofotes e fumaça (V6).",
+  "Cortes alinhados às palavras da narração e legendas sem cobrir os objetos (V4/V5)."
+ ]
+}

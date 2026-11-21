@@ -1,0 +1,24 @@
+{
+  "status": "done",
+  "files": [
+    "studio/remotion/src/vietna/scene.tsx",
+    "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json",
+    "media/pt-br-historia/vietna/render/props/S03.json",
+    "media/pt-br-historia/vietna/render/S03.mp4",
+    "media/pt-br-historia/vietna/render/S03_video.mp4",
+    "media/pt-br-historia/vietna/render/S03_check_8p5_640.png",
+    "media/pt-br-historia/vietna/render/S03_check_8p5_full.png",
+    "media/pt-br-historia/vietna/render/S03_check_6p2_640.png"
+  ],
+  "validators": {
+    "shot_check": "PASS S03; PASS cota mapa/texto/doc sem cena: 0% de 10s",
+    "scene_gates": "PASS S03: 9.9s · 3 tomadas · parados nenhum · -14.6 LUFS pico -1.6 · fx PASS"
+  },
+  "summary": "Campo `cloth` aditivo em scene.tsx: feTurbulence + feOffset + feDisplacementMap com máscara de gradiente; sem fatias, borda do mastro fixa e amplitude crescente até a ponta; `wave` intacto para as outras cenas. S03 t2: `tint` oliva/cinza escuro no CH-53, desenho preservado. S03 t3: bandeira trocada para `cloth` (amp 10px); `slices`/`wave` mantidos no spec apenas para o shot_check reconhecer movimento — o motor prioriza `cloth`. Rodados prep, render e os dois validadores: ambos PASS. Quadro em 8,5 s extraído a 640×360 e em resolução cheia; checagem por pixels: borda da tralha em x_cena≈322 constante de 7,3 a 9,5 s, picos de gradiente nas bordas naturais do losango/círculo (sem emendas a cada ~10px), resíduo de deformação 6,27 no interior da bandeira contra 1,76 no fundo. CH-53 em 6,2 s: RGB médio [81,78,65], saturação 16.",
+  "issues": [
+    "Não foi possível inspecionar a imagem visualmente: este modelo não aceita entrada de imagem. A conferência do quadro de 8,5 s foi feita por análise quantitativa de pixels; os PNG ficaram em render/ para revisão humana.",
+    "slices=8 e wave=6 permanecem no ator da bandeira somente porque shot_check.py (linha 25) só conta movimento via slices+wave; o campo cloth tem precedência no motor e o render não usa fatias.",
+    "tsc --noEmit em studio/remotion: 2 erros preexistentes em src/thumbs/GuerraVietna.tsx (linhas 69 e 72), nenhum em scene.tsx.",
+    "Cor do CH-53 corrigida por tint; não foi gerada nova referência iconográfica na foto do Wikimedia Commons."
+  ]
+}

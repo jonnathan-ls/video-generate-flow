@@ -1,0 +1,26 @@
+{
+ "status": "done",
+ "files": [
+  "lab/bakeoff-saigon/ps-inktoon/ (index.html, boot.js, style.js, render.mjs, lib/, vendor/)",
+  "lab/bakeoff-saigon/out/ps_inktoon_16x9.mp4",
+  "lab/bakeoff-saigon/out/ps_inktoon_raw.mp4",
+  "lab/bakeoff-saigon/out/ps_inktoon_sfx.wav"
+ ],
+ "validators": {
+  "shot_check": "não se aplica (laboratório)",
+  "scene_gates": "não se aplica (laboratório)",
+  "ffprobe": "h264 1920x1080 30 fps, 15,0 s, com áudio AAC; sem legenda queimada"
+ },
+ "summary": "Estilo ink-toon (three.js 0.187, kit STAGE/SOUND e inkKit do kit-style-video-prompts) aplicado à queda de Saigon, sem storyboard prévio. Cena 3D única com 4 batidas: CH-53 pousa no telhado e decola em 'evacuam' (3,49 s) com 3 pessoas subindo a escada; T-54 derruba o portão do Palácio da Independência (modernista) em 'palácio' (7,97 s); silhueta do presidente com legenda 'Presidente do Sul', rótulo 'DUONG VAN MINH' (10,6 s) e troca por '2 DIAS NO CARGO' em 'dois dias' (12,07 s); 3 soldados soltam os M16 em 13,81/14,05/14,29 s. Câmera faz whip em 4,9, 8,8 e 12,8 s. Áudio: narração + sons sintéticos do kit (rotor, motor, impacto do portão, rifles), -22,6 LUFS no total. Render: Chrome headless-shell com ANGLE/Vulkan e ffmpeg h264_nvenc, 450 quadros com 16 amostras em 33 s (0,5 min); mais 4 rodadas de quadros de conferência (cerca de 12 s cada). Tempo de trabalho total: não cronometrado com precisão, a maior parte foi montar a geometria e ajustar enquadramento/rótulos (2 rodadas de correção).",
+ "issues": [
+  "Rótulo da batida 3 ficou 'DUONG VAN MINH' (10,6 s) e depois '2 DIAS NO CARGO' (12,07 s) em vez de um só 'Duong Van Minh · 2 dias no cargo': juntos seriam 7 palavras e o BRIEF limita a 6 por vez.",
+  "Também aparecem 'Presidente do Sul' (9,5 s) e 'Palácio da Independência' (5,1 s) como legendas pequenas; todas dizem só o que a narração diz.",
+  "O helicóptero sai de quadro por volta de 4,3 s, antes do fim da batida (4,9 s); a cena fica só com o telhado vazio por cerca de 0,6 s.",
+  "Pessoas e soldados são bonecos sem rosto, de escala exagerada em relação ao helicóptero e ao tanque (estilo diorama); o tanque é visto de trás e de cima.",
+  "Sem poeira/fumaça: as nuvens de teste pareciam olhos no tanque e foram retiradas; o impacto no portão fica só nos traços de tinta e no tremor de câmera.",
+  "GPU: flags Vulkan/ANGLE e NVENC usados, nenhum SwiftShader/libx264 no código; a velocidade (~15 quadros/s a 1080p) é compatível com GPU, mas não li a string do renderizador WebGL para confirmar.",
+  "Só 16:9: o 9:16 não foi feito (a tarefa pede só 16:9). Áudio do mix não foi ouvido, só medido (-22,6 LUFS).",
+  "Fontes Anton e Caveat (OFL) baixadas do Google Fonts para ps-inktoon/vendor/ porque não existiam no sistema."
+ ],
+ "_custo_usd": 0.0
+}

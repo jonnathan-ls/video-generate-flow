@@ -1,0 +1,140 @@
+{
+ "theme": "T2",
+ "regex": "naufr|afund|navio|barco|shipwreck|sank|ship|bateau|astúrias|asturias",
+ "queries": [
+  "naufrágio brasil história ",
+  " maior naufrágio do brasil ",
+  " naufrágio óbidos amazonas ",
+  " príncipe de astúrias naufrágio ilhabela ",
+  " bateau mouche naufrágio ",
+  " navio afundou brasil tragédia"
+ ],
+ "n_results": 133,
+ "window": [
+  {
+   "id": "gaM7kTBzY1g",
+   "duration": 2264,
+   "view_count": 290749,
+   "channel": "Vida Brasileira TV",
+   "channel_url": "https://www.youtube.com/channel/UCxiwEvRkYhTo2UEwXic_Rbw",
+   "upload_date": "20261030",
+   "title": "Óbidos: Moments Before the Greatest Shipwreck in Amazon River History (1981)",
+   "qs": [
+    "naufrágio óbidos amazonas"
+   ],
+   "age": 20
+  },
+  {
+   "id": "6XCouvU2oFo",
+   "duration": 1678,
+   "view_count": 104905,
+   "channel": "Instante do Colapso",
+   "channel_url": "https://www.youtube.com/channel/UCrdlkXsntmtz_eGDO8EMw5w",
+   "upload_date": "20261020",
+   "title": "A TRAGÉDIA DO EASTLAND: O navio que tombou preso ao cais e matou 844 pessoas | Documentário completo",
+   "qs": [
+    "navio afundou brasil tragédia"
+   ],
+   "age": 30
+  },
+  {
+   "id": "KCe7KBwBda0",
+   "duration": 1475,
+   "view_count": 8205,
+   "channel": "Instante do Colapso",
+   "channel_url": "https://www.youtube.com/channel/UCrdlkXsntmtz_eGDO8EMw5w",
+   "upload_date": "20261020",
+   "title": "A TRAGÉDIA DO LUSITANIA: O torpedo que afundou o navio e matou 1.198 pessoas | Documentário completo",
+   "qs": [
+    "navio afundou brasil tragédia"
+   ],
+   "age": 30
+  },
+  {
+   "id": "qgSXyvARVhU",
+   "duration": 3040,
+   "view_count": 2015,
+   "channel": "Cosmonautas",
+   "channel_url": "https://www.youtube.com/channel/UCRNvaTLomNMEEe9jlohS8ug",
+   "upload_date": "20260920",
+   "title": "THE BATEAU MOUCHE IV SINKING! AN ANNOUNCED TRAGEDY! canal 90",
+   "qs": [
+    "bateau mouche naufrágio"
+   ],
+   "age": 60
+  },
+  {
+   "id": "IKwYQ6rYQqc",
+   "duration": 1619,
+   "view_count": 429,
+   "channel": "eunshie",
+   "channel_url": "https://www.youtube.com/channel/UChb2FZmOAuDTUhbLzu0clWg",
+   "upload_date": "20261106",
+   "title": "Ilhabela Instantes Antes do Maior Naufrágio do Brasil (1916)",
+   "qs": [
+    "maior naufrágio do brasil"
+   ],
+   "age": 13
+  },
+  {
+   "id": "1L5wYhCP2Dg",
+   "duration": 1657,
+   "view_count": 408,
+   "channel": "Cicatrices de América",
+   "channel_url": "https://www.youtube.com/channel/UCWMmjYMIDtAXysWZJYaYpMg",
+   "upload_date": "20261106",
+   "title": "Cientos en un Barco del Amazonas: ¿Cuántos Llegaron? | La Tragedia de Óbidos (1981)",
+   "qs": [
+    "naufrágio óbidos amazonas"
+   ],
+   "age": 13
+  },
+  {
+   "id": "ncHwxszEIfE",
+   "duration": 2857,
+   "upload_date": "20260820",
+   "title": "DOC 90 BATEAU MOUCHE ALTERATION",
+   "qs": [
+    "naufrágio brasil história",
+    "maior naufrágio do brasil",
+    "bateau mouche naufrágio",
+    "navio afundou brasil tragédia"
+   ],
+   "age": 91
+  },
+  {
+   "id": "3IBUZpIGzf0",
+   "duration": 3854,
+   "upload_date": "20260820",
+   "title": "THE SEA HIDES SCARY STORIES: SHIPWRECKS, DISAPPEARANCES, AND TRUE STORIES!",
+   "qs": [
+    "naufrágio brasil história"
+   ],
+   "age": 91
+  },
+  {
+   "id": "8DpcjK6SYAk",
+   "duration": 1410,
+   "upload_date": "20261106",
+   "title": "The Spanish Titanic That Sank in 5 Minutes | Ilhabela, Brazil (1916)",
+   "qs": [
+    "naufrágio brasil história"
+   ],
+   "age": 13
+  },
+  {
+   "id": "PD8Jc-dJT_U",
+   "duration": 1041,
+   "upload_date": "20261020",
+   "title": "The Shipwreck That Shocked Brazil - Bateau Mouche IV",
+   "qs": [
+    "naufrágio brasil história",
+    "bateau mouche naufrágio"
+   ],
+   "age": 30
+  }
+ ],
+ "S_videos": 10,
+ "S_channels": 6,
+ "median_without_leader": 408
+}

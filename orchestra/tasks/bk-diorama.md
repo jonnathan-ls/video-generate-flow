@@ -1,0 +1,7 @@
+# bk-diorama: a queda de Saigon no estilo "tiny diorama" (three.js) — laboratório, só 16:9
+Leia `lab/bakeoff-saigon/BRIEF.md` (batidas e palavras com tempo em `lab/bakeoff-saigon/palavras.json`). O estilo e o código de referência estão em `lab/bakeoff-saigon/kits/kit-style-video-prompts/tiny-diorama.md`: siga o método e o kit de render que vêm nele, sem pedir aprovação de storyboard.
+- **Cena:** diorama em miniatura de Saigon, 1975. Telhado com o helicóptero CH-53 oliva decolando em "evacuam" (3,48 s); o tanque verde avança e derruba o portão do palácio em "palácio" (7,96 s); o rótulo "Duong Van Minh · 2 dias no cargo" em 10,6–12,4 s; os fuzis no chão em "deporem as armas" (13,8 s).
+- **Arquivos:** só em `lab/bakeoff-saigon/diorama/`. 1920×1080, 30 fps, 15 s.
+- **Render sempre na GPU:** Chrome headless com `--use-angle=vulkan --use-vulkan --enable-features=Vulkan --ignore-gpu-blocklist --disable-vulkan-surface`, usando o binário `studio/remotion/node_modules/.remotion/chrome-headless-shell/linux64/chrome-headless-shell-linux64/chrome-headless-shell` (o Chrome do sistema não sobe o WebGL), ou `npx hyperframes@0.8.181 render ... --gpu --browser-gpu`. Nunca SwiftShader.
+- **Saída:** junte `lab/bakeoff-saigon/narracao.wav` e grave em `lab/bakeoff-saigon/out/diorama_16x9.mp4`. Confira 3 quadros antes de concluir.
+Resultado: `orchestra/results/bk-diorama.json` (inclua no summary o tempo de render).

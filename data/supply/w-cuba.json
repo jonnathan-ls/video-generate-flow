@@ -1,0 +1,157 @@
+{
+ "slug": "w-cuba",
+ "date": "2026-11-19",
+ "queries": [
+  "Revolução Cubana história completa",
+  "Revolução Cubana documentário",
+  "Revolução Cubana",
+  "Revolução Cubana biografia",
+  "Revolução Cubana como nasceu",
+  "a história de Revolução Cubana",
+  "Revolução Cubana documentário completo",
+  "Revolução Cubana explicado",
+  "Revolução Cubana resumo",
+  "Fidel Castro história"
+ ],
+ "new_per_query": [
+  [
+   "Revolução Cubana história completa",
+   22
+  ],
+  [
+   "Revolução Cubana documentário",
+   13
+  ],
+  [
+   "Revolução Cubana",
+   2
+  ],
+  [
+   "Revolução Cubana biografia",
+   5
+  ],
+  [
+   "Revolução Cubana como nasceu",
+   1
+  ],
+  [
+   "a história de Revolução Cubana",
+   0
+  ],
+  [
+   "Revolução Cubana documentário completo",
+   8
+  ],
+  [
+   "Revolução Cubana explicado",
+   6
+  ],
+  [
+   "Revolução Cubana resumo",
+   0
+  ],
+  [
+   "Fidel Castro história",
+   13
+  ]
+ ],
+ "S_videos": 8,
+ "S_channels": 7,
+ "leader_views": 247337,
+ "median_without_leader": 35069,
+ "median_without_top2": 29289.5,
+ "share_below_5k": 0.14,
+ "convergence": false,
+ "meta_ok": "55/70",
+ "grade": "TRIAGEM (não serve para decidir)",
+ "videos": [
+  {
+   "id": "N4G6x0qvLmI",
+   "title": "A FACE OCULTA DE FIDEL CASTRO",
+   "channel": "Brasil Paralelo",
+   "subs": 5390000,
+   "date": "2026-08-15",
+   "age": 96,
+   "views": 247337,
+   "min": 42.4,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "q7HItsUw0gY",
+   "title": "Breno Altman -A HISTÓRIA DE CUBA - Podcast 3 Irmãos #1022",
+   "channel": "Podcast 3 irmãos",
+   "subs": 766000,
+   "date": "2026-07-26",
+   "age": 116,
+   "views": 193287,
+   "min": 206.0,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "6mIzpTX7ang",
+   "title": "REVOLUÇÃO NO ESCURO — CUBA: UM DOCUMENTÁRIO DE LEANDRO DEMORI",
+   "channel": "Leandro Demori",
+   "subs": 290000,
+   "date": "2026-08-17",
+   "age": 94,
+   "views": 144463,
+   "min": 51.5,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "5WtUkXih2oo",
+   "title": "REVOLUÇÃO NO ESCURO — CUBA: UM DOCUMENTÁRIO DE LEANDRO DEMORI",
+   "channel": "Leandro Demori",
+   "subs": 290000,
+   "date": "2026-08-17",
+   "age": 94,
+   "views": 39209,
+   "min": 114.3,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "YBwbYiOrVwE",
+   "title": "O papel histórico e o legado de Fidel Castro (parte I) | Os Altmans",
+   "channel": "Opera Mundi",
+   "subs": null,
+   "date": "2026-08-16",
+   "age": 95,
+   "views": 35069,
+   "min": 106.9,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "GnroOqnI1cA",
+   "title": "Fidel Castro 100 anos: a construção de uma mente rebelde",
+   "channel": "Uma Tupá no Tempo",
+   "subs": null,
+   "date": "2026-08-13",
+   "age": 98,
+   "views": 23510,
+   "min": 36.9,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "G9YdNmJ_IxU",
+   "title": "Fidel e Cuba Socialista – Queimar os Céus | Um documentário Brasil de Fato",
+   "channel": "Brasil de Fato",
+   "subs": 890000,
+   "date": "2026-08-13",
+   "age": 98,
+   "views": 21136,
+   "min": 46.2,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "NqCpj_Lt0fA",
+   "title": "A História de Cuba: Da Independência à Revolução",
+   "channel": "Foca na História",
+   "subs": 1510000,
+   "date": "2026-08-02",
+   "age": 109,
+   "views": 2017,
+   "min": 65.9,
+   "lang": "pt"
+  }
+ ]
+}

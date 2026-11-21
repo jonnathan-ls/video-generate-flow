@@ -1,0 +1,660 @@
+{
+ "window_rule": "7-120 dias, >15 min, tema exato",
+ "excluded": {
+  "tA0aQ6PMfgM": "homônimo (show musical Balaio)",
+  "JRnPqQRex24": "resumo História do Maranhão, não só Balaiada",
+  "59fkELn6wiw": "seca de 1932 (vizinho)",
+  "01oP9iGgHp4": "seca de 1932 (vizinho)",
+  "Cgu9a1F6EqY": "inglês",
+  "ZpfBXxP0DWM": "inglês",
+  "dWImzxP-s5g": "homônimo (natureza, Luangwa)",
+  "4ej9o0kXrUc": "homônimo (natureza)",
+  "8gaX9Dm61Zo": "espanhol",
+  "oHCpe0Q9uHs": "reupload de filme de 1978",
+  "80NM-4LJpPc": "Revolução de 1817, outro tema"
+ },
+ "themes": {
+  "I07": {
+   "window_videos": [
+    {
+     "id": "KxUCr1aPOkk",
+     "url": "https://youtu.be/KxUCr1aPOkk",
+     "channel": "Brasil Trágico",
+     "view_count": 1506,
+     "age_days": 42,
+     "upload_date": "20261008",
+     "duration": 1175,
+     "title": "O Cerco da Lapa (1894) — Menos de 1.000 Homens Seguraram 3.000 por 26 Dias"
+    },
+    {
+     "id": "tX7GyJWSdfI",
+     "url": "https://youtu.be/tX7GyJWSdfI",
+     "channel": "TV Santa Maria - SM Produtora",
+     "view_count": 475,
+     "age_days": 102,
+     "upload_date": "20260809",
+     "duration": 4252,
+     "title": "GUMERSINDO SARAIVA: A ÚLTIMA BATALHA | A História que Marcou o Sul – Rastros e Memórias"
+    },
+    {
+     "id": "qfK87ctr3g0",
+     "url": "https://youtu.be/qfK87ctr3g0",
+     "channel": "Curso Methodus Professor Chambinho",
+     "view_count": 133,
+     "age_days": 53,
+     "upload_date": "20260927",
+     "duration": 943,
+     "title": "Revolução Federalista de 1893 para o Enem e a UFRGS"
+    }
+   ],
+   "S_channels": 3,
+   "n_videos": 3,
+   "leader": {
+    "channel": "Brasil Trágico",
+    "views": 1506,
+    "url": "https://youtu.be/KxUCr1aPOkk"
+   },
+   "median_without_leader": 304.0,
+   "extended_121_365_count_unfiltered": 10,
+   "extended": [
+    {
+     "id": "FBaspIgh-0A",
+     "channel": "Decifrando Império do Brasil",
+     "view_count": 77095,
+     "age_days": 193,
+     "title": "A Guerra no Sul que Dividiu o Brasil"
+    },
+    {
+     "id": "SJgrlG46Gjs",
+     "channel": "Legado esquecido",
+     "view_count": 64713,
+     "age_days": 249,
+     "title": "O Governo Subestimou a Marcha dos Maragatos - Então a Degola virou o Terror da Guerra"
+    },
+    {
+     "id": "8OcpVIqVkQ8",
+     "channel": "Crônicas Apagadas",
+     "view_count": 86083,
+     "age_days": 142,
+     "title": "A Guerra que Quase Tirou o Sul do Brasil (Reconstrução IA)"
+    },
+    {
+     "id": "O0sHzYSn4EQ",
+     "channel": "Batalhas Historicas",
+     "view_count": 10584,
+     "age_days": 162,
+     "title": "Revolução Federalista: A Guerra Civil que quase ACABOU com o Brasil"
+    },
+    {
+     "id": "qlLSvy4el3M",
+     "channel": "Lucas Monachesi",
+     "view_count": 473,
+     "age_days": 318,
+     "title": "Revolução Federalista e a 2ª Revolta da Armada - As revoltas que abalaram o Brasil!"
+    },
+    {
+     "id": "GWe_GrX0hFI",
+     "channel": "Raízes do Brasil Profundo",
+     "view_count": 762,
+     "age_days": 243,
+     "title": "Júlio de Castilhos: o positivista que moldou a política gaúcha moderna"
+    },
+    {
+     "id": "hVcNTNwbE0U",
+     "channel": "Batalhas Historicas",
+     "view_count": 193,
+     "age_days": 121,
+     "title": "A Guerra que QUASE ACABOU com o Brasil"
+    },
+    {
+     "id": "_xET7gKQcgc",
+     "channel": "Legado esquecido",
+     "view_count": 3299,
+     "age_days": 247,
+     "title": "Cercados por 3.000 Maragatos — Bagé Resistiu por 47 Dias"
+    },
+    {
+     "id": "hDicAU_5Zak",
+     "channel": "Gaúcho Oculto",
+     "view_count": 103,
+     "age_days": 364,
+     "title": "Maragatos x Chimangos: As Regras Psicológicas Que Ninguém Conta"
+    },
+    {
+     "id": "XsK5dcym4rU",
+     "channel": "Atlas da Guerra",
+     "view_count": 9604,
+     "age_days": 319,
+     "title": "O Cerco Suicida de 26 Dias que Salvou a República do Brasil"
+    }
+   ]
+  },
+  "I08": {
+   "window_videos": [
+    {
+     "id": "HsdrJmK6irY",
+     "url": "https://youtu.be/HsdrJmK6irY",
+     "channel": "Objetivo Policial",
+     "view_count": 17517,
+     "age_days": 99,
+     "upload_date": "20260812",
+     "duration": 1068,
+     "title": "HISTÓRIA DO MARANHÃO | BALAIADA | CONCURSO DA POLÍCIA MILITAR DO MARANHÃO (PMMA)| PROFº WELTON"
+    },
+    {
+     "id": "wFpDqt-XTYo",
+     "url": "https://youtu.be/wFpDqt-XTYo",
+     "channel": "Kennedy Santos",
+     "view_count": 973,
+     "age_days": 116,
+     "upload_date": "20260726",
+     "duration": 1973,
+     "title": "Balaiada: caracterização e causas do movimento. História do Maranhão PMMA CBMMA 2026"
+    },
+    {
+     "id": "V1PUT6Bv_U0",
+     "url": "https://youtu.be/V1PUT6Bv_U0",
+     "channel": "Sofia Borges ",
+     "view_count": 217,
+     "age_days": 52,
+     "upload_date": "20260928",
+     "duration": 955,
+     "title": "DOCUMENTÁRIO: BALAIADA (1838)"
+    },
+    {
+     "id": "EG4qC1meMcw",
+     "url": "https://youtu.be/EG4qC1meMcw",
+     "channel": "Brasil História",
+     "view_count": 97,
+     "age_days": 10,
+     "upload_date": "20261109",
+     "duration": 1131,
+     "title": "A Revolta Mais Feroz dos Esquecidos: A Balaiada no Maranhão (1838–1841) | Documentário"
+    }
+   ],
+   "S_channels": 4,
+   "n_videos": 4,
+   "leader": {
+    "channel": "Objetivo Policial",
+    "views": 17517,
+    "url": "https://youtu.be/HsdrJmK6irY"
+   },
+   "median_without_leader": 217,
+   "extended_121_365_count_unfiltered": 8,
+   "extended": [
+    {
+     "id": "1mz6lmeenMc",
+     "channel": "Brasil Trágico",
+     "view_count": 102696,
+     "age_days": 148,
+     "title": "A Balaiada 1838 — A Guerra Esquecida que Incendiou o Maranhão e Mobilizou 12 Mil Homens"
+    },
+    {
+     "id": "nvE55pYQ2I0",
+     "channel": "Legado esquecido",
+     "view_count": 2106,
+     "age_days": 205,
+     "title": "12.000 Mortos no Sertão: Balaiada"
+    },
+    {
+     "id": "QTjecFwrzbs",
+     "channel": "Mundos Reimaginados",
+     "view_count": 1012159,
+     "age_days": 209,
+     "title": "O Dia em que o Povo Venceu o Império (E o Preço Brutal que Pagou por Isso)"
+    },
+    {
+     "id": "FndTQ0MT31g",
+     "channel": "Prof. Dawdson, O Lembrador",
+     "view_count": 17369,
+     "age_days": 269,
+     "title": "AULA 5: Balaiada no Maranhão – Tudo que Cai em Concurso (PMMA, PCMA, Bombeiros e Vestibulares)"
+    },
+    {
+     "id": "2Pkul_q29gc",
+     "channel": "+15min | Márcio Alex",
+     "view_count": 318,
+     "age_days": 152,
+     "title": "BALAIADA: EXPLICADA DE FORMA SIMPLES"
+    },
+    {
+     "id": "J_bgH5P6bcU",
+     "channel": "Tempos do Passado",
+     "view_count": 494,
+     "age_days": 263,
+     "title": "FIM DE UMA ERA em Maranhão em 1838: A Balaiada I Revolta Popular que Assustou o Império (Imersão IA)"
+    },
+    {
+     "id": "Mudkfa9ydig",
+     "channel": "Arquivos de Guerra",
+     "view_count": 67,
+     "age_days": 189,
+     "title": "A Balaiada e o Exército de Negro Cosme : Resistência , Quilombagem e a Luta por Direitos"
+    },
+    {
+     "id": "wVlcEaQF5GI",
+     "channel": "Bem-Vindo ao Brasil Colonização",
+     "view_count": 2133,
+     "age_days": 197,
+     "title": "Negro Cosme: O Homem que Transformou Fuga em Guerra Contra o Império"
+    }
+   ]
+  },
+  "I09": {
+   "window_videos": [
+    {
+     "id": "Q-Y6hK_wy34",
+     "url": "https://youtu.be/Q-Y6hK_wy34",
+     "channel": "Terra em Choque",
+     "view_count": 569012,
+     "age_days": 65,
+     "upload_date": "20260915",
+     "duration": 1782,
+     "title": "El Niño de 1877 Está Voltando? A Seca Que Devastou Brasil, Índia e China"
+    },
+    {
+     "id": "BpbSpxuq6ao",
+     "url": "https://youtu.be/BpbSpxuq6ao",
+     "channel": "etimológica",
+     "view_count": 6846,
+     "age_days": 29,
+     "upload_date": "20261021",
+     "duration": 1227,
+     "title": "O El Niño de 2026 Trouxe 1877 de Volta ao Debate. Veja o Que Aconteceu no Nordeste"
+    },
+    {
+     "id": "w9w_K-Ih6xw",
+     "url": "https://youtu.be/w9w_K-Ih6xw",
+     "channel": "Arquivo Brasil",
+     "view_count": 5819,
+     "age_days": 58,
+     "upload_date": "20260922",
+     "duration": 3088,
+     "title": "A TRAGÉDIA DO EL NIÑO 1877 | A Seca que Matou Milhões de Pessoas | Documentário Completo"
+    },
+    {
+     "id": "o0vmFckk4ro",
+     "url": "https://youtu.be/o0vmFckk4ro",
+     "channel": "Camadas do Tempo",
+     "view_count": 3248,
+     "age_days": 31,
+     "upload_date": "20261019",
+     "duration": 2280,
+     "title": "A TRAGÉDIA DO CEARÁ: A seca que transformou Fortaleza em um cemitério | Documentário Completo"
+    },
+    {
+     "id": "XDHg84ulNMA",
+     "url": "https://youtu.be/XDHg84ulNMA",
+     "channel": "SAYRONIUM",
+     "view_count": 1559,
+     "age_days": 84,
+     "upload_date": "20260827",
+     "duration": 2142,
+     "title": "Grande Seca de 1877: Quando o Sertão Brasileiro Entrou em Colapso | Documentário"
+    },
+    {
+     "id": "pYhLVuCDh8Q",
+     "url": "https://youtu.be/pYhLVuCDh8Q",
+     "channel": "Depois do Auge",
+     "view_count": 367,
+     "age_days": 54,
+     "upload_date": "20260926",
+     "duration": 2833,
+     "title": "Os Horrores da Grande Seca de 1877 em Fortaleza"
+    },
+    {
+     "id": "_4-SKS_KW9c",
+     "url": "https://youtu.be/_4-SKS_KW9c",
+     "channel": "Mapa do Risco",
+     "view_count": 199,
+     "age_days": 8,
+     "upload_date": "20261111",
+     "duration": 1058,
+     "title": "A Grande Seca de 1877 pode se repetir com o El Niño de 2026?"
+    },
+    {
+     "id": "D1nIgprKZVs",
+     "url": "https://youtu.be/D1nIgprKZVs",
+     "channel": "HISTÓRIAS E CURIOSIDADES",
+     "view_count": 116,
+     "age_days": 26,
+     "upload_date": "20261024",
+     "duration": 1373,
+     "title": "O El Niño De 1877 Está VOLTANDO? A SECA Histórica Que DEVASTOU O Brasil E O MUNDO"
+    },
+    {
+     "id": "jl4LHKRa_h0",
+     "url": "https://youtu.be/jl4LHKRa_h0",
+     "channel": "Mundo em Traços",
+     "view_count": 44,
+     "age_days": 109,
+     "upload_date": "20260802",
+     "duration": 1245,
+     "title": "A Grande Seca de 1877: Como o Sertão Sobreviveu Sem Água e Comida?"
+    },
+    {
+     "id": "vtWI-RUJVDk",
+     "url": "https://youtu.be/vtWI-RUJVDk",
+     "channel": "Seca Esquecida",
+     "view_count": 23,
+     "age_days": 11,
+     "upload_date": "20261108",
+     "duration": 2971,
+     "title": "A Grande Seca de 1877: o Sertão que Perdeu Até Meio Milhão de Pessoas"
+    }
+   ],
+   "S_channels": 10,
+   "n_videos": 10,
+   "leader": {
+    "channel": "Terra em Choque",
+    "views": 569012,
+    "url": "https://youtu.be/Q-Y6hK_wy34"
+   },
+   "median_without_leader": 367,
+   "extended_121_365_count_unfiltered": 8,
+   "extended": [
+    {
+     "id": "WPTigKOkNh4",
+     "channel": "Brasil Trágico",
+     "view_count": 577791,
+     "age_days": 160,
+     "title": "A Seca de 1877 — A Catástrofe que Matou Meio Milhão de Nordestinos e o Império Fingiu Não Ver"
+    },
+    {
+     "id": "2lwYPlKwisI",
+     "channel": "Professor Romildo Saldanha",
+     "view_count": 1486,
+     "age_days": 191,
+     "title": "A SECA DE 1877: 500 MIL MORTOS"
+    },
+    {
+     "id": "k4NzSF17u34",
+     "channel": "Brasil Trágico",
+     "view_count": 63427,
+     "age_days": 134,
+     "title": "Os Currais do Governo 1932 — Os Campos que o Brasil Construiu no Ceará"
+    },
+    {
+     "id": "eitZSsR_cQY",
+     "channel": "NatureTime Brasil",
+     "view_count": 686690,
+     "age_days": 193,
+     "title": "7 Meses Sem Chuva: Como os Animais Sobrevivem no Vale de Luangwa | A Grande Seca 101"
+    },
+    {
+     "id": "8T812AgYZmA",
+     "channel": "NatureTime Brasil",
+     "view_count": 192517,
+     "age_days": 186,
+     "title": "A Última Esperança do Vale Luangwa | A Grande Seca 102"
+    },
+    {
+     "id": "iw7OeFj5zog",
+     "channel": "Mundo Animal Brasil",
+     "view_count": 64763,
+     "age_days": 178,
+     "title": "A Última Fonte de Vida no Vale da Morte | A Grande Seca 102"
+    },
+    {
+     "id": "y1gwH5pAgB0",
+     "channel": "Mundo Animal Brasil",
+     "view_count": 63603,
+     "age_days": 185,
+     "title": "Sete Meses Sem Chuva: Sobrevivência Extrema no Vale de Luangwa | A Grande Seca 101"
+    },
+    {
+     "id": "B8a_meNyFGg",
+     "channel": "NatureTime Brasil",
+     "view_count": 123073,
+     "age_days": 179,
+     "title": "O Fim da Seca: O Vale Volta à Vida | A Grande Seca 103"
+    }
+   ]
+  },
+  "I12": {
+   "window_videos": [
+    {
+     "id": "6rs-wLRr89o",
+     "url": "https://youtu.be/6rs-wLRr89o",
+     "channel": "Imperio S.A",
+     "view_count": 509782,
+     "age_days": 20,
+     "upload_date": "20261030",
+     "duration": 1766,
+     "title": "A história do homem que encontrou 1000kg de ouro no interior do Brasil e perdeu TUDO"
+    },
+    {
+     "id": "dpuc7dyP-Yg",
+     "url": "https://youtu.be/dpuc7dyP-Yg",
+     "channel": "PROGRAMA DO PACHECO",
+     "view_count": 176178,
+     "age_days": 59,
+     "upload_date": "20260921",
+     "duration": 1700,
+     "title": "SERRA PELADA FOI O MAIOR GARIMPO A CÉU ABERTO DO MUNDO."
+    },
+    {
+     "id": "pqcmy4cHWCQ",
+     "url": "https://youtu.be/pqcmy4cHWCQ",
+     "channel": "Brasil em Outros Mapas",
+     "view_count": 18,
+     "age_days": 28,
+     "upload_date": "20261022",
+     "duration": 2531,
+     "title": "O governo Figueiredo pôs o major Curió no garimpo quando 30 mil homens já cavavam: Serra Pelada, PA"
+    }
+   ],
+   "S_channels": 3,
+   "n_videos": 3,
+   "leader": {
+    "channel": "Imperio S.A",
+    "views": 509782,
+    "url": "https://youtu.be/6rs-wLRr89o"
+   },
+   "median_without_leader": 88098.0,
+   "extended_121_365_count_unfiltered": 4,
+   "extended": [
+    {
+     "id": "bylsQyluZU4",
+     "channel": "W Neves ",
+     "view_count": 127211,
+     "age_days": 298,
+     "title": "SERRA PELADA| HISTÓRIAS e RELATOS de QUEM VIVEU a FEBRE do OURO"
+    },
+    {
+     "id": "JwSI3sICSN4",
+     "channel": "Brasil Curioso",
+     "view_count": 942,
+     "age_days": 139,
+     "title": "A Verdade Sobre Serra Pelada: A Maior Corrida do Ouro do Brasil"
+    },
+    {
+     "id": "Rt1WhHpzwn4",
+     "channel": "Ouro Maldito",
+     "view_count": 139409,
+     "age_days": 362,
+     "title": "O Inferno de Serra Pelada: 80 Mil Homens, R$2 Bilhões em Ouro, 800 Mortos"
+    },
+    {
+     "id": "Sgac9eFgGLk",
+     "channel": "Ouro Maldito",
+     "view_count": 4924,
+     "age_days": 263,
+     "title": "Usou R$ 14 Milhões como Degrau por 5 Anos: A Tragédia de Antônio Mineiro (1986)"
+    }
+   ]
+  },
+  "I15": {
+   "window_videos": [
+    {
+     "id": "U5gviEknafY",
+     "url": "https://youtu.be/U5gviEknafY",
+     "channel": "Quando o Mundo Mudou",
+     "view_count": 168659,
+     "age_days": 115,
+     "upload_date": "20260727",
+     "duration": 1618,
+     "title": "Como Era Recife Quando Parte do Brasil Virou Holandesa? Documentário Histórico..."
+    },
+    {
+     "id": "B_Ky6EAUfM4",
+     "url": "https://youtu.be/B_Ky6EAUfM4",
+     "channel": "Crônicas do Capibaribe",
+     "view_count": 9251,
+     "age_days": 102,
+     "upload_date": "20260809",
+     "duration": 1371,
+     "title": "AULA 06: A PRESENÇA DOS HOLANDESES E O GOVERNO DE MAURÍCIO DE NASSAU | PMPE 2026 -HISTÓRIA DE PERNAM"
+    },
+    {
+     "id": "LwGEI5y9GHg",
+     "url": "https://youtu.be/LwGEI5y9GHg",
+     "channel": "Primeiros Brasileiros",
+     "view_count": 9096,
+     "age_days": 40,
+     "upload_date": "20261010",
+     "duration": 917,
+     "title": "As Batalhas dos Guararapes: Os Dois Dias que Criaram o Exército Brasileiro"
+    },
+    {
+     "id": "w0sI3unOczM",
+     "url": "https://youtu.be/w0sI3unOczM",
+     "channel": "Crônicas do Capibaribe",
+     "view_count": 7629,
+     "age_days": 81,
+     "upload_date": "20260830",
+     "duration": 1202,
+     "title": "AULA 08: INSURREIÇÃO PERNAMBUCANA (MOVIMENTOS DE RESISTÊNCIA) | HISTÓRIA DE PERNAMBUCO - PMPE 2026"
+    },
+    {
+     "id": "WgKgjFb4P0Q",
+     "url": "https://youtu.be/WgKgjFb4P0Q",
+     "channel": "Diogo Xavier",
+     "view_count": 2178,
+     "age_days": 17,
+     "upload_date": "20261102",
+     "duration": 980,
+     "title": "História de Pernambuco - Aula 4 - Concurso PMPE 2026 - A Presença Holandesa"
+    },
+    {
+     "id": "GTXhzlowvc8",
+     "url": "https://youtu.be/GTXhzlowvc8",
+     "channel": "Brasil História",
+     "view_count": 181,
+     "age_days": 17,
+     "upload_date": "20261102",
+     "duration": 1123,
+     "title": "O Dia em que o Brasil Destruiu a Maior Potência do Mundo nos Montes de Guararapes"
+    },
+    {
+     "id": "YALuXQY7-9Y",
+     "url": "https://youtu.be/YALuXQY7-9Y",
+     "channel": "O que o tempo Apagou",
+     "view_count": 173,
+     "age_days": 19,
+     "upload_date": "20261031",
+     "duration": 1381,
+     "title": "O Verdadeiro Motivo da Saída de Nassau do Recife — Não Foi Só Dinheiro."
+    },
+    {
+     "id": "rgFZQUSqjrk",
+     "url": "https://youtu.be/rgFZQUSqjrk",
+     "channel": "Singula",
+     "view_count": 86,
+     "age_days": 64,
+     "upload_date": "20260916",
+     "duration": 5585,
+     "title": "Batalhas dos Guararapes por Johan Radloff"
+    }
+   ],
+   "S_channels": 7,
+   "n_videos": 8,
+   "leader": {
+    "channel": "Quando o Mundo Mudou",
+    "views": 168659,
+    "url": "https://youtu.be/U5gviEknafY"
+   },
+   "median_without_leader": 2178,
+   "extended_121_365_count_unfiltered": 11,
+   "extended": [
+    {
+     "id": "TAWnMHlZc5s",
+     "channel": "Legado esquecido",
+     "view_count": 413906,
+     "age_days": 155,
+     "title": "A Holanda Achava que o Nordeste Era Seu — Até Guararapes"
+    },
+    {
+     "id": "tOhgUdYxotE",
+     "channel": "Legado esquecido",
+     "view_count": 38010,
+     "age_days": 287,
+     "title": "Quando 2.200 Brasileiros Derrotaram 4.500 Holandeses - A Batalha que Criou o Exército Brasileiro"
+    },
+    {
+     "id": "DktQ9_TbU80",
+     "channel": "CLUBE DA LUTA PRODUÇÃO",
+     "view_count": 2744,
+     "age_days": 231,
+     "title": "PAYPER VIEW -  BATALHA DOS GAURARAPES (29/03/2026)"
+    },
+    {
+     "id": "arOecfW01a0",
+     "channel": "Aldeia Cósmica",
+     "view_count": 29,
+     "age_days": 177,
+     "title": "A batalha de Guararapes - React"
+    },
+    {
+     "id": "pH2VNA82hxU",
+     "channel": "Adega Maziero Jundiaí",
+     "view_count": 182,
+     "age_days": 321,
+     "title": "Batalhas dos Guararapes - Onde Nasceu o Exército Brasileiro (1648–1649)"
+    },
+    {
+     "id": "2aepgFPTBW0",
+     "channel": "Relíquias Perdidas 937",
+     "view_count": 142056,
+     "age_days": 293,
+     "title": "Recife nos anos 1630: Quando Era Holandesa (Mauritsstad)"
+    },
+    {
+     "id": "gDVacJuBas8",
+     "channel": "Leviatã",
+     "view_count": 12591,
+     "age_days": 151,
+     "title": "A Invasão Holandesa que Transformou Pernambuco na Amsterdã dos Trópicos"
+    },
+    {
+     "id": "tefuEZEwG20",
+     "channel": "Tempos do Passado",
+     "view_count": 23554,
+     "age_days": 271,
+     "title": "A Revolução Pernambucana de 1817 (Reconstrução por IA)"
+    },
+    {
+     "id": "GUe2Aqw-zj8",
+     "channel": "Docs da História",
+     "view_count": 634,
+     "age_days": 199,
+     "title": "Invasões Holandesas no Brasil: A Guerra do Açúcar e Maurício de Nassau"
+    },
+    {
+     "id": "LFh1meLSxn8",
+     "channel": "Fragmentos da História",
+     "view_count": 5296,
+     "age_days": 268,
+     "title": "Como Recife Parecia em 1630 | Reconstrução em IA da Invasão Holandesa (Documentário)"
+    },
+    {
+     "id": "rEJfmYg6ZqQ",
+     "channel": "Entrevista com o Passado ",
+     "view_count": 280,
+     "age_days": 183,
+     "title": "A CIDADE QUE O TEMPO APAGOU: MAURITSSTAD - O EXPERIMENTO HOLANDÊS QUE MUDOU O BRASIL PARA SEMPRE "
+    }
+   ]
+  }
+ }
+}

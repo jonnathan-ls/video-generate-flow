@@ -1,0 +1,24 @@
+{
+  "status": "done",
+  "files": [
+    "lab/bakeoff-saigon/ps-lowpoly/style.js",
+    "lab/bakeoff-saigon/ps-lowpoly/boot.js",
+    "lab/bakeoff-saigon/ps-lowpoly/index.html",
+    "lab/bakeoff-saigon/ps-lowpoly/render.mjs",
+    "lab/bakeoff-saigon/out/ps_lowpoly_16x9.mp4"
+  ],
+  "validators": {
+    "shot_check": "n/a (laboratório, sem scenes_spec)",
+    "scene_gates": "n/a (laboratório)",
+    "gpu": "PASS: GL = ANGLE NVIDIA Vulkan RTX 3060 (chrome-headless-shell, --use-angle=vulkan); codificação só h264_nvenc; ffmpeg final com vídeo em copy, sem libx264 nem SwiftShader",
+    "saida": "PASS: 1920x1080, 30 fps, 15,0 s, h264 + aac (narracao.wav + sons do kit, loudnorm -15 LUFS)"
+  },
+  "summary": "Cena low-poly (three.js 0.187, kit STAGE/SOUND do low-poly.md, sem storyboard) em um mundo só com câmera em viagem: CH-53 pousa no telhado, 6 pessoas na escada, decola em 3,49 com poeira; T-54 anda pela avenida e arromba o portão em 7,96 (folhas abrem e pendem, estilhaços); Palácio modernista; silhueta de bronze escura + placa DUONG VAN MINH (10,6) que vira 2 DIAS NO CARGO (12,06); 4 soldados baixam M16 em 13,81/14,06/14,31/14,52. Placas de papel 29 DE ABRIL · SAIGON e 30 DE ABRIL. Sem legenda queimada. Tempo de trabalho: cerca de 25 min (3 rodadas de quadros 960x540: câmera, câmera/portão, portão). Render: 31 s para 450 quadros a 1080p com 32 amostras (movimento, foco e sombra suaves), mais 1 s de áudio offline.",
+  "issues": [
+    "Portão: as duas folhas abrem e pendem em vez de cair planas; caindo planas ficavam escondidas atrás do tanque e do muro da cerca. Lê como 'arrombado', não como 'derrubado'.",
+    "Troca do rótulo em 12,06: a placa do nome gira para fora enquanto 'DIAS NO CARGO' gira para dentro; por cerca de 0,3 s as duas se sobrepõem borradas. O rótulo 2 DIAS fica até 13,0 (a brief pedia 10,6-12,4) para dar 1 s de leitura.",
+    "Soldados e pessoas são bonecos de cilindro bem pequenos (sem braços); o gesto de baixar o fuzil lê pelo fuzil descendo e pelo tronco que se curva. Nenhum rosto de pessoa real.",
+    "Placa 'DUONG VAN MINH' fica sobre fundo creme do palácio, contraste médio. Sem bandeiras para evitar anacronismo.",
+    "Só 16:9 entregue (a tarefa pediu só 16:9). Fonte Anton (OFL) no lugar de Oswald, que não estava local."
+  ]
+}

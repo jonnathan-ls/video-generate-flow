@@ -1,0 +1,227 @@
+[
+{
+"word": "Em",
+"start": 0.01,
+"end": 0.15
+},
+{
+"word": "29",
+"start": 0.15,
+"end": 0.67
+},
+{
+"word": "de",
+"start": 0.67,
+"end": 0.91
+},
+{
+"word": "abril,",
+"start": 0.91,
+"end": 1.13
+},
+{
+"word": "helicópteros",
+"start": 1.35,
+"end": 1.77
+},
+{
+"word": "dos",
+"start": 1.77,
+"end": 1.99
+},
+{
+"word": "Fuzileiros",
+"start": 1.99,
+"end": 2.55
+},
+{
+"word": "dos",
+"start": 2.55,
+"end": 2.79
+},
+{
+"word": "Estados",
+"start": 2.79,
+"end": 3.17
+},
+{
+"word": "Unidos",
+"start": 3.17,
+"end": 3.49
+},
+{
+"word": "evacuam",
+"start": 3.49,
+"end": 3.95
+},
+{
+"word": "pessoas",
+"start": 3.95,
+"end": 4.29
+},
+{
+"word": "de",
+"start": 4.29,
+"end": 4.55
+},
+{
+"word": "Saigon.",
+"start": 4.55,
+"end": 4.93
+},
+{
+"word": "No",
+"start": 4.93,
+"end": 5.43
+},
+{
+"word": "dia",
+"start": 5.43,
+"end": 5.73
+},
+{
+"word": "30,",
+"start": 5.73,
+"end": 6.09
+},
+{
+"word": "tanques",
+"start": 6.31,
+"end": 6.47
+},
+{
+"word": "do",
+"start": 6.47,
+"end": 6.65
+},
+{
+"word": "Vietnã",
+"start": 6.65,
+"end": 6.99
+},
+{
+"word": "do",
+"start": 6.99,
+"end": 7.15
+},
+{
+"word": "Norte",
+"start": 7.15,
+"end": 7.49
+},
+{
+"word": "entram",
+"start": 7.49,
+"end": 7.77
+},
+{
+"word": "no",
+"start": 7.77,
+"end": 7.97
+},
+{
+"word": "palácio",
+"start": 7.97,
+"end": 8.39
+},
+{
+"word": "presidencial,",
+"start": 8.39,
+"end": 9.13
+},
+{
+"word": "e",
+"start": 9.13,
+"end": 9.43
+},
+{
+"word": "o",
+"start": 9.43,
+"end": 9.63
+},
+{
+"word": "presidente",
+"start": 9.63,
+"end": 10.05
+},
+{
+"word": "do",
+"start": 10.05,
+"end": 10.35
+},
+{
+"word": "Sul,",
+"start": 10.35,
+"end": 10.51
+},
+{
+"word": "Duong",
+"start": 10.61,
+"end": 10.81
+},
+{
+"word": "Van",
+"start": 10.81,
+"end": 11.03
+},
+{
+"word": "Minh,",
+"start": 11.03,
+"end": 11.25
+},
+{
+"word": "no",
+"start": 11.45,
+"end": 11.57
+},
+{
+"word": "cargo",
+"start": 11.57,
+"end": 11.79
+},
+{
+"word": "havia",
+"start": 11.79,
+"end": 12.07
+},
+{
+"word": "dois",
+"start": 12.07,
+"end": 12.41
+},
+{
+"word": "dias,",
+"start": 12.41,
+"end": 12.87
+},
+{
+"word": "manda",
+"start": 12.99,
+"end": 13.23
+},
+{
+"word": "as",
+"start": 13.23,
+"end": 13.51
+},
+{
+"word": "tropas",
+"start": 13.51,
+"end": 13.81
+},
+{
+"word": "deporem",
+"start": 13.81,
+"end": 14.23
+},
+{
+"word": "as",
+"start": 14.23,
+"end": 14.57
+},
+{
+"word": "armas.",
+"start": 14.57,
+"end": 14.99
+}
+]

@@ -1,0 +1,54 @@
+{
+ "cena": "S05",
+ "ciclo": "calib",
+ "notas": {
+  "V1": 4.0,
+  "V2": 3.5,
+  "V3": 2.0,
+  "V4": 2.5,
+  "V5": 4.0,
+  "V6": 3.5,
+  "V7": 4.0,
+  "V9": 1.5,
+  "V10": 2.0
+ },
+ "media": 3.0,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "20.6s",
+   "defeito": "Ausência de ação na palavra 'ataca': a usina elétrica em Hanói (a18-a23, m03) não explode e as luzes da cidade não se apagam, violando a cue da tomada 4 e a sincronia com a fala.",
+   "correcao": "Inserir animação de explosão na usina no exato momento da palavra 'ataca' (20.6s) e apagar as luzes da fábrica e da cidade em seguida."
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "07.75s",
+   "defeito": "Pessoas andando com pernas congeladas (checagem b): a coluna de soldados em Saigon (m01) desliza sobre o cais mantendo a mesma pose de pernas nos 3 quadros sequenciais.",
+   "correcao": "Aplicar ciclo de caminhada animado com movimento alternado de pernas para os soldados."
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "25.64s",
+   "defeito": "Soldados deslizando sem movimento de pernas nas ruas de Hanói (m04, checagem b): a tropa avança na rua em chamas com figuras travadas deslizando pelo chão.",
+   "correcao": "Animar a marcha das pernas dos soldados durante o avanço da tomada 5."
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "13.70s",
+   "defeito": "Falta de contato e desembarque inverossímil (checagens c e d): o navio não atraca no cais de Haiphong (permanece flutuando distante na água) e soldados aparecem como figuras semitransparentes/fantasmas surgindo no cais em a15.",
+   "correcao": "Fazer o navio encostar fisicamente no cais e animar a tropa descendo do navio com opacidade 100% sobre o chão."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "06.20s, 09.00s, 15.50s",
+   "defeito": "Presença de quadros totalmente pretos entre tomadas (a05, a10, a17), quebrando a continuidade e o ritmo visual.",
+   "correcao": "Remover as telas pretas nas transições entre tomadas, adotando pan contínuo ou corte seco fluido."
+  }
+ ],
+ "bom": [
+  "Estilo gráfico de ilustração vetorial pintada muito consistente com o tom documental.",
+  "Rótulos históricos de contexto (Saigon, Haiphong, Hanói) legíveis, bem estruturados e com excelente tipografia.",
+  "Atmosfera visual das cenas bem trabalhada na iluminação da fábrica e nas tonalidades de luz de Saigon/Haiphong."
+ ]
+}

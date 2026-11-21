@@ -1,0 +1,113 @@
+{
+ "slug": "w-mao",
+ "date": "2026-11-19",
+ "queries": [
+  "Mao Tsé-Tung história completa",
+  "Mao Tsé-Tung documentário",
+  "Mao Tsé-Tung",
+  "Mao Tsé-Tung biografia",
+  "Mao Tsé-Tung como nasceu",
+  "a história de Mao Tsé-Tung",
+  "Mao Tsé-Tung documentário completo",
+  "Mao Tsé-Tung explicado",
+  "Mao Tsé-Tung resumo",
+  "Mao Zedong história"
+ ],
+ "new_per_query": [
+  [
+   "Mao Tsé-Tung história completa",
+   14
+  ],
+  [
+   "Mao Tsé-Tung documentário",
+   17
+  ],
+  [
+   "Mao Tsé-Tung",
+   3
+  ],
+  [
+   "Mao Tsé-Tung biografia",
+   9
+  ],
+  [
+   "Mao Tsé-Tung como nasceu",
+   5
+  ],
+  [
+   "a história de Mao Tsé-Tung",
+   2
+  ],
+  [
+   "Mao Tsé-Tung documentário completo",
+   5
+  ],
+  [
+   "Mao Tsé-Tung explicado",
+   1
+  ],
+  [
+   "Mao Tsé-Tung resumo",
+   1
+  ],
+  [
+   "Mao Zedong história",
+   1
+  ]
+ ],
+ "S_videos": 4,
+ "S_channels": 3,
+ "leader_views": 30286,
+ "median_without_leader": 115,
+ "median_without_top2": null,
+ "share_below_5k": 0.67,
+ "convergence": true,
+ "meta_ok": "23/58",
+ "grade": "COLETA FALHOU (bloqueio do YouTube: repetir mais tarde, não é oferta zero)",
+ "videos": [
+  {
+   "id": "-8SLRtpkELQ",
+   "title": "Visitei a casa onde nasceu MAO TSE-TUNG e te mostro tudo! 🇨🇳 | CHINA 22 - 2a Temporada, 05",
+   "channel": "Luca Bassani",
+   "subs": 223000,
+   "date": "2026-10-11",
+   "age": 39,
+   "views": 30286,
+   "min": 28.3,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "ll3g2f_hKtM",
+   "title": "Quem foi Mao Tsé-Tung, morto há 50 anos? | E o Resto é História",
+   "channel": "Observador",
+   "subs": 301000,
+   "date": "2026-09-29",
+   "age": 51,
+   "views": 27860,
+   "min": 66.2,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "xzxCup93H7U",
+   "title": "Mao   Vida e Legado Ep01",
+   "channel": "Professor Julio Borbo",
+   "subs": 919,
+   "date": "2026-09-28",
+   "age": 52,
+   "views": 115,
+   "min": 51.7,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "r5V0lNMf81g",
+   "title": "Mao   Vida e Legado Ep02",
+   "channel": "Professor Julio Borbo",
+   "subs": 919,
+   "date": "2026-09-30",
+   "age": 50,
+   "views": 66,
+   "min": 51.7,
+   "lang": "pt-PT"
+  }
+ ]
+}

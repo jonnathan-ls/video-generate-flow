@@ -1,0 +1,626 @@
+{
+ "theme": "T4",
+ "regex": "pr[ée]-hist|pangeia|pangea|era do gelo|ice age|primeiras cidades|first cities|bilh|billion|homo|neander|dinoss|terra primitiva|mamute",
+ "queries": [
+  "pré-história documentário completo ",
+  " antes das primeiras cidades humanos ",
+  " era do gelo documentário humanos ",
+  " pangeia história da terra ",
+  " história da terra documentário bilhões de anos ",
+  " neandertais documentário"
+ ],
+ "n_results": 171,
+ "window": [
+  {
+   "id": "y5zQSrdHQt4",
+   "duration": 3951,
+   "view_count": 2344624,
+   "channel": "Um Documentário",
+   "channel_url": "https://www.youtube.com/channel/UCcK9yDz5INb1Q9Tw82ICeVQ",
+   "upload_date": "20261020",
+   "title": "Before the First Cities: How Humanity Lived 10,000 Years Ago | Full Documentary",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 30
+  },
+  {
+   "id": "dtKa3wYSa1U",
+   "duration": 3616,
+   "view_count": 1982250,
+   "channel": "Um Documentário",
+   "channel_url": "https://www.youtube.com/channel/UCcK9yDz5INb1Q9Tw82ICeVQ",
+   "upload_date": "20260820",
+   "title": "Neanderthals: The Strongest Humans Who Ever Walked the Earth",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 91
+  },
+  {
+   "id": "z9a1PT2NCUk",
+   "duration": 2963,
+   "view_count": 1369302,
+   "channel": "Um Documentário",
+   "channel_url": "https://www.youtube.com/channel/UCcK9yDz5INb1Q9Tw82ICeVQ",
+   "upload_date": "20260820",
+   "title": "Homo Erectus: The GREATEST Survivor in Human History | Full Documentary",
+   "qs": [
+    "pré-história documentário completo",
+    "neandertais documentário"
+   ],
+   "age": 91
+  },
+  {
+   "id": "BoUjmzyXcyk",
+   "duration": 4234,
+   "view_count": 657885,
+   "channel": "Um Documentário",
+   "channel_url": "https://www.youtube.com/channel/UCcK9yDz5INb1Q9Tw82ICeVQ",
+   "upload_date": "20261106",
+   "title": "18,000 Years Ago: How Did Humanity Survive in Caves During the Ice Age? | Full Documentary",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 13
+  },
+  {
+   "id": "UrE8WqoIP3Q",
+   "duration": 5111,
+   "view_count": 606864,
+   "channel": "Paleora",
+   "channel_url": "https://www.youtube.com/channel/UC9QQbK2NjEzlS6u9nFU_Dcw",
+   "upload_date": "20260920",
+   "title": "Sir David Attenborough: A Billion Years of Earth's History Are Missing | Full Documentary",
+   "qs": [
+    "história da terra documentário bilhões de anos"
+   ],
+   "age": 60
+  },
+  {
+   "id": "aKui3akfcaE",
+   "duration": 11328,
+   "view_count": 561979,
+   "channel": "Quiet Science",
+   "channel_url": "https://www.youtube.com/channel/UCnphuZ6WXx5ITahkCy89ZoA",
+   "upload_date": "20261030",
+   "title": "The Complete History of Pangea to Fall Asleep To - No Ads",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 20
+  },
+  {
+   "id": "-qJZeevxTDM",
+   "duration": 2241,
+   "view_count": 459019,
+   "channel": "Terra dos Mundos Perdidos and Christy Dwyer",
+   "upload_date": "20260820",
+   "title": "Há 4,5 Bilhões de Anos: O Inferno Onde a Terra Nasceu | O Hádico | Documentário",
+   "qs": [
+    "história da terra documentário bilhões de anos"
+   ],
+   "age": 91
+  },
+  {
+   "id": "PeLghNA_77Q",
+   "duration": 3983,
+   "view_count": 438566,
+   "channel": "Documentário Épico",
+   "channel_url": "https://www.youtube.com/channel/UCH74gdCAh2AVouO6TUBhWvw",
+   "upload_date": "20261023",
+   "title": "ANTES DAS PRIMEIRAS CIDADES: O Mundo Esquecido dos Humanos 10.000  Anos Atrás |  Documentário",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 27
+  },
+  {
+   "id": "i7TNAWXvUqk",
+   "duration": 2508,
+   "view_count": 432412,
+   "channel": "Planeta Antigo",
+   "channel_url": "https://www.youtube.com/channel/UCozYD0UNPdial6phenC2ouA",
+   "upload_date": "20260920",
+   "title": "How Pangea Broke Apart and Changed Earth Forever | Full Documentary",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 60
+  },
+  {
+   "id": "hxUwRqmgMAM",
+   "duration": 3372,
+   "view_count": 403100,
+   "channel": "Terra dos Mundos Perdidos and Christy Dwyer",
+   "upload_date": "20260920",
+   "title": "2.6 Million Years Ago: When the Ice Age Began | Full Documentary",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 60
+  },
+  {
+   "id": "vnaRw3xnVPA",
+   "duration": 1916,
+   "view_count": 346066,
+   "channel": "Terra dos Mundos Perdidos and Christy Dwyer",
+   "upload_date": "20260820",
+   "title": "3.5 Billion Years Ago: When the First Life on Earth Was Born | Full Documentary",
+   "qs": [
+    "história da terra documentário bilhões de anos"
+   ],
+   "age": 91
+  },
+  {
+   "id": "d_o7CxBOYpQ",
+   "duration": 5657,
+   "view_count": 328474,
+   "channel": "O Ancestral",
+   "channel_url": "https://www.youtube.com/channel/UC8PdjCrDVZf652Gn99sJrPg",
+   "upload_date": "20260920",
+   "title": "The Billion Years When “Nothing” Happened on Earth | Sleep Documentary",
+   "qs": [
+    "história da terra documentário bilhões de anos"
+   ],
+   "age": 60
+  },
+  {
+   "id": "kn7SX13Hq-4",
+   "duration": 3608,
+   "view_count": 310653,
+   "channel": "Reino Perdido",
+   "channel_url": "https://www.youtube.com/channel/UChXfr6u0G4E9Y6WKq9JT-cw",
+   "upload_date": "20261020",
+   "title": "THE BORING BILLION | Life stalled until giant mountains rose | Full Documentary",
+   "qs": [
+    "história da terra documentário bilhões de anos"
+   ],
+   "age": 30
+  },
+  {
+   "id": "GRNiX0CEO5g",
+   "duration": 4302,
+   "view_count": 248086,
+   "channel": "Documentário Épico",
+   "channel_url": "https://www.youtube.com/channel/UCH74gdCAh2AVouO6TUBhWvw",
+   "upload_date": "20261030",
+   "title": "PANGEIA: Uma Viagem de Volta à Terra Pré-Histórica e ao Supercontinente Esquecido | Documentário",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 20
+  },
+  {
+   "id": "0uy4NRojs78",
+   "duration": 1316,
+   "view_count": 243503,
+   "channel": "GeoTerra",
+   "channel_url": "https://www.youtube.com/channel/UChKOk_xuN4EZsiSXSxyVQAA",
+   "upload_date": "20261020",
+   "title": "PANGEA: The Supercontinent Born After Earth's Worst Extinction",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 30
+  },
+  {
+   "id": "5GR3GFXbbis",
+   "duration": 4095,
+   "view_count": 228637,
+   "channel": "História em Documentário",
+   "channel_url": "https://www.youtube.com/channel/UCxNLX_5mUnyTc5ZvHk14ktw",
+   "upload_date": "20261020",
+   "title": "Frio e Escassez: Como o Homo sapiens Sobreviveu à Última Era do Gelo? | Documentário Completo",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 30
+  },
+  {
+   "id": "aQgogUGtfxw",
+   "duration": 1617,
+   "view_count": 223307,
+   "channel": "Quem Diria?",
+   "channel_url": "https://www.youtube.com/channel/UCbVHpCY2PtfPsnpeHnHUCeg",
+   "upload_date": "20261106",
+   "title": "Como os Humanos da Era do Gelo Dormiam Sem Morrer Congelados?",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 13
+  },
+  {
+   "id": "Fr-B8ToxQGg",
+   "duration": 1803,
+   "view_count": 219610,
+   "channel": "Terra Perdida",
+   "channel_url": "https://www.youtube.com/channel/UCmsejgxGXLuvr3bR3-I9IlA",
+   "upload_date": "20261020",
+   "title": "The Brutal End of the NEANDERTHALS: Full Documentary #neanderthals",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 30
+  },
+  {
+   "id": "XzAMvwjDaBA",
+   "duration": 2469,
+   "view_count": 211503,
+   "channel": "WEON Earth",
+   "channel_url": "https://www.youtube.com/channel/UCoMCQVuCK1wLUpM9Nfetb9Q",
+   "upload_date": "20260820",
+   "title": "Neanderthals: Ice Age Humans And Their Ultimate Disappearance | Prehistoric Humans Documentary",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 91
+  },
+  {
+   "id": "4n35YStlEa4",
+   "duration": 6115,
+   "view_count": 210093,
+   "channel": "WUFO Español",
+   "channel_url": "https://www.youtube.com/channel/UCwj0s7w_YT9aqbmNDfBOgBA",
+   "upload_date": "20261107",
+   "title": "Before the First Cities: The Human World 10,000 Years Ago | Prehistoric Documentary",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 12
+  },
+  {
+   "id": "KqcRD_-XaT4",
+   "duration": 2636,
+   "view_count": 182775,
+   "channel": "Planeta Antigo",
+   "channel_url": "https://www.youtube.com/channel/UCozYD0UNPdial6phenC2ouA",
+   "upload_date": "20260920",
+   "title": "What Earth Was Like 1 Billion Years Ago: The World Before Animals | Full Documentary",
+   "qs": [
+    "história da terra documentário bilhões de anos"
+   ],
+   "age": 60
+  },
+  {
+   "id": "ZnjJ6NuWCVM",
+   "duration": 2579,
+   "view_count": 107498,
+   "channel": "Pianeta Antico",
+   "channel_url": "https://www.youtube.com/channel/UC9_RfKs3LGfKVwaCe_sKKVA",
+   "upload_date": "20261020",
+   "title": "Neanderthals: The Strongest Humanity That Ever Existed | Full Documentary",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 30
+  },
+  {
+   "id": "S2AJa1szpHo",
+   "duration": 4187,
+   "view_count": 57854,
+   "channel": "Primeval Earth and Wild Horizons",
+   "upload_date": "20261106",
+   "title": "The Entire History of Earth Explained — 4.5 Billion Years in One Video",
+   "qs": [
+    "história da terra documentário bilhões de anos"
+   ],
+   "age": 13
+  },
+  {
+   "id": "L5I5uE6jn4c",
+   "duration": 2382,
+   "view_count": 35582,
+   "channel": "Terra dos Mundos Perdidos",
+   "channel_url": "https://www.youtube.com/channel/UCBiuzkqlxI8HYFy887OYamQ",
+   "upload_date": "20261023",
+   "title": "The Ice Age: How It Transformed Humanity Over 2.5 Million Years | Documentary",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 27
+  },
+  {
+   "id": "UMrvA7UGTTE",
+   "duration": 4445,
+   "view_count": 33174,
+   "channel": "Reino Prehistórico",
+   "channel_url": "https://www.youtube.com/channel/UCNgFRd2MvEaQ-iDpzZcc9sg",
+   "upload_date": "20261020",
+   "title": "10,000 Years Ago: The Human World Before the First Cities",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 30
+  },
+  {
+   "id": "r76x6MEfZY0",
+   "duration": 1932,
+   "view_count": 30608,
+   "channel": "Terra Perdida",
+   "channel_url": "https://www.youtube.com/channel/UCmsejgxGXLuvr3bR3-I9IlA",
+   "upload_date": "20261030",
+   "title": "NEANDERTHALS: The Deadly Ice Age Hunt | Documentary",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 20
+  },
+  {
+   "id": "wGrSkk_iolQ",
+   "duration": 3109,
+   "view_count": 29928,
+   "channel": "Luiz Instante Zero",
+   "channel_url": "https://www.youtube.com/channel/UCpFKu2uw98VZv2mednS5M6w",
+   "upload_date": "20261112",
+   "title": "40,000 Years Ago: How Did Humanity Survive While Sharing the Earth with Neanderthals? | Documentary",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 7
+  },
+  {
+   "id": "SwD4wcU-vi0",
+   "duration": 1419,
+   "view_count": 21790,
+   "channel": "ZoológicoExtinto",
+   "channel_url": "https://www.youtube.com/channel/UCwUZQ4bvSsM2VslfqrMLXjg",
+   "upload_date": "20261020",
+   "title": "Pangea Was Never As Deadly As It Was During This Time",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 30
+  },
+  {
+   "id": "7yl2x6ErgTw",
+   "duration": 2773,
+   "view_count": 19281,
+   "channel": "Terra Primitiva",
+   "channel_url": "https://www.youtube.com/channel/UCQDrxKdnRKCMcfQpNkwqQqw",
+   "upload_date": "20260820",
+   "title": "The Breakup of Pangea | How Earth Split Into Pieces | Full Documentary",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 91
+  },
+  {
+   "id": "ABpSfOr0ESU",
+   "duration": 3270,
+   "view_count": 18214,
+   "channel": "Documentário Épico",
+   "channel_url": "https://www.youtube.com/channel/UCH74gdCAh2AVouO6TUBhWvw",
+   "upload_date": "20261106",
+   "title": "CIVILIZAÇÃO HUMANA: O Que Realmente Aconteceu Antes das Primeiras Cidades | Documentário Completo",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 13
+  },
+  {
+   "id": "grPps-ytAh0",
+   "duration": 4196,
+   "view_count": 14312,
+   "channel": "O Capítulo Esquecido — Documentários",
+   "channel_url": "https://www.youtube.com/channel/UCN6mG69L1voU5_OJsJxvWuw",
+   "upload_date": "20261030",
+   "title": "Os Neandertais Não Eram Como Sempre Imaginamos",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 20
+  },
+  {
+   "id": "C4C_Ou6SE_c",
+   "duration": 1275,
+   "view_count": 5659,
+   "channel": "Código Humano",
+   "channel_url": "https://www.youtube.com/channel/UCcDVksDtnevXMDM76umdS4Q",
+   "upload_date": "20260820",
+   "title": "Como os Humanos Sobreviveram à Era do Gelo?",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 91
+  },
+  {
+   "id": "Dk9fDwtTxg8",
+   "duration": 984,
+   "view_count": 3812,
+   "channel": "Segredos da Realidade",
+   "channel_url": "https://www.youtube.com/channel/UCdMDLSBWN35MqKLq8-Khz-w",
+   "upload_date": "20260820",
+   "title": "What the Ice Age Was Like in Brazil (And Almost No One Knows) | Full Documentary",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 91
+  },
+  {
+   "id": "r-BVdN5DqdE",
+   "duration": 4815,
+   "view_count": 1529,
+   "channel": "Dinodust",
+   "channel_url": "https://www.youtube.com/channel/UC_MCKNUrukBBApIg4-stGBg",
+   "upload_date": "20261111",
+   "title": "The ENTIRE History of Pangea (As We Know It) | Prehistoric Earth Documentary [4K]",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 8
+  },
+  {
+   "id": "14yKYkCcFzM",
+   "duration": 2141,
+   "view_count": 1404,
+   "channel": "Documentário Épico",
+   "channel_url": "https://www.youtube.com/channel/UCH74gdCAh2AVouO6TUBhWvw",
+   "upload_date": "20261020",
+   "title": "ANTES DAS PRIMEIRAS CIDADES: Como os Humanos Sobreviviam Há 12.000 Anos | Documentário Completo",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 30
+  },
+  {
+   "id": "cuoPkuJB_t8",
+   "duration": 2095,
+   "view_count": 1008,
+   "channel": "Terra Primitiva",
+   "channel_url": "https://www.youtube.com/channel/UCINi9yoFzR5-QT1ntlEbrXA",
+   "upload_date": "20260820",
+   "title": "A Grande Separação da Pangeia | Como um Continente Gigante Deu Origem ao Mundo Atual? | Documentário",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 91
+  },
+  {
+   "id": "zI3ArbtB8-8",
+   "duration": 2157,
+   "view_count": 734,
+   "channel": "Terra Desaparecida",
+   "channel_url": "https://www.youtube.com/channel/UCgTmaTOM6udBt6K8XGijR7g",
+   "upload_date": "20261020",
+   "title": "Como Era a Terra Depois da Era do Gelo | O Novo Mundo dos Humanos | Documentário",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 30
+  },
+  {
+   "id": "uyF5zUynoK8",
+   "duration": 3629,
+   "view_count": 664,
+   "channel": "Mistérios Naturais",
+   "channel_url": "https://www.youtube.com/channel/UC9bP51F62zH8pslpbvmTfyw",
+   "upload_date": "20261106",
+   "title": "Pangea: Life on Earth's Lost Supercontinent | Sleep Documentary",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 13
+  },
+  {
+   "id": "r8eda-cknKQ",
+   "duration": 2633,
+   "view_count": 565,
+   "channel": "Cruzando Séculos",
+   "channel_url": "https://www.youtube.com/channel/UCWQdOsZRFpTR5n37gld20Sw",
+   "upload_date": "20260920",
+   "title": "What Happened in Brazil During the Ice Age? | Full Documentary",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 60
+  },
+  {
+   "id": "Un3heMp2ebI",
+   "duration": 9843,
+   "view_count": 498,
+   "channel": "Lente Selvagem",
+   "channel_url": "https://www.youtube.com/channel/UCNl-IDjVjuaHO5UKgF6ozVg",
+   "upload_date": "20261020",
+   "title": "Como a Pangeia Realmente se Formou: A História Esquecida dos Supercontinentes",
+   "qs": [
+    "pangeia história da terra"
+   ],
+   "age": 30
+  },
+  {
+   "id": "MQ7ijMlp2DM",
+   "duration": 2307,
+   "view_count": 280,
+   "channel": "Dia Zero",
+   "channel_url": "https://www.youtube.com/channel/UC8JDJDe_4eHGrrUNt1Ya7qg",
+   "upload_date": "20261020",
+   "title": "NEANDERTAIS: Por que DESAPARECERAM se parte deles AINDA VIVE em nós? | Documentário completo",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 30
+  },
+  {
+   "id": "X0WSGO56ej4",
+   "duration": 1802,
+   "view_count": 171,
+   "channel": "Curioso Explica",
+   "channel_url": "https://www.youtube.com/channel/UC0zaitsGfb51e2RLyPRXZIQ",
+   "upload_date": "20261108",
+   "title": "BEFORE THE FIRST CITIES: The Forgotten World of Humans 10,000 Years Ago",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 11
+  },
+  {
+   "id": "kVp-qL3ra1w",
+   "duration": 3983,
+   "view_count": 63,
+   "channel": "Histori Épica",
+   "channel_url": "https://www.youtube.com/channel/UCDL68vovwHI4KWAC2odKOPg",
+   "upload_date": "20261030",
+   "title": "ANTES DAS PRIMEIRAS CIDADES: O Mundo Esquecido dos Humanos 10.000  Anos Atrás |  Documentário",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 20
+  },
+  {
+   "id": "LzQWgBbuAJY",
+   "duration": 3700,
+   "view_count": 39,
+   "channel": "WUFO Portugal",
+   "channel_url": "https://www.youtube.com/channel/UC7Nhhcwd4ZlugQ7xjQrmDVQ",
+   "upload_date": "20261112",
+   "title": "Neandertais: Os Humanos Mais Fortes que Já Existiram! | Documentário Pré-Histórico",
+   "qs": [
+    "neandertais documentário"
+   ],
+   "age": 7
+  },
+  {
+   "id": "Ro9dYFAMvVk",
+   "duration": 2141,
+   "view_count": 33,
+   "channel": "Histori Épica",
+   "channel_url": "https://www.youtube.com/channel/UCDL68vovwHI4KWAC2odKOPg",
+   "upload_date": "20261106",
+   "title": "ANTES DAS PRIMEIRAS CIDADES: Como os Humanos Sobreviviam Há 12.000 Anos | Documentário Completo",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 13
+  },
+  {
+   "id": "pKK3rYor8CU",
+   "duration": 991,
+   "view_count": 17,
+   "channel": "Código Humano",
+   "channel_url": "https://www.youtube.com/channel/UCRl5P_5OjfhLFzcJ5mltD0g",
+   "upload_date": "20260820",
+   "title": "How Did Humans Survive the Ice Age?",
+   "qs": [
+    "era do gelo documentário humanos"
+   ],
+   "age": 91
+  },
+  {
+   "id": "3ckHa3MBo7Q",
+   "duration": 3270,
+   "view_count": 6,
+   "channel": "Histori Épica",
+   "channel_url": "https://www.youtube.com/channel/UCDL68vovwHI4KWAC2odKOPg",
+   "upload_date": "20261106",
+   "title": "CIVILIZAÇÃO HUMANA: O Que Realmente Aconteceu Antes das Primeiras Cidades | Documentário Completo",
+   "qs": [
+    "antes das primeiras cidades humanos"
+   ],
+   "age": 13
+  }
+ ],
+ "S_videos": 47,
+ "S_channels": 33,
+ "median_without_leader": 34378.0
+}

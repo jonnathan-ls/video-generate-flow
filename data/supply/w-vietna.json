@@ -1,0 +1,107 @@
+{
+ "slug": "w-vietna",
+ "date": "2026-11-19",
+ "queries": [
+  "Guerra do Vietnã história completa",
+  "Guerra do Vietnã documentário",
+  "Guerra do Vietnã",
+  "Guerra do Vietnã biografia",
+  "Guerra do Vietnã como nasceu",
+  "a história de Guerra do Vietnã",
+  "Guerra do Vietnã documentário completo",
+  "Guerra do Vietnã explicado",
+  "Guerra do Vietnã resumo",
+  "guerra do vietnam",
+  "vietnã história"
+ ],
+ "new_per_query": [
+  [
+   "Guerra do Vietnã história completa",
+   22
+  ],
+  [
+   "Guerra do Vietnã documentário",
+   12
+  ],
+  [
+   "Guerra do Vietnã",
+   2
+  ],
+  [
+   "Guerra do Vietnã biografia",
+   2
+  ],
+  [
+   "Guerra do Vietnã como nasceu",
+   2
+  ],
+  [
+   "a história de Guerra do Vietnã",
+   0
+  ],
+  [
+   "Guerra do Vietnã documentário completo",
+   2
+  ],
+  [
+   "Guerra do Vietnã explicado",
+   4
+  ],
+  [
+   "Guerra do Vietnã resumo",
+   2
+  ],
+  [
+   "guerra do vietnam",
+   1
+  ],
+  [
+   "vietnã história",
+   6
+  ]
+ ],
+ "S_videos": 3,
+ "S_channels": 3,
+ "leader_views": 296653,
+ "median_without_leader": 47861.0,
+ "median_without_top2": null,
+ "share_below_5k": 0.0,
+ "convergence": false,
+ "meta_ok": "40/55",
+ "grade": "TRIAGEM (não serve para decidir)",
+ "videos": [
+  {
+   "id": "_mgBkiEKY6E",
+   "title": "Guerra do Vietnã: Como os EUA Entraram — e Por Que Perderam",
+   "channel": "O Mundo na História",
+   "subs": 3620,
+   "date": "2026-09-27",
+   "age": 53,
+   "views": 296653,
+   "min": 40.5,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "UF-gizXnQSQ",
+   "title": "A HISTÓRIA COMPLETA DA GUERRA DO VIETNÃ | Além da História",
+   "channel": "Além da História",
+   "subs": 4060,
+   "date": "2026-08-16",
+   "age": 95,
+   "views": 83948,
+   "min": 89.3,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "Lusjrbt79c4",
+   "title": "Guerra do Vietnã: O Conflito Brutal que os EUA Não Conseguiram Vencer | Documentário Completo",
+   "channel": "Páginas Do Tempo",
+   "subs": 24800,
+   "date": "2026-08-18",
+   "age": 93,
+   "views": 11774,
+   "min": 83.2,
+   "lang": "pt"
+  }
+ ]
+}

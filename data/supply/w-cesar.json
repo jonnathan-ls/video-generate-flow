@@ -1,0 +1,146 @@
+{
+ "slug": "w-cesar",
+ "date": "2026-11-19",
+ "queries": [
+  "Júlio César história completa",
+  "Júlio César documentário",
+  "Júlio César",
+  "Júlio César biografia",
+  "Júlio César como nasceu",
+  "a história de Júlio César",
+  "Júlio César documentário completo",
+  "Júlio César explicado",
+  "Júlio César resumo",
+  "Júlio César Roma"
+ ],
+ "new_per_query": [
+  [
+   "Júlio César história completa",
+   11
+  ],
+  [
+   "Júlio César documentário",
+   3
+  ],
+  [
+   "Júlio César",
+   6
+  ],
+  [
+   "Júlio César biografia",
+   1
+  ],
+  [
+   "Júlio César como nasceu",
+   4
+  ],
+  [
+   "a história de Júlio César",
+   2
+  ],
+  [
+   "Júlio César documentário completo",
+   2
+  ],
+  [
+   "Júlio César explicado",
+   4
+  ],
+  [
+   "Júlio César resumo",
+   3
+  ],
+  [
+   "Júlio César Roma",
+   0
+  ]
+ ],
+ "S_videos": 7,
+ "S_channels": 7,
+ "leader_views": 475687,
+ "median_without_leader": 475.5,
+ "median_without_top2": 431,
+ "share_below_5k": 0.83,
+ "convergence": true,
+ "meta_ok": "34/36",
+ "grade": "NÍVEL DECISÃO",
+ "videos": [
+  {
+   "id": "uqvf8kiTA0A",
+   "title": "como foi o ASSASSINATO de JÚLIO CÉSAR?",
+   "channel": "Tinocando TV",
+   "subs": 2890000,
+   "date": "2026-09-13",
+   "age": 67,
+   "views": 475687,
+   "min": 22.8,
+   "lang": "pt"
+  },
+  {
+   "id": "bUutXijwWD4",
+   "title": "Como Júlio César Acabou com 500 Anos de República Romana (Reconstituição por IA)",
+   "channel": "Atlas das Civilizações",
+   "subs": 8030,
+   "date": "2026-10-06",
+   "age": 44,
+   "views": 8652,
+   "min": 122.6,
+   "lang": "pt"
+  },
+  {
+   "id": "7MAjIhugySk",
+   "title": "O homem que matou a República: a vida completa de Júlio César (Documentário IA)",
+   "channel": "Gonçalo – O Último Ato",
+   "subs": 236,
+   "date": "2026-10-29",
+   "age": 21,
+   "views": 582,
+   "min": 115.7,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "BfuygcdZRxg",
+   "title": "Júlio César — Biografia Completa em Português | Ascensão e Queda de um Líder Romano",
+   "channel": "Aura Scripta",
+   "subs": 189,
+   "date": "2026-09-10",
+   "age": 70,
+   "views": 520,
+   "min": 71.2,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "DPohz4VGnIg",
+   "title": "Júlio César: 56 anos que mudaram o mundo para sempre — a vida completa (IA)",
+   "channel": "Duarte – Grandes Governantes",
+   "subs": 73,
+   "date": "2026-09-09",
+   "age": 71,
+   "views": 431,
+   "min": 99.7,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "_XDdRjsft3w",
+   "title": "Júlio César: A Ascensão de uma Lenda",
+   "channel": "A Nova Enciclopédia",
+   "subs": 21900,
+   "date": "2026-10-10",
+   "age": 40,
+   "views": 243,
+   "min": 28.9,
+   "lang": "pt"
+  },
+  {
+   "id": "fP4-BZrvQ54",
+   "title": "Júlio César: O Génio Militar Que Conquistou Roma",
+   "channel": "History hh",
+   "subs": 4,
+   "date": "2026-09-10",
+   "age": 70,
+   "views": 12,
+   "min": 16.8,
+   "lang": "pt-PT"
+  }
+ ]
+}

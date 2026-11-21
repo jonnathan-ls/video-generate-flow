@@ -1,0 +1,11 @@
+# Marca — <nome do canal>
+- **Handle:** @
+- **Idioma/mercado:**
+- **Nicho:**
+- **Promessa (1 frase):** "Aqui você <ganho> sobre <tema> em <formato>."
+- **Para quem (persona primária):**
+- **O que NÃO fazemos:**
+- **Tom de voz (3 adjetivos):**
+- **Voz de narração:** (modelo, voz/clone, velocidade)
+- **Identidade visual:** paleta (hex), fontes, estilo de thumbnail, avatar, banner
+- **Playlists:**

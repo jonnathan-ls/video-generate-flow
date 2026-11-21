@@ -1,0 +1,40 @@
+```json
+{
+  "cena": "S03",
+  "ciclo": 1,
+  "notas": {
+    "V1": 4.8,
+    "V2": 4.7,
+    "V3": 3.5,
+    "V4": 4.2,
+    "V5": 4.8,
+    "V6": 4.7,
+    "V7": 4.0,
+    "V9": 4.9,
+    "V10": 4.8
+  },
+  "media": 4.49,
+  "veredito": "REFAZER",
+  "defeitos": [
+    {
+      "prioridade": "alta",
+      "tempo": "0.0s, 4.2s, 7.2s",
+      "defeito": "Emendas visíveis com quadros pretos no início da cena (0.0s) e nas transições de tomada (4.2s e 7.2s), onde a imagem de fundo desaparece completamente enquanto a legenda permanece visível.",
+      "correcao": "Ajustar o tempo de entrada/saída e a sobreposição das camadas de cenário no Remotion para garantir transição contínua sem flashes pretos."
+    },
+    {
+      "prioridade": "baixa",
+      "tempo": "4.2s",
+      "defeito": "Ausência de rótulo de contexto histórico na tomada de Saigon, diferente das tomadas 1 ('HANOI 1945') e 3 ('BRASIL 1965') que possuem identificação na tela.",
+      "correcao": "Inserir rótulo de contexto de canto (ex: 'SAIGON 1975') na tomada 2 para manter a consistência do padrão gráfico da cena."
+    }
+  ],
+  "bom": [
+    "Movimento crível de caminhada dos moradores de Hanói com alternância de pernas e empunhadura de bandeiras em 2.1s.",
+    "Deslocamento suave e realista do helicóptero sobrevoando a cidade de Saigon com hélices em rotação contínua (5.7s).",
+    "Excelente dinâmica do tecido da bandeira do Brasil tremulando no mastro na baía do Rio (8.55s).",
+    "Sincronização perfeita entre os elementos de cena e os momentos correspondentes da fala (V9).",
+    "Estilo visual pintado coerente, excelente legibilidade de legendas e boa ambientação de época em todas as tomadas."
+  ]
+}
+```

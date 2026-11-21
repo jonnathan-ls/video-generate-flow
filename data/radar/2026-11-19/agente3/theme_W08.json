@@ -1,0 +1,44 @@
+{
+ "theme": "W08",
+ "regex": "astec|maia|inca|mesoam|tenochtit|montezuma|pizarro|cort[eé]s|machu|pré-colomb|pre-colomb",
+ "queries": [
+  "astecas maias e incas documentário ",
+  " império inca história completa ",
+  " astecas história completa ",
+  " civilização maia documentário ",
+  " conquista do império asteca cortés ",
+  " pizarro incas conquista"
+ ],
+ "n_results": 143,
+ "window": [
+  {
+   "id": "VOCZljceqqw",
+   "duration": 1865,
+   "view_count": 1265521,
+   "channel": "Estranha História",
+   "channel_url": "https://www.youtube.com/channel/UCDjzWHhTShC59KtduL-jeig",
+   "upload_date": "20260920",
+   "title": "The Incas’ “writing” is unbelievable...",
+   "qs": [
+    "império inca história completa"
+   ],
+   "age": 60
+  },
+  {
+   "id": "NE1c0e7NXRA",
+   "duration": 2406,
+   "view_count": 81569,
+   "channel": "Canal History Brasil",
+   "channel_url": "https://www.youtube.com/channel/UCRP5p2RfxJgnKyWgve5pJ-Q",
+   "upload_date": "20261106",
+   "title": "O ÚNICO JEITO DE ENTRAR NA MINA 🔥| Ouro Perdido dos Astecas | Episódio Completo",
+   "qs": [
+    "astecas história completa"
+   ],
+   "age": 13
+  }
+ ],
+ "S_videos": 2,
+ "S_channels": 2,
+ "median_without_leader": 81569
+}

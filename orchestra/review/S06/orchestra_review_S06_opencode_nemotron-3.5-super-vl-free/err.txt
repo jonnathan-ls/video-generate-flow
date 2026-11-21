@@ -1,0 +1,4 @@
+[0m
+> build · nemotron-3.5-super-vl-free
+[0m
+[91m[1mError: [0mUpstream request failed: Endpoint is unavailable.

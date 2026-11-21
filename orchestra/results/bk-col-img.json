@@ -1,0 +1,24 @@
+{
+  "status": "done",
+  "files": [
+    "lab/bakeoff-saigon/colagem/img/bg_telhado.jpg",
+    "lab/bakeoff-saigon/colagem/img/bg_avenida.jpg",
+    "lab/bakeoff-saigon/colagem/img/bg_avenida_aberto.jpg",
+    "lab/bakeoff-saigon/colagem/img/bg_patio.jpg",
+    "lab/bakeoff-saigon/colagem/img/ch53.jpg",
+    "lab/bakeoff-saigon/colagem/img/tanque.jpg",
+    "lab/bakeoff-saigon/colagem/img/civis.jpg",
+    "lab/bakeoff-saigon/colagem/img/fuzis.jpg"
+  ],
+  "validators": {
+    "flow_agent_images": "PASS - 8/8 imagens, 16:9, 0 creditos (job 280bb0a6)",
+    "flow_wait": "PASS - job done, 8 arquivos scene-01..08",
+    "flow_download": "PASS - 8/8 assets (clip-01..08), identicos aos scene-*.jpeg",
+    "arquivos": "PASS - 8 JPG 1376x768 em lab/bakeoff-saigon/colagem/img/"
+  },
+  "summary": "Projeto Flow lacre-lab criado (nao existia) e aberto. Uma unica chamada flow_agent_images com os 8 prompts, 16:9, 0 creditos. O Agent mode da UI falhou; o MCP gerou as 8 imagens uma a uma como fallback. flow_wait ate done, flow_download dos 8 assets e copia para lab/bakeoff-saigon/colagem/img/ com os nomes pedidos.",
+  "issues": [
+    "Agent mode indisponivel nesta UI do Flow ('Could not switch Agent mode on'); o fallback um-a-um entregou as 8 imagens a 0 creditos.",
+    "Nao foi possivel conferir as miniaturas visualmente neste executor (modelo sem entrada de imagem); a ordem dos arquivos segue a ordem dos prompts."
+  ]
+}

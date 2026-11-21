@@ -1,0 +1,4 @@
+# Experimentos (uma variável por vez)
+| ID | Hipótese | Variável | Vídeos (controle vs teste) | Métrica alvo | Resultado | Decisão | Data |
+|---|---|---|---|---|---|---|---|
+| E1 | Os estilos visuais (A flat com Flow, D código puro, B colagem documental) produzem retenção e atenção diferentes | **Estilo visual**, um por vídeo, em rodízio. Mesmo pacote de som/FX (R16), mesma voz e mesma estrutura de roteiro | V1 estilo A · V2 estilo D · V3 estilo B (ordem a definir). Shorts derivados do **mesmo roteiro** em estilos diferentes, para comparar sem a variável "tema" | Retenção aos 30 s, % média assistida e forma da curva, sempre **relativas à mediana do canal** | Pendente. **Cuidado:** com poucos vídeos o tema confunde o estilo. Qualquer conclusão é hipótese até haver ≥ 2 vídeos por estilo ou os shorts pareados | 2026-11-19 |

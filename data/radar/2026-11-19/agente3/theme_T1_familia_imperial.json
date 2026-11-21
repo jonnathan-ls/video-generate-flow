@@ -1,0 +1,200 @@
+{
+ "theme": "T1",
+ "regex": "pedro|imperatriz|imperador|leopoldina|teresa cristina|independ|1822|ipiranga|princesa isabel|fam[ií]lia imperial|emperor|empress|independence",
+ "queries": [
+  "dom pedro I história completa ",
+  " morte de dom pedro I ",
+  " imperatriz leopoldina história ",
+  " teresa cristina imperatriz ",
+  " independência do brasil 7 de setembro verdade ",
+  " família imperial brasileira documentário"
+ ],
+ "n_results": 175,
+ "window": [
+  {
+   "id": "W-AGaMBTHEc",
+   "duration": 2427,
+   "view_count": 368360,
+   "channel": "Tinocando TV",
+   "channel_url": "https://www.youtube.com/channel/UCS4cwdpm92dw1w9TERgdQJg",
+   "upload_date": "20261106",
+   "title": "DOM PEDRO II: o ÚLTIMO IMPERADOR do BRASIL",
+   "qs": [
+    "dom pedro I história completa"
+   ],
+   "age": 13
+  },
+  {
+   "id": "ilSo-YPJ0MA",
+   "duration": 1617,
+   "view_count": 357762,
+   "channel": "Fóssil Medieval",
+   "channel_url": "https://www.youtube.com/channel/UC9SZlLyGhNC0FNNnC1FRjHw",
+   "upload_date": "20260920",
+   "title": "What Dom Pedro II's funeral was like after his death in exile (1891)",
+   "qs": [
+    "morte de dom pedro I"
+   ],
+   "age": 60
+  },
+  {
+   "id": "m3Lt_P8AT1I",
+   "duration": 2815,
+   "view_count": 340907,
+   "channel": "Brasil Paralelo",
+   "channel_url": "https://www.youtube.com/channel/UCKDjjeeBmdaiicey2nImISw",
+   "upload_date": "20260920",
+   "title": "WHAT THEY DIDN'T TELL YOU ABOUT BRAZIL'S INDEPENDENCE | SEPTEMBER 7TH | with Raphael Tonon",
+   "qs": [
+    "independência do brasil 7 de setembro verdade"
+   ],
+   "age": 60
+  },
+  {
+   "id": "w8DwFl3ar6Q",
+   "duration": 1216,
+   "view_count": 248759,
+   "channel": "O Reconstrutor",
+   "channel_url": "https://www.youtube.com/channel/UCB7rlyp-wetVadf3JvDzOeg",
+   "upload_date": "20260920",
+   "title": "This Was the Life of Dom Pedro I as Emperor of Brazil (1822–1831) | AI Reconstruction",
+   "qs": [
+    "dom pedro I história completa"
+   ],
+   "age": 60
+  },
+  {
+   "id": "RYyz4lS_deU",
+   "duration": 1753,
+   "view_count": 229989,
+   "channel": "Telas & Histórias ",
+   "channel_url": "https://www.youtube.com/channel/UCuMKAD2-pgKicGgQ2LaWOrA",
+   "upload_date": "20261030",
+   "title": "Married a Stranger at 20, Dead at 29 - The Tragic Life of Leopoldina, Empress of Brazil",
+   "qs": [
+    "imperatriz leopoldina história"
+   ],
+   "age": 20
+  },
+  {
+   "id": "Lk4H1tDltxs",
+   "duration": 1785,
+   "view_count": 139926,
+   "channel": "Fóssil Medieval",
+   "channel_url": "https://www.youtube.com/channel/UC9SZlLyGhNC0FNNnC1FRjHw",
+   "upload_date": "20260920",
+   "title": "What was Dom Pedro I's funeral like after he died far from Brazil? (1834)",
+   "qs": [
+    "morte de dom pedro I"
+   ],
+   "age": 60
+  },
+  {
+   "id": "8t98KZVYXcU",
+   "duration": 1408,
+   "view_count": 104176,
+   "channel": "Fóssil Medieval",
+   "channel_url": "https://www.youtube.com/channel/UC9SZlLyGhNC0FNNnC1FRjHw",
+   "upload_date": "20261020",
+   "title": "Assim Era a Vida da Imperatriz Teresa Cristina no Palácio Imperial de Petrópolis",
+   "qs": [
+    "teresa cristina imperatriz"
+   ],
+   "age": 30
+  },
+  {
+   "id": "2PR8-uxW2GM",
+   "duration": 1361,
+   "view_count": 60554,
+   "channel": "Fóssil Medieval",
+   "channel_url": "https://www.youtube.com/channel/UC9SZlLyGhNC0FNNnC1FRjHw",
+   "upload_date": "20260920",
+   "title": "This Was Life Like for Empress Leopoldina at the São Cristóvão Palace",
+   "qs": [
+    "imperatriz leopoldina história"
+   ],
+   "age": 60
+  },
+  {
+   "id": "P2jWfzZh9Ew",
+   "duration": 1580,
+   "view_count": 54181,
+   "channel": "TRONOS PERDIDOS BRASIL",
+   "channel_url": "https://www.youtube.com/channel/UCLEeQh2tM-HFF4dOU6rpYOA",
+   "upload_date": "20261020",
+   "title": "Foi isso que Aconteceu com os Bens da Família Imperial Depois de 1889 ( Brasil Império 1889 )",
+   "qs": [
+    "família imperial brasileira documentário"
+   ],
+   "age": 30
+  },
+  {
+   "id": "acVwfO-iNcY",
+   "duration": 1505,
+   "view_count": 18594,
+   "channel": "Fóssil Medieval",
+   "channel_url": "https://www.youtube.com/channel/UC9SZlLyGhNC0FNNnC1FRjHw",
+   "upload_date": "20260820",
+   "title": "What did Empress Leopoldina eat in a day?",
+   "qs": [
+    "imperatriz leopoldina história"
+   ],
+   "age": 91
+  },
+  {
+   "id": "0wVVFPE3IMQ",
+   "duration": 1576,
+   "view_count": 4114,
+   "channel": "Fóssil Medieval",
+   "channel_url": "https://www.youtube.com/channel/UC9SZlLyGhNC0FNNnC1FRjHw",
+   "upload_date": "20261020",
+   "title": "What Dom Pedro II's final day was like before his death in exile (1891)",
+   "qs": [
+    "morte de dom pedro I"
+   ],
+   "age": 30
+  },
+  {
+   "id": "7zSY5oQgECY",
+   "duration": 1206,
+   "view_count": 595,
+   "channel": "Sombras do Poder",
+   "channel_url": "https://www.youtube.com/channel/UC5PjezjH4iDr4WovwC7ys7A",
+   "upload_date": "20260820",
+   "title": "The Life and Death of Dom Pedro I — And the Secret He Took With Him to Portugal",
+   "qs": [
+    "morte de dom pedro I"
+   ],
+   "age": 91
+  },
+  {
+   "id": "R6jzZ9a1MUA",
+   "duration": 2552,
+   "view_count": 356,
+   "channel": "Lágrimas Reais",
+   "channel_url": "https://www.youtube.com/channel/UCRxD6VlTcz5tHxG6N8jjbpQ",
+   "upload_date": "20261107",
+   "title": "Teresa Cristina: o retrato que enganou Dom Pedro II e mudou tudo",
+   "qs": [
+    "teresa cristina imperatriz"
+   ],
+   "age": 12
+  },
+  {
+   "id": "0zPtwqwlUpQ",
+   "duration": 923,
+   "view_count": 262,
+   "channel": "Documentando a História",
+   "channel_url": "https://www.youtube.com/channel/UC9bD71vEtOjeQtvEAQkRfOQ",
+   "upload_date": "20260820",
+   "title": "EMPRESS LEOPOLDINA COMPLETE",
+   "qs": [
+    "imperatriz leopoldina história"
+   ],
+   "age": 91
+  }
+ ],
+ "S_videos": 14,
+ "S_channels": 9,
+ "median_without_leader": 60554
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "w-franco",
+ "date": "2026-11-19",
+ "queries": [
+  "Francisco Franco história completa",
+  "Francisco Franco documentário",
+  "Francisco Franco",
+  "Francisco Franco biografia",
+  "Francisco Franco como nasceu",
+  "a história de Francisco Franco",
+  "Francisco Franco documentário completo",
+  "Francisco Franco explicado",
+  "Francisco Franco resumo",
+  "ditadura franquista Espanha"
+ ],
+ "new_per_query": [
+  [
+   "Francisco Franco história completa",
+   25
+  ],
+  [
+   "Francisco Franco documentário",
+   8
+  ],
+  [
+   "Francisco Franco",
+   14
+  ],
+  [
+   "Francisco Franco biografia",
+   2
+  ],
+  [
+   "Francisco Franco como nasceu",
+   7
+  ],
+  [
+   "a história de Francisco Franco",
+   4
+  ],
+  [
+   "Francisco Franco documentário completo",
+   4
+  ],
+  [
+   "Francisco Franco explicado",
+   4
+  ],
+  [
+   "Francisco Franco resumo",
+   5
+  ],
+  [
+   "ditadura franquista Espanha",
+   4
+  ]
+ ],
+ "S_videos": 2,
+ "S_channels": 2,
+ "leader_views": 13676,
+ "median_without_leader": null,
+ "median_without_top2": null,
+ "share_below_5k": 0.0,
+ "convergence": false,
+ "meta_ok": "18/77",
+ "grade": "COLETA FALHOU (bloqueio do YouTube: repetir mais tarde, não é oferta zero)",
+ "videos": [
+  {
+   "id": "6r5w-AXoWbE",
+   "title": "Franco, Salazar e o dilema do político católico de hoje I Live com Prof. Carlos Nougué",
+   "channel": "Centro Dom Bosco",
+   "subs": 572000,
+   "date": "2026-10-03",
+   "age": 47,
+   "views": 13676,
+   "min": 74.7,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "a3LruFY_Z08",
+   "title": "248 Ditadura na Espanha: os anos de Francisco Franco no poder",
+   "channel": "Icles Rodrigues",
+   "subs": 468000,
+   "date": "2026-09-21",
+   "age": 59,
+   "views": 9231,
+   "min": 66.2,
+   "lang": "pt"
+  }
+ ]
+}

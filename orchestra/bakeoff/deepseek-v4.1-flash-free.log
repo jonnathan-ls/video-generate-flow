@@ -1,0 +1,599 @@
+[0m
+> build · deepseek-v4.1-flash-free
+[0m
+[0m→ [0mRead orchestra/tasks/bake-s03.md
+[0m
+[0m$ [0mgrep -n -A 40 -i "S03" /home/jonnathan/projects/ai-youtube-channel/channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/qa-lote-01.md | head -100
+1:# QA independente: lote 1 do Vietnã (S02, S03, S04, S05 acabamento, S06)
+2-
+3-- Revisor: agente `reviewer`, ciclo 1 de 2 (R6) · data: 2026-11-20
+4-- Objeto: `media/pt-br-historia/vietna/render/S02.mp4` a `S06.mp4` (renders de 11:43 a 11:47; 28,1 / 9,9 / 22,7 / 28,5 / 32,0 s; 1920×1080, 30 fps), `scenes_spec.json`, `render/props/S02–S06.json`, `Sxx_mix.events.json`, `studio/remotion/src/vietna/scene.tsx`, `lab/plan-vietna-lote1.md`, `sources.md` (FLOW-LOTE1, HAI46, ICO-*), `script.md`.
+5:- Método: validadores rodados por mim (abaixo); quadros na palavra de cada ação; séries de quadros consecutivos a 30 fps (diplomata 6,4–6,8 s; coluna brasileira 10,0–10,4 s), a 15 fps (pernas 10,0–10,5 s), a 10 fps (bandeiras 8,0–8,8 s do S03 e 11,5–12,3 s do S04; explosão 21,2–22,0 s), a 6 fps (bandeiras da multidão 20,0–21,0 s; atracação 13,3–14,6 s), a 3 fps (entrada dos moradores 1,0–3,3 s do S04); recortes em resolução cheia; quadros reduzidos a 640×360 e ampliados (rótulos e bandeiras); análise de pixels verdes na borda dos 15 PNG do lote; leitura do código de `scene.tsx` (fatias, passada, tremor, clarão, flash).
+6-- Fontes reabertas nesta revisão: FRUS225 (history.state.gov d225), HAI46 (indochine.uqam.ca), ICO-FR46 (Wikipedia CEFEO), AID2 (Wikisource, Pentagon Papers p. 43), AID (Miller Center), ICO-C47 (Wikipedia Operation Castor), ICO-BRFLAG (Wikipedia Flag of Brazil), COM (Wikimedia Commons CH-53).
+7-- Learnings aplicáveis: L01 (som só com motivo e dentro do orçamento), L02 (movimento relevante tem som com a duração do movimento), L03 (voz nivelada). Defeitos que não podem voltar: D1–D13 e N1–N3 de `qa-piloto-s05.md`.
+8-- Folhas de contato da produção (`S02_sheet.jpg` a `S06_sheet.jpg`) não foram alteradas: md5 igual antes e depois; `scene_gates.py` rodou sobre links em scratchpad.
+9-
+10-## Veredito: REFAZER
+11-
+12-Motivos:
+13:1. Quatro defeitos de prioridade alta: bandeiras em tiras com emendas visíveis em 360p (S03 t3, S04 t4); guindaste que não iça (cabo descendo do céu, S06 t3); tropa de Haiphong que surge do nada no cais, em escala 4 a 5 vezes maior que o navio e desenhada na frente da perna do guindaste (S05 t3).
+14:2. Notas abaixo do mínimo: V10 = 3 em todas as cenas e no lote; V5 = 3 no S04 e no lote; V1 = 3 no S03. Média do lote 3,89 (mínimo 4,3).
+15:3. A passada das colunas (D2 do piloto) continua sem articulação: as colunas de S02 t3, S03 t1, S04 t1 e S05 usam o padrão `gait` 9 (inclinação da metade de baixo), que inclina as duas pernas juntas; a figura desliza. Só o embaixador (S02 t2) tem passada configurada, e mesmo assim parcial.
+16-
+17-Os validadores automáticos passaram todos. O lote acerta a sincronia (quase todas as ações caem na palavra), a explosão do S05 melhorou muito (imagem do Flow, sem retângulos) e o apagão agora apaga as janelas. Os problemas são de credibilidade física e de legibilidade, que os validadores não medem.
+18-
+19-## Validadores (rodados pelo revisor)
+20-
+21:| Item | S02 | S03 | S04 | S05 | S06 |
+22-|---|---|---|---|---|---|
+23-| `shot_check.py` (cópia do spec, props da produção) | PASS | PASS | PASS | PASS | PASS |
+24-| cota mapa/texto/doc sem cena | PASS: 0% de 121 s | | | | |
+25-| freezedetect (`scene_gates.py`) | PASS, nenhum | PASS | PASS | PASS | PASS |
+26-| Loudness (informativo) | −14,6 LUFS, pico −1,6 | −14,6 / −1,6 | −14,9 / −1,6 | −14,8 / −1,4 | −14,8 / −1,7 |
+27-| `fx_check.py` F1–F6, F11 | PASS (13 eventos, 0 pesados, 0 whoosh) | PASS (7) | PASS (12) | PASS (15, 1 pesado) | PASS (17) |
+28-| F7 `--voice` (janelas < 10 dB · mediana) | PASS 2,5% · 27,4 dB | PASS 1,2% · 23,8 dB | PASS 3,0% · 22,2 dB | PASS 0,8% · 24,3 dB | PASS 3,2% · 25,9 dB |
+29-| F8 `--asr` (referência: texto das palavras de `props/Sxx.json`) | PASS voz 0,0% · mix 0,0% · +0,0 p.p. | PASS 13,8% · 13,8% · +0,0 | PASS 1,5% · 1,5% · +0,0 | PASS 0,0% · 1,6% · **+1,6 p.p.** | PASS 0,7% · 0,7% · +0,0 |
+30-| F9 (revisão de `scene.tsx`) | PASS: tremor só em fx `explosion` (7,5 px), clarão 0,33; o S05 não usa mais fx `explosion` (a explosão é ator do Flow), então não há tremor; o flash de câmera do S06 é luz local, não clarão de tela; eventos `flash` com `visual: true` | | | | |
+31-
+32:Observações: o F8 do S05 ficou em +1,6 p.p., perto do limite de 2; a explosão em "usina elétrica" é o trecho provável. O erro de 13,8% da voz sozinha no S03 aparece igual no mix (provável normalização de "vinte" e "dez" escritos por extenso contra números na transcrição); não é problema do mix.
+33-
+34-## Ação por tomada
+35-
+36-| Cena · tomada | O que se move | Bate com a fala? | Crível? |
+37-|---|---|---|---|
+38-| S02 t1 · 0,0–4,4 | pasta "EMPRÉSTIMO" desliza e para (1,58–2,43) | sim: para em 2,43, "empréstimo" 2,33; "US$ 150 milhões" em 3,19 | parcial: a pasta para em cima da base da luminária (2,7 e 3,3 s), atravessando um objeto que tem volume |
+39-| S02 t2 · 4,4–8,4 | embaixador entra e anda (5,51–8,35) com passada | sim: em quadro em "embaixador" (6,01); nome em 6,01 | parcial: em 5,7 s ele aparece sobre a folha da porta aberta, não no vão; no vão (6,0 s) tem cerca de 75% da altura que a porta pede; as pernas abrem e fecham pouco, a passada fica sempre aberta (12 quadros, 6,4–6,8 s); velocidade cerca de 0,4 altura/s, lenta mas aceitável porque ele também vem em direção à câmera. Não chega à mesa como diz o plano |
+40-| S02 t3 · 8,4–11,9 | coluna de 6 soldados brasileiros (54→89,8%) | sim: "TROPAS" em 8,85 | **não**: pernas na mesma pose em 12 quadros consecutivos (10,0–10,4 s), só a metade de baixo inclina; emendas verticais das fatias cortam botas e coronhas dos vizinhos (10,0–10,5 s, ampliado); um soldado de calça vermelha. Velocidade cerca de 0,7 altura/s (ok). A coluna sai pela direita antes do corte (11,6 s) |
+41-| S02 t4 · 11,9–17,2 | duas pastas se afastam (13,49–14,19) e voltam (16,01–16,66) | sim: "separados" 13,89; "mesma" 16,41 | sim. Ao se juntar, "TROPAS" cobre o fim de "EMPRÉSTIMO" ("EMPRÉSTI", 16,8 s) |
+42-| S02 t5 · 17,2–19,7 | máquina escreve "RIO DE JANEIRO / 17 DEZ 1965 / TELEGRAMA 1456" | sem palavra-gatilho; a fala é "O que o presidente respondeu?" | sim (letras surgem no papel; o carro da máquina não anda). O telegrama 1456 é o relato da reunião, não a resposta do presidente: a imagem e a fala falam de coisas diferentes (baixo) |
+43-| S02 t6 · 19,7–23,6 | memorando entra (até 20,18), selo cai (20,25–20,55), pasta sai (21,86–22,66) | sim: "resposta" 19,83, "documento" 20,55, "fim" 22,21 | sim |
+44-| S02 t7 · 23,6–28,1 | calendário volta de 1965 a 1945 | sim: começa em "Antes" (23,88), chega a 1945 perto de "pedido" (27,07) | sim |
+45:| S03 t1 · 0,0–4,2 | moradores com bandeirinhas andam (−14→24,7%) | sim, desde 0,1 | parcial: passada só inclinada; o grupo ocupa o canto esquerdo |
+46:| S03 t2 · 4,2–7,2 | CH-53 cruza o céu com pás girando | sim: "SAIGON 1975" em 6,63 | movimento sim; época **duvidosa**: casco bege com faixas vermelhas e azuis (6,2 s, recorte cheio). O CH-53 dos fuzileiros em 1975 não usava esse esquema |
+47:| S03 t3 · 7,2–9,9 | bandeira do Brasil "tremula" | sim: "BRASIL / 1965" em 9,07 | **não**: a bandeira ondula em 8 tiras verticais que sobem e descem; losango e círculo quebram em degraus e as emendas aparecem até em 640×360; a tralha se solta do mastro (vão de cerca de 10 px). O desenho vetorial chapado e saturado destoa da pintura do fundo |
+48-| S04 t1 · 0,0–4,4 | moradores andam da direita para a esquerda | sim (entram em cerca de 1 s) | parcial: pés na calçada, escala boa; passada só inclinada |
+49-| S04 t2 · 4,4–7,3 | multidão de costas em fatias que sobem e descem | sim: "HO CHI MINH" em 4,53 | parcial: o movimento é de 9 px por fatia, difícil de ver em 640×360; o resto da multidão (no fundo) está parado |
+50-| S04 t3 · 7,3–10,6 | multidão em fatias | sim: "≈ 500 mil" em 9,55 | parcial: o plano diz "punhos e bandeiras se agitam", mas as bandeiras são do fundo e não se mexem (8,0–8,8 s) |
+51-| S04 t4 · 10,6–13,3 | bandeira vietnamita no mastro | sim: "Ba Đình" em 11,03 | **não**: mesmas tiras com emendas visíveis em 360p e estrela em degraus (11,5–12,3 s); a tralha se solta do mastro |
+52-| S04 t5 · 13,3–19,2 | Declaração americana desliza (14,02–14,82), a francesa (16,36–17,26) | sim: "americana" 14,77, "Homem" 17,21 | parcial: os documentos ficam em pé, no plano da tela, sem perspectiva da mesa; a americana passa da borda da mesa e fica flutuando na frente do tampo (14,8 e 18,8 s). A etiqueta não cobre a Declaração (conferido em 14,8 e 17,3 s); ela cobre a chaminé da lamparina |
+53-| S04 t6 · 19,2–22,7 | multidão em fatias; som de aclamação em "reconheçam" | o som cai em 20,65; a imagem não muda | parcial: as duas bandeiras grandes do primeiro plano estão paradas em 6 quadros (20,0–21,0 s) |
+54-| S05 t1 · 0,0–6,5 | navio entra e para; fumaça; esteira branca | sim | sim: a fumaça nasce na boca da chaminé (1,3–5,0 s); espuma visível na linha d'água (D6 e D12 resolvidos) |
+55-| S05 t2 · 6,5–9,0 | coluna no cais a cerca de 0,7 altura/s | sim | parcial: pés no cais; pernas sem passada real |
+56-| S05 t3 · 9,0–15,8 | navio entra no porto e para (13,65); tropa aparece no cais (13,7) e anda | sim: para em 13,65, "desembarcam" 13,70 | **não**: o navio para na ponta do cais, sem encostar ao longo dele; a tropa surge por fade no meio do cais (13,7–13,9 s, transparente no quadro de 13,8 s), sem prancha nem descida; cada soldado tem a altura da chaminé do navio (escala 4 a 5 vezes maior; 15,2 s); a coluna passa na frente da perna do guindaste, que deveria ficar na frente dela |
+57-| S05 t4 · 15,8–22,8 | fumaça clara nas chaminés; holofotes; tiros (20,0–21,2); explosão do Flow (21,22); apagão por `bg2` (21,35); chamas no telhado | sim: tiros em "ataca", explosão em "usina" (21,20) | sim: explosão com forma de chama e fumaça (21,5–22,0 s); janelas apagadas de fato (22,6 s); fumaça das chaminés visível (D3 e D5 resolvidos). As chamas do telhado são uma faixa reta (22,6 s), aceitável |
+58-| S05 t5 · 22,8–28,5 | coluna a y 82%; chamas nas fachadas; fumaça | sim | parcial: base acima da legenda (24,5 s, N2 resolvido); pernas sem passada |
+59-| S06 t1 · 0,0–3,0 | cargueiro entra e para (0,0–2,2) | sim: para perto de "francês" (1,90); rótulo em 1,9 | parcial: para no meio do rio, longe do cais (2,5 s); o plano diz "chega ao cais" |
+60-| S06 t2 · 3,0–5,8 | pasta "PENTÁGONO" desliza | sim: "Documentos" 3,58 | sim |
+61-| S06 t3 · 5,8–10,2 | caixotes sobem do navio, cruzam e descem no cais (5,9–8,9) | sim: "ajuda americana começa" (5,38–6,24) | **não**: o cabo desce do alto da tela, sem guindaste sobre o navio; o guindaste do cais não gira nem mexe a lança; a carga passa na frente da torre do guindaste e pousa na base dele (6,5 / 7,5 / 8,4 / 9,5 s). "US$ 10 milhões" cobre o navio |
+62-| S06 t4 · 10,2–16,2 | C-47 com cocar francês cruza o vale; 3 paraquedas descem | sim: avião em "1954" (10,66); "78%" em 13,12 | sim no avião; paraquedas abertos já ao aparecer, idênticos (cor, tamanho, balanço) |
+63-| S06 t5 · 16,2–21,0 | jipe cruza o acampamento com poeira | o jipe só fica visível perto de 17,5 s ("Miller" 16,68) | parcial: anda sobre o terreno escuro ao lado das trincheiras, não numa estrada; pequeno; em "três" (20,1) o "3/4" do texto grande fica em cima do jipe (20,2–20,4 s) |
+64-| S06 t6 · 21,0–27,0 | 4 flashes de câmera | sim: "entrevista" 24,16, "Eisenhower" 25,76 | sim; fora dos flashes nada se move, mas nenhum vão passa de 1,0 s |
+65-| S06 t7 · 27,0–32,0 | 1ª peça balança (27,6), cai em "cai" (28,83); as outras em sequência | sim | sim; um só som para 7 peças caindo (L02 pede som com a duração do movimento) |
+66-
+67-## Rubrica visual por cena
+68-
+69-### S02 (média 4,22)
+70-| # | Nota | Evidência |
+71-|---|---|---|
+72-| V1 | 4 | Mesmo traço e luz nas 7 tomadas (folha de contato); pastas e etiquetas iguais às do S06 |
+73-| V2 | 4 | Fundo + ator + raios/poeira + rótulo em todas; sem parallax (nenhum `pan`/`depth` no lote) |
+74-| V3 | 4 | Sempre há algo andando; mas a coluna desliza (10,0–10,4 s) |
+75-| V4 | 5 | 7 tomadas de 2,5 a 5,3 s, cada uma com outro tipo de ação |
+76-| V5 | 4 | Etiquetas legíveis em 360p; "TROPAS" fica a cerca de 50 px da coluna em 8,95 s; a sublinha quebra "NO / VIETNÃ" (9,4 s) |
+77-| V6 | 4 | Raios, poeira, fumaça do cinzeiro |
+78-| V7 | 5 | "LINCOLN GORDON / embaixador dos EUA no Brasil", "MEMORANDO DE 31/12/1965", "RIO DE JANEIRO / 17 DEZ 1965 / TELEGRAMA 1456" |
+79-| V9 | 5 | Todas as ações a ±0,4 s da palavra (tabela acima) |
+80-| V10 | 3 | Coluna sem passada e com emendas; soldado de calça vermelha; farda de 1965 sem referência (pendência aberta pelo próprio produtor); embaixador sobre a folha da porta (5,7 s); pasta sobre a luminária |
+81-
+82:### S03 (média 3,89)
+83-| # | Nota | Evidência |
+84-|---|---|---|
+85-| V1 | 3 | A bandeira desenhada por código (verde e amarelo chapados) e o CH-53 bege com faixas coloridas destoam dos fundos pintados (folha de contato) |
+86-| V2 | 4 | Fundo + ator + luz + rótulo |
+87-| V3 | 4 | Movimento em todas as tomadas |
+88-| V4 | 4 | 3 tomadas de 2,7 a 4,2 s |
+89-| V5 | 4 | "1945", "SAIGON 1975", "BRASIL 1965" legíveis; "HANÓI" (rótulo de cima) com contraste baixo em 360p |
+90-| V6 | 4 | Raios e névoa (t1), fumaça (t2), nuvens (t3) |
+91-| V7 | 5 | Hanói 1945, Saigon 1975, Brasil 1965 batem com a fala |
+92-| V9 | 4 | Ações no tempo; a única ação de t3 é a bandeira, que não convence |
+93-| V10 | 3 | Bandeira em tiras com emendas e solta do mastro (8,0–8,8 s); esquema de cores do CH-53 duvidoso |
+94-
+95-### S04 (média 3,89)
+96-| # | Nota | Evidência |
+97-|---|---|---|
+98-| V1 | 4 | Fundos coerentes; as declarações são fac-símiles reais, aceitável para documento |
+99-| V2 | 4 | Multidão recortada sobre multidão de fundo; sem parallax |
+100-| V3 | 4 | Algo se mexe sempre, mas em t2, t3 e t6 é só o sobe e desce de 9 px das fatias |
+[0m
+[0m$ [0msed -n '1,200p' /home/jonnathan/projects/ai-youtube-channel/protocols/scene-production.md
+# Protocolo: produção de cena com ação (padrão R18)
+
+**Etapa:** `script_approved` → `produced` · **Aprovado pelo usuário em 2026-11-20** (piloto S05, "Aprovado, produza o vídeo completo... aplicando esse padrão")
+**Validadores:** `shot_check.py`, `scene_gates.py` (freezedetect, loudness, `fx_check.py`) · **Rubrica:** `rubrics/visual.md` V1–V10 (todas ≥ 4, média ≥ 4,3) · **Som:** `rubrics/sound-fx.md` (R16)
+
+## Por que existe
+O usuário reprovou três padrões em sequência: mapa estático (S01 v1), "só texto e mapa" (lote S02–S10 v1) e "imagens estáticas com efeitos" (ilustração em código e S04 com fundo do Flow parado). Ele aprovou o S05, com fundo do Flow e objetos recortados que **se movem no tempo da palavra**. Este protocolo transforma o S05 em receita, com as lições dos dois ciclos de revisão dele (D1–D13 em `qa-piloto-s05.md`).
+
+## Unidade de trabalho: lote de 4 a 6 cenas
+Um lote por vez. Um lote só começa quando o anterior foi aprovado pelo revisor, ou foi escalado.
+
+## Passos
+1. **Ler** (R4): este protocolo, `shot-planning.md`, `learnings.md`, `mistakes.md`, os `qa-*.md` do vídeo (os defeitos já apontados não podem voltar) e as frases das cenas em `script.md` + `render/props/<cena>.json` (palavras com tempo).
+2. **Plano de tomadas** (em `lab/plan-<video>-<lote>.md`): para cada tomada, registre:
+   - tempo, com 3 a 6 s por tomada;
+   - **o que se move e em qual palavra**;
+   - fundo;
+   - recortes;
+   - efeitos;
+   - som de movimento;
+   - itens de época com referência: uniforme, veículo, avião, navio, bandeira, prédio, com o ano. Na dúvida, a referência iconográfica vai para `sources.md`.
+
+   Para cada tipo de frase, a ação correspondente:
+
+   | Frase | Ação na tela |
+   |---|---|
+   | sobre deslocamento | o objeto se desloca (navio, coluna, avião, helicóptero, carro, tanque) |
+   | sobre ataque | tiros e explosão na palavra |
+   | sobre decisão ou documento | o papel desliza na mesa, o carimbo cai, a caneta assina, a máquina de escrever corre, a bandeira tremula, o flash das câmeras dispara |
+   | sobre multidão | a multidão em fatias levanta braços e cartazes, ou a coluna de manifestantes avança |
+   | sobre número | gráfico ou contador **sobre uma cena**: fundo com ação + dado como camada |
+
+   Mapa, documento, gráfico e texto **sem cena** somam no máximo 20% do vídeo.
+3. **Prompts do Flow** (em `lab/flow-prompts-<lote>.md`):
+   - **Fundo:** o prefixo de estilo fixo de `lab/flow-prompts-s04.md` + cena + época + "no text, no letters, no logos, no watermark" + negativos da época (ex.: Hanói 1945 → "no monuments, no mausoleum, no modern buildings"). O fundo deixa **espaço livre e chão** onde os atores vão passar (rua vazia, cais vazio, céu livre), porque os atores entram por recorte.
+   - **Objeto para recorte:** o mesmo prefixo + "isolated on a solid pure green background (#00FF00), full object visible, side view, flat even lighting, no ground shadow, no other objects". Pessoas em coluna: "a column of N soldiers walking left to right, side view, full body including feet, evenly spaced, not overlapping".
+   - **Fogo, explosão, fumaça:** "isolated on pure black background", recortado por `blend: 'screen'`, sem chroma.
+   - **Variação de estado:** o mesmo fundo com luzes apagadas, prédio destruído ou noite, feito por edição da imagem no Flow, entra em `bg2` com `bg2_at_s` na palavra.
+4. **Gerar** pelo `runbooks/flow-generate-image.md`: Nano Banana 2.1, x2, **0 crédito**. Se o custo for maior que 0, pare e pergunte. Vídeo do Flow (24 créditos por clipe) só com OK do usuário. Baixe pelo Claude in Chrome e escolha a melhor das duas. Rejeite e regenere se houver:
+   - texto na imagem;
+   - anacronismo;
+   - membro deformado;
+   - sombra no chão do recorte.
+
+   Copie o original para `media/<canal>/<video>/src_img/flow/<lote>/` e registre `FLOW-<lote>` em `sources.md`, com prompt, arquivo e uso.
+5. **Recortar:** `python3 pipeline/assembly/chroma_cut.py in.jpg studio/remotion/public/<video>/x.png`. Confira sobre magenta: sem halo verde, pés inteiros.
+6. **Spec** (`scenes_spec.json`, kind `shots`; cada tomada com `scene`). Use os campos da tabela abaixo, com cues por palavra (`*_word`, `palavra#N` quando repete).
+7. **Preparar, renderizar e mixar:**
+   - `vietna_prep.py ... --only Sxx`;
+   - `pipeline/assembly/vietna_render_batch.sh Sxx ...`;
+   - eventos de som com `reason` (R16), passos, motor, água e tiros acompanhando o movimento (L02).
+8. **Autochecagem** (o produtor, antes do revisor):
+   - `shot_check.py` PASS, `scene_gates.py` PASS e folha de contato;
+   - quadro **na palavra** de cada ação: o objeto está lá?
+   - 3 quadros consecutivos de cada ator andando: a passada e a velocidade estão certas?
+   - base de cada objeto acima da legenda, e ator com chão;
+   - quadro reduzido a 640×360: o rótulo é legível?
+
+   Qualquer falha volta ao passo 6.
+9. **Revisão independente** (agente `reviewer`): ciclo 1 e, se preciso, ciclo 2, conforme `rubrics/visual.md`. Relatório em `qa-lote-XX.md`. Aprovado → segue. Reprovado no ciclo 2 → escalar.
+10. **Entrega ao usuário** a cada 2 ou 3 lotes aprovados, ou quando ele pedir: prévia 720p com legenda e o resumo das notas.
+
+## Regras físicas (lições do S05)
+| Regra | Origem |
+|---|---|
+| Pés no chão: a base do ator fica no plano do chão do fundo. Confira no quadro. | D1, soldados na água |
+| Velocidade real: caminhada de 0,5 a 1 altura de corpo por segundo; tomadas vizinhas com velocidades coerentes; coluna que entra fica em quadro até o fim da tomada, sem quadro vazio. | D2, N3 |
+| Pessoas andando: `slices` + `gait` (passada das pernas). Sem `gait`, a figura desliza. | D2 |
+| Ação na palavra: chegada/impacto a ±0,4 s da palavra. A lancha "desembarca" na palavra, não 1,5 s depois. | D11 |
+| Nenhuma tomada com mais de 2 s sem objeto em movimento (`shot_check`). Zoom não conta. Fumaça sozinha não conta. | D3 |
+| Tremor ≤ 8 px e clarão ≤ 0,35, só em evento `visual: true`. | D4, F9 |
+| Fumaça nasce **na boca** da chaminé (confira x, y no PNG) e é mais clara que o céu à noite. | D6, D3 do ciclo 2 |
+| Apagão apaga de fato: use `bg2` com as luzes apagadas, não só escurecimento. | D5 |
+| Fogo e explosão a partir de imagem real (Flow sobre preto + `blend: 'screen'` + `grow`), em vez de bolas desenhadas. | D5 |
+| Barco tem contato com a água (`sink` + `wake`); ao encalhar, `land: true` para o balanço. | D12, N1 |
+| Nada sob a legenda: base dos atores ≤ 86% da altura na tela (`shot_check`). | N2 |
+| Cores de época: equipamento militar em cinza ou oliva, nada de casco vermelho e branco. Uniforme do ano certo: 1946 francês = capacete M1 / chapéu de mato, cáqui. | D9, D11 |
+| Rótulo com sublinha ≥ 27 px de letra em 1080p; nome próprio sem quebra de linha. | D7 |
+| Um evento de som por ação. Sem duplicata. | D8 |
+| Ambientes de movimento audíveis: 18 a 24 dB abaixo da voz, não 30. | D13 |
+
+## Campos do motor (`studio/remotion/src/vietna/scene.tsx`)
+**Cena:**
+- `bg`;
+- `bg2` + `bg2_at_s` (troca de estado na palavra);
+- `z0`/`z1` (zoom), `ox`/`oy` (origem);
+- `pan: [dx,dy]` px (parallax com `depth` dos atores);
+- `night`, `rays`;
+- `actors[]`, `fx[]`.
+
+**Ator:**
+- **Posição e trajeto:** `src`, `from`/`to` (% da tela, base do objeto), `path` (pontos), `h` (% da altura), `t0_s`/`t1_s`, `ease`.
+- **Balanço:** `bob`/`rock`/`period`.
+- **Coluna andando:** `slices` + `ar` + `gait`/`legs`.
+- **Bandeira:** `wave`.
+- **Água:** `wake`/`sink`/`land`.
+- **Rastros:** `smoke` (chaminé) e `emit` (rastro: fumaça, borrifo, poeira com `dir`, `color`, `from_s`/`to_s`).
+- **Hélice:** `rotor`.
+- **Aparência e tempo:** `flip`, `tint`, `appear_s`, `fade_s`, `hide_s`, `grow`, `scale1`, `rot`, `blend`, `opacity`.
+- **Parallax:** `depth`.
+
+**Efeitos** (`fx`):
+- `explosion` (`at`);
+- `fire` (`from`);
+- `smoke`;
+- `searchlight`;
+- `tracers` (`from`→`to`);
+- `blackout` (`at`).
+
+**Adicionados no lote 1 (2026-11-20):**
+- Ator: `path_s` (tempo de cada ponto do `path`: pausa, ida e volta), `rope` (cabo de guindaste até o alto da tela), `label` (etiqueta de papel sobre a pasta), `flicker` (chama tremulando, com `blend`), `slices: 1` (uma pessoa andando com passada).
+- Efeitos: `flash` (flash de câmera na palavra), `typing` (máquina de escrever letra a letra; `paper: false` escreve sobre o papel do fundo), `calendar` (folhas voltando de um ano a outro), `dominoes` (peças caindo em sequência; `wobble_s`, `fall_s`, `step_s`), `smoke.color` (fumaça clara à noite).
+- Fogo e explosão do Flow sobre preto: use `tint: "contrast(1.5) brightness(0.92)"` junto do `blend: 'screen'` para o preto do arquivo não clarear um retângulo no quadro.
+- Mapear % do fundo para a tela: a origem do zoom muda tudo. Confira a posição no quadro renderizado (não na grade do fundo): `ys = oy + (y − oy) × z`.
+
+**Som por ator/efeito** (`pipeline/assembly/vietna_mix_scene.py`): `sfx` (steps, step1, water, engine, plane, rotor, crowd, jeep, crane, flag, fire, typewriter, flips; ou one-shot paper, stamp, thud, boom, flash, bell, cheer; `none` para calar), `note` (motivo, R16) e `sfx_at_word` (palavra do one-shot, vira `reason: word:`). Sem `sfx`, o tipo sai do ator (`slices` → passos, `wake` → água e motor, `rotor` → helicóptero). Camas ficam 19–22 dB abaixo da voz (RMS da fala) e camas iguais em tomadas vizinhas viram um som só. Som extra da tomada: `scene.sfx: [{kind, at_s|from_s/to_s, note, at_cue}]`.
+
+Cues: qualquer `*_word` + `*_offset` vira `*_s`.
+
+## Quando escalar
+- Duas regenerações no Flow sem um objeto de época correto. Registre e pergunte se pode usar foto de domínio público.
+- Revisor reprovou no ciclo 2.
+- Custo de crédito maior que 0.
+- Afirmação da fala sem fonte para o que a imagem mostra (R1).
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && python3 -c "
+import json
+p='channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json'
+d=json.load(open(p))
+print(type(d), list(d.keys())[:20] if isinstance(d,dict) else len(d))
+"
+<class 'dict'> ['S01', 'S02', 'S03', 'S04', 'S05', 'S06', 'S07', 'S08', 'S09', 'S10']
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && wc -l studio/remotion/src/vietna/scene.tsx && grep -n "wave\|slices\|tint\|cloth\|feTurbulence\|rotor" studio/remotion/src/vietna/scene.tsx | head -80
+499 studio/remotion/src/vietna/scene.tsx
+19:	slices?: number; // fatias independentes (coluna de soldados marchando)
+20:	ar?: number; // largura/altura da imagem (necessário com slices)
+28:	tint?: string; // filtro CSS extra (ex.: dessaturar casco)
+31:	gait?: number; // com slices: passada das pernas (graus de inclinação; 0 = sem passada). Padrão 9
+33:	wave?: number; // com slices: bandeira tremulando (amplitude px) em vez de passos
+38:	rotor?: [number, number, number]; // hélice/rotor: centro x,y (% do ator) e largura (% do ator)
+53:	sfx?: string; // som do movimento (mixer): steps, water, engine, plane, rotor, crowd, jeep, crane, paper, stamp, thud, flag, none
+107:if (a.slices && a.slices >= 1) {
+108:		const n = a.slices;
+114:					if (a.wave) {
+115:						const dy = Math.sin(f / 6 - i * 0.55) * a.wave;
+118:								<Img src={staticFile(a.src)} style={{height: hpx, maxWidth: 'none', marginLeft: -i * sw, filter: a.tint}} />
+128:						<Img src={staticFile(a.src)} style={{position: 'absolute', left: -i * sw, top: 0, height: hpx, maxWidth: 'none', clipPath: clip, filter: `${a.tint ?? ''} drop-shadow(0 10px 14px rgba(0,0,0,0.45))`, ...extra}} />
+173:							<Img src={staticFile(a.src)} style={{position: 'absolute', left: -xx, top: 0, width: W, height: hpx, maxWidth: 'none', filter: `${a.tint ?? ''} brightness(${shade})`}} />
+187:<Img src={staticFile(src)} style={{height: hpx, display: 'block', transformOrigin: '50% 100%', scale: `${a.flip ? -1 : 1} ${fl}`, transform: a.tilt ? `perspective(${hpx * 3}px) rotateX(${a.tilt}deg)` : undefined, filter: a.blend ? `${a.tint ?? ''} brightness(${0.9 + 0.15 * Math.sin(f / 2.1)})` : `${a.tint ?? ''} drop-shadow(0 14px 18px rgba(0,0,0,0.45))`}} />
+188:			{a.rotor && <div style={{position: 'absolute', left: `${(a.flip ? 100 - a.rotor[0] : a.rotor[0])}%`, top: `${a.rotor[1]}%`, width: `${a.rotor[2]}%`, height: hpx * 0.05, translate: '-50% -50%', borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(30,30,30,0.55), rgba(30,30,30,0.15) 60%, rgba(30,30,30,0) 72%)', scale: `${0.85 + 0.15 * Math.abs(Math.sin(f * 1.3))} 1`, filter: 'blur(1.5px)'}} />}
+[0m
+[0m→ [0mRead studio/remotion/src/vietna/scene.tsx
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && python3 -c "
+import json
+p='channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json'
+d=json.load(open(p))
+print(json.dumps(d['S03'],indent=1,ensure_ascii=False))
+"
+{
+ "kind": "shots",
+ "shots": [
+  {
+   "kind": "date",
+   "start_s": 0.0,
+   "end_s": 4.2,
+   "cue": "a história começa vinte anos antes, num discurso em Hanói",
+   "motion": "moradores de Hanói caminham com bandeiras pela avenida",
+   "layers": [
+    "céu/fundo",
+    "cena em planos",
+    "atmosfera+rótulo"
+   ],
+   "scene": {
+    "bg": "vietna/hanoi_45b.jpg",
+    "z0": 1.03,
+    "z1": 1.08,
+    "ox": "50%",
+    "oy": "75%",
+    "actors": [
+     {
+      "src": "vietna/civis_45.png",
+      "from": [
+       -14,
+       84
+      ],
+      "to": [
+       24.7,
+       84
+      ],
+      "h": 24,
+      "t0_s": 0.1,
+      "t1_s": 4.2,
+      "ease": "linear",
+      "slices": 6,
+      "ar": 2.232,
+      "bob": 3,
+      "rock": 1.0,
+      "sfx": "steps",
+      "note": "passos de moradores a caminho da praça"
+     }
+    ]
+   },
+   "date": {
+    "top": "HANÓI",
+    "big": "1945"
+   }
+  },
+  {
+   "kind": "plate",
+   "start_s": 4.2,
+   "end_s": 7.2,
+   "cue": "e termina quase dez anos depois, em Saigon",
+   "motion": "helicóptero cruza o céu de Saigon",
+   "layers": [
+    "céu/fundo",
+    "cena em planos",
+    "atmosfera+rótulo"
+   ],
+   "scene": {
+    "bg": "vietna/saigon_75.jpg",
+    "z0": 1.02,
+    "z1": 1.07,
+    "ox": "50%",
+    "oy": "60%",
+    "actors": [
+     {
+      "src": "vietna/ch53.png",
+      "from": [
+       -14,
+       33
+      ],
+      "to": [
+       66,
+       27
+      ],
+      "h": 15,
+      "t0_s": 4.2,
+      "t1_s": 7.2,
+      "ease": "linear",
+      "rot": [
+       2,
+       0
+      ],
+      "rotor": [
+       55,
+       4,
+       92
+      ],
+      "bob": 3,
+      "period": 50,
+      "sfx": "rotor",
+      "note": "pás do helicóptero sobre Saigon"
+     }
+    ]
+   },
+   "names": [
+    {
+     "text": "SAIGON",
+     "sub": "1975",
+     "at_word": "Saigon",
+     "out_s": 7.1
+    }
+   ]
+  },
+  {
+   "kind": "stat",
+   "start_s": 7.2,
+   "end_s": 9.91,
+   "cue": "no meio, há um lugar para o Brasil",
+   "motion": "a bandeira do Brasil tremula no mastro, na baía do Rio",
+   "layers": [
+    "céu/fundo",
+    "cena em planos",
+    "atmosfera+rótulo"
+   ],
+   "scene": {
+    "bg": "vietna/rio_65.jpg",
+    "z0": 1.03,
+    "z1": 1.08,
+    "ox": "30%",
+    "oy": "40%",
+    "actors": [
+     {
+      "src": "vietna/bandeira_br.png",
+      "from": [
+       23.2,
+       21
+      ],
+      "h": 16,
+      "slices": 8,
+      "ar": 1.4286,
+      "wave": 6,
+      "tint": "saturate(0.8) sepia(0.15)",
+      "sfx": "flag",
+      "note": "bandeira do Brasil batendo ao vento"
+     }
+    ]
+   },
+   "stat": {
+    "big": "BRASIL",
+    "label": "1965",
+    "big_at_word": "Brasil",
+    "label_at_word": "Brasil"
+   }
+  }
+ ],
+ "vignette": 0.3
+}
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && ls -l --time-style=full-iso studio/remotion/src/vietna/scene.tsx channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json && grep -rn '"flag"' --include=*.json channels/ | head -20; ls orchestra/results/ | head -30
+-rw-rw-r-- 1 jonnathan jonnathan 55060 2026-11-20 17:13:41.566058022 -0300 channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json
+-rw-rw-r-- 1 jonnathan jonnathan 33484 2026-11-20 17:13:41.564912668 -0300 studio/remotion/src/vietna/scene.tsx
+zsh:1: no matches found: --include=*.json
+review-S03-c1.json
+review-S03-ccalib-orchestra_review_S03_gemini.json
+review-S03-ccalib-orchestra_review_S03_opencode_deepseek-v4.1-flash-free.json
+review-S03-ccalib-orchestra_review_S03_opencode_longcat-2.5-free.json
+review-S03-ccalib-orchestra_review_S03_opencode_mimo-v2.6-flash-free.json
+review-S03-ccalib-orchestra_review_S03_opencode_nemotron-3.5-super-vl-free.json
+review-S03-cmimo-v2.6-flash-free-orchestra_review_S03_gemini.json
+review-S05-ccalib-orchestra_review_S05_gemini.json
+review-S05-ccalib-orchestra_review_S05_opencode_deepseek-v4.1-flash-free.json
+review-S05-ccalib-orchestra_review_S05_opencode_longcat-2.5-free.json
+review-S05-ccalib-orchestra_review_S05_opencode_mimo-v2.6-flash-free.json
+review-S06-ccalib-orchestra_review_S06_gemini.json
+review-S06-ccalib-orchestra_review_S06_opencode_deepseek-v4.1-flash-free.json
+review-S06-ccalib-orchestra_review_S06_opencode_mimo-v2.6-flash-free.json
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && date && ls -l --time-style=full-iso orchestra/results | tail -5 && ls orchestra/tasks | head -50
+sex 20 nov 2026 17:14:02 -03
+-rw-rw-r-- 1 jonnathan jonnathan 2566 2026-11-20 17:12:07.961322823 -0300 review-S05-ccalib-orchestra_review_S05_opencode_longcat-2.5-free.json
+-rw-rw-r-- 1 jonnathan jonnathan 2922 2026-11-20 16:59:22.721856245 -0300 review-S05-ccalib-orchestra_review_S05_opencode_mimo-v2.6-flash-free.json
+-rw-rw-r-- 1 jonnathan jonnathan  778 2026-11-20 16:53:41.736221924 -0300 review-S06-ccalib-orchestra_review_S06_gemini.json
+-rw-rw-r-- 1 jonnathan jonnathan 2581 2026-11-20 16:55:30.056837969 -0300 review-S06-ccalib-orchestra_review_S06_opencode_deepseek-v4.1-flash-free.json
+-rw-rw-r-- 1 jonnathan jonnathan 3294 2026-11-20 17:04:27.056888075 -0300 review-S06-ccalib-orchestra_review_S06_opencode_mimo-v2.6-flash-free.json
+bake-s03.md
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && grep -rn 'flag' --include='*.json' channels/ | head; ls orchestra; cat orchestra/results/review-S03-c1.json | head -40
+...output truncated...
+
+Full output saved to: /home/jonnathan/.local/share/opencode/tool-output/tool_1fa9844e0001RxqnF3WjmpAgi1
+
+EgzKcnY", "_type": "url", "url": "https://www.youtube.com/watch?v=LQsPEgzKcnY", "__x_forwarded_for_ip": null}, {"title": "Diferentes perspectivas de Maring\u00e1 - D\u00e9cadas de 1940/1950", "thumbnails": [{"url": "https://i.ytimg.com/vi/Gd8y8dNpMw4/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhhIGEoYTAP&rs=AOn4CLDuvPzoeKcEUAcChIBuRtxPqu2CnQ", "height": 270, "width": 480}], "duration": 40, "view_count": 5000, "timestamp": null, "live_status": null, "availability": null, "channel_url": null, "uploader_url": null, "creators": null, "ie_key": "Youtube", "id": "Gd8y8dNpMw4", "_type": "url", "url": "https://www.youtube.com/watch?v=Gd8y8dNpMw4", "__x_forwarded_for_ip": null}, {"title": "D\u00e9cadas de 1940/1950 - Maring\u00e1", "thumbnails": [{"url": "https://i.ytimg.com/vi/SC0YDegzAXA/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhlIGEoRzAP&rs=AOn4CLAiEIA2QCxJ1cmVXdESQGF5Km_i8g", "height": 270, "width": 480}], "duration": 85, "view_count": 3300, "timestamp": null, "live_status": null, "availability": null, "channel_url": null, "uploader_url": null, "creators": null, "ie_key": "Youtube", "id": "SC0YDegzAXA", "_type": "url", "url": "https://www.youtube.com/watch?v=SC0YDegzAXA", "__x_forwarded_for_ip": null}, {"title": "Aeroporto Dr. Gast\u00e3o Vidigal - Maring\u00e1", "thumbnails": [{"url": "https://i.ytimg.com/vi/nHy83LqfNbg/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhsIGwobDAP&rs=AOn4CLBx8VvG9Q8co_HjkXr4foo8lp0Qww", "height": 270, "width": 480}], "duration": 38, "view_count": 5700, "timestamp": null, "live_status": null, "availability": null, "channel_url": null, "uploader_url": null, "creators": null, "ie_key": "Youtube", "id": "nHy83LqfNbg", "_type": "url", "url": "https://www.youtube.com/watch?v=nHy83LqfNbg", "__x_forwarded_for_ip": null}, {"title": "Funda\u00e7\u00e3o de Maring\u00e1", "thumbnails": [{"url": "https://i.ytimg.com/vi/zChOwKYoEjY/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhsIGwobDAP&rs=AOn4CLBqi36IRY_PiNwdW0eBPXt-YHMCyg", "height": 270, "width": 480}], "duration": 42, "view_count": 7000, "timestamp": null, "live_status": null, "availability": null, "channel_url": null, "uploader_url": null, "creators": null, "ie_key": "Youtube", "id": "zChOwKYoEjY", "_type": "url", "url": "https://www.youtube.com/watch?v=zChOwKYoEjY", "__x_forwarded_for_ip": null}, {"title": "Grande Hotel Bandeirantes", "thumbnails": [{"url": "https://i.ytimg.com/vi/7I16NALa1Ds/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhoIGgoaDAP&rs=AOn4CLCHKI7nzmL2aXsuHkx6HYZPmNHH5Q", "height": 270, "width": 480}], "duration": 37, "view_count": 5100, "timestamp": null, "live_status": null, "availability": null, "channel_url": null, "uploader_url": null, "creators": null, "ie_key": "Youtube", "id": "7I16NALa1Ds", "_type": "url", "url": "https://www.youtube.com/watch?v=7I16NALa1Ds", "__x_forwarded_for_ip": null}, {"title": "Propaganda Promocional de Maring\u00e1 - D\u00e9cada de 1950", "thumbnails": [{"url": "https://i.ytimg.com/vi/eLgyZNwq5lM/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhlIGUoZTAP&rs=AOn4CLDekhl9getmdR30FzFRCG9gb6GLbQ", "height": 270, "width": 480}], "duration": 113, "view_count": 8900, "timestamp": null, "live_status": null, "availability": null, "channel_url": null, "uploader_url": null, "creators": null, "ie_key": "Youtube", "id": "eLgyZNwq5lM", "_type": "url", "url": "https://www.youtube.com/watch?v=eLgyZNwq5lM", "__x_forwarded_for_ip": null}, {"title": "Evento de lan\u00e7amento da TV Cultura Maring\u00e1 (filiada a Rede Globo) - 1974", "thumbnails": [{"url": "https://i.ytimg.com/vi/M_cu5d-8KVE/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhkIGQoZDAP&rs=AOn4CLCv0ms_3pnZDYb2KhvTJr6KgWpEkg", "height": 270, "width": 480}], "duration": 20, "view_count": 3400, "timestamp": null, "live_status": null, "availability": null, "channel_url": null, "uploader_url": null, "creators": null, "ie_key": "Youtube", "id": "M_cu5d-8KVE", "_type": "url", "url": "https://www.youtube.com/watch?v=M_cu5d-8KVE", "__x_forwarded_for_ip": null}], "extractor_key": "YoutubeTab", "extractor": "youtube:tab", "webpage_url": "https://www.youtube.com/channel/UC6o-wCZ-skcvO7RsciTudsQ/videos", "original_url": "https://www.youtube.com/channel/UC6o-wCZ-skcvO7RsciTudsQ/videos", "webpage_url_basename": "videos", "webpage_url_domain": "youtube.com", "release_year": null, "epoch": 1795106955, "__files_to_move": {}, "_version": {"version": "2026.10.26", "current_git_head": null, "release_git_head": "c91f8de0bfb3577894abad716eaaa01659e6bd14", "repository": "yt-dlp/yt-dlp"}}
+bakeoff
+calib
+calib.sh
+logs
+results
+review
+review.sh
+run.sh
+tasks
+{
+ "cena": "S03",
+ "ciclo": 1,
+ "notas": {
+  "V1": 4.8,
+  "V2": 4.7,
+  "V3": 3.5,
+  "V4": 4.2,
+  "V5": 4.8,
+  "V6": 4.7,
+  "V7": 4.0,
+  "V9": 4.9,
+  "V10": 4.8
+ },
+ "media": 4.49,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "0.0s, 4.2s, 7.2s",
+   "defeito": "Emendas visíveis com quadros pretos no início da cena (0.0s) e nas transições de tomada (4.2s e 7.2s), onde a imagem de fundo desaparece completamente enquanto a legenda permanece visível.",
+   "correcao": "Ajustar o tempo de entrada/saída e a sobreposição das camadas de cenário no Remotion para garantir transição contínua sem flashes pretos."
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "4.2s",
+   "defeito": "Ausência de rótulo de contexto histórico na tomada de Saigon, diferente das tomadas 1 ('HANOI 1945') e 3 ('BRASIL 1965') que possuem identificação na tela.",
+   "correcao": "Inserir rótulo de contexto de canto (ex: 'SAIGON 1975') na tomada 2 para manter a consistência do padrão gráfico da cena."
+  }
+ ],
+ "bom": [
+  "Movimento crível de caminhada dos moradores de Hanói com alternância de pernas e empunhadura de bandeiras em 2.1s.",
+  "Deslocamento suave e realista do helicóptero sobrevoando a cidade de Saigon com hélices em rotação contínua (5.7s).",
+  "Excelente dinâmica do tecido da bandeira do Brasil tremulando no mastro na baía do Rio (8.55s).",
+  "Sincronização perfeita entre os elementos de cena e os momentos correspondentes da fala (V9).",
+  "Estilo visual pintado coerente, excelente legibilidade de legendas e boa ambientação de época em todas as tomadas."
+ ]
+}
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && ls -la orchestra/bakeoff orchestra/calib 2>/dev/null | head -40; ls media/pt-br-historia/vietna/render/ 2>/dev/null | head
+orchestra/bakeoff:
+total 12516
+drwxrwxr-x 2 jonnathan jonnathan    4096 nov 20 17:13 .
+drwxrwxr-x 8 jonnathan jonnathan    4096 nov 20 16:51 ..
+-rw-rw-r-- 1 jonnathan jonnathan       0 nov 20 17:13 deepseek-v4.1-flash-free.result.json
+-rw-rw-r-- 1 jonnathan jonnathan   90423 nov 20 17:12 mimo-v2.6-flash-free.log
+-rw-rw-r-- 1 jonnathan jonnathan    2307 nov 20 17:12 mimo-v2.6-flash-free.result.json
+-rw-rw-r-- 1 jonnathan jonnathan    1571 nov 20 17:13 mimo-v2.6-flash-free.review.json
+-rwxrwxr-x 1 jonnathan jonnathan    1026 nov 20 16:45 run.sh
+-rw-rw-r-- 1 jonnathan jonnathan 6241223 nov 20 17:12 S03.mimo-v2.6-flash-free.mp4
+-rw-rw-r-- 1 jonnathan jonnathan 6266543 nov 20 16:46 S03.orig.mp4
+-rw-rw-r-- 1 jonnathan jonnathan   34798 nov 20 17:12 scene.mimo-v2.6-flash-free.tsx
+-rw-rw-r-- 1 jonnathan jonnathan   33484 nov 20 16:46 scene.tsx.orig
+-rw-rw-r-- 1 jonnathan jonnathan   55179 nov 20 17:12 spec.mimo-v2.6-flash-free.json
+-rw-rw-r-- 1 jonnathan jonnathan   55060 nov 20 16:46 spec.orig
+-rw-rw-r-- 1 jonnathan jonnathan     322 nov 20 17:13 summary.txt
+
+orchestra/calib:
+total 68
+drwxrwxr-x 2 jonnathan jonnathan 4096 nov 20 17:12 .
+drwxrwxr-x 8 jonnathan jonnathan 4096 nov 20 16:51 ..
+-rw-rw-r-- 1 jonnathan jonnathan 1987 nov 20 16:52 gemini.S03.json
+-rw-rw-r-- 1 jonnathan jonnathan 2277 nov 20 16:53 gemini.S05.json
+-rw-rw-r-- 1 jonnathan jonnathan  703 nov 20 16:53 gemini.S06.json
+-rw-rw-r-- 1 jonnathan jonnathan 2432 nov 20 16:54 opencode_deepseek-v4.1-flash-free.S03.json
+-rw-rw-r-- 1 jonnathan jonnathan 2902 nov 20 16:54 opencode_deepseek-v4.1-flash-free.S05.json
+-rw-rw-r-- 1 jonnathan jonnathan 2462 nov 20 16:55 opencode_deepseek-v4.1-flash-free.S06.json
+-rw-rw-r-- 1 jonnathan jonnathan 2481 nov 20 17:10 opencode_longcat-2.5-free.S03.json
+-rw-rw-r-- 1 jonnathan jonnathan 2429 nov 20 17:12 opencode_longcat-2.5-free.S05.json
+-rw-rw-r-- 1 jonnathan jonnathan    0 nov 20 17:12 opencode_longcat-2.5-free.S06.json
+-rw-rw-r-- 1 jonnathan jonnathan 3325 nov 20 16:57 opencode_mimo-v2.6-flash-free.S03.json
+-rw-rw-r-- 1 jonnathan jonnathan 2769 nov 20 16:59 opencode_mimo-v2.6-flash-free.S05.json
+-rw-rw-r-- 1 jonnathan jonnathan 3117 nov 20 17:04 opencode_mimo-v2.6-flash-free.S06.json
+-rw-rw-r-- 1 jonnathan jonnathan 1473 nov 20 17:04 opencode_nemotron-3.5-super-vl-free.S03.json
+-rw-rw-r-- 1 jonnathan jonnathan  200 nov 20 17:06 opencode_nemotron-3.5-super-vl-free.S05.json
+-rw-rw-r-- 1 jonnathan jonnathan  200 nov 20 17:07 opencode_nemotron-3.5-super-vl-free.S06.json
+-rw-rw-r-- 1 jonnathan jonnathan  119 nov 20 17:07 summary.txt
+f11.jpg
+f14.jpg
+f1.jpg
+f8.jpg
+list.txt
+lote_02_10_preview.mp4
+lote_02_10_v2_preview.mp4
+lote_02_10_v3_preview.mp4
+p_13.3.jpg
+p_14.jpg
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && diff -q studio/remotion/src/vietna/scene.tsx orchestra/bakeoff/scene.tsx.orig; diff -q channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json orchestra/bakeoff/spec.orig; cat orchestra/bakeoff/summary.txt; cat orchestra/bakeoff/run.sh
+mimo-v2.6-flash-free {"status": "done", "files": ["studio/remotion/src/vietna/scene.tsx", "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json", "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes.json", "media/pt-br-historia/vietna/render/props/S03.json", "media/pt-br-historia/vie
+#!/bin/bash
+# Roda a mesma tarefa em vários modelos, restaurando os arquivos entre eles.
+cd /home/jonnathan/projects/ai-youtube-channel
+V=channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna; R=media/pt-br-historia/vietna/render; B=orchestra/bakeoff
+cp studio/remotion/src/vietna/scene.tsx $B/scene.tsx.orig; cp $V/scenes_spec.json $B/spec.orig; cp $R/S03.mp4 $B/S03.orig.mp4
+for m in "$@"; do
+  n=$(basename $m); cp $B/scene.tsx.orig studio/remotion/src/vietna/scene.tsx; cp $B/spec.orig $V/scenes_spec.json
+  TIMEOUT=2700 bash orchestra/run.sh opencode bake-s03 $m > $B/$n.result.json
+  cp $R/S03.mp4 $B/S03.$n.mp4 2>/dev/null; cp studio/remotion/src/vietna/scene.tsx $B/scene.$n.tsx; cp $V/scenes_spec.json $B/spec.$n.json; cp orchestra/logs/bake-s03.log $B/$n.log
+  bash orchestra/review.sh S03 $n > $B/$n.review.json 2>/dev/null
+  echo "$n $(head -c 300 $B/$n.result.json)"
+done
+cp $B/scene.tsx.orig studio/remotion/src/vietna/scene.tsx; cp $B/spec.orig $V/scenes_spec.json; cp $B/S03.orig.mp4 $R/S03.mp4
+echo FIM
+[0m
+[0m$ [0mcd /home/jonnathan/projects/ai-youtube-channel && python3 -c "
+from PIL import Image
+for p in ['studio/remotion/public/vietna/bandeira_br.png','studio/remotion/public/vietna/ch53.png']:
+    im=Image.open(p); print(p, im.size, im.mode)
+"
+studio/remotion/public/vietna/bandeira_br.png (1200, 840) RGBA
+studio/remotion/public/vietna/ch53.png (1250, 365) RGBA
+[0m
+[0m✗ [0mcd /home/jonnathan/projects/ai-youtube-channel && mkdir -p /tmp/opencode/look && python3 -c "
+from PIL import Image
+im=Image.open('studio/remotion/public/vietna/bandeira_br.png').convert('RGBA')
+bg=Image.new('RGBA',im.size,(255,0,255,255)); bg.alpha_composite(im); bg.convert('RGB').save('/tmp/opencode/look/flag.png')
+print(im.getbbox())
+" failed
+[91m[1mError: [0mThe user has specified a rule which prevents you from using this specific tool call. Here are some of the relevant rules [{"permission":"*","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/jonnathan/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"external_directory","pattern":"/tmp/opencode/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/migrate-to-skills/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-debug/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/impeccable/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/create-rule/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/review-security/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/update-cli-config/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/walkthrough-artifacts/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-framework-map/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-otel/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-evals/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/create-skill/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/shell/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/migrate-to-builds/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-hillclimb/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/statusline/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/sdk/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-create-agent/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/review-bugbot/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/automate/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/update-cursor-settings/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/share/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/goal/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-migrate-v2/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/split-to-prs/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/create-hook/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/create-subagent/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-setup-slack/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/subscribe/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-deploy/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/babysit/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/rename-chat/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-github/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-mcp-auth/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/review/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/loop/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/origin/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/new-repo/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/canvas/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/onboard/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/niche-research/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-license/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/postmortem/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-upgrade/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/script/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-docs/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-markup/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/weekly-review/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-saas/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-multimedia/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/radar/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/select/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/video-structure/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-render/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/review/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-interactivity/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-studio/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/package/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-best-practices/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-maps/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-create/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-captions/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/video-research/*","action":"allow"},{"permission":"external_directory","action":"deny","pattern":"*"},{"permission":"external_directory","pattern":"/home/jonnathan/.local/share/opencode/tool-output/*","action":"allow"}]
+[0m✗ [0mmkdir -p /tmp/opencode/look && python3 -c "
+from PIL import Image
+im=Image.open('studio/remotion/public/vietna/bandeira_br.png').convert('RGBA')
+print(im.size, im.getbbox())
+bg=Image.new('RGBA',im.size,(255,0,255,255)); bg.alpha_composite(im); bg.convert('RGB').save('/tmp/opencode/look/flag.png')
+" failed
+[91m[1mError: [0mThe user has specified a rule which prevents you from using this specific tool call. Here are some of the relevant rules [{"permission":"*","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/jonnathan/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"external_directory","pattern":"/tmp/opencode/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/migrate-to-skills/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-debug/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/impeccable/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/create-rule/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/review-security/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/update-cli-config/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/walkthrough-artifacts/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-framework-map/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-otel/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-evals/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/create-skill/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/shell/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/migrate-to-builds/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-hillclimb/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/statusline/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/sdk/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-create-agent/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/review-bugbot/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/automate/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/update-cursor-settings/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/share/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/goal/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-migrate-v2/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/split-to-prs/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/create-hook/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/create-subagent/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-setup-slack/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/subscribe/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-deploy/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/babysit/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/rename-chat/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-github/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/bdk-mcp-auth/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/review/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/loop/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/origin/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/new-repo/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/canvas/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/.agents/skills/onboard/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/niche-research/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-license/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/postmortem/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-upgrade/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/script/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-docs/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-markup/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/weekly-review/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-saas/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-multimedia/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/radar/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/select/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/video-structure/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-render/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/review/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-interactivity/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-studio/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/package/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-best-practices/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-maps/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-create/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/remotion-captions/*","action":"allow"},{"permission":"external_directory","pattern":"/home/jonnathan/projects/ai-youtube-channel/.claude/skills/video-research/*","action":"allow"},{"permission":"external_directory","action":"deny","pattern":"*"},{"permission":"external_directory","pattern":"/home/jonnathan/.local/share/opencode/tool-output/*","action":"allow"}]
+[0m
+[0m$ [0mpwd; ls -ld studio/remotion/public studio/remotion/public/vietna; readlink -f studio/remotion/public/vietna
+/home/jonnathan/projects/ai-youtube-channel
+drwxrwxr-x 5 jonnathan jonnathan 4096 nov 20 00:50 studio/remotion/public
+drwxrwxr-x 2 jonnathan jonnathan 4096 nov 20 15:51 studio/remotion/public/vietna
+/home/jonnathan/projects/ai-youtube-channel/studio/remotion/public/vietna
+[0m
+[0m$ [0mpython3 -c "from PIL import Image; im=Image.open('studio/remotion/public/vietna/bandeira_br.png'); print(im.size, im.getbbox())"
+(1200, 840) (0, 0, 1200, 840)
+[0m

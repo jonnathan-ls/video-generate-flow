@@ -1,0 +1,6 @@
+gemini ok
+opencode/deepseek-v4.1-flash-free ok
+opencode/mimo-v2.6-flash-free ok
+opencode/nemotron-3.5-super-vl-free ok
+opencode/longcat-2.5-free ok
+opencode/hy4-flash-free ok

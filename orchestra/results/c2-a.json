@@ -1,0 +1,32 @@
+{
+ "status": "done",
+ "files": [
+  "studio/remotion/src/vietna/VietnaScene.tsx",
+  "studio/remotion/src/vietna/shots.tsx",
+  "pipeline/assembly/vietna_mix_scene.py",
+  "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json",
+  "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes.json",
+  "media/pt-br-historia/vietna/render/props/S05.json",
+  "media/pt-br-historia/vietna/render/voz/S05.wav",
+  "media/pt-br-historia/vietna/render/S05_video.mp4",
+  "media/pt-br-historia/vietna/render/S05_mix.wav",
+  "media/pt-br-historia/vietna/render/S05_mix.events.json",
+  "media/pt-br-historia/vietna/render/S05.mp4",
+  "media/pt-br-historia/vietna/render/S05_sheet.jpg",
+  "media/pt-br-historia/vietna/render/qa_c2a/"
+ ],
+ "validators": {
+  "shot_check": "PASS S05 · PASS cota mapa/texto/doc sem cena: 0% de 28s",
+  "scene_gates": "PASS — S05: 28,5s · 5 tomadas · parados nenhum · -14,8 LUFS pico -1,4 · fx PASS",
+  "tsc": "limpo nos arquivos alterados (restam 2 erros antigos em src/thumbs/GuerraVietna.tsx, fora do escopo)"
+ },
+ "summary": "M1: NameTag virou faixa escura translúcida com texto claro (48/32 px), sombra forte e opção pos left/right; tags de data/stat/typo/chart/domino/pair receberam faixa escura ou sombra e nenhuma letra ficou abaixo de 27 px em 1080p (doc src 22->28, chart src 26->28, pair sub 24->30, domino sub 28->30, dourado trocado por papel onde o fundo é claro). M7: vietna_mix_scene.py só emite o sweep de câmera se a tomada tiver pan != 0 ou zoom > 15%. S05: rótulo VIET MINH + sublinha 'frente pela independência do Vietnã' na palavra Viet#1 (20,0 s, à direita, 4,2 s de duração) e push-in de 18% na 1ª tomada para o sweep ter movimento real. B6 corrigido: saiu a linha 'é o começo da guerra', ficou só 'França × Viet Minh'. Prep, render e mix do S05 refeitos; gates PASS.",
+ "issues": [
+  "B2 (S02: 'TROPAS' a 50 px da coluna e sublinha quebrando) NÃO foi corrigido: a tarefa só autoriza editar S05 no spec e nenhuma outra tarefa do ciclo cobre B2 (c2-d lista B1, B7, B10). Precisa de uma tarefa para o S02.",
+  "F11 do fx_check exige um sweep por cena: com o M7 literal, cenas sem pan e sem zoom >15% (S02, S03, S04, S06, S07–S10) passam a NÃO emitir sweep e vão falhar F11 quando forem remixadas. S02–S06 só ficam de novo verdes depois que c2-d colocar pan+depth; por isso convém rodar c2-d antes de remixar S02–S06. S05 já está ok (push-in de 18%).",
+  "R1: 'frente pela independência do Vietnã' é a expansão do nome Viet Minh; sources.md (FR46/HO45) não registra essa frase. Falta fonte explícita para a sublinha.",
+  "O estilo novo de rótulo (NameTag escura, tags com faixa) só aparece nas cenas que forem re-renderizadas; os mp4 antigos de S01–S04 e S06–S10 ainda mostram o rótulo velho até c2-b/c2-c/c2-d rodarem.",
+  "Se o revisor quiser a etiqueta de papel clara em alguma cena, falta um campo por tomada para alternar (hoje o estilo é global).",
+  "Evidência em media/pt-br-historia/vietna/render/qa_c2a/: VIET MINH em 1080p e 640x360, tomada da rua sem a linha duplicada e o fim do push-in sem borda exposta."
+ ]
+}

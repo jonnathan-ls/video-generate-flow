@@ -1,0 +1,237 @@
+{
+ "kind": "shots",
+ "shots": [
+  {
+   "kind": "plate",
+   "start_s": 0.0,
+   "end_s": 5.3,
+   "cue": "helicópteros evacuam Saigon",
+   "motion": "civis correm ao heliponto; CH-53 decola na palavra evacuam",
+   "scene": {
+    "bg": "lab/saigon/bg_telhado.jpg",
+    "z0": 1.02,
+    "z1": 1.12,
+    "ox": "35%",
+    "oy": "70%",
+    "actors": [
+     {
+      "src": "lab/saigon/civis.png",
+      "from": [
+       100,
+       86
+      ],
+      "to": [
+       60,
+       86
+      ],
+      "h": 26,
+      "t0_s": 0.6,
+      "t1_s": 3.4,
+      "ease": "out",
+      "bob": 2,
+      "sfx": "crowd",
+      "note": "gente correndo para o helicóptero"
+     },
+     {
+      "src": "lab/saigon/ch53.png",
+      "path": [
+       [
+        32,
+        78
+       ],
+       [
+        32,
+        78
+       ],
+       [
+        42,
+        55
+       ],
+       [
+        100,
+        6
+       ]
+      ],
+      "path_s": [
+       0,
+       3.49,
+       4.3,
+       5.3
+      ],
+      "h": 34,
+      "rot": [
+       0,
+       -8
+      ],
+      "rotor": [
+       50,
+       8,
+       60
+      ],
+      "emit": {
+       "at": [
+        50,
+        95
+       ],
+       "color": "rgba(200,190,170,.5)",
+       "from_s": 3.0,
+       "to_s": 4.6
+      },
+      "sfx": "rotor",
+      "note": "rotor do CH-53 decolando na palavra evacuam",
+      "from": [
+       32,
+       78
+      ]
+     }
+    ]
+   },
+   "names": [
+    {
+     "text": "SAIGON · 29 DE ABRIL DE 1975",
+     "sub": "evacuação pelos Fuzileiros dos EUA",
+     "at_word": "29",
+     "out_s": 5.0
+    }
+   ]
+  },
+  {
+   "kind": "plate",
+   "start_s": 5.3,
+   "end_s": 9.6,
+   "cue": "tanques entram no palácio presidencial",
+   "motion": "tanque avança e derruba o portão na palavra palácio",
+   "scene": {
+    "bg": "lab/saigon/bg_avenida.jpg",
+    "bg2": "lab/saigon/bg_patio.jpg",
+    "bg2_at_s": 7.97,
+    "z0": 1.0,
+    "z1": 1.1,
+    "ox": "50%",
+    "oy": "60%",
+    "actors": [
+     {
+      "src": "lab/saigon/tanque.png",
+      "path": [
+       [
+        -35,
+        88
+       ],
+       [
+        32,
+        82
+       ],
+       [
+        50,
+        70
+       ]
+      ],
+      "path_s": [
+       6.0,
+       7.97,
+       9.6
+      ],
+      "h": 34,
+      "scale1": 0.55,
+      "emit": {
+       "at": [
+        15,
+        90
+       ],
+       "color": "rgba(150,140,120,.6)",
+       "from_s": 6.0,
+       "to_s": 9.6
+      },
+      "sfx": "engine",
+      "note": "motor e lagartas do tanque norte-vietnamita",
+      "from": [
+       -35,
+       88
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "flash",
+      "x": 50,
+      "y": 62,
+      "at_s": 7.97,
+      "size": 1
+     },
+     {
+      "kind": "smoke",
+      "x": 50,
+      "y": 64,
+      "from_s": 7.97,
+      "w": 30,
+      "color": "rgba(170,160,140,.6)"
+     }
+    ]
+   },
+   "names": [
+    {
+     "text": "PALÁCIO PRESIDENCIAL · 30 DE ABRIL",
+     "sub": "tanques do Vietnã do Norte",
+     "at_word": "palácio",
+     "out_s": 9.4
+    }
+   ]
+  },
+  {
+   "kind": "plate",
+   "start_s": 9.6,
+   "end_s": 15.4,
+   "cue": "Duong Van Minh manda as tropas deporem as armas",
+   "motion": "tanque parado no pátio; fuzis caem no chão na palavra deporem",
+   "scene": {
+    "bg": "lab/saigon/bg_patio.jpg",
+    "z0": 1.05,
+    "z1": 1.18,
+    "ox": "50%",
+    "oy": "55%",
+    "actors": [
+     {
+      "src": "lab/saigon/tanque.png",
+      "from": [
+       30,
+       76
+      ],
+      "h": 20,
+      "sfx": "none",
+      "note": "tanque já parado no pátio"
+     },
+     {
+      "src": "lab/saigon/fuzis.png",
+      "from": [
+       56,
+       30
+      ],
+      "to": [
+       56,
+       84
+      ],
+      "h": 26,
+      "t0_s": 13.81,
+      "t1_s": 14.3,
+      "ease": "in",
+      "appear_s": 13.81,
+      "rot": [
+       -20,
+       0
+      ],
+      "sfx": "thud",
+      "note": "fuzis largados no chão na palavra deporem"
+     }
+    ]
+   },
+   "names": [
+    {
+     "text": "DUONG VAN MINH",
+     "sub": "presidente do Sul · 2 dias no cargo",
+     "at_word": "Duong",
+     "out_s": 13.4
+    }
+   ]
+  }
+ ]
+}

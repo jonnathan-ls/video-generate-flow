@@ -1,0 +1,173 @@
+{
+ "slug": "w-pedro2",
+ "date": "2026-11-19",
+ "queries": [
+  "Dom Pedro II história completa",
+  "Dom Pedro II documentário",
+  "Dom Pedro II",
+  "Dom Pedro II biografia",
+  "Dom Pedro II como nasceu",
+  "a história de Dom Pedro II",
+  "Dom Pedro II documentário completo",
+  "Dom Pedro II explicado",
+  "Dom Pedro II resumo",
+  "Dom Pedro II imperador do Brasil",
+  "Dom Pedro II biografia completa"
+ ],
+ "new_per_query": [
+  [
+   "Dom Pedro II história completa",
+   21
+  ],
+  [
+   "Dom Pedro II documentário",
+   5
+  ],
+  [
+   "Dom Pedro II",
+   5
+  ],
+  [
+   "Dom Pedro II biografia",
+   4
+  ],
+  [
+   "Dom Pedro II como nasceu",
+   5
+  ],
+  [
+   "a história de Dom Pedro II",
+   1
+  ],
+  [
+   "Dom Pedro II documentário completo",
+   1
+  ],
+  [
+   "Dom Pedro II explicado",
+   0
+  ],
+  [
+   "Dom Pedro II resumo",
+   0
+  ],
+  [
+   "Dom Pedro II imperador do Brasil",
+   1
+  ],
+  [
+   "Dom Pedro II biografia completa",
+   1
+  ]
+ ],
+ "S_videos": 9,
+ "S_channels": 7,
+ "leader_views": 368651,
+ "median_without_leader": 28452.0,
+ "median_without_top2": 4095,
+ "share_below_5k": 0.5,
+ "convergence": true,
+ "meta_ok": "42/44",
+ "grade": "NÍVEL DECISÃO",
+ "videos": [
+  {
+   "id": "W-AGaMBTHEc",
+   "title": "DOM PEDRO II: o ÚLTIMO IMPERADOR do BRASIL",
+   "channel": "Tinocando TV",
+   "subs": 2890000,
+   "date": "2026-11-01",
+   "age": 18,
+   "views": 368651,
+   "min": 40.5,
+   "lang": "pt"
+  },
+  {
+   "id": "ilSo-YPJ0MA",
+   "title": "Como foi o funeral de Dom Pedro II após sua morte no exílio (1891)",
+   "channel": "Fóssil Medieval",
+   "subs": 14900,
+   "date": "2026-08-22",
+   "age": 89,
+   "views": 357776,
+   "min": 26.9,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "OgJHmIvwzLY",
+   "title": "Assim Era a Vida do Imperador Dom Pedro II no Palácio de São Cristóvão",
+   "channel": "Fóssil Medieval",
+   "subs": 14900,
+   "date": "2026-07-24",
+   "age": 118,
+   "views": 94944,
+   "min": 22.9,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "DhKjWFG7xf0",
+   "title": "Dom Pedro II e o 15 de novembro",
+   "channel": "Paulo Rezzutti",
+   "subs": 622000,
+   "date": "2026-11-11",
+   "age": 8,
+   "views": 57899,
+   "min": 33.1,
+   "lang": "pt"
+  },
+  {
+   "id": "V9pizUrCNs0",
+   "title": "1889: Assim era a vida de Dom Pedro II após ser exilado do Brasil",
+   "channel": "Fóssil Medieval",
+   "subs": 14900,
+   "date": "2026-11-03",
+   "age": 16,
+   "views": 52809,
+   "min": 20.9,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "V3IFt6uX5yo",
+   "title": "Como Dom Pedro II Viveu Seus Últimos Anos Longe do Brasil",
+   "channel": "Reconstrução Histórica",
+   "subs": 70900,
+   "date": "2026-10-03",
+   "age": 47,
+   "views": 4095,
+   "min": 23.1,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "jCctvIr5gGU",
+   "title": "Dom Pedro II — Biografia Completa em Português | Do Trono ao Exílio",
+   "channel": "Aura Scripta",
+   "subs": 189,
+   "date": "2026-09-10",
+   "age": 70,
+   "views": 105,
+   "min": 20.5,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "L5-qwwCDlaY",
+   "title": "O POVO DERRUBOU DOM PEDRO II? COMO A REPÚBLICA REALMENTE COMEÇOU!",
+   "channel": "DigoExplica",
+   "subs": 174,
+   "date": "2026-11-04",
+   "age": 15,
+   "views": 56,
+   "min": 16.8,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "u4XbX7uBj0g",
+   "title": "Dom Pedro II: biografia e vida pessoal do último imperador do Brasil",
+   "channel": "Raízes do Brasil Profundo",
+   "subs": 7820,
+   "date": "2026-11-03",
+   "age": 16,
+   "views": 15,
+   "min": 23.8,
+   "lang": "pt"
+  }
+ ]
+}

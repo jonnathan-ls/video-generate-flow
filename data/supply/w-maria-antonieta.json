@@ -1,0 +1,102 @@
+{
+ "slug": "w-maria-antonieta",
+ "date": "2026-11-19",
+ "queries": [
+  "Maria Antonieta história completa",
+  "Maria Antonieta documentário",
+  "Maria Antonieta",
+  "Maria Antonieta biografia",
+  "Maria Antonieta como nasceu",
+  "a história de Maria Antonieta",
+  "Maria Antonieta documentário completo",
+  "Maria Antonieta explicado",
+  "Maria Antonieta resumo",
+  "Maria Antonieta rainha da França"
+ ],
+ "new_per_query": [
+  [
+   "Maria Antonieta história completa",
+   9
+  ],
+  [
+   "Maria Antonieta documentário",
+   0
+  ],
+  [
+   "Maria Antonieta",
+   1
+  ],
+  [
+   "Maria Antonieta biografia",
+   2
+  ],
+  [
+   "Maria Antonieta como nasceu",
+   1
+  ],
+  [
+   "a história de Maria Antonieta",
+   0
+  ],
+  [
+   "Maria Antonieta documentário completo",
+   1
+  ],
+  [
+   "Maria Antonieta explicado",
+   0
+  ],
+  [
+   "Maria Antonieta resumo",
+   0
+  ],
+  [
+   "Maria Antonieta rainha da França",
+   1
+  ]
+ ],
+ "S_videos": 3,
+ "S_channels": 3,
+ "leader_views": 122483,
+ "median_without_leader": 32690.0,
+ "median_without_top2": null,
+ "share_below_5k": 0.5,
+ "convergence": true,
+ "meta_ok": "15/15",
+ "grade": "NÍVEL DECISÃO",
+ "videos": [
+  {
+   "id": "pUhzXyalcK8",
+   "title": "A Sombria Verdade por Trás da Tragédia Genética | Maria Antonieta, a Princesa dos Habsburgos",
+   "channel": "Era da Realeza Europeia",
+   "subs": 1730,
+   "date": "2026-11-02",
+   "age": 17,
+   "views": 122483,
+   "min": 23.7,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "z8xB50uFD3o",
+   "title": "O Cabelo Dela Ficou Branco aos 35: Os 23 Anos de Maria Antonieta na França",
+   "channel": "Retratos do Passado",
+   "subs": 4280,
+   "date": "2026-10-24",
+   "age": 26,
+   "views": 65338,
+   "min": 42.9,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "4PPxYuBE4ko",
+   "title": "Vida completa de Maria Antonieta (1755-1793)",
+   "channel": "Biografias Honestas",
+   "subs": 17,
+   "date": "2026-10-24",
+   "age": 26,
+   "views": 42,
+   "min": 24.9,
+   "lang": "pt-BR"
+  }
+ ]
+}

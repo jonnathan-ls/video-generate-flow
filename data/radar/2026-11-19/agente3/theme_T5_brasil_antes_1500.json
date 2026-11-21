@@ -1,0 +1,55 @@
+{
+ "theme": "T5",
+ "regex": "1500|cabral|pr[ée]-colonial|pr[ée]-cabral|antes d[eo]s? portugu|ind[ií]genas|tupi|marajoara|sambaqui|amaz[ôo]nia antiga|before 1500|before the portuguese|indigenous",
+ "queries": [
+  "brasil antes de 1500 ",
+  " brasil antes dos portugueses documentário ",
+  " povos indígenas antes de cabral história ",
+  " civilização marajoara ",
+  " sambaquis história ",
+  " amazônia antiga civilizações perdidas"
+ ],
+ "n_results": 159,
+ "window": [
+  {
+   "id": "ykVlDE-Wvwg",
+   "duration": 2342,
+   "view_count": 192,
+   "channel": "terradosprimeirospovos ",
+   "channel_url": "https://www.youtube.com/channel/UCjw26KLyxkFIyxMD5By5jcg",
+   "upload_date": "20261023",
+   "title": "O BRASIL ANTES DE 1500: A HISTÓRIA QUE NÃO TE CONTARAM",
+   "qs": [
+    "povos indígenas antes de cabral história"
+   ],
+   "age": 27
+  },
+  {
+   "id": "5KYZY8fYUw8",
+   "duration": 1886,
+   "view_count": 152,
+   "channel": "Curiosidades com VDZ",
+   "channel_url": "https://www.youtube.com/channel/UCCOWta6Opsbz5k3-fTjyleQ",
+   "upload_date": "20261020",
+   "title": "THE INDIGENOUS CIVILIZATION THAT BUILT A DIFFERENT AMAZON: THE SECRETS OF THE MARAJOARA CULTURE!",
+   "qs": [
+    "civilização marajoara"
+   ],
+   "age": 30
+  },
+  {
+   "id": "h46qCR_f5cg",
+   "duration": 2026,
+   "upload_date": "20261020",
+   "title": "BRAZIL BEFORE 1500: The History of a Territory That Was Already Inhabited.",
+   "qs": [
+    "brasil antes de 1500",
+    "povos indígenas antes de cabral história"
+   ],
+   "age": 30
+  }
+ ],
+ "S_videos": 3,
+ "S_channels": 3,
+ "median_without_leader": 76.0
+}

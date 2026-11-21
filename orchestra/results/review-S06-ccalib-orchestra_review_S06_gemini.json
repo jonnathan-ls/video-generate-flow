@@ -1,0 +1,35 @@
+{
+ "cena": "S06",
+ "ciclo": "calib",
+ "notas": {
+  "V1": 3,
+  "V2": 4,
+  "V3": 3,
+  "V4": 3,
+  "V5": 3,
+  "V6": 4,
+  "V7": 3,
+  "V9": 3,
+  "V10": 3
+ },
+ "media": 3.3,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "media",
+   "tempo": "8.0",
+   "defeito": "Texto de 'US$ 10 milhões' com baixo contraste sobre o fundo da água.",
+   "correcao": "Aumentar contraste e ajustar camada de fundo."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "24.0",
+   "defeito": "Movimento de flashes e plateia ligeiramente rígido.",
+   "correcao": "Incrementar variação de quadros na animação dos fotógrafos."
+  }
+ ],
+ "bom": [
+  "Atmosfera histórica bem definida e paleta de cores coerente.",
+  "Composição espacial e iluminação adequadas ao tom do documentário."
+ ]
+}

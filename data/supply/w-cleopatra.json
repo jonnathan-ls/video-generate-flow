@@ -1,0 +1,146 @@
+{
+ "slug": "w-cleopatra",
+ "date": "2026-11-19",
+ "queries": [
+  "Cleópatra história completa",
+  "Cleópatra documentário",
+  "Cleópatra",
+  "Cleópatra biografia",
+  "Cleópatra como nasceu",
+  "a história de Cleópatra",
+  "Cleópatra documentário completo",
+  "Cleópatra explicado",
+  "Cleópatra resumo",
+  "Cleópatra rainha do Egito"
+ ],
+ "new_per_query": [
+  [
+   "Cleópatra história completa",
+   22
+  ],
+  [
+   "Cleópatra documentário",
+   16
+  ],
+  [
+   "Cleópatra",
+   7
+  ],
+  [
+   "Cleópatra biografia",
+   7
+  ],
+  [
+   "Cleópatra como nasceu",
+   10
+  ],
+  [
+   "a história de Cleópatra",
+   1
+  ],
+  [
+   "Cleópatra documentário completo",
+   4
+  ],
+  [
+   "Cleópatra explicado",
+   2
+  ],
+  [
+   "Cleópatra resumo",
+   2
+  ],
+  [
+   "Cleópatra rainha do Egito",
+   3
+  ]
+ ],
+ "S_videos": 7,
+ "S_channels": 7,
+ "leader_views": 270033,
+ "median_without_leader": 1240.0,
+ "median_without_top2": 632,
+ "share_below_5k": 0.67,
+ "convergence": true,
+ "meta_ok": "46/74",
+ "grade": "COLETA FALHOU (bloqueio do YouTube: repetir mais tarde, não é oferta zero)",
+ "videos": [
+  {
+   "id": "X-TgyBWVWHY",
+   "title": "A Cleópatra foi muito mais legal do que você sabe",
+   "channel": "Gabbie Fadel",
+   "subs": 2080000,
+   "date": "2026-08-08",
+   "age": 103,
+   "views": 270033,
+   "min": 45.1,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "1LImwJdMRaA",
+   "title": "Egito de Cleópatra: A Civilização Que Desafiou a Roma Antiga",
+   "channel": "História do Mundo",
+   "subs": 17900,
+   "date": "2026-09-16",
+   "age": 64,
+   "views": 241380,
+   "min": 66.9,
+   "lang": "pt"
+  },
+  {
+   "id": "jl2TU-lFd3o",
+   "title": "Quem Foi Cleópatra de Verdade? A História por Trás do Mito",
+   "channel": "Durma Com História Chata",
+   "subs": 32300,
+   "date": "2026-08-24",
+   "age": 87,
+   "views": 9378,
+   "min": 91.3,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "5ZifN56iwzU",
+   "title": "CLEÓPATRA : O Nascimento de uma RAINHA | A Guerra pelo Trono do EGITO. CAPÍTULO 1. 🐍",
+   "channel": "Guerras da Antiguidade",
+   "subs": 156,
+   "date": "2026-07-24",
+   "age": 118,
+   "views": 1848,
+   "min": 22.5,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "Ol1JysWGSBc",
+   "title": "Cleopatra (1912) — Filme Completo com Legendas em Português",
+   "channel": "Aleatorissimo ",
+   "subs": 1710,
+   "date": "2026-08-24",
+   "age": 87,
+   "views": 632,
+   "min": 87.2,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "LVbvDQbphHQ",
+   "title": "Cleópatra — A Rainha que Prometeu Reinos aos Filhos | Biografia para Dormir",
+   "channel": "Quem Mudou o Mundo",
+   "subs": 174,
+   "date": "2026-11-06",
+   "age": 13,
+   "views": 89,
+   "min": 78.5,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "WjwbQA9uwAw",
+   "title": "Cleópatra — A verdadeira história da última faraó do Egito 🎙️ | Grandes Personagens",
+   "channel": "MERGULHANDO NA HISTÓRIA",
+   "subs": 14,
+   "date": "2026-08-12",
+   "age": 99,
+   "views": 38,
+   "min": 22.6,
+   "lang": "pt-BR"
+  }
+ ]
+}

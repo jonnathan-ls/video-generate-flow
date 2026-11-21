@@ -1,0 +1,748 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 7,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 11 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/jonnathan/projects/ai-youtube-channel/studio/hyperframes/lacre-a/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s1\"> is a timeline element that contains nested <img id=\"s1-i\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s1",
+        "dataAttributes": {},
+        "sourceFile": "/home/jonnathan/projects/ai-youtube-channel/studio/hyperframes/lacre-a/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s1\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s2\"> is a timeline element that contains nested <img id=\"s2-i\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s2",
+        "dataAttributes": {},
+        "sourceFile": "/home/jonnathan/projects/ai-youtube-channel/studio/hyperframes/lacre-a/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s2\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s3\"> is a timeline element that contains nested <img id=\"s3-i\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s3",
+        "dataAttributes": {},
+        "sourceFile": "/home/jonnathan/projects/ai-youtube-channel/studio/hyperframes/lacre-a/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s3\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s5\"> is a timeline element that contains nested <img id=\"s5-i\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s5",
+        "dataAttributes": {},
+        "sourceFile": "/home/jonnathan/projects/ai-youtube-channel/studio/hyperframes/lacre-a/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s5\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s7\"> is a timeline element that contains nested <img id=\"s7-i\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s7",
+        "dataAttributes": {},
+        "sourceFile": "/home/jonnathan/projects/ai-youtube-channel/studio/hyperframes/lacre-a/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s7\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s9\"> is a timeline element that contains nested <img id=\"s9-n\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s9",
+        "dataAttributes": {},
+        "sourceFile": "/home/jonnathan/projects/ai-youtube-channel/studio/hyperframes/lacre-a/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s9\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"voice\" is 37.87s but its slot (data-duration) is 39.07s — the slot is shortened to the media length when rendered. Set data-duration to ~37.87s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "39.070",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0
+      }
+    ]
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 7,
+    "findings": [
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 10.853,
+        "selector": "#stamp",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 631.48,
+          "top": 391.14,
+          "right": 1497.39,
+          "bottom": 678.94,
+          "width": 865.91,
+          "height": 287.8
+        },
+        "containerSelector": "#s3-c",
+        "text": "FUGINDO",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.33,
+        "lifetime": {
+          "start": 10.66,
+          "end": 12.26
+        },
+        "dataAttributes": {
+          "data-start": "10.660",
+          "data-duration": "1.6",
+          "data-track-index": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 631.48,
+          "y": 391.14,
+          "width": 865.91,
+          "height": 287.8
+        },
+        "firstSeen": 10.853,
+        "lastSeen": 10.853,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.853
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.171,
+        "selector": "#s1-i",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -136.61,
+          "top": -35.12,
+          "right": 1939.49,
+          "bottom": 1132.68,
+          "width": 2076.1,
+          "height": 1167.8
+        },
+        "containerSelector": "#s1",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 136.61,
+          "right": 19.49,
+          "top": 35.12,
+          "bottom": 52.68
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "s1-i",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -136.61,
+          "y": -35.12,
+          "width": 2076.1,
+          "height": 1167.8
+        },
+        "firstSeen": 2.171,
+        "lastSeen": 2.171,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.171
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 6.512,
+        "selector": "#s2-i",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -48.89,
+          "top": -72.73,
+          "right": 2055.82,
+          "bottom": 1111.17,
+          "width": 2104.7,
+          "height": 1183.9
+        },
+        "containerSelector": "#s2",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 48.89,
+          "right": 135.82,
+          "top": 72.73,
+          "bottom": 31.17
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "s2-i",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -48.89,
+          "y": -72.73,
+          "width": 2104.7,
+          "height": 1183.9
+        },
+        "firstSeen": 6.512,
+        "lastSeen": 6.512,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          6.512
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 10.853,
+        "selector": "#stamp",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 631.48,
+          "top": 391.14,
+          "right": 1497.39,
+          "bottom": 678.94,
+          "width": 865.91,
+          "height": 287.8
+        },
+        "containerSelector": "#stamp",
+        "text": "FUGINDO",
+        "fixHint": "Text is 866px x 288px inside 680px x 294px and overflows by up to 197px; widen the container to at least ~878px or shrink font-size from 150px to ~118px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 619.86,
+          "top": 396.07,
+          "right": 1300.14,
+          "bottom": 689.93,
+          "width": 680.28,
+          "height": 293.87
+        },
+        "overflow": {
+          "right": 197.25
+        },
+        "dataAttributes": {
+          "data-start": "10.660",
+          "data-duration": "1.6",
+          "data-track-index": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 631.48,
+          "y": 391.14,
+          "width": 865.91,
+          "height": 287.8
+        },
+        "firstSeen": 10.853,
+        "lastSeen": 10.853,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.853
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.853,
+        "selector": "#s3-i",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -49.12,
+          "top": -44.44,
+          "right": 2028.89,
+          "bottom": 1124.44,
+          "width": 2078.02,
+          "height": 1168.88
+        },
+        "containerSelector": "#s3",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 49.12,
+          "right": 108.89,
+          "top": 44.44,
+          "bottom": 44.44
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "s3-i",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -49.12,
+          "y": -44.44,
+          "width": 2078.02,
+          "height": 1168.88
+        },
+        "firstSeen": 10.853,
+        "lastSeen": 10.853,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.853
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.853,
+        "selector": "#s3-c",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -50.82,
+          "top": 0,
+          "right": 1869.18,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "containerSelector": "#s3",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 50.82
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "s3-c",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -50.82,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "firstSeen": 10.853,
+        "lastSeen": 10.853,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.853
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 19.535,
+        "selector": "#s5-i",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -334.51,
+          "top": -110.42,
+          "right": 1942.42,
+          "bottom": 1170.35,
+          "width": 2276.93,
+          "height": 1280.77
+        },
+        "containerSelector": "#s5",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 334.51,
+          "right": 22.42,
+          "top": 110.42,
+          "bottom": 90.35
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "s5-i",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -334.51,
+          "y": -110.42,
+          "width": 2276.93,
+          "height": 1280.77
+        },
+        "firstSeen": 19.535,
+        "lastSeen": 19.535,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          19.535
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 28.217,
+        "selector": "#s7-i",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -124.74,
+          "top": -51.38,
+          "right": 1961.34,
+          "bottom": 1122.04,
+          "width": 2086.08,
+          "height": 1173.42
+        },
+        "containerSelector": "#s7",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 124.74,
+          "right": 41.34,
+          "top": 51.38,
+          "bottom": 42.04
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "s7-i",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -124.74,
+          "y": -51.38,
+          "width": 2086.08,
+          "height": 1173.42
+        },
+        "firstSeen": 28.217,
+        "lastSeen": 28.217,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          28.217
+        ]
+      }
+    ],
+    "duration": 39.07,
+    "samples": [
+      2.171,
+      6.512,
+      10.853,
+      15.194,
+      19.535,
+      23.876,
+      28.217,
+      32.558,
+      36.899
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 8,
+    "truncated": false,
+    "faceCheck": {
+      "ran": true,
+      "candidates": 0,
+      "faces": 0
+    }
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.17:1; WCAG AA requires 3:1.",
+        "text": "FUGINDO",
+        "fg": "rgb(179,38,30)",
+        "bg": "rgb(140,93,63)",
+        "ratio": 1.17,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(228,178,175)",
+        "large": true,
+        "selector": "#stamp",
+        "dataAttributes": {
+          "data-start": "10.660",
+          "data-duration": "1.6",
+          "data-track-index": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 619.8600463867188,
+          "y": 396.0658874511719,
+          "width": 680.2798461914062,
+          "height": 293.8681945800781
+        },
+        "time": 10.853,
+        "times": [
+          10.853
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      2.171,
+      10.853,
+      19.535,
+      28.217,
+      36.899
+    ],
+    "checked": 6,
+    "passed": 5
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 4,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"29 DE NOVEMBRO DE 1807\" at 19 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "29 DE NOVEMBRO DE 1807",
+        "selector": "#l1 > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 127.29,
+          "y": 955,
+          "width": 325.36,
+          "height": 23
+        },
+        "time": 0.749,
+        "times": [
+          0.749,
+          28.335,
+          34.951
+        ],
+        "fontPx": 19,
+        "floorPx": 28,
+        "seconds": 5.492,
+        "elements": [
+          {
+            "selector": "#l1 > span:nth-of-type(1)",
+            "text": "29 DE NOVEMBRO DE 1807",
+            "fontPx": 19,
+            "time": 0.749,
+            "seconds": 5.492
+          },
+          {
+            "selector": "#l7 > span:nth-of-type(1)",
+            "text": "JANEIRO DE 1808",
+            "fontPx": 19,
+            "time": 28.335,
+            "seconds": 2.122
+          },
+          {
+            "selector": "#s9-t > small:nth-of-type(1)",
+            "text": "O HOMEM QUE PROVOCOU A FUGA",
+            "fontPx": 24,
+            "time": 34.951,
+            "seconds": 4.119
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.99 s (12.23–16.23 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 12.233,
+        "seconds": 3.994,
+        "floorSeconds": 3,
+        "until": 16.227
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 6.49 s (20.85–27.34 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 20.846,
+        "seconds": 6.491,
+        "floorSeconds": 3,
+        "until": 27.337
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 313
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

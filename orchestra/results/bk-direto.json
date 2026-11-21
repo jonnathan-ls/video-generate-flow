@@ -1,0 +1,21 @@
+{
+ "status": "done",
+ "files": [
+  "lab/bakeoff-saigon/out/direto_16x9.mp4",
+  "lab/bakeoff-saigon/direto/build.py",
+  "lab/bakeoff-saigon/direto/scene-01.jpeg..scene-06.jpeg"
+ ],
+ "validators": {
+  "ffprobe": "PASS 1920x1080 30fps, 451 quadros, 15,03 s, áudio aac com a narração"
+ },
+ "summary": "Estilo: ilustração guache vintage 1975 (ocre, oliva, vermelho desbotado). Técnica: 6 imagens do Flow (Nano Banana, 1 lote Agent, 0 crédito, ~2 min), montadas com ffmpeg: zoom lento (zoompan) alternando entrada/saída, fusões de 0,3 s nos cortes ditos pela narração (helicópteros 0s, evacuação 3,6s, dia 30 5,2s, tanques 6,5s, Minh 9,3s, armas 13s) e legendas curtas (data/nome) que entram na palavra. Render na GPU com h264_nvenc: ~11 s. Narração original mixada.",
+ "issues": [
+  "Só zoom em imagem parada: nenhuma cena tem ação interna (viola o padrão R18 se fosse produção); é o limite da técnica sem recortes/animação.",
+  "A imagem do palácio saiu parecida com a Casa Branca, não com o Palácio da Independência de Saigon; um espectador atento nota.",
+  "Duong Van Minh é desenho genérico, sem semelhança verificada; legenda 'Palácio presidencial' fica sobre o gramado e pouco legível em parte do quadro.",
+  "Cena 3 (calendário) mostra bordas de papel e linhas ilegíveis; não foi usado texto de data no desenho.",
+  "Sem som ambiente nem efeitos (R16 não aplicado); só a narração.",
+  "Não houve revisão independente por rubrica visual."
+ ],
+ "_custo_usd": 0.0
+}

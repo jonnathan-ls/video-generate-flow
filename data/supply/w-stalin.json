@@ -1,0 +1,102 @@
+{
+ "slug": "w-stalin",
+ "date": "2026-11-19",
+ "queries": [
+  "Stalin história completa",
+  "Stalin documentário",
+  "Stalin",
+  "Stalin biografia",
+  "Stalin como nasceu",
+  "a história de Stalin",
+  "Stalin documentário completo",
+  "Stalin explicado",
+  "Stalin resumo",
+  "Josef Stalin União Soviética"
+ ],
+ "new_per_query": [
+  [
+   "Stalin história completa",
+   24
+  ],
+  [
+   "Stalin documentário",
+   11
+  ],
+  [
+   "Stalin",
+   7
+  ],
+  [
+   "Stalin biografia",
+   10
+  ],
+  [
+   "Stalin como nasceu",
+   6
+  ],
+  [
+   "a história de Stalin",
+   2
+  ],
+  [
+   "Stalin documentário completo",
+   5
+  ],
+  [
+   "Stalin explicado",
+   5
+  ],
+  [
+   "Stalin resumo",
+   1
+  ],
+  [
+   "Josef Stalin União Soviética",
+   3
+  ]
+ ],
+ "S_videos": 3,
+ "S_channels": 3,
+ "leader_views": 59835,
+ "median_without_leader": 4962.5,
+ "median_without_top2": null,
+ "share_below_5k": 0.5,
+ "convergence": true,
+ "meta_ok": "40/74",
+ "grade": "COLETA FALHOU (bloqueio do YouTube: repetir mais tarde, não é oferta zero)",
+ "videos": [
+  {
+   "id": "pNq5UOhlY5Y",
+   "title": "STÁLIN E SUA FILHA: A VERDADE QUE MOSCOVO TENTOU ENTERRAR",
+   "channel": "Memórias Ocultas da URSS",
+   "subs": 7310,
+   "date": "2026-09-14",
+   "age": 66,
+   "views": 59835,
+   "min": 91.1,
+   "lang": "pt"
+  },
+  {
+   "id": "ebuK4qe9nLI",
+   "title": "7 prisões e 4 fugas: o caminho improvável de Stálin até o poder absoluto",
+   "channel": "História com Rafael Cerqueira",
+   "subs": 1740,
+   "date": "2026-11-06",
+   "age": 13,
+   "views": 9444,
+   "min": 53.7,
+   "lang": "pt-PT"
+  },
+  {
+   "id": "d2Bf4pUi2M0",
+   "title": "Fui à Cidade Onde Stalin Nasceu e DESCOBRI que...",
+   "channel": "Onde a História Aconteceu",
+   "subs": 82500,
+   "date": "2026-08-10",
+   "age": 101,
+   "views": 481,
+   "min": 21.5,
+   "lang": "pt-BR"
+  }
+ ]
+}

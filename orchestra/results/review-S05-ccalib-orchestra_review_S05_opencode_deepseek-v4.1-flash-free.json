@@ -1,0 +1,67 @@
+{
+ "cena": "S05",
+ "ciclo": "calib",
+ "notas": {
+  "V1": 2,
+  "V2": 4,
+  "V3": 1,
+  "V4": 3,
+  "V5": 3,
+  "V6": 4,
+  "V7": 4,
+  "V9": 2,
+  "V10": 3
+ },
+ "media": 2.89,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "19.30-21.50",
+   "defeito": "A usina nunca explode e as janelas continuam acesas; os quadros 19.30, 20.00, 21.20, 21.22 e 21.25 são idênticos apesar da fala 'ataca a usina elétrica' (20.6-21.5) e do motion declarado 'a usina explode e a cidade apaga'",
+   "correcao": "Animar flash/explosão e apagar as luzes da usina e da cidade exatamente na palavra 'ataca/usina elétrica'"
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "3.25, 7.75, 12.40, 19.30, 25.64",
+   "defeito": "Movimento quase nulo nos três quadros seguidos: m00/m02 mostram o navio parado, m01/m04 mostram as colunas com as pernas na mesma pose (figuras deslizando) e m03 é estático. Não há navio 'entrando e atracando' nem marcha crível",
+   "correcao": "Animar de fato: navio deslizando e atracando, pernas alternando entre os quadros, fumaça subindo; evitar depender só de zoom/parallax"
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "0.0-28.5",
+   "defeito": "Inconsistência de estilo (R18): tomadas 1-2 são ilustração flat com raios dourados e prédios laranja; tomadas 3 (9.0-15.8) e 5 (22.8-28.5) são semi-realistas dessaturadas e sombrias; quebra o padrão visual do vídeo",
+   "correcao": "Unificar paleta, traço e luz de todas as tomadas no mesmo estilo ilustrado aprovado"
+  },
+  {
+   "prioridade": "media",
+   "tempo": "0.0, 6.5, 9.0, 15.8",
+   "defeito": "Dips para preto entre tomadas (a00, a06, a10, a18) criam cortes secos/emendas visíveis e quebram o ritmo",
+   "correcao": "Trocar por transições dentro do mesmo estilo (fusão/continuidade de cenário) sem tela preta"
+  },
+  {
+   "prioridade": "media",
+   "tempo": "19.30-22.2",
+   "defeito": "Rótulo 'HANÓI · 19 DE DEZEMBRO' em dourado pequeno e '≈ 15 mil soldados franceses chegam ao Tonkin' em vermelho pequeno: baixo contraste/ilegíveis a 640x360",
+   "correcao": "Aumentar corpo e contraste dos subtítulos dos rótulos; testar legibilidade em 640x360"
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "6.86",
+   "defeito": "Fantasma do título 'SAIGON' já aparece em marca d'água antes do cartão entrar em 7.44, gerando emenda/dupla exposição",
+   "correcao": "Entrar o cartão limpo, sem resíduo antecipado"
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "22.8-28.5",
+   "defeito": "Tropas em uniformes brancos/amarelos vivos pouco críveis para franceses de 1946 (checagem e)",
+   "correcao": "Ajustar uniformes para khaki/verde-oliva coloniais coerentes com a época"
+  }
+ ],
+ "bom": [
+  "Boa profundidade em camadas (água, cais, prédios, céu) na tomada 1 e perspectiva aérea na tomada 3",
+  "Atmosfera forte: raios de sol dourados e holofotes noturnos em Hanói",
+  "Rótulos de contexto corretos e datados (Saigon 1945, Haiphong março 1946, Hanói 19 dez 1946)",
+  "Legendas em caixa legíveis e bem posicionadas na maior parte do tempo"
+ ]
+}

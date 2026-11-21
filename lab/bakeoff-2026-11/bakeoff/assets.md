@@ -1,0 +1,10 @@
+# Assets do teste (estilo B): todos de domínio público ou CC0
+
+| Arquivo | Título no Commons | Autor | Licença | Página |
+|---|---|---|---|---|
+| gianni-embarque.jpg | Giuseppe Gianni - Embarque do Príncipe Regente D. João VI para o Brasil.jpg | <span title="Swiss painter (182 | Public domain | https://commons.wikimedia.org/wiki/File:Giuseppe_Gianni_-_Embarque_do_Pr%C3%ADncipe_Regente_D._Jo%C3%A3o_VI_para_o_Brasil.jpg |
+| bartolozzi-embarque.jpg | Francesco Bartolozzi, Henri Lévêque - Embarque de D. João VI para o Brasil.jpg | <sp | Public domain | https://commons.wikimedia.org/wiki/File:Francesco_Bartolozzi,_Henri_L%C3%A9v%C3%AAque_-_Embarque_de_D._Jo%C3%A3o_VI_para_o_Brasil.jpg |
+| departure-prince-regent.png | Departure of H.R.H. the Prince Regent of Portugal for the Brazils (Campaigns of the British Army in Portugal, London, 1812) - Henry L'Evêque, F. Bartollozzi.png | <span title="Swiss painter and | Public domain | https://commons.wikimedia.org/wiki/File:Departure_of_H.R.H._the_Prince_Regent_of_Portugal_for_the_Brazils_(Campaigns_of_the_British_Army_in_Portugal,_London,_1812)_-_Henry_L%27Ev%C3%AAque,_F._Bartollozzi.png |
+| napoleon-david.jpg | The Emperor Napoleon in His Study at the Tuileries, by Jacques-Louis David (1812) - National Gallery of Art (Samuel H. Kress Foundation).jpg | <span | Public domain | https://commons.wikimedia.org/wiki/File:The_Emperor_Napoleon_in_His_Study_at_the_Tuileries,_by_Jacques-Louis_David_(1812)_-_National_Gallery_of_Art_(Samuel_H._Kress_Foundation).jpg |
+| portolan-atlantic.jpg | A portolan chart of the Atlantic Ocean and adjacent continents. LOC 2008621738.jpg | Roiz, Pascoal | Public domain | https://commons.wikimedia.org/wiki/File:A_portolan_chart_of_the_Atlantic_Ocean_and_adjacent_continents._LOC_2008621738.jpg |
+| rugendas-bahia.jpg | Rugendas - Igreja do Hospício de N. S. da Piedade da Bahia (2).jpg | <a href="https://en.wikipedia.org/wiki/en:Johann_Moritz_Ruge | Public domain | https://commons.wikimedia.org/wiki/File:Rugendas_-_Igreja_do_Hosp%C3%ADcio_de_N._S._da_Piedade_da_Bahia_(2).jpg |

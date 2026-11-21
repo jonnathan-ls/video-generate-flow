@@ -1,0 +1,113 @@
+{
+ "slug": "revolucao-francesa",
+ "date": "2026-11-19",
+ "queries": [
+  "revolução francesa história completa",
+  "revolução francesa documentário",
+  "revolução francesa",
+  "revolução francesa explicado",
+  "revolução francesa como nasceu",
+  "a história de revolução francesa",
+  "revolução francesa resumo",
+  "revolução francesa documentário completo",
+  "revolução francesa o que aconteceu",
+  "revolução francesa 2026",
+  "revolução francesa animação"
+ ],
+ "new_per_query": [
+  [
+   "revolução francesa história completa",
+   22
+  ],
+  [
+   "revolução francesa documentário",
+   12
+  ],
+  [
+   "revolução francesa",
+   5
+  ],
+  [
+   "revolução francesa explicado",
+   2
+  ],
+  [
+   "revolução francesa como nasceu",
+   5
+  ],
+  [
+   "a história de revolução francesa",
+   2
+  ],
+  [
+   "revolução francesa resumo",
+   0
+  ],
+  [
+   "revolução francesa documentário completo",
+   2
+  ],
+  [
+   "revolução francesa o que aconteceu",
+   1
+  ],
+  [
+   "revolução francesa 2026",
+   9
+  ],
+  [
+   "revolução francesa animação",
+   1
+  ]
+ ],
+ "S_videos": 4,
+ "S_channels": 4,
+ "leader_views": 48523,
+ "median_without_leader": 255,
+ "median_without_top2": null,
+ "share_below_5k": 1.0,
+ "convergence": false,
+ "grade": "TRIAGEM (não serve para decidir)",
+ "videos": [
+  {
+   "id": "GX3se3DKzEg",
+   "title": "A REVOLUÇÃO FRANCESA explicada: da Bastilha a Napoleão",
+   "channel": "Epopeia",
+   "subs": 3290,
+   "date": "2026-11-09",
+   "age": 10,
+   "views": 48523,
+   "min": 62.6
+  },
+  {
+   "id": "9bzU_HUiDE4",
+   "title": "A Revolução Francesa Completa: Como a França Derrubou a Monarquia e Mudou o Mundo",
+   "channel": "O Passado Completo",
+   "subs": 2990,
+   "date": "2026-10-13",
+   "age": 37,
+   "views": 640,
+   "min": 48.3
+  },
+  {
+   "id": "hI-IendnFts",
+   "title": "ELEIÇÕES 2026, A REVOLUÇÃO FRANCESA E A TRIMEMBRAÇÃO DO ORGANISMO SOCIAL",
+   "channel": "Waldoritos",
+   "subs": 4400,
+   "date": "2026-10-16",
+   "age": 34,
+   "views": 255,
+   "min": 15.5
+  },
+  {
+   "id": "EmodEdg-ZNs",
+   "title": "Como a Revolução Francesa Transformou a Liberdade em Terror",
+   "channel": "Arca da Memória",
+   "subs": 1040,
+   "date": "2026-08-02",
+   "age": 109,
+   "views": 107,
+   "min": 21.6
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "done",
+  "files": [
+    "lab/claude-video-teste/deepseek/motor.js",
+    "lab/claude-video-teste/deepseek/frames/",
+    "lab/claude-video-teste/out/deepseek.mp4",
+    "lab/claude-video-teste/out/deepseek-pacing.json",
+    "lab/claude-video-teste/out/deepseek-contact.jpg"
+  ],
+  "validators": {
+    "ritmo": "PASS — maior buraco 0,5 s (limite 1,0), 86 passos com mudança, 0 cortes secos",
+    "movimento": "PASS — amplitude 3,8x (meta 3,4x da ferramenta, 2,2x do brief), quase-parada 33% (brief ≤40%), 7 picos (meta ≥2); referência livro-pop-up: 4,8x / 20% / 2 picos",
+    "frames": "PASS — 3 frames em 3,9 / 7,2 / 9,6 s olhados em frames/olhar.jpg e corrigidos"
+  },
+  "summary": "S03 reconstruída em paper-cut (livro-pop-up) sobre o motor do projeto: Hanói 1945 -> Saigon 1975 -> Brasil 1965, data-duration 9,91 s, um relógio só (render(t), sem Math.random/Date.now/timers).\nBatidas no segundo do brief: bandeira de Hanói 2,8; letras 3,5; saída em ordem inversa a partir de 4,4; helicóptero cruzando em 5,5; letras de Saigon 6,6; saída 7,6; morro/mar/bandeira do Brasil 8,15-9,14; letras 9,1.\nCorreções feitas olhando os frames: helicóptero refeito (cabine em areia em vez do 'buraco' creme, rotor de cauda) e recronometrado para sair antes das letras de Saigon (não sobrava a cauda no quadro em 7,2).\nTelhados deixaram de se soltar das casas na saída e cada peça agora sobe o bastante para sair do quadro de verdade (antes sumia no ar).\nColinas de Hanói afundam em vez de subir em disco gigante (virava uma 'lua' verde atrás de Saigon e disparava 1 corte seco).\nCasas recolocadas na paleta: nenhuma peça areia sobre colina areia (a casa sumia) e mastro em tinta, visível sobre a casa petróleo.\nRamo de folhas de papel no canto de cima (com nervuras e cabinho), como na referência, preenchendo o vazio sem tocar o texto.\nTexto de 168 para 210 px (a ficha pede 230; ficou 210 para não encostar no chão), duas linhas, margem esquerda.\nSaída:\nlab/claude-video-teste/out/deepseek.mp4 — 9,93 s, 1920x1080, 30 fps, 4,6 MB, sem som, sem loop.",
+  "issues": [
+    "O snapshot do HyperFrames avisa '[StaticGuard] Invalid HyperFrame contract: Missing window.__timelines registration', mas o seek funciona (frames e render conferem com o tempo pedido).",
+    "O primeiro quadro é página creme vazia: as colinas entram em 0,00/0,40 s, então ~0,3 s de nada antes do primeiro pouso.",
+    "Saigon: o prédio mais ao fundo (areia #E3CBA8) fica de baixo contraste com o creme e lê como 'fantasma'; é camada de profundidade, não defeito de render.",
+    "Amplitude caiu de 5,1x para 3,8x depois de sincronizar saídas e suavizar a saída das colinas; segue acima da meta da ferramenta (3,4x) mas abaixo da referência (4,8x).",
+    "Revisado por frames e folha de contato (1 fps), não assistido em tempo real."
+  ]
+}

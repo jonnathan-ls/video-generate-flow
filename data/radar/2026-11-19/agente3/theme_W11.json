@@ -1,0 +1,156 @@
+{
+ "theme": "W11",
+ "regex": "egit|fara[óo]|cle[óo]patra|pir[âa]mide|nilo|tutanc|ramss|ramés|egypt|pharaoh",
+ "queries": [
+  "egito antigo documentário ",
+  " egito antigo história completa ",
+  " faraós história ",
+  " cleópatra história completa ",
+  " pirâmides do egito documentário ",
+  " ramsés II história"
+ ],
+ "n_results": 135,
+ "window": [
+  {
+   "id": "zxQ30KkeSkU",
+   "duration": 1722,
+   "view_count": 728435,
+   "channel": "O Peregrino",
+   "channel_url": "https://www.youtube.com/channel/UCzzW_WOh9FdYDBs7ROvR--g",
+   "upload_date": "20261020",
+   "title": "Estruturas MISTERIOSAS no Brasil MAIS ANTIGAS que as Pirâmides do Egito | Ciência não Explica",
+   "qs": [
+    "pirâmides do egito documentário"
+   ],
+   "age": 30
+  },
+  {
+   "id": "yvWJVYTlIK0",
+   "duration": 2562,
+   "view_count": 584541,
+   "channel": "Cortes Sabedoria",
+   "channel_url": "https://www.youtube.com/channel/UCHJWkWmF8Zl1ovNkwrqCsFg",
+   "upload_date": "20260920",
+   "title": "The history of Egypt is much stranger than it seems.",
+   "qs": [
+    "pirâmides do egito documentário"
+   ],
+   "age": 60
+  },
+  {
+   "id": "X-TgyBWVWHY",
+   "duration": 2705,
+   "view_count": 269951,
+   "channel": "Gabbie Fadel",
+   "channel_url": "https://www.youtube.com/channel/UCS9K27KW782vvAwTHJpVePQ",
+   "upload_date": "20260820",
+   "title": "Cleopatra",
+   "qs": [
+    "cleópatra história completa"
+   ],
+   "age": 91
+  },
+  {
+   "id": "1LImwJdMRaA",
+   "duration": 4016,
+   "view_count": 241374,
+   "channel": "História do Mundo",
+   "channel_url": "https://www.youtube.com/channel/UCjoBdVJ3qNlddSZk_JOFozg",
+   "upload_date": "20260920",
+   "title": "Cleopatra's Egypt: The Civilization That Challenged Ancient Rome",
+   "qs": [
+    "cleópatra história completa"
+   ],
+   "age": 60
+  },
+  {
+   "id": "SAPIPBLt988",
+   "duration": 5459,
+   "view_count": 190777,
+   "channel": "HISTORY",
+   "channel_url": "https://www.youtube.com/channel/UC9MAhZQQd9egwWCxrwSIsJQ",
+   "upload_date": "20261020",
+   "title": "Building for the Pharaohs | Egypt: Engineering an Empire | Full Special",
+   "qs": [
+    "faraós história"
+   ],
+   "age": 30
+  },
+  {
+   "id": "cXhZVAfKaGQ",
+   "duration": 7827,
+   "view_count": 70807,
+   "channel": "Prof. Massimo Gallo - Il sapere con un clic",
+   "channel_url": "https://www.youtube.com/channel/UCDZzZgvNLNR6OQM5arnFJww",
+   "upload_date": "20260820",
+   "title": "La morte di Cleopatra ",
+   "qs": [
+    "cleópatra história completa"
+   ],
+   "age": 91
+  },
+  {
+   "id": "DbOADHc-kas",
+   "duration": 4429,
+   "view_count": 53316,
+   "channel": "Historia de las Civilizaciones",
+   "channel_url": "https://www.youtube.com/channel/UCcfjHhnVCTAoEHR5W6CN2rg",
+   "upload_date": "20260820",
+   "title": "Ancient Egypt: The Complete History, from the First Pharaoh to Cleopatra",
+   "qs": [
+    "cleópatra história completa"
+   ],
+   "age": 91
+  },
+  {
+   "id": "jl2TU-lFd3o",
+   "duration": 5479,
+   "view_count": 9378,
+   "channel": "Durma Com História Chata",
+   "channel_url": "https://www.youtube.com/channel/UCEt5mb0Ko93HPbHmMlVKlkw",
+   "upload_date": "20260920",
+   "title": "Who Was the Real Cleopatra? The Story Behind the Myth",
+   "qs": [
+    "cleópatra história completa"
+   ],
+   "age": 60
+  },
+  {
+   "id": "7EjDlJHcwgE",
+   "duration": 7320,
+   "view_count": 1944,
+   "channel": "Atlas das Civilizações",
+   "channel_url": "https://www.youtube.com/channel/UCZM7XlZWxNtera_9NQKWFJw",
+   "upload_date": "20260920",
+   "title": "Ramsés II: O Rei dos Reis que Moldou o Egito para Sempre (Reconstituição por IA)",
+   "qs": [
+    "ramsés II história"
+   ],
+   "age": 60
+  },
+  {
+   "id": "IZAw4kztEOg",
+   "duration": 3497,
+   "upload_date": "20260820",
+   "title": "ANCIENT EGYPT: The secret village of the pyramid and tomb builders! | Full documentary",
+   "qs": [
+    "egito antigo documentário",
+    "pirâmides do egito documentário"
+   ],
+   "age": 91
+  },
+  {
+   "id": "A3EL-92aMLQ",
+   "duration": 6960,
+   "upload_date": "20261020",
+   "title": "O segredo de Imhotep: como um simples mortal se tornou divino no Antigo Egito (Reconstrução IA)",
+   "qs": [
+    "egito antigo documentário"
+   ],
+   "age": 30
+  }
+ ],
+ "S_videos": 11,
+ "S_channels": 10,
+ "median_without_leader": 62061.5
+}

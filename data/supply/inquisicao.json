@@ -1,0 +1,133 @@
+{
+ "slug": "inquisicao",
+ "date": "2026-11-19",
+ "queries": [
+  "inquisição história completa",
+  "inquisição documentário",
+  "inquisição",
+  "inquisição explicado",
+  "inquisição como nasceu",
+  "a história de inquisição",
+  "inquisição resumo",
+  "inquisição documentário completo",
+  "inquisição o que aconteceu",
+  "inquisição 2026",
+  "inquisição animação"
+ ],
+ "new_per_query": [
+  [
+   "inquisição história completa",
+   13
+  ],
+  [
+   "inquisição documentário",
+   6
+  ],
+  [
+   "inquisição",
+   7
+  ],
+  [
+   "inquisição explicado",
+   2
+  ],
+  [
+   "inquisição como nasceu",
+   6
+  ],
+  [
+   "a história de inquisição",
+   1
+  ],
+  [
+   "inquisição resumo",
+   1
+  ],
+  [
+   "inquisição documentário completo",
+   5
+  ],
+  [
+   "inquisição o que aconteceu",
+   1
+  ],
+  [
+   "inquisição 2026",
+   6
+  ],
+  [
+   "inquisição animação",
+   0
+  ]
+ ],
+ "S_videos": 6,
+ "S_channels": 6,
+ "leader_views": 16841,
+ "median_without_leader": 81,
+ "median_without_top2": 65.5,
+ "share_below_5k": 1.0,
+ "convergence": false,
+ "grade": "TRIAGEM (não serve para decidir)",
+ "videos": [
+  {
+   "id": "vsl-WrK8YHA",
+   "title": "INQUISIÇÃO: A MÁQUINA MORTÍFERA DA IGREJA CATÓLICA",
+   "channel": "Além da fé - com Jason Ferrer",
+   "subs": 194000,
+   "date": "2026-08-06",
+   "age": 105,
+   "views": 16841,
+   "min": 27.1
+  },
+  {
+   "id": "zNt-9UzlbYI",
+   "title": "A VERDADE SOBRE A INQUISIÇÃO! (HISTÓRIA DA INQUISIÇÃO)",
+   "channel": "À Mesa Com Jesus",
+   "subs": 460,
+   "date": "2026-10-09",
+   "age": 41,
+   "views": 626,
+   "min": 19.8
+  },
+  {
+   "id": "kzT1vG2w1Fg",
+   "title": "A Inquisição também foi Protestante: O Que Não Te Contaram Sobre a Reforma",
+   "channel": "O deus da Garagem",
+   "subs": 683,
+   "date": "2026-10-22",
+   "age": 28,
+   "views": 194,
+   "min": 30.7
+  },
+  {
+   "id": "9q1FAMt7Dn4",
+   "title": "LIVE: INQUISIÇÃO.  A INQUISIÇÃO MEDIEVAL.",
+   "channel": "DE CIMA DOS TELHADOS",
+   "subs": 12300,
+   "date": "2026-11-04",
+   "age": 15,
+   "views": 81,
+   "min": 56.5
+  },
+  {
+   "id": "aMo0lcP2mXI",
+   "title": "A INQUISIÇÃO: OS HORRORES COMETIDOS EM NOME DE DEUS",
+   "channel": "Crônicas da Humanidade ",
+   "subs": 158,
+   "date": "2026-10-31",
+   "age": 19,
+   "views": 50,
+   "min": 41.1
+  },
+  {
+   "id": "ucZATMnRm-U",
+   "title": "INQUISIÇÃO: a Tortura em Nome de DEUS | A História Completa",
+   "channel": "Fio do Tempo",
+   "subs": 614,
+   "date": "2026-11-12",
+   "age": 7,
+   "views": 17,
+   "min": 51.5
+  }
+ ]
+}

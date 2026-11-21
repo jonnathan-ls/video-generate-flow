@@ -1,0 +1,12 @@
+{"data":"2026-11-19","metodo":"yt-dlp flat (aba /videos, datas aproximadas; views arredondadas na mediana); mediana = últimos 15 vídeos longos (>15 min) com >=7 dias; views/idade dos breakouts exatas via snapshot.py (tag RADAR1119)",
+"temas":{
+"T1_familia_imperial":{"S_canais":9,"S_videos":14,"mediana_sem_lider":60554,"bk_canais":["Fóssil Medieval","O Reconstrutor","Relíquias Perdidas 937 (vizinho: 7 de setembro)"],"classe":"ABERTO no limite (S=9 > 8)"},
+"T2_naufragios_br":{"S_canais":6,"mediana_sem_lider":408,"bk_canais":["Vida Brasileira TV","Instante do Colapso (vizinho: Eastland)"],"classe":"CAPTURADO no tema exato; 2 canais com vizinho"},
+"T3_cangaco":{"S_canais":10,"mediana_sem_lider":1811,"bk_canais":["Sombras da Caatinga","Leviatã","Pecados do Engenho","Contos do Nordeste","Cangaço Proibido","O Sertão Cobra"],"classe":"SATURADO pela regra"},
+"T4_prehistoria":{"S_canais":33,"mediana_sem_lider":34378,"bk_canais_PT":["Documentário Épico","O Ancestral","História em Documentário","Quem Diria?"],"classe":"disputado (S alto, mediana alta); fora da promessa central"},
+"T5_brasil_antes_1500":{"S_canais":3,"mediana_sem_lider":76,"bk_canais":["A Grande Saga"],"classe":"CAPTURADO (1 canal), oferta baixa"},
+"T6_geada_negra_1975":{"S_canais":7,"S_videos":9,"mediana_sem_lider":47280,"bk_canais":["AntigamenteBR","Vestígio","Paraná no Tempo (vizinho: Londrina do café)"],"classe":"ABERTO"},
+"T7_vida_medieval":{"S_canais":13,"mediana_sem_lider":10324,"bk_canais_PT":["Avesso"],"classe":"CAPTURADO em PT (History Reconstructed é EN); S alto"},
+"W08":{"S_canais":2,"bk_canais":[],"classe":"FRACO na janela (Incas 433k de 166 dias = ESTENDIDA)"},
+"W11":{"S_canais_PT":6,"mediana_sem_lider_PT":190777,"bk_canais":["História do Mundo"],"classe":"CAPTURADO (1 canal)"},
+"W12":{"S_canais_PT":8,"mediana_sem_lider_PT":163984,"bk_canais":["Guerra De Impérios"],"classe":"CAPTURADO (1 canal)"}}}

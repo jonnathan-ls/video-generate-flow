@@ -1,0 +1,270 @@
+{
+ "theme": "T7",
+ "regex": "medieval|idade m[ée]dia|castelo|castle|middle ages|cavaleiro|knight|feudal|campon|peasant",
+ "queries": [
+  "como era a vida na idade média ",
+  " vida dentro de um castelo medieval ",
+  " idade média documentário completo ",
+  " vida de camponês medieval ",
+  " cavaleiros medievais história ",
+  " como era a vida dos camponeses na idade média"
+ ],
+ "n_results": 152,
+ "window": [
+  {
+   "id": "qH45eSbWHaA",
+   "duration": 4133,
+   "view_count": 591830,
+   "channel": "Ampulheta",
+   "channel_url": "https://www.youtube.com/channel/UCuxZX3lVzWZPOAbLi5N8ufQ",
+   "upload_date": "20261106",
+   "title": "TODA HISTÓRIA DA IDADE MÉDIA",
+   "qs": [
+    "idade média documentário completo"
+   ],
+   "age": 13
+  },
+  {
+   "id": "qB4S5rXfMjk",
+   "duration": 1000,
+   "view_count": 377506,
+   "channel": "History Reconstructed",
+   "channel_url": "https://www.youtube.com/channel/UCBiHNYrX-cyuFjmbwoS44iw",
+   "upload_date": "20260820",
+   "title": "What Life Was Really Like Inside a Medieval Castle in Winter (1200s)",
+   "qs": [
+    "vida dentro de um castelo medieval"
+   ],
+   "age": 91
+  },
+  {
+   "id": "suV2TVrBOCg",
+   "duration": 2059,
+   "view_count": 272588,
+   "channel": "Avesso",
+   "channel_url": "https://www.youtube.com/channel/UC2Ed8YFfFjJ8O693J4kfBZw",
+   "upload_date": "20261106",
+   "title": "Como Era Realmente a Vida Dentro de um Castelo Medieval no Inverno Anos 1200",
+   "qs": [
+    "vida dentro de um castelo medieval"
+   ],
+   "age": 13
+  },
+  {
+   "id": "778-lfwDp-Y",
+   "duration": 1385,
+   "view_count": 82479,
+   "channel": "Reconstrução Histórica",
+   "channel_url": "https://www.youtube.com/channel/UCUVUfcIsKhA5DwE1DWFop-Q",
+   "upload_date": "20261020",
+   "title": "A Night at −40°C Inside a Medieval Castle",
+   "qs": [
+    "vida dentro de um castelo medieval"
+   ],
+   "age": 30
+  },
+  {
+   "id": "vAqLAqntJ5w",
+   "duration": 6463,
+   "view_count": 63445,
+   "channel": "Durma Com História Chata",
+   "channel_url": "https://www.youtube.com/channel/UCEt5mb0Ko93HPbHmMlVKlkw",
+   "upload_date": "20260820",
+   "title": "What Did a MEDIEVAL PEASANT Do From Dawn Till Dusk?",
+   "qs": [
+    "vida de camponês medieval"
+   ],
+   "age": 91
+  },
+  {
+   "id": "WW4ihEt4GbA",
+   "duration": 1865,
+   "view_count": 62311,
+   "channel": "Reconstrução Histórica",
+   "channel_url": "https://www.youtube.com/channel/UCUVUfcIsKhA5DwE1DWFop-Q",
+   "upload_date": "20261020",
+   "title": "How Medieval Peasants Survived Freezing Winters Without Heating (1408)",
+   "qs": [
+    "vida de camponês medieval",
+    "como era a vida dos camponeses na idade média"
+   ],
+   "age": 30
+  },
+  {
+   "id": "8sCyRH2cht0",
+   "duration": 1761,
+   "view_count": 51724,
+   "channel": "Reconstrução Histórica",
+   "channel_url": "https://www.youtube.com/channel/UCUVUfcIsKhA5DwE1DWFop-Q",
+   "upload_date": "20260920",
+   "title": "Inside a REAL Medieval Peasant Home — What It Was Actually Like",
+   "qs": [
+    "vida de camponês medieval",
+    "como era a vida dos camponeses na idade média"
+   ],
+   "age": 60
+  },
+  {
+   "id": "UhoajrLGitU",
+   "duration": 9131,
+   "view_count": 26459,
+   "channel": "Durma em Contos",
+   "channel_url": "https://www.youtube.com/channel/UCzBXdStHI248HcyCJWNtq0g",
+   "upload_date": "20260820",
+   "title": "O Segredo dos Campos: A Verdadeira Vida Camponesa na Idade Média",
+   "qs": [
+    "vida de camponês medieval",
+    "como era a vida dos camponeses na idade média"
+   ],
+   "age": 91
+  },
+  {
+   "id": "tZ9V6HUSWcs",
+   "duration": 1859,
+   "view_count": 19104,
+   "channel": "Fogo e Pedra",
+   "channel_url": "https://www.youtube.com/channel/UCHsz9B2YiV22IMMkm43vsRQ",
+   "upload_date": "20261106",
+   "title": "Como as Pessoas Sobreviviam a −40°C Dentro de Castelos Medievais?",
+   "qs": [
+    "vida dentro de um castelo medieval"
+   ],
+   "age": 13
+  },
+  {
+   "id": "BCEmuQrgMhE",
+   "duration": 2271,
+   "view_count": 11704,
+   "channel": "Avesso",
+   "channel_url": "https://www.youtube.com/channel/UC2Ed8YFfFjJ8O693J4kfBZw",
+   "upload_date": "20261106",
+   "title": "Como Você Achava Que Era a Vida em um Castelo Medieval no Ano de 1200?",
+   "qs": [
+    "vida dentro de um castelo medieval"
+   ],
+   "age": 13
+  },
+  {
+   "id": "cLlB86c_RS4",
+   "duration": 1321,
+   "view_count": 10324,
+   "channel": "Reconstrução Histórica",
+   "channel_url": "https://www.youtube.com/channel/UCUVUfcIsKhA5DwE1DWFop-Q",
+   "upload_date": "20260820",
+   "title": "Inside an English Castle in 1250: What It Was Like to Survive a 14°F Night",
+   "qs": [
+    "vida dentro de um castelo medieval"
+   ],
+   "age": 91
+  },
+  {
+   "id": "uI1ojkpRovY",
+   "duration": 4367,
+   "view_count": 1223,
+   "channel": "Fora de Tempo",
+   "channel_url": "https://www.youtube.com/channel/UCDRwoKDC2FWrIiGy5d5K1MQ",
+   "upload_date": "20261023",
+   "title": "Como Era o Inverno de um Camponês Medieval | Para Dormir",
+   "qs": [
+    "vida de camponês medieval"
+   ],
+   "age": 27
+  },
+  {
+   "id": "Qky5OMPwMVM",
+   "duration": 945,
+   "view_count": 441,
+   "channel": "Traço Histórico",
+   "channel_url": "https://www.youtube.com/channel/UCUzEdfwlN2QiSzj-ViYSRuw",
+   "upload_date": "20260820",
+   "title": "A Day in the Life of a Medieval Peasant (You Couldn't Handle It)",
+   "qs": [
+    "vida de camponês medieval"
+   ],
+   "age": 91
+  },
+  {
+   "id": "xBnnR8UfmzY",
+   "duration": 1715,
+   "view_count": 172,
+   "channel": "Realidade Passada and Debaixo do Mapa",
+   "upload_date": "20260920",
+   "title": "Até onde um camponês medieval chegava a viajar na vida inteira?",
+   "qs": [
+    "vida de camponês medieval"
+   ],
+   "age": 60
+  },
+  {
+   "id": "b9nV7b5sdqI",
+   "duration": 4903,
+   "view_count": 93,
+   "channel": "Contos Medievais",
+   "channel_url": "https://www.youtube.com/channel/UCiNfnAm3_P9-mstoISkoqIQ",
+   "upload_date": "20261108",
+   "title": "O Que Acontecia Quando Camponeses Medievais Saíam da Aldeia? | História Pra Dormir",
+   "qs": [
+    "vida de camponês medieval",
+    "como era a vida dos camponeses na idade média"
+   ],
+   "age": 11
+  },
+  {
+   "id": "3R5yqDViucQ",
+   "duration": 4895,
+   "view_count": 61,
+   "channel": "Contos Medievais",
+   "channel_url": "https://www.youtube.com/channel/UCiNfnAm3_P9-mstoISkoqIQ",
+   "upload_date": "20261107",
+   "title": "Por Dentro da Casa de um Camponês Medieval em 1187 | História Pra Dormir",
+   "qs": [
+    "vida de camponês medieval"
+   ],
+   "age": 12
+  },
+  {
+   "id": "9AxE9KZ7OeU",
+   "duration": 1627,
+   "upload_date": "20261030",
+   "title": "Os 10 Maiores Cavaleiros Medievais: Entre a História e a Lenda",
+   "qs": [
+    "cavaleiros medievais história"
+   ],
+   "age": 20
+  },
+  {
+   "id": "IHwU-aGD0iE",
+   "duration": 1020,
+   "channel": "Histórias Milenares",
+   "upload_date": "20261112",
+   "title": "THE GREATEST KNIGHT IN HISTORY: HE SURVIVED 5 KINGS AND WAS NEVER DEFEATED | WILLIAM MARSHAL",
+   "qs": [
+    "cavaleiros medievais história"
+   ],
+   "age": 7
+  },
+  {
+   "id": "MAzzQS_R5y4",
+   "duration": 2011,
+   "upload_date": "20261106",
+   "title": "Why Medieval Knights Fought WITHOUT Shields (It Wasn't Like in the Movies)",
+   "qs": [
+    "cavaleiros medievais história"
+   ],
+   "age": 13
+  },
+  {
+   "id": "AR_iYuDlwF4",
+   "duration": 1243,
+   "upload_date": "20261020",
+   "title": "Vida na Idade Média: Porquê o pão esquecido dos camponeses venceu as fomes",
+   "qs": [
+    "como era a vida dos camponeses na idade média"
+   ],
+   "age": 30
+  }
+ ],
+ "S_videos": 20,
+ "S_channels": 13,
+ "median_without_leader": 10324
+}

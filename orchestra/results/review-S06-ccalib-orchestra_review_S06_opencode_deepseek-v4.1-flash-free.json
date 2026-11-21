@@ -1,0 +1,51 @@
+{
+ "cena": "S06",
+ "ciclo": "calib",
+ "notas": {
+  "V1": 4,
+  "V2": 4,
+  "V3": 3,
+  "V4": 4,
+  "V5": 3,
+  "V6": 4,
+  "V7": 3,
+  "V9": 3,
+  "V10": 4
+ },
+ "media": 3.56,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "0.3–2.9",
+   "defeito": "Tomada 1 (cargueiro chegando a Saigon) é praticamente imagem parada: o navio mantém a mesma posição em a01/a02/a03/a04/a05 e nos 3 quadros de m00_01.50; só a fumaça varia. A chegada prometida não acontece, viola o padrão 'objeto se move de forma crível'.",
+   "correcao": "Animar o cargueiro transladando no rio em direção ao cais, com esteira/espuma e leve guinada; garantir deslocamento visível entre quadros."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "18.6",
+   "defeito": "Tomada 5 (jipe cruzando o acampamento): nos 3 quadros de m04_18.60 o veículo parece na mesma posição/pose, sem deslocamento perceptível na estrada; risco de 'objeto deslizando/parado'.",
+   "correcao": "Dar deslocamento claro ao jipe ao longo da estrada (e poeira/rodas), ou cortar a tomada se não houver movimento real."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "4.4; 13.2; 18.6",
+   "defeito": "Rótulos de contexto pequenos e de baixo contraste a 640x360: 'estudo encomendado em 1967' (ilegível), '1954' acima de '78%' e 'MILLER CENTER, UNIV. DA VIRGÍNIA' (minúsculos). Falha a checagem (f).",
+   "correcao": "Aumentar corpo e contraste desses rótulos, ou removê-los quando não couberem legíveis; manter só o essencial por cena."
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "11.3",
+   "defeito": "Legenda 'EM 1954, JÁ PAGA 78%' já está completa em a18_11.30, mas 'já paga 78%' só é falado entre 12.0–13.1; legenda adiantada em relação à narração.",
+   "correcao": "Sincronizar a entrada da legenda com o tempo das palavras."
+  }
+ ],
+ "bom": [
+  "Estilo pintado e paleta sépia/oliva coerentes entre cais, vale, interior e mesa de dominó.",
+  "Boa profundidade e atmosfera: haze, raios de luz e planos bem separados (V2/V6).",
+  "Tomada 3: guindaste iça os caixotes com cabo aparentemente preso e progressão clara (6.96→8.56).",
+  "Tomada 4: avião cruza o vale da esquerda para o centro e os paraquedas descem em sequência, movimento contínuo legível.",
+  "Tomada 7: dominós caem progressivamente nos 3 quadros de m06_29.49, ação perfeitamente colada à fala do princípio do dominó.",
+  "Época plausível: avião com cocar francês, jipe e entrevista com flashbulbs/fedoras; sem anacronismo evidente; contato aceitável (casco na água, carga no cabo)."
+ ]
+}

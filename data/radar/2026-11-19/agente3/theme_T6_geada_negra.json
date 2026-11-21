@@ -1,0 +1,139 @@
+{
+ "theme": "T6",
+ "regex": "geada|frost|1975|caf[ée] paran|norte do paran|londrina",
+ "queries": [
+  "geada negra 1975 ",
+  " geada negra paraná café ",
+  " fim do café no paraná história ",
+  " londrina história café ",
+  " norte do paraná colonização história"
+ ],
+ "n_results": 123,
+ "window": [
+  {
+   "id": "NBR5XGW42Yk",
+   "duration": 1530,
+   "view_count": 425061,
+   "channel": "AntigamenteBR",
+   "channel_url": "https://www.youtube.com/channel/UC3M1FG__5Lb4i0R_ykhsZlQ",
+   "upload_date": "20261020",
+   "title": "Londrina Moments Before the Black Frost Devoured the Coffee Plantations (1975)",
+   "qs": [
+    "geada negra 1975",
+    "geada negra paraná café",
+    "londrina história café"
+   ],
+   "age": 30
+  },
+  {
+   "id": "4Gv6KxRA-y4",
+   "duration": 1649,
+   "view_count": 169673,
+   "channel": "Paraná no Tempo",
+   "channel_url": "https://www.youtube.com/channel/UCma5HC_QRIlAtW68ojuLhiQ",
+   "upload_date": "20260920",
+   "title": "Assim Era Viver em Londrina em 1950 — Quando o CAFÉ Criava Fortunas no Paraná",
+   "qs": [
+    "londrina história café"
+   ],
+   "age": 60
+  },
+  {
+   "id": "-cZcX4LIKWs",
+   "duration": 1123,
+   "view_count": 103710,
+   "channel": "Vestígio",
+   "channel_url": "https://www.youtube.com/channel/UC77Y2NV-_q75zY8ud-NcVkw",
+   "upload_date": "20261106",
+   "title": "THE BLACK FROST TRAGEDY: The night that burned 850 million coffee trees | Full documentary",
+   "qs": [
+    "geada negra 1975",
+    "geada negra paraná café",
+    "londrina história café"
+   ],
+   "age": 13
+  },
+  {
+   "id": "ouGdDByQCzc",
+   "duration": 1090,
+   "view_count": 74074,
+   "channel": "Vozes do Brasil Antigo",
+   "channel_url": "https://www.youtube.com/channel/UCbFSC7U8N9Mji2X-yQWhsCg",
+   "upload_date": "20260920",
+   "title": "The History of Londrina (1934–2026) — How Coffee Built an Entire City in Less Than 30 Years",
+   "qs": [
+    "londrina história café"
+   ],
+   "age": 60
+  },
+  {
+   "id": "KdmNLrHoJj4",
+   "duration": 2015,
+   "view_count": 54487,
+   "channel": "Paraná no Tempo",
+   "channel_url": "https://www.youtube.com/channel/UCma5HC_QRIlAtW68ojuLhiQ",
+   "upload_date": "20261020",
+   "title": "Assim Era Viver em LONDRINA em 1975 — Quando a GEADA NEGRA Mudou a Cidade Para Sempre",
+   "qs": [
+    "geada negra 1975",
+    "londrina história café"
+   ],
+   "age": 30
+  },
+  {
+   "id": "DUCAPx_jr64",
+   "duration": 1552,
+   "view_count": 40072,
+   "channel": "Paraná no Tempo",
+   "channel_url": "https://www.youtube.com/channel/UCma5HC_QRIlAtW68ojuLhiQ",
+   "upload_date": "20260920",
+   "title": "A História de Londrina (1934–2026) — Como o CAFÉ Fez uma CIDADE Crescer no Paraná",
+   "qs": [
+    "londrina história café"
+   ],
+   "age": 60
+  },
+  {
+   "id": "BBBi81PTR3w",
+   "duration": 1462,
+   "view_count": 1080,
+   "channel": "Brasil na Véspera",
+   "channel_url": "https://www.youtube.com/channel/UCZHhE9nW_i8Q-i7PuwpChDQ",
+   "upload_date": "20261106",
+   "title": "Londrina Instantes Antes da Geada Negra Destruir os Cafezais (1975)",
+   "qs": [
+    "londrina história café"
+   ],
+   "age": 13
+  },
+  {
+   "id": "Ogh7UTHo0SI",
+   "duration": 1886,
+   "view_count": 479,
+   "channel": "ÚLTIMO TIME",
+   "channel_url": "https://www.youtube.com/channel/UCTHtYjHJUMiqocw3G_Wd06w",
+   "upload_date": "20261020",
+   "title": "Londrina na Última Noite Antes da Geada Negra Arrasar o Café (1975)",
+   "qs": [
+    "geada negra paraná café"
+   ],
+   "age": 30
+  },
+  {
+   "id": "rQmZ6Luyhio",
+   "duration": 2960,
+   "view_count": 441,
+   "channel": "Dia Zero",
+   "channel_url": "https://www.youtube.com/channel/UC8JDJDe_4eHGrrUNt1Ya7qg",
+   "upload_date": "20261030",
+   "title": "A TRAGÉDIA DA GEADA NEGRA: O frio que devastou os cafezais do Paraná | Documentário completo",
+   "qs": [
+    "geada negra 1975"
+   ],
+   "age": 20
+  }
+ ],
+ "S_videos": 9,
+ "S_channels": 7,
+ "median_without_leader": 47279.5
+}

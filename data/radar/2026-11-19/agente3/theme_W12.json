@@ -1,0 +1,133 @@
+{
+ "theme": "W12",
+ "regex": "roma|romano|c[ée]sar|rome|roman|augusto|nero|calígula|pompeu",
+ "queries": [
+  "império romano documentário ",
+  " roma antiga história completa ",
+  " queda do império romano ",
+  " júlio césar história completa ",
+  " ascensão e queda de roma ",
+  " imperadores romanos documentário"
+ ],
+ "n_results": 133,
+ "window": [
+  {
+   "id": "Mp8ATV9LLt8",
+   "duration": 1520,
+   "view_count": 590049,
+   "channel": "Estranha História",
+   "channel_url": "https://www.youtube.com/channel/UCDjzWHhTShC59KtduL-jeig",
+   "upload_date": "20260820",
+   "title": "O mito que resume a história de Roma",
+   "qs": [
+    "roma antiga história completa"
+   ],
+   "age": 91
+  },
+  {
+   "id": "uqvf8kiTA0A",
+   "duration": 1365,
+   "view_count": 475556,
+   "channel": "Tinocando TV",
+   "channel_url": "https://www.youtube.com/channel/UCS4cwdpm92dw1w9TERgdQJg",
+   "upload_date": "20260920",
+   "title": "como foi o ASSASSINATO de JÚLIO CÉSAR?",
+   "qs": [
+    "júlio césar história completa"
+   ],
+   "age": 60
+  },
+  {
+   "id": "YkAHvFnEa7w",
+   "duration": 2819,
+   "view_count": 168100,
+   "channel": "Historia de Imperios",
+   "channel_url": "https://www.youtube.com/channel/UCuqhWP3WlSoofhOUHIwYIOg",
+   "upload_date": "20260820",
+   "title": "Julius Caesar: Complete Biography of the Roman Empire's Most Famous Emperor | Documentary",
+   "qs": [
+    "júlio césar história completa"
+   ],
+   "age": 91
+  },
+  {
+   "id": "TR23K_R1VKM",
+   "duration": 5219,
+   "view_count": 163984,
+   "channel": "Histórias Romanas and Histórias Milenares",
+   "upload_date": "20260820",
+   "title": "HANNIBAL: THE MAN WHO ALMOST DESTROYED ROME | DOCUMENTARY",
+   "qs": [
+    "império romano documentário",
+    "roma antiga história completa"
+   ],
+   "age": 91
+  },
+  {
+   "id": "US27NANBd2g",
+   "duration": 3497,
+   "view_count": 54914,
+   "channel": "Epopeia",
+   "channel_url": "https://www.youtube.com/channel/UCsDwBDbqz0mhS5j7booDbRA",
+   "upload_date": "20261106",
+   "title": "IMPÉRIO ROMANO: a história completa de como Roma conquistou o mundo e por que caiu",
+   "qs": [
+    "roma antiga história completa"
+   ],
+   "age": 13
+  },
+  {
+   "id": "UZlzr3oPd1A",
+   "duration": 4448,
+   "view_count": 37383,
+   "channel": "História na Marra",
+   "channel_url": "https://www.youtube.com/channel/UCintxLG3w6pzNQ7Dh8w3-CQ",
+   "upload_date": "20261110",
+   "title": "The COMPLETE History of the Roman Empire",
+   "qs": [
+    "roma antiga história completa"
+   ],
+   "age": 9
+  },
+  {
+   "id": "RawyBVTLNDY",
+   "duration": 5299,
+   "view_count": 1528,
+   "channel": "Da Origem ao Hoje",
+   "channel_url": "https://www.youtube.com/channel/UC0YKrvLBLgEl0ZLa7Pr8FZA",
+   "upload_date": "20261108",
+   "title": "THE COMPLETE HISTORY of the Roman Empire | Documentary",
+   "qs": [
+    "império romano documentário"
+   ],
+   "age": 11
+  },
+  {
+   "id": "jW1VencMIxE",
+   "duration": 1800,
+   "view_count": 492,
+   "channel": "Atlas das Ruínas",
+   "channel_url": "https://www.youtube.com/channel/UCCjmmetyhx6gMnYt4XD4Rnw",
+   "upload_date": "20261106",
+   "title": "IMPÉRIO ROMANO: da Ascensão à Queda",
+   "qs": [
+    "ascensão e queda de roma"
+   ],
+   "age": 13
+  },
+  {
+   "id": "Jtsivc-SSDk",
+   "duration": 1875,
+   "upload_date": "20260920",
+   "title": "The Fall of Rome",
+   "qs": [
+    "queda do império romano",
+    "ascensão e queda de roma"
+   ],
+   "age": 60
+  }
+ ],
+ "S_videos": 9,
+ "S_channels": 9,
+ "median_without_leader": 46148.5
+}

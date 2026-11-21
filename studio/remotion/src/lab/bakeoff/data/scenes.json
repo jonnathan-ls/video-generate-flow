@@ -1,0 +1,99 @@
+{
+ "version": 0,
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "duration": 39.07,
+ "audio": {
+  "narration": "media/bakeoff/voice-pm_santa-088/narration.wav",
+  "words": "media/bakeoff/voice-pm_santa-088/words.json"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 6.12,
+   "kind": "establishing",
+   "description": "Porto de Lisboa ao amanhecer, navios da esquadra real ancorados, cidade ao fundo",
+   "label": "LISBOA · 29 DE NOVEMBRO DE 1807"
+  },
+  {
+   "id": "S02",
+   "start": 6.12,
+   "end": 8.02,
+   "kind": "crowd",
+   "description": "Multidão no cais embarcando em botes, baús e carruagens, tensão"
+  },
+  {
+   "id": "S03",
+   "start": 8.02,
+   "end": 11.84,
+   "kind": "royal",
+   "description": "Rainha D. Maria I e o príncipe regente D. João embarcando, cortesãos ao redor",
+   "impact": {
+    "text": "FUGINDO",
+    "at": 10.66
+   }
+  },
+  {
+   "id": "S04",
+   "start": 11.84,
+   "end": 16.26,
+   "kind": "march",
+   "description": "Tropas francesas de Junot marchando numa estrada de Portugal, chuva, bandeiras",
+   "map_arrow": "Espanha→Lisboa"
+  },
+  {
+   "id": "S05",
+   "start": 16.26,
+   "end": 20.58,
+   "kind": "empty",
+   "description": "O porto de Lisboa vazio, velas no horizonte, soldados franceses no cais",
+   "label": "30 DE NOVEMBRO"
+  },
+  {
+   "id": "S06",
+   "start": 20.58,
+   "end": 27.38,
+   "kind": "map",
+   "description": "Mapa: rota Lisboa → Salvador cruzando o Atlântico, a linha desenhando-se",
+   "map": {
+    "from": [
+     -9.14,
+     38.71
+    ],
+    "to": [
+     -38.5,
+     -12.97
+    ]
+   }
+  },
+  {
+   "id": "S07",
+   "start": 27.38,
+   "end": 30.38,
+   "kind": "arrival",
+   "description": "Esquadra chegando à Baía de Todos os Santos, Salvador tropical",
+   "label": "SALVADOR · JANEIRO DE 1808"
+  },
+  {
+   "id": "S08",
+   "start": 30.38,
+   "end": 33.42,
+   "kind": "kinetic",
+   "description": "Tipografia sobre fundo escuro",
+   "impact": {
+    "text": "E O BRASIL NUNCA MAIS SERIA O MESMO",
+    "accent": "NUNCA MAIS"
+   }
+  },
+  {
+   "id": "S09",
+   "start": 33.42,
+   "end": 39.07,
+   "kind": "title",
+   "description": "Silhueta de Napoleão em contraluz, depois cartela do título",
+   "title": "NAPOLEÃO"
+  }
+ ]
+}

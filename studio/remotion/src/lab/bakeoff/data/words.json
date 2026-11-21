@@ -1,0 +1,600 @@
+{
+ "engine": "faster-whisper/medium",
+ "werApprox": 0.0466,
+ "words": [
+  {
+   "i": 0,
+   "word": "Lisboa,",
+   "start": 0.0,
+   "end": 0.6
+  },
+  {
+   "i": 1,
+   "word": "vinte",
+   "start": 0.62,
+   "end": 0.867
+  },
+  {
+   "i": 2,
+   "word": "e",
+   "start": 0.867,
+   "end": 1.113
+  },
+  {
+   "i": 3,
+   "word": "nove",
+   "start": 1.113,
+   "end": 1.36
+  },
+  {
+   "i": 4,
+   "word": "de",
+   "start": 1.36,
+   "end": 1.68
+  },
+  {
+   "i": 5,
+   "word": "novembro",
+   "start": 1.68,
+   "end": 2.1
+  },
+  {
+   "i": 6,
+   "word": "de",
+   "start": 2.1,
+   "end": 2.3
+  },
+  {
+   "i": 7,
+   "word": "mil",
+   "start": 2.3,
+   "end": 2.695
+  },
+  {
+   "i": 8,
+   "word": "oitocentos",
+   "start": 2.695,
+   "end": 3.09
+  },
+  {
+   "i": 9,
+   "word": "e",
+   "start": 3.09,
+   "end": 3.485
+  },
+  {
+   "i": 10,
+   "word": "sete.",
+   "start": 3.485,
+   "end": 3.88
+  },
+  {
+   "i": 11,
+   "word": "No",
+   "start": 4.06,
+   "end": 4.2
+  },
+  {
+   "i": 12,
+   "word": "cais,",
+   "start": 4.2,
+   "end": 4.58
+  },
+  {
+   "i": 13,
+   "word": "milhares",
+   "start": 4.86,
+   "end": 5.12
+  },
+  {
+   "i": 14,
+   "word": "de",
+   "start": 5.12,
+   "end": 5.4
+  },
+  {
+   "i": 15,
+   "word": "pessoas",
+   "start": 5.4,
+   "end": 5.68
+  },
+  {
+   "i": 16,
+   "word": "se",
+   "start": 5.68,
+   "end": 5.94
+  },
+  {
+   "i": 17,
+   "word": "empurram",
+   "start": 5.94,
+   "end": 6.28
+  },
+  {
+   "i": 18,
+   "word": "para",
+   "start": 6.28,
+   "end": 6.52
+  },
+  {
+   "i": 19,
+   "word": "entrar",
+   "start": 6.52,
+   "end": 6.86
+  },
+  {
+   "i": 20,
+   "word": "nos",
+   "start": 6.86,
+   "end": 7.04
+  },
+  {
+   "i": 21,
+   "word": "navios.",
+   "start": 7.04,
+   "end": 7.82
+  },
+  {
+   "i": 22,
+   "word": "A",
+   "start": 8.02,
+   "end": 8.14
+  },
+  {
+   "i": 23,
+   "word": "rainha,",
+   "start": 8.14,
+   "end": 8.5
+  },
+  {
+   "i": 24,
+   "word": "o",
+   "start": 8.6,
+   "end": 8.76
+  },
+  {
+   "i": 25,
+   "word": "príncipe",
+   "start": 8.76,
+   "end": 9.12
+  },
+  {
+   "i": 26,
+   "word": "regente,",
+   "start": 9.12,
+   "end": 9.7
+  },
+  {
+   "i": 27,
+   "word": "a",
+   "start": 9.9,
+   "end": 10.02
+  },
+  {
+   "i": 28,
+   "word": "corte",
+   "start": 10.02,
+   "end": 10.4
+  },
+  {
+   "i": 29,
+   "word": "inteira…",
+   "start": 10.4,
+   "end": 10.66
+  },
+  {
+   "i": 30,
+   "word": "fugindo.",
+   "start": 10.66,
+   "end": 11.32
+  },
+  {
+   "i": 31,
+   "word": "Do",
+   "start": 11.84,
+   "end": 12.1
+  },
+  {
+   "i": 32,
+   "word": "outro",
+   "start": 12.1,
+   "end": 12.4
+  },
+  {
+   "i": 33,
+   "word": "lado,",
+   "start": 12.4,
+   "end": 12.76
+  },
+  {
+   "i": 34,
+   "word": "as",
+   "start": 13.04,
+   "end": 13.2
+  },
+  {
+   "i": 35,
+   "word": "tropas",
+   "start": 13.2,
+   "end": 13.5
+  },
+  {
+   "i": 36,
+   "word": "de",
+   "start": 13.5,
+   "end": 13.72
+  },
+  {
+   "i": 37,
+   "word": "Napoleão",
+   "start": 13.72,
+   "end": 14.2
+  },
+  {
+   "i": 38,
+   "word": "marcham",
+   "start": 14.2,
+   "end": 14.64
+  },
+  {
+   "i": 39,
+   "word": "sobre",
+   "start": 14.64,
+   "end": 14.88
+  },
+  {
+   "i": 40,
+   "word": "a",
+   "start": 14.88,
+   "end": 15.06
+  },
+  {
+   "i": 41,
+   "word": "cidade.",
+   "start": 15.06,
+   "end": 15.68
+  },
+  {
+   "i": 42,
+   "word": "Entram",
+   "start": 16.26,
+   "end": 16.42
+  },
+  {
+   "i": 43,
+   "word": "em",
+   "start": 16.42,
+   "end": 16.6
+  },
+  {
+   "i": 44,
+   "word": "Lisboa",
+   "start": 16.6,
+   "end": 17.08
+  },
+  {
+   "i": 45,
+   "word": "no",
+   "start": 17.08,
+   "end": 17.28
+  },
+  {
+   "i": 46,
+   "word": "dia",
+   "start": 17.28,
+   "end": 17.54
+  },
+  {
+   "i": 47,
+   "word": "seguinte,",
+   "start": 17.54,
+   "end": 18.04
+  },
+  {
+   "i": 48,
+   "word": "e",
+   "start": 18.04,
+   "end": 18.48
+  },
+  {
+   "i": 49,
+   "word": "encontram",
+   "start": 18.48,
+   "end": 18.94
+  },
+  {
+   "i": 50,
+   "word": "o",
+   "start": 18.94,
+   "end": 19.14
+  },
+  {
+   "i": 51,
+   "word": "porto",
+   "start": 19.14,
+   "end": 19.48
+  },
+  {
+   "i": 52,
+   "word": "vazio.",
+   "start": 19.48,
+   "end": 20.4
+  },
+  {
+   "i": 53,
+   "word": "Pela",
+   "start": 20.58,
+   "end": 20.82
+  },
+  {
+   "i": 54,
+   "word": "primeira",
+   "start": 20.82,
+   "end": 21.22
+  },
+  {
+   "i": 55,
+   "word": "vez",
+   "start": 21.22,
+   "end": 21.48
+  },
+  {
+   "i": 56,
+   "word": "na",
+   "start": 21.48,
+   "end": 21.68
+  },
+  {
+   "i": 57,
+   "word": "história,",
+   "start": 21.68,
+   "end": 22.14
+  },
+  {
+   "i": 58,
+   "word": "um",
+   "start": 22.58,
+   "end": 22.74
+  },
+  {
+   "i": 59,
+   "word": "rei",
+   "start": 22.74,
+   "end": 23.02
+  },
+  {
+   "i": 60,
+   "word": "europeu",
+   "start": 23.02,
+   "end": 23.6
+  },
+  {
+   "i": 61,
+   "word": "atravessa",
+   "start": 23.6,
+   "end": 24.14
+  },
+  {
+   "i": 62,
+   "word": "o",
+   "start": 24.14,
+   "end": 24.38
+  },
+  {
+   "i": 63,
+   "word": "oceano",
+   "start": 24.38,
+   "end": 24.8
+  },
+  {
+   "i": 64,
+   "word": "para",
+   "start": 24.8,
+   "end": 25.0
+  },
+  {
+   "i": 65,
+   "word": "governar",
+   "start": 25.0,
+   "end": 25.5
+  },
+  {
+   "i": 66,
+   "word": "a",
+   "start": 25.5,
+   "end": 25.62
+  },
+  {
+   "i": 67,
+   "word": "partir",
+   "start": 25.62,
+   "end": 25.98
+  },
+  {
+   "i": 68,
+   "word": "de",
+   "start": 25.98,
+   "end": 26.16
+  },
+  {
+   "i": 69,
+   "word": "uma",
+   "start": 26.16,
+   "end": 26.4
+  },
+  {
+   "i": 70,
+   "word": "colônia.",
+   "start": 26.4,
+   "end": 27.38
+  },
+  {
+   "i": 71,
+   "word": "Dois",
+   "start": 27.38,
+   "end": 27.94
+  },
+  {
+   "i": 72,
+   "word": "meses",
+   "start": 27.94,
+   "end": 28.22
+  },
+  {
+   "i": 73,
+   "word": "depois,",
+   "start": 28.22,
+   "end": 28.82
+  },
+  {
+   "i": 74,
+   "word": "a",
+   "start": 28.94,
+   "end": 29.1
+  },
+  {
+   "i": 75,
+   "word": "esquadra",
+   "start": 29.1,
+   "end": 29.54
+  },
+  {
+   "i": 76,
+   "word": "chega",
+   "start": 29.54,
+   "end": 29.78
+  },
+  {
+   "i": 77,
+   "word": "à",
+   "start": 29.78,
+   "end": 29.94
+  },
+  {
+   "i": 78,
+   "word": "Bahia.",
+   "start": 29.94,
+   "end": 30.38
+  },
+  {
+   "i": 79,
+   "word": "E",
+   "start": 30.38,
+   "end": 30.78
+  },
+  {
+   "i": 80,
+   "word": "o",
+   "start": 30.78,
+   "end": 30.92
+  },
+  {
+   "i": 81,
+   "word": "Brasil",
+   "start": 30.92,
+   "end": 31.22
+  },
+  {
+   "i": 82,
+   "word": "nunca",
+   "start": 31.22,
+   "end": 31.6
+  },
+  {
+   "i": 83,
+   "word": "mais",
+   "start": 31.6,
+   "end": 31.92
+  },
+  {
+   "i": 84,
+   "word": "seria",
+   "start": 31.92,
+   "end": 32.16
+  },
+  {
+   "i": 85,
+   "word": "o",
+   "start": 32.16,
+   "end": 32.34
+  },
+  {
+   "i": 86,
+   "word": "mesmo.",
+   "start": 32.34,
+   "end": 32.7
+  },
+  {
+   "i": 87,
+   "word": "Mas,",
+   "start": 33.42,
+   "end": 33.6
+  },
+  {
+   "i": 88,
+   "word": "para",
+   "start": 33.6,
+   "end": 33.86
+  },
+  {
+   "i": 89,
+   "word": "entender",
+   "start": 33.86,
+   "end": 34.32
+  },
+  {
+   "i": 90,
+   "word": "essa",
+   "start": 34.32,
+   "end": 34.62
+  },
+  {
+   "i": 91,
+   "word": "fuga,",
+   "start": 34.62,
+   "end": 35.18
+  },
+  {
+   "i": 92,
+   "word": "precisamos",
+   "start": 35.64,
+   "end": 35.9
+  },
+  {
+   "i": 93,
+   "word": "voltar",
+   "start": 35.9,
+   "end": 36.36
+  },
+  {
+   "i": 94,
+   "word": "ao",
+   "start": 36.36,
+   "end": 36.52
+  },
+  {
+   "i": 95,
+   "word": "homem",
+   "start": 36.52,
+   "end": 36.88
+  },
+  {
+   "i": 96,
+   "word": "que",
+   "start": 36.88,
+   "end": 37.1
+  },
+  {
+   "i": 97,
+   "word": "a",
+   "start": 37.1,
+   "end": 37.38
+  },
+  {
+   "i": 98,
+   "word": "provocou.",
+   "start": 37.38,
+   "end": 37.84
+  }
+ ]
+}

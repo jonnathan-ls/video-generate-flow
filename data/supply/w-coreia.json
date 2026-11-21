@@ -1,0 +1,113 @@
+{
+ "slug": "w-coreia",
+ "date": "2026-11-19",
+ "queries": [
+  "Guerra da Coreia história completa",
+  "Guerra da Coreia documentário",
+  "Guerra da Coreia",
+  "Guerra da Coreia biografia",
+  "Guerra da Coreia como nasceu",
+  "a história de Guerra da Coreia",
+  "Guerra da Coreia documentário completo",
+  "Guerra da Coreia explicado",
+  "Guerra da Coreia resumo",
+  "guerra da coreia 1950"
+ ],
+ "new_per_query": [
+  [
+   "Guerra da Coreia história completa",
+   14
+  ],
+  [
+   "Guerra da Coreia documentário",
+   9
+  ],
+  [
+   "Guerra da Coreia",
+   2
+  ],
+  [
+   "Guerra da Coreia biografia",
+   8
+  ],
+  [
+   "Guerra da Coreia como nasceu",
+   3
+  ],
+  [
+   "a história de Guerra da Coreia",
+   1
+  ],
+  [
+   "Guerra da Coreia documentário completo",
+   8
+  ],
+  [
+   "Guerra da Coreia explicado",
+   1
+  ],
+  [
+   "Guerra da Coreia resumo",
+   0
+  ],
+  [
+   "guerra da coreia 1950",
+   1
+  ]
+ ],
+ "S_videos": 4,
+ "S_channels": 4,
+ "leader_views": 270104,
+ "median_without_leader": 10545,
+ "median_without_top2": null,
+ "share_below_5k": 0.33,
+ "convergence": true,
+ "meta_ok": "32/47",
+ "grade": "COLETA FALHOU (bloqueio do YouTube: repetir mais tarde, não é oferta zero)",
+ "videos": [
+  {
+   "id": "9hqzgsYkZwM",
+   "title": "COREIA DO NORTE: A Vida Dentro do País Mais Fechado e Misterioso do Mundo | Documentário 4K",
+   "channel": "Planeta Brutal",
+   "subs": 27400,
+   "date": "2026-09-16",
+   "age": 64,
+   "views": 270104,
+   "min": 81.8,
+   "lang": "pt"
+  },
+  {
+   "id": "D8kZeLon0bg",
+   "title": "Guerra da Coreia - Uma história esquecida e mal contada",
+   "channel": "Cultura e Opinião com André Sturm",
+   "subs": 78900,
+   "date": "2026-08-26",
+   "age": 85,
+   "views": 114363,
+   "min": 15.8,
+   "lang": "pt-BR"
+  },
+  {
+   "id": "iSb4QbHQalU",
+   "title": "Como a Coreia do Norte se tornou o país mais isolado do mundo",
+   "channel": "Show De Informações - Infographics Show Português",
+   "subs": 25800,
+   "date": "2026-09-19",
+   "age": 61,
+   "views": 10545,
+   "min": 47.6,
+   "lang": "pt"
+  },
+  {
+   "id": "hmtyoGt1UPU",
+   "title": "Coreia do Sul: Apagada pelo Japão, Dividida pela Guerra... Agora Conquista o Mundov",
+   "channel": "Cartografia Zero",
+   "subs": 410,
+   "date": "2026-09-28",
+   "age": 52,
+   "views": 778,
+   "min": 48.5,
+   "lang": "pt-PT"
+  }
+ ]
+}
