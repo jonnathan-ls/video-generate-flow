@@ -18,6 +18,11 @@ Arquivo de passagem entre conversas. Um chat novo lê **só isto, `CLAUDE.md`, `
 - Painel: `python3 orchestra/dashboard/server.py` → http://localhost:8765. Galeria claude-video: http://127.0.0.1:8770/.
 - Frames rápidos: `bash orchestra/tools/quadros.sh <cena> <tempos|auto> [props]`.
 
+## Sessão 2026-11-20 (noite)
+- Git: repositório `https://github.com/jonnathan-ls/video-generate-flow` (main). Commit + push ao fim de cada etapa. flow-mcp tem ramo `fix/flow-ui-2026-11-20` (local).
+- Lab rodada 3 pronta: `lab/bakeoff-saigon/out/comparativo_saigon_r3.mp4` (9 estilos). **Aguardando o usuário escolher o estilo.**
+- Gates novos: `orchestra/periodo.sh`, `render_check.py`, `transcript_check.py`, revisão com âncora S05, `rubrics/render-qa.md`. Ouro do repositório antigo extraído (knowledge/collage-direction, longform-production-lessons, production-recipes). O repositório antigo pode ser arquivado; faltou só o `estudo-e-propostas.md` do Ampulheta (estrutura em 3 escalas), opcional.
+
 ## Pendências antes de publicar
 - R13: termos comerciais do Flow. Fontes iconográficas (l1-icono) em `sources.md`.
 - Saldo DeepSeek ≈ US$ 1,08.
