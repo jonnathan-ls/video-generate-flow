@@ -7,6 +7,7 @@
 O usuário reprovou três padrões em sequência: mapa estático (S01 v1), "só texto e mapa" (lote S02–S10 v1) e "imagens estáticas com efeitos" (ilustração em código e S04 com fundo do Flow parado). Ele aprovou o S05, com fundo do Flow e objetos recortados que **se movem no tempo da palavra**. Este protocolo transforma o S05 em receita, com as lições dos dois ciclos de revisão dele (D1–D13 em `qa-piloto-s05.md`).
 
 ## Unidade de trabalho: lote de 4 a 6 cenas
+As specs das cenas de um lote podem ser escritas **em paralelo** (`orchestra/paralelo.sh`, uma tarefa por cena, sem Flow); o Flow do lote inteiro é uma chamada só, na fila única. Tipos de cena que se repetem (navio chega ao cais, coluna marcha, tanque avança, avião passa, multidão) viram **modelos** em `protocols/scene-templates.md` à medida que forem aprovados: copie o modelo e ajuste, em vez de escrever do zero.
 Um lote por vez. Um lote só começa quando o anterior foi aprovado pelo revisor, ou foi escalado.
 
 ## Passos
@@ -36,11 +37,9 @@ Um lote por vez. Um lote só começa quando o anterior foi aprovado pelo revisor
    - **Objeto para recorte:** o mesmo prefixo + "isolated on a solid pure green background (#00FF00), full object visible, side view, flat even lighting, no ground shadow, no other objects". Pessoas em coluna: "a column of N soldiers walking left to right, side view, full body including feet, evenly spaced, not overlapping".
    - **Fogo, explosão, fumaça:** "isolated on pure black background", recortado por `blend: 'screen'`, sem chroma.
    - **Variação de estado:** o mesmo fundo com luzes apagadas, prédio destruído ou noite, feito por edição da imagem no Flow, entra em `bg2` com `bg2_at_s` na palavra.
-4. **Gerar** pelo `runbooks/flow-generate-image.md`: Nano Banana 2.1, x2, **0 crédito**. Se o custo for maior que 0, pare e pergunte. Vídeo do Flow (24 créditos por clipe) só com OK do usuário. Baixe pelo Claude in Chrome e escolha a melhor das duas. Rejeite e regenere se houver:
-   - texto na imagem;
-   - anacronismo;
-   - membro deformado;
-   - sombra no chão do recorte.
+4. **Gerar** (revisto em 2026-11-20): **uma chamada `flow_agent_images` por lote** (até 50 imagens, 0 crédito, projeto do Flow da produção, ex. `lacre-vietna`; visualização Grid S). Para manter o estilo igual nas 54 cenas, passe em `references` o **quadro-guia de estilo** (um fundo do S05 aprovado, nome `estilo`) e os personagens/veículos recorrentes, e em `scene_references` quais cenas usam cada um. O prefixo de estilo do vídeo vai em todo prompt. Se o custo for maior que 0, pare e pergunte. Vídeo do Flow (24 créditos por clipe) só com OK do usuário.
+   - **Gate de época (obrigatório, antes de recortar):** `bash orchestra/periodo.sh <pasta> "<lugar, data, lados, equipamentos>"`. Imagem reprovada volta ao Flow com o `correcao_prompt` sugerido; nunca segue para animação. (Motivo: no lab Saigon passaram palácio gótico e fuzil de ferrolho em 1975.)
+   - Rejeite também: texto na imagem, membro deformado, sombra no chão do recorte.
 
    Copie o original para `media/<canal>/<video>/src_img/flow/<lote>/` e registre `FLOW-<lote>` em `sources.md`, com prompt, arquivo e uso.
 5. **Recortar:** `python3 pipeline/assembly/chroma_cut.py in.jpg studio/remotion/public/<video>/x.png`. Confira sobre magenta: sem halo verde, pés inteiros.
@@ -51,13 +50,14 @@ Um lote por vez. Um lote só começa quando o anterior foi aprovado pelo revisor
    - eventos de som com `reason` (R16), passos, motor, água e tiros acompanhando o movimento (L02).
 8. **Autochecagem** (o produtor, antes do revisor):
    - `shot_check.py` PASS, `scene_gates.py` PASS e folha de contato;
+   - `python3 pipeline/validate/render_check.py render/Sxx.mp4 --dur <duração>` PASS (volume -14 ±2 LUFS, pico ≤ -1 dBTP, sem tela preta, sem quadro congelado > 2 s, sem silêncio no meio);
    - quadro **na palavra** de cada ação: o objeto está lá?
    - 3 quadros consecutivos de cada ator andando: a passada e a velocidade estão certas?
    - base de cada objeto acima da legenda, e ator com chão;
    - quadro reduzido a 640×360: o rótulo é legível?
 
    Qualquer falha volta ao passo 6.
-9. **Revisão independente** (agente `reviewer`): ciclo 1 e, se preciso, ciclo 2, conforme `rubrics/visual.md`. Relatório em `qa-lote-XX.md`. Aprovado → segue. Reprovado no ciclo 2 → escalar.
+9. **Revisão independente** (`bash orchestra/review.sh Sxx <ciclo>`, comparando com a âncora S05 aprovada; Gemini e, se der cota, modelo grátis com visão): ciclo 1 e, se preciso, ciclo 2, conforme `rubrics/visual.md`. Relatório em `qa-lote-XX.md`. Aprovado → segue. Reprovado no ciclo 2 → escalar.
 10. **Entrega ao usuário** a cada 2 ou 3 lotes aprovados, ou quando ele pedir: prévia 720p com legenda e o resumo das notas.
 
 ## Regras físicas (lições do S05)

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>Saigon · documento vira vídeo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,700&display=swap" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+  #tela { display: block; width: 1920px; height: 1080px; }
+  .fonte-oculta { position: absolute; left: -9999px; top: -9999px; opacity: 0; font-family: 'Inter'; font-weight: 700; font-style: italic; }
+</style>
+</head>
+<body>
+<canvas id="tela" width="1920" height="1080"></canvas>
+<span class="fonte-oculta">Inter 29 DE ABRIL</span>
+<script type="module">
+  import { style } from './cena.js';
+  const tema = { ...style.theme };
+  const ctx = document.getElementById('tela').getContext('2d', { alpha: false });
+  window.seek = (t) => {
+    ctx.save();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+    ctx.fillStyle = tema.bg; ctx.fillRect(0, 0, 1920, 1080);
+    style.render(ctx, t, tema, 1920, 1080);
+    ctx.restore();
+  };
+  try {
+    await document.fonts.load('italic 700 100px Inter', '29 DE ABRIL · SAIGON');
+    await document.fonts.ready;
+    window.seek(0);
+    window.__ready = true;
+  } catch (e) { window.__error = String(e && e.stack || e); }
+  window.addEventListener('error', (e) => { window.__error = e.message; });
+</script>
+</body>
+</html>

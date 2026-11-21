@@ -143,8 +143,8 @@ const preparar = (w, h, th, nome) => {
   const chave = [w, h, th.bg, th.ink, th.accent, th.accent2, th.font, nome].join("|");
   if (CACHE.has(chave)) return CACHE.get(chave);
   const P = paleta(th), V = vista(w, h);
-  const camada = (fn) => { const cv = novoCanvas(w, h); const c = cv.getContext("2d"); c.lineJoin = "round"; c.setTransform(V.s, 0, 0, V.s, w / 2 - V.cx * V.s, h / 2 - V.cy * V.s); fn(c); return cv; };
-  const R = { P, V, sala: camada((c) => pintaSala(c, P, th, nome)), meio: camada((c) => pintaMeio(c, P)), mesa: camada((c) => pintaMesa(c, P, th, nome)), corpo: corpoDe(P, V.s * 1.25), grao: graoDe(w, h, P), tex: new Map() };
+  const camada = (fn) => { const cv = novoCanvas(w * ZS, h * ZS); const c = cv.getContext("2d"); c.lineJoin = "round"; c.setTransform(V.s * ZS, 0, 0, V.s * ZS, (w / 2 - V.cx * V.s) * ZS, (h / 2 - V.cy * V.s) * ZS); fn(c); return cv; };
+  const R = { P, V, sala: camada((c) => pintaSala(c, P, th, nome)), meio: camada((c) => pintaMeio(c, P)), mesa: camada((c) => pintaMesa(c, P, th, nome)), corpo: corpoDe(P, V.s * 1.25 * ZS), grao: graoDe(w, h, P), tex: new Map() };
   if (CACHE.size > 12) CACHE.delete(CACHE.keys().next().value);
   CACHE.set(chave, R);
   return R;
@@ -217,6 +217,168 @@ const rumo = (dx, dy) => Math.atan2(dx, -dy);
 const SAIDA = through([[690, 380], [540, 200], [300, 100], [20, 40], [-300, -20]], 14); const TS = tabela(SAIDA);
 const linhasDe = (nome) => { const pal = nome.toUpperCase().split(/\s+/).filter(Boolean); const out = []; let cur = ""; for (const p of pal) { if ((cur + " " + p).trim().length > 10 && cur) { out.push(cur); cur = p; } else cur = (cur + " " + p).trim(); } if (cur) out.push(cur); return out.slice(0, 3); };
 
+// ---------- Saigon, 29–30/04/1975: batidas, câmera, rótulos e a cena da janela
+const DUR = 15;
+const ZS = 1.75; // supersample das camadas pintadas, para a câmera poder chegar perto sem borrar
+const CIC = [
+  { s: 0, e: 4.9, plane: ["EVACUAM"] },
+  { s: 4.9, e: 8.4, plane: ["PALÁCIO"] },
+  { s: 8.4, e: 12.4, plane: ["SUL"] },
+];
+const PALAVRAS = [3.49, 7.96, 13.81];
+const ZK = [[0, 1.25], [3.0, 1.25], [3.4, 1.65], [4.3, 1.65], [4.8, 1.25], [7.3, 1.25], [7.8, 1.65], [8.7, 1.65], [9.3, 1.25], [13.2, 1.25], [13.7, 1.65], [15, 1.7]];
+const CXK = [[0, 760], [3.0, 760], [3.4, 540], [4.3, 540], [4.8, 760], [7.3, 760], [7.8, 540], [8.7, 540], [9.3, 760], [13.2, 760], [13.7, 560], [15, 580]];
+const CYK = [[0, 470], [3.0, 470], [3.4, 400], [4.3, 400], [4.8, 470], [7.3, 470], [7.8, 400], [8.7, 400], [9.3, 470], [13.2, 470], [13.7, 410], [15, 420]];
+const popAbs = (t, a, b) => (t < a || t >= b ? 0 : E.back(clamp((t - a) / 0.22)) * (1 - seg(t, b - 0.15, b)));
+const NOTAS = [
+  { a: 0.15, b: 4.9, x: 830, y: 135, wd: 540, hd: 100, rot: -0.02, lin: ["29 DE ABRIL · SAIGON"], cor: (P) => P.plate },
+  { a: 5.0, b: 8.4, x: 830, y: 135, wd: 400, hd: 100, rot: 0.02, lin: ["30 DE ABRIL"], cor: (P) => P.plate },
+  { a: 8.5, b: 12.8, x: 830, y: 135, wd: 480, hd: 100, rot: -0.015, lin: ["DUONG VAN MINH"], cor: (P) => P.plate },
+  { a: 10.6, b: 12.4, x: 830, y: 255, wd: 440, hd: 84, rot: 0.025, lin: ["2 DIAS NO CARGO"], cor: (P) => P.bodyLt },
+];
+const nota = (c, th, P, cx, cy, wd, hd, rot, lin, k, cor) => {
+  if (k <= 0.01) return;
+  c.save(); c.translate(cx, cy); c.rotate(rot); c.scale(k, k);
+  const Q = rrect(-wd / 2, -hd / 2, wd, hd, 9);
+  path(c, Q); c.fillStyle = cor; c.fill(); ink(c, Q, { w: 5, color: P.ink, closed: true, seed: 77, wob: 0.5, step: 5 });
+  let fs = Math.min(58, (hd * 0.7) / lin.length); c.font = fonteDe(th, fs, 800);
+  const mw = Math.max(...lin.map((l) => c.measureText(l).width)); if (mw > wd * 0.88) fs *= (wd * 0.88) / mw;
+  c.font = fonteDe(th, fs, 800); c.fillStyle = P.ink; c.textAlign = "center"; c.textBaseline = "middle";
+  lin.forEach((l, i) => c.fillText(l, 0, (i - (lin.length - 1) / 2) * fs * 1.1 + fs * 0.04));
+  c.restore();
+};
+const OL = "#69764a", TK = "#56663f";
+const fpoly = (c, P, pts, col, o = {}) => { path(c, pts); c.fillStyle = col; c.fill(); ink(c, pts, { w: o.w || 3.4, color: P.ink, closed: true, seed: o.seed || 1, wob: 0.5, step: 5 }); };
+const fundoCeu = (c, P, a, b) => { const g = c.createLinearGradient(0, 198, 0, 400); g.addColorStop(0, a); g.addColorStop(1, b); c.fillStyle = g; c.fillRect(266, 198, 280, 276); };
+const poeira = (c, P, x, y, u, n, big) => { // u = tempo desde o início; puffs de pó que crescem e somem
+  for (let i = 0; i < n; i++) { const d = clamp(u - i * 0.07, 0, 1.2); if (d <= 0) continue; const a = (1 - d / 1.2) * 0.8; const px = x + (i - (n - 1) / 2) * big * 0.55 + d * (i % 2 ? 18 : -14); const py = y - d * 30 - (i % 3) * 5; const r = big * (0.35 + d * 0.9); const Q = ell(px, py, r, r * 0.8, 14); c.globalAlpha = a; path(c, Q); c.fillStyle = mix(P.L, P.D, 0.12); c.fill(); ink(c, Q, { w: 3, color: P.ink, closed: true, seed: 90 + i, wob: 0.6, step: 5 }); c.globalAlpha = 1; }
+};
+const pessoa = (c, P, x, y, cor, passo, esc) => { // x,y = pé; esc = escala
+  c.save(); c.translate(x, y); c.scale(esc, esc); const bob = -Math.abs(Math.sin(passo)) * 2;
+  fpoly(c, P, rect(-5, -14 + bob, 4, 14), P.D, { w: 2, seed: 5 }); fpoly(c, P, rect(1, -14 + bob, 4, 14), P.D, { w: 2, seed: 6 });
+  fpoly(c, P, rrect(-8, -34 + bob, 16, 24, 4), cor, { w: 2.6, seed: 7 });
+  const H = ell(0, -41 + bob, 6.5, 7, 12); fpoly(c, P, H, mix(P.peach, P.D, 0.12), { w: 2.4, seed: 8 });
+  c.restore();
+};
+const heli = (c, P, x, y, s, ph, tilt) => {
+  c.save(); c.translate(x, y); c.rotate(tilt); c.scale(s, s);
+  fpoly(c, P, [[44, -14], [120, -26], [126, -16], [48, 8]], OL, { seed: 31 });
+  fpoly(c, P, [[112, -26], [126, -42], [132, -38], [124, -16]], OL, { seed: 32, w: 3 });
+  const rt = 14 * Math.cos(ph * 1.7); ink(c, [[134, -30 - rt], [134, -30 + rt]], { w: 4, color: P.ink, seed: 33, taper: false });
+  fpoly(c, P, rrect(-64, -28, 120, 52, 22), OL, { seed: 34 });
+  fpoly(c, P, rrect(-56, -20, 36, 24, 9), mix(P.sky, P.L, 0.45), { w: 2.6, seed: 35 });
+  ink(c, [[-40, 6], [38, 6]], { w: 3, color: rgba(P.D, 0.5), seed: 36, taper: false });
+  ink(c, [[-52, 32], [58, 32]], { w: 6, color: P.ink, seed: 37, taper: false }); ink(c, [[-30, 24], [-34, 32]], { w: 4, color: P.ink, seed: 38 }); ink(c, [[34, 24], [38, 32]], { w: 4, color: P.ink, seed: 39 });
+  ink(c, [[0, -28], [0, -40]], { w: 7, color: P.ink, seed: 40, taper: false });
+  c.fillStyle = rgba(P.D, 0.1); c.beginPath(); c.ellipse(0, -41, 118, 7, 0, 0, 7); c.fill();
+  const L1 = 116 * Math.cos(ph), L2 = 116 * Math.cos(ph + 1.57);
+  ink(c, [[-L1, -41], [L1, -41]], { w: 5, color: P.ink, seed: 41 }); ink(c, [[-L2, -41], [L2, -41]], { w: 4, color: rgba(P.ink, 0.7), seed: 42 });
+  c.restore();
+};
+const cenaA = (c, t, P) => {
+  fundoCeu(c, P, mix(P.sky, P.D, 0.1), mix(P.sky, P.L, 0.5));
+  const bg = mix(P.hill, P.L, 0.4);
+  [[268, 322, 42, 90], [316, 296, 36, 116], [358, 340, 52, 72], [418, 312, 38, 100], [462, 344, 42, 68], [508, 304, 44, 108]].forEach(([x, y, wd, hh], i) => { fpoly(c, P, rect(x, y, wd, hh), mix(bg, P.L, (i % 3) * 0.08), { w: 3, seed: 20 + i }); for (let r = 0; r < 3; r++) for (let q = 0; q < 2; q++) { c.fillStyle = rgba(P.D, 0.18); c.fillRect(x + 7 + q * (wd / 2 - 3), y + 10 + r * 16, 8, 8); } });
+  const roof = mix(P.D, P.L, 0.5);
+  fpoly(c, P, rect(266, 404, 280, 70), roof, { w: 4, seed: 50 });
+  fpoly(c, P, rect(266, 404, 280, 9), mix(roof, P.L, 0.35), { w: 3, seed: 51 });
+  fpoly(c, P, rect(266, 448, 280, 26), mix(roof, P.D, 0.25), { w: 3.4, seed: 52 }); // terraço mais baixo
+  c.fillStyle = rgba(P.L, 0.5); c.beginPath(); c.ellipse(400, 408, 78, 5, 0, 0, 7); c.fill();
+  // escada inclinada do terraço até a plataforma
+  const e0 = [524, 450], e1 = [466, 404];
+  ink(c, [[e0[0] - 8, e0[1]], [e1[0] - 8, e1[1]]], { w: 5, color: P.ink, seed: 53, taper: false }); ink(c, [[e0[0] + 8, e0[1]], [e1[0] + 8, e1[1]]], { w: 5, color: P.ink, seed: 54, taper: false });
+  for (let i = 1; i < 6; i++) { const q = i / 6; ink(c, [[lerp(e0[0] - 8, e1[0] - 8, q), lerp(e0[1], e1[1], q)], [lerp(e0[0] + 8, e1[0] + 8, q), lerp(e0[1], e1[1], q)]], { w: 3, color: P.ink, seed: 55 + i, taper: false }); }
+  // helicóptero: pousa até 1,3 s, espera, decola em 3,49
+  const pouso = E.out3(seg(t, 0, 1.3)), sobe = E.in2(seg(t, 3.49, 4.55));
+  const hx = lerp(640, 398, pouso) - 150 * sobe, hy = lerp(222, 377, E.io(seg(t, 0, 1.3))) - 280 * sobe + (t > 3.2 && t < 3.49 ? Math.sin(t * 90) * 1.2 : 0);
+  const tilt = lerp(0.1, 0, pouso) * (1 - seg(t, 0.9, 1.3)) - 0.16 * sobe;
+  heli(c, P, hx, hy, 0.9, t * 24, tilt);
+  // pessoas: andam no terraço, sobem a escada e entram pela porta de trás
+  const cores = [P.body, P.leaf, P.bodyLt];
+  [1.2, 1.55, 1.9].forEach((s0, i) => {
+    const u = t - s0; if (u < 0 || t > 3.55) return;
+    const wlk = 0.75, clm = 0.6, ent = 0.25; let x, y, a = 1;
+    if (u < wlk) { x = lerp(590 + i * 6, 524, u / wlk); y = 450; }
+    else if (u < wlk + clm) { const q = (u - wlk) / clm; x = lerp(524, 466, q); y = lerp(450, 404, q); }
+    else { const q = clamp((u - wlk - clm) / ent); x = lerp(466, 440, q); y = 404; a = 1 - q; }
+    c.globalAlpha = a; pessoa(c, P, x, y, cores[i], u * 12, 0.8); c.globalAlpha = 1;
+  });
+  poeira(c, P, 400, 406, t - 3.49, 4, 14);
+};
+const cenaB = (c, t, P) => {
+  fundoCeu(c, P, mix(P.sky, P.L, 0.35), mix(P.sky, P.L, 0.72));
+  // árvore ao fundo
+  ink(c, [[296, 396], [298, 340]], { w: 8, color: mix(P.woodF, P.D, 0.2), seed: 61, taper: false }); fpoly(c, P, ell(298, 322, 34, 24, 16), P.leaf, { w: 3.4, seed: 62 });
+  const con = mix(P.L, P.D, 0.14);
+  fpoly(c, P, rect(334, 290, 232, 14), mix(P.L, P.D, 0.04), { w: 3.4, seed: 63 }); // laje do telhado
+  fpoly(c, P, rect(350, 304, 200, 90), con, { w: 3.4, seed: 64 });
+  for (let i = 0; i < 13; i++) ink(c, [[360 + i * 15, 310], [360 + i * 15, 388]], { w: 3.4, color: rgba(P.D, 0.38), seed: 65 + i, taper: false, wob: 0.3 });
+  fpoly(c, P, rect(430, 344, 36, 50), mix(P.D, P.L, 0.2), { w: 3, seed: 90 });
+  fpoly(c, P, rect(418, 394, 60, 8), mix(P.L, P.D, 0.25), { w: 3, seed: 91 });
+  // avenida
+  fpoly(c, P, rect(266, 402, 280, 72), mix(P.D, P.L, 0.4), { w: 3.6, seed: 92 });
+  for (let i = 0; i < 6; i++) ink(c, [[270 + i * 52, 462], [296 + i * 52, 462]], { w: 4, color: rgba(P.L, 0.7), seed: 93 + i, taper: false });
+  // portão: painel de grades em três quartos; cai para a frente na palavra "palácio"
+  const gx = 478, gy = 440, queda = E.in2(seg(t, 7.96, 8.4));
+  fpoly(c, P, rect(gx + 26, gy - 66, 14, 66), mix(P.L, P.D, 0.2), { w: 3.2, seed: 94 }); // pilar fixo
+  c.save(); c.translate(gx + 22, gy); c.rotate(queda * 1.52 + (t >= 8.4 ? -0.06 * Math.exp(-(t - 8.4) * 9) * Math.sin((t - 8.4) * 30) : 0));
+  fpoly(c, P, [[-34, 0], [0, 0], [0, -62], [-34, -56]], mix(P.D, P.L, 0.15), { w: 3.4, seed: 95 });
+  for (let i = 0; i < 5; i++) ink(c, [[-6 - i * 6.5, -2], [-6 - i * 6.5, -58 + i * 1]], { w: 3, color: rgba(P.L, 0.55), seed: 96 + i, taper: false });
+  ink(c, [[-34, -30], [0, -33]], { w: 3, color: rgba(P.L, 0.55), seed: 101, taper: false });
+  c.restore();
+  // tanque T-54 (verde, de 1975): avança até o portão e derruba em "palácio"
+  const px = t < 7.96 ? lerp(190, 394, E.io(seg(t, 4.9, 7.96)) * 0.35 + seg(t, 4.9, 7.96) * 0.65) : 394 + 42 * E.out3(seg(t, 7.96, 8.9));
+  const tx = px, ty = 420 + Math.sin(t * 22) * 0.8 + (t >= 7.96 && t < 8.2 ? -3 * Math.sin((t - 7.96) * 13) : 0);
+  c.save(); c.translate(tx, ty);
+  fpoly(c, P, [[-54, -4], [-46, -16], [38, -16], [56, -2], [56, 8], [-54, 8]], TK, { seed: 110 });
+  fpoly(c, P, ell(-2, -22, 26, 12, 16), mix(TK, P.D, 0.1), { seed: 111 });
+  ink(c, [[22, -24], [80, -21]], { w: 6, color: P.ink, seed: 112, taper: false });
+  ink(c, [[22, -24], [80, -21]], { w: 2.4, color: mix(TK, P.L, 0.35), seed: 113, taper: false });
+  fpoly(c, P, ell(-2, -31, 6, 4, 9), mix(TK, P.D, 0.25), { w: 2.6, seed: 114 });
+  fpoly(c, P, rrect(-60, 4, 120, 24, 11), mix(TK, P.D, 0.45), { w: 3.4, seed: 115 });
+  for (let i = 0; i < 5; i++) { const wx = -42 + i * 21; ink(c, through(ell(wx, 16, 7, 7, 8), 3, true), { w: 3, color: P.ink, closed: true, seed: 116 + i, wob: 0.3, step: 4 }); const a = (tx * 0.12) + i; ink(c, [[wx, 16], [wx + Math.cos(a) * 5, 16 + Math.sin(a) * 5]], { w: 2.4, color: mix(TK, P.L, 0.5), seed: 130 + i, taper: false }); }
+  c.restore();
+  poeira(c, P, gx - 6, gy - 4, t - 7.96, 5, 14);
+};
+const cenaC = (c, t, P) => {
+  fundoCeu(c, P, mix(P.body, P.L, 0.7), mix(P.wall, P.L, 0.4));
+  const med = ell(405, 340, 112, 112, 30);
+  fpoly(c, P, med, mix(P.L, P.sky, 0.45), { w: 4.4, seed: 140 });
+  c.save(); path(c, med); c.clip();
+  const sw = Math.sin(t * 2.2) * 2, S = mix(P.D, P.L, 0.08);
+  fpoly(c, P, through([[318, 470], [326, 410], [356, 388], [405, 380], [454, 388], [484, 410], [492, 470]], 8, false).concat([[492, 470], [318, 470]]), S, { w: 3, seed: 141 });
+  fpoly(c, P, rect(393, 358 + sw, 24, 30), S, { w: 2.4, seed: 142 });
+  fpoly(c, P, ell(405, 330 + sw, 27, 33, 20), S, { w: 3, seed: 143 });
+  fpoly(c, P, [[392, 384], [418, 384], [405, 412]], P.L, { w: 2.6, seed: 144 });
+  fpoly(c, P, [[404, 390], [410, 398], [405, 424], [400, 398]], P.body, { w: 2.2, seed: 145 });
+  c.restore();
+};
+const cenaD = (c, t, P) => {
+  fundoCeu(c, P, mix(P.sky, P.L, 0.3), mix(P.sky, P.L, 0.7));
+  fpoly(c, P, rect(266, 330, 280, 74), mix(P.L, P.D, 0.12), { w: 3.4, seed: 150 });
+  for (let i = 0; i < 6; i++) fpoly(c, P, rect(280 + i * 46, 346, 22, 34), mix(P.D, P.L, 0.3), { w: 2.6, seed: 151 + i });
+  fpoly(c, P, rect(266, 404, 280, 70), mix(P.D, P.L, 0.4), { w: 3.6, seed: 160 });
+  const soldados = [[330, 0], [404, 0.3], [478, 0.58]];
+  soldados.forEach(([x, atraso], i) => {
+    const u = t - (13.81 + atraso), baixa = E.in2(seg(u, 0, 0.3)), quica = u > 0.3 ? Math.exp(-(u - 0.3) * 10) * Math.sin((u - 0.3) * 40) * 0.12 : 0;
+    const by = 440;
+    // corpo, capacete e braço
+    fpoly(c, P, rect(x - 5, by - 14, 4, 14), P.D, { w: 2, seed: 161 + i }); fpoly(c, P, rect(x + 1, by - 14, 4, 14), P.D, { w: 2, seed: 164 + i });
+    fpoly(c, P, rrect(x - 11, by - 46 + baixa * 3, 22, 34, 5), OL, { w: 3, seed: 167 + i });
+    fpoly(c, P, ell(x, by - 56 + baixa * 3, 8, 9, 12), mix(P.peach, P.D, 0.12), { w: 2.6, seed: 170 + i });
+    fpoly(c, P, [[x - 10, by - 58 + baixa * 3], [x - 8, by - 68 + baixa * 3], [x + 8, by - 68 + baixa * 3], [x + 10, by - 58 + baixa * 3]], mix(OL, P.D, 0.25), { w: 2.6, seed: 173 + i });
+    // fuzil: em pé ao lado do corpo, deitado no chão em "deporem"
+    const ang = lerp(-1.45, -0.02, baixa) + quica, bx = x + 17, byy = by + 1 + baixa * 2;
+    c.save(); c.translate(bx, byy); c.rotate(ang); ink(c, [[0, 0], [58, 0]], { w: 5, color: P.ink, seed: 176 + i, taper: false }); ink(c, [[0, 0], [14, 0]], { w: 8, color: mix(P.woodF, P.D, 0.1), seed: 179 + i, taper: false }); c.restore();
+  });
+};
+const janela = (c, t, P) => {
+  c.save(); path(c, rect(266, 198, 279, 276)); c.clip();
+  const cenas = [[cenaA, 0], [cenaB, 4.9], [cenaC, 8.8], [cenaD, 12.8]];
+  cenas.forEach(([fn, s]) => { const a = s === 0 ? 1 : seg(t, s - 0.15, s + 0.15); if (a <= 0) return; c.globalAlpha = a; fn(c, t, P); c.globalAlpha = 1; });
+  c.restore();
+};
+
 export const style = {
   id: "sessao-na-mesa",
   name: "Sessão na mesa",
@@ -265,63 +427,76 @@ Um HTML, um canvas, uma função render(t) pura. Confira os quadros em t = 0, 1,
     duracao_ref: 52.672,
   },
   render(ctx, t, theme, w, h) {
-    const T = ((t % LOOP) + LOOP) % LOOP;
-    const nome = String((theme && theme.name) || "Pedido");
-    const R = preparar(w, h, theme, nome), P = R.P, V = R.V;
+    t = clamp(t, 0, DUR);
+    const R = preparar(w, h, theme, "Saigon"), P = R.P, V = R.V;
+    // ciclo do personagem: o relógio local T (0..5) do motor original, esticado para cada batida
+    let T = 4.99, cyc = null;
+    for (const c of CIC) if (t >= c.s && t < c.e) { cyc = c; T = ((t - c.s) * LOOP) / (c.e - c.s); }
+    // câmera: plano médio, com empurrão curto até a janela na palavra de cada ação
+    const z = tr(t, ZK), cx = tr(t, CXK), cy = tr(t, CYK), k = V.s * z;
+    const mundo = () => ctx.setTransform(k, 0, 0, k, w / 2 - cx * k, h / 2 - cy * k);
+    const camada = (L) => { const m = k / (V.s * ZS); ctx.setTransform(m, 0, 0, m, w / 2 + k * (V.cx - cx) - (k * w) / (2 * V.s), h / 2 + k * (V.cy - cy) - (k * h) / (2 * V.s)); ctx.drawImage(L, 0, 0); };
     ctx.save();
-    ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over";
+    ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over"; ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
     ctx.fillStyle = P.wall; ctx.fillRect(0, 0, w, h);
-    ctx.drawImage(R.sala, 0, 0);
-    ctx.setTransform(V.s, 0, 0, V.s, w / 2 - V.cx * V.s, h / 2 - V.cy * V.s); ctx.lineJoin = "round";
+    camada(R.sala);
+    mundo(); ctx.lineJoin = "round";
+    janela(ctx, t, P);
     const b = BEAT;
-    // pose
-    const tecla = Math.floor(T * 12);
+    const tecla = Math.floor(t * 12);
     const digitando = (T >= b.digita[0] && T < b.digita[1]) || T < 0.12;
     const o = { dx: 0, dy: 0, rot: 0, sq: 0, aL: 2.42, aR: 0.72, aLen: 2.5 * U, aLy: 4.6 * U, olhos: "rect", boca: null, look: 0 };
     o.aL = tr(T, [[0, 2.42], [b.pega, 2.42], [b.pega + 0.2, 3.72], [b.guarda[0], 3.72], [b.guarda[1], 2.42], [b.sobe[0], 2.42], [b.sobe[1], 3.72], [b.arma, 3.72], [b.solta - 0.05, 4.05], [b.solta + 0.1, 2.9, "out3"], [b.solta + 0.45, 2.42]]);
     o.dy = tr(T, [[0, 0], [b.ideia, 0], [b.ideia + 0.1, -46, "out3"], [b.ideia + 0.35, -36], [b.guarda[1], 0], [b.sobe[1], 22], [b.arma, 22], [b.solta + 0.08, -30, "out3"], [b.solta + 0.4, -12], [LOOP - 0.05, 0]]);
     o.rot = tr(T, [[0, 0], [b.dobra[1], 0], [b.arma + 0.18, 0.08], [b.solta, 0.085], [b.solta + 0.1, -0.08, "out3"], [b.solta + 0.45, 0]]);
     o.dx = tr(T, [[0, 0], [b.dobra[1], 0], [b.arma + 0.18, 24], [b.solta, 26], [b.solta + 0.1, -28, "out3"], [b.solta + 0.45, 0]]);
-    if (T >= b.voo[0] && T < b.ideia) { o.olhos = "rect"; }
+    if (T >= b.voo[0] && T < b.ideia) o.olhos = "rect";
     if (T >= b.ideia && T < b.guarda[0] + 0.1) { o.olhos = "fofo"; o.boca = "abre"; }
     if (T >= b.guarda[0] + 0.1 && T < b.sobe[0]) { o.olhos = "foco"; o.boca = "linha"; o.look = 0.55; }
     if (T >= b.sobe[0] && T < b.solta) { o.olhos = "alegre"; o.boca = "sorri"; }
     if (T >= b.solta && T < b.fora - 0.1) { o.olhos = "susto"; o.boca = "o"; o.look = -1; }
-    if (digitando) { const q = hashI(tecla, 5) > 0.5; o.aL += q ? 0.34 : -0.1; o.aR += q ? -0.1 : 0.34; o.dy += tecla % 2 ? 6 : 0; }
-    if (o.aL > 3.2) { o.aLen = 2.9 * U; o.aLy = 3.2 * U; }
-    // o avião ou a folha da vez
-    let folha = null; const SX = V.retrato ? 905 : Math.max(548, V.cx - w / (2 * V.s) + 200), SY = V.retrato ? 222 : 322;
-    const texP = texFolha(R, theme, linhasDe(nome), "p"), texR = texFolha(R, theme, ["-"], "r");
+    if (digitando && cyc) { const q = hashI(tecla, 5) > 0.5; o.aL += q ? 0.34 : -0.1; o.aR += q ? -0.1 : 0.34; o.dy += tecla % 2 ? 6 : 0; }
+    if (!cyc) { o.olhos = "rect"; o.look = -0.4; }
+    // a reação cai no quadro da palavra: helicóptero decola, portão cai, fuzis no chão
+    for (const kw of PALAVRAS) {
+      const u = t - kw;
+      if (u >= -0.02 && u < 0.6) { o.olhos = "susto"; o.boca = "o"; o.look = -0.7; o.dy -= 46 * E.out3(clamp(u / 0.1)) * (1 - seg(u, 0.18, 0.6)); o.rot += 0.05 * Math.sin(u * 30) * (1 - seg(u, 0, 0.5)); }
+    }
+    let folha = null; const SX = 770, SY = 330;
+    const texP = texFolha(R, theme, cyc ? cyc.plane : ["-"], "p"), texR = texFolha(R, theme, ["-"], "r");
     if (T >= b.voo[0] && T < b.guarda[1]) {
-      if (T < b.pega) { const k = seg(T, b.voo[0], b.voo[1]); const kk = 1 - Math.pow(1 - k, 1.6); const Aq = naCurva(VOO, TV, kk), Nq = naCurva(VOO, TV, clamp(kk + 0.012)); const h0 = rumo(Aq.dx, Aq.dy), h1 = rumo(Nq.dx, Nq.dy); let dh = h1 - h0; while (dh > Math.PI) dh -= 6.283; while (dh < -Math.PI) dh += 6.283; const u2 = Math.max(0, T - b.voo[1]); folha = { x: Aq.x + 40 * E.out3(clamp(u2 / 0.15)), y: Aq.y + Math.sin(k * 14) * 14 * (1 - k) - 14 * Math.abs(Math.sin(u2 * 14)) * Math.exp(-8 * u2), heading: h0, roll: 0.95 - clamp(dh * 12, -1, 1) * 0.5, pitch: 0.32, s: lerp(0.46, 0.56, E.io(k)), f: FULL, tex: texP }; o.look = clamp((folha.x - 960) / 420, -1, 1); }
+      if (T < b.pega) { const kq = seg(T, b.voo[0], b.voo[1]); const kk = 1 - Math.pow(1 - kq, 1.6); const Aq = naCurva(VOO, TV, kk), Nq = naCurva(VOO, TV, clamp(kk + 0.012)); const h0 = rumo(Aq.dx, Aq.dy), h1 = rumo(Nq.dx, Nq.dy); let dh = h1 - h0; while (dh > Math.PI) dh -= 6.283; while (dh < -Math.PI) dh += 6.283; const u2 = Math.max(0, T - b.voo[1]); folha = { x: Aq.x + 40 * E.out3(clamp(u2 / 0.15)), y: Aq.y + Math.sin(kq * 14) * 14 * (1 - kq) - 14 * Math.abs(Math.sin(u2 * 14)) * Math.exp(-8 * u2), heading: h0, roll: 0.95 - clamp(dh * 12, -1, 1) * 0.5, pitch: 0.32, s: lerp(0.46, 0.56, E.io(kq)), f: FULL, tex: texP }; o.look = clamp((folha.x - 960) / 420, -1, 1); }
       else if (T < b.guarda[0]) { const u = seg(T, b.abre[0], b.abre[1]), m = E.io(clamp(u * 1.5)); const Aq = naCurva(VOO, TV, 1); folha = { x: lerp(652, SX, m), y: lerp(Aq.y, SY, m) + (T > b.abre[1] ? Math.sin((T - b.abre[1]) * 6) * 4 : 0), s: lerp(0.56, 1, E.out3(clamp(u * 1.5))), heading: lerp(rumo(Aq.dx, Aq.dy), -0.03, m), roll: lerp(1.1, 0, E.io(clamp(u * 2.4))), pitch: lerp(0.5, 0, m), f: foldK(1 - u), tex: texP }; }
       else { const g = E.io(seg(T, b.guarda[0], b.guarda[1])); folha = { x: lerp(SX, 412, g), y: lerp(SY, 668, g), s: lerp(1, 0.28, g), heading: lerp(-0.03, -0.5, g), roll: 0, pitch: 0, f: [0, 0, 0, 0], tex: texP }; }
     }
-    if (T >= b.sobe[0] && T < b.fora) {
+    if (cyc && T >= b.sobe[0] && T < b.fora) {
       const back = P.peach;
       if (T < b.dobra[0]) { const u = E.out3(seg(T, b.sobe[0], b.sobe[1])); folha = { x: lerp(690, SX, u), y: lerp(736, SY, u), s: lerp(0.26, 1, u), heading: lerp(0.15, -0.03, u), roll: 0, pitch: 0, f: [0, 0, 0, 0], tex: texR, back }; }
-      else if (T < b.arma) { const k = seg(T, b.dobra[0], b.dobra[1]); folha = { x: SX - 8 * k, y: SY - 34 * E.io(k), s: 1, heading: -0.03, roll: 0.62 * E.io(seg(k, 0.6, 1)), pitch: 0.12 * E.io(seg(k, 0.6, 1)), f: foldK(k), tex: texR, back }; }
-      else if (T < b.solta) { const k = E.io(seg(T, b.arma, b.solta - 0.03)); folha = { x: lerp(SX - 8, SX + 98, k), y: lerp(SY - 34, SY + 52, k), s: lerp(1, 0.94, k), heading: lerp(-0.03, 0.55, k), roll: 0.62, pitch: 0.12, f: FULL, tex: texR, back }; }
-      else { const k = seg(T, b.solta, b.fora); const Aq = naCurva(SAIDA, TS, E.out2(k)); folha = { x: Aq.x, y: Aq.y, s: lerp(0.9, 0.22, E.out3(clamp(k * 1.6))), heading: lerp(0.55, rumo(Aq.dx, Aq.dy), clamp(k * 5)), roll: 0.85, pitch: 0.3, f: FULL, tex: texR, back }; }
+      else if (T < b.arma) { const kq = seg(T, b.dobra[0], b.dobra[1]); folha = { x: SX - 8 * kq, y: SY - 34 * E.io(kq), s: 1, heading: -0.03, roll: 0.62 * E.io(seg(kq, 0.6, 1)), pitch: 0.12 * E.io(seg(kq, 0.6, 1)), f: foldK(kq), tex: texR, back }; }
+      else if (T < b.solta) { const kq = E.io(seg(T, b.arma, b.solta - 0.03)); folha = { x: lerp(SX - 8, SX + 98, kq), y: lerp(SY - 34, SY + 52, kq), s: lerp(1, 0.94, kq), heading: lerp(-0.03, 0.55, kq), roll: 0.62, pitch: 0.12, f: FULL, tex: texR, back }; }
+      else { const kq = seg(T, b.solta, b.fora); const Aq = naCurva(SAIDA, TS, E.out2(kq)); folha = { x: Aq.x, y: Aq.y, s: lerp(0.9, 0.22, E.out3(clamp(kq * 1.6))), heading: lerp(0.55, rumo(Aq.dx, Aq.dy), clamp(kq * 5)), roll: 0.85, pitch: 0.3, f: FULL, tex: texR, back }; }
     }
     personagem(ctx, o, R);
-    const fim = T >= b.digita[1] - 0.05 && T < b.fora + 0.02;
-    const n = T < b.pega ? 6 : T < b.digita[0] ? 6 : 6;
-    tela(ctx, fim ? "check" : { n, frac: 1 }, T, P);
-    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(R.meio, 0, 0);
-    ctx.setTransform(V.s, 0, 0, V.s, w / 2 - V.cx * V.s, h / 2 - V.cy * V.s);
+    const fim = cyc && T >= b.digita[1] - 0.05 && T < b.fora + 0.02;
+    tela(ctx, fim ? "check" : { n: 6, frac: 1 }, t, P);
+    camada(R.meio); mundo();
     fones(ctx, P, 0);
-    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(R.mesa, 0, 0);
-    ctx.setTransform(V.s, 0, 0, V.s, w / 2 - V.cx * V.s, h / 2 - V.cy * V.s);
-    teclado(ctx, P, digitando ? tecla : -1); caneca(ctx, P, T);
+    camada(R.mesa); mundo();
+    teclado(ctx, P, digitando ? tecla : -1); caneca(ctx, P, t);
+    // rótulos de papel na parede: no máximo 6 palavras por vez
+    for (const n of NOTAS) { const kq = popAbs(t, n.a, n.b); nota(ctx, theme, P, n.x, n.y, n.wd, n.hd, n.rot, n.lin, kq, n.cor(P)); }
     if (folha) papel(ctx, folha, P);
     const topo = 462 + o.dy;
     const pop = (a, d) => (T < a || T >= a + d ? 0 : E.back(clamp((T - a) / 0.16)) * (1 - seg(T, a + d - 0.12, a + d)));
-    lampada(ctx, 1120, topo - 80, pop(b.ideia, b.guarda[0] + 0.15 - b.ideia) * 1.25, P);
-    faisca(ctx, 1232, topo + 22, 54 * pop(b.digita[1] - 0.05, 0.5), P);
-    faisca(ctx, 1226, topo + 16, 52 * pop(b.solta + 0.02, 0.45), P);
-    // grão de papel, feito uma vez por tamanho
-    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 0.55; ctx.imageSmoothingEnabled = true; ctx.drawImage(R.grao, 0, 0, w, h); ctx.globalAlpha = 1;
+    if (cyc) { lampada(ctx, 1120, topo - 80, pop(b.ideia, b.guarda[0] + 0.15 - b.ideia) * 1.25, P); faisca(ctx, 1232, topo + 22, 54 * pop(b.digita[1] - 0.05, 0.5), P); }
+    for (const kw of PALAVRAS) { const u = t - kw; if (u >= 0 && u < 0.5) faisca(ctx, 1226, topo + 16, 52 * E.back(clamp(u / 0.16)) * (1 - seg(u, 0.35, 0.5)), P); }
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 0.55; ctx.drawImage(R.grao, 0, 0, w, h); ctx.globalAlpha = 1;
+    // íris final: o quadro fecha sobre o personagem
+    const ir = seg(t, 14.2, 15);
+    if (ir > 0) {
+      const px = w / 2 + (960 - cx) * k, py = h / 2 + (560 - cy) * k, rad = lerp(1500, 0, E.in2(ir));
+      ctx.fillStyle = "#000"; ctx.beginPath(); ctx.rect(0, 0, w, h); ctx.moveTo(px + rad, py); ctx.arc(px, py, rad, 0, 6.2832, true); ctx.closePath(); ctx.fill("evenodd");
+    }
     ctx.restore();
   },
 };

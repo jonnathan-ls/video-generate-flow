@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1920, height=1080" />
-<title>sessao-na-mesa · composição HyperFrames</title>
+<title>Saigon 1975 · sessão na mesa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" />
@@ -17,40 +17,32 @@
 </style>
 </head>
 <body>
-<div id="root" data-composition-id="main" data-start="0" data-duration="5" data-width="1920" data-height="1080">
+<div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1920" data-height="1080">
   <canvas id="tela" width="1920" height="1080"></canvas>
-  <span class="fonte-oculta" style="font-family: 'Permanent Marker'; font-weight: 700; font-style: italic;">Permanent Marker</span>
-  <span class="fonte-oculta" style="font-family: 'Permanent Marker'; font-weight: 800;">Permanent Marker</span>
+  <span class="fonte-oculta" style="font-family: 'Permanent Marker'; font-weight: 800;">Permanent Marker ÁÇÃ</span>
 </div>
 <script type="module">
-  // Estilo modelado no formato da Biblioteca de motion: style.render(ctx, t, theme, w, h), loop de 5 s, render(0) === render(5).
-  // Troque o tema (cores em hex, fonte, name = a frase/o nome em tela) sem mexer no estilo.js.
   import { style } from './estilo.js';
   const tema = { ...style.theme, font: 'Permanent Marker' };
   const canvas = document.getElementById('tela');
   const ctx = canvas.getContext('2d', { alpha: false });
-  const W = 1920, H = 1080, LOOP = 5;
-
+  const W = 1920, H = 1080, DUR = 15;
   function desenha(t) {
-    ctx.save();
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.globalAlpha = 1;
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.filter = 'none';
-    ctx.shadowBlur = 0;
+    ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over'; ctx.filter = 'none'; ctx.shadowBlur = 0;
     ctx.fillStyle = tema.bg; ctx.fillRect(0, 0, W, H);
-    style.render(ctx, ((t % LOOP) + LOOP) % LOOP, tema, W, H);
+    style.render(ctx, t, tema, W, H);
     ctx.restore();
   }
-
-  // Relógio único: a timeline anda p.t de 0 a 5 e cada atualização redesenha o quadro.
+  window.seek = (t) => desenha(t);
+  // relógio único: uma timeline pausada (HyperFrames) e o seek do render por GPU chamam a mesma função pura de t
   const p = { t: 0 };
-  const tl = gsap.timeline({ paused: true });
-  tl.to(p, { t: LOOP, duration: LOOP, ease: 'none', onUpdate: () => desenha(p.t) }, 0);
-  window.__timelines = window.__timelines || {};
-  window.__timelines.main = tl;
-  document.fonts.ready.then(() => desenha(tl.time()));
-  desenha(0);
+  if (window.gsap) { const tl = gsap.timeline({ paused: true }); tl.to(p, { t: DUR, duration: DUR, ease: 'none', onUpdate: () => desenha(p.t) }, 0); window.__timelines = window.__timelines || {}; window.__timelines.main = tl; }
+  try {
+    await Promise.race([document.fonts.load("800 40px 'Permanent Marker'", 'ÁÇÃ0123456789'), new Promise((r) => setTimeout(r, 6000))]);
+    await document.fonts.ready;
+  } catch (e) {}
+  window.__fonteOk = document.fonts.check("800 40px 'Permanent Marker'");
+  try { desenha(0); window.__ready = true; } catch (e) { window.__error = String(e && e.stack || e); }
 </script>
 </body>
 </html>
