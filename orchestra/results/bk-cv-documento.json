@@ -1,0 +1,15 @@
+{"status": "done",
+ "files": ["lab/bakeoff-saigon/cv-documento/ (index.html, cena.js, main.js, base.js, render.mjs, sheet.sh)", "lab/bakeoff-saigon/out/cv_documento_raw.mp4", "lab/bakeoff-saigon/out/cv_documento_16x9.mp4"],
+ "validators": {
+  "ritmo.py": "FALHOU só em planos curtos dentro dos mergulhos (4,63–4,9 s; 8,67–8,83 s; 13,0 s) e em 1 entra-e-sai (3,07–3,13 s: pessoa sumindo na porta do helicóptero). Maior buraco 0,4 s, 17 cortes secos. A própria referência da skill acusa 66 falhas iguais (mergulho/borrão do estilo)",
+  "pericia-movimento (contra a referência)": "amplitude 44,5x PASSA (meta 5,8x); quase-parada 65% PASSA (meta 38%); picos 4 FALHA (meta 6)",
+  "render_gpu": "Chrome headless-shell, ANGLE/Vulkan na RTX 3060, h264_nvenc; sem SwiftShader nem libx264",
+  "saida": "1920x1080, 30 fps, 15,0 s, H.264 + AAC (vídeo copiado no mux)"},
+ "summary": "Saigon 29–30/04 no estilo documento-vira-video, 16:9, 15 s. Papel: título '29 DE ABRIL · SAIGON.' escrito à mão, telhado, fila de pessoas subindo pela escada de corda, helicóptero tandem verde-oliva que sobe em 'evacuam' (3,49) com a câmera inclinando; o ponto final do título é o portal (mergulho exponencial 3,95–4,93). Noite: '30 DE ABRIL', 2 tanques T-54, o tanque da frente derruba o portão do Palácio da Independência em 'palácio' (7,97) com soco de câmera, flash, poeira e tremor; estrela, espectro de 6 faixas e cartão do presidente em lápis (silhueta sem rosto): 'PRESIDENTE DO SUL' em 9,63, 'DUONG VAN MINH' em 10,61, encolhe para 'MINH · _ DIAS NO CARGO' e o '2' é carimbado em 'dois' (12,07). Volta pelo mesmo portal (zoom para fora em grade de cartões, 12,45–13,7): papel com 3 soldados que largam os fuzis em 13,81/14,1/14,4 ('deporem as armas'); o quadro fecha em 14,6–15,0. Sem som além da narração. Tempo de trabalho ~11 min (leitura 2 min, código 6 min, ajustes 3 min); render completo 28 s na GPU (450 quadros, 6 subquadros de borrão só nos mergulhos).",
+ "issues": [
+  "Picos de movimento 4 de 6 exigidos (pericia-movimento reprovou). Gastei 2 rodadas (soco+inclinação; grade B9 com fade) e parei pela regra; o corte do zoom-out em 13,0 s inflou o máximo e escondeu os outros picos.",
+  "Texto 'Duong Van Minh · 2 dias no cargo' pedido em 10,6–12,4 s: para respeitar 'máx. 6 palavras' e o tempo da fala, o nome completo aparece em 10,61, vira 'MINH' em 11,45 e o '2' só entra em 12,07 ('dois'). A frase inteira não fica na tela desde 10,6.",
+  "Ilustrações são figuras de traço simples (pessoas de palito, helicóptero e tanque de contorno): leitura clara, mas abaixo do acabamento do exemplo da skill; silhueta do presidente é genérica.",
+  "Sem mascote (é da marca da pessoa, não existe no Lacre) e sem fonte manuscrita (Inter itálico 700, como a parede do estilo).",
+  "Sem efeitos sonoros: só a narração (lab, R16 não aplicado). O ritmo.py ainda acusa os planos curtos dos mergulhos, que são parte do estilo.",
+  "Não foi feito o 9:16 (tarefa pediu só 16:9). O estilo.js de partida ficou na pasta sem uso; o motor foi copiado para base.js."]}

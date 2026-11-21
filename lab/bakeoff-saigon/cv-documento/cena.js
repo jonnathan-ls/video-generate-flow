@@ -613,6 +613,8 @@ const papel1 = (g, T) => {
   const tinta = th.bg;
   const topo = CHAO1;
   const info = portalCam(g, T, G1.ponto, () => {
+    // a câmera inclina para seguir o helicóptero que sobe e volta ao lugar antes do mergulho
+    ctx.translate(0, 260 * ease(seg(T, 3.49, 3.72)) * (1 - ease(seg(T, 3.72, 4.15))));
     titulo(g, G1, TIT1, tinta, seg(T, 0.12, 0.85), bk);
     ctx.save();
     ctx.translate(250, 0);
@@ -693,7 +695,7 @@ const noite1 = (g, T) => {
   const G2 = (g._g2 = g._g2 || tituloGeo(ctx, TIT2, 104, 520, 190));
   titulo(g, G2, TIT2, th.ink, seg(T, 4.98, 5.55), bk, false);
   // soco de câmera no impacto: entra 1→1,32 em 0,15 s e volta até 8,5 s
-  const pz = T < 7.97 ? 1 : T < 8.12 ? lerp(1, 1.32, outCubic(seg(T, 7.97, 8.12))) : lerp(1.32, 1, ease(seg(T, 8.12, 8.5)));
+  const pz = T < 7.97 ? 1 : T < 8.12 ? lerp(1, 1.5, outCubic(seg(T, 7.97, 8.12))) : lerp(1.5, 1, ease(seg(T, 8.12, 8.5)));
   ctx.save();
   ctx.translate(1100, 820);
   ctx.scale(pz, pz);
@@ -730,6 +732,10 @@ const noite1 = (g, T) => {
   ctx.restore();
   ctx.restore();
   ctx.restore();
+  if (T >= 7.97 && T < 8.12) {
+    ctx.fillStyle = rgba(mix(th.ink, "#ffffff", 0.4), 0.85 * (1 - seg(T, 7.97, 8.12)));
+    ctx.fillRect(0, 0, w, h);
+  }
 };
 
 // ---------- 3 · transição: estrela, espectro, cartão do presidente (8,45–12,95) ----------
@@ -872,6 +878,7 @@ const legendasCartao = (g, T, bk) => {
     ctx.restore();
   }
 };
+let BMP = null;
 const transicao = (g, T) => {
   const { ctx, th, w, h } = g;
   const bk = Math.floor(T * 12 + 1e-6);
@@ -926,22 +933,35 @@ const transicao = (g, T) => {
     ctx.globalAlpha = 1;
     legendasCartao(g, T, bk);
   }
-  // saída: o cartão encolhe até virar um ponto (zoom para fora), 12,45–12,95
+  // saída (B9): zoom para fora; o cartão vira a célula central de uma grade de cartões iguais
   if (T >= 12.45) {
     const k = seg(T, 12.45, 12.95);
-    const esc2 = Math.pow(1 / 120, outCubic(k) * 0.999) * 1.0;
-    const a = 1;
-    cartaoMinh(g, T, bk, esc2, 1);
+    const sc = Math.pow(0.085, outCubic(k));
+    if (!BMP) {
+      BMP = novaTela(900, 800);
+      const bx = BMP.getContext("2d");
+      bx.translate(450 - W0 / 2, 400 - (H0 / 2 + 10));
+      cartaoMinh({ ctx: bx, th }, 0, 0, 1, 1);
+    }
     ctx.save();
-    ctx.translate(cx, cy);
-    ctx.scale(esc2, esc2);
-    ctx.translate(-cx, -cy);
+    ctx.translate(cx, cy + 10);
+    ctx.scale(sc, sc);
+    for (let j = -12; j <= 12; j++)
+      for (let i = -17; i <= 17; i++) {
+        if (!i && !j) continue;
+        const px = cx + i * 860 * sc - cx, py = cy + 10 + j * 780 * sc - (cy + 10);
+        if (Math.abs(i * 860 * sc) > w / 2 + 460 * sc || Math.abs(j * 780 * sc) > h / 2 + 400 * sc) continue;
+        ctx.globalAlpha = 0.92 * (1 - seg(k, 0.72, 1));
+        ctx.drawImage(BMP, i * 860 - 450, j * 780 - 400);
+        // moldura colorida em anéis concêntricos
+        const anel = Math.max(Math.abs(i), Math.abs(j));
+        ctx.strokeStyle = rgba(cores[anel % 6], 0.9 * (1 - seg(k, 0.72, 1)));
+        ctx.lineWidth = 9 / Math.max(sc, 0.2);
+        ctx.strokeRect(i * 860 - 380, j * 780 - 350, 760, 700);
+      }
     ctx.restore();
-    // o ponto desce para o portal (centro): sol pálido
-    ctx.fillStyle = rgba(th.ink, 0.9 * seg(k, 0.55, 1));
-    ctx.beginPath();
-    ctx.arc(cx, cy, 11 * (1 + 6 * (1 - k)), 0, TAU);
-    ctx.fill();
+    ctx.globalAlpha = 1;
+    cartaoMinh(g, T, bk, sc, 1);
   }
 };
 
