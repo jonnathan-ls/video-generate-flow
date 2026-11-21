@@ -58,3 +58,8 @@
 - **Contexto:** lab Saigon, 3 rodadas, 9 estilos (`lab/bakeoff-saigon/out/comparativo_saigon_r3.mp4`).
 - **Decisão:** o Vietnã termina na colagem da produção, com todo o protocolo (`protocols/scene-production.md`, gates, revisão com nota). Motivo do usuário: a colagem da produção saiu melhor que a do lab justamente pelo protocolo e pelo fluxo, e trocar de estilo agora perderia a produção em curso.
 - **Para depois:** Ink and Toon (3) e Low-Poly (5) acertaram de primeira; ficam como candidatos para outros temas/canais. Nada do lab entra na produção sem nova decisão.
+
+## 2026-11-21 — Mídias primeiro, render depois (decisão do usuário: "Reescreve e aí depois você retoma")
+- `protocols/scene-production.md` passa a ter 3 fases: A (Flow + gate de época + recortes de todas as cenas, sem render), B (specs conferidas por quadros parados; 1 cena-piloto renderizada por tipo de ação novo), C (render em bloco, máx. 2 na GPU, revisão por lote).
+- Motivo: o Flow não pesa a máquina; o render pesa e travava o PC quando ia junto com cada lote.
+- Vietnã: o ciclo 2 do lote 1 (c2-c, c2-d) termina como está e serve de **piloto de movimento** (navio, coluna, guindaste, jipe, multidão, documento). Depois da aprovação do lote 1, S07–S54 seguem pela fase A.

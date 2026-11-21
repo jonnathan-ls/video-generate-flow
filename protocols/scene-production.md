@@ -6,9 +6,16 @@
 ## Por que existe
 O usuário reprovou três padrões em sequência: mapa estático (S01 v1), "só texto e mapa" (lote S02–S10 v1) e "imagens estáticas com efeitos" (ilustração em código e S04 com fundo do Flow parado). Ele aprovou o S05, com fundo do Flow e objetos recortados que **se movem no tempo da palavra**. Este protocolo transforma o S05 em receita, com as lições dos dois ciclos de revisão dele (D1–D13 em `qa-piloto-s05.md`).
 
-## Unidade de trabalho: lote de 4 a 6 cenas
-As specs das cenas de um lote podem ser escritas **em paralelo** (`orchestra/paralelo.sh`, uma tarefa por cena, sem Flow); o Flow do lote inteiro é uma chamada só, na fila única. Tipos de cena que se repetem (navio chega ao cais, coluna marcha, tanque avança, avião passa, multidão) viram **modelos** em `protocols/scene-templates.md` à medida que forem aprovados: copie o modelo e ajuste, em vez de escrever do zero.
-Um lote por vez. Um lote só começa quando o anterior foi aprovado pelo revisor, ou foi escalado.
+## Fluxo em 3 fases: mídias primeiro, render depois (revisto em 2026-11-21, decisão do usuário)
+**Motivo:** o Flow roda no servidor do Google e não pesa a máquina. O render pesa e travava o uso do PC quando ia junto com cada lote. Mídia errada é barata de corrigir **antes** do render (uma imagem nova no Flow), cara depois (render de novo).
+
+- **Fase A, mídias (todas as cenas restantes, sem render):** passos 1 a 5 para todas as cenas. O Flow vai em chamadas de até 50 imagens, na fila única. O gate de época roda em toda imagem. Ao fim de cada grupo de 4 a 6 cenas: folha de contato só de imagens paradas (`qa-midias-<lote>.jpg`), com revisão do Gemini e conferência reduzida pelo maestro (época, estilo igual à âncora S05, recorte limpo, chão livre no fundo).
+  **DoD da fase A:** 0 imagem reprovada no `periodo.sh`; todo fundo, recorte e efeito do plano de tomadas tem arquivo e linha `FLOW-<lote>` em `sources.md`.
+- **Fase B, montagem (sem render completo):** passo 6. Specs escritas em paralelo (`orchestra/paralelo.sh`, uma tarefa por cena, sem Flow) e conferidas por quadros parados nas palavras de ação (`bash orchestra/tools/quadros.sh Sxx auto`, cerca de 15 s por cena): escala, ordem das camadas, chão, rótulo legível, objeto na palavra. Erro de composição se corrige no spec. Só volta à fase A a imagem que precisa ser trocada.
+  **Pilotos de movimento:** antes de montar em série, todo tipo de ação ainda sem modelo em `scene-templates.md` (navio, coluna, tanque, avião, multidão, documento...) ganha **uma cena-piloto renderizada** que passa pelos passos 7 a 9. Só depois esse tipo é replicado. Isso pega cedo o defeito que só aparece em movimento (velocidade, passada, sincronia com a palavra).
+- **Fase C, render em bloco:** passos 7 a 9 em sequência, no máximo 2 renders de GPU ao mesmo tempo, de preferência na janela em que o usuário não usa o PC. Revisão com nota por lote de 4 a 6 cenas, como antes (ciclo 1 e ciclo 2, depois escalar).
+
+Cenas já aprovadas não são refeitas. Tipos de cena que se repetem viram **modelos** em `protocols/scene-templates.md` à medida que forem aprovados: copie o modelo e ajuste, em vez de escrever do zero.
 
 ## Passos
 1. **Ler** (R4): este protocolo, `shot-planning.md`, `learnings.md`, `mistakes.md`, os `qa-*.md` do vídeo (os defeitos já apontados não podem voltar) e as frases das cenas em `script.md` + `render/props/<cena>.json` (palavras com tempo).
@@ -60,7 +67,7 @@ Um lote por vez. Um lote só começa quando o anterior foi aprovado pelo revisor
    Qualquer falha volta ao passo 6.
 9. **Revisão independente** (`bash orchestra/review.sh Sxx <ciclo>`, comparando com a âncora S05 aprovada; Gemini e, se der cota, modelo grátis com visão): ciclo 1 e, se preciso, ciclo 2, conforme `rubrics/visual.md`. Relatório em `qa-lote-XX.md`. Aprovado → segue. Reprovado no ciclo 2 → escalar.
 10. **Vídeo inteiro:** antes de pedir aprovação, o vídeo montado passa em `rubrics/render-qa.md` (gancho, encadeamento, ritmo, voz, som, entrega). Leia `knowledge/longform-production-lessons.md` e `knowledge/collage-direction.md` antes do primeiro lote de um vídeo novo.
-11. **Entrega ao usuário** a cada 2 ou 3 lotes aprovados, ou quando ele pedir: prévia 720p com legenda e o resumo das notas.
+11. **Entrega ao usuário** na fase C, a cada 2 ou 3 lotes aprovados, ou quando ele pedir. Na fase A, mostre a folha de contato das mídias se ele pedir: prévia 720p com legenda e o resumo das notas.
 
 ## Regras físicas (lições do S05)
 | Regra | Origem |
