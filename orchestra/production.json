@@ -139,13 +139,11 @@
  "approved_scenes": [
   "S01"
  ],
- "now": "Lote 1 ciclo 2 concluído e escalado: Gemini deu REFAZER (3,0–3,44); gates determinísticos PASS",
+ "now": "Em paralelo: gate-fisica (Sonnet) e lp-base (kit low-poly + S05 piloto, Sonnet), desde 01:06",
  "next": [
-  "Revisão com nota do lote 1 + folha de contato",
-  "Fase A: mídias de S07–S54 (Flow + periodo.sh + recortes, sem render)",
-  "Fase B: specs + quadros; Fase C: render em bloco"
+  "c3: colagem lote 1, erros físicos (Sonnet + Flow, fila única) depois do gate-fisica",
+  "lp-S01..S06: demais cenas low-poly em paralelo, depois do lp-base",
+  "Revisão com nota + fisica.sh nas duas versões; prévia ao usuário"
  ],
- "waiting_user": [
-  "Ver previa_lote1_c2.mp4 e decidir: aprovar lote 1 / ciclo 3 focado / seguir para fase A em paralelo"
- ]
+ "waiting_user": []
 }

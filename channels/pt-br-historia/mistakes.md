@@ -99,3 +99,8 @@
 - **Causa:** o executor gastou os últimos minutos abrindo imagens de autoconferência (cada imagem lida pesa no custo do DeepSeek), e o JSON ficava só para o fim.
 - **Correção de processo:** `AGENTS.md` item 5 — gravar o JSON logo após os validadores; depois do render final, não abrir mais imagens (a revisão visual é do `review.sh` e do maestro). O protocolo de cena também corrigido: `transcript_check.py` usa `--scenes scenes.json --scene Sxx`.
 - **Recuperação:** o maestro rodou os gates determinísticos e a revisão com nota sobre os renders já prontos, sem repetir a tarefa.
+
+## 2026-11-21 — Erros físicos chegaram ao usuário no lote 1 (prévia do ciclo 2)
+- **Sintoma (usuário):** embaixador desce flutuando do ar até o chão (S02); navio posicionado fora do rio; avião voando de ré (nariz para um lado, movimento para o outro); carro cruzando o mapa por cima das casas. "Esses tipos de problemas são cruciais e não devem acontecer."
+- **Causa:** nenhum gate checava física de forma direta. `shot_check` só olha tempo e cota; a rubrica do Gemini é aberta e mistura física com estilo (apontou o embaixador, mas não navio/avião/carro). O executor posiciona por % da tela sem saber onde está a água, a estrada ou o piso do fundo.
+- **Correção de processo:** (1) campos obrigatórios `faces` e `on` (water|road|floor|ground|air) em todo ator que se move, com checagem determinística no `shot_check.py` (nariz × direção, entrada vertical de quem não voa); (2) gate de visão `orchestra/fisica.sh` com perguntas sim/não por ator, nos quadros de início/meio/fim do movimento; FAIL bloqueia a cena. Entra no `protocols/scene-production.md` (passo 8) e vale também para o low-poly.
