@@ -51,6 +51,7 @@ Um lote por vez. Um lote só começa quando o anterior foi aprovado pelo revisor
 8. **Autochecagem** (o produtor, antes do revisor):
    - `shot_check.py` PASS, `scene_gates.py` PASS e folha de contato;
    - `python3 pipeline/validate/render_check.py render/Sxx.mp4 --dur <duração>` PASS (volume -14 ±2 LUFS, pico ≤ -1 dBTP, sem tela preta, sem quadro congelado > 2 s, sem silêncio no meio);
+   - `python3 pipeline/validate/transcript_check.py render/Sxx.mp4 --scene Sxx` PASS (a narração bate com o roteiro, palavra por palavra: pega erro de pronúncia do TTS);
    - quadro **na palavra** de cada ação: o objeto está lá?
    - 3 quadros consecutivos de cada ator andando: a passada e a velocidade estão certas?
    - base de cada objeto acima da legenda, e ator com chão;
@@ -58,7 +59,8 @@ Um lote por vez. Um lote só começa quando o anterior foi aprovado pelo revisor
 
    Qualquer falha volta ao passo 6.
 9. **Revisão independente** (`bash orchestra/review.sh Sxx <ciclo>`, comparando com a âncora S05 aprovada; Gemini e, se der cota, modelo grátis com visão): ciclo 1 e, se preciso, ciclo 2, conforme `rubrics/visual.md`. Relatório em `qa-lote-XX.md`. Aprovado → segue. Reprovado no ciclo 2 → escalar.
-10. **Entrega ao usuário** a cada 2 ou 3 lotes aprovados, ou quando ele pedir: prévia 720p com legenda e o resumo das notas.
+10. **Vídeo inteiro:** antes de pedir aprovação, o vídeo montado passa em `rubrics/render-qa.md` (gancho, encadeamento, ritmo, voz, som, entrega). Leia `knowledge/longform-production-lessons.md` e `knowledge/collage-direction.md` antes do primeiro lote de um vídeo novo.
+11. **Entrega ao usuário** a cada 2 ou 3 lotes aprovados, ou quando ele pedir: prévia 720p com legenda e o resumo das notas.
 
 ## Regras físicas (lições do S05)
 | Regra | Origem |

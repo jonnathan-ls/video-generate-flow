@@ -18,5 +18,5 @@ case $W in
   *) echo "executor desconhecido: $W"; exit 2 ;;
 esac
 rc=$?; secs=$(( $(date +%s) - start ))
-if [ -f "$R" ]; then python3 -c "import json,sys;d=json.load(open('$R'));d['_secs']=$secs;d['_rc']=$rc;print(json.dumps(d,ensure_ascii=False))"
+if [ -f "$R" ]; then python3 -c "import json,sys;d=json.load(open('$R'));d['_secs']=$secs;d['_rc']=$rc;json.dump(d,open('$R','w'),ensure_ascii=False,indent=1);print(json.dumps(d,ensure_ascii=False))"
 else echo "{\"status\":\"failed\",\"_rc\":$rc,\"_secs\":$secs,\"issues\":[\"sem $R; ver tail de $L\"]}"; fi

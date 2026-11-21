@@ -139,11 +139,12 @@
   "approved_scenes": [
     "S01"
   ],
-  "now": "Laboratório Saigon, rodada 3: 4 prompt styles (ink-toon, paper pop-up, low-poly, soft clay) + 3 claude-video (porto, mesa, documento) — Sonnet CLI, fila única",
+  "now": "Extração do ouro do repositório antigo (ouro-kit, Sonnet); lab Saigon rodada 3 concluída",
   "next": [
-    "Comparativo da rodada 3",
-    "Usuário decide o estilo",
-    "Retomar lote 1 (c2-c, c2-d)"
+    "Usuário escolhe o estilo (comparativo_saigon_r3)",
+    "Retomar lote 1 com os gates novos (periodo, render_check, revisão com âncora)"
   ],
-  "waiting_user": []
+  "waiting_user": [
+    "Escolher o estilo para a produção a partir do comparativo da rodada 3"
+  ]
 }
