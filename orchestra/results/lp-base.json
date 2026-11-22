@@ -1,0 +1,31 @@
+{
+  "status": "failed",
+  "files": [
+    "studio/lowpoly/scenes/S05.js",
+    "studio/lowpoly/render.mjs",
+    "media/pt-br-historia/vietna/render_lowpoly/S05.mp4",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_raw.mp4",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_events.json",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_sfx.wav",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_voice.wav",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_mix.wav",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_render_time.txt",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_sheet.jpg",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_fisica.json",
+    "media/pt-br-historia/vietna/render_lowpoly/S05_fisica_result.json",
+    "orchestra/review/fisica/S05_fisica/",
+    "orchestra/results/lp-base.json"
+  ],
+  "validators": {
+    "render_check": "PASS: 28.48s (esperado 28.49s), -14.7 LUFS, -1.5 dBTP, sem tela preta, congelamento ou silêncio.",
+    "transcript_check": "PASS: 64/64 palavras, 0 FAIL, 0 WARN.",
+    "fx_check": "FAIL: F1–F6 passam; F7 ainda falha após duas correções: 7.1% das janelas de fala abaixo de 10 dB e mediana voz/resto de 15.7 dB (mínimo 16 dB).",
+    "fisica": "FAIL: 6 perguntas, 0 respostas válidas; fallback OpenCode super-vl-free sem cota disponível."
+  },
+  "summary": "Kit low-poly S05 renderizado na RTX 3060 com Vulkan, mix e folha de contato entregues. Corrigi a distância dos eventos e reduzi os efeitos em duas rodadas; render_check e transcript_check passaram. A validação de som F7 e a votação de física continuam sem PASS.",
+  "issues": [
+    "Não reduzir mais os efeitos nesta tarefa: foram usadas as duas rodadas de correção previstas; F7 segue ligeiramente abaixo do limite.",
+    "A física exige o gate visual; o Gemini ficou sem resposta e o modelo de visão gratuito do OpenCode retornou sem respostas válidas.",
+    "O piloto ainda não deve ser reutilizado como versão aprovada até a revisão desses dois gates."
+  ]
+}

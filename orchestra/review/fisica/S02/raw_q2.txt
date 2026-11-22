@@ -1,0 +1,4 @@
+{"ator":"diplomata","ok":true,"motivo":"anda sobre o piso de madeira do escritório nos três quadros, com perspectiva coerente; não flutua nem desce do alto"}
+
+[0m
+> build · deepseek-flash

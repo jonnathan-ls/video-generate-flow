@@ -1,0 +1,25 @@
+{
+ "cena": "S06",
+ "ciclo": "c5",
+ "notas": {
+  "V1": 5,
+  "V2": 5,
+  "V3": 5,
+  "V4": 5,
+  "V5": 5,
+  "V6": 5,
+  "V7": 5,
+  "V9": 5,
+  "V10": 5
+ },
+ "media": 5.0,
+ "veredito": "APROVADO",
+ "defeitos": [],
+ "bom": [
+  "Animação contínua e crível em todas as 7 tomadas (navio aportando, pasta deslizando, guindaste içando carga, avião lançando paraquedas, jipe em movimento, flashes de câmera e dominós caindo).",
+  "Excelente sincronismo entre a narração/palavras-chave e as ações visuais correspondentes.",
+  "Rótulos contextuais e tipografia impecáveis, com alto contraste, datas e destaques numéricos (US$ 10 milhões e 78%) bem posicionados.",
+  "Rigor histórico nos veículos (C-47 Dakota, Jeep Willys), equipamentos telefônicos/fotográficos dos anos 1950 e ambientação da Indochina.",
+  "Física de materiais e iluminação naturalistas (tensão no cabo do guindaste, desaceleração dos paraquedas e iluminação focal na mesa de bilhar)."
+ ]
+}

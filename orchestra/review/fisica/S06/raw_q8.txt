@@ -1,0 +1,4 @@
+{"ator":"jipe","ok":true,"motivo":"O jipe aparece no meio e no fim sobre o chão batido da estrada, ao lado das barracas e sacos de areia, sem flutuar nem passar por cima de casas, tendas ou do mapa."}
+
+[0m
+> build · deepseek-flash

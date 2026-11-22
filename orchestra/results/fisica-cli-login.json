@@ -1,0 +1,15 @@
+{
+  "status": "done",
+  "files": [
+    "orchestra/tasks/fisica-cli-login.md",
+    "orchestra/fisica.sh",
+    "orchestra/review/fisica/S02/fisica-oauth-probe.json",
+    "orchestra/results/fisica-cli-login.json"
+  ],
+  "validators": {
+    "bash_n": "PASS",
+    "fisica_cli_login_probe": "PASS: 6/6 perguntas S02; 0 FAIL; NOGEMINI=1 evitou leitura de .env"
+  },
+  "summary": "Adicionado GEMINI_CLI_LOGIN=1 para usar a sessão autenticada do Gemini CLI sem chave do .env. Probe em S02 com Gemini 3.5 Flash-Lite gerou 6 respostas válidas e passou.",
+  "issues": []
+}

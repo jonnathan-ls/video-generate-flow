@@ -1,0 +1,4 @@
+{"ator":"pasta","ok":true,"motivo":"envelope desliza apoiado sobre a mesa/pasta e segue sobre a superfície, sem flutuar nem descer do alto"}
+
+[0m
+> build · deepseek-flash

@@ -1,0 +1,1 @@
+{"ator":"dip_walk_0","ok":true,"motivo":"ator caminha apoiado no piso do ambiente em todos os quadros"}

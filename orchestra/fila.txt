@@ -1,3 +1,16 @@
 # feito claude bk-ps-inktoon (US$0.0) sonnet
 # feito opencode c2-c (US$0.11) deepseek/deepseek-flash
 # feito opencode c2-d (US$0.11) deepseek/deepseek-flash
+# falhou claude c3 sonnet (limite semanal do Sonnet)
+# falhou opencode lp-base deepseek/deepseek-flash (corte do freio; US$ 0.11)
+# falhou opencode c3 deepseek/deepseek-flash (corte do freio; US$ 0.11)
+# falhou opencode lp-base opencode/deepseek-v4.1-flash-free (limite gratuito)
+# falhou opencode lp-base opencode/beam-free (limite gratuito)
+# falhou opencode c3 deepseek/deepseek-v4-pro (saldo insuficiente; US$ 0.11)
+# falhou opencode c3 opencode/longcat-2.5-free (limite gratuito; log c3)
+# 2026-11-21 retomada c3: render S01–S06 e gates determinísticos PASS; física S02–S06 sem respostas OpenCode; transcript_check S03/S04 inconclusivo por ASR, S06 passou no small; ver orchestra/results/c3.json
+# 2026-11-21 lp-base: render low-poly final; render_check/transcrição PASS; fx_check F7 FAIL após 2 correções e física sem respostas; ver orchestra/results/lp-base.json
+# 2026-11-21 c3: revisão local das folhas S01–S06 e 24 tiras físicas; estilo coeso, sem erro físico evidente; S06 US$ 10 milhões cobre a ação do guindaste/navio; hy4 também retorna limite grátis; L1 segue pendente por gates formais e review independente.
+# 2026-11-21 c3 final: fisica.sh PASS 24/24; revisão recalculada S01 4,78 PASS, S02–S06 4,00 FAIL (<4,30); S06 texto cobre ação; ASR S03/S04 sem cota independente; ver orchestra/results/c3.json
+# 2026-11-21 escalonamento R18: c3 é o limite atual; L1 sem DoD (S06 sobreposição, transcrição S03/S04 e média c3 abaixo de 4,30); não abrir c4 nem L2–L10 sem decisão no fluxo.
+# 2026-11-21 supersedido por autorização explícita do usuário para seguir todos os lotes sem nova autorização: c4/c5 S06 concluídos; L1 fechado em média de lote 4,30; iniciar L2 após DoD PASS. Ver orchestra/results/l1-c5-qa.json.

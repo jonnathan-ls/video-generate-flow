@@ -1,0 +1,4 @@
+{"ator":"ship","ok":true,"motivo":"Nos três quadros o casco está dentro da água do rio, com água visível abaixo e ao redor, e o navio desloca-se sobre o rio, à frente do cais e dos prédios da margem, sem flutuar."}
+
+[0m
+> build · deepseek-flash

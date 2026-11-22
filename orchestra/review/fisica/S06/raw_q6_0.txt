@@ -1,0 +1,1 @@
+{"ator":"paraquedas","ok":true,"motivo":"movimento aéreo consistente descendo de paraquedas"}

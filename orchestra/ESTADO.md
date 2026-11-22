@@ -1,34 +1,28 @@
 # Estado para retomar (atualizado 2026-11-21)
 
-Arquivo de passagem entre conversas. Um chat novo lê **só isto, `CLAUDE.md`, `orchestra/production.json` e `AGENTS.md`** antes de agir. Atualize ao fim de cada sessão (máx. 60 linhas; o histórico fica em `decisions.md`/`mistakes.md`).
+Arquivo de passagem. Ao retomar, leia este arquivo, `CLAUDE.md`, `orchestra/production.json` e `AGENTS.md`.
 
 ## Onde estamos
-- **Vídeo:** "Guerra do Vietnã" (54 cenas, ~21 min), `channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/`. Roteiro aprovado. S01 aprovado. Lote 1 (S02–S06) no ciclo 2 de correção: c2-a e c2-b feitos; **ciclo 2 concluído (2026-11-21 00:42) e escalado ao usuário**: gates determinísticos PASS, Gemini REFAZER (médias 3,0–3,44, ver `qa-lote-01.md`). Prévia: `media/pt-br-historia/vietna/render/previa_lote1_c2.mp4`. **Estilo decidido (23:20): colagem da produção, com todo o protocolo** (ver `channels/pt-br-historia/decisions.md`). Lab encerrado; Ink and Toon e Low-Poly ficam para outros temas.
-- **Laboratório Saigon** (`lab/bakeoff-saigon/`, mesmo trecho de 15 s, narração do S42). Saídas em `lab/bakeoff-saigon/out/`.
-  - Rodada 1–2 (prontas): colagem nossa (sem revisão), kit director-de-collage, pedido direto sem kit, claude-video (saiu risografia), diorama (prompt styles), código 3D. Comparativo: `out/comparativo_saigon_6.mp4`.
-  - Rodada 3 (rodando em 22:20, `orchestra/paralelo.sh` 2 em paralelo): ps_inktoon (pronto), ps_popup, ps_lowpoly, ps_softclay, cv_porto, cv_mesa, cv_documento. Log: `orchestra/logs/paralelo.log`. Resultados: `orchestra/results/bk-ps-*.json`, `bk-cv-*.json`.
-  - **Opinião do usuário até agora:** colagem é a melhor abordagem; gostou de código puro 3D e do prompt style (diorama) com ressalvas; claude-video serve a temas específicos/motion graphics.
-- **Fluxo novo (2026-11-21):** mídias primeiro, render depois (`protocols/scene-production.md`, fases A/B/C). Lote 1 = pilotos de movimento.
-- **Próximo passo:** quando c2-d terminar, rodar `orchestra/review.sh` em S02–S06 (ciclo 2), conferir 1 folha de contato reduzida por cena e, com todas as notas ≥ 4 e média ≥ 4,3, mandar o lote 1 ao usuário. Abaixo disso: é o 2º ciclo, então escalar com diagnóstico (R6/R8). Depois: fase A (mídias) de S07–S54.
+- **Vídeo:** "Guerra do Vietnã" (54 cenas, ~21 min), em `channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/`. Roteiro aprovado; S01 aprovado. O usuário autorizou seguir todos os lotes e trocar de modelo sem pedir nova autorização; publicação continua separada.
+- **L1 (S02–S06), c5:** fechado e aprovado após antecipar 0,4 s o rótulo “em 1950” de S06. `shot_check`, `scene_gates`, `render_check` e física PASS; revisão do lote V1–V10 média 4,30. S01 já estava aprovada. Ver `orchestra/results/l1-c5-qa.json` e `orchestra/results/c5-s06-label-cue.json`.
+- **L1 transcrição:** S01/S02 PASS; S05 WARN (19/dezenove); S06 PASS no small; S03 “há/a” adjudicado como homófono; S04 “Ba Dinh” ouvido como “Badin” no recorte Gemini, com divergência só de grafia entre ASR. Conteúdo sem omissão ou substituição lexical; decisão registrada em `qa-lote-01.md`.
+- **L1 física:** PASS formal em S02–S06: 24 perguntas, uma resposta válida por pergunta, zero falhas, Gemini 3.5 Flash-Lite via CLI autenticado sem ler `.env`.
+- **Low-poly S05:** vídeo e `S05_sheet.jpg` entregues; `render_check` e transcrição PASS. `fx_check` F7 ainda falha após duas correções (7,1% das janelas abaixo de 10 dB; mediana 15,7 dB). Física sem modelo. Ver `orchestra/results/lp-base.json`; não reaplicar mais redução de FX nesta tarefa.
+- **Revisão visual:** a nota válida de lote foi feita no conjunto (V1/V4/V6 são critérios agregados); média 4,30, todas ≥4. Gemini c5 aprovou S06 com 5,00 após o ajuste. As notas c3 de 4,00 por cena permanecem como diagnóstico, não como média agregada do lote.
+- **Flow:** lote de seis imagens no projeto `lacre-vietna` consumiu 0 créditos. `periodo.sh` não devolveu JSON; as seis imagens não foram cortadas nem referenciadas no spec. Não usar até `periodo.sh` PASS.
+- **L2–L10:** L1 cumpriu o DoD; iniciar L2 (S07–S11) e seguir em ordem. O usuário autorizou todos os lotes sem nova autorização ao atingir limites; manter gates e custo de Flow em zero. A colagem segue como estilo escolhido; o piloto low-poly é separado.
 
-## Infra que funciona (não refazer)
-- Render só na GPU: Remotion `--gl=vulkan`; three.js/HyperFrames com Chrome headless do Remotion + flags Vulkan; ffmpeg `h264_nvenc`.
-- Fila: `fila.sh` (única, para tarefas com Flow) e `paralelo.sh <N> <lista>` (sem Flow). Ambas com `setsid nohup`.
-- Executores: `orchestra/run.sh claude|opencode|gemini|dsh <id> [modelo]`; `MCP=orchestra/mcp-flow.json` dá o Flow ao Sonnet CLI.
-- **flow-mcp** (`~/flow-mcp`), corrigido em 2026-11-20 para a interface nova (botão "Flow Agent", painel "Agent settings" em 2 níveis). **Sem fallback um-a-um:** erro de Agent = falha com print em `~/.flow-mcp/debug-agent.png`. Depois de recompilar, matar `node .../flow-mcp/dist/index.js` antigo. Visualização do Flow: Grid S. Projetos: `lacre-vietna` (produção), `lacre-lab` (lab).
-- Painel: `python3 orchestra/dashboard/server.py` → http://localhost:8765. Galeria claude-video: http://127.0.0.1:8770/.
-- Frames rápidos: `bash orchestra/tools/quadros.sh <cena> <tempos|auto> [props]`.
+## Próximo passo
+- L1 está fechado; planejar e produzir L2 (S07–S11) em fluxo A/B/C, com imagens do Flow apenas a 0 crédito.
+- Continuar para L3–L10 conforme cada DoD passar; se o executor/modelo atingir limite, alternar pelo fluxo registrado sem pedir nova autorização.
+- Não publicar. Antes de publicar ainda faltam R13 (termos comerciais do Flow) e fontes iconográficas em `sources.md`.
 
-## Sessão 2026-11-20 (noite)
-- Git: repositório `https://github.com/jonnathan-ls/video-generate-flow` (main). Commit + push ao fim de cada etapa. flow-mcp tem ramo `fix/flow-ui-2026-11-20` (local).
-- Lab rodada 3 pronta: `lab/bakeoff-saigon/out/comparativo_saigon_r3.mp4` (9 estilos). Usuário escolheu seguir com a colagem da produção.
-- Gates novos: `orchestra/periodo.sh`, `render_check.py`, `transcript_check.py`, revisão com âncora S05, `rubrics/render-qa.md`. Ouro do repositório antigo extraído (knowledge/collage-direction, longform-production-lessons, production-recipes). O repositório antigo pode ser arquivado; faltou só o `estudo-e-propostas.md` do Ampulheta (estrutura em 3 escalas), opcional.
+## Infra que funciona
+- Render na GPU: Remotion `--gl=vulkan`; three.js/HyperFrames no Chrome headless com Vulkan; ffmpeg `h264_nvenc`. Nunca SwiftShader, Swangle ou libx264.
+- Fila com Flow: `orchestra/fila.sh`; sem Flow: `orchestra/paralelo.sh <N> <lista>`; executores: `orchestra/run.sh claude|opencode|gemini|dsh <id> [modelo]`.
+- Flow: um projeto por produção (`lacre-vietna`); imagens em lote via Flow Agent, Grid S, 16:9, 0 crédito. Erro do Agent é falha; sem fallback imagem por imagem.
+- Quadros: `bash orchestra/tools/quadros.sh <SXX> <tempos|auto> [props]`. O render final cria `SXX_sheet.jpg`; a revisão visual final é do orquestrador.
 
-## Pendências antes de publicar
-- R13: termos comerciais do Flow. Fontes iconográficas (l1-icono) em `sources.md`.
-- Saldo DeepSeek ≈ US$ 1,08.
-
-## Ideias de qualidade em aberto (propostas ao usuário, não aprovadas)
-1. Levar ao nosso motor de colagem a câmera em camadas e a textura papel/filme do kit director-de-collage.
-2. Checagem de período por visão (Gemini) em cada imagem do Flow antes de animar (palácio errado, fuzil de ferrolho apareceram no lab).
-3. Limpeza feita em 2026-11-20 (ver decisions.md). Código só de um vídeo fica em `_work/` do vídeo (ex.: `_work/specgen/`).
+## Histórico útil
+- Comparativo Saigon: `lab/bakeoff-saigon/out/comparativo_saigon_r3.mp4`; preferência do usuário foi colagem. Ink and Toon e Low-Poly ficam para outros temas salvo decisão posterior.
+- Cotas atuais: OpenCode grátis retornou `Free usage limit reached` também em `nemotron-3.5-super-vl-free`; Gemini visual respondeu no c5; Sonnet CLI não autenticado; DeepSeek continua sob o freio de US$ 0,10. Trocar modelo/caminho sem repetir tentativa idêntica; não gastar créditos.

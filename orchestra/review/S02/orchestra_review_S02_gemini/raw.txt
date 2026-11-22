@@ -1,0 +1,44 @@
+```json
+{
+  "cena": "S02",
+  "ciclo": "2",
+  "notas": {
+    "V1": 4,
+    "V2": 4,
+    "V3": 2,
+    "V4": 4,
+    "V5": 3,
+    "V6": 4,
+    "V7": 4,
+    "V9": 4,
+    "V10": 2
+  },
+  "media": 3.0,
+  "veredito": "REFAZER",
+  "defeitos": [
+    {
+      "prioridade": "alta",
+      "tempo": "4.7s-6.4s",
+      "defeito": "O embaixador aparece flutuando acima do piso na entrada da porta (a07) e desliza pelo cenário com a pose das pernas totalmente estática nos 3 quadros seguidos (m01).",
+      "correcao": "Alinhar o contato dos pés ao chão e aplicar ciclo de caminhada com animação/alternância de pernas."
+    },
+    {
+      "prioridade": "alta",
+      "tempo": "8.5s-10.15s",
+      "defeito": "A coluna de soldados marcha deslizando horizontalmente pelo pátio sem movimentação nas pernas nos 3 quadros de m02.",
+      "correcao": "Implementar walk cycle/marcha nas pernas da marcha dos soldados."
+    },
+    {
+      "prioridade": "media",
+      "tempo": "4.01s",
+      "defeito": "Subtexto 'EMPRÉSTIMO AO BRASIL' abaixo de 'US$ 150 milhões' apresenta baixo contraste contra a base escura da escrivaninha em 640x360.",
+      "correcao": "Aumentar a luminância do texto secundário para garantir legibilidade perfeita."
+    }
+  ],
+  "bom": [
+    "Excelente metáfora visual das pastas 'Empréstimo' e 'Tropas' se separando e voltando a se juntar conforme o ritmo da narração.",
+    "Ótima atmosfera e animação da máquina de escrever datilografando o cabeçalho do telegrama.",
+    "Transição temporal do calendário desfolhando até 1945 passa o contexto do flashback de forma fluida."
+  ]
+}
+```

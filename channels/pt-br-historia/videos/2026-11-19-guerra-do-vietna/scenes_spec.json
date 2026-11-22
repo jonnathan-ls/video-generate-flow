@@ -235,7 +235,9 @@
        "sfx": "paper",
        "sfx_at_word": "empréstimo",
        "sfx_at_offset": -0.6,
-       "note": "a pasta do empréstimo desliza na mesa"
+       "note": "a pasta do empréstimo desliza na mesa",
+       "faces": "none",
+       "on": "floor"
       }
      ]
     },
@@ -265,47 +267,62 @@
      "oy": "70%",
      "actors": [
       {
-       "src": "vietna/diplomata.png",
+       "src": "vietna/dip_walk_0.png",
        "from": [
-        16,
-        55
+        17.5,
+        66.0
        ],
        "to": [
-        66,
-        82
+        56,
+        83
        ],
-       "h": 25,
-       "scale1": 1.85,
+       "h": 36,
+       "scale1": 1.28,
        "t0_s": 5.15,
        "t1_s": 8.4,
        "ease": "linear",
-       "slices": 1,
-       "ar": 0.513,
-       "gait": 7,
-       "legs": 0.45,
-       "bob": 3,
-       "rock": 0.6,
+       "bob": 2,
        "sfx": "step1",
        "note": "passos do embaixador entrando na sala",
        "path": [
         [
-         16,
-         55
+         17.5,
+         66.0
         ],
         [
-         22,
-         60
+         20,
+         68.5
         ],
         [
-         66,
-         82
+         30,
+         73
+        ],
+        [
+         44,
+         78
+        ],
+        [
+         56,
+         83
         ]
        ],
        "path_s": [
         5.15,
-        6.0,
+        5.5,
+        6.2,
+        7.2,
         8.4
-       ]
+       ],
+       "faces": "right",
+       "on": "floor",
+       "frames": [
+        "vietna/dip_walk_0.png",
+        "vietna/dip_walk_1.png",
+        "vietna/dip_walk_2.png",
+        "vietna/dip_walk_3.png"
+       ],
+       "frame_fps": 8,
+       "frame_phase": 0
       }
      ]
     },
@@ -356,10 +373,13 @@
        "frames": [
         "vietna/coluna_br65_a.png",
         "vietna/coluna_br65_b.png",
-        "vietna/coluna_br65_c.png"
+        "vietna/coluna_br65_c.png",
+        "vietna/coluna_br65_b.png"
        ],
-       "frame_fps": 6,
-       "depth": 1.4
+       "frame_fps": 8,
+       "depth": 1.4,
+       "faces": "right",
+       "on": "road"
       }
      ],
      "pan": [
@@ -436,7 +456,9 @@
        "sfx": "paper",
        "sfx_at_word": "separados",
        "sfx_at_offset": -0.3,
-       "note": "as pastas se afastam: assuntos tratados à parte"
+       "note": "as pastas se afastam: assuntos tratados à parte",
+       "faces": "none",
+       "on": "floor"
       },
       {
        "src": "vietna/pasta.png",
@@ -482,7 +504,9 @@
        "sfx": "paper",
        "sfx_at_word": "mesma#2",
        "sfx_at_offset": -0.2,
-       "note": "as pastas voltam a se juntar: mesma conversa"
+       "note": "as pastas voltam a se juntar: mesma conversa",
+       "faces": "none",
+       "on": "floor"
       }
      ]
     }
@@ -593,7 +617,9 @@
        "label": "MEMORANDO",
        "sfx": "paper",
        "sfx_at_word": "resposta",
-       "note": "o memorando desliza na mesa"
+       "note": "o memorando desliza na mesa",
+       "faces": "none",
+       "on": "floor"
       },
       {
        "src": "vietna/selo.png",
@@ -629,7 +655,9 @@
        "t1_s": 20.9,
        "sfx": "stamp",
        "sfx_at_word": "documento",
-       "note": "o selo de cera cai sobre o memorando"
+       "note": "o selo de cera cai sobre o memorando",
+       "faces": "none",
+       "on": "floor"
       }
      ]
     },
@@ -718,10 +746,13 @@
        "frames": [
         "vietna/coluna_civis_45_a.png",
         "vietna/coluna_civis_45_b.png",
-        "vietna/coluna_civis_45_c.png"
+        "vietna/coluna_civis_45_c.png",
+        "vietna/coluna_civis_45_b.png"
        ],
-       "frame_fps": 6,
-       "depth": 1.45
+       "frame_fps": 8,
+       "depth": 1.45,
+       "faces": "right",
+       "on": "road"
       }
      ],
      "pan": [
@@ -759,8 +790,8 @@
         33
        ],
        "to": [
-        66,
-        27
+        40,
+        28
        ],
        "h": 15,
        "t0_s": 4.2,
@@ -779,7 +810,9 @@
        "period": 50,
        "tint": "grayscale(0.9) sepia(0.85) hue-rotate(38deg) saturate(1.7) brightness(0.7) contrast(1.06)",
        "sfx": "rotor",
-       "note": "pás do helicóptero sobre Saigon"
+       "note": "pás do helicóptero sobre Saigon",
+       "faces": "right",
+       "on": "air"
       }
      ]
     },
@@ -878,10 +911,13 @@
        "frames": [
         "vietna/coluna_civis_45_a.png",
         "vietna/coluna_civis_45_b.png",
-        "vietna/coluna_civis_45_c.png"
+        "vietna/coluna_civis_45_c.png",
+        "vietna/coluna_civis_45_b.png"
        ],
-       "frame_fps": 6,
-       "depth": 1.45
+       "frame_fps": 8,
+       "depth": 1.45,
+       "faces": "right",
+       "on": "road"
       }
      ],
      "pan": [
@@ -913,6 +949,22 @@
      "oy": "55%",
      "actors": [
       {
+       "src": "vietna/crowd_down.png",
+       "from": [
+        26,
+        126.1
+       ],
+       "h": 56.1,
+       "slices": 12,
+       "ar": 1.84,
+       "wave": 9,
+       "flip": false,
+       "under_caption_ok": true,
+       "sfx": "crowd",
+       "note": "multidão na praça de Ba Dinh",
+       "hide_s": 4.78
+      },
+      {
        "src": "vietna/multidao_costas.png",
        "from": [
         26,
@@ -925,7 +977,24 @@
        "flip": false,
        "under_caption_ok": true,
        "sfx": "crowd",
-       "note": "multidão na praça de Ba Dinh"
+       "note": "multidão na praça de Ba Dinh",
+       "appear_s": 4.78
+      },
+      {
+       "src": "vietna/crowd_down.png",
+       "from": [
+        76,
+        127.7
+       ],
+       "h": 57.7,
+       "slices": 12,
+       "ar": 1.84,
+       "wave": 9,
+       "flip": true,
+       "under_caption_ok": true,
+       "sfx": "crowd",
+       "note": "multidão na praça de Ba Dinh",
+       "hide_s": 4.78
       },
       {
        "src": "vietna/multidao_costas.png",
@@ -940,7 +1009,8 @@
        "flip": true,
        "under_caption_ok": true,
        "sfx": "crowd",
-       "note": "multidão na praça de Ba Dinh"
+       "note": "multidão na praça de Ba Dinh",
+       "appear_s": 4.78
       },
       {
        "src": "vietna/bandeira_vn.png",
@@ -1125,7 +1195,9 @@
        "sfx_at_word": "americana",
        "sfx_at_offset": -0.6,
        "note": "a Declaração americana desliza na mesa",
-       "tilt": 58
+       "tilt": 58,
+       "faces": "none",
+       "on": "floor"
       },
       {
        "src": "vietna/decl_fr.jpg",
@@ -1148,7 +1220,9 @@
        "sfx": "paper",
        "sfx_at_word": "Direitos",
        "note": "a Declaração francesa desliza na mesa",
-       "tilt": 58
+       "tilt": 58,
+       "faces": "none",
+       "on": "floor"
       }
      ]
     },
@@ -1186,6 +1260,22 @@
      "oy": "40%",
      "actors": [
       {
+       "src": "vietna/crowd_down.png",
+       "from": [
+        24,
+        128.4
+       ],
+       "h": 51.4,
+       "slices": 12,
+       "ar": 1.84,
+       "wave": 9,
+       "flip": false,
+       "under_caption_ok": true,
+       "sfx": "crowd",
+       "note": "multidão na praça de Ba Dinh",
+       "hide_s": 20.65
+      },
+      {
        "src": "vietna/multidao_costas.png",
        "from": [
         24,
@@ -1198,7 +1288,24 @@
        "flip": false,
        "under_caption_ok": true,
        "sfx": "crowd",
-       "note": "multidão na praça de Ba Dinh"
+       "note": "multidão na praça de Ba Dinh",
+       "appear_s": 20.65
+      },
+      {
+       "src": "vietna/crowd_down.png",
+       "from": [
+        74,
+        130.0
+       ],
+       "h": 53.0,
+       "slices": 12,
+       "ar": 1.84,
+       "wave": 9,
+       "flip": true,
+       "under_caption_ok": true,
+       "sfx": "crowd",
+       "note": "multidão na praça de Ba Dinh",
+       "hide_s": 20.65
       },
       {
        "src": "vietna/multidao_costas.png",
@@ -1213,7 +1320,8 @@
        "flip": true,
        "under_caption_ok": true,
        "sfx": "crowd",
-       "note": "multidão na praça de Ba Dinh"
+       "note": "multidão na praça de Ba Dinh",
+       "appear_s": 20.65
       },
       {
        "src": "vietna/bandeira_vn.png",
@@ -1307,7 +1415,9 @@
        ],
        "sfx": "engine",
        "note": "motor do navio britânico chegando",
-       "depth": 1.3
+       "depth": 1.3,
+       "faces": "left",
+       "on": "water"
       }
      ],
      "pan": [
@@ -1362,9 +1472,12 @@
        "frames": [
         "vietna/coluna_fr46_a.png",
         "vietna/coluna_fr46_b.png",
-        "vietna/coluna_fr46_c.png"
+        "vietna/coluna_fr46_c.png",
+        "vietna/coluna_fr46_b.png"
        ],
-       "frame_fps": 6
+       "frame_fps": 8,
+       "faces": "right",
+       "on": "ground"
       }
      ]
     },
@@ -1396,17 +1509,17 @@
       {
        "src": "vietna/ship.png",
        "from": [
-        -28,
-        66
+        95,
+        83
        ],
        "to": [
-        50,
-        63
+        28,
+        82
        ],
        "h": 23,
        "t0_s": 9.1,
        "t1_s": 13.4,
-       "ease": "inout",
+       "ease": "out",
        "bob": 1.2,
        "rock": 0.25,
        "period": 90,
@@ -1419,7 +1532,9 @@
        "land": true,
        "land_note": "o navio encosta ao longo do cais de Haiphong, convés na altura do cais",
        "sfx": "engine",
-       "note": "motor do navio entrando no porto"
+       "note": "motor do navio entrando no porto",
+       "faces": "left",
+       "on": "water"
       }
      ]
     },
@@ -1466,38 +1581,49 @@
         "vietna/s05_sold46_2.png",
         "vietna/s05_sold46_3.png"
        ],
-       "frame_fps": 6,
+       "frame_fps": 8,
        "frame_phase": 0,
        "from": [
-        46.6,
-        58.0
+        37.5,
+        52
        ],
        "path": [
         [
-         46.6,
-         58.0
+         37.5,
+         52
         ],
         [
-         54.4,
-         68.0
+         44,
+         61
         ],
         [
-         63.5,
-         72.5
+         51,
+         73
+        ],
+        [
+         61,
+         74
         ]
        ],
        "path_s": [
         13.55,
-        14.75,
+        14.1,
+        14.9,
         15.8
        ],
-       "h": 15.5,
-       "scale1": 1.065,
+       "h": 12.0,
+       "scale1": 1.38,
        "t0_s": 13.55,
-       "t1_s": 14.75,
+       "t1_s": 15.8,
        "bob": 1.5,
        "sfx": "none",
-       "note": "posições da coluna descendo a prancha (som único de passos da tomada)"
+       "note": "posições da coluna descendo a prancha (som único de passos da tomada)",
+       "faces": "right",
+       "on": "ground",
+       "to": [
+        61,
+        74
+       ]
       },
       {
        "src": "vietna/s05_sold46_0.png",
@@ -1507,69 +1633,49 @@
         "vietna/s05_sold46_2.png",
         "vietna/s05_sold46_3.png"
        ],
-       "frame_fps": 6,
+       "frame_fps": 8,
        "frame_phase": 1,
        "from": [
-        40.4,
-        50.0
+        35.5,
+        48
        ],
        "path": [
         [
-         40.4,
-         50.0
+         35.5,
+         48
         ],
         [
-         54.4,
-         68.0
+         44,
+         61
+        ],
+        [
+         51,
+         73
+        ],
+        [
+         62,
+         74
         ]
        ],
        "path_s": [
         13.55,
-        15.7
+        14.3,
+        15.2,
+        15.8
        ],
-       "h": 14.0,
-       "scale1": 1.179,
-       "t0_s": 13.55,
-       "t1_s": 15.7,
-       "bob": 1.5,
-       "sfx": "none",
-       "note": "posições da coluna descendo a prancha (som único de passos da tomada)"
-      },
-      {
-       "src": "vietna/s05_sold46_0.png",
-       "frames": [
-        "vietna/s05_sold46_0.png",
-        "vietna/s05_sold46_1.png",
-        "vietna/s05_sold46_2.png",
-        "vietna/s05_sold46_3.png"
-       ],
-       "frame_fps": 6,
-       "frame_phase": 2,
-       "from": [
-        32.7,
-        40.0
-       ],
-       "path": [
-        [
-         32.7,
-         40.0
-        ],
-        [
-         54.4,
-         68.0
-        ]
-       ],
-       "path_s": [
-        13.55,
-        16.9
-       ],
-       "h": 12.5,
+       "h": 11.5,
        "scale1": 1.32,
        "t0_s": 13.55,
-       "t1_s": 16.9,
+       "t1_s": 15.8,
        "bob": 1.5,
        "sfx": "none",
-       "note": "posições da coluna descendo a prancha (som único de passos da tomada)"
+       "note": "posições da coluna descendo a prancha (som único de passos da tomada)",
+       "faces": "right",
+       "on": "ground",
+       "to": [
+        62,
+        74
+       ]
       },
       {
        "src": "vietna/s05_sold46_0.png",
@@ -1579,33 +1685,91 @@
         "vietna/s05_sold46_2.png",
         "vietna/s05_sold46_3.png"
        ],
-       "frame_fps": 6,
-       "frame_phase": 3,
+       "frame_fps": 8,
+       "frame_phase": 2,
        "from": [
-        24.9,
-        30.0
+        33.5,
+        44.5
        ],
        "path": [
         [
-         24.9,
-         30.0
+         33.5,
+         44.5
         ],
         [
-         54.4,
-         68.0
+         51,
+         73
+        ],
+        [
+         63,
+         74
         ]
        ],
        "path_s": [
         13.55,
-        18.1
+        15.0,
+        15.8
        ],
        "h": 11.0,
-       "scale1": 1.5,
+       "scale1": 1.3,
        "t0_s": 13.55,
-       "t1_s": 18.1,
+       "t1_s": 15.8,
        "bob": 1.5,
        "sfx": "none",
-       "note": "posições da coluna descendo a prancha (som único de passos da tomada)"
+       "note": "posições da coluna descendo a prancha (som único de passos da tomada)",
+       "faces": "right",
+       "on": "ground",
+       "to": [
+        63,
+        74
+       ]
+      },
+      {
+       "src": "vietna/s05_sold46_0.png",
+       "frames": [
+        "vietna/s05_sold46_0.png",
+        "vietna/s05_sold46_1.png",
+        "vietna/s05_sold46_2.png",
+        "vietna/s05_sold46_3.png"
+       ],
+       "frame_fps": 8,
+       "frame_phase": 3,
+       "from": [
+        32,
+        42
+       ],
+       "path": [
+        [
+         32,
+         42
+        ],
+        [
+         51,
+         73
+        ],
+        [
+         64,
+         74.5
+        ]
+       ],
+       "path_s": [
+        13.55,
+        15.4,
+        15.8
+       ],
+       "h": 11.5,
+       "scale1": 1.3,
+       "t0_s": 13.55,
+       "t1_s": 15.8,
+       "bob": 1.5,
+       "sfx": "none",
+       "note": "posições da coluna descendo a prancha (som único de passos da tomada)",
+       "faces": "right",
+       "on": "ground",
+       "to": [
+        64,
+        74.5
+       ]
       }
      ]
     }
@@ -1801,9 +1965,12 @@
        "frames": [
         "vietna/coluna_fr46_a.png",
         "vietna/coluna_fr46_b.png",
-        "vietna/coluna_fr46_c.png"
+        "vietna/coluna_fr46_c.png",
+        "vietna/coluna_fr46_b.png"
        ],
-       "frame_fps": 6
+       "frame_fps": 8,
+       "faces": "right",
+       "on": "ground"
       }
      ],
      "fx": [
@@ -1859,8 +2026,8 @@
         72
        ],
        "to": [
-        40,
-        65.5
+        22,
+        74
        ],
        "h": 22,
        "t0_s": 0.0,
@@ -1876,7 +2043,9 @@
         22
        ],
        "sfx": "engine",
-       "note": "motor do cargueiro chegando ao cais"
+       "note": "motor do cargueiro chegando ao cais",
+       "faces": "right",
+       "on": "water"
       }
      ]
     },
@@ -1929,7 +2098,9 @@
        "sfx": "paper",
        "sfx_at_word": "Documentos",
        "sfx_at_offset": -0.3,
-       "note": "a pasta dos Documentos do Pentágono desliza na mesa"
+       "note": "a pasta dos Documentos do Pentágono desliza na mesa",
+       "faces": "none",
+       "on": "floor"
       }
      ]
     },
@@ -1968,15 +2139,15 @@
       {
        "src": "vietna/cargueiro.png",
        "from": [
-        40,
-        65.5
+        28,
+        74
        ],
-       "h": 22,
+       "h": 20,
        "depth": 1.25,
        "bob": 1.5,
        "rock": 0.3,
        "period": 80,
-       "sink": 0.2,
+       "sink": 0.18,
        "smoke": [
         44,
         22
@@ -1986,25 +2157,25 @@
       {
        "src": "vietna/caixotes.png",
        "from": [
-        50,
-        61
+        36,
+        62
        ],
        "path": [
         [
-         50,
-         61
+         36,
+         62
+        ],
+        [
+         36,
+         46
         ],
         [
          50,
-         45
+         46
         ],
         [
-         59,
-         45
-        ],
-        [
-         59,
-         61.2
+         50,
+         64.5
         ]
        ],
        "path_s": [
@@ -2013,14 +2184,16 @@
         8.4,
         9.7
        ],
-       "h": 12,
+       "h": 6.0,
        "rope_from": [
         50.1,
         8.0
        ],
        "sfx": "crane",
        "note": "guincho do guindaste iça os caixotes do navio para o cais",
-       "depth": 1.15
+       "depth": 1.15,
+       "faces": "none",
+       "on": "air"
       }
      ]
     },
@@ -2028,7 +2201,10 @@
      "big": "US$ 10 milhões",
      "label": "em 1950",
      "big_at_word": "10",
-     "label_at_word": "1950"
+     "label_at_word": "1950",
+     "label_offset": -0.4,
+     "position": "top-left",
+     "big_size": 110
     }
    },
    {
@@ -2064,7 +2240,10 @@
        "t1_s": 15.2,
        "ease": "linear",
        "sfx": "plane",
-       "note": "motores do avião de transporte sobre o vale"
+       "note": "motores do avião de transporte sobre o vale",
+       "faces": "left",
+       "on": "air",
+       "flip": true
       },
       {
        "src": "vietna/paraquedas.png",
@@ -2101,7 +2280,9 @@
        "bob": 3,
        "rock": 4,
        "period": 52,
-       "sfx": "none"
+       "sfx": "none",
+       "faces": "none",
+       "on": "air"
       },
       {
        "src": "vietna/paraquedas.png",
@@ -2142,7 +2323,9 @@
         0,
         -9
        ],
-       "sfx": "none"
+       "sfx": "none",
+       "faces": "none",
+       "on": "air"
       },
       {
        "src": "vietna/paraquedas.png",
@@ -2183,7 +2366,9 @@
         0,
         8
        ],
-       "sfx": "none"
+       "sfx": "none",
+       "faces": "none",
+       "on": "air"
       }
      ]
     },
@@ -2220,16 +2405,30 @@
       {
        "src": "vietna/jipe.png",
        "from": [
-        101,
-        62.5
+        83,
+        73
+       ],
+       "path": [
+        [83, 73],
+        [76, 68],
+        [67, 63],
+        [60, 59],
+        [54, 54]
+       ],
+       "path_s": [
+        16.35,
+        17.5,
+        18.6,
+        19.7,
+        20.9
        ],
        "to": [
-        64,
-        59.5
+        54,
+        54
        ],
-       "h": 12.5,
+       "h": 13,
        "flip": true,
-       "scale1": 0.95,
+       "scale1": 0.78,
        "tint": "brightness(1.3) contrast(1.05)",
        "t0_s": 16.35,
        "t1_s": 20.9,
@@ -2250,7 +2449,9 @@
         "rate": 30
        },
        "sfx": "jeep",
-       "note": "jipe passando na estrada de terra"
+       "note": "jipe passando na estrada de terra",
+       "faces": "right",
+       "on": "road"
       }
      ]
     },

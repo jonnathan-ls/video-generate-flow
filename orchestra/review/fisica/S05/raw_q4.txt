@@ -1,0 +1,4 @@
+{"ator":"s05_sold46_0","ok":true,"motivo":"Desce a escada e pisa o cais: pés apoiam nos degraus e no piso nos três quadros, sem flutuar nem atravessar cenário"}
+
+[0m
+> build · deepseek-flash

@@ -19,6 +19,8 @@ export type Actor = {
 	slices?: number; // fatias independentes (coluna de soldados marchando)
 	ar?: number; // largura/altura da imagem (necessário com slices)
 	flip?: boolean;
+	faces?: 'left' | 'right' | 'none'; // para onde aponta o nariz/rosto no PNG original (gate de física); 'none' = objeto sem frente
+	on?: 'water' | 'road' | 'floor' | 'ground' | 'air'; // sobre o que o ator se move (gate de física)
 	wake?: boolean; // espuma na linha d'água
 	smoke?: [number, number]; // origem da fumaça em % do ator (x, y a partir do topo)
 	appear_s?: number;

@@ -1,0 +1,32 @@
+{
+ "cena": "S06",
+ "ciclo": "c4",
+ "notas": {
+  "V1": 5,
+  "V2": 4,
+  "V3": 4,
+  "V4": 4,
+  "V5": 3,
+  "V6": 5,
+  "V7": 4,
+  "V9": 5,
+  "V10": 4
+ },
+ "media": 4.22,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "media",
+   "tempo": "08.56s",
+   "defeito": "Na tomada 3 (t=08.56s), a linha secundária de texto 'em 1950' abaixo de 'US$ 10 milhões' possui contraste extremamente baixo (fonte escura sobre fundo de nuvens sombrias), prejudicando a legibilidade em resolução 640x360.",
+   "correcao": "Alterar a cor da fonte de 'em 1950' para tom claro/creme (idêntico ao título principal) ou aplicar sombra/fundo escuro de alto contraste para garantir visualização nítida."
+  }
+ ],
+ "bom": [
+  "Estilo visual pintado 2D perfeitamente consistente com a cena âncora S05 durante todas as 7 tomadas.",
+  "Excelente animação sequencial do 'princípio do dominó' caindo na mesa sob iluminação focada (t=27.0s-31.98s).",
+  "Animação fluida da pasta dos Documentos do Pentágono deslizando na mesa com rótulo descritivo preciso (t=3.0s-5.8s).",
+  "Efeito de disparos de flashes de câmeras fotográficas de época na coletiva de imprensa de Eisenhower agregando dinamismo e realismo histórico (t=21.0s-27.0s).",
+  "Precisão de época nos equipamentos (avião C-47 com insígnias francesas, câmeras Speed Graphic e jipe militar)."
+ ]
+}

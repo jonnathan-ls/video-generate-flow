@@ -1,0 +1,4 @@
+{"ator":"pasta","ok":true,"motivo":"A pasta desliza apoiada na mesa, do canto superior esquerdo para baixo à direita, sem sair da superfície nem flutuar"}
+
+[0m
+> build · deepseek-flash

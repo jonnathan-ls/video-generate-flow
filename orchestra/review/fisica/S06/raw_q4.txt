@@ -1,0 +1,4 @@
+{"ator":"c47","ok":false,"motivo":"O avião avança da esquerda para a direita (esquerda no 1º quadro, centro-direita no 2º, canto direito no 3º), mas o nariz/cockpit continua apontando para a esquerda nos três quadros: ele voa de ré, com a frente contra o sentido do deslocamento."}
+
+[0m
+> build · deepseek-flash

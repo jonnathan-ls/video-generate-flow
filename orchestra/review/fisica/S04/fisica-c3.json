@@ -1,0 +1,49 @@
+{
+ "mp4": "media/pt-br-historia/vietna/render/S04.mp4",
+ "votos_por_pergunta": 1,
+ "fails": 0,
+ "itens": [
+  {
+   "n": 1,
+   "ator": "coluna_civis_45_a",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "coluna_civis_45_a está apoiado no chão livre da estrada, e não por cima de casas, barracas, tendas ou telhados? Olhe embaixo das rodas/pés: se em ALGUM quadro estiverem sobre uma tenda, telhado, caixote ou casa, ok=false.",
+   "t": [
+    1.65,
+    2.73,
+    3.8
+   ],
+   "tira": "orchestra/review/fisica/S04/q1.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 2,
+   "ator": "decl_us",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "decl_us desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+   "t": [
+    14.32,
+    14.57,
+    14.82
+   ],
+   "tira": "orchestra/review/fisica/S04/q2.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 3,
+   "ator": "decl_fr",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "decl_fr desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+   "t": [
+    16.76,
+    17.01,
+    17.26
+   ],
+   "tira": "orchestra/review/fisica/S04/q3.jpg",
+   "votos": "1 ok / 0 falha"
+  }
+ ]
+}

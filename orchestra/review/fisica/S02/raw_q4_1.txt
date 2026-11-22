@@ -1,0 +1,1 @@
+{"ator":"pasta","ok":true,"motivo":"desliza apoiado na superficie sem flutuar"}

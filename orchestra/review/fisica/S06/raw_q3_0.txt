@@ -1,0 +1,1 @@
+{"ator":"caixotes","ok":true,"motivo":"caixotes se movimentam suspensos pelo guindaste corretamente"}

@@ -1,0 +1,4 @@
+{"ator":"pasta","ok":true,"motivo":"pastas apoiadas na mesma mesa, deslizando sobre a superfície, sem flutuar ou descer do alto"}
+
+[0m
+> build · deepseek-flash

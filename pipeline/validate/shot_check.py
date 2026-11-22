@@ -4,7 +4,10 @@ Uso: shot_check.py scenes_spec.json props-dir [S02 S03 ...]
 Lê os tempos resolvidos de props-dir/<cena>.json ('spec') quando existem.
 Falha se: faltar tomada, tomada > 7 s, média > 6 s, buraco, tipo repetido, < 3 camadas, sem movimento/cue,
 >2 s sem objeto em movimento numa tomada com cena (R18/V9), base de ator sob a legenda (V10),
-ou se mapa/texto/doc sem cena passar de 20% do tempo das cenas checadas."""
+ou se mapa/texto/doc sem cena passar de 20% do tempo das cenas checadas.
+Física (mistakes.md 2026-11-21): ator que se desloca > 3% exige 'faces' (left|right|none: lado do nariz no PNG original; none = objeto sem frente)
+e 'on' (water|road|floor|ground|air). FAIL se a direção efetiva (faces, invertido por flip) contradiz o sinal de Δx, ou se um ator fora do ar
+entra descendo (Δy > 4% com |Δy| > 0,5·|Δx|) sem grow/scale1. O gate de visão é orchestra/fisica.sh."""
 import json, sys, pathlib
 spec = json.load(open(sys.argv[1])); props = pathlib.Path(sys.argv[2])
 only = set(sys.argv[3:])
@@ -46,16 +49,47 @@ def gaps(iv, a, b):
     if b - cur > GAP: out.append((cur, b))
     return out
 
+ONS = ("water", "road", "floor", "ground", "air")
+
+def physics(ac, aid):
+    pts = [ac["from"]] + ([ac["to"]] if ac.get("to") else []) + list(ac.get("path", []))[1:]
+    if ac.get("path"): pts = list(ac["path"])
+    if len(pts) < 2: return []
+    name = ac["src"].split("/")[-1].rsplit(".", 1)[0]
+    far = max(max(abs(p[0] - pts[0][0]), abs(p[1] - pts[0][1])) for p in pts)
+    if far <= 3: return []
+    out = []; tag = f"{aid} {name}"
+    faces, on = ac.get("faces"), ac.get("on")
+    if faces not in ("left", "right", "none"): out.append(f"{tag}: sem 'faces' (left|right|none)")
+    if on not in ONS: out.append(f"{tag}: sem 'on' ({'|'.join(ONS)})")
+    dx = pts[-1][0] - pts[0][0]
+    if faces in ("left", "right") and abs(dx) > 3:
+        eff = faces if not ac.get("flip") else ("left" if faces == "right" else "right")
+        if (dx > 0) != (eff == "right"):
+            out.append(f"{tag}: nariz para a {'esquerda' if eff == 'left' else 'direita'} e move para a {'direita' if dx > 0 else 'esquerda'} (Δx {dx:+.0f}%)")
+    if on in ONS and on != "air" and not (ac.get("grow") or (ac.get("scale1") not in (None, 1, 1.0))):
+        for p0, p1 in [(pts[0], pts[-1])] + list(zip(pts, pts[1:])):
+            ddx, ddy = p1[0] - p0[0], p1[1] - p0[1]
+            if ddy > 4 and abs(ddy) > 0.5 * abs(ddx):
+                out.append(f"{tag}: entra pelo alto (Δy {ddy:.0f}%)"); break
+    return out
+
 fails = 0; info = 0.0; total = 0.0
 for sid, sc0 in spec.items():
     if only and sid not in only: continue
     pf = props / f"{sid}.json"
     if not pf.exists(): print("SKIP", sid, "(sem props)"); continue
+    errs = []
     pj = json.load(open(pf)); dur = pj.get("durationSec", 0); total += dur
     sc = pj.get("spec") or sc0
     shots = sc.get("shots") or []
-    errs = []
     if sc.get("kind") == "map": info += dur
+    n_ac = 0
+    for sh in sc.get("shots") or []:
+        for ac in (sh.get("scene") or {}).get("actors", []):
+            n_ac += 1
+            for m in physics(ac, f"a{n_ac:02d}"):
+                print(f"FAIL {sid} {m}"); errs.append("física: " + m.split(":")[0])
     if not shots:
         if sc.get("kind") != "map": errs.append("sem 'shots'")
     else:

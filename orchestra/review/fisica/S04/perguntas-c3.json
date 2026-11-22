@@ -1,0 +1,77 @@
+[
+ {
+  "t": [
+   1.65,
+   2.73,
+   3.8
+  ],
+  "ator": "coluna_civis_45_a",
+  "pergunta": "coluna_civis_45_a está apoiado no chão livre da estrada, e não por cima de casas, barracas, tendas ou telhados? Olhe embaixo das rodas/pés: se em ALGUM quadro estiverem sobre uma tenda, telhado, caixote ou casa, ok=false.",
+  "cena": "S04",
+  "n": 1,
+  "pos": [
+   [
+    101.1,
+    84.0
+   ],
+   [
+    87.7,
+    84.0
+   ],
+   [
+    74.4,
+    84.0
+   ]
+  ]
+ },
+ {
+  "t": [
+   14.32,
+   14.57,
+   14.82
+  ],
+  "ator": "decl_us",
+  "pergunta": "decl_us desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+  "cena": "S04",
+  "n": 1,
+  "pos": [
+   [
+    -0.6,
+    62.8
+   ],
+   [
+    19.7,
+    63.4
+   ],
+   [
+    40.0,
+    64.0
+   ]
+  ]
+ },
+ {
+  "t": [
+   16.76,
+   17.01,
+   17.26
+  ],
+  "ator": "decl_fr",
+  "pergunta": "decl_fr desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+  "cena": "S04",
+  "n": 1,
+  "pos": [
+   [
+    100.9,
+    66.0
+   ],
+   [
+    83.9,
+    66.0
+   ],
+   [
+    67.0,
+    66.0
+   ]
+  ]
+ }
+]

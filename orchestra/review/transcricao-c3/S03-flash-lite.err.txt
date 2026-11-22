@@ -1,0 +1,59 @@
+Warning: Basic terminal detected (TERM=dumb). Visual rendering will be limited. For the best experience, use a terminal emulator with truecolor support.
+Warning: 256-color support not detected. Using a terminal with at least 256-color support is recommended for a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Skill conflict detected: "impeccable" from "/home/jonnathan/.agents/skills/impeccable/SKILL.md" is overriding the same skill from "/home/jonnathan/.gemini/skills/impeccable/SKILL.md".
+Skill conflict detected: "review" from "/home/jonnathan/projects/ai-youtube-channel/.agents/skills/review/SKILL.md" is overriding the same skill from "/home/jonnathan/.agents/skills/review/SKILL.md".
+Error executing tool read_file: File path '/home/jonnathan/projects/ai-youtube-channel/media/pt-br-historia/vietna/render/S03_mix.voice.wav' is ignored by configured ignore patterns.
+Error executing tool run_shell_command: Tool "run_shell_command" not found. Did you mean one of: "update_topic", "grep_search", "replace"?
+Attempt 1 failed with status 429. Retrying with backoff... _ApiError: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://aistudio.google.com/docs/rate-limits"}]}]}}
+    at throwErrorIfNotOK (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36185:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:35936:7
+    at async Models.generateContent (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36995:16)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:273399:26
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:250345:23
+    at async retryWithBackoff (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:270539:23)
+    at async GeminiClient.generateContent (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:306342:23)
+    at async WebSearchToolInvocation.execute (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:292445:24)
+    at async executeToolWithHooks (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:302208:22) {
+  status: 429
+}
+Attempt 2 failed with status 429. Retrying with backoff... _ApiError: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://aistudio.google.com/docs/rate-limits"}]}]}}
+    at throwErrorIfNotOK (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36185:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:35936:7
+    at async Models.generateContent (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36995:16)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:273399:26
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:250345:23
+    at async retryWithBackoff (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:270539:23)
+    at async GeminiClient.generateContent (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:306342:23)
+    at async WebSearchToolInvocation.execute (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:292445:24)
+    at async executeToolWithHooks (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:302208:22) {
+  status: 429
+}
+Attempt 3 failed with status 429. Retrying with backoff... _ApiError: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://aistudio.google.com/docs/rate-limits"}]}]}}
+    at throwErrorIfNotOK (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36185:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:35936:7
+    at async Models.generateContent (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36995:16)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:273399:26
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:250345:23
+    at async retryWithBackoff (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:270539:23)
+    at async GeminiClient.generateContent (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:306342:23)
+    at async WebSearchToolInvocation.execute (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:292445:24)
+    at async executeToolWithHooks (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:302208:22) {
+  status: 429
+}
+Attempt 4 failed with status 429. Retrying with backoff... _ApiError: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://aistudio.google.com/docs/rate-limits"}]}]}}
+    at throwErrorIfNotOK (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36185:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:35936:7
+    at async Models.generateContent (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36995:16)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:273399:26
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:250345:23
+    at async retryWithBackoff (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:270539:23)
+    at async GeminiClient.generateContent (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:306342:23)
+    at async WebSearchToolInvocation.execute (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:292445:24)
+    at async executeToolWithHooks (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:302208:22) {
+  status: 429
+}

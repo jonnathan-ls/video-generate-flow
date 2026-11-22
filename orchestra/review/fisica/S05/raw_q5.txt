@@ -1,0 +1,4 @@
+{"ator":"coluna_fr46_a","ok":true,"motivo":"Coluna de soldados anda sobre o piso de rua e entulho, com os pés apoiados no chão nos três quadros, sem flutuar."}
+
+[0m
+> build · deepseek-flash

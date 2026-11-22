@@ -1,0 +1,1 @@
+{"ator":"pasta","ok":true,"motivo":"a pasta desliza apoiada na mesa sem flutuar"}

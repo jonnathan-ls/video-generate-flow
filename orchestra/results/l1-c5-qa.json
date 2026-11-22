@@ -1,0 +1,24 @@
+{
+  "status": "done",
+  "files": [
+    "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/qa-lote-01.md",
+    "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json (cue de S06)",
+    "orchestra/results/c5-s06-label-cue.json",
+    "orchestra/results/review-S06-cc5-orchestra_review_S06_gemini.json",
+    "orchestra/results/l1-c5-qa.json"
+  ],
+  "validators": {
+    "shot_check": "PASS S01–S06; texto/mapa/documento sem cena = 12% de 137s (máx. 20%).",
+    "scene_gates": "PASS S01–S06; sem congelamentos, áudio e FX dentro dos limites.",
+    "render_check": "PASS S01–S06; S06 c5 32.00s, -14.8 LUFS, -1.7 dBTP, sem preto, congelamento ou silêncio.",
+    "fisica": "PASS S02–S06; 24 perguntas, zero falhas.",
+    "transcript_check": "PASS COM ADJUDICAÇÃO: S03 há/a é homófono; S04 Ba Dinh foi reconhecido foneticamente como ‘Badin’; sem omissão ou palavra substituída.",
+    "visual_lote": "PASS; V1–V10 = 5,4,4,4,4,5,4,4,5,4; média 4.30; nenhuma nota abaixo de 4; sem defeito alto.",
+    "review_S06_c5": "PASS Gemini independente; 5.00, sem defeitos.",
+    "flow": "PASS; 0 créditos adicionais."
+  },
+  "summary": "Fechei L1 após corrigir o cue de ‘em 1950’ em S06 e revisar o lote inteiro nas folhas de contato. O gate visual do lote pontuou 4.30; transcrição S03/S04 adjudicada como divergência de homofonia/transliteração, sem erro lexical. L2 está liberado.",
+  "issues": [
+    "OpenCode nemotron-3.5-super-vl-free respondeu ‘Free usage limit reached’; o maestro concluiu a alteração específica. Nenhum crédito do Flow foi usado."
+  ]
+}

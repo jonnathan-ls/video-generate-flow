@@ -1,0 +1,77 @@
+{
+ "mp4": "media/pt-br-historia/vietna/render/S05.mp4",
+ "votos_por_pergunta": 1,
+ "fails": 0,
+ "itens": [
+  {
+   "n": 1,
+   "ator": "ship",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "ship está com o casco NA água do rio (água visível embaixo e ao redor do casco), e não por cima do cais, da margem ou dos prédios? Se em ALGUM quadro o casco estiver sobre o cais, a margem ou um telhado, ok=false.",
+   "t": [
+    2.35,
+    4.08,
+    5.8
+   ],
+   "tira": "orchestra/review/fisica/S05/q1.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 2,
+   "ator": "coluna_fr46_a",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "coluna_fr46_a está com os pés no chão em todos os quadros, sem flutuar?",
+   "t": [
+    6.95,
+    7.68,
+    8.4
+   ],
+   "tira": "orchestra/review/fisica/S05/q2.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 3,
+   "ator": "ship",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "ship está com o casco NA água do rio (água visível embaixo e ao redor do casco), e não por cima do cais, da margem ou dos prédios? Se em ALGUM quadro o casco estiver sobre o cais, a margem ou um telhado, ok=false.",
+   "t": [
+    9.45,
+    11.2,
+    12.95
+   ],
+   "tira": "orchestra/review/fisica/S05/q3.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 4,
+   "ator": "s05_sold46_0",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "s05_sold46_0 está com os pés no chão em todos os quadros, sem flutuar?",
+   "t": [
+    14.0,
+    14.6,
+    15.2
+   ],
+   "tira": "orchestra/review/fisica/S05/q4.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 5,
+   "ator": "coluna_fr46_a",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "coluna_fr46_a está com os pés no chão em todos os quadros, sem flutuar?",
+   "t": [
+    23.25,
+    25.57,
+    27.89
+   ],
+   "tira": "orchestra/review/fisica/S05/q5.jpg",
+   "votos": "1 ok / 0 falha"
+  }
+ ]
+}

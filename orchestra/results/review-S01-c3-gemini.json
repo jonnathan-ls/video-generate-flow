@@ -1,0 +1,26 @@
+{
+  "cena": "S01",
+  "ciclo": "c3",
+  "notas": {
+    "V1": 5,
+    "V2": 5,
+    "V3": 4,
+    "V4": 5,
+    "V5": 5,
+    "V6": 5,
+    "V7": 4,
+    "V9": 5,
+    "V10": 5
+  },
+  "media": 4.78,
+  "veredito": "APROVADO",
+  "defeitos": [],
+  "bom": [
+    "Estilo visual consistente e refinado em todo o ciclo S01 (00.30s a 15.15s), alinhado às referências de época dos anos 1960.",
+    "Movimento contínuo e fluida transição nas tomadas de mapa e nos documentos do memorandum em 13.06s.",
+    "Tipografia perfeitamente legível mesmo em resoluções menores, com destaque preciso e sincronia impecável com a fala em 05.50s e 13.06s."
+  ],
+  "media_calculada": 4.78,
+  "veredito_gate": "APROVADO",
+  "validacao_gate": "PASS"
+}

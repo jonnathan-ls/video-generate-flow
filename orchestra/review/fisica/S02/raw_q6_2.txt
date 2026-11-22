@@ -1,0 +1,1 @@
+{"ator":"selo","ok":true,"motivo":"o selo desliza apoiado sobre o documento e a superficie sem flutuar ou entrar do alto"}

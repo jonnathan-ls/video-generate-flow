@@ -1,0 +1,4 @@
+{"ator":"paraquedas","ok":true,"motivo":"Paraquedas desce suspenso no ar, do alto em direção ao descampado, sem atravessar chão, casas ou mapa"}
+
+[0m
+> build · deepseek-flash

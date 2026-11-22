@@ -1,0 +1,26 @@
+{
+  "status": "done",
+  "files": [
+    "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json (somente S06)",
+    "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes.json (S06 regenerada)",
+    "studio/remotion/src/vietna/shots.tsx",
+    "media/pt-br-historia/vietna/render/props/S06.json",
+    "media/pt-br-historia/vietna/render/quadros/S06/folha.jpg",
+    "media/pt-br-historia/vietna/render/S06.mp4",
+    "media/pt-br-historia/vietna/render/S06_sheet.jpg",
+    "orchestra/tasks/c4-s06-text.md",
+    "orchestra/logs/c4-s06-text-sonnet.log",
+    "orchestra/results/c4-s06-text.json"
+  ],
+  "validators": {
+    "shot_check": "PASS S06; texto/mapa/documento sem cena = 0% de 32s (máx. 20%).",
+    "scene_gates": "PASS S06; 32.0s, sem congelamento, -14.7 LUFS, pico -1.7 dBTP, FX PASS.",
+    "render_check": "PASS S06 32.00s, -14.8 LUFS, -1.7 dBTP, sem tela preta/congelamento/silêncio. --dur 32 corresponde ao MP4 quantizado em frames; --dur 31.577 falha por expectativa de duração não arredondada.",
+    "fisica": "PASS reutilizado do c3: 24 perguntas S02–S06, 0 falhas. c4 muda apenas a tipografia/layout da cartela, não os movimentos físicos."
+  },
+  "summary": "A cifra “US$ 10 milhões” e o rótulo “em 1950” foram movidos para o alto à esquerda; big_size=110 impede tocar o cabo do guindaste. O padrão das outras cartelas permanece inalterado por opções opcionais de posição e tamanho em StatShot. Prévia por quadros e render Vulkan de S06 concluídos.",
+  "issues": [
+    "Sonnet CLI não estava autenticado (Not logged in); o patch foi aplicado pelo executor atual sem pedir login, conforme autorização do usuário. OpenCode gratuito também havia atingido o limite global.",
+    "L1 ainda não tem DoD completo: S03/S04 aguardam transcrição independente; S02–S05 ainda precisam de rubrica válida >=4,3; este resultado fecha somente a correção visual S06."
+  ]
+}

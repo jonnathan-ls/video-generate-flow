@@ -1,0 +1,1 @@
+{"ator":"s05_sold46_0","ok":true,"motivo":"os soldados estao caminhando de forma coerente descendo a escada apoiados nos degraus"}

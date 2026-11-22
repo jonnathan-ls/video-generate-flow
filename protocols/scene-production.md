@@ -57,6 +57,7 @@ Cenas já aprovadas não são refeitas. Tipos de cena que se repetem viram **mod
    - eventos de som com `reason` (R16), passos, motor, água e tiros acompanhando o movimento (L02).
 8. **Autochecagem** (o produtor, antes do revisor):
    - `shot_check.py` PASS, `scene_gates.py` PASS e folha de contato;
+   - **física PASS obrigatório:** `.venv/bin/python orchestra/tools/fisica_perguntas.py <scenes_spec.json> render/props/Sxx.json Sxx orchestra/review/fisica/Sxx/perguntas.json` e `bash orchestra/fisica.sh render/Sxx.mp4 orchestra/review/fisica/Sxx/perguntas.json` (3 quadros do trajeto por ator: na água/estrada/piso/chão, sem entrar do alto, sem passar por cima de casas e sem voar de ré; FAIL bloqueia a cena);
    - `python3 pipeline/validate/render_check.py render/Sxx.mp4 --dur <duração>` PASS (volume -14 ±2 LUFS, pico ≤ -1 dBTP, sem tela preta, sem quadro congelado > 2 s, sem silêncio no meio);
    - `source pipeline/env.sh; .venv/bin/python pipeline/validate/transcript_check.py render/Sxx.mp4 --scenes scenes.json --scene Sxx` PASS (a narração bate com o roteiro, palavra por palavra: pega erro de pronúncia do TTS);
    - quadro **na palavra** de cada ação: o objeto está lá?
@@ -133,3 +134,6 @@ Cues: qualquer `*_word` + `*_offset` vira `*_s`.
 - Revisor reprovou no ciclo 2.
 - Custo de crédito maior que 0.
 - Afirmação da fala sem fonte para o que a imagem mostra (R1).
+
+### Autorização contínua do usuário
+Se o usuário já tiver autorizado explicitamente a continuação de todos os lotes e dispensado nova autorização quando houver limites, essa mensagem cumpre o ponto de escala para a produção nomeada. O maestro continua pelo próximo caminho permitido (executor/modelo alternativo ou revisão própria), registra o motivo e mantém todos os gates e notas mínimas. A autorização não converte uma reprovação em aprovação; se a próxima revisão falhar, corrigir e revisar de novo sem pedir a mesma autorização.

@@ -1,0 +1,152 @@
+[
+  {
+    "t": [
+      1.98,
+      2.21,
+      2.43
+    ],
+    "ator": "pasta",
+    "pergunta": "pasta desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+    "cena": "S02",
+    "n": 1,
+    "pos": [
+      [
+        96.1,
+        57.5
+      ],
+      [
+        76.6,
+        57.3
+      ],
+      [
+        58.0,
+        57.0
+      ]
+    ]
+  },
+  {
+    "t": [
+      5.15,
+      6.48,
+      7.8
+    ],
+    "ator": "dip_walk_0",
+    "pergunta": "dip_walk_0 está com os pés no piso do ambiente, andando no chão em todos os quadros (não flutua no ar nem desce do alto)? Compare a altura dos pés com a linha do chão/piso do ambiente; móveis e objetos NÃO são piso. Se em ALGUM quadro os pés estiverem acima do chão, ok=false.",
+    "cena": "S02",
+    "n": 1,
+    "pos": [
+      [
+        17.5,
+        66.0
+      ],
+      [
+        33.9,
+        74.4
+      ],
+      [
+        50.0,
+        80.5
+      ]
+    ]
+  },
+  {
+    "t": [
+      8.85,
+      10.07,
+      11.3
+    ],
+    "ator": "coluna_br65_a",
+    "pergunta": "coluna_br65_a está apoiado no chão livre da estrada, e não por cima de casas, barracas, tendas ou telhados? Olhe embaixo das rodas/pés: se em ALGUM quadro estiverem sobre uma tenda, telhado, caixote ou casa, ok=false.",
+    "cena": "S02",
+    "n": 1,
+    "pos": [
+      [
+        68.5,
+        81.0
+      ],
+      [
+        81.4,
+        81.0
+      ],
+      [
+        94.5,
+        81.0
+      ]
+    ]
+  },
+  {
+    "t": [
+      12.35,
+      14.47,
+      16.6
+    ],
+    "ator": "pasta",
+    "pergunta": "pasta desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+    "cena": "S02",
+    "n": 2,
+    "pos": [
+      [
+        42.0,
+        82.0
+      ],
+      [
+        27.0,
+        82.0
+      ],
+      [
+        35.2,
+        82.0
+      ]
+    ]
+  },
+  {
+    "t": [
+      21.0,
+      22.1,
+      22.3
+    ],
+    "ator": "pasta",
+    "pergunta": "A pasta permanece apoiada no tampo da mesa (a superfície verde/ madeira visível) enquanto desliza, sem flutuar nem entrar pelo alto? Se a pasta sair pela borda direita do quadro mais tarde, isso é permitido; julgue apenas o contato com a mesa nos três quadros visíveis.",
+    "cena": "S02",
+    "n": 4,
+    "pos": [
+      [
+        50.0,
+        80.0
+      ],
+      [
+        50.0,
+        80.0
+      ],
+      [
+        70.0,
+        80.0
+      ]
+    ]
+  },
+  {
+    "t": [
+      21.0,
+      21.75,
+      22.5
+    ],
+    "ator": "selo",
+    "pergunta": "selo desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+    "cena": "S02",
+    "n": 1,
+    "pos": [
+      [
+        60.0,
+        74.0
+      ],
+      [
+        60.0,
+        74.0
+      ],
+      [
+        99.0,
+        74.0
+      ]
+    ]
+  }
+]

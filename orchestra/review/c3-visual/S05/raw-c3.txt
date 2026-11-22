@@ -1,0 +1,37 @@
+```json
+{
+  "cena": "S05",
+  "ciclo": "c3",
+  "notas": {
+    "V1": 4,
+    "V2": 4,
+    "V3": 4,
+    "V4": 4,
+    "V5": 4,
+    "V6": 4,
+    "V7": 4,
+    "V9": 4,
+    "V10": 4
+  },
+  "media": 4.00,
+  "veredito": "REFAZER",
+  "defeitos": [
+    {
+      "prioridade": "media",
+      "tempo": "03.25s",
+      "defeito": "O navio entra e atraca em Haiphong ligeiramente desalinhado com a escala do cais e da água em a02_03.25.jpg.",
+      "correcao": "Ajustar o vetor de movimento e a linha d'água do navio para garantir contato físico perfeito com o cais."
+    },
+    {
+      "prioridade": "media",
+      "tempo": "21.25s",
+      "defeito": "A explosão da usina elétrica de Hanói em a22_21.25.jpg apresenta fumaça com transição abrupta em relação ao fundo noturno.",
+      "correcao": "Suavizar a composição da camada de fogo e fumaça sobre a fachada da usina para maior integração atmosférica."
+    }
+  ],
+  "bom": [
+    "A consistência do estilo visual e da paleta de cores sépia/noir atinge o padrão da âncora (zz_ancora_12.0.jpg).",
+    "A sincronização entre a fala do locutor e a legenda em caixa alta inferior flui corretamente ao longo dos blocos temporais (ex: a08_07.44.jpg)."
+  ]
+}
+```

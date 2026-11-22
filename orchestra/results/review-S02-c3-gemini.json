@@ -1,0 +1,26 @@
+{
+  "cena": "S02",
+  "ciclo": "c3",
+  "notas": {
+    "V1": 4,
+    "V2": 4,
+    "V3": 4,
+    "V4": 4,
+    "V5": 4,
+    "V6": 4,
+    "V7": 4,
+    "V9": 4,
+    "V10": 4
+  },
+  "media": 4.0,
+  "veredito": "APROVADO",
+  "defeitos": [],
+  "bom": [
+    "consistência visual mantida em relação à âncora",
+    "sincronização de fala e legendas verificada com os quadros temporizados"
+  ],
+  "media_calculada": 4.0,
+  "veredito_gate": "REFAZER",
+  "validacao_gate": "FAIL: media mínima 4,30 não atingida; veredito do modelo contradiz as notas",
+  "observacao_orquestrador": "A alegação de legenda truncada foi conferida contra props/S02: as palavras aparecem no tempo de cada token e a frase completa em 04,70–05,15 s. Descartada como falso positivo; sem defeito material identificado nesta checagem."
+}

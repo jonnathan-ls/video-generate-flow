@@ -1,0 +1,43 @@
+```json
+{
+  "cena": "S03",
+  "ciclo": "2",
+  "notas": {
+    "V1": 4,
+    "V2": 4,
+    "V3": 2,
+    "V4": 3,
+    "V5": 4,
+    "V6": 4,
+    "V7": 4,
+    "V9": 4,
+    "V10": 2
+  },
+  "media": 3.22,
+  "veredito": "REFAZER",
+  "defeitos": [
+    {
+      "prioridade": "alta",
+      "tempo": "02.10s",
+      "defeito": "(b) Pessoas andando deslizam com pernas paradas: em m00_02.10 (3 quadros seguidos), os moradores de Hanói se deslocam horizontalmente sem qualquer variação nas poses das pernas.",
+      "correcao": "Animar o ciclo de caminhada alternando a postura das pernas entre os quadros para evitar a sensação de cutout deslizando."
+    },
+    {
+      "prioridade": "alta",
+      "tempo": "05.70s",
+      "defeito": "Velocidade irreal do helicóptero: em m01_05.70 (janela de 0,1s), a aeronave cruza quase metade da tela, deslocando-se rápido demais para o plano geral de Saigon.",
+      "correcao": "Suavizar e desacelerar a translação do helicóptero no céu para manter a escala física e a atmosfera crível."
+    },
+    {
+      "prioridade": "media",
+      "tempo": "08.55s",
+      "defeito": "(a) Borda da bandeira solta do mastro: em m02_08.55 e a09_09.07, o tecido da bandeira do Brasil descola da haste vertical, criando uma lacuna visível.",
+      "correcao": "Ajustar o ponto de ancoragem para fixar a borda esquerda do tecido no mastro ao longo do movimento de tremular."
+    }
+  ],
+  "bom": [
+    "Progressão geográfica e temporal perfeita com a locução (Hanói 1945 -> Saigon -> Brasil 1965).",
+    "Excelente acabamento estético em fundos, iluminação e rótulos de contexto com tipografia legível e elegante."
+  ]
+}
+```

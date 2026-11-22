@@ -1,0 +1,3 @@
+```json
+{"ator":"paraquedas","ok":true,"motivo":"movimento aereo coerente de descida de paraquedas"}
+```

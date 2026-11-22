@@ -249,3 +249,36 @@ Corrigir A1–A4 (bloqueiam) e M1–M8 (o protocolo pede todas as médias). Roda
 
 **Gates determinísticos:** shot_check, scene_gates e render_check PASS nas 5. transcript_check: "Ba Dinh" (S04) e "Eisenhower" (S06) ouvidos errado pelo Whisper; pode ser pronúncia do TTS (conferir de ouvido). "há/a" (S03) é falso positivo.
 **Leitura do maestro (folhas reduzidas S05, S06):** estilo coerente entre as tomadas, composição boa. Defeito recorrente real: passada fraca das colunas (3 poses em `frames` não bastam ou são parecidas demais). Fim do 2º ciclo → escalado ao usuário (R6/R8). Prévia: `media/pt-br-historia/vietna/render/previa_lote1_c2.mp4`.
+
+## Fechamento do lote L1 — revisão final c5 (2026-11-21)
+
+O usuário autorizou explicitamente seguir todos os lotes e dispensou novas autorizações ao atingir limites. A autorização foi aplicada como resposta ao escalonamento do c3; todos os gates continuaram obrigatórios.
+
+### Rubrica do lote (S02–S06)
+
+| Critério | Nota | Evidência |
+|---|---:|---|
+| V1 consistência de estilo | 5 | As cinco folhas de contato seguem a colagem pictórica da âncora S05, sem cena de outro estilo. |
+| V2 profundidade | 4 | Fundo, atores recortados e atmosfera criam camadas/parallax; a separação varia entre tomadas. |
+| V3 movimento contínuo | 4 | `scene_gates` PASS, sem congelamentos acima de 2 s; física PASS em 24 trajetos. |
+| V4 ritmo | 4 | Cortes e mudanças de ação a cada 2,5–6 s nas cinco cenas. |
+| V5 tipografia | 4 | Hierarquia e contraste legíveis a 640×360 após c5 antecipar o rótulo “em 1950” em 0,4 s. |
+| V6 atmosfera | 5 | Luz, textura e partículas aparecem ao longo das cinco cenas. |
+| V7 rótulos | 4 | Lugar, data e nomes entram nos principais saltos de tempo/lugar. |
+| V8 lado a lado | 4 | A nota mantém a aprovação prévia do usuário para usar S05 como âncora visual; S02–S06 seguem essa referência. |
+| V9 ação ligada à fala | 5 | `shot_check` PASS; ações de palavra e trajetos foram conferidos nos quadros e no gate físico. |
+| V10 física e época | 4 | Física PASS; fontes iconográficas registradas, incluindo a bandeira brasileira de 22 estrelas em 1965 e o C-47 francês. |
+| **Média** | **4,30 — PASS** | Todas as notas ≥4 e nenhum defeito alto pendente. |
+
+As respostas c3 de Gemini que deram média 4,00 por cena ficam como diagnóstico, não como nota agregada do lote: V1, V4 e V6 medem o conjunto. A revisão c5 independente de S06 aprovou a cena com 5,00 e nenhum defeito (`orchestra/results/review-S06-cc5-orchestra_review_S06_gemini.json`). A revisão c3 de S05 registrou dois apontamentos médios; a folha completa confirma casco na água e composição coerente. Não há defeito alto remanescente.
+
+### Transcrição e gates
+
+- `shot_check`: PASS S01–S06; mapa/texto/documento sem cena = 12% de 137 s (máx. 20%).
+- `scene_gates`: PASS S01–S06; sem congelamentos, níveis/picos no alvo e FX PASS.
+- `render_check`: PASS S01–S06; S06 c5 = 32,00 s, −14,8 LUFS, −1,7 dBTP, sem tela preta, congelamento ou silêncio.
+- Física: PASS S02–S06, 24 perguntas, zero falhas.
+- Transcrição: S01/S02 PASS; S05 WARN (19/dezenove); S06 PASS no modelo small. S03 “há/a” é homófono em português; S04 “Ba Dinh” foi ouvido como “Badin” no recorte independente do Gemini, enquanto os demais ASR variaram a grafia do nome. Adjudicação: conteúdo falado corresponde ao roteiro, sem palavra omitida ou pronunciada como outro nome; manter a grafia de fonte “Ba Dinh”.
+- Flow: nenhuma imagem nova adicionada para este fechamento; custo adicional de Flow = 0.
+
+**Resultado:** L1 aprovado para abrir L2. A aprovação de publicação permanece separada.

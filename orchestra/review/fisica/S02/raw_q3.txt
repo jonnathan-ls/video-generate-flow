@@ -1,0 +1,4 @@
+{"ator":"coluna_br65_a","ok":true,"motivo":"Soldados marcham sobre o chão/praça pavimentada, com os pés apoiados no piso; não flutuam nem passam por cima de casas ou mapa."}
+
+[0m
+> build · deepseek-flash

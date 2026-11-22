@@ -1,0 +1,4 @@
+{"ator":"paraquedas","ok":true,"motivo":"Nos três quadros os paraquedas descem suspensos no ar, sobrevoando o vale e o campo de pouso, sem atravessar chão, casas ou o mapa"}
+
+[0m
+> build · deepseek-flash

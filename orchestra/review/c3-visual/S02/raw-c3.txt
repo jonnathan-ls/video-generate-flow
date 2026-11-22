@@ -1,0 +1,31 @@
+```json
+{
+  "cena": "S02",
+  "ciclo": "c3",
+  "notas": {
+    "V1": 4,
+    "V2": 4,
+    "V3": 4,
+    "V4": 4,
+    "V5": 4,
+    "V6": 4,
+    "V7": 4,
+    "V9": 4,
+    "V10": 4
+  },
+  "media": 4.00,
+  "veredito": "REFAZER",
+  "defeitos": [
+    {
+      "prioridade": "alta",
+      "tempo": "00.30 a 04.01",
+      "defeito": "O letreiro inferior exibe 'DE UM EMPRÉSTIMO DE 150', truncando a unidade monetária e gerando confusão visual na legenda principal.",
+      "correcao": "Sincronizar a legenda com o áudio completo 'de um empréstimo de 150 milhões de dólares' ou ajustar a quebra de texto."
+    }
+  ],
+  "bom": [
+    "Boa continuidade de movimento contínuo (m01 a m06) apresentando sequências consistentes de deslocamento e fluidez nas tomadas.",
+    "Excelente atmosfera e ambientação visual na sala do embaixador e nos planos de época com excelente direção artística nos arquivos e máquinas de escrever."
+  ]
+}
+```

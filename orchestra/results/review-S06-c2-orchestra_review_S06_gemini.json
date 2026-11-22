@@ -1,0 +1,88 @@
+{
+ "cena": "S06",
+ "ciclo": "2",
+ "notas": {
+  "V1": 4,
+  "V2": 4,
+  "V3": 3,
+  "V4": 3,
+  "V5": 3,
+  "V6": 4,
+  "V7": 4,
+  "V9": 3,
+  "V10": 3
+ },
+ "media": 3.4,
+ "veredito": "REFAZER",
+ "defeitos": [
+  {
+   "prioridade": "alta",
+   "tempo": "6.96-8.56s",
+   "defeito": "(c) escala: o caixote içado ocupa quase metade da altura do guindaste e compete em tamanho com o navio ao fundo; um caixote de carga nunca poderia ter essa proporção.",
+   "correcao": "Reduzir o caixote para cerca de 1/8 a 1/10 da altura do guindaste e mantê-lo bem menor que o navio."
+  },
+  {
+   "prioridade": "alta",
+   "tempo": "18.60s",
+   "defeito": "V9: a fala é 'o Miller Center fala em mais de três quartos', mas a imagem mostra apenas um jipe francês cruzando a pista; nenhum objeto ilustra 'três quartos' e a ação não está ligada à palavra nomeada.",
+   "correcao": "Trocar o motion por algo que mostre o dado do Miller Center (estudo/livro com 3/4 em destaque, ou ficha com maior contraste) ou, no mínimo, criar uma ligação visual explícita com a afirmacao."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "4.24s",
+   "defeito": "(f) o rotulo 'DOCUMENTOS DO PENTÁGONO / estudo encomendado em 1967' aparece semi-transparente, com baixo contraste sobre a mesa escura, quase ilegível em 640x360.",
+   "correcao": "Colocar fundo opaco escuro e letra branca desde o primeiro quadro em que o rotulo aparece, como no quadro de 4.40s."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "1.4-1.6s e 4.3-4.5s",
+   "defeito": "V3: nos 3 quadros seguidos (m00 e m01) o navio ja atracado e a pasta ja parada praticamente nao mudam de posicao; o movimento so acontece antes da janela de analise.",
+   "correcao": "Manter um deslocamento visível de 5 a 10 px por quadro durante toda a janela de 0,1 s, inclusive no fim do deslizamento."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "8.0-8.56s",
+   "defeito": "V5: o texto gigante 'US$ 10 milhoes' cobre o navio e parte da acao do guindaste (objeto sob a legenda), tirando o foco do caixote que sobe.",
+   "correcao": "Reduzir a tipografia e desloca-la para um canto livre, sem sobrepor o navio, o guindaste ou a carga."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "11.3-13.2s",
+   "defeito": "(e) a insginia na cauda do aviao de transporte lembra a Union Jack/bandeira britanica, incoerente com ajuda americana em 1954 e com a epoca retratada.",
+   "correcao": "Substituir pelo roundel americano (estrela e barras) ou remover a bandeira da cauda."
+  },
+  {
+   "prioridade": "media",
+   "tempo": "0.3-2.4s",
+   "defeito": "(c) o cargueiro chega ao cais com tamanho pequeno demais em relacao ao guindaste e aos armazens, quebrando a escala entre objetos vizinhos.",
+   "correcao": "Aumentar o navio em cerca de 30 a 40 por cento ou reduzir o guindaste, mantendo a proporcionalidade da ancora S05."
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "3.2s e 10.5s",
+   "defeito": "Legendas da tomada anterior persistence no primeiro quadro da tomada nova: 'DO LADO FRANCÊS.' em 3.2 e 'EM 1950 E,' em 10.5, antes da fala correspondente.",
+   "correcao": "Sincronizar a troca de legenda com o inicio da fala de cada tomada."
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "29.49s",
+   "defeito": "As pecas de dominó estao cerca do dobro do tamanho plausivel para a mesa de bilhar, embora sejam consistentes entre si.",
+   "correcao": "Reduzir as pecas em aproximadamente 50 por cento, mantendo o alinhamento da sequencia."
+  },
+  {
+   "prioridade": "baixa",
+   "tempo": "8.0s",
+   "defeito": "Pequeno artefato (mini paraquedas/gancho extra) aparece acima do caixote no gancho em m02, sem funcao na acao.",
+   "correcao": "Remover o artefato e deixar apenas o cabo ligando gancho e carga."
+  }
+ ],
+ "bom": [
+  "Estilo painterly coerente em todas as tomadas e muito proximo das ancoras S05 aprovadas, sem mudanca de tratamento entre cenario externo e interno.",
+  "Atmosfera forte: neblina no porto (tomada 1), raios de sol e camadas de montanha no vale (tomadas 4 e 5), luz quente de lampada na mesa de dominó (tomada 7).",
+  "Queda em sequencia dos dominós em m06 e descida dos paraquedas em m03 sao continuas e crediveis nos 3 quadros seguidos.",
+  "(a) as bandeiras americanas na entrevista de 24.0s nao apresentam emendas, degraus, faixas verticais anomalas nem borda solta do mastro.",
+  "(b) nao ha personagens andando em primeiro plano: plateia e fotografos estao parados ou sentados, sem deslizamento de pernas.",
+  "(d) contato correto: casco na agua, rodas do jipe no chao, caixote preso ao cabo e carga presa ao paraquedas.",
+  "Rotulos de contexto e legenda com palavra-chave em dourado seguem o padrao da ancora, com excecao do contraste em 4.24s."
+ ]
+}

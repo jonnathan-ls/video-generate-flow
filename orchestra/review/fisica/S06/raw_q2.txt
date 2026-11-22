@@ -1,0 +1,4 @@
+{"ator":"pasta","ok":true,"motivo":"A pasta desliza deitada sobre a superfície escura da mesa nos três quadros, sem flutuar nem cair do alto."}
+
+[0m
+> build · deepseek-flash

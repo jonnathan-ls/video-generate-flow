@@ -1,0 +1,4 @@
+{"ator":"selo","ok":true,"motivo":"O selo permanece apoiado sobre o documento e a mesa nos três quadros, sem flutuar nem cair do alto."}
+
+[0m
+> build · deepseek-flash

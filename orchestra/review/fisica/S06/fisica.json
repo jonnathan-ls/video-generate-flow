@@ -1,0 +1,119 @@
+{
+ "mp4": "media/pt-br-historia/vietna/render/S06.mp4",
+ "votos_por_pergunta": 5,
+ "fails": 2,
+ "itens": [
+  {
+   "n": 1,
+   "ator": "cargueiro",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "cargueiro está com o casco NA água do rio (água visível embaixo e ao redor do casco), e não por cima do cais, da margem ou dos prédios? Se em ALGUM quadro o casco estiver sobre o cais, a margem ou um telhado, ok=false.",
+   "t": [
+    1.35,
+    1.88,
+    2.4
+   ],
+   "tira": "orchestra/review/fisica/S06/q1.jpg",
+   "votos": "5 ok / 0 falha"
+  },
+  {
+   "n": 2,
+   "ator": "pasta",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "pasta desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+   "t": [
+    3.65,
+    3.77,
+    3.88
+   ],
+   "tira": "orchestra/review/fisica/S06/q2.jpg",
+   "votos": "5 ok / 0 falha"
+  },
+  {
+   "n": 3,
+   "ator": "caixotes",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "caixotes se move suspenso no ar sem atravessar o chão, as casas ou o mapa?",
+   "t": [
+    6.25,
+    7.92,
+    9.6
+   ],
+   "tira": "orchestra/review/fisica/S06/q3.jpg",
+   "votos": "4 ok / 1 falha"
+  },
+  {
+   "n": 4,
+   "ator": "c47",
+   "ok": false,
+   "motivo": "Nos três quadros o nariz/cockpit aponta para a esquerda e a cauda com as listras para a direita, mas o avião se desloca para a direita (do canto superior esquerdo ao lado direito), ou seja, avança de ré, com a cauda na frente, saindo pela borda direita.; O nariz (hélice) aponta para a esquerda, mas o avião se desloca para a direita entre os quadros: ele avança de ré, com a cauda (leme tricolor) na frente.; Nos três quadros o nariz do avião aponta para a ESQUERDA (hélice/cockpit à esquerda, deriva tricolor à direita), mas ele se desloca da esquerda para a direita na tela (topo na borda esquerda, meio no centro, fim saindo pela direita) — avança de ré, com a cauda na frente. Em voo sobre as montanhas/campo, mas a direção está invertida.; Nos quadros de cima e do meio o nariz aponta para a esquerda (cauda tricolor à direita), mas o avião anda para a direita na tela (esquerda → centro → borda direita no quadro de baixo), ou seja, avança de ré, com a cauda na frente.; Nas molduras de cima e do meio, a cauda com faixas azul/vermelha e a insígnia está à direita e o nariz aponta para a esquerda, mas o avião se desloca para a direita (borda esquerda → centro → borda direita): avança de ré, com a cauda na frente. Na moldura de baixo ele já aparece cortado na borda direita. No ar sobre o vale e a pista, sem problema de contato, mas o sentido do nariz contraria o deslocamento.",
+   "pergunta": "c47 se desloca para um lado da tela entre o quadro de cima e o de baixo. A frente (nariz/cockpit) aponta para esse mesmo lado, ou seja, ele avança com o nariz na frente e não com a cauda na frente (de ré)? Diga no motivo para que lado está o nariz e para que lado ele se desloca. Se em ALGUM quadro avançar com a cauda na frente, ok=false.",
+   "t": [
+    11.15,
+    12.88,
+    14.6
+   ],
+   "tira": "orchestra/review/fisica/S06/q4.jpg",
+   "votos": "0 ok / 5 falha"
+  },
+  {
+   "n": 5,
+   "ator": "paraquedas",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "paraquedas se move suspenso no ar sem atravessar o chão, as casas ou o mapa?",
+   "t": [
+    11.65,
+    13.57,
+    15.5
+   ],
+   "tira": "orchestra/review/fisica/S06/q5.jpg",
+   "votos": "5 ok / 0 falha"
+  },
+  {
+   "n": 6,
+   "ator": "paraquedas",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "paraquedas se move suspenso no ar sem atravessar o chão, as casas ou o mapa?",
+   "t": [
+    12.5,
+    14.05,
+    15.6
+   ],
+   "tira": "orchestra/review/fisica/S06/q6.jpg",
+   "votos": "5 ok / 0 falha"
+  },
+  {
+   "n": 7,
+   "ator": "paraquedas",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "paraquedas se move suspenso no ar sem atravessar o chão, as casas ou o mapa?",
+   "t": [
+    13.35,
+    14.47,
+    15.6
+   ],
+   "tira": "orchestra/review/fisica/S06/q7.jpg",
+   "votos": "5 ok / 0 falha"
+  },
+  {
+   "n": 8,
+   "ator": "jipe",
+   "ok": false,
+   "motivo": "no quadro do meio o jipe aparece elevado, com a roda traseira sobre um caixote/estrutura escura junto às tendas, sem contato com a estrada livre; No quadro do meio as rodas estão apoiadas sobre caixotes/sacos empilhados junto às tendas, acima do chão livre da estrada; No quadro do meio, as rodas traseiras assentam sobre caixotes e sacos, por cima de tendas, e não no chão livre da estrada; no fim, o jipe ainda encosta na barraca à direita.; No quadro do meio o jipe aparece por cima de um telhado/tenda à direita, com a roda traseira apoiada na estrutura em vez do chão livre da estrada",
+   "pergunta": "jipe está apoiado no chão livre da estrada, e não por cima de casas, barracas, tendas ou telhados? Olhe embaixo das rodas/pés: se em ALGUM quadro estiverem sobre uma tenda, telhado, caixote ou casa, ok=false.",
+   "t": [
+    16.65,
+    18.52,
+    20.4
+   ],
+   "tira": "orchestra/review/fisica/S06/q8.jpg",
+   "votos": "1 ok / 4 falha"
+  }
+ ]
+}

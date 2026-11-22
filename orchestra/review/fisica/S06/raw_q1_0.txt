@@ -1,0 +1,3 @@
+```json
+{"ator":"cargueiro","ok":true,"motivo":"o casco do cargueiro permanece na água do rio em todos os quadros, sem tocar o cais ou margem"}
+```

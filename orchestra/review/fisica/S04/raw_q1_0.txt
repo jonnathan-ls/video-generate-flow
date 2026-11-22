@@ -1,0 +1,3 @@
+```json
+{"ator":"coluna_civis_45_a","ok":true,"motivo":"personagens caminhando corretamente sobre o chão da rua, sem flutuar ou sobre estruturas"}
+```

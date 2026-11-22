@@ -1,0 +1,4 @@
+{"ator":"ship","ok":false,"motivo":"O casco é cortado pela parede de pedra do cais: o navio está atrás do muro, apoiado no cais, sem água visível sob o casco."}
+
+[0m
+> build · deepseek-flash

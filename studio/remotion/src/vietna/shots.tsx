@@ -10,20 +10,21 @@ const FPS = 30;
 const sec = (f: number) => f / FPS;
 const fadeUp = (f: number, at: number, len = 14) => interpolate(f, [at * FPS, at * FPS + len], [0, 1], {...clamp, easing: E.out});
 
-export type StatSpec = {top?: string; big: string; label: string; big_at_s: number; label_at_s: number; bar?: {frac: number; at_s: number}};
+export type StatSpec = {top?: string; big: string; label: string; big_at_s: number; label_at_s: number; position?: 'bottom-left' | 'top-left'; big_size?: number; bar?: {frac: number; at_s: number}};
 export const StatShot: React.FC<{d: StatSpec; t0: number; plate?: React.ReactNode}> = ({d, t0, plate}) => {
 	const f = useCurrentFrame();
 	const a = fadeUp(f, d.big_at_s - t0), b = fadeUp(f, d.label_at_s - t0);
+	const topLeft = d.position === 'top-left';
 	const push = interpolate(f, [0, 150], [1, 1.1], clamp);
 	const bar = d.bar ? interpolate(f, [(d.bar.at_s - t0) * FPS, (d.bar.at_s - t0) * FPS + 40], [0, d.bar.frac], {...clamp, easing: E.inOut}) : 0;
 	if (plate) {
 		return (
 			<AbsoluteFill>
 				{plate}
-				<AbsoluteFill style={{background: 'radial-gradient(ellipse 52% 50% at 14% 86%, rgba(8,6,5,0.7) 0%, rgba(8,6,5,0.35) 55%, rgba(8,6,5,0) 100%)'}} />
-				<AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'flex-start', padding: '0 0 210px 110px'}}>
+				<AbsoluteFill style={{background: topLeft ? 'radial-gradient(ellipse 52% 50% at 20% 14%, rgba(8,6,5,0.62) 0%, rgba(8,6,5,0.3) 55%, rgba(8,6,5,0) 100%)' : 'radial-gradient(ellipse 52% 50% at 14% 86%, rgba(8,6,5,0.7) 0%, rgba(8,6,5,0.35) 55%, rgba(8,6,5,0) 100%)'}} />
+				<AbsoluteFill style={{justifyContent: topLeft ? 'flex-start' : 'flex-end', alignItems: 'flex-start', padding: topLeft ? '80px 0 0 110px' : '0 0 210px 110px'}}>
 					{d.top && <div style={{fontFamily: F.sans, fontWeight: 800, fontSize: 34, letterSpacing: 8, color: C.paper, opacity: a, textTransform: 'uppercase', background: 'rgba(10,8,7,0.66)', padding: '5px 16px', borderLeft: `6px solid ${C.seal}`, textShadow: '0 2px 8px rgba(0,0,0,0.9)'}}>{d.top}</div>}
-					<div style={{fontFamily: F.serif, fontWeight: 900, fontSize: 170, lineHeight: 1.05, color: C.paper, opacity: a, translate: `${(1 - a) * -40}px 0px`, textShadow: '0 8px 40px rgba(0,0,0,0.8)'}}>{d.big}</div>
+					<div style={{fontFamily: F.serif, fontWeight: 900, fontSize: d.big_size ?? 170, lineHeight: 1.05, color: C.paper, opacity: a, translate: `${(1 - a) * -40}px 0px`, textShadow: '0 8px 40px rgba(0,0,0,0.8)'}}>{d.big}</div>
 					{d.bar && (
 						<div style={{width: 640, height: 20, background: 'rgba(233,223,200,0.2)', margin: '6px 0 12px', borderRadius: 3}}>
 							<div style={{width: `${bar * 100}%`, height: '100%', background: '#c9483f', borderRadius: 3}} />

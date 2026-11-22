@@ -1,1 +1,27 @@
-{"cena":"S06","ciclo":"calib","notas":{"V1":3,"V2":4,"V3":3,"V4":3,"V5":3,"V6":4,"V7":3,"V9":3,"V10":3},"media":3.3,"veredito":"REFAZER","defeitos":[{"prioridade":"media","tempo":"8.0","defeito":"Texto de 'US$ 10 milhões' com baixo contraste sobre o fundo da água.","correcao":"Aumentar contraste e ajustar camada de fundo."},{"prioridade":"media","tempo":"24.0","defeito":"Movimento de flashes e plateia ligeiramente rígido.","correcao":"Incrementar variação de quadros na animação dos fotógrafos."}],"bom":["Atmosfera histórica bem definida e paleta de cores coerente.","Composição espacial e iluminação adequadas ao tom do documentário."]}
+```json
+{
+  "cena": "S06",
+  "ciclo": "c5",
+  "notas": {
+    "V1": 5,
+    "V2": 5,
+    "V3": 5,
+    "V4": 5,
+    "V5": 5,
+    "V6": 5,
+    "V7": 5,
+    "V9": 5,
+    "V10": 5
+  },
+  "media": 5.0,
+  "veredito": "APROVADO",
+  "defeitos": [],
+  "bom": [
+    "Animação contínua e crível em todas as 7 tomadas (navio aportando, pasta deslizando, guindaste içando carga, avião lançando paraquedas, jipe em movimento, flashes de câmera e dominós caindo).",
+    "Excelente sincronismo entre a narração/palavras-chave e as ações visuais correspondentes.",
+    "Rótulos contextuais e tipografia impecáveis, com alto contraste, datas e destaques numéricos (US$ 10 milhões e 78%) bem posicionados.",
+    "Rigor histórico nos veículos (C-47 Dakota, Jeep Willys), equipamentos telefônicos/fotográficos dos anos 1950 e ambientação da Indochina.",
+    "Física de materiais e iluminação naturalistas (tensão no cabo do guindaste, desaceleração dos paraquedas e iluminação focal na mesa de bilhar)."
+  ]
+}
+```

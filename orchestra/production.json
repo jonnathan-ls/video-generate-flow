@@ -30,7 +30,7 @@
     "S05",
     "S06"
    ],
-   "status": "ciclo 2 em correção",
+   "status": "L1 aprovado após c5; gates determinísticos/físicos PASS; rubrica V1–V10 média 4,30; S03/S04 adjudicadas sem erro lexical. Ver orchestra/results/l1-c5-qa.json.",
    "qa": "qa-lote-01.md"
   },
   {
@@ -42,7 +42,7 @@
     "S10",
     "S11"
    ],
-   "status": "produção interrompida"
+   "status": "aberto; iniciar fase A (mídias) para S07–S11"
   },
   {
    "id": "L3",
@@ -139,11 +139,12 @@
  "approved_scenes": [
   "S01"
  ],
- "now": "Em paralelo: gate-fisica (Sonnet) e lp-base (kit low-poly + S05 piloto, Sonnet), desde 01:06",
+ "now": "L1 S02–S06 fechado no c5: revisão agregada 4,30, todos os gates PASS; cue de S06 ajustado e revisão Gemini 5,00. Próximo: L2 S07–S11, fase A de mídias.",
  "next": [
-  "c3: colagem lote 1, erros físicos (Sonnet + Flow, fila única) depois do gate-fisica",
-  "lp-S01..S06: demais cenas low-poly em paralelo, depois do lp-base",
-  "Revisão com nota + fisica.sh nas duas versões; prévia ao usuário"
+  "Iniciar L2 (S07–S11): planejar todas as mídias da fase A e usar Flow Agent em lote, somente a 0 crédito.",
+  "Executar L2 em fases A/B/C e validar todos os gates antes de avançar para L3.",
+  "Seguir L3–L10 em ordem; o usuário autorizou continuar sem nova autorização em limites, preservando os critérios e sem gastar crédito.",
+  "Não publicar; aprovação de publicação continua separada."
  ],
  "waiting_user": []
 }

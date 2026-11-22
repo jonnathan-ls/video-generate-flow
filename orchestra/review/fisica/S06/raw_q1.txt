@@ -1,0 +1,4 @@
+{"ator":"cargueiro","ok":true,"motivo":"O casco aparece na água do rio nos três quadros, com água embaixo e ao redor e o cais à direita; o navio avança e atraca sem sair da água nem flutuar."}
+
+[0m
+> build · deepseek-flash

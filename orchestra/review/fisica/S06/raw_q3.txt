@@ -1,0 +1,4 @@
+{"ator":"caixotes","ok":true,"motivo":"Caixotes pendurados no cabo do guindaste, descendo do navio para o cais; não atravessam o chão, as casas nem o mapa."}
+
+[0m
+> build · deepseek-flash

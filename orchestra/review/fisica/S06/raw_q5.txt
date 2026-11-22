@@ -1,0 +1,4 @@
+{"ator":"paraquedas","ok":true,"motivo":"os paraquedas descem suspensos no ar, entregando caixas, e seguem acima do terreno, das casas e do mapa, sem atravessar nada"}
+
+[0m
+> build · deepseek-flash

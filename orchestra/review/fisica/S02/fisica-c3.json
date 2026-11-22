@@ -1,0 +1,91 @@
+{
+ "mp4": "media/pt-br-historia/vietna/render/S02.mp4",
+ "votos_por_pergunta": 1,
+ "fails": 0,
+ "itens": [
+  {
+   "n": 1,
+   "ator": "pasta",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "pasta desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+   "t": [
+    1.98,
+    2.21,
+    2.43
+   ],
+   "tira": "orchestra/review/fisica/S02/q1.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 2,
+   "ator": "dip_walk_0",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "dip_walk_0 está com os pés no piso do ambiente, andando no chão em todos os quadros (não flutua no ar nem desce do alto)? Compare a altura dos pés com a linha do chão/piso do ambiente; móveis e objetos NÃO são piso. Se em ALGUM quadro os pés estiverem acima do chão, ok=false.",
+   "t": [
+    5.15,
+    6.48,
+    7.8
+   ],
+   "tira": "orchestra/review/fisica/S02/q2.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 3,
+   "ator": "coluna_br65_a",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "coluna_br65_a está apoiado no chão livre da estrada, e não por cima de casas, barracas, tendas ou telhados? Olhe embaixo das rodas/pés: se em ALGUM quadro estiverem sobre uma tenda, telhado, caixote ou casa, ok=false.",
+   "t": [
+    8.85,
+    10.07,
+    11.3
+   ],
+   "tira": "orchestra/review/fisica/S02/q3.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 4,
+   "ator": "pasta",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "pasta desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+   "t": [
+    12.35,
+    14.47,
+    16.6
+   ],
+   "tira": "orchestra/review/fisica/S02/q4.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 5,
+   "ator": "pasta",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "A pasta permanece apoiada no tampo da mesa (a superfície verde/ madeira visível) enquanto desliza, sem flutuar nem entrar pelo alto? Se a pasta sair pela borda direita do quadro mais tarde, isso é permitido; julgue apenas o contato com a mesa nos três quadros visíveis.",
+   "t": [
+    21.0,
+    22.1,
+    22.3
+   ],
+   "tira": "orchestra/review/fisica/S02/q5.jpg",
+   "votos": "1 ok / 0 falha"
+  },
+  {
+   "n": 6,
+   "ator": "selo",
+   "ok": true,
+   "motivo": "ok",
+   "pergunta": "selo desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+   "t": [
+    21.0,
+    21.75,
+    22.5
+   ],
+   "tira": "orchestra/review/fisica/S02/q6.jpg",
+   "votos": "1 ok / 0 falha"
+  }
+ ]
+}

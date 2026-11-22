@@ -1,0 +1,1 @@
+{"ator":"dip_walk_0","ok":true,"motivo":"pés apoiados no piso de madeira em todos os quadros"}

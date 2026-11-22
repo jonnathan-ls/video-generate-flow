@@ -1,0 +1,1 @@
+{"ator":"paraquedas","ok":true,"motivo":"movimento consistente de descida aérea dos pacotes com paraquedas sem atravessar o solo ou as estruturas"}

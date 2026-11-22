@@ -1,0 +1,32 @@
+{
+ "status": "done",
+ "files": [
+  "orchestra/fisica.sh",
+  "orchestra/tools/fisica_perguntas.py",
+  "pipeline/validate/shot_check.py",
+  "studio/remotion/src/vietna/scene.tsx",
+  "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json",
+  "protocols/scene-production.md",
+  "orchestra/review/fisica/S02/fisica.json",
+  "orchestra/review/fisica/S05/fisica.json",
+  "orchestra/review/fisica/S06/fisica.json"
+ ],
+ "validators": {
+  "shot_check": "PASS S01 S02 S03 S04; FAIL S05 (a03 ship: nariz para a esquerda e move para a direita, Δx +78%) e FAIL S06 (a05 c47: nariz para a esquerda e move para a direita, Δx +132%); cota mapa/texto/doc 12% (máx. 20%)",
+  "fisica": "S02 FAIL 1/6 (diplomata, t 5.15/6.48/7.8, votos 2 ok/3 falha); S05 FAIL 1/5 (ship 2ª tomada, t 10.65/11.8/12.95, 2 ok/3 falha); S06 FAIL 2/8 (c47, t 11.15/12.88/14.6, 0 ok/5 falha; jipe, t 16.65/18.52/20.4, 1 ok/4 falha); os 4 casos reais foram acusados e os demais atores PASS",
+  "sintaxe": "bash -n orchestra/fisica.sh PASS; python3 -m py_compile fisica_perguntas.py PASS"
+ },
+ "summary": "shot_check.py exige faces/on em ator que se desloca >3%, checa nariz×Δx (invertido por flip) e entrada vertical de quem não voa, com a mensagem 'entra pelo alto (Δy ..%)'. fisica.sh: 3 quadros de 960 px por pergunta, recortados em volta do ator e empilhados (início em cima, fim embaixo), pergunta ao Gemini (mesmo padrão do periodo.sh) e cai para modelo de visão do OpenCode; 5 votos por pergunta com maioria, saída {fails,itens} e código 1 se fails>0. fisica_perguntas.py gera {t:[ini,meio,fim],ator,pos,pergunta} por ator móvel, com o texto conforme on (water/road/floor/ground/air) e amostras dentro do quadro (sem transições). faces/on preenchidos nos atores móveis de S01–S06 (S01 não tem ator; lado do nariz conferido nos PNGs: coluna_br65_a, ch53, coluna_fr46_a tinham leitura errada do modelo grátis e eu conferi no olho). Validação nos mp4 atuais acusou embaixador (S02), navio sobre o cais (S05), avião de ré e jipe sobre as tendas (S06). Passo 8 do protocolo ganhou a linha de física PASS obrigatório.",
+ "issues": [
+  "S02 diplomata (embaixador), t 5.15/6.48/7.80: pés acima do piso e passo por cima da poltrona (fisica.sh FAIL 3/5); o shot_check não pega porque scale1=1.85 justifica o Δy.",
+  "S05 ship (2ª tomada), t 10.65/11.80/12.95: casco sobre o cais/prédios, fora da água (fisica.sh FAIL 3/5); o shot_check também acusa nariz esquerda × Δx +78%.",
+  "S06 c47, t 11.15/12.88/14.60: nariz/hélice à esquerda e deslocamento à direita (voa de ré); shot_check FAIL (Δx +132%) e fisica.sh FAIL 5/5.",
+  "S06 jipe, t 16.65/18.52/20.40: rodas sobre caixotes/tendas no quadro do meio (fisica.sh FAIL 4/5).",
+  "Cota grátis do Gemini (imagens) esgotada hoje e modelo grátis do OpenCode com limite diário atingido; a validação usou REVIEWER=deepseek/deepseek-flash (pago, custo baixo). Em produção fisica.sh tenta o Gemini, desativa-o após a 1ª falha e cai para opencode/nemotron-3.5-super-vl-free.",
+  "shot_check aceita faces='none' para objetos sem frente (pasta, selo, caixotes, paraquedas); a tarefa fala só em left|right, mas o tipo em scene.tsx prevê none.",
+  "O modelo de visão é estocástico: com 3 votos os casos limítrofes oscilavam; o padrão ficou 5 votos (maioria). O embaixador só é pego pelo gate de visão, não pelo determinístico.",
+  "faces/on e a parte determinística do shot_check já estavam no working tree quando esta tarefa começou (trabalho anterior não commitado); eu conferi os valores, regerei props via vietna_prep --only S01..S06 e validei. Nada foi renderizado."
+ ],
+ "_secs": 2480,
+ "_rc": 0
+}

@@ -1,0 +1,24 @@
+```json
+{
+  "cena": "S03",
+  "ciclo": "c3",
+  "notas": {
+    "V1": 4,
+    "V2": 4,
+    "V3": 4,
+    "V4": 4,
+    "V5": 4,
+    "V6": 4,
+    "V7": 4,
+    "V9": 4,
+    "V10": 4
+  },
+  "media": 4.00,
+  "veredito": "APROVADO",
+  "defeitos": [],
+  "bom": [
+    "Abertura em 00.30 apresenta coesão visual e estilo consistente com a âncora.",
+    "Movimento contínuo e transições fluidas nas tomadas de 04.50 a 08.55."
+  ]
+}
+```

@@ -1,0 +1,202 @@
+[
+ {
+  "t": [
+   1.55,
+   1.98,
+   2.4
+  ],
+  "ator": "cargueiro",
+  "pergunta": "cargueiro está com o casco NA água do rio (água visível embaixo e ao redor do casco), e não por cima do cais, da margem ou dos prédios? Se em ALGUM quadro o casco estiver sobre o cais, a margem ou um telhado, ok=false.",
+  "cena": "S06",
+  "n": 1,
+  "pos": [
+   [
+    -1.5,
+    73.1
+   ],
+   [
+    10.4,
+    73.6
+   ],
+   [
+    22.0,
+    74.0
+   ]
+  ]
+ },
+ {
+  "t": [
+   3.65,
+   3.77,
+   3.88
+  ],
+  "ator": "pasta",
+  "pergunta": "pasta desliza apoiado sobre a mesa (ou a superfície), sem entrar pelo alto nem flutuar?",
+  "cena": "S06",
+  "n": 1,
+  "pos": [
+   [
+    6.3,
+    82.1
+   ],
+   [
+    28.0,
+    81.0
+   ],
+   [
+    48.0,
+    80.0
+   ]
+  ]
+ },
+ {
+  "t": [
+   6.25,
+   7.92,
+   9.6
+  ],
+  "ator": "caixotes",
+  "pergunta": "caixotes se move suspenso no ar sem atravessar o chão, as casas ou o mapa?",
+  "cena": "S06",
+  "n": 1,
+  "pos": [
+   [
+    36.0,
+    58.3
+   ],
+   [
+    43.3,
+    46.0
+   ],
+   [
+    50.0,
+    63.1
+   ]
+  ]
+ },
+ {
+  "t": [
+   11.15,
+   12.88,
+   14.6
+  ],
+  "ator": "c47",
+  "pergunta": "c47 se desloca para um lado da tela entre o quadro de cima e o de baixo. A frente (nariz/cockpit) aponta para esse mesmo lado, ou seja, ele avança com o nariz na frente e não com a cauda na frente (de ré)? Diga no motivo para que lado está o nariz e para que lado ele se desloca. Se em ALGUM quadro avançar com a cauda na frente, ok=false.",
+  "cena": "S06",
+  "n": 1,
+  "pos": [
+   [
+    0.5,
+    23.2
+   ],
+   [
+    50.7,
+    20.6
+   ],
+   [
+    100.6,
+    17.9
+   ]
+  ]
+ },
+ {
+  "t": [
+   11.65,
+   13.57,
+   15.5
+  ],
+  "ator": "paraquedas",
+  "pergunta": "paraquedas se move suspenso no ar sem atravessar o chão, as casas ou o mapa?",
+  "cena": "S06",
+  "n": 1,
+  "pos": [
+   [
+    29.0,
+    24.0
+   ],
+   [
+    30.7,
+    43.4
+   ],
+   [
+    32.5,
+    63.0
+   ]
+  ]
+ },
+ {
+  "t": [
+   12.5,
+   14.05,
+   15.6
+  ],
+  "ator": "paraquedas",
+  "pergunta": "paraquedas se move suspenso no ar sem atravessar o chão, as casas ou o mapa?",
+  "cena": "S06",
+  "n": 2,
+  "pos": [
+   [
+    48.0,
+    22.5
+   ],
+   [
+    49.8,
+    41.8
+   ],
+   [
+    51.5,
+    61.0
+   ]
+  ]
+ },
+ {
+  "t": [
+   13.35,
+   14.47,
+   15.6
+  ],
+  "ator": "paraquedas",
+  "pergunta": "paraquedas se move suspenso no ar sem atravessar o chão, as casas ou o mapa?",
+  "cena": "S06",
+  "n": 3,
+  "pos": [
+   [
+    62.0,
+    21.0
+   ],
+   [
+    63.7,
+    38.7
+   ],
+   [
+    65.5,
+    56.5
+   ]
+  ]
+ },
+ {
+  "t": [
+   16.65,
+   18.52,
+   20.4
+  ],
+  "ator": "jipe",
+  "pergunta": "jipe está apoiado no chão livre da estrada, e não por cima de casas, barracas, tendas ou telhados? Olhe embaixo das rodas/pés: se em ALGUM quadro estiverem sobre uma tenda, telhado, caixote ou casa, ok=false.",
+  "cena": "S06",
+  "n": 1,
+  "pos": [
+   [
+    81.2,
+    71.7
+   ],
+   [
+    67.7,
+    63.4
+   ],
+   [
+    56.5,
+    56.1
+   ]
+  ]
+ }
+]

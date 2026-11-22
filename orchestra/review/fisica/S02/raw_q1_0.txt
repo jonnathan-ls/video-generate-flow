@@ -1,0 +1,1 @@
+{"ator":"pasta","ok":true,"motivo":"pasta desliza apoiada corretamente sobre a mesa"}

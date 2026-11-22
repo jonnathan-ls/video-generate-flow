@@ -1,2 +1,2 @@
-claude gate-fisica sonnet
-claude lp-base sonnet
+# feito opencode gate-fisica deepseek/deepseek-flash (resultado em results/gate-fisica.json)
+# migrado para orchestra/fila.txt: opencode lp-base deepseek/deepseek-flash

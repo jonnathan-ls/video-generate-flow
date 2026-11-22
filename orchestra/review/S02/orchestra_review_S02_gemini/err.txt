@@ -1,0 +1,17 @@
+Warning: 256-color support not detected. Using a terminal with at least 256-color support is recommended for a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Skill conflict detected: "impeccable" from "/home/jonnathan/.agents/skills/impeccable/SKILL.md" is overriding the same skill from "/home/jonnathan/.gemini/skills/impeccable/SKILL.md".
+Skill conflict detected: "review" from "/home/jonnathan/projects/ai-youtube-channel/.agents/skills/review/SKILL.md" is overriding the same skill from "/home/jonnathan/.agents/skills/review/SKILL.md".
+Attempt 1 failed with status 503. Retrying with backoff... _ApiError: {"error":{"message":"{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n","code":503,"status":"Service Unavailable"}}
+    at throwErrorIfNotOK (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:36185:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:35948:7
+    at async Models.generateContentStream (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-SAJ72M2G.js:37044:16)
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:273444:19
+    at async file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:250345:23
+    at async retryWithBackoff (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:270539:23)
+    at async GeminiChat.makeApiCallAndProcessStream (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:293199:28)
+    at async GeminiChat.streamWithRetries (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:293037:29)
+    at async Turn.run (file:///home/jonnathan/.nvm/versions/node/v25.6.1/lib/node_modules/@google/gemini-cli/bundle/chunk-NET4RIEQ.js:293564:24) {
+  status: 503
+}

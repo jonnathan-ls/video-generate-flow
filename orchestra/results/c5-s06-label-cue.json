@@ -1,0 +1,26 @@
+{
+  "status": "done",
+  "files": [
+    "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes_spec.json (somente stat de S06)",
+    "channels/pt-br-historia/videos/2026-11-19-guerra-do-vietna/scenes.json",
+    "media/pt-br-historia/vietna/render/props/S06.json",
+    "media/pt-br-historia/vietna/render/quadros/S06/folha.jpg",
+    "media/pt-br-historia/vietna/render/S06.mp4",
+    "media/pt-br-historia/vietna/render/S06_sheet.jpg",
+    "orchestra/tasks/c5-s06-label-cue.md",
+    "orchestra/logs/c5-s06-label-cue.log",
+    "orchestra/results/c5-s06-label-cue.json"
+  ],
+  "validators": {
+    "shot_check": "PASS S06; texto/mapa/documento sem cena = 0% de 32s (máx. 20%).",
+    "scene_gates": "PASS S06; 32s, 7 tomadas, sem congelamentos, -14.7 LUFS, pico -1.7 dBTP, FX PASS.",
+    "render_check": "PASS S06 32.00s; -14.8 LUFS, -1.7 dBTP, sem tela preta, congelamento ou silêncio.",
+    "quadros": "PASS pré-render; em 640x360, ‘EM 1950’ legível em 8.3s e 8.57s; entrada antecipada 0.4s, dentro da tolerância.",
+    "fisica": "PASS reutilizado de c3; 24 perguntas em S02–S06, zero falhas. Alteração somente de cue tipográfico.",
+    "review_visual": "PASS Gemini c5: S06 aprovado, 5.0 em V1–V7/V9/V10, sem defeitos (review-S06-cc5-orchestra_review_S06_gemini.json)."
+  },
+  "summary": "Antecipei em 0,4s a entrada do rótulo ‘em 1950’ em S06, mantendo texto, estilo, posição e movimento. Conferi os quadros antes do render Vulkan, renderizei S06 uma vez e todos os gates pedidos passaram.",
+  "issues": [
+    "OpenCode nemotron-3.5-super-vl-free não pôde executar por limite gratuito: ‘Free usage limit reached’. O maestro aplicou a alteração específica já autorizada; não houve gasto no Flow."
+  ]
+}

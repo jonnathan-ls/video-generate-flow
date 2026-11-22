@@ -1,0 +1,52 @@
+[
+ {
+  "t": [
+   1.45,
+   2.53,
+   3.6
+  ],
+  "ator": "coluna_civis_45_a",
+  "pergunta": "coluna_civis_45_a está apoiado no chão livre da estrada, e não por cima de casas, barracas, tendas ou telhados? Olhe embaixo das rodas/pés: se em ALGUM quadro estiverem sobre uma tenda, telhado, caixote ou casa, ok=false.",
+  "cena": "S03",
+  "n": 1,
+  "pos": [
+   [
+    -1.7,
+    84.0
+   ],
+   [
+    11.6,
+    84.0
+   ],
+   [
+    24.7,
+    84.0
+   ]
+  ]
+ },
+ {
+  "t": [
+   5.15,
+   5.88,
+   6.6
+  ],
+  "ator": "ch53",
+  "pergunta": "ch53 se desloca para um lado da tela entre o quadro de cima e o de baixo. A frente (nariz/cockpit) aponta para esse mesmo lado, ou seja, ele avança com o nariz na frente e não com a cauda na frente (de ré)? Diga no motivo para que lado está o nariz e para que lado ele se desloca. Se em ALGUM quadro avançar com a cauda na frente, ok=false.",
+  "cena": "S03",
+  "n": 1,
+  "pos": [
+   [
+    -0.2,
+    31.7
+   ],
+   [
+    20.1,
+    29.8
+   ],
+   [
+    40.0,
+    28.0
+   ]
+  ]
+ }
+]
