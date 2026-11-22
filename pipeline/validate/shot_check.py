@@ -74,6 +74,39 @@ def physics(ac, aid):
                 out.append(f"{tag}: entra pelo alto (Δy {ddy:.0f}%)"); break
     return out
 
+# Física determinística (2026-11-22): faixas de chão/água/céu medidas uma vez por fundo (orchestra/tools/faixas.py).
+# A base do ator tem de cair dentro da faixa do seu 'on'. Pega pé na água, barco no cais e gente sobre telhado sem chamar modelo.
+_FX = pathlib.Path(__file__).resolve().parents[2] / "studio/remotion/public/vietna/faixas.json"
+FAIXAS = json.loads(_FX.read_text()) if _FX.exists() else {}
+TOL = 3.0
+
+def band_errors(scn):
+    fb = FAIXAS.get(str(scn.get("bg", "")).split("/")[-1])
+    if not fb: return []
+    out = []
+    for ac in scn.get("actors", []):
+        on, name = ac.get("on"), ac["src"].split("/")[-1].rsplit(".", 1)[0]
+        if on not in ("road", "ground", "floor", "water", "air") or ac.get("blend"): continue
+        pts = [ac["from"]] + ([ac["to"]] if ac.get("to") else []) + list(ac.get("path", []))
+        pts = [p for p in pts if 0 <= p[0] <= 100]  # só o trecho em quadro
+        if on == "air":
+            lim = fb.get("ceu_ate")
+            if lim is not None and any(p[1] - ac.get("h", 0) > lim + TOL for p in pts):
+                out.append(f"'{name}' voa abaixo do céu livre (ceu_ate {lim:.0f}%)")
+            continue
+        if on == "floor" and fb.get("mesa"):
+            yb, x0, x1 = fb["mesa"]; band, bx = [yb - 6, yb + 6], [x0, x1]
+        elif on == "water":
+            band, bx = fb.get("agua"), fb.get("agua_x") or [0, 100]
+        else:
+            band, bx = fb.get("chao"), fb.get("chao_x") or [0, 100]
+        if not band:
+            out.append(f"'{name}' em '{on}', mas o fundo não tem essa faixa"); continue
+        for p in pts:
+            if not (band[0] - TOL <= p[1] <= band[1] + TOL) or not (bx[0] - TOL <= p[0] <= bx[1] + TOL):
+                out.append(f"'{name}' com base em ({p[0]:.0f}%, {p[1]:.0f}%) fora da faixa '{on}' y{band[0]:.0f}–{band[1]:.0f} x{bx[0]:.0f}–{bx[1]:.0f}"); break
+    return out
+
 fails = 0; info = 0.0; total = 0.0
 for sid, sc0 in spec.items():
     if only and sid not in only: continue
@@ -113,6 +146,7 @@ for sid, sc0 in spec.items():
             for x, y in gaps(action_intervals(s, a, b), a, b):
                 errs.append(f"tomada {i+1}: {y-x:.1f}s sem objeto em movimento ({x:.1f}–{y:.1f}s) [R18/V9]")
             scn = s["scene"]; z = max(scn.get("z0", 1.02), scn.get("z1", 1.1)); oy = float(str(scn.get("oy", "60%")).rstrip("%"))
+            for m in band_errors(scn): errs.append(f"tomada {i+1}: {m} [física por faixa]")
             for ac in scn.get("actors", []):
                 if ac.get("blend") or ac.get("h", 0) < 6 or ac.get("under_caption_ok"): continue
                 for pt in [ac["from"], ac.get("to", ac["from"])] + ac.get("path", []):

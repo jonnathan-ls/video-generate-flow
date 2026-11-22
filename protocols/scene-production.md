@@ -17,6 +17,15 @@ O usuário reprovou três padrões em sequência: mapa estático (S01 v1), "só 
 
 Cenas já aprovadas não são refeitas. Tipos de cena que se repetem viram **modelos** em `protocols/scene-templates.md` à medida que forem aprovados: copie o modelo e ajuste, em vez de escrever do zero.
 
+## Fluxo rápido (2026-11-22, adotado pelo maestro; meta: prévia do vídeo inteiro em < 1 h depois das imagens)
+**Medido em 2026-11-22:** render de uma cena na GPU leva ~20 s e os quadros ~11 s. O L2 levou ~2 h, das quais ~30 min foram de máquina. O resto foi LLM em laço (escreve, olha, erra a posição, corrige) e cota de visão esgotada. Regra: **a LLM fica fora do laço**.
+1. **Faixas por fundo (uma vez por imagem):** `studio/remotion/public/vietna/faixas.json` guarda `chao`, `chao_x`, `agua`, `agua_x`, `mesa`, `ceu_ate` em % da imagem. Medição: `orchestra/tools/faixas.py` (visão, lotes de 6) ou, sem cota, pelo maestro numa folha com grade (todas as imagens do lote em uma leitura).
+2. **Compilador:** o gerador do lote (`pipeline/assembly/vietna_spec_<lote>.py`, funções `walk`/`drive`/`sc`) encaixa a base de cada ator na faixa do seu `on` (`snap`). Física por construção.
+3. **Física determinística:** `shot_check.py` reprova base fora da faixa (pé na água, barco no cais, gente sobre telhado, ator sobre a ponte do rio). Ela roda antes do render e substitui o laço de visão.
+4. **Física por visão:** 1 voto por pergunta e +2 só na que falhar (`FISICA_VOTOS=1`). Só cota esgotada desliga o provedor.
+5. **Uma passada de escrita por vídeo:** a lista de tomadas de todas as cenas sai de uma vez (uma linha por tomada: fundo, ator, ação, palavra). Correção volta só para a tomada que falhou.
+6. **Render em bloco:** todas as cenas de uma vez, no máximo 2 processos de GPU.
+
 ## Passos
 1. **Ler** (R4): este protocolo, `shot-planning.md`, `learnings.md`, `mistakes.md`, os `qa-*.md` do vídeo (os defeitos já apontados não podem voltar) e as frases das cenas em `script.md` + `render/props/<cena>.json` (palavras com tempo).
 2. **Plano de tomadas** (em `lab/plan-<video>-<lote>.md`): para cada tomada, registre:

@@ -221,3 +221,17 @@ Sons do lote: todos sintetizados por código em `pipeline/assembly/sound_design.
 - Local da entrevista de Eisenhower de 07/04/1954: o rótulo não afirma lugar; o fundo mostra uma sala de imprensa genérica.
 - S03 t1/S04 t1: moradores com bandeirinhas a caminho da praça (cena genérica; a fala não afirma).
 - R13: termos comerciais do Flow (todas as imagens FLOW-*).
+
+## Imagens do lote 2 (FLOW-L2, S07–S11)
+Google Flow, conta do usuário (plano Plus), Nano Banana 2.1, 16:9, x2, **0 créditos**. Prompts em `lab/flow-prompts-lote2.md` (prefixo fixo de `lab/flow-prompts-s04.md`). Originais em `media/pt-br-historia/vietna/src_img/flow/lote2/` (`l2_<id>_<1|2>.png`); cópias de trabalho em `studio/remotion/public/vietna/l2_<id>.(jpg|png)`. Gate de época (`orchestra/periodo.sh`, Gemini) em `lab/l2gate/bg.json` e `obj.json`: fundos 42/46 ok; recortes 39/46 ok. Variante usada = primeira aprovada; `arvn_col`, `fr_column54`, `h21`, `us_truck`, `vm_column` usam a variante 2; `gun_crew` e `limo_61` a variante 1. Reprovações de `conf_hall` e `training_61` eram só "contém pessoas", que o prompt pedia (delegados ao fundo, tropa em formação). Em S10 o fundo `training_61` foi trocado por `saigon_55`/`airfield_61` porque a tropa aparecia de azul e vermelho, fora de época.
+| ID | Uso | Observação |
+|---|---|---|
+| FLOW-L2 dbp_* | S07 | Dien Bien Phu 1954: vale, encosta, trincheira, bunker |
+| FLOW-L2 geneva_* | S07, S08 | Lago e Palais des Nations, Genebra 1954 |
+| FLOW-L2 benhai_*, checkpoint, river_poles | S08, S09 | Rio Ben Hai, ponte e margens |
+| FLOW-L2 saigon_55, palace_55, saigon_63 | S08–S11 | Saigon colonial francesa, palácio, avenida |
+| FLOW-L2 airfield_61, macv_hq, whitehouse_63 | S10 | Tan Son Nhut, quartel em villa colonial, Casa Branca |
+| FLOW-L2 hue_63, hue_night, pagoda_pole | S11 | Hue 1963, rádio e pagode |
+| FLOW-L2 vm_column, gun_crew, fr_column54, arvn_col, us_col63, advisor, monks, crowd_run, police_line, icc_trio | S07–S11 | recortes sobre verde (chroma_cut) |
+| FLOW-L2 sedan_54, cyclo, jeep_us, us_truck, limo_61, h21, steamer, sampan, farmer_buffalo, camera, flag_vn, flag_sv, flag_bud | S07–S11 | veículos e objetos recortados |
+Desenhado por código: `l2_cedula.png` (papel em branco). **Pendente (R1):** referência iconográfica de H-21, M38A1, ônibus e uniformes não verificados fora da checagem do Gemini; o rótulo "Nada de texto/bandeiras" vale para as imagens. R13: termos comerciais do Flow seguem pendentes antes de publicar.

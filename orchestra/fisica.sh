@@ -18,7 +18,7 @@ T=orchestra/review/fisica/$STEM
 mkdir -p "$T"
 OUT=${3:-$T/fisica.json}
 BATCH=${FISICA_BATCH:-3}
-VOTOS=${FISICA_VOTOS:-5}
+VOTOS=${FISICA_VOTOS:-1}  # 2026-11-22: 1 voto; só a pergunta que falhar ganha +2 votos (maioria de 3)
 
 # 1) uma tira por pergunta: 3 quadros de 960 px empilhados (início em cima, fim embaixo), recortados em volta do ator
 python3 - "$MP4" "$Q" "$T" <<'PY' || exit 2
@@ -105,8 +105,8 @@ def ask(q, k):
             text = r.stdout or ""
             open(raw, "w").write(text)
         a = parse(text) if text else None
-        if a is None and text:
-            GEMINI_OK = False  # cota/erro: não repetir o Gemini para as outras perguntas
+        if a is None and text and re.search(r"quota|exhausted|RESOURCE_EXHAUSTED|429", text, re.I):
+            GEMINI_OK = False  # só cota esgotada desliga o Gemini; erro isolado tenta de novo
         if a is None:
             r = subprocess.run(["opencode", "--standalone", "run", "--auto", "--archived",
                                 "-m", os.environ.get("FISICA_MODEL", "opencode/nemotron-3.5-super-vl-free"),
@@ -126,6 +126,13 @@ byq = {q["n"]: [] for q in man}
 for (q, k), a in zip(tasks, resp):
     if a is not None:
         byq[q["n"]].append(a)
+# Voto adaptativo: pergunta com alguma resposta "falha" (ou sem resposta) ganha mais votos até 3 no total.
+redo = [(q, 100 + k) for q in man if len(byq[q["n"]]) < 3 and (not byq[q["n"]] or any(not a["ok"] for a in byq[q["n"]])) for k in range(3 - len(byq[q["n"]]))]
+if redo:
+    with ThreadPoolExecutor(max_workers=max(1, batch)) as ex:
+        for (q, k), a in zip(redo, ex.map(lambda qk: ask(*qk), redo)):
+            if a is not None:
+                byq[q["n"]].append(a)
 
 itens = []
 for q in man:

@@ -2772,12 +2772,12 @@
          "ar": 2.97,
          "sfx": "steps",
          "from": [
-          20,
-          82
+          16,
+          82.0
          ],
          "to": [
-          80,
-          82
+          64,
+          82.0
          ],
          "h": 31.9,
          "t0_s": 3.0,
@@ -2790,6 +2790,10 @@
          "faces": "right",
          "on": "road"
         }
+       ],
+       "pan": [
+        -30,
+        4
        ]
       },
       "date": {
@@ -2821,11 +2825,11 @@
          "sfx": "steps",
          "from": [
           22,
-          82
+          82.0
          ],
          "to": [
           74,
-          82
+          82.0
          ],
          "h": 31.9,
          "t0_s": 6.8,
@@ -2836,7 +2840,7 @@
          "flip": false,
          "note": "coluna do Viet Minh avança",
          "faces": "right",
-         "on": "road"
+         "on": "ground"
         }
        ]
       },
@@ -2911,12 +2915,12 @@
          "ar": 2.85,
          "sfx": "engine",
          "from": [
-          -14,
-          62
+          30,
+          68
          ],
          "to": [
-          112,
-          62
+          108,
+          68
          ],
          "h": 25.5,
          "t0_s": 13.0,
@@ -2965,11 +2969,11 @@
          "sfx": "steps",
          "from": [
           20,
-          82
+          82.0
          ],
          "to": [
           80,
-          82
+          82.0
          ],
          "h": 31.9,
          "t0_s": 15.8,
@@ -2996,7 +3000,7 @@
         {
          "text": "quem vai governar o país?",
          "size": "xl",
-         "color": "seal",
+         "color": "paper",
          "at_cue": "quem#1",
          "at_s": 17.07
         }
@@ -3042,11 +3046,11 @@
          "sfx": "jeep",
          "from": [
           -15,
-          82
+          82.0
          ],
          "to": [
           62,
-          82
+          82.0
          ],
          "h": 21.0,
          "t0_s": 0.3,
@@ -3057,6 +3061,10 @@
          "faces": "right",
          "on": "road"
         }
+       ],
+       "pan": [
+        -30,
+        4
        ]
       },
       "date": {
@@ -3076,32 +3084,32 @@
        "atmosfera+rótulo"
       ],
       "scene": {
-       "bg": "vietna/l2_conf_hall.jpg",
-       "z0": 1.08,
-       "z1": 1.03,
+       "bg": "vietna/l2_polling_hall.jpg",
+       "z0": 1.03,
+       "z1": 1.06,
        "ox": "50%",
-       "oy": "60%",
+       "oy": "70%",
        "actors": [
         {
          "src": "vietna/pasta.png",
          "ar": 1.5,
          "sfx": "paper",
          "from": [
-          -30,
-          84
+          40,
+          66
          ],
          "to": [
-          50,
-          80
+          57,
+          66
          ],
-         "h": 42,
-         "rot": [
-          -10,
-          -2
-         ],
+         "h": 17,
          "t0_s": 4.6,
          "t1_s": 8.3,
          "ease": "out",
+         "rot": [
+          -4,
+          0
+         ],
          "label": "GENEBRA",
          "note": "pasta do acordo desliza na mesa",
          "faces": "none",
@@ -3197,14 +3205,14 @@
          "ar": 2.27,
          "sfx": "steps",
          "from": [
-          25,
-          82
+          20,
+          82.0
          ],
          "to": [
-          70,
-          82
+          62,
+          82.0
          ],
-         "h": 37.699999999999996,
+         "h": 29.0,
          "t0_s": 14.3,
          "t1_s": 17.9,
          "ease": "linear",
@@ -3216,27 +3224,28 @@
          "on": "road"
         },
         {
-         "src": "vietna/l2_fr_column54.png",
-         "ar": 2.27,
-         "sfx": "steps",
+         "src": "vietna/l2_sampan.png",
+         "ar": 2.13,
+         "sfx": "water",
          "from": [
-          20,
-          53
+          95,
+          60
          ],
          "to": [
-          55,
-          53
+          40,
+          60
          ],
-         "h": 17.4,
+         "h": 12.0,
          "t0_s": 14.3,
          "t1_s": 17.9,
          "ease": "linear",
-         "slices": 12,
-         "gait": 9,
-         "flip": false,
-         "note": "coluna do Sul na outra margem",
+         "bob": 1,
+         "note": "sampan cruza o rio ao fundo",
          "faces": "right",
-         "on": "road"
+         "on": "water",
+         "flip": true,
+         "sink": 0.15,
+         "wake": true
         }
        ]
       }
@@ -3264,24 +3273,24 @@
          "ar": 0.77,
          "sfx": "paper",
          "from": [
-          62,
-          -20
+          42,
+          66
          ],
          "to": [
-          62,
-          47
+          57,
+          64
          ],
-         "h": 15,
+         "h": 12,
          "t0_s": 18.55,
          "t1_s": 19.35,
-         "ease": "in",
+         "ease": "out",
          "rot": [
-          10,
+          0,
           0
          ],
-         "note": "cédula cai na urna",
+         "note": "cédula desliza na mesa até a urna",
          "faces": "none",
-         "on": "air",
+         "on": "floor",
          "hide_s": 19.400000000000002
         },
         {
@@ -3289,24 +3298,24 @@
          "ar": 0.77,
          "sfx": "paper",
          "from": [
-          62,
-          -20
+          42,
+          66
          ],
          "to": [
-          62,
-          47
+          57,
+          64
          ],
-         "h": 15,
+         "h": 12,
          "t0_s": 19.4,
          "t1_s": 20.2,
-         "ease": "in",
+         "ease": "out",
          "rot": [
-          10,
+          0,
           0
          ],
-         "note": "cédula cai na urna",
+         "note": "cédula desliza na mesa até a urna",
          "faces": "none",
-         "on": "air",
+         "on": "floor",
          "hide_s": 20.25
         },
         {
@@ -3314,24 +3323,24 @@
          "ar": 0.77,
          "sfx": "paper",
          "from": [
-          62,
-          -20
+          42,
+          66
          ],
          "to": [
-          62,
-          47
+          57,
+          64
          ],
-         "h": 15,
+         "h": 12,
          "t0_s": 20.3,
          "t1_s": 21.1,
-         "ease": "in",
+         "ease": "out",
          "rot": [
-          10,
+          0,
           0
          ],
-         "note": "cédula cai na urna",
+         "note": "cédula desliza na mesa até a urna",
          "faces": "none",
-         "on": "air",
+         "on": "floor",
          "hide_s": 21.150000000000002
         }
        ]
@@ -3370,11 +3379,11 @@
          "sfx": "steps",
          "from": [
           80,
-          82
+          82.0
          ],
          "to": [
           20,
-          82
+          82.0
          ],
          "h": 29.0,
          "t0_s": 21.6,
@@ -3391,13 +3400,6 @@
       },
       "typo": {
        "lines": [
-        {
-         "text": "o cessar-fogo começa",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "cessarfogo#1",
-         "at_s": 21.7
-        },
         {
          "text": "em datas diferentes",
          "size": "xl",
@@ -3432,11 +3434,11 @@
          "sfx": "steps",
          "from": [
           20,
-          82
+          82.0
          ],
          "to": [
           70,
-          82
+          82.0
          ],
          "h": 34.8,
          "t0_s": 24.6,
@@ -3528,11 +3530,11 @@
          "sfx": "steps",
          "from": [
           10,
-          82
+          82.0
          ],
          "to": [
           90,
-          82
+          82.0
          ],
          "h": 22.5,
          "t0_s": 28.3,
@@ -3566,7 +3568,7 @@
     "kind": "shots",
     "shots": [
      {
-      "kind": "typo",
+      "kind": "plate",
       "start_s": 0,
       "end_s": 3.6,
       "cue": "a linha era provisória, e as eleições eram o plano para apagá-la",
@@ -3606,26 +3608,21 @@
          "sink": 0.15,
          "wake": true
         }
+       ],
+       "pan": [
+        -30,
+        4
        ]
       },
-      "typo": {
-       "lines": [
-        {
-         "text": "a linha era provisória",
-         "size": "l",
-         "color": "brass",
-         "at_cue": "linha#1",
-         "at_s": 0.2
-        },
-        {
-         "text": "e as eleições eram o plano",
-         "size": "m",
-         "color": "paper",
-         "at_cue": "eleicoes#1",
-         "at_s": 1.64
-        }
-       ]
-      }
+      "names": [
+       {
+        "text": "LINHA PROVISÓRIA",
+        "sub": "as eleições deviam apagá-la",
+        "out_s": 3.5,
+        "at_cue": "linha#1",
+        "at_s": 0.2
+       }
+      ]
      },
      {
       "kind": "plate",
@@ -3651,11 +3648,11 @@
          "sfx": "steps",
          "from": [
           14,
-          82
+          82.0
          ],
          "to": [
           66,
-          82
+          82.0
          ],
          "h": 43.5,
          "t0_s": 3.8,
@@ -3704,11 +3701,11 @@
          "sfx": "steps",
          "from": [
           -10,
-          82
+          82.0
          ],
          "to": [
           110,
-          82
+          82.0
          ],
          "h": 22.5,
          "t0_s": 9.0,
@@ -3750,11 +3747,11 @@
          "sfx": "jeep",
          "from": [
           -15,
-          82
+          82.0
          ],
          "to": [
           55,
-          82
+          82.0
          ],
          "h": 21.0,
          "t0_s": 11.6,
@@ -3801,11 +3798,11 @@
          "sfx": "steps",
          "from": [
           14,
-          82
+          82.0
          ],
          "to": [
           60,
-          82
+          82.0
          ],
          "h": 34.8,
          "t0_s": 14.4,
@@ -3854,11 +3851,11 @@
          "sfx": "steps",
          "from": [
           8,
-          82
+          82.0
          ],
          "to": [
           92,
-          82
+          82.0
          ],
          "h": 17.4,
          "t0_s": 20.9,
@@ -3876,7 +3873,7 @@
          "ar": 1.71,
          "sfx": "flag",
          "from": [
-          26,
+          17,
           42
          ],
          "h": 10,
@@ -3893,9 +3890,10 @@
          "ar": 1.74,
          "sfx": "flag",
          "from": [
-          74,
+          77,
           52
          ],
+         "flip": true,
          "h": 14,
          "flag": {
           "amp": 14,
@@ -3920,7 +3918,7 @@
        "atmosfera+rótulo"
       ],
       "scene": {
-       "bg": "vietna/l2_benhai_bridge.jpg",
+       "bg": "vietna/l2_benhai_banks.jpg",
        "z0": 1.03,
        "z1": 1.1,
        "ox": "50%",
@@ -3932,11 +3930,11 @@
          "sfx": "steps",
          "from": [
           20,
-          82
+          82.0
          ],
          "to": [
           70,
-          82
+          82.0
          ],
          "h": 31.9,
          "t0_s": 24.1,
@@ -3945,7 +3943,7 @@
          "slices": 12,
          "gait": 9,
          "flip": false,
-         "note": "coluna marcha até a ponte",
+         "note": "coluna marcha pela margem da linha",
          "faces": "right",
          "on": "road"
         }
@@ -3985,11 +3983,11 @@
          "sfx": "jeep",
          "from": [
           -20,
-          82
+          82.0
          ],
          "to": [
           120,
-          82
+          82.0
          ],
          "h": 25.5,
          "t0_s": 27.2,
@@ -4049,7 +4047,7 @@
     "kind": "shots",
     "shots": [
      {
-      "kind": "typo",
+      "kind": "plate",
       "start_s": 0,
       "end_s": 2.6,
       "cue": "os americanos entram aos poucos",
@@ -4072,11 +4070,11 @@
          "sfx": "steps",
          "from": [
           20,
-          82
+          82.0
          ],
          "to": [
           70,
-          82
+          82.0
          ],
          "h": 43.5,
          "t0_s": 0.2,
@@ -4091,24 +4089,15 @@
         }
        ]
       },
-      "typo": {
-       "lines": [
-        {
-         "text": "os americanos entram",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "americanos#1",
-         "at_s": 0.22
-        },
-        {
-         "text": "aos poucos",
-         "size": "xl",
-         "color": "paper",
-         "at_cue": "aos#1",
-         "at_s": 1.28
-        }
-       ]
-      }
+      "names": [
+       {
+        "text": "OS AMERICANOS ENTRAM",
+        "sub": "aos poucos",
+        "out_s": 2.5,
+        "at_cue": "americanos#1",
+        "at_s": 0.22
+       }
+      ]
      },
      {
       "kind": "date",
@@ -4122,7 +4111,7 @@
        "atmosfera+rótulo"
       ],
       "scene": {
-       "bg": "vietna/l2_training_61.jpg",
+       "bg": "vietna/l2_saigon_55.jpg",
        "z0": 1.03,
        "z1": 1.1,
        "ox": "50%",
@@ -4134,11 +4123,11 @@
          "sfx": "steps",
          "from": [
           90,
-          82
+          82.0
          ],
          "to": [
           20,
-          82
+          82.0
          ],
          "h": 40.6,
          "t0_s": 2.7,
@@ -4147,7 +4136,7 @@
          "slices": 12,
          "gait": 9,
          "flip": true,
-         "note": "assessor caminha diante da tropa",
+         "note": "assessor caminha em Saigon",
          "faces": "right",
          "on": "road"
         }
@@ -4170,7 +4159,7 @@
        "atmosfera+rótulo"
       ],
       "scene": {
-       "bg": "vietna/l2_training_61.jpg",
+       "bg": "vietna/l2_airfield_61.jpg",
        "z0": 1.03,
        "z1": 1.1,
        "ox": "50%",
@@ -4182,11 +4171,11 @@
          "sfx": "steps",
          "from": [
           18,
-          82
+          82.0
          ],
          "to": [
           78,
-          82
+          82.0
          ],
          "h": 34.8,
          "t0_s": 5.5,
@@ -4205,11 +4194,11 @@
          "sfx": "steps",
          "from": [
           90,
-          82
+          82.0
          ],
          "to": [
           52,
-          82
+          82.0
          ],
          "h": 40.6,
          "t0_s": 5.4,
@@ -4222,6 +4211,10 @@
          "faces": "right",
          "on": "road"
         }
+       ],
+       "pan": [
+        -30,
+        4
        ]
       },
       "stat": {
@@ -4264,11 +4257,11 @@
          "sfx": "jeep",
          "from": [
           -15,
-          82
+          82.0
          ],
          "to": [
           50,
-          82
+          82.0
          ],
          "h": 21.0,
          "t0_s": 12.2,
@@ -4361,11 +4354,11 @@
          "sfx": "jeep",
          "from": [
           -20,
-          82
+          82.0
          ],
          "to": [
           70,
-          82
+          82.0
          ],
          "h": 22.5,
          "t0_s": 20.0,
@@ -4407,11 +4400,11 @@
          "sfx": "steps",
          "from": [
           20,
-          82
+          82.0
          ],
          "to": [
           74,
-          82
+          82.0
          ],
          "h": 34.8,
          "t0_s": 24.5,
@@ -4475,7 +4468,7 @@
     "kind": "shots",
     "shots": [
      {
-      "kind": "typo",
+      "kind": "plate",
       "start_s": 0,
       "end_s": 2.7,
       "cue": "o governo do Sul, porém, está em crise",
@@ -4498,11 +4491,11 @@
          "sfx": "jeep",
          "from": [
           110,
-          82
+          82.0
          ],
          "to": [
           -15,
-          82
+          82.0
          ],
          "h": 21.0,
          "t0_s": 0.1,
@@ -4516,24 +4509,15 @@
         }
        ]
       },
-      "typo": {
-       "lines": [
-        {
-         "text": "o governo do Sul",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "governo#1",
-         "at_s": 0.11
-        },
-        {
-         "text": "está em crise",
-         "size": "xl",
-         "color": "seal",
-         "at_cue": "crise#1",
-         "at_s": 1.81
-        }
-       ]
-      }
+      "names": [
+       {
+        "text": "GOVERNO DO SUL",
+        "sub": "em crise",
+        "out_s": 2.6,
+        "at_cue": "governo#1",
+        "at_s": 0.11
+       }
+      ]
      },
      {
       "kind": "date",
@@ -4547,7 +4531,7 @@
        "atmosfera+rótulo"
       ],
       "scene": {
-       "bg": "vietna/l2_hue_63.jpg",
+       "bg": "vietna/l2_pagoda_pole.jpg",
        "z0": 1.03,
        "z1": 1.1,
        "ox": "50%",
@@ -4559,20 +4543,20 @@
          "sfx": "steps",
          "from": [
           20,
-          82
+          82.0
          ],
          "to": [
           70,
-          82
+          82.0
          ],
-         "h": 31.9,
+         "h": 23.2,
          "t0_s": 2.8,
          "t1_s": 4.8,
          "ease": "linear",
          "slices": 12,
          "gait": 9,
          "flip": false,
-         "note": "monges caminham em Hue",
+         "note": "monges caminham no pátio do pagode",
          "faces": "right",
          "on": "road"
         }
@@ -4607,7 +4591,7 @@
          "sfx": "none",
          "from": [
           72,
-          82
+          82.0
          ],
          "h": 22,
          "appear_s": 5.1,
@@ -4622,11 +4606,11 @@
          "sfx": "crowd",
          "from": [
           40,
-          82
+          82.0
          ],
          "to": [
           5,
-          82
+          82.0
          ],
          "h": 29.0,
          "t0_s": 5.3,
@@ -4710,14 +4694,14 @@
         {
          "src": "vietna/l2_crowd_run.png",
          "ar": 3.02,
-         "sfx": "crowd",
+         "sfx": "none",
          "from": [
           10,
-          82
+          82.0
          ],
          "to": [
           80,
-          82
+          82.0
          ],
          "h": 29.0,
          "t0_s": 8.8,
@@ -4785,6 +4769,10 @@
          "faces": "right",
          "on": "road"
         }
+       ],
+       "pan": [
+        -30,
+        4
        ]
       },
       "date": {
@@ -4816,11 +4804,11 @@
          "sfx": "steps",
          "from": [
           15,
-          82
+          82.0
          ],
          "to": [
           60,
-          82
+          82.0
          ],
          "h": 21.75,
          "t0_s": 13.5,
@@ -4869,7 +4857,7 @@
          "sfx": "none",
          "from": [
           50,
-          62
+          54
          ],
          "h": 26,
          "appear_s": 17.5,
