@@ -1,0 +1,11 @@
+# painel-visual: painel de produção visual (cenas em vídeo, comparação e marcação)
+Pedido do usuário (2026-11-22): o painel atual (`orchestra/dashboard/`, porta 8765) é quase só texto e "não diz nada". Ele gostou da galeria do lab (`lab/bakeoff-saigon/galeria.py`): um vídeo por vez ou vários lado a lado, com play sincronizado. E gostou muito de marcar erros direto na tela com a ferramenta de anotação do **painel de navegador do app** (ela funciona em qualquer página aberta ali). Objetivo: ele aponta erros de cena com precisão.
+Leia `orchestra/dashboard/server.py` (155 linhas, já serve vídeo com `send_video`), `orchestra/dashboard/index.html` e `lab/bakeoff-saigon/galeria.py`. Não mexa em nada da produção além de `orchestra/dashboard/`.
+- **Topo (1 linha cada, linguagem simples):** o que está rodando agora, o que espera o usuário e o próximo passo (de `orchestra/production.json`).
+- **Grade de cenas S01–S54:** miniatura (quadro do meio), id, duração e status por cor (aprovada / em revisão / reprovada / falta render), a partir de `production.json` (`approved_scenes`) e dos arquivos em `media/pt-br-historia/vietna/render/Sxx.mp4`. Filtro por lote.
+- **Ver:** clique abre a cena grande. "Lado a lado": marcar várias e tocar juntas, só a 1ª com som (mesma lógica da galeria). Se houver outra versão da cena (ex.: `render_lowpoly/Sxx.mp4`), botão "comparar versões".
+- **Feito para marcar:** acima de cada vídeo, um rótulo grande e sempre visível com `Sxx · versão · tempo mm:ss.d` que acompanha o vídeo (atualiza no `timeupdate` e ao pausar). Assim, toda marcação ou captura já leva cena e tempo. Teclas: espaço = play/pausa; ←/→ = 1 quadro (1/30 s); `,`/`.` = 0,5 s.
+- **Notas da revisão:** ao lado da cena, a média e os defeitos altos de `orchestra/results/review-Sxx-c*-*.json` (o mais novo), em texto curto.
+- Sem biblioteca externa; tema escuro; funciona a 1280 px e no celular (uma coluna).
+- **Pronto quando:** `preview_start` com o nome `painel` abre a página; a grade mostra as cenas com miniatura; 3 cenas tocam lado a lado sincronizadas; o rótulo de tempo bate com `currentTime` em 3 pausas; console sem erro. Grave a captura em `orchestra/dashboard/captura.png`.
+Resultado: `orchestra/results/painel-visual.json`.
