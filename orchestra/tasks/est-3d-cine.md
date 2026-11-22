@@ -1,0 +1,9 @@
+# est-3d-cine: estilo novo "3D de alta qualidade (cinematográfico)" — só 4 quadros parados (laboratório, sem vídeo)
+Objetivo: o usuário quer **ver o estilo antes de qualquer render de vídeo**. Nada de animação, som ou MP4.
+- **Estilo:** aparência de animação 3D de estúdio/cinema: materiais PBR (metal, concreto, folhagem), luz de fim de tarde com sombras suaves, névoa atmosférica, reflexos, profundidade de campo e grão de filme; proporções realistas, sem aparência de brinquedo.
+- **Formato:** crie `lab/bakeoff-saigon/kits/kit-style-video-prompts/3d-cine.md` no mesmo formato dos outros estilos da pasta (use `studio-product.md` como molde: texto do pedido + código de referência + kits STAGE e SOUND sem alteração), trocando materiais, luz, câmera, paleta e o código de referência para o estilo novo. Assim ele fica pronto para virar vídeo depois.
+- **Quadros:** a partir desse estilo, monte em `lab/bakeoff-saigon/est-3d-cine/` um bloco 3D (three.js, STAGE kit) das batidas de `lab/bakeoff-saigon/BRIEF.md` e renderize **4 quadros 1920×1080** com `S.seek(t)` e ~16 amostras: (1) CH-53 decolando do telhado com pessoas na escada, (2) T-54 na avenida diante do Palácio da Independência (modernista, anos 1960), (3) o tanque arrombando o portão, (4) soldados baixando os M16. Sem texto na imagem, exceto uma placa "30 DE ABRIL" no quadro 2.
+- **Física:** tanque só na avenida, helicóptero com o nariz para onde vai, pés no chão, escala coerente.
+- **GPU:** Chrome headless do Remotion com as flags Vulkan do `orchestra/tasks/bk-ps-lowpoly.md`. Nunca SwiftShader.
+- **Saída:** `lab/bakeoff-saigon/out/estilos/3d-cine-1.jpg` … `3d-cine-4.jpg` (JPEG qualidade 90) e uma prancha `3d-cine-prancha.jpg` 2×2 a 1600 px. Confira os 4 quadros reduzidos e corrija no máximo 2 rodadas.
+Resultado: `orchestra/results/est-3d-cine.json` (summary: o que define o estilo em 3 linhas, tempo de trabalho e o que ficou fraco).

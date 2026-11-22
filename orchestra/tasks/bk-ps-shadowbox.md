@@ -1,0 +1,9 @@
+# bk-ps-shadowbox: a queda de Saigon no estilo "shadow-box" (prompt styles, three.js) — laboratório, só 16:9
+Leia `lab/bakeoff-saigon/BRIEF.md` (batidas; palavras com tempo em `lab/bakeoff-saigon/palavras.json`). O estilo e o código de referência estão em `lab/bakeoff-saigon/kits/kit-style-video-prompts/shadow-box.md`: siga o método e o kit de render que vêm nele, **sem pedir aprovação de storyboard** (o usuário já aprovou o teste).
+- **Cena:** Saigon, 29–30/04/1975. CH-53 dos Fuzileiros dos EUA decolando do telhado em "evacuam" (3,49 s); tanque T-54 avança e derruba o portão do Palácio da Independência (prédio modernista dos anos 1960, não a Casa Branca) em "palácio" (7,97 s); rótulo "Duong Van Minh · 2 dias no cargo" em 10,6–12,4 s; fuzis M16 no chão em "deporem" (13,81 s).
+- **Arquivos:** só em `lab/bakeoff-saigon/ps-shadowbox/`. 1920×1080, 30 fps, 15 s.
+- **Render sempre na GPU:** Chrome headless com `--use-angle=vulkan --use-vulkan --enable-features=Vulkan --ignore-gpu-blocklist --disable-vulkan-surface`, binário `studio/remotion/node_modules/.remotion/chrome-headless-shell/linux64/chrome-headless-shell-linux64/chrome-headless-shell` (o Chrome do sistema não sobe WebGL), ou `npx hyperframes@0.8.181 render ... --gpu --browser-gpu`; ffmpeg só com `h264_nvenc`. Nunca SwiftShader nem libx264.
+- Confira 3 a 6 quadros nas palavras de ação e corrija, no máximo 2 rodadas.
+- **Saída:** junte `lab/bakeoff-saigon/narracao.wav` (e os sons do kit, se houver) e grave `lab/bakeoff-saigon/out/ps_shadowbox_16x9.mp4`.
+Resultado: `orchestra/results/bk-ps-shadowbox.json` (summary com tempo de trabalho, tempo de render e o que ficou fraco).
+- **Física (o usuário reprova se errar):** tanque só na avenida, nunca sobre prédios; CH-53 com o nariz para onde se move; pessoas com os pés no chão, nunca descendo do alto; escala coerente entre tanque, portão e palácio.

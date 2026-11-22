@@ -1,0 +1,9 @@
+# est-cartoon: estilo novo "Cartoon" — só 4 quadros parados (laboratório, sem vídeo)
+Objetivo: o usuário quer **ver o estilo antes de qualquer render de vídeo**. Nada de animação, som ou MP4.
+- **Estilo:** desenho animado 3D estilizado tipo série de TV: formas arredondadas e exageradas, contorno escuro (outline), cel shading em 2–3 tons, cores saturadas mas não neon, céu em degradê, expressões simples, leitura clara de silhueta.
+- **Formato:** crie `lab/bakeoff-saigon/kits/kit-style-video-prompts/cartoon.md` no mesmo formato dos outros estilos da pasta (use `ink-toon.md` como molde: texto do pedido + código de referência + kits STAGE e SOUND sem alteração), trocando materiais, luz, câmera, paleta e o código de referência para o estilo novo. Assim ele fica pronto para virar vídeo depois.
+- **Quadros:** a partir desse estilo, monte em `lab/bakeoff-saigon/est-cartoon/` um bloco 3D (three.js, STAGE kit) das batidas de `lab/bakeoff-saigon/BRIEF.md` e renderize **4 quadros 1920×1080** com `S.seek(t)` e ~16 amostras: (1) CH-53 decolando do telhado com pessoas na escada, (2) T-54 na avenida diante do Palácio da Independência (modernista, anos 1960), (3) o tanque arrombando o portão, (4) soldados baixando os M16. Sem texto na imagem, exceto uma placa "30 DE ABRIL" no quadro 2.
+- **Física:** tanque só na avenida, helicóptero com o nariz para onde vai, pés no chão, escala coerente.
+- **GPU:** Chrome headless do Remotion com as flags Vulkan do `orchestra/tasks/bk-ps-lowpoly.md`. Nunca SwiftShader.
+- **Saída:** `lab/bakeoff-saigon/out/estilos/cartoon-1.jpg` … `cartoon-4.jpg` (JPEG qualidade 90) e uma prancha `cartoon-prancha.jpg` 2×2 a 1600 px. Confira os 4 quadros reduzidos e corrija no máximo 2 rodadas.
+Resultado: `orchestra/results/est-cartoon.json` (summary: o que define o estilo em 3 linhas, tempo de trabalho e o que ficou fraco).

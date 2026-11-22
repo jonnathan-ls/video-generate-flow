@@ -1,0 +1,6 @@
+claude bk-ps-spotlight sonnet
+claude bk-ps-inflated sonnet
+claude bk-ps-painted sonnet
+claude bk-ps-voxel sonnet
+claude bk-ps-pencil sonnet
+claude bk-ps-shadowbox sonnet
