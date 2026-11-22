@@ -1,0 +1,123 @@
+{
+ "imagens": [
+  {
+   "arquivo": "l2_advisor_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_advisor_pC.jpg",
+   "ok": false,
+   "problemas": [
+    "A passada das pernas não alternou em relação à pose B; o assessor permanece exatamente com a mesma passada (pé direito à frente e esquerdo atrás), impedindo a continuidade do ciclo de caminhada."
+   ],
+   "correcao_prompt": "walking cycle pose C, opposite stride, left leg stepping forward and right leg trailing back"
+  },
+  {
+   "arquivo": "l2_crowd_run_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_crowd_run_pC.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_farmer_buffalo_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_farmer_buffalo_pC.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_fr_column54_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_fr_column54_pC.jpg",
+   "ok": false,
+   "problemas": [
+    "A passada das pernas não alternou em relação à pose B; os soldados continuam na mesma passada (perna direita à frente e esquerda atrás), sem a inversão necessária para o ciclo de marcha."
+   ],
+   "correcao_prompt": "marching column pose C, alternating stride, left leg stepping forward and right leg trailing back for all soldiers"
+  },
+  {
+   "arquivo": "l2_gun_crew_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_gun_crew_pC.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_icc_trio_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_icc_trio_pC.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_monks_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_monks_pC.jpg",
+   "ok": false,
+   "problemas": [
+    "As pernas de todos os monges repetem a mesma passada da pose B, sem a progressão ou alternância de passos exigida para o ciclo de caminhada."
+   ],
+   "correcao_prompt": "procession of Buddhist monks walking pose C, alternating stride, opposite foot forward for each monk"
+  },
+  {
+   "arquivo": "l2_us_col63_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_us_col63_pC.jpg",
+   "ok": false,
+   "problemas": [
+    "A passada de todos os soldados é idêntica à da pose B (perna direita avançada e perna esquerda recuada), sem alternância de marcha para a pose C."
+   ],
+   "correcao_prompt": "US soldiers column 1963 pose C, alternate walking stride, left leg forward and right leg back"
+  },
+  {
+   "arquivo": "l2_vm_column_pB.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_vm_column_pC.jpg",
+   "ok": false,
+   "problemas": [
+    "Membro deformado no segundo soldado a partir da esquerda: a perna traseira (esquerda) termina em uma ponta recurvada/coto atrofiado, sem o pé e a sandália formados."
+   ],
+   "correcao_prompt": "Viet Minh soldiers marching column pose C, anatomically correct feet wearing Ho Chi Minh tire sandals, intact limbs"
+  }
+ ],
+ "reprovadas": 5
+}

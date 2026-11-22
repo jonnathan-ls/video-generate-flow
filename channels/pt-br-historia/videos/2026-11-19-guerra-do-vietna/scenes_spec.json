@@ -2611,8 +2611,8 @@
      "oy": "70%",
      "actors": [
       {
-       "src": "vietna/l2_vm_column.png",
-       "ar": 2.27,
+       "src": "vietna/l2_vm_column_pa.png",
+       "ar": 2.256,
        "sfx": "steps",
        "from": [
         22,
@@ -2626,12 +2626,15 @@
        "t0_s": 0.2,
        "t1_s": 2.8,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna do Viet Minh cruza o vale",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_vm_column_pa.png",
+        "vietna/l2_vm_column_pb.png"
+       ],
+       "frame_fps": 4
       }
      ]
     },
@@ -2663,8 +2666,8 @@
      "oy": "60%",
      "actors": [
       {
-       "src": "vietna/l2_gun_crew.png",
-       "ar": 2.97,
+       "src": "vietna/l2_gun_crew_pa.png",
+       "ar": 3.011,
        "sfx": "steps",
        "from": [
         16,
@@ -2678,12 +2681,15 @@
        "t0_s": 3.0,
        "t1_s": 6.6,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "equipe do Viet Minh puxa canhão",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_gun_crew_pa.png",
+        "vietna/l2_gun_crew_pb.png"
+       ],
+       "frame_fps": 4
       }
      ],
      "pan": [
@@ -2715,8 +2721,8 @@
      "oy": "70%",
      "actors": [
       {
-       "src": "vietna/l2_vm_column.png",
-       "ar": 2.27,
+       "src": "vietna/l2_vm_column_pa.png",
+       "ar": 2.256,
        "sfx": "steps",
        "from": [
         22,
@@ -2730,12 +2736,15 @@
        "t0_s": 6.8,
        "t1_s": 11.1,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna do Viet Minh avança",
        "faces": "right",
-       "on": "ground"
+       "on": "ground",
+       "frames": [
+        "vietna/l2_vm_column_pa.png",
+        "vietna/l2_vm_column_pb.png"
+       ],
+       "frame_fps": 4
       }
      ]
     },
@@ -2872,12 +2881,12 @@
        "t0_s": 15.8,
        "t1_s": 18.6,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "lavrador conduz o búfalo",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },
@@ -2958,41 +2967,65 @@
     "start_s": 4.4,
     "end_s": 8.6,
     "cue": "no acordo de Genebra",
-    "motion": "a pasta do acordo desliza para a mesa",
+    "motion": "a pasta do acordo desliza na mesa",
     "layers": [
      "céu/fundo",
      "cena em planos",
      "atmosfera+rótulo"
     ],
     "scene": {
-     "bg": "vietna/l2_polling_hall.jpg",
-     "z0": 1.03,
-     "z1": 1.06,
+     "bg": "vietna/desk_top2.jpg",
+     "z0": 1.08,
+     "z1": 1.03,
      "ox": "50%",
-     "oy": "70%",
+     "oy": "60%",
      "actors": [
       {
        "src": "vietna/pasta.png",
        "ar": 1.5,
        "sfx": "paper",
        "from": [
-        40,
-        66
+        -30,
+        84
        ],
        "to": [
-        57,
-        66
+        48,
+        80
        ],
-       "h": 17,
-       "t0_s": 4.6,
-       "t1_s": 8.3,
-       "ease": "out",
+       "h": 50,
        "rot": [
-        -4,
-        0
+        -10,
+        -2
        ],
+       "t0_s": 4.5,
+       "t1_s": 5.3,
+       "ease": "out",
        "label": "GENEBRA",
        "note": "pasta do acordo desliza na mesa",
+       "faces": "none",
+       "on": "floor"
+      },
+      {
+       "src": "vietna/l2_cedula.png",
+       "ar": 0.77,
+       "sfx": "none",
+       "from": [
+        130,
+        70
+       ],
+       "to": [
+        74,
+        66
+       ],
+       "h": 26,
+       "rot": [
+        14,
+        6
+       ],
+       "t0_s": 6.3,
+       "t1_s": 8.4,
+       "ease": "out",
+       "note": "folha do texto do acordo entra na mesa",
        "faces": "none",
        "on": "floor"
       }
@@ -3080,8 +3113,8 @@
      "oy": "60%",
      "actors": [
       {
-       "src": "vietna/l2_vm_column.png",
-       "ar": 2.27,
+       "src": "vietna/l2_vm_column_pa.png",
+       "ar": 2.256,
        "sfx": "steps",
        "from": [
         20,
@@ -3095,12 +3128,15 @@
        "t0_s": 14.3,
        "t1_s": 17.9,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna do Norte na margem",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_vm_column_pa.png",
+        "vietna/l2_vm_column_pb.png"
+       ],
+       "frame_fps": 4
       },
       {
        "src": "vietna/l2_sampan.png",
@@ -3134,93 +3170,90 @@
     "start_s": 18.0,
     "end_s": 21.5,
     "cue": "as eleições gerais que vão reunificar o Vietnã",
-    "motion": "as cédulas caem na urna",
+    "motion": "as cédulas deslizam e se juntam na mesa",
     "layers": [
      "céu/fundo",
      "cena em planos",
      "atmosfera+rótulo"
     ],
     "scene": {
-     "bg": "vietna/l2_polling_hall.jpg",
+     "bg": "vietna/desk_top.jpg",
      "z0": 1.03,
-     "z1": 1.1,
+     "z1": 1.08,
      "ox": "50%",
-     "oy": "70%",
+     "oy": "60%",
      "actors": [
       {
        "src": "vietna/l2_cedula.png",
        "ar": 0.77,
        "sfx": "paper",
        "from": [
-        42,
-        66
+        -20,
+        80
        ],
        "to": [
-        57,
-        64
+        38,
+        74
        ],
-       "h": 12,
-       "t0_s": 18.55,
-       "t1_s": 19.35,
-       "ease": "out",
+       "h": 30,
        "rot": [
-        0,
-        0
+        -14,
+        -6
        ],
-       "note": "cédula desliza na mesa até a urna",
+       "t0_s": 18.55,
+       "t1_s": 19.25,
+       "ease": "out",
+       "note": "cédula desliza na mesa",
        "faces": "none",
-       "on": "floor",
-       "hide_s": 19.400000000000002
+       "on": "floor"
       },
       {
        "src": "vietna/l2_cedula.png",
        "ar": 0.77,
-       "sfx": "paper",
+       "sfx": "none",
        "from": [
-        42,
-        66
+        -20,
+        77
        ],
        "to": [
-        57,
-        64
+        47,
+        71
        ],
-       "h": 12,
-       "t0_s": 19.4,
+       "h": 30,
+       "rot": [
+        -6,
+        0
+       ],
+       "t0_s": 19.5,
        "t1_s": 20.2,
        "ease": "out",
-       "rot": [
-        0,
-        0
-       ],
-       "note": "cédula desliza na mesa até a urna",
+       "note": "cédula desliza na mesa",
        "faces": "none",
-       "on": "floor",
-       "hide_s": 20.25
+       "on": "floor"
       },
       {
        "src": "vietna/l2_cedula.png",
        "ar": 0.77,
-       "sfx": "paper",
+       "sfx": "none",
        "from": [
-        42,
-        66
+        -20,
+        74
        ],
        "to": [
-        57,
-        64
+        56,
+        68
        ],
-       "h": 12,
-       "t0_s": 20.3,
-       "t1_s": 21.1,
-       "ease": "out",
+       "h": 30,
        "rot": [
-        0,
-        0
+        2,
+        6
        ],
-       "note": "cédula desliza na mesa até a urna",
+       "t0_s": 20.4,
+       "t1_s": 21.099999999999998,
+       "ease": "out",
+       "note": "cédula desliza na mesa",
        "faces": "none",
-       "on": "floor",
-       "hide_s": 21.150000000000002
+       "on": "floor"
       }
      ]
     },
@@ -3267,12 +3300,12 @@
        "t0_s": 21.6,
        "t1_s": 24.4,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": true,
        "note": "lavrador cruza o arrozal",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },
@@ -3306,8 +3339,8 @@
      "oy": "60%",
      "actors": [
       {
-       "src": "vietna/l2_vm_column.png",
-       "ar": 2.27,
+       "src": "vietna/l2_vm_column_pa.png",
+       "ar": 2.256,
        "sfx": "steps",
        "from": [
         20,
@@ -3321,12 +3354,15 @@
        "t0_s": 24.6,
        "t1_s": 26.4,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna do Norte marcha",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_vm_column_pa.png",
+        "vietna/l2_vm_column_pb.png"
+       ],
+       "frame_fps": 4
       }
      ]
     },
@@ -3524,12 +3560,12 @@
        "t0_s": 3.8,
        "t1_s": 8.8,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "oficiais da comissão internacional",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },
@@ -3657,8 +3693,8 @@
      "oy": "60%",
      "actors": [
       {
-       "src": "vietna/l2_vm_column.png",
-       "ar": 2.27,
+       "src": "vietna/l2_vm_column_pa.png",
+       "ar": 2.256,
        "sfx": "steps",
        "from": [
         14,
@@ -3672,12 +3708,15 @@
        "t0_s": 14.4,
        "t1_s": 20.7,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna do Norte chega à ponte",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_vm_column_pa.png",
+        "vietna/l2_vm_column_pb.png"
+       ],
+       "frame_fps": 4
       }
      ]
     },
@@ -3709,8 +3748,8 @@
      "oy": "60%",
      "actors": [
       {
-       "src": "vietna/l2_vm_column.png",
-       "ar": 2.27,
+       "src": "vietna/l2_vm_column_pa.png",
+       "ar": 2.256,
        "sfx": "steps",
        "from": [
         8,
@@ -3724,12 +3763,15 @@
        "t0_s": 20.9,
        "t1_s": 23.9,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna cruza a margem do rio",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_vm_column_pa.png",
+        "vietna/l2_vm_column_pb.png"
+       ],
+       "frame_fps": 4
       },
       {
        "src": "vietna/l2_flag_vn.png",
@@ -3788,8 +3830,8 @@
      "oy": "60%",
      "actors": [
       {
-       "src": "vietna/l2_fr_column54.png",
-       "ar": 2.27,
+       "src": "vietna/l2_olive_column_pa.png",
+       "ar": 2.393,
        "sfx": "steps",
        "from": [
         20,
@@ -3803,12 +3845,15 @@
        "t0_s": 24.1,
        "t1_s": 27.0,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna marcha pela margem da linha",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_olive_column_pa.png",
+        "vietna/l2_olive_column_pb.png"
+       ],
+       "frame_fps": 4
       }
      ]
     },
@@ -3931,12 +3976,12 @@
        "t0_s": 0.2,
        "t1_s": 2.5,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "assessor americano caminha",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },
@@ -3983,12 +4028,12 @@
        "t0_s": 2.7,
        "t1_s": 5.2,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": true,
        "note": "assessor caminha em Saigon",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },
@@ -4016,8 +4061,8 @@
      "oy": "60%",
      "actors": [
       {
-       "src": "vietna/l2_fr_column54.png",
-       "ar": 2.27,
+       "src": "vietna/l2_olive_column_pa.png",
+       "ar": 2.393,
        "sfx": "steps",
        "from": [
         18,
@@ -4031,12 +4076,15 @@
        "t0_s": 5.5,
        "t1_s": 11.9,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna sul-vietnamita marcha (farda oliva, capacete M1)",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_olive_column_pa.png",
+        "vietna/l2_olive_column_pb.png"
+       ],
+       "frame_fps": 4
       },
       {
        "src": "vietna/l2_advisor.png",
@@ -4054,12 +4102,12 @@
        "t0_s": 5.4,
        "t1_s": 8.0,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": true,
        "note": "assessor americano",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ],
      "pan": [
@@ -4243,8 +4291,8 @@
      "oy": "60%",
      "actors": [
       {
-       "src": "vietna/l2_us_col63.png",
-       "ar": 2.0,
+       "src": "vietna/l2_us_col63_pa.png",
+       "ar": 2.167,
        "sfx": "steps",
        "from": [
         20,
@@ -4258,12 +4306,15 @@
        "t0_s": 24.5,
        "t1_s": 28.0,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "coluna americana marcha",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "frames": [
+        "vietna/l2_us_col63_pa.png",
+        "vietna/l2_us_col63_pb.png"
+       ],
+       "frame_fps": 4
       },
       {
        "src": "vietna/l2_h21.png",
@@ -4389,12 +4440,12 @@
        "t0_s": 2.8,
        "t1_s": 4.8,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "monges caminham no pátio do pagode",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },
@@ -4452,12 +4503,12 @@
        "t0_s": 5.3,
        "t1_s": 6.8,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": true,
        "note": "multidão corre",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },
@@ -4542,12 +4593,12 @@
        "t0_s": 8.8,
        "t1_s": 10.2,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "multidão recua",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },
@@ -4596,12 +4647,12 @@
        "t0_s": 10.4,
        "t1_s": 13.2,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "monges caminham em Saigon",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ],
      "pan": [
@@ -4648,12 +4699,12 @@
        "t0_s": 13.5,
        "t1_s": 17.1,
        "ease": "linear",
-       "slices": 12,
-       "gait": 9,
        "flip": false,
        "note": "monges marcham até o palácio",
        "faces": "right",
-       "on": "road"
+       "on": "road",
+       "slices": 12,
+       "gait": 9
       }
      ]
     },

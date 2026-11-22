@@ -11,4 +11,5 @@
 | Ollama qwen3-vl:4b local, 1 pergunta | 2–4 s (1ª carga 58 s) | 2026-11-22, teste 7/8 |
 | Download de 92 imagens do Flow | 1 min 41 s | 2026-11-20 |
 | Flow Agent, 2 imagens | 66 s | 2026-11-20 |
-| Flow Agent, lote de 50 imagens | **não medido** | medir no L3 |
+| Flow Agent, lote de 18 imagens (com referências) | 7 min 57 s | 2026-11-22, poses L2 |
+| Flow Agent, lote de 50 imagens | não medido (projeção ~15–20 min, chute) | medir no L3 |

@@ -9,10 +9,26 @@ AR = dict(cedula=0.77, gun_crew=2.97, vm_column=2.27, fr_column54=2.27, arvn_col
 def A(n, **k):
     src = "vietna/" + n[3:] + ".png" if n.startswith("../") else f"vietna/l2_{n}.png"
     a = {"src": src, "ar": AR.get(n, 1.5), "sfx": "none"}; a.update(k); return a
+# Par de poses de passada (Flow, pernas esquerdas/direitas à frente), modelo M2 aprovado: alterna A↔B.
+# fr_column54 e arvn usam a coluna oliva nova (farda oliva + M1). Sem o par, cai no slices+gait antigo.
+POSE = {"fr_column54": "olive_column"}
+PUB = pathlib.Path("studio/remotion/public/vietna")
 def walk(n, h, x0, x1, t0, t1, y, note, flip=False, **k):
     h = min(h * 1.45, 44)
-    d = {"from": [x0, y], "to": [x1, y], "h": h, "t0_s": t0, "t1_s": t1, "ease": "linear", "slices": 12, "gait": 9,
-         "flip": flip, "sfx": "steps", "note": note, "faces": "right", "on": "road"}; d.update(k); return A(n, **d)
+    d = {"from": [x0, y], "to": [x1, y], "h": h, "t0_s": t0, "t1_s": t1, "ease": "linear",
+         "flip": flip, "sfx": "steps", "note": note, "faces": "right", "on": "road"}
+    base = POSE.get(n, n)
+    # Só pares com mesma cor/roupa nas duas poses (2026-11-22): monges, civis, assessor, oficiais e lavrador mudavam de cor.
+    POSE_OK = {"vm_column", "olive_column", "us_col63", "gun_crew"}
+    fa, fb = PUB / f"l2_{base}_pa.png", PUB / f"l2_{base}_pb.png"
+    if base in POSE_OK and fa.exists() and fb.exists():
+        from PIL import Image
+        w, hh = Image.open(fa).size
+        d.update({"frames": [f"vietna/{fa.name}", f"vietna/{fb.name}"], "frame_fps": 4, "ar": round(w / hh, 3)})
+        n = "../" + fa.stem
+    else:
+        d.update({"slices": 12, "gait": 9})
+    d.update(k); return A(n, **d)
 def drive(n, h, x0, x1, t0, t1, y, note, sfx="jeep", ease="linear", on="road", **k):
     h = h * (1.0 if n == "h21" else 1.5)
     d = {"from": [x0, y], "to": [x1, y], "h": h, "t0_s": t0, "t1_s": t1, "ease": ease, "bob": 1,
@@ -65,11 +81,11 @@ S["S07"] = {"kind": "shots", "shots": [
 # ---------------- S08 (29,67 s)
 S["S08"] = {"kind": "shots", "shots": [
  shot("date", 0, 4.4, "20 de julho de 1954", "o carro oficial chega ao Palácio das Nações", sc("geneva_palais", [drive("sedan_54", 14, -15, 62, 0.3, 4.2, 82, "carro oficial chega ao palácio", ease="out")]), date={"top": "20 DE JULHO", "big": "1954"}),
- shot("plate", 4.4, 8.6, "no acordo de Genebra", "a pasta do acordo desliza para a mesa", sc("polling_hall", [A("../pasta", **{"from": [40, 67], "to": [57, 66], "h": 17, "t0_s": 4.6, "t1_s": 8.3, "ease": "out", "rot": [-4, 0], "label": "GENEBRA", "sfx": "paper", "note": "pasta do acordo desliza na mesa", "faces": "none", "on": "floor"})], z=(1.03, 1.06), o=("50%", "70%")), names=nm("ACORDO DE GENEBRA", "20 de julho de 1954", "acordo#1", 8.4)),
+ shot("plate", 4.4, 8.6, "no acordo de Genebra", "a pasta do acordo desliza na mesa", {"bg": "vietna/desk_top2.jpg", "z0": 1.08, "z1": 1.03, "ox": "50%", "oy": "60%", "actors": [A("../pasta", **{"from": [-30, 84], "to": [48, 80], "h": 50, "rot": [-10, -2], "t0_s": 4.5, "t1_s": 5.3, "ease": "out", "label": "GENEBRA", "sfx": "paper", "note": "pasta do acordo desliza na mesa", "faces": "none", "on": "floor"}), A("cedula", **{"from": [130, 70], "to": [74, 66], "h": 26, "rot": [14, 6], "t0_s": 6.3, "t1_s": 8.4, "ease": "out", "sfx": "none", "note": "folha do texto do acordo entra na mesa", "faces": "none", "on": "floor"})]}, names=nm("ACORDO DE GENEBRA", "20 de julho de 1954", "acordo#1", 8.4)),
  shot("stat", 8.6, 14.2, "zona desmilitarizada de até cinco quilômetros de cada lado da linha", "o sampan cruza o rio na linha militar", sc("benhai_bridge", [drive("sampan", 12, -12, 112, 8.7, 14.0, 78, "sampan cruza o rio Ben Hai", sfx="water", on="water", sink=0.15, wake=True)]),
   stat={"top": "ZONA DESMILITARIZADA", "big": "5 km", "label": "de cada lado da linha", "big_at_word": "cinco", "big_offset": -0.1, "label_at_word": "cada#1", "position": "top-left", "big_size": 110}),
  shot("plate", 14.2, 18.0, "cada lado administra a sua parte", "duas colunas caminham, uma em cada margem", sc("benhai_banks", [walk("vm_column", 20, 20, 62, 14.3, 17.9, 82, "coluna do Norte na margem"), drive("sampan", 8, 95, 40, 14.3, 17.9, 60, "sampan cruza o rio ao fundo", sfx="water", on="water", flip=True, sink=0.15, wake=True)]) ),
- shot("plate", 18.0, 21.5, "as eleições gerais que vão reunificar o Vietnã", "as cédulas caem na urna", sc("polling_hall", [A("cedula", **{"from": [42, 66], "to": [57, 64], "h": 12, "t0_s": s0, "t1_s": s0 + 0.8, "ease": "out", "rot": [0, 0], "sfx": "paper", "note": "cédula desliza na mesa até a urna", "faces": "none", "on": "floor", "hide_s": s0 + 0.85}) for s0 in (18.55, 19.4, 20.3)], o=("50%", "70%")), names=nm("ELEIÇÕES GERAIS", "para reunificar o Vietnã", "eleições", 21.3)),
+ shot("plate", 18.0, 21.5, "as eleições gerais que vão reunificar o Vietnã", "as cédulas deslizam e se juntam na mesa", {"bg": "vietna/desk_top.jpg", "z0": 1.03, "z1": 1.08, "ox": "50%", "oy": "60%", "actors": [A("cedula", **{"from": [-20, 80 - 3 * k], "to": [38 + 9 * k, 74 - 3 * k], "h": 30, "rot": [-14 + 8 * k, -6 + 6 * k], "t0_s": s0, "t1_s": s0 + 0.7, "ease": "out", "sfx": "paper" if k == 0 else "none", "note": "cédula desliza na mesa", "faces": "none", "on": "floor"}) for k, s0 in enumerate((18.55, 19.5, 20.4))]}, names=nm("ELEIÇÕES GERAIS", "para reunificar o Vietnã", "eleições", 21.3)),
  shot("typo", 21.5, 24.5, "o cessar-fogo começa em datas diferentes", "o lavrador cruza o arrozal", sc("paddy", [walk("farmer_buffalo", 20, 80, 20, 21.6, 24.4, 82, "lavrador cruza o arrozal", flip=True)]),
   typo={"lines": [{"text": "em datas diferentes", "at_word": "datas", "size": "xl", "color": "paper"}]}),
  shot("date", 24.5, 26.5, "27 de julho no Norte", "a coluna do Norte marcha", sc("paddy", [walk("vm_column", 24, 20, 70, 24.6, 26.4, 82, "coluna do Norte marcha")]), date={"top": "27 DE JULHO · NORTE", "big": "27/07"}),
