@@ -1,0 +1,42 @@
+[
+ {
+  "img": "lab/visao-teste/ok_coluna_estrada.jpg",
+  "ok": true,
+  "tipo": "pessoas"
+ },
+ {
+  "img": "lab/visao-teste/erro_coluna_rio.jpg",
+  "ok": false,
+  "tipo": "pessoas"
+ },
+ {
+  "img": "lab/visao-teste/ok_barco_lago.jpg",
+  "ok": true,
+  "tipo": "barco"
+ },
+ {
+  "img": "lab/visao-teste/erro_barco_cais.jpg",
+  "ok": false,
+  "tipo": "barco"
+ },
+ {
+  "img": "lab/visao-teste/ok_carro_rua.jpg",
+  "ok": true,
+  "tipo": "carro"
+ },
+ {
+  "img": "lab/visao-teste/erro_carro_telhado.jpg",
+  "ok": false,
+  "tipo": "carro"
+ },
+ {
+  "img": "lab/visao-teste/ok_monges_patio.jpg",
+  "ok": true,
+  "tipo": "pessoas"
+ },
+ {
+  "img": "lab/visao-teste/erro_monges_ceu.jpg",
+  "ok": false,
+  "tipo": "pessoas"
+ }
+]

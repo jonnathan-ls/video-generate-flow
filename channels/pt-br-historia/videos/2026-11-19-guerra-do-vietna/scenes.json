@@ -4166,8 +4166,8 @@
        "oy": "60%",
        "actors": [
         {
-         "src": "vietna/l2_arvn_col.png",
-         "ar": 2.07,
+         "src": "vietna/l2_fr_column54.png",
+         "ar": 2.27,
          "sfx": "steps",
          "from": [
           18,
@@ -4184,7 +4184,7 @@
          "slices": 12,
          "gait": 9,
          "flip": false,
-         "note": "coluna sul-vietnamita marcha",
+         "note": "coluna sul-vietnamita marcha (farda oliva, capacete M1)",
          "faces": "right",
          "on": "road"
         },

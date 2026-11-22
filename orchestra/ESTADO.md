@@ -12,10 +12,11 @@ Arquivo de passagem. Ao retomar, leia este arquivo, `CLAUDE.md`, `orchestra/prod
 - **Flow:** lote de seis imagens no projeto `lacre-vietna` consumiu 0 créditos. `periodo.sh` não devolveu JSON; as seis imagens não foram cortadas nem referenciadas no spec. Não usar até `periodo.sh` PASS.
 - **L2–L10:** L1 cumpriu o DoD; iniciar L2 (S07–S11) e seguir em ordem. O usuário autorizou todos os lotes sem nova autorização ao atingir limites; manter gates e custo de Flow em zero. A colagem segue como estilo escolhido; o piloto low-poly é separado.
 
-## L2 em andamento (2026-11-22)
-- Imagens do Flow do lote 2 já estão em `media/pt-br-historia/vietna/src_img/flow/lote2/` (46 ativos x2; prompts em `lab/flow-prompts-lote2.md`). Gate de época rodando: `lab/l2gate/bg.json`, `lab/l2gate/obj.json`. Reprovadas voltam ao Flow.
-- Specs de S07–S10 em `scenes_spec.json` são do padrão antigo (plate/typo/stat): reescrever em colagem com ação. S11 está `pending`.
-- Falta: recortes (`chroma_cut.py`), `lab/plan-vietna-lote2.md`, specs, quadros, render em bloco.
+## L2 em andamento (2026-11-22, fluxo rápido)
+- S07–S11 renderizadas com o compilador por faixas (`pipeline/assembly/vietna_spec_lote2.py`, `studio/remotion/public/vietna/faixas.json`); shot_check, scene_gates e render_check PASS.
+- Visão sem custo: `orchestra/tools/visao.py` (agy isolado em pasta temporária → Ollama local `qwen3-vl:4b` em `~/.local/ollama`, servidor `ollama serve` com OLLAMA_MODELS=~/.local/ollama/models). Teste com gabarito: agy 8/8 (~11 s/pergunta), local 7/8 (2–4 s). fisica.sh, periodo.sh e review.sh já usam essa cadeia.
+- Época (agy isolado): arvn_col com farda vermelha/azul nas duas variantes → S10 usa fr_column54 (oliva, M1). Vapor de Genebra adjudicado ok (Genebra 1954). H-21 (insígnia) e limusine (bandeirolas) registrados como defeitos menores.
+- Transcrição: S08 "1º"→"1" (ASR) e S11 "World Press Photo" lido "foto" pelo TTS: pendente de decisão.
 
 ## Próximo passo
 - L1 está fechado; planejar e produzir L2 (S07–S11) em fluxo A/B/C, com imagens do Flow apenas a 0 crédito.

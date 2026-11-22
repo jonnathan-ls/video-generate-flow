@@ -91,30 +91,14 @@ def parse(text):
     return {"ator": d.get("ator") or "", "ok": ok, "motivo": str(d.get("motivo") or "")}
 
 def ask(q, k):
-    global GEMINI_OK
-    p = prompt(q)
+    # 2026-11-22: provedores sem custo via orchestra/tools/visao.py (agy = plano Google do usuário; local = Ollama na GPU).
+    sys.path.insert(0, "orchestra/tools")
+    from visao import ask as vask
     raw = f"{t}/raw_q{q['n']}_{k}.txt"
-    # 2 tentativas: uma resposta perdida não pode decidir o gate
     for attempt in range(2):
-        text = ""
-        if (os.environ.get("GEMINI_API_KEY") or os.environ.get("GEMINI_CLI_LOGIN") == "1") and GEMINI_OK:
-            env = dict(os.environ, GEMINI_CLI_TRUST_WORKSPACE="true")
-            r = subprocess.run(["gemini", "-m", os.environ.get("GEMINI_MODEL", "gemini-3.5-flash"),
-                                "-p", p + f"\nImagem: @{q['tira']}"],
-                               capture_output=True, text=True, timeout=600, env=env)
-            text = r.stdout or ""
-            open(raw, "w").write(text)
+        text, prov = vask(prompt(q), [q["tira"]], os.environ.get("VISAO_PROV", "agy,local"))
+        open(raw, "w").write(f"[{prov}]\n{text}")
         a = parse(text) if text else None
-        if a is None and text and re.search(r"quota|exhausted|RESOURCE_EXHAUSTED|429", text, re.I):
-            GEMINI_OK = False  # só cota esgotada desliga o Gemini; erro isolado tenta de novo
-        if a is None:
-            r = subprocess.run(["opencode", "--standalone", "run", "--auto", "--archived",
-                                "-m", os.environ.get("FISICA_MODEL", "opencode/nemotron-3.5-super-vl-free"),
-                                "-f", q["tira"], "--", p + " Não use ferramentas; só olhe a imagem anexada."],
-                               capture_output=True, text=True, timeout=900)
-            text = (r.stdout or "") + "\n" + (r.stderr or "")
-            open(raw, "w").write(text)
-            a = parse(text)
         if a is not None:
             return a
     return None

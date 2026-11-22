@@ -1,0 +1,299 @@
+{
+ "imagens": [
+  {
+   "arquivo": "l2_advisor_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_advisor_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_arvn_col_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_arvn_col_2.jpg",
+   "ok": false,
+   "problemas": [
+    "Fuzis empunhados de forma invertida e anômala por todos os soldados: a coronha é segurada na frente do peito e o cano se projeta para trás por cima do ombro, apontando para a retaguarda."
+   ],
+   "correcao_prompt": "coluna de soldados do ARVN marchando em passo de marcha com fuzis M1 Garand ou carabinas M1 na bandoleira no ombro com cano apontado para cima"
+  },
+  {
+   "arquivo": "l2_camera_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_camera_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_crowd_run_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_crowd_run_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_cyclo_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_cyclo_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_farmer_buffalo_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_farmer_buffalo_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_bud_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_bud_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_sv_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_sv_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_vn_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_vn_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_fr_column54_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_fr_column54_2.jpg",
+   "ok": false,
+   "problemas": [
+    "Soldados carregando fuzis invertidos sobre os ombros, com as coronhas seguradas à frente e os canos voltados para trás."
+   ],
+   "correcao_prompt": "coluna militar francesa do CEFEO em 1954 marchando com fuzis MAS-36 e carabinas na bandoleira com canos orientados para cima, capacetes M51 e mochilas militares da Indochina"
+  },
+  {
+   "arquivo": "l2_gun_crew_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_gun_crew_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_h21_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Ausência total de insígnias e marcações militares do Exército dos EUA (sem estrela e barras, sem identificação 'U.S. ARMY'); esquema de pintura civil com faixa decorativa vermelha em vez do Verde Oliva militar; trem de pouso principal posicionado no meio da barriga (deixando a cauda suspensa sem apoio de trem de pouso traseiro obrigatório para o modelo); estabilizador vertical traseiro transformado em uma caixa com grelha em vez dos estabilizadores duplos em V característicos do H-21."
+   ],
+   "correcao_prompt": "helicóptero de transporte militar Piasecki H-21C Shawnee do US Army em pintura Verde Oliva sólida (Olive Drab), insígnia nacional Star and Bars e texto 'U.S. ARMY' na fuselagem, trem de pouso triciclo correto com trem principal traseiro sob a base do rotor de cauda e estabilizadores duplos angulados"
+  },
+  {
+   "arquivo": "l2_h21_2.jpg",
+   "ok": false,
+   "problemas": [
+    "Insígnia aeronáutica dos EUA incorreta (duas barras vermelhas no retângulo branco em vez de uma única faixa central vermelha); pintura comercial estilo civil em vez do padrão militar de combate; trem de pouso principal colocado na meia-nau em vez de sob a seção traseira do motor; aletas do pilone traseiro substituídas por caixa com grelha."
+   ],
+   "correcao_prompt": "helicóptero militar H-21 Shawnee da aviação do Exército dos EUA em verde oliva militar fosco autêntico, insígnia nacional oficial dos EUA correta (círculo azul com estrela branca e barra branca com única faixa vermelha central), trem de pouso traseiro localizado sob a popa e estabilizadores verticais em diedro"
+  },
+  {
+   "arquivo": "l2_icc_trio_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_icc_trio_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_jeep_us_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_jeep_us_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_limo_61_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Bandeirolas nos para-lamas dianteiros são blocos monocromáticos lisos (azul e vermelho escuro), não correspondendo à bandeira oficial da República do Vietnã (amarela com três listras horizontais vermelhas) nem ao estandarte presidencial de Ngo Dinh Diem."
+   ],
+   "correcao_prompt": "limusine presidencial executiva de 1961 exibindo nos para-lamas dianteiros a autêntica bandeira do Vietnã do Sul (fundo amarelo com três listras horizontais vermelhas estreitas)"
+  },
+  {
+   "arquivo": "l2_limo_61_2.jpg",
+   "ok": false,
+   "problemas": [
+    "As bandeirolas nos para-lamas dianteiros são galhardetes tricolores franceses (azul, branco e vermelho), um erro histórico grave e anacrônico para a limusine presidencial sul-vietnamita de 1961 do regime de Ngo Dinh Diem (que rompeu com o domínio francês em 1955); cabine completamente desprovida de passageiros ou motorista."
+   ],
+   "correcao_prompt": "limusine presidencial de 1961 em Saigon com pequenas bandeiras oficiais da República do Vietnã (fundo amarelo com três faixas horizontais vermelhas) nos para-lamas, transportando motorista e dignatários na cabine"
+  },
+  {
+   "arquivo": "l2_monks_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_monks_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_police_line_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_police_line_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_sampan_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_sampan_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_sedan_54_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_sedan_54_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_steamer_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Embarcação fluvial a vapor com rodas de pás laterais do século XIX (estilo vitoriano/Mississippi), totalmente anacrônica para o contexto de 1954-1963 no Vietnã (onde a evacuação da Operação Passage to Freedom e o transporte fluvial utilizavam navios modernos de aço e balsas motorizadas); ostenta quatro bandeiras brancas lisas (de rendição) nas pontas dos mastros e proa/popa."
+   ],
+   "correcao_prompt": "navio de transporte costeiro de passageiros de casco de aço dos anos 1950 (propulsão a hélice naval convencional, sem rodas de pás do século XIX) utilizado na Operação Passage to Freedom em 1954, com mastros e bandeira marítima adequada"
+  },
+  {
+   "arquivo": "l2_steamer_2.jpg",
+   "ok": false,
+   "problemas": [
+    "Incongruência mecânica e anacronismo: combina rodas de pás laterais vitorianas do século XIX com hélice submersa no leme de popa; ostenta na popa uma bandeira quadriculada azul e branca sem relação com o Vietnã dos anos 1950."
+   ],
+   "correcao_prompt": "navio a vapor de passageiros ou balsa fluvial com casco de aço dos anos 1950, propulsão convencional por hélice traseira (sem rodas de pás laterais), chaminé naval com fumaça e bandeiras navais autênticas da época"
+  },
+  {
+   "arquivo": "l2_us_col63_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_us_col63_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_us_truck_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Cabine arredondada e capô curvo de caminhão civil da década de 1940 com pintura civil bicolor (para-lamas e saia em marrom/bordô e carroceria verde), em desacordo com os caminhões militares 6x6 do Exército dos EUA (M35 ou GMC CCKW) que possuem linhas militares angulares e pintura estritamente verde-oliva militar fosca."
+   ],
+   "correcao_prompt": "caminhão militar do US Army M35 de 2,5 toneladas 6x6 ('deuce and a half') em pintura sólida verde-oliva militar (Olive Drab), capô militar reto com para-lamas angulares de chapa de aço e caçamba militar coberta com lona bege/oliva"
+  },
+  {
+   "arquivo": "l2_us_truck_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_vm_column_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_vm_column_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  }
+ ],
+ "reprovadas": 9
+}

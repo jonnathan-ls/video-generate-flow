@@ -16,7 +16,9 @@ PROMPT="Você é consultor histórico de um documentário (canal Lacre). Context
 Confira CADA imagem anexada contra esse contexto, com rigor de especialista: uniformes e capacetes, armas (modelo e época), veículos e aeronaves (modelo, cor, marcações), bandeiras, arquitetura (o prédio real, não um genérico), placas e textos, tecnologia e roupas civis. Fundo verde/croma é esperado em recortes: ignore.
 Aponte só erro concreto que um espectador atento notaria. Imagens: $IMGS
 Responda SÓ um JSON válido: {\"imagens\":[{\"arquivo\":\"nome\",\"ok\":true|false,\"problemas\":[\"...\"],\"correcao_prompt\":\"trecho para trocar no prompt do Flow\"}],\"reprovadas\":n}"
-GEMINI_CLI_TRUST_WORKSPACE=true timeout 600 gemini -m ${GEMINI_MODEL:-gemini-3.5-flash} -p "$PROMPT" > $T/raw.txt 2>$T/err.txt || true
+# 2026-11-22: Antigravity CLI (plano Google do usuário) primeiro; Gemini/OpenCode grátis ficam de reserva.
+AGY_MODEL=${AGY_MODEL:-gemini-3.8-flash-medium} python3 orchestra/tools/visao.py "${PROMPT//@/}" $(ls $T/*.jpg) --prov ${VISAO_PROV:-agy} 2>$T/err.txt | python3 -c "import json,sys;print(json.load(sys.stdin)['resposta'])" > $T/raw.txt
+grep -q '"' $T/raw.txt || GEMINI_CLI_TRUST_WORKSPACE=true timeout 600 gemini -m ${GEMINI_MODEL:-gemini-3.5-flash} -p "$PROMPT" > $T/raw.txt 2>$T/err.txt || true
 # Reserva: Gemini sem JSON (cota 429 de imagem no plano grátis, visto em 2026-11-20) → modelo grátis com visão no OpenCode.
 if ! grep -q '"imagens"' $T/raw.txt; then
   FILES=$(ls $T/*.jpg | sed 's/^/-f /' | tr '\n' ' ')
