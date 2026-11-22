@@ -32,3 +32,8 @@ Arquivo de passagem. Ao retomar, leia este arquivo, `CLAUDE.md`, `orchestra/prod
 ## Histórico útil
 - Comparativo Saigon: `lab/bakeoff-saigon/out/comparativo_saigon_r3.mp4`; preferência do usuário foi colagem. Ink and Toon e Low-Poly ficam para outros temas salvo decisão posterior.
 - Cotas atuais: OpenCode grátis retornou `Free usage limit reached` também em `nemotron-3.5-super-vl-free`; Gemini visual respondeu no c5; Sonnet CLI não autenticado; DeepSeek continua sob o freio de US$ 0,10. Trocar modelo/caminho sem repetir tentativa idêntica; não gastar créditos.
+
+## Lab Saigon rodada 4 — PAUSADO pelo usuário (2026-11-22 ~15h, consumo alto)
+- Briefs prontos, nada concluído: `orchestra/tasks/bk-ps-{spotlight,inflated,painted,voxel,pencil,shadowbox}.md` (listas `orchestra/lista-lab-r4.txt`) e estilos só em imagens `est-{croche,cartoon,3d-cine}.md` (`orchestra/lista-lab-estilos.txt`). Pode haver código parcial em `lab/bakeoff-saigon/ps-*/` e `est-*/`.
+- Galeria: `python3 lab/bakeoff-saigon/galeria.py` gera `lab/bakeoff-saigon/out/galeria.html`; abrir com `python3 -m http.server 8780 -d lab/bakeoff-saigon/out`.
+- Para economizar ao retomar: 1 tarefa por vez (`paralelo.sh 1`), começando pelos 2 estilos que o usuário mais quer ver.
