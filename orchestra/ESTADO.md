@@ -12,6 +12,11 @@ Arquivo de passagem. Ao retomar, leia este arquivo, `CLAUDE.md`, `orchestra/prod
 - **Flow:** lote de seis imagens no projeto `lacre-vietna` consumiu 0 créditos. `periodo.sh` não devolveu JSON; as seis imagens não foram cortadas nem referenciadas no spec. Não usar até `periodo.sh` PASS.
 - **L2–L10:** L1 cumpriu o DoD; iniciar L2 (S07–S11) e seguir em ordem. O usuário autorizou todos os lotes sem nova autorização ao atingir limites; manter gates e custo de Flow em zero. A colagem segue como estilo escolhido; o piloto low-poly é separado.
 
+## L2 em andamento (2026-11-22)
+- Imagens do Flow do lote 2 já estão em `media/pt-br-historia/vietna/src_img/flow/lote2/` (46 ativos x2; prompts em `lab/flow-prompts-lote2.md`). Gate de época rodando: `lab/l2gate/bg.json`, `lab/l2gate/obj.json`. Reprovadas voltam ao Flow.
+- Specs de S07–S10 em `scenes_spec.json` são do padrão antigo (plate/typo/stat): reescrever em colagem com ação. S11 está `pending`.
+- Falta: recortes (`chroma_cut.py`), `lab/plan-vietna-lote2.md`, specs, quadros, render em bloco.
+
 ## Próximo passo
 - L1 está fechado; planejar e produzir L2 (S07–S11) em fluxo A/B/C, com imagens do Flow apenas a 0 crédito.
 - Continuar para L3–L10 conforme cada DoD passar; se o executor/modelo atingir limite, alternar pelo fluxo registrado sem pedir nova autorização.

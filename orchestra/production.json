@@ -42,7 +42,7 @@
     "S10",
     "S11"
    ],
-   "status": "aberto; iniciar fase A (mídias) para S07–S11"
+   "status": "fase A: gate de época das imagens do lote2 em andamento; depois recortes, plano de tomadas e specs (fase B)"
   },
   {
    "id": "L3",
@@ -139,7 +139,7 @@
  "approved_scenes": [
   "S01"
  ],
- "now": "L1 S02–S06 fechado no c5: revisão agregada 4,30, todos os gates PASS; cue de S06 ajustado e revisão Gemini 5,00. Próximo: L2 S07–S11, fase A de mídias.",
+ "now": "L2 fase A: 92 imagens do Flow (lote2, 46 ativos) já existem; gate de época rodando em lab/l2gate (bg.json, obj.json). Specs antigos de S07–S10 são o padrão reprovado (plate/typo/stat) e precisam ser reescritos; S11 pending.",
  "next": [
   "Iniciar L2 (S07–S11): planejar todas as mídias da fase A e usar Flow Agent em lote, somente a 0 crédito.",
   "Executar L2 em fases A/B/C e validar todos os gates antes de avançar para L3.",
