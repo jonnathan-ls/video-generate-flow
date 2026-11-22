@@ -2698,98 +2698,244 @@
     "shots": [
      {
       "kind": "plate",
-      "start_s": 0.0,
-      "end_s": 6.7,
-      "cue": "a guerra francesa termina em Dien Bien Phu, de 13 de março a 7 de maio de 1954",
-      "motion": "câmera em movimento + elementos animados",
+      "start_s": 0,
+      "end_s": 2.9,
+      "cue": "a guerra francesa termina em Dien Bien Phu",
+      "motion": "soldados do Viet Minh descem a encosta do vale",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "valley-dbp"
+      "scene": {
+       "bg": "vietna/l2_dbp_valley.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "70%",
+       "actors": [
+        {
+         "src": "vietna/l2_vm_column.png",
+         "ar": 2.27,
+         "sfx": "steps",
+         "from": [
+          22,
+          80
+         ],
+         "to": [
+          74,
+          80
+         ],
+         "h": 21.75,
+         "t0_s": 0.2,
+         "t1_s": 2.8,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna do Viet Minh cruza o vale",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "names": [
        {
         "text": "DIEN BIEN PHU",
-        "sub": "13 de março a 7 de maio de 1954",
-        "out_s": 6.4,
+        "sub": "norte do Vietnã, 1954",
+        "out_s": 2.8,
         "at_cue": "dien#1",
         "at_s": 1.68
        }
       ]
      },
      {
-      "kind": "typo",
-      "start_s": 6.7,
-      "end_s": 11.2,
-      "cue": "a França combate no norte e perde para o Viet Minh, de Ho Chi Minh",
-      "motion": "câmera em movimento + elementos animados",
+      "kind": "date",
+      "start_s": 2.9,
+      "end_s": 6.7,
+      "cue": "de 13 de março a 7 de maio de 1954",
+      "motion": "a equipe puxa o canhão pela trilha",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "valley-dbp",
-       "scale": 1.4,
-       "ox": "70%"
+      "scene": {
+       "bg": "vietna/l2_dbp_slope.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_gun_crew.png",
+         "ar": 2.97,
+         "sfx": "steps",
+         "from": [
+          20,
+          82
+         ],
+         "to": [
+          80,
+          82
+         ],
+         "h": 31.9,
+         "t0_s": 3.0,
+         "t1_s": 6.6,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "equipe do Viet Minh puxa canhão",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
-      "typo": {
-       "lines": [
+      "date": {
+       "top": "13 DE MARÇO A 7 DE MAIO",
+       "big": "1954"
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 6.7,
+      "end_s": 11.2,
+      "cue": "a França combate e perde para o Viet Minh",
+      "motion": "a coluna do Viet Minh avança sobre a trincheira",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_dbp_trench.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "70%",
+       "actors": [
         {
-         "text": "a França combate no norte do Vietnã",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "franca#1",
-         "at_s": 6.86
-        },
+         "src": "vietna/l2_vm_column.png",
+         "ar": 2.27,
+         "sfx": "steps",
+         "from": [
+          22,
+          82
+         ],
+         "to": [
+          74,
+          82
+         ],
+         "h": 31.9,
+         "t0_s": 6.8,
+         "t1_s": 11.1,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna do Viet Minh avança",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "VIET MINH",
+        "sub": "de Ho Chi Minh",
+        "out_s": 11.0,
+        "at_cue": "viet#1",
+        "at_s": 9.6
+       }
+      ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 11.2,
+      "end_s": 13.0,
+      "cue": "a derrota decide a guerra",
+      "motion": "a bandeira do Vietnã sobe no mastro do bunker",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_dbp_bunker.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "50%",
+       "actors": [
         {
-         "text": "perde para",
-         "size": "l",
-         "color": "paper",
-         "at_cue": "perde#1",
-         "at_s": 8.84
-        },
-        {
-         "text": "o Viet Minh",
-         "size": "xl",
-         "color": "paper",
-         "at_cue": "viet#1",
-         "at_s": 9.6
-        },
-        {
-         "text": "de Ho Chi Minh",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "ho#1",
-         "at_s": 10.36
+         "src": "vietna/l2_flag_vn.png",
+         "ar": 1.71,
+         "sfx": "flag",
+         "from": [
+          50,
+          38
+         ],
+         "h": 12,
+         "flag": {
+          "amp": 14,
+          "pole": 16,
+          "speed": 0.3
+         },
+         "appear_s": 11.5,
+         "note": "bandeira vitoriosa sobre o bunker"
         }
        ]
       }
      },
      {
       "kind": "plate",
-      "start_s": 11.2,
+      "start_s": 13.0,
       "end_s": 15.7,
       "cue": "o fim formal só vem com o acordo de Genebra",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "o vapor cruza o lago de Genebra",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "geneva-lake",
-       "scale": 1.2,
-       "ox": "30%"
+      "scene": {
+       "bg": "vietna/l2_geneva_lake.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_steamer.png",
+         "ar": 2.85,
+         "sfx": "engine",
+         "from": [
+          -14,
+          62
+         ],
+         "to": [
+          112,
+          62
+         ],
+         "h": 25.5,
+         "t0_s": 13.0,
+         "t1_s": 15.6,
+         "ease": "linear",
+         "bob": 1,
+         "note": "vapor no lago",
+         "faces": "right",
+         "on": "water",
+         "sink": 0.15,
+         "wake": true
+        }
+       ]
       },
       "names": [
        {
         "text": "ACORDO DE GENEBRA",
         "sub": "o fim formal da guerra",
-        "out_s": 15.4,
+        "out_s": 15.5,
         "at_cue": "acordo#1",
         "at_s": 14.54
        }
@@ -2798,18 +2944,45 @@
      {
       "kind": "typo",
       "start_s": 15.7,
-      "end_s": 19.05,
+      "end_s": 18.648,
       "cue": "a pergunta passa a ser quem vai governar o país",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "o lavrador e o búfalo cruzam o arrozal",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "hanoi-dawn",
-       "scale": 1.2,
-       "ox": "30%"
+      "scene": {
+       "bg": "vietna/l2_paddy.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_farmer_buffalo.png",
+         "ar": 2.01,
+         "sfx": "steps",
+         "from": [
+          20,
+          82
+         ],
+         "to": [
+          80,
+          82
+         ],
+         "h": 31.9,
+         "t0_s": 15.8,
+         "t1_s": 18.6,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "lavrador conduz o búfalo",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "typo": {
        "lines": [
@@ -2830,8 +3003,7 @@
        ]
       }
      }
-    ],
-    "vignette": 0.3
+    ]
    }
   },
   {
@@ -2848,159 +3020,379 @@
     "shots": [
      {
       "kind": "date",
-      "start_s": 0.0,
-      "end_s": 4.7,
-      "cue": "20 de julho de 1954, acordo de Genebra",
-      "motion": "câmera em movimento + elementos animados",
+      "start_s": 0,
+      "end_s": 4.4,
+      "cue": "20 de julho de 1954",
+      "motion": "o carro oficial chega ao Palácio das Nações",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "geneva-lake"
+      "scene": {
+       "bg": "vietna/l2_geneva_palais.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_sedan_54.png",
+         "ar": 2.92,
+         "sfx": "jeep",
+         "from": [
+          -15,
+          82
+         ],
+         "to": [
+          62,
+          82
+         ],
+         "h": 21.0,
+         "t0_s": 0.3,
+         "t1_s": 4.2,
+         "ease": "out",
+         "bob": 1,
+         "note": "carro oficial chega ao palácio",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "date": {
-       "top": "ACORDO DE GENEBRA · 20 DE JULHO",
+       "top": "20 DE JULHO",
        "big": "1954"
       }
      },
      {
       "kind": "plate",
-      "start_s": 4.7,
-      "end_s": 10.7,
-      "cue": "o texto traça uma linha militar provisória",
-      "motion": "câmera em movimento + elementos animados",
+      "start_s": 4.4,
+      "end_s": 8.6,
+      "cue": "no acordo de Genebra",
+      "motion": "a pasta do acordo desliza para a mesa",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "dmz-river"
+      "scene": {
+       "bg": "vietna/l2_conf_hall.jpg",
+       "z0": 1.08,
+       "z1": 1.03,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/pasta.png",
+         "ar": 1.5,
+         "sfx": "paper",
+         "from": [
+          -30,
+          84
+         ],
+         "to": [
+          50,
+          80
+         ],
+         "h": 42,
+         "rot": [
+          -10,
+          -2
+         ],
+         "t0_s": 4.6,
+         "t1_s": 8.3,
+         "ease": "out",
+         "label": "GENEBRA",
+         "note": "pasta do acordo desliza na mesa",
+         "faces": "none",
+         "on": "floor"
+        }
+       ]
       },
       "names": [
        {
-        "text": "LINHA MILITAR PROVISÓRIA",
-        "sub": "acordo de Genebra, 1954",
-        "out_s": 10.4,
-        "at_cue": "linha#1",
-        "at_s": 7.2
+        "text": "ACORDO DE GENEBRA",
+        "sub": "20 de julho de 1954",
+        "out_s": 8.4,
+        "at_cue": "acordo#1",
+        "at_s": 4.5
        }
       ]
      },
      {
       "kind": "stat",
-      "start_s": 10.7,
+      "start_s": 8.6,
       "end_s": 14.2,
-      "cue": "zona desmilitarizada de até cinco quilômetros de cada lado",
-      "motion": "câmera em movimento + elementos animados",
+      "cue": "zona desmilitarizada de até cinco quilômetros de cada lado da linha",
+      "motion": "o sampan cruza o rio na linha militar",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "dmz-river",
-       "scale": 1.4,
-       "ox": "70%",
-       "oy": "80%"
+      "scene": {
+       "bg": "vietna/l2_benhai_bridge.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_sampan.png",
+         "ar": 2.13,
+         "sfx": "water",
+         "from": [
+          -12,
+          78
+         ],
+         "to": [
+          112,
+          78
+         ],
+         "h": 18.0,
+         "t0_s": 8.7,
+         "t1_s": 14.0,
+         "ease": "linear",
+         "bob": 1,
+         "note": "sampan cruza o rio Ben Hai",
+         "faces": "right",
+         "on": "water",
+         "sink": 0.15,
+         "wake": true
+        }
+       ]
       },
       "stat": {
        "top": "ZONA DESMILITARIZADA",
        "big": "5 km",
-       "label": "de cada lado da linha, no máximo",
+       "label": "de cada lado da linha",
+       "position": "top-left",
+       "big_size": 110,
        "big_at_cue": "cinco#1",
-       "big_at_s": 11.16,
-       "label_at_cue": "quilometros#1",
-       "label_at_s": 11.76
-      },
-      "silence": {
-       "at_s": 9.9,
-       "dur": 2.0
+       "big_at_s": 11.26,
+       "label_at_cue": "cada#1",
+       "label_at_s": 12.74
       }
      },
      {
-      "kind": "typo",
+      "kind": "plate",
       "start_s": 14.2,
       "end_s": 18.0,
       "cue": "cada lado administra a sua parte",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "duas colunas caminham, uma em cada margem",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "meeting-table",
-       "v": "plain",
-       "scale": 1.2,
-       "ox": "70%"
-      },
-      "typo": {
-       "lines": [
+      "scene": {
+       "bg": "vietna/l2_benhai_banks.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
         {
-         "text": "cada lado administra",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "cada#2",
-         "at_s": 14.24
+         "src": "vietna/l2_vm_column.png",
+         "ar": 2.27,
+         "sfx": "steps",
+         "from": [
+          25,
+          82
+         ],
+         "to": [
+          70,
+          82
+         ],
+         "h": 37.699999999999996,
+         "t0_s": 14.3,
+         "t1_s": 17.9,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna do Norte na margem",
+         "faces": "right",
+         "on": "road"
         },
         {
-         "text": "a sua parte",
-         "size": "xl",
-         "color": "paper",
-         "at_cue": "sua#1",
-         "at_s": 15.4
+         "src": "vietna/l2_fr_column54.png",
+         "ar": 2.27,
+         "sfx": "steps",
+         "from": [
+          20,
+          53
+         ],
+         "to": [
+          55,
+          53
+         ],
+         "h": 17.4,
+         "t0_s": 14.3,
+         "t1_s": 17.9,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna do Sul na outra margem",
+         "faces": "right",
+         "on": "road"
         }
        ]
       }
      },
      {
-      "kind": "stat",
+      "kind": "plate",
       "start_s": 18.0,
-      "end_s": 21.4,
-      "cue": "até as eleições gerais que vão reunificar o Vietnã",
-      "motion": "câmera em movimento + elementos animados",
+      "end_s": 21.5,
+      "cue": "as eleições gerais que vão reunificar o Vietnã",
+      "motion": "as cédulas caem na urna",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "ballot-box"
+      "scene": {
+       "bg": "vietna/l2_polling_hall.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "70%",
+       "actors": [
+        {
+         "src": "vietna/l2_cedula.png",
+         "ar": 0.77,
+         "sfx": "paper",
+         "from": [
+          62,
+          -20
+         ],
+         "to": [
+          62,
+          47
+         ],
+         "h": 15,
+         "t0_s": 18.55,
+         "t1_s": 19.35,
+         "ease": "in",
+         "rot": [
+          10,
+          0
+         ],
+         "note": "cédula cai na urna",
+         "faces": "none",
+         "on": "air",
+         "hide_s": 19.400000000000002
+        },
+        {
+         "src": "vietna/l2_cedula.png",
+         "ar": 0.77,
+         "sfx": "paper",
+         "from": [
+          62,
+          -20
+         ],
+         "to": [
+          62,
+          47
+         ],
+         "h": 15,
+         "t0_s": 19.4,
+         "t1_s": 20.2,
+         "ease": "in",
+         "rot": [
+          10,
+          0
+         ],
+         "note": "cédula cai na urna",
+         "faces": "none",
+         "on": "air",
+         "hide_s": 20.25
+        },
+        {
+         "src": "vietna/l2_cedula.png",
+         "ar": 0.77,
+         "sfx": "paper",
+         "from": [
+          62,
+          -20
+         ],
+         "to": [
+          62,
+          47
+         ],
+         "h": 15,
+         "t0_s": 20.3,
+         "t1_s": 21.1,
+         "ease": "in",
+         "rot": [
+          10,
+          0
+         ],
+         "note": "cédula cai na urna",
+         "faces": "none",
+         "on": "air",
+         "hide_s": 21.150000000000002
+        }
+       ]
       },
-      "stat": {
-       "top": "O PRAZO",
-       "big": "ELEIÇÕES",
-       "label": "gerais, para reunificar o Vietnã",
-       "big_at_cue": "eleicoes#1",
-       "big_at_s": 18.56,
-       "label_at_cue": "reunificar#1",
-       "label_at_s": 19.8
-      }
+      "names": [
+       {
+        "text": "ELEIÇÕES GERAIS",
+        "sub": "para reunificar o Vietnã",
+        "out_s": 21.3,
+        "at_cue": "eleicoes#1",
+        "at_s": 18.56
+       }
+      ]
      },
      {
       "kind": "typo",
-      "start_s": 21.4,
-      "end_s": 24.4,
+      "start_s": 21.5,
+      "end_s": 24.5,
       "cue": "o cessar-fogo começa em datas diferentes",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "o lavrador cruza o arrozal",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "valley-dbp",
-       "v": "calm",
-       "scale": 1.25,
-       "ox": "30%"
+      "scene": {
+       "bg": "vietna/l2_paddy.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_farmer_buffalo.png",
+         "ar": 2.01,
+         "sfx": "steps",
+         "from": [
+          80,
+          82
+         ],
+         "to": [
+          20,
+          82
+         ],
+         "h": 29.0,
+         "t0_s": 21.6,
+         "t1_s": 24.4,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": true,
+         "note": "lavrador cruza o arrozal",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "typo": {
        "lines": [
         {
-         "text": "cessar-fogo",
+         "text": "o cessar-fogo começa",
          "size": "m",
          "color": "brass",
          "at_cue": "cessarfogo#1",
@@ -3008,7 +3400,7 @@
         },
         {
          "text": "em datas diferentes",
-         "size": "l",
+         "size": "xl",
          "color": "paper",
          "at_cue": "datas#1",
          "at_s": 23.0
@@ -3017,65 +3409,148 @@
       }
      },
      {
-      "kind": "map-zoom",
-      "start_s": 24.4,
-      "end_s": 30.07,
-      "cue": "27 de julho no Norte, 1º de agosto no centro, 11 de agosto no Sul",
-      "motion": "câmera em movimento + elementos animados",
+      "kind": "date",
+      "start_s": 24.5,
+      "end_s": 26.5,
+      "cue": "27 de julho no Norte",
+      "motion": "a coluna do Norte marcha",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "cam0": {
-       "center": [
-        106,
-        15.5
-       ],
-       "scale": 3300
+      "scene": {
+       "bg": "vietna/l2_paddy.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_vm_column.png",
+         "ar": 2.27,
+         "sfx": "steps",
+         "from": [
+          20,
+          82
+         ],
+         "to": [
+          70,
+          82
+         ],
+         "h": 34.8,
+         "t0_s": 24.6,
+         "t1_s": 26.4,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna do Norte marcha",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
-      "cam1": {
-       "center": [
-        106,
-        15.5
-       ],
-       "scale": 3800
+      "date": {
+       "top": "27 DE JULHO · NORTE",
+       "big": "27/07"
+      }
+     },
+     {
+      "kind": "date",
+      "start_s": 26.5,
+      "end_s": 28.2,
+      "cue": "1º de agosto no centro",
+      "motion": "o sampan cruza o rio",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_benhai_bridge.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_sampan.png",
+         "ar": 2.13,
+         "sfx": "water",
+         "from": [
+          10,
+          78
+         ],
+         "to": [
+          90,
+          78
+         ],
+         "h": 18.0,
+         "t0_s": 26.6,
+         "t1_s": 28.1,
+         "ease": "linear",
+         "bob": 1,
+         "note": "sampan cruza o rio",
+         "faces": "right",
+         "on": "water",
+         "sink": 0.15,
+         "wake": true
+        }
+       ]
       },
-      "pins": [
-       {
-        "at": [
-         105.85,
-         21.03
-        ],
-        "label": "NORTE · 27 JUL.",
-        "align": "right",
-        "at_cue": "norte#1",
-        "at_s": 25.66
-       },
-       {
-        "at": [
-         107.5,
-         16.4
-        ],
-        "label": "CENTRO · 1º AGO.",
-        "align": "right",
-        "at_cue": "centro#1",
-        "at_s": 27.5
-       },
-       {
-        "at": [
-         106.7,
-         10.8
-        ],
-        "label": "SUL · 11 AGO.",
-        "align": "right",
-        "at_cue": "sul#1",
-        "at_s": 29.220000000000002
-       }
-      ]
+      "date": {
+       "top": "1º DE AGOSTO · CENTRO",
+       "big": "01/08"
+      }
+     },
+     {
+      "kind": "date",
+      "start_s": 28.2,
+      "end_s": 29.668,
+      "cue": "11 de agosto no Sul",
+      "motion": "o ciclo-riquixá cruza a rua de Saigon",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_saigon_55.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_cyclo.png",
+         "ar": 1.64,
+         "sfx": "steps",
+         "from": [
+          10,
+          82
+         ],
+         "to": [
+          90,
+          82
+         ],
+         "h": 22.5,
+         "t0_s": 28.3,
+         "t1_s": 29.6,
+         "ease": "linear",
+         "bob": 1,
+         "note": "ciclo-riquixá em Saigon",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "date": {
+       "top": "11 DE AGOSTO · SUL",
+       "big": "11/08"
+      }
      }
-    ],
-    "vignette": 0.3
+    ]
    }
   },
   {
@@ -3091,80 +3566,160 @@
     "kind": "shots",
     "shots": [
      {
-      "kind": "plate",
-      "start_s": 0.0,
-      "end_s": 3.6,
-      "cue": "a linha era provisória e as eleições eram o plano para apagá-la",
-      "motion": "câmera em movimento + elementos animados",
-      "layers": [
-       "céu/fundo",
-       "cena em planos",
-       "atmosfera+rótulo"
-      ],
-      "plate": {
-       "name": "dmz-river",
-       "scale": 1.15,
-       "ox": "30%",
-       "oy": "75%"
-      },
-      "names": [
-       {
-        "text": "LINHA PROVISÓRIA",
-        "sub": "eleições em 1956 a apagariam",
-        "out_s": 3.4,
-        "at_cue": "linha#1",
-        "at_s": 0.2
-       }
-      ]
-     },
-     {
       "kind": "typo",
-      "start_s": 3.6,
-      "end_s": 8.9,
-      "cue": "uma comissão de Canadá, Índia e Polônia fiscaliza o acordo",
-      "motion": "câmera em movimento + elementos animados",
+      "start_s": 0,
+      "end_s": 3.6,
+      "cue": "a linha era provisória, e as eleições eram o plano para apagá-la",
+      "motion": "o sampan cruza a linha",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "three-flags"
+      "scene": {
+       "bg": "vietna/l2_benhai_bridge.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_sampan.png",
+         "ar": 2.13,
+         "sfx": "water",
+         "from": [
+          -12,
+          78
+         ],
+         "to": [
+          112,
+          78
+         ],
+         "h": 18.0,
+         "t0_s": 0.1,
+         "t1_s": 3.5,
+         "ease": "linear",
+         "bob": 1,
+         "note": "sampan cruza o rio",
+         "faces": "right",
+         "on": "water",
+         "sink": 0.15,
+         "wake": true
+        }
+       ]
       },
       "typo": {
        "lines": [
         {
-         "text": "comissão de fiscalização",
-         "size": "m",
+         "text": "a linha era provisória",
+         "size": "l",
          "color": "brass",
-         "at_cue": "comissao#1",
-         "at_s": 4.1
+         "at_cue": "linha#1",
+         "at_s": 0.2
         },
         {
-         "text": "Canadá · Índia · Polônia",
-         "size": "l",
+         "text": "e as eleições eram o plano",
+         "size": "m",
          "color": "paper",
-         "at_cue": "canada#1",
-         "at_s": 4.76
+         "at_cue": "eleicoes#1",
+         "at_s": 1.64
         }
        ]
       }
+     },
+     {
+      "kind": "plate",
+      "start_s": 3.6,
+      "end_s": 8.9,
+      "cue": "uma comissão de Canadá, Índia e Polônia",
+      "motion": "os três oficiais caminham pela margem",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_benhai_banks.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_icc_trio.png",
+         "ar": 1.9,
+         "sfx": "steps",
+         "from": [
+          14,
+          82
+         ],
+         "to": [
+          66,
+          82
+         ],
+         "h": 43.5,
+         "t0_s": 3.8,
+         "t1_s": 8.8,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "oficiais da comissão internacional",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "COMISSÃO INTERNACIONAL",
+        "sub": "Canadá · Índia · Polônia",
+        "out_s": 8.7,
+        "at_cue": "comissao#1",
+        "at_s": 4.1
+       }
+      ]
      },
      {
       "kind": "date",
       "start_s": 8.9,
       "end_s": 11.5,
       "cue": "em agosto de 1955",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "o ciclo-riquixá cruza a rua",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "saigon-street",
-       "v": "svn",
-       "scale": 1.1
+      "scene": {
+       "bg": "vietna/l2_saigon_55.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_cyclo.png",
+         "ar": 1.64,
+         "sfx": "steps",
+         "from": [
+          -10,
+          82
+         ],
+         "to": [
+          110,
+          82
+         ],
+         "h": 22.5,
+         "t0_s": 9.0,
+         "t1_s": 11.4,
+         "ease": "linear",
+         "bob": 1,
+         "note": "ciclo-riquixá em Saigon",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "date": {
        "top": "AGOSTO",
@@ -3174,163 +3729,311 @@
      {
       "kind": "plate",
       "start_s": 11.5,
-      "end_s": 17.0,
-      "cue": "o primeiro-ministro do Sul, Ngo Dinh Diem, recusa as conversas com o Norte",
-      "motion": "câmera em movimento + elementos animados",
+      "end_s": 14.3,
+      "cue": "o primeiro-ministro do Sul, Ngo Dinh Diem",
+      "motion": "o carro chega ao palácio",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "command-room",
-       "v": "svn",
-       "scale": 1.1
+      "scene": {
+       "bg": "vietna/l2_palace_55.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_sedan_54.png",
+         "ar": 2.92,
+         "sfx": "jeep",
+         "from": [
+          -15,
+          82
+         ],
+         "to": [
+          55,
+          82
+         ],
+         "h": 21.0,
+         "t0_s": 11.6,
+         "t1_s": 14.0,
+         "ease": "out",
+         "bob": 1,
+         "note": "carro de Diem chega ao palácio",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "names": [
        {
         "text": "NGO DINH DIEM",
-        "sub": "primeiro-ministro do Sul, recusa as conversas",
-        "out_s": 16.7,
+        "sub": "primeiro-ministro do Sul",
+        "out_s": 14.2,
         "at_cue": "ngo#1",
         "at_s": 13.04
        }
       ]
      },
      {
-      "kind": "typo",
-      "start_s": 17.0,
+      "kind": "plate",
+      "start_s": 14.3,
       "end_s": 20.8,
-      "cue": "as eleições previstas para 1956",
-      "motion": "câmera em movimento + elementos animados",
+      "cue": "recusa as conversas com o Norte para as eleições previstas para 1956",
+      "motion": "a coluna do Norte para diante da ponte",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "ballot-box",
-       "scale": 1.2,
-       "ox": "70%"
-      },
-      "typo": {
-       "lines": [
+      "scene": {
+       "bg": "vietna/l2_checkpoint.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
         {
-         "text": "eleições previstas",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "preparar#1",
-         "at_s": 16.64
-        },
-        {
-         "text": "1956",
-         "size": "xl",
-         "color": "paper",
-         "at_cue": "1956#1",
-         "at_s": 18.68
+         "src": "vietna/l2_vm_column.png",
+         "ar": 2.27,
+         "sfx": "steps",
+         "from": [
+          14,
+          82
+         ],
+         "to": [
+          60,
+          82
+         ],
+         "h": 34.8,
+         "t0_s": 14.4,
+         "t1_s": 20.7,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna do Norte chega à ponte",
+         "faces": "right",
+         "on": "road"
         }
        ]
-      }
-     },
-     {
-      "kind": "map-zoom",
-      "start_s": 20.8,
-      "end_s": 27.0,
-      "cue": "o país segue dividido e a linha provisória vira fronteira de fato",
-      "motion": "câmera em movimento + elementos animados",
-      "layers": [
-       "céu/fundo",
-       "cena em planos",
-       "atmosfera+rótulo"
-      ],
-      "cam0": {
-       "center": [
-        106.3,
-        15.8
-       ],
-       "scale": 3000
       },
-      "cam1": {
-       "center": [
-        106.3,
-        15.8
-       ],
-       "scale": 3200
-      },
-      "pins": [
+      "names": [
        {
-        "at": [
-         105.85,
-         21.03
-        ],
-        "label": "NORTE",
-        "align": "right",
-        "at_cue": "dois#1",
-        "at_s": 22.68
-       },
-       {
-        "at": [
-         106.7,
-         10.8
-        ],
-        "label": "SUL",
-        "align": "right",
-        "at_cue": "governos#1",
-        "at_s": 22.9
+        "text": "ELEIÇÕES PREVISTAS",
+        "sub": "1956",
+        "out_s": 20.6,
+        "at_cue": "previstas#1",
+        "at_s": 17.78
        }
-      ],
-      "swap": {
-       "pos": "left",
-       "from": "PROVISÓRIA",
-       "to": "FRONTEIRA",
-       "at_cue": "provisoria#2",
-       "at_s": 24.22,
-       "swap_cue": "fronteira#1",
-       "swap_s": 25.540000000000003
-      }
+      ]
      },
      {
-      "kind": "typo",
-      "start_s": 27.0,
-      "end_s": 31.43,
-      "cue": "os americanos passam a apoiar o Sul",
-      "motion": "câmera em movimento + elementos animados",
+      "kind": "plate",
+      "start_s": 20.8,
+      "end_s": 24.0,
+      "cue": "o país continua dividido em dois governos",
+      "motion": "as duas bandeiras sobem e a coluna cruza a margem",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "advisors-line"
-      },
-      "typo": {
-       "lines": [
+      "scene": {
+       "bg": "vietna/l2_river_poles.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
         {
-         "text": "esse país dividido",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "esse#1",
-         "at_s": 27.28
+         "src": "vietna/l2_vm_column.png",
+         "ar": 2.27,
+         "sfx": "steps",
+         "from": [
+          8,
+          82
+         ],
+         "to": [
+          92,
+          82
+         ],
+         "h": 17.4,
+         "t0_s": 20.9,
+         "t1_s": 23.9,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna cruza a margem do rio",
+         "faces": "right",
+         "on": "road"
         },
         {
-         "text": "os americanos passam a apoiar",
-         "size": "l",
-         "color": "paper",
-         "at_cue": "americanos#1",
-         "at_s": 28.78
+         "src": "vietna/l2_flag_vn.png",
+         "ar": 1.71,
+         "sfx": "flag",
+         "from": [
+          26,
+          42
+         ],
+         "h": 10,
+         "flag": {
+          "amp": 12,
+          "pole": 14,
+          "speed": 0.3
+         },
+         "appear_s": 22.5,
+         "note": "bandeira do Norte"
         },
         {
-         "text": "o Sul",
-         "size": "xl",
-         "color": "seal",
-         "at_cue": "sul#2",
-         "at_s": 30.76
+         "src": "vietna/l2_flag_sv.png",
+         "ar": 1.74,
+         "sfx": "flag",
+         "from": [
+          74,
+          52
+         ],
+         "h": 14,
+         "flag": {
+          "amp": 14,
+          "pole": 16,
+          "speed": 0.3
+         },
+         "appear_s": 22.9,
+         "note": "bandeira do Sul"
         }
        ]
       }
+     },
+     {
+      "kind": "plate",
+      "start_s": 24.0,
+      "end_s": 27.1,
+      "cue": "a linha provisória vira uma fronteira de fato",
+      "motion": "a coluna francesa marcha até a ponte",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_benhai_bridge.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_fr_column54.png",
+         "ar": 2.27,
+         "sfx": "steps",
+         "from": [
+          20,
+          82
+         ],
+         "to": [
+          70,
+          82
+         ],
+         "h": 31.9,
+         "t0_s": 24.1,
+         "t1_s": 27.0,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna marcha até a ponte",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "FRONTEIRA DE FATO",
+        "sub": "paralelo 17",
+        "out_s": 26.9,
+        "at_cue": "fronteira#1",
+        "at_s": 25.44
+       }
+      ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 27.1,
+      "end_s": 31.03,
+      "cue": "os americanos passam a apoiar, no Sul",
+      "motion": "o caminhão e o jipe americanos cruzam a rua",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_saigon_55.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_us_truck.png",
+         "ar": 2.16,
+         "sfx": "jeep",
+         "from": [
+          -20,
+          82
+         ],
+         "to": [
+          120,
+          82
+         ],
+         "h": 25.5,
+         "t0_s": 27.2,
+         "t1_s": 30.2,
+         "ease": "linear",
+         "bob": 1,
+         "note": "caminhão americano em Saigon",
+         "faces": "right",
+         "on": "road"
+        },
+        {
+         "src": "vietna/l2_jeep_us.png",
+         "ar": 1.99,
+         "sfx": "jeep",
+         "from": [
+          -40,
+          80
+         ],
+         "to": [
+          100,
+          80
+         ],
+         "h": 19.5,
+         "t0_s": 28.6,
+         "t1_s": 30.9,
+         "ease": "linear",
+         "bob": 1,
+         "note": "jipe americano",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "APOIO AMERICANO",
+        "sub": "Vietnã do Sul",
+        "out_s": 30.9,
+        "at_cue": "americanos#1",
+        "at_s": 28.78
+       }
+      ]
      }
-    ],
-    "vignette": 0.3
+    ]
    }
   },
   {
@@ -3347,17 +4050,46 @@
     "shots": [
      {
       "kind": "typo",
-      "start_s": 0.0,
-      "end_s": 2.7,
+      "start_s": 0,
+      "end_s": 2.6,
       "cue": "os americanos entram aos poucos",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "o assessor americano cruza o pátio do aeroporto",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "advisors-line"
+      "scene": {
+       "bg": "vietna/l2_airfield_61.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_advisor.png",
+         "ar": 0.544,
+         "sfx": "steps",
+         "from": [
+          20,
+          82
+         ],
+         "to": [
+          70,
+          82
+         ],
+         "h": 43.5,
+         "t0_s": 0.2,
+         "t1_s": 2.5,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "assessor americano caminha",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "typo": {
        "lines": [
@@ -3379,53 +4111,125 @@
       }
      },
      {
-      "kind": "plate",
-      "start_s": 2.7,
+      "kind": "date",
+      "start_s": 2.6,
       "end_s": 5.3,
       "cue": "em maio de 1961",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "o assessor passa diante da fila de soldados",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "saigon-street",
-       "v": "svn",
-       "scale": 1.15,
-       "ox": "30%"
+      "scene": {
+       "bg": "vietna/l2_training_61.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_advisor.png",
+         "ar": 0.544,
+         "sfx": "steps",
+         "from": [
+          90,
+          82
+         ],
+         "to": [
+          20,
+          82
+         ],
+         "h": 40.6,
+         "t0_s": 2.7,
+         "t1_s": 5.2,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": true,
+         "note": "assessor caminha diante da tropa",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
-      "names": [
-       {
-        "text": "MAIO DE 1961",
-        "sub": "Vietnã do Sul",
-        "out_s": 5.1,
-        "at_cue": "maio#1",
-        "at_s": 2.74
-       }
-      ]
+      "date": {
+       "top": "MAIO DE",
+       "big": "1961"
+      }
      },
      {
       "kind": "stat",
       "start_s": 5.3,
-      "end_s": 12.0,
-      "cue": "685 integrantes do grupo de assessoria militar dos EUA no Vietnã do Sul",
-      "motion": "câmera em movimento + elementos animados",
+      "end_s": 12.1,
+      "cue": "685 integrantes do grupo de assessoria militar",
+      "motion": "a coluna sul-vietnamita marcha e o assessor passa",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "advisors-line",
-       "scale": 1.3,
-       "ox": "30%",
-       "oy": "85%"
+      "scene": {
+       "bg": "vietna/l2_training_61.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_arvn_col.png",
+         "ar": 2.07,
+         "sfx": "steps",
+         "from": [
+          18,
+          82
+         ],
+         "to": [
+          78,
+          82
+         ],
+         "h": 34.8,
+         "t0_s": 5.5,
+         "t1_s": 11.9,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna sul-vietnamita marcha",
+         "faces": "right",
+         "on": "road"
+        },
+        {
+         "src": "vietna/l2_advisor.png",
+         "ar": 0.544,
+         "sfx": "steps",
+         "from": [
+          90,
+          82
+         ],
+         "to": [
+          52,
+          82
+         ],
+         "h": 40.6,
+         "t0_s": 5.4,
+         "t1_s": 8.0,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": true,
+         "note": "assessor americano",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "stat": {
        "top": "MAIO DE 1961",
        "big": "685",
        "label": "integrantes do grupo de assessoria militar dos EUA no Vietnã do Sul",
+       "position": "top-left",
+       "big_size": 110,
        "big_at_cue": "685#1",
        "big_at_s": 5.380000000000001,
        "label_at_cue": "integrantes#1",
@@ -3438,17 +4242,44 @@
      },
      {
       "kind": "date",
-      "start_s": 12.0,
-      "end_s": 15.8,
+      "start_s": 12.1,
+      "end_s": 15.9,
       "cue": "8 de fevereiro de 1962",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "o jipe americano chega ao quartel",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "command-room"
+      "scene": {
+       "bg": "vietna/l2_macv_hq.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_jeep_us.png",
+         "ar": 1.99,
+         "sfx": "jeep",
+         "from": [
+          -15,
+          82
+         ],
+         "to": [
+          50,
+          82
+         ],
+         "h": 21.0,
+         "t0_s": 12.2,
+         "t1_s": 15.7,
+         "ease": "out",
+         "bob": 1,
+         "note": "jipe chega ao quartel",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
       },
       "date": {
        "top": "8 DE FEVEREIRO",
@@ -3456,113 +4287,179 @@
       }
      },
      {
-      "kind": "typo",
-      "start_s": 15.8,
-      "end_s": 19.7,
+      "kind": "plate",
+      "start_s": 15.9,
+      "end_s": 19.8,
       "cue": "nasce um comando militar americano para assessorar o governo do Sul",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "o helicóptero H-21 cruza o céu sobre o quartel",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "plate": {
-       "name": "command-room",
-       "scale": 1.3,
-       "ox": "70%",
-       "oy": "80%"
-      },
-      "typo": {
-       "lines": [
+      "scene": {
+       "bg": "vietna/l2_macv_hq.jpg",
+       "z0": 1.02,
+       "z1": 1.08,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
         {
-         "text": "nasce um comando militar americano",
-         "size": "m",
-         "color": "brass",
-         "at_cue": "nasce#1",
-         "at_s": 15.88
-        },
-        {
-         "text": "para assessorar o governo do Sul",
-         "size": "l",
-         "color": "paper",
-         "at_cue": "assessorar#1",
-         "at_s": 17.88
+         "src": "vietna/l2_h21.png",
+         "ar": 2.83,
+         "sfx": "rotor",
+         "from": [
+          -18,
+          32
+         ],
+         "to": [
+          118,
+          32
+         ],
+         "h": 14.0,
+         "t0_s": 16.0,
+         "t1_s": 19.6,
+         "ease": "linear",
+         "bob": 1,
+         "note": "helicóptero H-21 cruza o céu",
+         "faces": "right",
+         "on": "air"
         }
        ]
-      }
+      },
+      "names": [
+       {
+        "text": "COMANDO MILITAR AMERICANO",
+        "sub": "assessora o governo do Sul",
+        "out_s": 19.6,
+        "at_cue": "comando#1",
+        "at_s": 16.22
+       }
+      ]
      },
      {
-      "kind": "timeline",
-      "start_s": 19.7,
+      "kind": "date",
+      "start_s": 19.8,
       "end_s": 24.4,
       "cue": "no fim de 1963, ao final do governo Kennedy",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "a limusine cruza a entrada da Casa Branca",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "timeline": {
-       "from": 1961,
-       "to": 1964,
-       "draw": {
-        "from_s": 19.8,
-        "to_s": 21.2
-       },
-       "marks": [
+      "scene": {
+       "bg": "vietna/l2_whitehouse_63.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
         {
-         "year": 1961,
-         "label": "mai. 1961",
-         "at_s": 20.0
-        },
-        {
-         "year": 1962,
-         "label": "fev. 1962",
-         "at_s": 20.3
-        },
-        {
-         "year": 1963,
-         "label": "fim de 1963",
-         "accent": true,
-         "at_cue": "1963#1",
-         "at_s": 20.5
+         "src": "vietna/l2_limo_61.png",
+         "ar": 3.96,
+         "sfx": "jeep",
+         "from": [
+          -20,
+          82
+         ],
+         "to": [
+          70,
+          82
+         ],
+         "h": 22.5,
+         "t0_s": 20.0,
+         "t1_s": 23.8,
+         "ease": "out",
+         "bob": 1,
+         "note": "limusine em Washington",
+         "faces": "right",
+         "on": "road"
         }
        ]
+      },
+      "date": {
+       "top": "FIM DE",
+       "big": "1963"
       }
      },
      {
-      "kind": "chart",
+      "kind": "stat",
       "start_s": 24.4,
-      "end_s": 28.44,
+      "end_s": 28.04,
       "cue": "os assessores militares americanos já somam 16 mil",
-      "motion": "câmera em movimento + elementos animados",
+      "motion": "a coluna americana marcha e o H-21 passa",
       "layers": [
        "céu/fundo",
        "cena em planos",
        "atmosfera+rótulo"
       ],
-      "chart": {
-       "title": "Assessores militares dos EUA no Vietnã do Sul",
-       "src": "MAAG (maio de 1961) · Miller Center (fim de 1963, valor arredondado)",
-       "bars": [
+      "scene": {
+       "bg": "vietna/l2_airfield_61.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
         {
-         "label": "maio de 1961",
-         "value": 685,
-         "display": "685",
-         "at_s": 24.6
+         "src": "vietna/l2_us_col63.png",
+         "ar": 2.0,
+         "sfx": "steps",
+         "from": [
+          20,
+          82
+         ],
+         "to": [
+          74,
+          82
+         ],
+         "h": 34.8,
+         "t0_s": 24.5,
+         "t1_s": 28.0,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "coluna americana marcha",
+         "faces": "right",
+         "on": "road"
         },
         {
-         "label": "fim de 1963",
-         "value": 16000,
-         "display": "16 mil",
-         "at_cue": "somam#1",
-         "at_s": 26.76
+         "src": "vietna/l2_h21.png",
+         "ar": 2.83,
+         "sfx": "rotor",
+         "from": [
+          -15,
+          26
+         ],
+         "to": [
+          115,
+          26
+         ],
+         "h": 12.0,
+         "t0_s": 25.0,
+         "t1_s": 28.0,
+         "ease": "linear",
+         "bob": 1,
+         "note": "H-21 cruza o céu",
+         "faces": "right",
+         "on": "air"
         }
        ]
+      },
+      "stat": {
+       "top": "FIM DE 1963",
+       "big": "16 mil",
+       "label": "assessores militares dos EUA no Vietnã do Sul",
+       "position": "top-left",
+       "big_size": 110,
+       "big_at_cue": "16#1",
+       "big_at_s": 26.919999999999998,
+       "label_at_cue": "assessores#1",
+       "label_at_s": 24.62
       }
      }
-    ],
-    "vignette": 0.3
+    ]
    }
   },
   {
@@ -3575,7 +4472,437 @@
    "visual": "data 11 de junho de 1963, mapa de Saigon, sem imagem da cena",
    "sfx": "silêncio de 2 s",
    "spec": {
-    "kind": "pending"
+    "kind": "shots",
+    "shots": [
+     {
+      "kind": "typo",
+      "start_s": 0,
+      "end_s": 2.7,
+      "cue": "o governo do Sul, porém, está em crise",
+      "motion": "o carro cruza diante do palácio",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_palace_55.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_sedan_54.png",
+         "ar": 2.92,
+         "sfx": "jeep",
+         "from": [
+          110,
+          82
+         ],
+         "to": [
+          -15,
+          82
+         ],
+         "h": 21.0,
+         "t0_s": 0.1,
+         "t1_s": 2.6,
+         "ease": "linear",
+         "bob": 1,
+         "note": "carro cruza diante do palácio",
+         "faces": "right",
+         "on": "road",
+         "flip": true
+        }
+       ]
+      },
+      "typo": {
+       "lines": [
+        {
+         "text": "o governo do Sul",
+         "size": "m",
+         "color": "brass",
+         "at_cue": "governo#1",
+         "at_s": 0.11
+        },
+        {
+         "text": "está em crise",
+         "size": "xl",
+         "color": "seal",
+         "at_cue": "crise#1",
+         "at_s": 1.81
+        }
+       ]
+      }
+     },
+     {
+      "kind": "date",
+      "start_s": 2.7,
+      "end_s": 4.9,
+      "cue": "em maio de 1963",
+      "motion": "os monges caminham pela margem do rio em Hue",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_hue_63.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_monks.png",
+         "ar": 2.24,
+         "sfx": "steps",
+         "from": [
+          20,
+          82
+         ],
+         "to": [
+          70,
+          82
+         ],
+         "h": 31.9,
+         "t0_s": 2.8,
+         "t1_s": 4.8,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "monges caminham em Hue",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "date": {
+       "top": "MAIO DE",
+       "big": "1963"
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 4.9,
+      "end_s": 6.9,
+      "cue": "a polícia atira contra um ato em Hue",
+      "motion": "a multidão corre e a tropa se alinha",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_hue_night.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_police_line.png",
+         "ar": 2.125,
+         "sfx": "none",
+         "from": [
+          72,
+          82
+         ],
+         "h": 22,
+         "appear_s": 5.1,
+         "flip": true,
+         "note": "tropa se alinha",
+         "faces": "left",
+         "on": "road"
+        },
+        {
+         "src": "vietna/l2_crowd_run.png",
+         "ar": 3.02,
+         "sfx": "crowd",
+         "from": [
+          40,
+          82
+         ],
+         "to": [
+          5,
+          82
+         ],
+         "h": 29.0,
+         "t0_s": 5.3,
+         "t1_s": 6.8,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": true,
+         "note": "multidão corre",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "HUÊ",
+        "sub": "maio de 1963",
+        "out_s": 6.8,
+        "at_cue": "hue#1",
+        "at_s": 6.53
+       }
+      ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 6.9,
+      "end_s": 8.7,
+      "cue": "contra a proibição da bandeira budista",
+      "motion": "a bandeira budista sobe no mastro do pagode",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_pagoda_pole.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "50%",
+       "actors": [
+        {
+         "src": "vietna/l2_flag_bud.png",
+         "ar": 1.8,
+         "sfx": "flag",
+         "from": [
+          50,
+          40
+         ],
+         "h": 12,
+         "flag": {
+          "amp": 12,
+          "pole": 14,
+          "speed": 0.3
+         },
+         "appear_s": 7.7,
+         "note": "bandeira budista no mastro"
+        }
+       ]
+      }
+     },
+     {
+      "kind": "stat",
+      "start_s": 8.7,
+      "end_s": 10.3,
+      "cue": "e mata nove pessoas",
+      "motion": "a multidão recua pela rua de Hue",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_hue_night.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_crowd_run.png",
+         "ar": 3.02,
+         "sfx": "crowd",
+         "from": [
+          10,
+          82
+         ],
+         "to": [
+          80,
+          82
+         ],
+         "h": 29.0,
+         "t0_s": 8.8,
+         "t1_s": 10.2,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "multidão recua",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "stat": {
+       "top": "HUÊ · MAIO DE 1963",
+       "big": "9",
+       "label": "mortos",
+       "position": "top-left",
+       "big_size": 110,
+       "big_at_cue": "nove#1",
+       "big_at_s": 8.91,
+       "label_at_cue": "pessoas#1",
+       "label_at_s": 9.23
+      }
+     },
+     {
+      "kind": "date",
+      "start_s": 10.3,
+      "end_s": 13.3,
+      "cue": "em 11 de junho, o monge Thich Quang Duc em Saigon",
+      "motion": "os monges caminham pela avenida de Saigon",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_saigon_63.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_monks.png",
+         "ar": 2.24,
+         "sfx": "steps",
+         "from": [
+          15,
+          80
+         ],
+         "to": [
+          62,
+          80
+         ],
+         "h": 18.849999999999998,
+         "t0_s": 10.4,
+         "t1_s": 13.2,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "monges caminham em Saigon",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "date": {
+       "top": "SAIGON",
+       "big": "11 DE JUNHO"
+      }
+     },
+     {
+      "kind": "plate",
+      "start_s": 13.3,
+      "end_s": 17.3,
+      "cue": "em protesto contra o governo do presidente Ngo Dinh Diem",
+      "motion": "os monges marcham até o palácio",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_palace_55.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "60%",
+       "actors": [
+        {
+         "src": "vietna/l2_monks.png",
+         "ar": 2.24,
+         "sfx": "steps",
+         "from": [
+          15,
+          82
+         ],
+         "to": [
+          60,
+          82
+         ],
+         "h": 21.75,
+         "t0_s": 13.5,
+         "t1_s": 17.1,
+         "ease": "linear",
+         "slices": 12,
+         "gait": 9,
+         "flip": false,
+         "note": "monges marcham até o palácio",
+         "faces": "right",
+         "on": "road"
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "NGO DINH DIEM",
+        "sub": "presidente do Vietnã do Sul",
+        "out_s": 17.2,
+        "at_cue": "ngo#1",
+        "at_s": 15.73
+       }
+      ]
+     },
+     {
+      "kind": "plate",
+      "start_s": 17.3,
+      "end_s": 20.816,
+      "cue": "a foto de Malcolm Browne vence o World Press Photo",
+      "motion": "a câmera entra e o flash dispara",
+      "layers": [
+       "céu/fundo",
+       "cena em planos",
+       "atmosfera+rótulo"
+      ],
+      "scene": {
+       "bg": "vietna/l2_saigon_63.jpg",
+       "z0": 1.03,
+       "z1": 1.1,
+       "ox": "50%",
+       "oy": "50%",
+       "actors": [
+        {
+         "src": "vietna/l2_camera.png",
+         "ar": 1.9,
+         "sfx": "none",
+         "from": [
+          50,
+          62
+         ],
+         "h": 26,
+         "appear_s": 17.5,
+         "grow": [
+          0.6,
+          1
+         ],
+         "note": "câmera fotográfica",
+         "faces": "none",
+         "on": "air"
+        }
+       ],
+       "fx": [
+        {
+         "kind": "flash",
+         "x": 50,
+         "y": 50,
+         "at_s": 18.0,
+         "size": 0.3
+        }
+       ]
+      },
+      "names": [
+       {
+        "text": "MALCOLM BROWNE",
+        "sub": "World Press Photo · 1963",
+        "out_s": 20.6,
+        "at_cue": "malcolm#1",
+        "at_s": 17.79
+       }
+      ]
+     }
+    ]
    }
   },
   {

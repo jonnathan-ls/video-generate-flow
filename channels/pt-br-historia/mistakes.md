@@ -105,3 +105,8 @@
 - **Sintoma (usuário):** embaixador desce flutuando do ar até o chão (S02); navio posicionado fora do rio; avião voando de ré (nariz para um lado, movimento para o outro); carro cruzando o mapa por cima das casas. "Esses tipos de problemas são cruciais e não devem acontecer."
 - **Causa:** nenhum gate checava física de forma direta. `shot_check` só olha tempo e cota; a rubrica do Gemini é aberta e mistura física com estilo (apontou o embaixador, mas não navio/avião/carro). O executor posiciona por % da tela sem saber onde está a água, a estrada ou o piso do fundo.
 - **Correção de processo:** (1) campos obrigatórios `faces` e `on` (water|road|floor|ground|air) em todo ator que se move, com checagem determinística no `shot_check.py` (nariz × direção, entrada vertical de quem não voa); (2) gate de visão `orchestra/fisica.sh` com perguntas sim/não por ator, nos quadros de início/meio/fim do movimento; FAIL bloqueia a cena. Entra no `protocols/scene-production.md` (passo 8) e vale também para o low-poly.
+
+## 2026-11-22 — Parei no meio do L2 e relatei parcial
+- **Sintoma:** ao retomar, só lancei o gate de época, relatei "em andamento" sem conferir (já tinha terminado, rodado com `setsid nohup` sem aparecer como tarefa) e perguntei "continuo?" com o próximo passo definido.
+- **Causa:** tratar cada resposta como entrega em vez de iterar até o DoD.
+- **Correção de processo:** R19 em `CLAUDE.md` (itera até entregar; background só com `run_in_background`; conferir antes de afirmar).

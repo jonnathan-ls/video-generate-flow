@@ -1,0 +1,295 @@
+{
+ "imagens": [
+  {
+   "arquivo": "l2_advisor_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_advisor_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_arvn_col_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Soldados com roupas civis escuras/azuis e sem capacete M1 em vez do uniforme verde oliva padronizado do exército sul-vietnamita (ARVN)."
+   ],
+   "correcao_prompt": "ARVN soldiers marching in line, all wearing olive green military fatigues, M1 steel helmets, carrying rifles, 1961"
+  },
+  {
+   "arquivo": "l2_arvn_col_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_camera_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_camera_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_crowd_run_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_crowd_run_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_cyclo_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_cyclo_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_farmer_buffalo_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_farmer_buffalo_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_bud_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_bud_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_sv_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_sv_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_vn_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_flag_vn_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_fr_column54_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Soldados franceses vestindo camisas azuis civis em vez do uniforme militar cáqui/oliva da expedição francesa (CEFEO) de 1954."
+   ],
+   "correcao_prompt": "French soldiers marching in column, wearing M1 helmets and khaki military uniforms, carrying rifles, 1954"
+  },
+  {
+   "arquivo": "l2_fr_column54_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_gun_crew_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_gun_crew_2.jpg",
+   "ok": false,
+   "problemas": [
+    "Soldado com capacete e camisa azuis e roupas civis brancas na equipe de artilharia do Viet Minh, desalinhado com o uniforme militar histórico."
+   ],
+   "correcao_prompt": "Viet Minh artillery crew pulling a 75mm mountain gun with ropes, all wearing khaki uniforms and pith helmets with foliage"
+  },
+  {
+   "arquivo": "l2_h21_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Helicóptero H-21 com pintura civil vermelha/bege, sem as marcações militares e cor verde-oliva (Olive Drab) do Exército dos EUA."
+   ],
+   "correcao_prompt": "H-21 Shawnee tandem-rotor helicopter in US Army olive drab green paint scheme with US military star insignia"
+  },
+  {
+   "arquivo": "l2_h21_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_icc_trio_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_icc_trio_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_jeep_us_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_jeep_us_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_limo_61_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_limo_61_2.jpg",
+   "ok": false,
+   "problemas": [
+    "Limusine presidencial de 1961 ostentando bandeiras da França no capô, o que é anacrônico para o Vietnã do Sul independente na era Ngo Dinh Diem."
+   ],
+   "correcao_prompt": "1961 black presidential limousine sedan with South Vietnamese flags on hood"
+  },
+  {
+   "arquivo": "l2_monks_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_monks_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_police_line_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_police_line_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_sampan_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_sampan_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_sedan_54_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_sedan_54_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_steamer_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_steamer_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_us_col63_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_us_col63_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_us_truck_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Caminhão militar com pintura civil bicolor vermelha e marrom na cabine, em vez do acabamento militar verde-oliva (Olive Drab)."
+   ],
+   "correcao_prompt": "US military 2.5-ton cargo truck with canvas cover, painted in solid military olive drab green"
+  },
+  {
+   "arquivo": "l2_us_truck_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_vm_column_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Soldados do Viet Minh vestindo uniformes vermelhos e azuis vibrantes, incoerentes com o uniforme militar histórico (cáqui/verde e capacete de cortiça)."
+   ],
+   "correcao_prompt": "Viet Minh soldiers marching in column, all wearing khaki uniforms and foliage-covered pith helmets, carrying rifles, 1954"
+  },
+  {
+   "arquivo": "l2_vm_column_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  }
+ ],
+ "reprovadas": 7
+}

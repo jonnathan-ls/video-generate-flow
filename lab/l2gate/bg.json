@@ -1,0 +1,289 @@
+{
+ "imagens": [
+  {
+   "arquivo": "l2_airfield_61_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_airfield_61_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_benhai_banks_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_benhai_banks_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_benhai_bridge_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_benhai_bridge_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_checkpoint_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_checkpoint_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_conf_hall_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Contém figuras humanas (delegados sentados à mesa de conferência), violando a regra 'sem pessoas'."
+   ],
+   "correcao_prompt": "empty Geneva conference hall interior, large U-shaped negotiation table with microphones, empty wooden chairs, no people, no delegates"
+  },
+  {
+   "arquivo": "l2_conf_hall_2.jpg",
+   "ok": false,
+   "problemas": [
+    "Contém figuras humanas (delegados em reunião), violando a regra 'sem pessoas'."
+   ],
+   "correcao_prompt": "empty 1954 conference room interior, long green cloth tables with old microphones, empty chairs, no people"
+  },
+  {
+   "arquivo": "l2_dbp_bunker_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_dbp_bunker_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_dbp_slope_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_dbp_slope_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_dbp_trench_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_dbp_trench_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_dbp_valley_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_dbp_valley_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_geneva_lake_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_geneva_lake_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_geneva_palais_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_geneva_palais_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_hue_63_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_hue_63_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_hue_night_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_hue_night_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_macv_hq_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_macv_hq_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_paddy_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_paddy_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_pagoda_pole_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_pagoda_pole_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_palace_55_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_palace_55_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_polling_hall_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_polling_hall_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_river_poles_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_river_poles_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_saigon_55_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_saigon_55_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_saigon_63_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_saigon_63_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_training_61_1.jpg",
+   "ok": false,
+   "problemas": [
+    "Contém figuras humanas (soldados em formação militar), violando a regra 'sem pessoas'."
+   ],
+   "correcao_prompt": "empty military training camp parade ground in Vietnam, wooden barracks huts, dirt ground, palm trees, no soldiers, no people"
+  },
+  {
+   "arquivo": "l2_training_61_2.jpg",
+   "ok": false,
+   "problemas": [
+    "Contém figuras humanas (soldados alinhados no pátio), violando a regra 'sem pessoas'."
+   ],
+   "correcao_prompt": "empty military camp formation ground, wooden barracks, tropical vegetation, no soldiers, no people"
+  },
+  {
+   "arquivo": "l2_whitehouse_63_1.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  },
+  {
+   "arquivo": "l2_whitehouse_63_2.jpg",
+   "ok": true,
+   "problemas": [],
+   "correcao_prompt": ""
+  }
+ ],
+ "reprovadas": 4
+}
